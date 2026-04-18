@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls D:/projects/DEV/interview-preparing/*.md)"
+    ]
+  }
+}
