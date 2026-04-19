@@ -8,3 +8,6 @@ out/
 
 # Maven
 target/
+
+CLAUDE.md
+.claude

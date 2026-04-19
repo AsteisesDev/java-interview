@@ -10,6 +10,18 @@
 * [Какова роль Подписки в реактивном программировании?](#какова-роль-подписки-в-реактивном-программировании)
 * [Как отписаться от потока для предотвращения утечки памяти?](#как-отписаться-от-потока-для-предотвращения-утечки-памяти)
 * [Какие есть операторы в Project Reactor и для чего они используются?](#какие-есть-операторы-в-project-reactor-и-для-чего-они-используются)
+* [Что такое Reactive Streams Specification?](#что-такое-reactive-streams-specification)
+* [Чем отличаются Mono и Flux в Project Reactor?](#чем-отличаются-mono-и-flux-в-project-reactor)
+* [Что такое Scheduler в Project Reactor? Какие типы существуют?](#что-такое-scheduler-в-project-reactor-какие-типы-существуют)
+* [Как обрабатывать ошибки в реактивных потоках?](#как-обрабатывать-ошибки-в-реактивных-потоках)
+* [Что такое Spring WebFlux и чем он отличается от Spring MVC?](#что-такое-spring-webflux-и-чем-он-отличается-от-spring-mvc)
+* [Как тестировать реактивный код?](#как-тестировать-реактивный-код)
+* [Что такое Sinks в Project Reactor?](#что-такое-sinks-в-project-reactor)
+* [Как реализовать Server-Sent Events (SSE) с помощью WebFlux?](#как-реализовать-server-sent-events-sse-с-помощью-webflux)
+* [Что такое R2DBC и как он связан с реактивным программированием?](#что-такое-r2dbc-и-как-он-связан-с-реактивным-программированием)
+* [Реактивный vs императивный подход — когда что использовать?](#реактивный-vs-императивный-подход--когда-что-использовать)
+* [Что такое Context в Project Reactor?](#что-такое-context-в-project-reactor)
+* [Как работает WebClient и чем он отличается от RestTemplate?](#как-работает-webclient-и-чем-он-отличается-от-resttemplate)
 
 ## Что такое реактивное программирование и чем оно отличается от процедурного программирования?
 
@@ -582,3 +594,1224 @@ Best Practice: стоит настраивать отмену подписки, 
 * `zip`: объединяет элементы из нескольких потоков в пары
 * `combineLatest`: объединяет указанным способом последние значения из нескольких потоков
 * `startWith`: добавляет в начало потока к исходным элементам новые элемент(ы)
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое Reactive Streams Specification?
+
+**Reactive Streams** — это спецификация (инициатива), определяющая стандарт для асинхронной потоковой обработки данных с поддержкой неблокирующего backpressure. Спецификация была разработана совместно инженерами из Netflix, Pivotal, Lightbend и Oracle, и начиная с Java 9 включена в JDK как `java.util.concurrent.Flow`.
+
+**Четыре ключевых интерфейса:**
+
+**1. Publisher<T>** — источник данных. Имеет единственный метод `subscribe(Subscriber)`:
+
+```java
+public interface Publisher<T> {
+    void subscribe(Subscriber<? super T> subscriber);
+}
+```
+
+**2. Subscriber<T>** — потребитель данных. Определяет четыре callback-метода:
+
+```java
+public interface Subscriber<T> {
+    void onSubscribe(Subscription subscription); // вызывается при подписке
+    void onNext(T item);                         // получение очередного элемента
+    void onError(Throwable throwable);           // сигнал об ошибке (терминальный)
+    void onComplete();                           // сигнал о завершении (терминальный)
+}
+```
+
+**3. Subscription** — связь между Publisher и Subscriber, управление backpressure:
+
+```java
+public interface Subscription {
+    void request(long n); // запросить n элементов
+    void cancel();        // отменить подписку
+}
+```
+
+**4. Processor<T, R>** — комбинация Publisher и Subscriber, промежуточный этап обработки:
+
+```java
+public interface Processor<T, R> extends Subscriber<T>, Publisher<R> {
+}
+```
+
+**Протокол взаимодействия:**
+
+1. Subscriber вызывает `publisher.subscribe(subscriber)`
+2. Publisher вызывает `subscriber.onSubscribe(subscription)`
+3. Subscriber вызывает `subscription.request(n)` — запрашивает n элементов
+4. Publisher вызывает `subscriber.onNext(item)` не более n раз
+5. Publisher завершает поток вызовом `onComplete()` или `onError()`
+
+**Реализации спецификации:**
+- **Project Reactor** (Pivotal/VMware) — используется в Spring WebFlux
+- **RxJava** (Netflix) — популярна в Android-разработке
+- **Mutiny** (Red Hat) — используется в Quarkus
+- **Akka Streams** (Lightbend) — часть экосистемы Akka
+
+### Важное
+- Reactive Streams — это спецификация (набор интерфейсов), а не реализация
+- С Java 9 интерфейсы включены в JDK как `java.util.concurrent.Flow`
+- Ключевая идея — backpressure через `request(n)`: потребитель контролирует скорость получения данных
+- Терминальные сигналы (`onComplete`, `onError`) могут быть вызваны только один раз и исключают друг друга
+
+### Частые ошибки
+- **Не вызывать `request(n)`** — без запроса данных Publisher не отправит ни одного элемента
+- **Вызывать `onNext` после терминального сигнала** — нарушение протокола, ведёт к непредсказуемому поведению
+- **Бросать исключения из `onNext`** — вместо этого нужно вызвать `subscription.cancel()` и обработать ошибку
+- **Путать `Flow` API из JDK и Reactive Streams API** — интерфейсы идентичны, но находятся в разных пакетах; для совместимости используется `org.reactivestreams:reactive-streams` адаптер
+
+### Как используется в 2026
+- Reactive Streams — зрелый, устоявшийся стандарт, входящий в JDK
+- Project Reactor остаётся доминирующей реализацией в Spring-экосистеме
+- С появлением Virtual Threads (Java 21) часть задач, ранее решаемых реактивными потоками, решается проще через виртуальные потоки
+- Reactive Streams по-прежнему незаменимы для streaming-сценариев (SSE, WebSocket, Kafka) и работы с backpressure
+
+[к оглавлению](#реактивное-программирование)
+
+## Чем отличаются Mono и Flux в Project Reactor?
+
+**Mono** и **Flux** — два основных типа реактивных издателей в Project Reactor, оба реализуют интерфейс `Publisher`.
+
+**Flux<T>** — реактивный поток, который может эмитировать **от 0 до N элементов**, после чего завершается сигналом `onComplete` или `onError`.
+
+```java
+// Flux: 0..N элементов
+Flux<String> flux = Flux.just("Spring", "Reactor", "WebFlux");
+
+Flux<Integer> range = Flux.range(1, 100);
+
+Flux<Long> interval = Flux.interval(Duration.ofSeconds(1)); // бесконечный поток
+```
+
+**Mono<T>** — реактивный поток, который эмитирует **0 или 1 элемент**, после чего завершается. Семантически аналогичен `Optional` или `CompletableFuture`, но ленивый и с backpressure.
+
+```java
+// Mono: 0..1 элемент
+Mono<String> mono = Mono.just("Hello");
+
+Mono<User> user = Mono.fromCallable(() -> userRepository.findById(1L));
+
+Mono<Void> empty = Mono.empty(); // сигнал без данных (аналог void)
+```
+
+**Ключевые различия:**
+
+| Критерий | Mono<T> | Flux<T> |
+|----------|---------|---------|
+| Количество элементов | 0 или 1 | 0..N |
+| Аналог в блокирующем мире | `Optional<T>`, `CompletableFuture<T>` | `List<T>`, `Stream<T>` |
+| Типичное применение | Запрос к БД по ID, HTTP-запрос | Список сущностей, поток событий |
+| Backpressure | Не актуально (максимум 1 элемент) | Критически важно |
+
+**Конвертация между Mono и Flux:**
+
+```java
+// Flux → Mono
+Mono<String> first = Flux.just("A", "B", "C").next();           // первый элемент
+Mono<List<String>> all = Flux.just("A", "B", "C").collectList(); // все в список
+Mono<Long> count = Flux.just("A", "B", "C").count();             // количество
+
+// Mono → Flux
+Flux<String> flux = Mono.just("A").flux();                       // Mono как Flux из 1 элемента
+Flux<String> repeated = Mono.just("A").repeat(3);                // повторить Mono
+```
+
+**Типичные паттерны использования:**
+
+```java
+@RestController
+public class UserController {
+
+    @GetMapping("/users/{id}")
+    public Mono<User> getUser(@PathVariable Long id) {
+        return userRepository.findById(id); // Mono — один пользователь
+    }
+
+    @GetMapping("/users")
+    public Flux<User> getAllUsers() {
+        return userRepository.findAll(); // Flux — список пользователей
+    }
+
+    @PostMapping("/users")
+    public Mono<Void> createUser(@RequestBody Mono<User> user) {
+        return user.flatMap(userRepository::save).then(); // Mono<Void> — результат без тела
+    }
+}
+```
+
+### Важное
+- `Mono` — 0 или 1 элемент, `Flux` — 0..N элементов
+- Оба ленивы: ничего не происходит до подписки (`subscribe`)
+- `Mono<Void>` используется для операций без возвращаемого значения (аналог `void`)
+- Операторы у Mono и Flux частично пересекаются, но Flux имеет дополнительные операторы для работы с коллекциями (`buffer`, `window`, `groupBy`)
+
+### Частые ошибки
+- **Использовать Flux там, где достаточно Mono** — если результат всегда один объект (например, `findById`), используйте Mono
+- **Вызывать `.block()` в реактивном контексте** — блокировка потока в реактивном приложении может привести к deadlock
+- **Игнорировать возвращённый Mono/Flux** — если не подписаться, операция не выполнится; частая ошибка: `userRepository.save(user)` без `.subscribe()` или `.then()`
+- **Путать `map` и `flatMap`** — `map` для синхронных преобразований, `flatMap` когда трансформация сама возвращает `Mono`/`Flux`
+
+### Как используется в 2026
+- Mono и Flux остаются основой реактивного стека Spring (WebFlux, Spring Data Reactive, Spring Security Reactive)
+- В новых проектах с Virtual Threads часть сценариев с Mono/Flux заменяется обычным блокирующим кодом на виртуальных потоках
+- Mono/Flux незаменимы для streaming-сценариев: SSE, WebSocket, реактивные базы данных (R2DBC)
+- Тренд: использование Mono/Flux только там, где действительно нужна реактивность, а не «везде по умолчанию»
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое Scheduler в Project Reactor? Какие типы существуют?
+
+**Scheduler** — абстракция в Project Reactor, определяющая, в каком потоке (или пуле потоков) будет выполняться реактивный конвейер. По умолчанию реактивная цепочка выполняется в потоке, который вызвал `subscribe()`. Scheduler позволяет переключить выполнение на другой поток.
+
+**Два ключевых оператора:**
+- `subscribeOn(Scheduler)` — определяет, в каком потоке будет выполняться **вся цепочка с начала** (от источника данных). Действует на весь upstream, и не имеет значения, в каком месте цепочки вызван.
+- `publishOn(Scheduler)` — переключает выполнение **последующих операторов** (downstream) на указанный Scheduler. Место вызова в цепочке важно.
+
+```java
+Flux.range(1, 10)
+    .map(i -> {
+        System.out.println("map1: " + Thread.currentThread().getName());
+        return i * 2;
+    })
+    .publishOn(Schedulers.parallel())
+    .map(i -> {
+        System.out.println("map2: " + Thread.currentThread().getName());
+        return i + 1;
+    })
+    .subscribeOn(Schedulers.boundedElastic())
+    .subscribe();
+// map1 выполнится в boundedElastic, map2 — в parallel
+```
+
+**Типы Scheduler:**
+
+| Scheduler | Пул потоков | Назначение |
+|-----------|-------------|------------|
+| `Schedulers.immediate()` | Текущий поток | Без переключения, выполнение в вызывающем потоке |
+| `Schedulers.single()` | 1 поток | Последовательные задачи с малой нагрузкой (таймеры) |
+| `Schedulers.parallel()` | N потоков (N = CPU cores) | CPU-bound вычисления, без блокирующих операций |
+| `Schedulers.boundedElastic()` | Эластичный пул (до 10×CPU, TTL 60с) | Блокирующие I/O операции (JDBC, файлы, legacy API) |
+| `Schedulers.fromExecutor(executor)` | Пользовательский Executor | Кастомный пул потоков |
+
+**Пример: оборачивание блокирующего вызова:**
+
+```java
+Mono<User> user = Mono.fromCallable(() -> {
+        // Блокирующий вызов к БД через JDBC
+        return jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",
+                                            userRowMapper, userId);
+    })
+    .subscribeOn(Schedulers.boundedElastic()); // выполнить в эластичном пуле
+```
+
+### Важное
+- Без Scheduler вся цепочка выполняется в потоке подписчика
+- `subscribeOn` влияет на весь upstream (источник), `publishOn` — только на downstream (последующие операторы)
+- `parallel()` — для CPU-bound задач, **никогда** не блокировать в нём
+- `boundedElastic()` — для оборачивания блокирующих вызовов (JDBC, файлы, HTTP-клиенты без реактивной поддержки)
+
+### Частые ошибки
+- **Блокирующие вызовы в `Schedulers.parallel()`** — приводит к голоданию потоков, так как пул ограничен числом CPU-ядер
+- **Многократный `subscribeOn`** — работает только ближайший к источнику, остальные игнорируются
+- **Отсутствие `subscribeOn` при использовании блокирующего источника** — блокирующий вызов выполнится в event-loop потоке Netty, заблокировав весь сервер
+- **Создание нового Scheduler на каждый запрос** — ведёт к утечке потоков; используйте `Schedulers.*` или кэшируйте пул
+
+### Как используется в 2026
+- С Virtual Threads (Java 21) потребность в `boundedElastic()` для блокирующего I/O снижается — виртуальные потоки дешевле
+- Reactor 3.6+ поддерживает `Schedulers.fromExecutor(Executors.newVirtualThreadPerTaskExecutor())` для интеграции с Virtual Threads
+- Для CPU-bound вычислений `Schedulers.parallel()` остаётся актуальным
+- В чисто реактивных приложениях (R2DBC, WebClient) Scheduler нужен реже, так как весь стек неблокирующий
+
+[к оглавлению](#реактивное-программирование)
+
+## Как обрабатывать ошибки в реактивных потоках?
+
+В реактивном программировании ошибка — это **терминальный сигнал**, после которого поток прекращает работу. Project Reactor предоставляет набор операторов для перехвата, замены и восстановления после ошибок.
+
+**Основные операторы обработки ошибок:**
+
+**1. `onErrorReturn` — заменить ошибку значением по умолчанию:**
+
+```java
+Flux.just(1, 2, 0)
+    .map(i -> 10 / i)
+    .onErrorReturn(-1) // при любой ошибке вернуть -1
+    .subscribe(System.out::println);
+// Вывод: 10, 5, -1
+```
+
+**2. `onErrorResume` — заменить ошибку альтернативным потоком:**
+
+```java
+Flux.just(1, 2, 0)
+    .map(i -> 10 / i)
+    .onErrorResume(e -> {
+        log.warn("Ошибка: {}", e.getMessage());
+        return Flux.just(0, 0, 0); // fallback-поток
+    })
+    .subscribe(System.out::println);
+```
+
+```java
+// Разная обработка для разных типов ошибок
+Mono<User> user = userService.findById(id)
+    .onErrorResume(NotFoundException.class, e -> Mono.empty())
+    .onErrorResume(ServiceException.class, e -> fallbackService.findById(id));
+```
+
+**3. `onErrorMap` — преобразовать ошибку в другой тип:**
+
+```java
+Mono<User> user = userRepository.findById(id)
+    .onErrorMap(DataAccessException.class,
+                e -> new ServiceException("Ошибка БД", e));
+```
+
+**4. `doOnError` — выполнить побочный эффект (логирование), не перехватывая ошибку:**
+
+```java
+Mono<User> user = userService.findById(id)
+    .doOnError(e -> log.error("Не удалось найти пользователя: {}", id, e));
+```
+
+**5. `retry` и `retryWhen` — повторная попытка:**
+
+```java
+// Простой retry — повторить до 3 раз
+Mono<Response> response = webClient.get()
+    .uri("/api/data")
+    .retrieve()
+    .bodyToMono(Response.class)
+    .retry(3);
+
+// retryWhen — гибкая стратегия повтора
+Mono<Response> response = webClient.get()
+    .uri("/api/data")
+    .retrieve()
+    .bodyToMono(Response.class)
+    .retryWhen(Retry.backoff(3, Duration.ofSeconds(1))
+        .maxBackoff(Duration.ofSeconds(10))
+        .filter(e -> e instanceof WebClientResponseException.ServiceUnavailable)
+        .onRetryExhaustedThrow((spec, signal) ->
+            new ServiceException("Сервис недоступен после 3 попыток")));
+```
+
+**6. `onErrorComplete` — преобразовать ошибку в сигнал завершения:**
+
+```java
+Flux<Data> data = dataService.streamData()
+    .onErrorComplete(TimeoutException.class); // при таймауте — просто завершить
+```
+
+**Обработка ошибок в цепочке:**
+
+```java
+Mono<OrderDto> result = orderService.createOrder(request)
+    .doOnError(e -> log.error("Ошибка создания заказа", e))
+    .onErrorMap(DataAccessException.class,
+                e -> new ApiException(500, "Ошибка базы данных"))
+    .onErrorMap(ValidationException.class,
+                e -> new ApiException(400, e.getMessage()))
+    .retryWhen(Retry.backoff(2, Duration.ofMillis(500))
+        .filter(e -> e instanceof TransientDataAccessException));
+```
+
+### Важное
+- Ошибка — терминальный сигнал: после неё поток не может эмитировать элементы
+- `onErrorReturn` — заменить значением, `onErrorResume` — заменить потоком, `onErrorMap` — преобразовать тип ошибки
+- `doOnError` — побочный эффект без перехвата (логирование)
+- `retry` / `retryWhen` — повторная подписка на источник, что приводит к повторному выполнению всей цепочки upstream
+- Порядок операторов важен: ошибка перехватывается ближайшим оператором ниже по цепочке
+
+### Частые ошибки
+- **`onErrorReturn` в середине цепочки** — перехватит ошибку и вернёт одно значение, но последующие элементы Flux не будут эмитированы (поток завершится)
+- **Бесконечный `retry` без фильтра** — приведёт к бесконечному циклу при постоянной ошибке
+- **Retry для неидемпотентных операций** — повтор POST-запроса может создать дубликаты; retry безопасен только для идемпотентных операций
+- **Игнорирование ошибок без `doOnError`** — если ошибка «проглатывается» через `onErrorReturn`, важно хотя бы залогировать её
+
+### Как используется в 2026
+- `retryWhen` с `Retry.backoff` — стандартный паттерн для устойчивости микросервисов
+- Интеграция с Resilience4j для circuit breaker + retry в реактивном стеке
+- Spring WebFlux имеет встроенную обработку ошибок через `@ExceptionHandler` и `WebExceptionHandler`
+- Structured error handling через `onErrorResume` с разными типами исключений — best practice
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое Spring WebFlux и чем он отличается от Spring MVC?
+
+**Spring WebFlux** — реактивный веб-фреймворк в Spring, работающий на неблокирующем сервере (Netty по умолчанию). Является альтернативой Spring MVC для построения асинхронных, неблокирующих веб-приложений.
+
+**Архитектурные различия:**
+
+| Критерий | Spring MVC | Spring WebFlux |
+|----------|-----------|----------------|
+| Модель выполнения | Один поток на запрос (thread-per-request) | Event loop (цикл событий) |
+| Сервер | Tomcat, Jetty (Servlet API) | Netty, Undertow (неблокирующий) |
+| Типы возврата | `Object`, `ResponseEntity` | `Mono<T>`, `Flux<T>` |
+| Блокирующие вызовы | Допустимы | Запрещены в event-loop потоках |
+| Потоковая передача | Ограничена | Нативная (SSE, WebSocket) |
+| Потребление памяти | Поток на запрос (~1 MB stack) | Минимальное (несколько event-loop потоков) |
+| Макс. concurrent запросов | Ограничено пулом потоков (200-500) | Десятки тысяч одновременных соединений |
+
+**Аннотированные контроллеры (общий для MVC и WebFlux стиль):**
+
+```java
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+
+    private final UserService userService;
+
+    @GetMapping("/{id}")
+    public Mono<ResponseEntity<User>> getUser(@PathVariable Long id) {
+        return userService.findById(id)
+            .map(ResponseEntity::ok)
+            .defaultIfEmpty(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping
+    public Flux<User> getAllUsers() {
+        return userService.findAll();
+    }
+
+    @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<User> streamUsers() {
+        return userService.findAll().delayElements(Duration.ofSeconds(1));
+    }
+}
+```
+
+**Функциональный стиль (только WebFlux) — Router Functions:**
+
+```java
+@Configuration
+public class RouterConfig {
+
+    @Bean
+    public RouterFunction<ServerResponse> routes(UserHandler handler) {
+        return RouterFunctions.route()
+            .GET("/api/users/{id}", handler::getUser)
+            .GET("/api/users", handler::getAllUsers)
+            .POST("/api/users", handler::createUser)
+            .build();
+    }
+}
+
+@Component
+public class UserHandler {
+
+    private final UserService userService;
+
+    public Mono<ServerResponse> getUser(ServerRequest request) {
+        Long id = Long.parseLong(request.pathVariable("id"));
+        return userService.findById(id)
+            .flatMap(user -> ServerResponse.ok().bodyValue(user))
+            .switchIfEmpty(ServerResponse.notFound().build());
+    }
+
+    public Mono<ServerResponse> getAllUsers(ServerRequest request) {
+        return ServerResponse.ok().body(userService.findAll(), User.class);
+    }
+}
+```
+
+**Когда выбирать WebFlux:**
+- Высокая конкурентность (тысячи одновременных соединений)
+- Streaming-сценарии (SSE, WebSocket, реактивные потоки данных)
+- Полностью неблокирующий стек (R2DBC, WebClient, reactive Redis/Mongo)
+- Микросервисы с интенсивным межсервисным взаимодействием
+
+**Когда оставаться на Spring MVC:**
+- Блокирующие зависимости (JDBC, JPA/Hibernate)
+- Простая CRUD-логика без требований к высокой конкурентности
+- Команда не знакома с реактивным программированием
+- Уже есть работающее приложение на MVC
+
+### Важное
+- WebFlux работает на Netty (event-loop модель), MVC — на Servlet-контейнере (thread-per-request)
+- WebFlux и MVC могут сосуществовать в одном приложении Spring Boot, но на разных серверах
+- В WebFlux **нельзя блокировать** event-loop поток — это заблокирует обработку всех запросов
+- WebFlux поддерживает два стиля: аннотированные контроллеры (как MVC) и функциональные Router Functions
+
+### Частые ошибки
+- **Использование JDBC/JPA в WebFlux** — блокирующие вызовы в event-loop заблокируют сервер; нужен R2DBC или оборачивание в `Schedulers.boundedElastic()`
+- **Выбор WebFlux «потому что это новее»** — если нет требований к высокой конкурентности, MVC проще и понятнее
+- **Смешивание блокирующего и реактивного кода** без `subscribeOn` — незаметно блокирует event-loop
+- **Отладка реактивных цепочек** — стектрейсы длинные и нечитаемые; нужно включить `Hooks.onOperatorDebug()` или использовать `checkpoint()`
+
+### Как используется в 2026
+- С появлением Virtual Threads (Java 21) Spring MVC на виртуальных потоках покрывает большинство сценариев, ранее требовавших WebFlux
+- WebFlux остаётся предпочтительным для: streaming (SSE, WebSocket), интеграции с реактивными БД (R2DBC, reactive MongoDB), и приложений с очень высокой конкурентностью
+- Spring Boot 3.2+ поддерживает `spring.threads.virtual.enabled=true` для MVC на виртуальных потоках — это проще, чем WebFlux
+- Тренд: WebFlux для edge-сервисов и API Gateway, MVC + Virtual Threads для бизнес-логики
+
+[к оглавлению](#реактивное-программирование)
+
+## Как тестировать реактивный код?
+
+Тестирование реактивного кода отличается от традиционного: нельзя просто вызвать метод и проверить результат, потому что `Mono` и `Flux` ленивы. Project Reactor предоставляет специальные инструменты: **StepVerifier** и **TestPublisher**.
+
+**StepVerifier — основной инструмент тестирования:**
+
+```java
+// Тестирование Mono
+@Test
+void testFindById() {
+    Mono<User> userMono = userService.findById(1L);
+
+    StepVerifier.create(userMono)
+        .expectNextMatches(user -> user.getName().equals("John"))
+        .verifyComplete(); // проверяет, что поток завершился без ошибок
+}
+
+// Тестирование Flux
+@Test
+void testFindAll() {
+    Flux<User> usersFlux = userService.findAll();
+
+    StepVerifier.create(usersFlux)
+        .expectNextCount(3)           // ожидаем 3 элемента
+        .verifyComplete();
+}
+
+// Тестирование ошибок
+@Test
+void testError() {
+    Mono<User> errorMono = userService.findById(-1L);
+
+    StepVerifier.create(errorMono)
+        .expectError(NotFoundException.class)
+        .verify();
+}
+
+// Тестирование последовательности элементов
+@Test
+void testSequence() {
+    Flux<Integer> flux = Flux.just(1, 2, 3).map(i -> i * 2);
+
+    StepVerifier.create(flux)
+        .expectNext(2)
+        .expectNext(4)
+        .expectNext(6)
+        .verifyComplete();
+}
+```
+
+**Тестирование с виртуальным временем (операторы `delay`, `interval`):**
+
+```java
+@Test
+void testWithVirtualTime() {
+    StepVerifier.withVirtualTime(() ->
+            Flux.interval(Duration.ofHours(1)).take(3))
+        .expectSubscription()
+        .thenAwait(Duration.ofHours(3)) // промотать 3 часа виртуального времени
+        .expectNext(0L, 1L, 2L)
+        .verifyComplete();
+}
+```
+
+**TestPublisher — управляемый источник для тестов:**
+
+```java
+@Test
+void testWithTestPublisher() {
+    TestPublisher<String> testPublisher = TestPublisher.create();
+
+    Flux<String> flux = testPublisher.flux()
+        .map(String::toUpperCase);
+
+    StepVerifier.create(flux)
+        .then(() -> testPublisher.emit("hello", "world"))
+        .expectNext("HELLO", "WORLD")
+        .verifyComplete();
+}
+
+// Симуляция ошибки
+@Test
+void testErrorWithTestPublisher() {
+    TestPublisher<String> testPublisher = TestPublisher.create();
+
+    StepVerifier.create(testPublisher.flux())
+        .then(() -> {
+            testPublisher.next("data");
+            testPublisher.error(new RuntimeException("test error"));
+        })
+        .expectNext("data")
+        .expectError(RuntimeException.class)
+        .verify();
+}
+```
+
+**Тестирование WebFlux-контроллеров с WebTestClient:**
+
+```java
+@WebFluxTest(UserController.class)
+class UserControllerTest {
+
+    @Autowired
+    private WebTestClient webTestClient;
+
+    @MockitoBean
+    private UserService userService;
+
+    @Test
+    void shouldReturnUser() {
+        when(userService.findById(1L)).thenReturn(Mono.just(new User(1L, "John")));
+
+        webTestClient.get().uri("/api/users/1")
+            .exchange()
+            .expectStatus().isOk()
+            .expectBody(User.class)
+            .value(user -> assertThat(user.getName()).isEqualTo("John"));
+    }
+
+    @Test
+    void shouldReturnAllUsers() {
+        when(userService.findAll()).thenReturn(Flux.just(
+            new User(1L, "John"), new User(2L, "Jane")));
+
+        webTestClient.get().uri("/api/users")
+            .exchange()
+            .expectStatus().isOk()
+            .expectBodyList(User.class)
+            .hasSize(2);
+    }
+}
+```
+
+### Важное
+- `StepVerifier` — основной инструмент, подписывается на Mono/Flux и пошагово проверяет сигналы
+- Всегда завершайте проверку `.verify()` или `.verifyComplete()` — без этого тест не выполнится
+- `withVirtualTime` — для тестирования операторов, зависящих от времени, без реального ожидания
+- `WebTestClient` — для интеграционных тестов WebFlux-контроллеров
+
+### Частые ошибки
+- **Забыть вызвать `.verify()`** — StepVerifier не подпишется и тест будет «зелёным» без проверки
+- **Использовать `.block()` в тестах вместо StepVerifier** — теряется возможность проверки сигналов и порядка элементов
+- **Не использовать `withVirtualTime` для `interval`/`delay`** — тест будет ждать реальное время
+- **Тестировать реактивные цепочки через моки, возвращающие null** — нужно возвращать `Mono.empty()` или `Flux.empty()`, а не null
+
+### Как используется в 2026
+- StepVerifier — зрелый, стабильный инструмент, стандарт де-факто
+- `WebTestClient` используется не только для WebFlux, но и для интеграционных тестов Spring MVC
+- Testcontainers + R2DBC — стандартная связка для интеграционных тестов реактивных репозиториев
+- AssertJ интеграция через `StepVerifier` + reactor-test — наиболее читаемый стиль тестов
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое Sinks в Project Reactor?
+
+**Sinks** — это программно управляемые издатели данных в Project Reactor, пришедшие на замену deprecated `FluxProcessor` и `MonoProcessor`. Sinks позволяют **императивно** отправлять данные в реактивный поток.
+
+**Зачем нужны Sinks:** когда источник данных не является «естественно реактивным» (например, данные приходят из callback-API, WebSocket, очереди событий), Sinks позволяют мостить императивный и реактивный миры.
+
+**Типы Sinks:**
+
+**1. `Sinks.One<T>` — эмитирует 0 или 1 элемент (аналог Mono):**
+
+```java
+Sinks.One<String> sink = Sinks.one();
+Mono<String> mono = sink.asMono();
+
+// Позже, при получении данных:
+sink.tryEmitValue("result");
+// или при ошибке:
+sink.tryEmitError(new RuntimeException("failed"));
+```
+
+**2. `Sinks.Many<T>` — эмитирует 0..N элементов (аналог Flux):**
+
+```java
+// Multicast — несколько подписчиков, каждый получает элементы с момента подписки
+Sinks.Many<String> sink = Sinks.many().multicast().onBackpressureBuffer();
+Flux<String> flux = sink.asFlux();
+
+sink.tryEmitNext("event1");
+sink.tryEmitNext("event2");
+sink.tryEmitComplete();
+
+// Unicast — только один подписчик
+Sinks.Many<String> unicast = Sinks.many().unicast().onBackpressureBuffer();
+
+// Replay — новые подписчики получают N последних элементов
+Sinks.Many<String> replay = Sinks.many().replay().limit(10);
+```
+
+**Практический пример — чат через WebSocket:**
+
+```java
+@Component
+public class ChatService {
+    private final Sinks.Many<ChatMessage> chatSink =
+        Sinks.many().multicast().onBackpressureBuffer();
+
+    public void sendMessage(ChatMessage message) {
+        chatSink.tryEmitNext(message);
+    }
+
+    public Flux<ChatMessage> getMessages() {
+        return chatSink.asFlux();
+    }
+}
+```
+
+**Обработка результата эмиссии:**
+
+```java
+Sinks.Many<String> sink = Sinks.many().multicast().onBackpressureBuffer();
+
+Sinks.EmitResult result = sink.tryEmitNext("data");
+if (result.isFailure()) {
+    // Обработка: FAIL_ZERO_SUBSCRIBER, FAIL_OVERFLOW, FAIL_CANCELLED, FAIL_TERMINATED
+    log.warn("Не удалось отправить: {}", result);
+}
+
+// Или с автоматической обработкой:
+sink.emitNext("data", Sinks.EmitFailureHandler.FAIL_FAST);
+```
+
+### Важное
+- Sinks заменяют deprecated `Processor` из Reactor 3.4+
+- `Sinks.One` → `Mono`, `Sinks.Many` → `Flux`
+- Три режима `Many`: `unicast` (один подписчик), `multicast` (много подписчиков), `replay` (с историей)
+- `tryEmitNext` возвращает `EmitResult` — нужно проверять результат или использовать `emitNext` с обработчиком ошибок
+- Sinks являются потокобезопасными
+
+### Частые ошибки
+- **Использовать deprecated `FluxProcessor`** — заменён на Sinks с Reactor 3.4
+- **Игнорировать `EmitResult`** — если нет подписчиков или буфер переполнен, данные теряются молча
+- **Использовать `unicast` с несколькими подписчиками** — второй подписчик получит `IllegalStateException`
+- **Не вызывать `tryEmitComplete()`** — без терминального сигнала подписчики будут ждать бесконечно
+
+### Как используется в 2026
+- Sinks — стандартный способ мостить императивный и реактивный код
+- Широко используется в WebSocket/SSE-обработчиках
+- Для event-driven архитектуры внутри приложения (замена `ApplicationEventPublisher` в реактивном контексте)
+- В новых проектах с Virtual Threads потребность в Sinks снижается, но для broadcast-сценариев они остаются оптимальным решением
+
+[к оглавлению](#реактивное-программирование)
+
+## Как реализовать Server-Sent Events (SSE) с помощью WebFlux?
+
+**Server-Sent Events (SSE)** — стандарт HTML5 для однонаправленной потоковой передачи данных от сервера к клиенту через HTTP. В отличие от WebSocket, SSE работает поверх обычного HTTP и поддерживает автоматическое переподключение.
+
+**Простейший SSE-эндпоинт:**
+
+```java
+@RestController
+public class SseController {
+
+    @GetMapping(value = "/events", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<String> streamEvents() {
+        return Flux.interval(Duration.ofSeconds(1))
+            .map(i -> "Event #" + i);
+    }
+}
+```
+
+**SSE с типизированными событиями (ServerSentEvent):**
+
+```java
+@GetMapping(value = "/notifications", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+public Flux<ServerSentEvent<NotificationDto>> streamNotifications() {
+    return notificationService.getNotifications()
+        .map(notification -> ServerSentEvent.<NotificationDto>builder()
+            .id(notification.getId().toString())
+            .event(notification.getType())   // тип события
+            .data(notification)              // данные
+            .retry(Duration.ofSeconds(5))    // интервал переподключения для клиента
+            .build());
+}
+```
+
+**Реальный пример — лента обновлений с Sinks:**
+
+```java
+@Service
+public class UpdateService {
+    private final Sinks.Many<Update> sink =
+        Sinks.many().multicast().onBackpressureBuffer(100);
+
+    public void publishUpdate(Update update) {
+        sink.tryEmitNext(update);
+    }
+
+    public Flux<Update> getUpdates() {
+        return sink.asFlux();
+    }
+}
+
+@RestController
+public class UpdateController {
+
+    private final UpdateService updateService;
+
+    @GetMapping(value = "/updates/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<ServerSentEvent<Update>> stream() {
+        return updateService.getUpdates()
+            .map(update -> ServerSentEvent.builder(update)
+                .id(UUID.randomUUID().toString())
+                .event("update")
+                .build());
+    }
+}
+```
+
+**Клиент на JavaScript:**
+
+```javascript
+const eventSource = new EventSource('/updates/stream');
+
+eventSource.addEventListener('update', (event) => {
+    const data = JSON.parse(event.data);
+    console.log('Получено обновление:', data);
+});
+
+eventSource.onerror = (error) => {
+    console.error('SSE ошибка:', error);
+    // Браузер автоматически переподключится
+};
+```
+
+### Важное
+- SSE — однонаправленная потоковая передача от сервера к клиенту через HTTP
+- `MediaType.TEXT_EVENT_STREAM_VALUE` (`text/event-stream`) — обязательный Content-Type
+- Браузер автоматически переподключается при разрыве соединения
+- `ServerSentEvent` позволяет задать `id`, `event` (тип), `data`, `retry` (интервал переподключения)
+
+### Частые ошибки
+- **Не указать `produces = TEXT_EVENT_STREAM_VALUE`** — клиент получит JSON-массив вместо потока событий
+- **Не обрабатывать отключение клиента** — при отмене подписки ресурсы должны освобождаться (Reactor делает это автоматически)
+- **Отправлять слишком большие объекты** — SSE предназначен для лёгких уведомлений, не для передачи файлов
+- **Забывать про CORS** — SSE-запросы также подчиняются политике CORS
+
+### Как используется в 2026
+- SSE — стандартный подход для push-уведомлений, обновления дашбордов, live-лент
+- Для двунаправленного обмена используют WebSocket, для однонаправленного — SSE
+- SSE хорошо работает с CDN и прокси (в отличие от WebSocket, который требует Upgrade)
+- В микросервисной архитектуре SSE часто используется совместно с Kafka для прокидывания событий до клиента
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое R2DBC и как он связан с реактивным программированием?
+
+**R2DBC (Reactive Relational Database Connectivity)** — спецификация для реактивного, неблокирующего доступа к реляционным базам данных. R2DBC решает проблему блокирующего JDBC, который несовместим с реактивным стеком.
+
+**Проблема JDBC в реактивном контексте:**
+JDBC полностью блокирующий — каждый запрос к БД блокирует поток до получения ответа. В реактивных приложениях (WebFlux + Netty) это означает блокировку event-loop потока, что нивелирует все преимущества реактивности.
+
+**Архитектура R2DBC:**
+
+```
+Приложение → Spring Data R2DBC → R2DBC SPI → R2DBC Driver → База данных
+```
+
+**Поддерживаемые базы данных:**
+- PostgreSQL (`r2dbc-postgresql`)
+- MySQL / MariaDB (`r2dbc-mysql`, `r2dbc-mariadb`)
+- Microsoft SQL Server (`r2dbc-mssql`)
+- H2 (`r2dbc-h2`)
+- Oracle (`oracle-r2dbc`)
+
+**Настройка Spring Data R2DBC:**
+
+```yaml
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mydb
+    username: user
+    password: secret
+```
+
+```java
+// Сущность
+@Table("users")
+public record User(
+    @Id Long id,
+    String name,
+    String email
+) {}
+
+// Реактивный репозиторий
+public interface UserRepository extends ReactiveCrudRepository<User, Long> {
+
+    Flux<User> findByName(String name);
+
+    @Query("SELECT * FROM users WHERE email = :email")
+    Mono<User> findByEmail(String email);
+}
+
+// Использование в сервисе
+@Service
+public class UserService {
+    private final UserRepository userRepository;
+
+    public Mono<User> createUser(User user) {
+        return userRepository.save(user);
+    }
+
+    public Flux<User> findAll() {
+        return userRepository.findAll();
+    }
+}
+```
+
+**R2DBC DatabaseClient — низкоуровневый доступ:**
+
+```java
+@Service
+public class CustomUserRepository {
+    private final DatabaseClient databaseClient;
+
+    public Flux<User> searchUsers(String query) {
+        return databaseClient.sql("SELECT * FROM users WHERE name LIKE :query")
+            .bind("query", "%" + query + "%")
+            .map(row -> new User(
+                row.get("id", Long.class),
+                row.get("name", String.class),
+                row.get("email", String.class)))
+            .all();
+    }
+}
+```
+
+**R2DBC vs JDBC:**
+
+| Критерий | JDBC | R2DBC |
+|----------|------|-------|
+| Модель | Блокирующая | Неблокирующая, реактивная |
+| Возвращаемые типы | `ResultSet`, `List<T>` | `Mono<T>`, `Flux<T>` |
+| Пул соединений | HikariCP | `r2dbc-pool` |
+| ORM | Hibernate/JPA | Spring Data R2DBC (без lazy loading) |
+| Зрелость | 25+ лет | ~5 лет |
+| Транзакции | Декларативные (@Transactional) | Декларативные (@Transactional, реактивный менеджер) |
+
+### Важное
+- R2DBC — неблокирующая альтернатива JDBC для реактивных приложений
+- Spring Data R2DBC предоставляет `ReactiveCrudRepository` — аналог `JpaRepository`
+- R2DBC **не является ORM** — нет lazy loading, кэша, каскадирования; это более низкоуровневый доступ к БД
+- Транзакции поддерживаются через реактивный `ReactiveTransactionManager`
+
+### Частые ошибки
+- **Ожидать от R2DBC возможностей JPA** — нет lazy loading, entity graph, dirty checking; маппинг связей — ручной
+- **Использовать блокирующие драйверы рядом с R2DBC** — один блокирующий вызов в цепочке нивелирует реактивность
+- **Не настраивать пул соединений** — R2DBC без `r2dbc-pool` создаёт новое соединение на каждый запрос
+- **Сложные JOIN-запросы** — R2DBC не маппит связи автоматически; для сложных запросов нужен `DatabaseClient` или проекции
+
+### Как используется в 2026
+- R2DBC зрелый для PostgreSQL и MySQL; Oracle-драйвер значительно улучшился
+- С Virtual Threads (Java 21) обычный JDBC + HikariCP на виртуальных потоках — конкурентная альтернатива R2DBC
+- R2DBC оправдан в полностью реактивных приложениях (WebFlux + reactive messaging + R2DBC)
+- Тренд: для новых проектов без жёстких требований к реактивности — JDBC + Virtual Threads проще
+
+[к оглавлению](#реактивное-программирование)
+
+## Реактивный vs императивный подход — когда что использовать?
+
+Выбор между реактивным и императивным подходом — одно из ключевых архитектурных решений при создании Java-приложения.
+
+**Императивный (блокирующий) подход:**
+
+```java
+// Spring MVC — привычный, читаемый код
+@GetMapping("/orders/{id}")
+public OrderDto getOrder(@PathVariable Long id) {
+    Order order = orderRepository.findById(id)
+            .orElseThrow(() -> new NotFoundException("Order not found"));
+    User user = userService.getUser(order.getUserId());
+    List<Item> items = itemService.getItems(order.getId());
+    return OrderDto.from(order, user, items);
+}
+```
+
+**Реактивный подход:**
+
+```java
+// Spring WebFlux — неблокирующий, но сложнее для чтения
+@GetMapping("/orders/{id}")
+public Mono<OrderDto> getOrder(@PathVariable Long id) {
+    return orderRepository.findById(id)
+        .switchIfEmpty(Mono.error(new NotFoundException("Order not found")))
+        .flatMap(order -> Mono.zip(
+            userService.getUser(order.getUserId()),
+            itemService.getItems(order.getId()).collectList(),
+            (user, items) -> OrderDto.from(order, user, items)
+        ));
+}
+```
+
+**Сравнение подходов:**
+
+| Критерий | Императивный | Реактивный |
+|----------|-------------|-----------|
+| Читаемость | Высокая, линейный код | Ниже, цепочки операторов |
+| Отладка | Простая, понятный стектрейс | Сложная, длинные трейсы |
+| Порог входа | Низкий | Высокий |
+| Throughput при I/O | Ограничен пулом потоков | Высокий (event-loop) |
+| Потребление памяти | ~1 MB на поток | Минимальное |
+| Streaming | Ограниченный | Нативный |
+| Экосистема | Полная (JPA, JDBC, все библиотеки) | Ограниченная (R2DBC, WebClient) |
+
+**Третий путь — Virtual Threads + императивный код (Java 21+):**
+
+```java
+// Императивный код с Virtual Threads — лучшее из двух миров для большинства случаев
+// application.yml: spring.threads.virtual.enabled=true
+
+@GetMapping("/orders/{id}")
+public OrderDto getOrder(@PathVariable Long id) {
+    // Тот же блокирующий код, но на виртуальных потоках
+    // Высокая конкурентность без реактивной сложности
+    Order order = orderRepository.findById(id).orElseThrow();
+    User user = userService.getUser(order.getUserId());
+    List<Item> items = itemService.getItems(order.getId());
+    return OrderDto.from(order, user, items);
+}
+```
+
+**Когда выбирать реактивный подход:**
+- Streaming-сценарии (SSE, WebSocket, бесконечные потоки данных)
+- Уже реактивный стек (R2DBC, reactive MongoDB, reactive Kafka)
+- API Gateway / BFF с высокой конкурентностью
+- Сложная оркестрация асинхронных вызовов с backpressure
+
+**Когда выбирать императивный подход:**
+- Типичные CRUD-приложения
+- Работа с JPA/Hibernate, блокирующими библиотеками
+- Команда без опыта реактивного программирования
+- Java 21+ с Virtual Threads доступна
+
+### Важное
+- Реактивный подход оправдан при streaming, backpressure, и полностью неблокирующем стеке
+- Императивный подход + Virtual Threads (Java 21) — альтернатива, покрывающая 80% сценариев реактивности
+- Решение зависит от требований к конкурентности, стека технологий и опыта команды
+- Можно комбинировать: MVC-контроллеры + WebClient для исходящих запросов
+
+### Частые ошибки
+- **«Реактивный = быстрый»** — реактивный подход не ускоряет отдельный запрос, он повышает throughput при высокой конкурентности
+- **Частичная реактивность** — один блокирующий вызов в реактивной цепочке уничтожает все преимущества
+- **Переход на WebFlux без реактивной БД** — JDBC в WebFlux через `boundedElastic` — компромисс, а не решение
+- **Выбор технологии по моде, а не по требованиям** — технический долг от неоправданного усложнения стоит дорого
+
+### Как используется в 2026
+- Чёткое разделение: WebFlux — для streaming и edge-сервисов, MVC + Virtual Threads — для бизнес-логики
+- Spring Boot 3.2+ позволяет переключить MVC на Virtual Threads одной строкой конфига
+- Реактивный подход зрелый: хороший тулинг, документация, опыт сообщества
+- Прагматичный тренд: «используй реактивность только там, где она даёт измеримое преимущество»
+
+[к оглавлению](#реактивное-программирование)
+
+## Что такое Context в Project Reactor?
+
+**Context** — неизменяемая (immutable) структура данных в Project Reactor, привязанная к конкретной подписке. Аналог `ThreadLocal`, но для реактивных цепочек, где один запрос может исполняться в разных потоках.
+
+**Проблема:** в реактивном коде `ThreadLocal` не работает, потому что одна цепочка операторов может переключаться между потоками через `publishOn`/`subscribeOn`. Context решает эту проблему.
+
+**Запись и чтение контекста:**
+
+```java
+// Запись в контекст через contextWrite (внизу цепочки)
+Mono<String> mono = Mono.deferContextual(ctx -> {
+        String userId = ctx.get("userId");
+        return Mono.just("User: " + userId);
+    })
+    .contextWrite(Context.of("userId", "12345"));
+
+// Результат: "User: 12345"
+```
+
+**Практический пример — передача correlation ID:**
+
+```java
+@Component
+public class CorrelationWebFilter implements WebFilter {
+
+    @Override
+    public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
+        String correlationId = exchange.getRequest().getHeaders()
+            .getFirst("X-Correlation-ID");
+        if (correlationId == null) {
+            correlationId = UUID.randomUUID().toString();
+        }
+        String finalCorrelationId = correlationId;
+        return chain.filter(exchange)
+            .contextWrite(Context.of("correlationId", finalCorrelationId));
+    }
+}
+
+// Использование в сервисе
+@Service
+public class OrderService {
+
+    public Mono<Order> createOrder(OrderRequest request) {
+        return Mono.deferContextual(ctx -> {
+            String correlationId = ctx.getOrDefault("correlationId", "unknown");
+            log.info("[{}] Создание заказа", correlationId);
+            return orderRepository.save(new Order(request));
+        });
+    }
+}
+```
+
+**Важные особенности Context:**
+
+```java
+// Context immutable — каждый contextWrite создаёт новый Context
+Mono<String> mono = Mono.deferContextual(ctx ->
+        Mono.just(ctx.get("key")))
+    .contextWrite(ctx -> ctx.put("key", "value2"))  // ближе к подписке — перезаписывает
+    .contextWrite(ctx -> ctx.put("key", "value1")); // дальше от подписки
+// Результат: "value2" (Context распространяется снизу вверх)
+
+// Чтение нескольких значений
+Mono.deferContextual(ctx -> {
+    String userId = ctx.get("userId");
+    String traceId = ctx.getOrDefault("traceId", "none");
+    return Mono.just(userId + "/" + traceId);
+});
+```
+
+### Важное
+- Context — замена `ThreadLocal` в реактивном мире
+- Context immutable и привязан к подписке (Subscription), а не к потоку
+- Context распространяется **снизу вверх** (от `subscribe` к источнику) — `contextWrite` должен быть ниже точки чтения
+- `deferContextual` — для чтения контекста при создании элементов, `transformDeferredContextual` — для трансформации в середине цепочки
+
+### Частые ошибки
+- **Использовать `ThreadLocal` в реактивном коде** — значение потеряется при смене потока
+- **Помещать `contextWrite` выше точки чтения** — Context распространяется снизу вверх, значение не будет доступно
+- **Хранить мутабельные объекты в Context** — Context immutable, но объект внутри может быть мутабельным; лучше использовать immutable типы
+- **Злоупотреблять Context** — это не замена параметров метода; Context для cross-cutting concerns (tracing, auth, MDC)
+
+### Как используется в 2026
+- Reactor Context — стандарт для передачи correlation ID, trace ID, информации об аутентификации в реактивных цепочках
+- Micrometer + Reactor интеграция автоматически пробрасывает observation context через Reactor Context
+- Spring Security Reactive использует Context для хранения `SecurityContext`
+- С Virtual Threads потребность в Context снижается (можно использовать обычный ThreadLocal через ScopedValue)
+
+[к оглавлению](#реактивное-программирование)
+
+## Как работает WebClient и чем он отличается от RestTemplate?
+
+**WebClient** — неблокирующий, реактивный HTTP-клиент из Spring WebFlux, пришедший на замену блокирующему `RestTemplate`. Начиная со Spring 6.1, появился также `RestClient` — блокирующий клиент с удобным API.
+
+**Эволюция HTTP-клиентов в Spring:**
+
+| Клиент | Версия Spring | Модель | Статус в 2026 |
+|--------|--------------|--------|---------------|
+| `RestTemplate` | Spring 3 (2009) | Блокирующий | Maintenance mode |
+| `WebClient` | Spring 5 (2017) | Реактивный (неблокирующий) | Актуален |
+| `RestClient` | Spring 6.1 (2023) | Блокирующий, fluent API | Рекомендуемый для блокирующего кода |
+
+**WebClient — базовое использование:**
+
+```java
+WebClient webClient = WebClient.builder()
+    .baseUrl("https://api.example.com")
+    .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+    .build();
+
+// GET-запрос — возвращает Mono
+Mono<User> user = webClient.get()
+    .uri("/users/{id}", 1)
+    .retrieve()
+    .bodyToMono(User.class);
+
+// GET-запрос — список (Flux)
+Flux<User> users = webClient.get()
+    .uri("/users")
+    .retrieve()
+    .bodyToFlux(User.class);
+
+// POST-запрос
+Mono<User> created = webClient.post()
+    .uri("/users")
+    .bodyValue(new CreateUserRequest("John", "john@example.com"))
+    .retrieve()
+    .bodyToMono(User.class);
+```
+
+**Обработка ошибок HTTP:**
+
+```java
+Mono<User> user = webClient.get()
+    .uri("/users/{id}", userId)
+    .retrieve()
+    .onStatus(HttpStatusCode::is4xxClientError, response ->
+        response.bodyToMono(ErrorResponse.class)
+            .flatMap(error -> Mono.error(new ApiException(error.getMessage()))))
+    .onStatus(HttpStatusCode::is5xxServerError, response ->
+        Mono.error(new ServiceUnavailableException("Сервис недоступен")))
+    .bodyToMono(User.class)
+    .retryWhen(Retry.backoff(3, Duration.ofSeconds(1))
+        .filter(e -> e instanceof ServiceUnavailableException));
+```
+
+**Таймауты и конфигурация:**
+
+```java
+HttpClient httpClient = HttpClient.create()
+    .responseTimeout(Duration.ofSeconds(5))
+    .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 3000);
+
+WebClient webClient = WebClient.builder()
+    .baseUrl("https://api.example.com")
+    .clientConnector(new ReactorClientHttpConnector(httpClient))
+    .filter(ExchangeFilterFunction.ofRequestProcessor(request -> {
+        log.info("Request: {} {}", request.method(), request.url());
+        return Mono.just(request);
+    }))
+    .build();
+```
+
+**RestClient (Spring 6.1+) — блокирующая альтернатива с удобным API:**
+
+```java
+RestClient restClient = RestClient.builder()
+    .baseUrl("https://api.example.com")
+    .build();
+
+// Синхронный вызов — простой и читаемый
+User user = restClient.get()
+    .uri("/users/{id}", 1)
+    .retrieve()
+    .body(User.class);
+
+List<User> users = restClient.get()
+    .uri("/users")
+    .retrieve()
+    .body(new ParameterizedTypeReference<List<User>>() {});
+```
+
+**Сравнение:**
+
+| Критерий | RestTemplate | WebClient | RestClient |
+|----------|-------------|-----------|------------|
+| Блокирующий | Да | Нет | Да |
+| API стиль | Методы (getForObject, postForEntity) | Fluent chain | Fluent chain |
+| Streaming | Нет | Да | Нет |
+| Зависимость | spring-web | spring-webflux + reactor-netty | spring-web |
+| Тестирование | MockRestServiceServer | MockWebServer | MockRestServiceServer |
+
+### Важное
+- `WebClient` — неблокирующий, возвращает `Mono`/`Flux`, требует зависимость spring-webflux
+- `RestClient` (Spring 6.1+) — блокирующий с fluent API, рекомендуемая замена `RestTemplate`
+- `RestTemplate` в maintenance mode — новый код не рекомендуется
+- WebClient можно использовать и в блокирующих приложениях (MVC), вызывая `.block()`, но лучше использовать RestClient
+
+### Частые ошибки
+- **Создавать новый WebClient на каждый запрос** — WebClient нужно создавать один раз и переиспользовать (он потокобезопасный)
+- **Вызывать `.block()` в реактивном контексте** — deadlock; `.block()` допустим только в блокирующем коде (MVC, тесты)
+- **Не обрабатывать HTTP-ошибки** — без `onStatus` WebClient бросает `WebClientResponseException` с неинформативным сообщением
+- **Использовать WebClient только потому, что RestTemplate deprecated** — если приложение блокирующее, лучше `RestClient`
+
+### Как используется в 2026
+- `RestClient` — стандартный HTTP-клиент для Spring MVC приложений (Spring 6.1+)
+- `WebClient` — для реактивных приложений (WebFlux) и когда нужен streaming
+- `RestTemplate` встречается в legacy-коде, новые проекты его не используют
+- Для декларативного стиля: Spring HTTP Interface (`@HttpExchange`) работает и с WebClient, и с RestClient
