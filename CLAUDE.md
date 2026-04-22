@@ -39,3 +39,8 @@ mcon.bat <filename>.md           # Windows
 - README.md mirrors the full question list with deep links (`file.md#anchor`).
 - When adding a new question: add the Q&A to the topic file, then add a corresponding link in README.md under the appropriate section.
 - The `[к оглавлению]` ("back to TOC") links at the end of each README section point back to the top-level heading.
+
+## Last session
+```
+claude --resume f32809e5-4748-4f12-819c-b6829df7dfab
+```
