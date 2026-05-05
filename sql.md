@@ -36,6 +36,11 @@
 + [Расскажите об основных функциях ранжирования в Transact-SQL.](#Расскажите-об-основных-функциях-ранжирования-в-transact-sql)
 + [Для чего используются операторы `INTERSECT`, `EXCEPT` в Transact-SQL?](#Для-чего-используются-операторы-intersect-except-в-transact-sql)
 + [Напишите запрос...](#Напишите-запрос)
++ [Что такое оконные функции (Window Functions)?](#Что-такое-оконные-функции-window-functions)
++ [Что такое CTE (Common Table Expression)?](#Что-такое-cte-common-table-expression)
++ [Как анализировать производительность запросов? Что такое EXPLAIN ANALYZE?](#Как-анализировать-производительность-запросов-Что-такое-explain-analyze)
++ [Какие типы индексов существуют и когда какой использовать?](#Какие-типы-индексов-существуют-и-когда-какой-использовать)
++ [Как оптимизировать SQL-запросы?](#Как-оптимизировать-sql-запросы)
 
 ## Что такое _«SQL»_?
 SQL, Structured query language («язык структурированных запросов») — формальный непроцедурный язык программирования, применяемый для создания, модификации и управления данными в произвольной реляционной базе данных, управляемой соответствующей системой управления базами данных (СУБД).
@@ -550,6 +555,820 @@ FROM (
 AS download_count
 GROUP BY download_count; 
 ```
+
+[к оглавлению](#sql)
+
+## Что такое оконные функции (Window Functions)?
+__Оконные функции__ (Window Functions) — это функции, которые выполняют вычисления над набором строк, связанных с текущей строкой, без группировки результата в одну строку (в отличие от агрегатных функций с `GROUP BY`). Каждая строка сохраняется в результате, но к ней добавляется вычисленное значение.
+
+Общий синтаксис:
+```sql
+функция() OVER (
+    [PARTITION BY столбец_разделения]
+    [ORDER BY столбец_сортировки]
+    [ROWS | RANGE BETWEEN начало AND конец]
+)
+```
+
++ `PARTITION BY` — разделяет набор строк на группы (аналог `GROUP BY`, но без сворачивания строк).
++ `ORDER BY` — определяет порядок строк внутри каждого раздела.
++ `ROWS/RANGE BETWEEN` — определяет рамку (frame) — подмножество строк внутри раздела, участвующих в вычислении.
+
+### Функции ранжирования
+
+__ROW_NUMBER()__ — присваивает уникальный последовательный номер каждой строке внутри раздела:
+```sql
+SELECT
+    name,
+    department,
+    salary,
+    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS row_num
+FROM employees;
+```
+Результат: сотрудники пронумерованы внутри каждого отдела по убыванию зарплаты (1, 2, 3...).
+
+__RANK()__ — присваивает ранг с пропуском позиций при одинаковых значениях:
+```sql
+SELECT
+    name,
+    department,
+    salary,
+    RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rnk
+FROM employees;
+```
+Если два сотрудника имеют одинаковую зарплату, оба получат ранг 1, а следующий — ранг 3 (ранг 2 пропускается).
+
+__DENSE_RANK()__ — аналогичен `RANK()`, но без пропуска позиций:
+```sql
+SELECT
+    name,
+    department,
+    salary,
+    DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dense_rnk
+FROM employees;
+```
+При одинаковой зарплате оба получат ранг 1, следующий — ранг 2 (без пропуска).
+
+__NTILE(n)__ — делит строки раздела на `n` примерно равных групп:
+```sql
+SELECT
+    name,
+    salary,
+    NTILE(4) OVER (ORDER BY salary DESC) AS quartile
+FROM employees;
+```
+Сотрудники распределяются по 4 квартилям по зарплате.
+
+### Функции смещения
+
+__LAG(столбец, смещение, значение_по_умолчанию)__ — возвращает значение из предыдущей строки:
+```sql
+SELECT
+    name,
+    salary,
+    LAG(salary, 1, 0) OVER (ORDER BY hire_date) AS prev_salary,
+    salary - LAG(salary, 1, 0) OVER (ORDER BY hire_date) AS salary_diff
+FROM employees;
+```
+Позволяет сравнить зарплату с предыдущим по дате найма сотрудником.
+
+__LEAD(столбец, смещение, значение_по_умолчанию)__ — возвращает значение из следующей строки:
+```sql
+SELECT
+    name,
+    salary,
+    LEAD(salary, 1) OVER (ORDER BY hire_date) AS next_salary
+FROM employees;
+```
+
+__FIRST_VALUE(столбец)__ и __LAST_VALUE(столбец)__ — возвращают первое и последнее значение в рамке окна:
+```sql
+SELECT
+    name,
+    department,
+    salary,
+    FIRST_VALUE(name) OVER (
+        PARTITION BY department ORDER BY salary DESC
+    ) AS top_earner
+FROM employees;
+```
+
+### Агрегатные функции как оконные
+
+`SUM`, `AVG`, `COUNT`, `MIN`, `MAX` могут использоваться как оконные функции для вычисления накопительных (running) итогов:
+```sql
+SELECT
+    order_date,
+    amount,
+    SUM(amount) OVER (ORDER BY order_date) AS running_total,
+    AVG(amount) OVER (ORDER BY order_date ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_avg_3
+FROM orders;
+```
++ `running_total` — накопительная сумма по дате.
++ `moving_avg_3` — скользящее среднее по 3 последним строкам.
+
+### Рамки окна (Window Frame)
+
+```sql
+-- Все строки от начала раздела до текущей
+ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+
+-- 3 строки до и 3 строки после текущей
+ROWS BETWEEN 3 PRECEDING AND 3 FOLLOWING
+
+-- От текущей строки до конца раздела
+ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING
+
+-- Все строки раздела
+ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
+```
+
+Различие `ROWS` и `RANGE`: `ROWS` работает с физическими строками, `RANGE` — с логическими значениями (строки с одинаковым значением `ORDER BY` считаются одной «позицией»).
+
+### Практический пример: топ-3 сотрудника по зарплате в каждом отделе
+
+```sql
+SELECT * FROM (
+    SELECT
+        name,
+        department,
+        salary,
+        DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rnk
+    FROM employees
+) ranked
+WHERE rnk <= 3;
+```
+
+### Важное
++ Оконные функции выполняются после `WHERE`, `GROUP BY`, `HAVING`, но до `ORDER BY` и `LIMIT`.
++ Оконные функции нельзя использовать в `WHERE` и `HAVING` — для этого нужен подзапрос или CTE.
++ Именованное окно позволяет избежать дублирования: `WINDOW w AS (PARTITION BY department ORDER BY salary)`, затем `OVER w`.
++ `ROWS` и `RANGE` по умолчанию: если указан `ORDER BY` без рамки, PostgreSQL использует `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`.
+
+### Частые ошибки
++ Путаница между `RANK()` и `DENSE_RANK()` — забывают, что `RANK()` пропускает позиции.
++ Использование `LAST_VALUE()` без явного указания рамки — по умолчанию рамка заканчивается на текущей строке, а не на последней строке раздела. Нужно явно указать `ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING`.
++ Попытка фильтрации по оконной функции прямо в `WHERE` вместо оборачивания в подзапрос.
++ Забывают про `PARTITION BY` и получают вычисление по всему набору данных вместо групп.
+
+### Как используется в 2026
++ Все основные СУБД (PostgreSQL, MySQL 8+, Oracle, SQL Server, ClickHouse) полностью поддерживают оконные функции.
++ Широко используются в аналитических запросах, отчётах и дашбордах.
++ В PostgreSQL 16+ улучшена производительность оконных функций с `GROUPS` рамкой.
++ Активно применяются в dbt-моделях для трансформации данных в data warehouse.
+
+[к оглавлению](#sql)
+
+## Что такое CTE (Common Table Expression)?
+__CTE (Common Table Expression)__ — это именованное временное результирующее множество, определяемое с помощью ключевого слова `WITH`. CTE существует только в рамках одного запроса и позволяет сделать сложные запросы более читаемыми и структурированными.
+
+### Базовый синтаксис
+
+```sql
+WITH cte_name AS (
+    SELECT column1, column2
+    FROM table_name
+    WHERE condition
+)
+SELECT * FROM cte_name;
+```
+
+### Пример: средняя зарплата по отделам
+
+```sql
+WITH dept_avg AS (
+    SELECT
+        department,
+        AVG(salary) AS avg_salary
+    FROM employees
+    GROUP BY department
+)
+SELECT
+    e.name,
+    e.department,
+    e.salary,
+    d.avg_salary,
+    e.salary - d.avg_salary AS diff_from_avg
+FROM employees e
+JOIN dept_avg d ON e.department = d.department
+WHERE e.salary > d.avg_salary;
+```
+
+### Несколько CTE в одном запросе
+
+```sql
+WITH
+active_users AS (
+    SELECT user_id, name
+    FROM users
+    WHERE status = 'active'
+),
+user_orders AS (
+    SELECT user_id, COUNT(*) AS order_count, SUM(amount) AS total_amount
+    FROM orders
+    WHERE order_date >= '2026-01-01'
+    GROUP BY user_id
+)
+SELECT
+    au.name,
+    COALESCE(uo.order_count, 0) AS order_count,
+    COALESCE(uo.total_amount, 0) AS total_amount
+FROM active_users au
+LEFT JOIN user_orders uo ON au.user_id = uo.user_id
+ORDER BY total_amount DESC;
+```
+
+### Рекурсивные CTE
+
+Рекурсивные CTE позволяют выполнять иерархические (рекурсивные) запросы — обход деревьев, графов, иерархий.
+
+Синтаксис:
+```sql
+WITH RECURSIVE cte_name AS (
+    -- Базовый (якорный) запрос
+    SELECT ...
+    UNION ALL
+    -- Рекурсивный запрос (ссылается на cte_name)
+    SELECT ... FROM cte_name WHERE ...
+)
+SELECT * FROM cte_name;
+```
+
+__Пример: организационная иерархия (org chart)__
+
+```sql
+WITH RECURSIVE org_tree AS (
+    -- Якорь: генеральный директор (нет руководителя)
+    SELECT id, name, manager_id, 1 AS level
+    FROM employees
+    WHERE manager_id IS NULL
+
+    UNION ALL
+
+    -- Рекурсия: подчинённые каждого руководителя
+    SELECT e.id, e.name, e.manager_id, ot.level + 1
+    FROM employees e
+    JOIN org_tree ot ON e.manager_id = ot.id
+)
+SELECT
+    REPEAT('  ', level - 1) || name AS org_chart,
+    level
+FROM org_tree
+ORDER BY level, name;
+```
+
+__Пример: спецификация изделия (bill of materials)__
+
+```sql
+WITH RECURSIVE bom AS (
+    SELECT part_id, component_id, quantity, 1 AS depth
+    FROM parts_structure
+    WHERE part_id = 1001  -- корневое изделие
+
+    UNION ALL
+
+    SELECT ps.part_id, ps.component_id, ps.quantity * b.quantity, b.depth + 1
+    FROM parts_structure ps
+    JOIN bom b ON ps.part_id = b.component_id
+)
+SELECT
+    component_id,
+    SUM(quantity) AS total_quantity,
+    MAX(depth) AS max_depth
+FROM bom
+GROUP BY component_id;
+```
+
+__Пример: генерация ряда дат__
+
+```sql
+WITH RECURSIVE dates AS (
+    SELECT DATE '2026-01-01' AS dt
+    UNION ALL
+    SELECT dt + INTERVAL '1 day'
+    FROM dates
+    WHERE dt < DATE '2026-12-31'
+)
+SELECT dt FROM dates;
+```
+
+### CTE vs подзапрос vs временная таблица
+
+| Характеристика | CTE | Подзапрос | Временная таблица |
+|---|---|---|---|
+| Область видимости | Один запрос | Внутри внешнего запроса | Сессия / транзакция |
+| Повторное использование | Можно ссылаться несколько раз в одном запросе | Нужно дублировать | Можно в разных запросах |
+| Рекурсия | Поддерживается | Нет | Нет (нужен цикл) |
+| Индексы | Нет | Нет | Можно создать |
+| Материализация | Зависит от оптимизатора | Зависит от оптимизатора | Всегда материализована |
+| Читаемость | Высокая | Низкая при вложенности | Средняя |
+
+### Когда использовать CTE
++ Для улучшения читаемости сложных запросов.
++ Когда нужно ссылаться на один и тот же подзапрос несколько раз.
++ Для рекурсивных (иерархических) запросов.
++ Вместо вложенных подзапросов глубиной более 2 уровней.
+
+### Важное
++ В PostgreSQL CTE по умолчанию может быть как материализованным, так и нет — оптимизатор решает сам. Можно управлять явно: `WITH cte AS MATERIALIZED (...)` или `WITH cte AS NOT MATERIALIZED (...)`.
++ Рекурсивные CTE обязательно должны иметь условие завершения, иначе запрос зациклится.
++ CTE может использоваться в `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
++ В PostgreSQL рекурсивный CTE требует ключевого слова `RECURSIVE`, даже если только один из нескольких CTE является рекурсивным.
+
+### Частые ошибки
++ Забывают ключевое слово `RECURSIVE` для рекурсивных CTE в PostgreSQL.
++ Отсутствие условия завершения рекурсии — приводит к бесконечному циклу (PostgreSQL прервёт запрос по таймауту или лимиту строк).
++ Предполагают, что CTE всегда материализуется (как в старых версиях PostgreSQL до 12) — в новых версиях оптимизатор может «встроить» (inline) CTE в основной запрос.
++ Используют CTE там, где достаточно простого подзапроса — избыточное усложнение.
+
+### Как используется в 2026
++ CTE поддерживаются во всех основных СУБД: PostgreSQL, MySQL 8+, SQL Server, Oracle, SQLite 3.8.3+.
++ В PostgreSQL 16+ улучшена оптимизация нерекурсивных CTE — оптимизатор эффективнее решает, когда их материализовать.
++ Рекурсивные CTE активно используются в GraphQL-резолверах для обхода иерархических данных.
++ В dbt рекурсивные CTE применяются для моделирования иерархий (SCD Type 2, org charts).
+
+[к оглавлению](#sql)
+
+## Как анализировать производительность запросов? Что такое EXPLAIN ANALYZE?
+`EXPLAIN` — команда PostgreSQL (и других СУБД), которая показывает __план выполнения запроса__ — последовательность операций, которые СУБД планирует выполнить для получения результата. `EXPLAIN ANALYZE` дополнительно __выполняет__ запрос и показывает фактическое время и количество строк.
+
+### EXPLAIN vs EXPLAIN ANALYZE
+
+```sql
+-- Только план (запрос НЕ выполняется)
+EXPLAIN SELECT * FROM employees WHERE department = 'IT';
+
+-- План + фактическое выполнение
+EXPLAIN ANALYZE SELECT * FROM employees WHERE department = 'IT';
+
+-- Расширенный вывод с буферами и форматированием
+EXPLAIN (ANALYZE, BUFFERS, FORMAT TEXT)
+SELECT * FROM employees WHERE department = 'IT';
+```
+
+### Чтение плана выполнения
+
+Типичный вывод `EXPLAIN ANALYZE`:
+```
+Sort  (cost=1234.56..1256.78 rows=8888 width=64) (actual time=12.345..15.678 rows=8500 loops=1)
+  Sort Key: salary DESC
+  Sort Method: quicksort  Memory: 1024kB
+  ->  Hash Join  (cost=100.00..900.00 rows=8888 width=64) (actual time=1.234..8.901 rows=8500 loops=1)
+        Hash Cond: (e.department_id = d.id)
+        ->  Seq Scan on employees e  (cost=0.00..500.00 rows=10000 width=48) (actual time=0.010..3.456 rows=10000 loops=1)
+        ->  Hash  (cost=80.00..80.00 rows=50 width=16) (actual time=0.123..0.124 rows=50 loops=1)
+              Buckets: 1024  Batches: 1  Memory Usage: 9kB
+              ->  Seq Scan on departments d  (cost=0.00..80.00 rows=50 width=16) (actual time=0.005..0.100 rows=50 loops=1)
+Planning Time: 0.234 ms
+Execution Time: 16.789 ms
+```
+
+Ключевые понятия:
++ __cost__ — оценочная стоимость (начальная..общая) в условных единицах.
++ __rows__ — предполагаемое (estimated) и фактическое (actual) количество строк.
++ __actual time__ — реальное время выполнения (ms) для первой строки..всех строк.
++ __loops__ — сколько раз операция была выполнена.
++ __width__ — средний размер строки в байтах.
+
+### Типы сканирования (Scan)
+
+__Seq Scan (Sequential Scan)__ — последовательное чтение всей таблицы:
+```sql
+-- Seq Scan: нет подходящего индекса или таблица маленькая
+EXPLAIN ANALYZE SELECT * FROM employees WHERE notes LIKE '%важный%';
+```
+
+__Index Scan__ — чтение по индексу с обращением к таблице за полными данными:
+```sql
+-- Предварительно: CREATE INDEX idx_emp_dept ON employees(department);
+EXPLAIN ANALYZE SELECT * FROM employees WHERE department = 'IT';
+```
+
+__Index Only Scan__ — все нужные данные есть в индексе, обращение к таблице не требуется:
+```sql
+-- Покрывающий индекс
+EXPLAIN ANALYZE SELECT department, COUNT(*) FROM employees GROUP BY department;
+```
+
+__Bitmap Index Scan + Bitmap Heap Scan__ — используется для средней селективности, когда нужно прочитать значительную часть таблицы:
+```sql
+EXPLAIN ANALYZE SELECT * FROM employees WHERE salary BETWEEN 50000 AND 80000;
+```
+
+### Типы соединений (Join)
+
+__Nested Loop__ — для каждой строки внешней таблицы ищется соответствие во внутренней. Эффективен при малом количестве строк или наличии индекса:
+```sql
+-- Nested Loop: маленькая внешняя таблица + индекс на внутренней
+EXPLAIN ANALYZE
+SELECT e.name, d.name
+FROM departments d
+JOIN employees e ON e.department_id = d.id
+WHERE d.name = 'IT';
+```
+
+__Hash Join__ — строится хэш-таблица из меньшего набора, затем по ней проверяется больший набор:
+```sql
+-- Hash Join: типично для средних и больших таблиц без индексов по ключу соединения
+EXPLAIN ANALYZE
+SELECT e.name, d.name
+FROM employees e
+JOIN departments d ON e.department_id = d.id;
+```
+
+__Merge Join__ — оба набора предварительно сортируются, затем объединяются за один проход:
+```sql
+-- Merge Join: данные уже отсортированы (например, по индексу)
+EXPLAIN ANALYZE
+SELECT e.name, d.name
+FROM employees e
+JOIN departments d ON e.department_id = d.id
+ORDER BY e.department_id;
+```
+
+### Практический пример оптимизации медленного запроса
+
+Исходный медленный запрос:
+```sql
+EXPLAIN ANALYZE
+SELECT u.name, COUNT(o.id) AS order_count
+FROM users u
+LEFT JOIN orders o ON o.user_id = u.id
+WHERE o.created_at >= '2026-01-01'
+GROUP BY u.name
+ORDER BY order_count DESC;
+```
+
+План показывает `Seq Scan on orders` с `cost=0..50000` и `actual time=500ms`.
+
+Шаги оптимизации:
+
+1. Создать индекс:
+```sql
+CREATE INDEX idx_orders_user_date ON orders(user_id, created_at);
+```
+
+2. Проверить план заново — должен появиться `Index Scan` или `Bitmap Index Scan`.
+
+3. Если запрос фильтрует по диапазону дат, может помочь частичный индекс:
+```sql
+CREATE INDEX idx_orders_2026 ON orders(user_id)
+WHERE created_at >= '2026-01-01';
+```
+
+### Важное
++ `EXPLAIN ANALYZE` реально выполняет запрос — для `DELETE`/`UPDATE` используйте внутри транзакции с `ROLLBACK`.
++ `BUFFERS` показывает количество обращений к кэшу и диску — ключевой показатель для I/O-нагруженных запросов.
++ Если `estimated rows` сильно отличается от `actual rows` — статистика устарела, нужно выполнить `ANALYZE table_name`.
++ В PostgreSQL план можно получить в формате JSON для программного анализа: `EXPLAIN (FORMAT JSON) ...`.
++ Инструменты визуализации: [explain.dalibo.com](https://explain.dalibo.com), pgAdmin, DBeaver.
+
+### Частые ошибки
++ Запускают `EXPLAIN ANALYZE DELETE FROM ...` без транзакции — данные удаляются.
++ Путают `cost` с реальным временем — `cost` это условные единицы планировщика, а не миллисекунды.
++ Игнорируют `loops` — если операция выполняется 1000 раз, `actual time` нужно умножить на `loops`.
++ Оптимизируют запрос на тестовой базе с малым количеством данных — планы будут совершенно другими на production.
++ Не обновляют статистику после массовой загрузки данных (`ANALYZE`).
+
+### Как используется в 2026
++ PostgreSQL 17 улучшил вывод `EXPLAIN` — показывает больше деталей о параллельном выполнении и JIT-компиляции.
++ auto_explain — расширение для автоматического логирования планов медленных запросов в production.
++ Облачные сервисы (AWS RDS, Supabase, Neon) предоставляют встроенные инструменты визуализации планов.
++ AI-инструменты помогают анализировать планы и предлагать оптимизации (например, расширения для IDE).
+
+[к оглавлению](#sql)
+
+## Какие типы индексов существуют и когда какой использовать?
+__Индекс__ — структура данных, которая ускоряет поиск строк в таблице. В PostgreSQL существует несколько типов индексов, каждый из которых оптимален для определённых сценариев.
+
+### B-tree (сбалансированное дерево)
+Тип по умолчанию. Подходит для операторов сравнения: `=`, `<`, `>`, `<=`, `>=`, `BETWEEN`, `IN`, `IS NULL`, а также для сортировки (`ORDER BY`) и `LIKE 'prefix%'`.
+
+```sql
+-- Создаётся по умолчанию
+CREATE INDEX idx_emp_name ON employees(name);
+
+-- Эквивалентно
+CREATE INDEX idx_emp_name ON employees USING btree(name);
+```
+
+Когда использовать: в большинстве случаев. Это универсальный индекс.
+
+### Hash
+Оптимален только для операций точного равенства (`=`). Не поддерживает диапазонные запросы и сортировку.
+
+```sql
+CREATE INDEX idx_emp_email ON employees USING hash(email);
+```
+
+Когда использовать: только для точного поиска по равенству, когда не нужна сортировка. В PostgreSQL 10+ hash-индексы являются crash-safe, но в большинстве случаев B-tree справляется не хуже.
+
+### GIN (Generalized Inverted Index)
+Инвертированный индекс. Оптимален для значений, содержащих несколько элементов: массивы, JSONB, полнотекстовый поиск.
+
+```sql
+-- Полнотекстовый поиск
+CREATE INDEX idx_articles_fts ON articles USING gin(to_tsvector('russian', content));
+
+-- JSONB
+CREATE INDEX idx_data_jsonb ON events USING gin(metadata jsonb_path_ops);
+
+-- Массивы
+CREATE INDEX idx_tags ON posts USING gin(tags);
+```
+
+Примеры запросов:
+```sql
+-- Полнотекстовый поиск
+SELECT * FROM articles
+WHERE to_tsvector('russian', content) @@ to_tsquery('russian', 'PostgreSQL & индекс');
+
+-- Поиск по JSONB
+SELECT * FROM events
+WHERE metadata @> '{"type": "click"}';
+
+-- Поиск по массиву
+SELECT * FROM posts
+WHERE tags @> ARRAY['sql', 'postgresql'];
+```
+
+Когда использовать: полнотекстовый поиск, поиск по JSONB, работа с массивами, hstore.
+
+### GiST (Generalized Search Tree)
+Обобщённое дерево поиска. Подходит для геометрических данных, диапазонов, полнотекстового поиска (альтернатива GIN).
+
+```sql
+-- Геометрические данные (PostGIS)
+CREATE INDEX idx_locations ON places USING gist(coordinates);
+
+-- Диапазонные типы
+CREATE INDEX idx_periods ON reservations USING gist(period);
+
+-- Поиск ближайших соседей
+SELECT name, coordinates <-> point(55.75, 37.62) AS distance
+FROM places
+ORDER BY coordinates <-> point(55.75, 37.62)
+LIMIT 5;
+```
+
+Когда использовать: геоданные, диапазоны (`tsrange`, `int4range`), поиск пересечений, ближайших соседей (KNN).
+
+### BRIN (Block Range Index)
+Хранит сводную информацию о диапазонах значений в физических блоках таблицы. Очень компактный.
+
+```sql
+CREATE INDEX idx_events_date ON events USING brin(created_at);
+```
+
+Когда использовать: для очень больших таблиц, где данные физически упорядочены по индексируемому столбцу (например, таблицы логов с `created_at`, данные временных рядов).
+
+### Составные (композитные) индексы
+
+```sql
+CREATE INDEX idx_emp_dept_salary ON employees(department, salary);
+```
+
+__Порядок столбцов важен!__ Индекс `(department, salary)` эффективен для:
++ `WHERE department = 'IT'` — да
++ `WHERE department = 'IT' AND salary > 50000` — да
++ `WHERE salary > 50000` — нет (первый столбец не используется)
++ `ORDER BY department, salary` — да
++ `ORDER BY salary, department` — нет
+
+Правило: столбцы с условиями равенства (`=`) ставить первыми, затем столбцы с диапазонными условиями.
+
+### Частичные (partial) индексы
+
+Индексируют только строки, удовлетворяющие условию:
+```sql
+-- Индексируем только активных пользователей
+CREATE INDEX idx_active_users ON users(email) WHERE status = 'active';
+
+-- Индексируем только незавершённые заказы
+CREATE INDEX idx_pending_orders ON orders(created_at) WHERE status != 'completed';
+```
+
+Преимущество: индекс меньше, быстрее обновляется.
+
+### Покрывающие (covering) индексы — INCLUDE
+
+Добавляют столбцы в индекс без использования их для поиска, чтобы обеспечить Index Only Scan:
+```sql
+CREATE INDEX idx_emp_dept_covering ON employees(department) INCLUDE (name, salary);
+```
+
+Запрос использует Index Only Scan (без обращения к таблице):
+```sql
+SELECT name, salary FROM employees WHERE department = 'IT';
+```
+
+### Когда НЕ нужно создавать индекс
++ Таблица маленькая (менее нескольких тысяч строк) — Seq Scan будет быстрее.
++ Столбец имеет очень низкую селективность (например, `gender` с 2 значениями).
++ Таблица очень часто обновляется — каждый `INSERT`/`UPDATE`/`DELETE` обновляет и все индексы.
++ Столбец редко используется в `WHERE`, `JOIN`, `ORDER BY`.
++ Уже есть составной индекс, покрывающий данный столбец (в качестве первого столбца).
+
+### Важное
++ Индексы ускоряют чтение, но замедляют запись (`INSERT`, `UPDATE`, `DELETE`).
++ Используйте `EXPLAIN ANALYZE` для проверки того, что индекс действительно используется.
++ `pg_stat_user_indexes` показывает статистику использования индексов.
++ Неиспользуемые индексы тратят место и замедляют запись — регулярно проверяйте и удаляйте их.
++ `REINDEX` пересоздаёт индекс — полезно при его «раздувании» (bloat).
+
+### Частые ошибки
++ Создание индекса на каждый столбец — приводит к замедлению записи без пропорционального ускорения чтения.
++ Неправильный порядок столбцов в составном индексе — индекс не используется.
++ Использование функции в `WHERE` без функционального индекса: `WHERE LOWER(name) = 'ivan'` не использует индекс на `name`. Нужно: `CREATE INDEX idx_name_lower ON employees(LOWER(name));`.
++ Создание обычного B-tree индекса для полнотекстового поиска или JSONB — нужен GIN.
++ Забывают про `ANALYZE` после создания индекса на заполненной таблице.
+
+### Как используется в 2026
++ PostgreSQL 17 улучшил производительность BRIN-индексов для многоколоночных запросов.
++ Автоматические рекомендации по индексам — расширение `pg_qualstats` + `hypopg` позволяют тестировать гипотетические индексы без создания.
++ Облачные PostgreSQL-сервисы (Supabase, Neon, AlloyDB) предоставляют встроенные советчики по индексам.
++ BRIN активно используется в аналитических хранилищах для таблиц с миллиардами строк.
+
+[к оглавлению](#sql)
+
+## Как оптимизировать SQL-запросы?
+Оптимизация SQL-запросов — это процесс улучшения производительности запросов для снижения времени выполнения и потребления ресурсов. Ниже приведён практический чеклист с примерами на PostgreSQL.
+
+### 1. Используйте индексы с умом
+
+```sql
+-- Плохо: функция на индексированном столбце — индекс не используется
+SELECT * FROM users WHERE UPPER(email) = 'USER@EXAMPLE.COM';
+
+-- Хорошо: функциональный индекс
+CREATE INDEX idx_users_email_upper ON users(UPPER(email));
+SELECT * FROM users WHERE UPPER(email) = 'USER@EXAMPLE.COM';
+
+-- Хорошо: хранить данные в нужном формате
+SELECT * FROM users WHERE email = 'user@example.com';
+```
+
+### 2. Избегайте SELECT *
+
+```sql
+-- Плохо: читаются все столбцы, даже ненужные
+SELECT * FROM orders WHERE status = 'pending';
+
+-- Хорошо: только нужные столбцы (может использовать Index Only Scan)
+SELECT id, amount, created_at FROM orders WHERE status = 'pending';
+```
+
+### 3. Избегайте проблемы N+1 на уровне приложения
+
+```java
+// Плохо (N+1): один запрос на список + N запросов на детали
+List<User> users = query("SELECT * FROM users");
+for (User u : users) {
+    List<Order> orders = query("SELECT * FROM orders WHERE user_id = ?", u.id);
+}
+
+// Хорошо: один запрос с JOIN
+query("SELECT u.*, o.* FROM users u LEFT JOIN orders o ON o.user_id = u.id");
+```
+
+### 4. Используйте LIMIT для пагинации
+
+```sql
+-- Стандартная пагинация (медленная на глубоких страницах)
+SELECT * FROM products ORDER BY id LIMIT 20 OFFSET 10000;
+
+-- Пагинация по курсору (keyset pagination) — быстрая
+SELECT * FROM products WHERE id > 10020 ORDER BY id LIMIT 20;
+```
+
+### 5. Предпочитайте EXISTS вместо IN для подзапросов
+
+```sql
+-- Медленнее: IN выполняет полный подзапрос
+SELECT * FROM users
+WHERE id IN (SELECT user_id FROM orders WHERE amount > 1000);
+
+-- Быстрее: EXISTS останавливается при первом совпадении
+SELECT * FROM users u
+WHERE EXISTS (
+    SELECT 1 FROM orders o WHERE o.user_id = u.id AND o.amount > 1000
+);
+```
+
+### 6. Не применяйте функции к индексированным столбцам в WHERE
+
+```sql
+-- Плохо: индекс на created_at не используется
+SELECT * FROM orders WHERE EXTRACT(YEAR FROM created_at) = 2026;
+
+-- Хорошо: диапазонный запрос, индекс используется
+SELECT * FROM orders
+WHERE created_at >= '2026-01-01' AND created_at < '2027-01-01';
+```
+
+### 7. Используйте подключение через пул соединений
+
+Создание TCP-соединения к PostgreSQL — дорогая операция (~100-200ms). Используйте пул соединений:
++ __PgBouncer__ — внешний пулер (transaction pooling mode).
++ __HikariCP__ — пул в Java-приложениях.
++ __Встроенный пул в фреймворках__ — Spring Boot по умолчанию использует HikariCP.
+
+```properties
+# application.properties (Spring Boot)
+spring.datasource.hikari.maximum-pool-size=20
+spring.datasource.hikari.minimum-idle=5
+```
+
+### 8. Используйте EXPLAIN ANALYZE
+
+Всегда проверяйте план выполнения:
+```sql
+EXPLAIN (ANALYZE, BUFFERS)
+SELECT u.name, COUNT(o.id)
+FROM users u
+JOIN orders o ON o.user_id = u.id
+WHERE o.created_at >= '2026-01-01'
+GROUP BY u.name;
+```
+
+Обращайте внимание на:
++ `Seq Scan` на больших таблицах — возможно, нужен индекс.
++ Сильное расхождение `estimated rows` и `actual rows` — нужен `ANALYZE`.
++ Большое число `loops` в Nested Loop — возможно, нужен Hash Join.
+
+### 9. Денормализация как компромисс
+
+```sql
+-- Нормализованный вариант: JOIN каждый раз
+SELECT p.title, c.name AS category
+FROM products p
+JOIN categories c ON p.category_id = c.id;
+
+-- Денормализованный: category_name хранится прямо в products
+SELECT title, category_name FROM products;
+```
+
+Денормализация ускоряет чтение, но усложняет обновление и может привести к аномалиям данных. Используйте, когда чтение значительно преобладает над записью.
+
+### 10. Материализованные представления (Materialized Views)
+
+```sql
+-- Создание
+CREATE MATERIALIZED VIEW mv_daily_stats AS
+SELECT
+    DATE(created_at) AS day,
+    COUNT(*) AS order_count,
+    SUM(amount) AS total_amount
+FROM orders
+GROUP BY DATE(created_at);
+
+-- Создание индекса на материализованном представлении
+CREATE INDEX idx_mv_daily_stats_day ON mv_daily_stats(day);
+
+-- Использование (мгновенный ответ)
+SELECT * FROM mv_daily_stats WHERE day >= '2026-01-01';
+
+-- Обновление данных
+REFRESH MATERIALIZED VIEW CONCURRENTLY mv_daily_stats;
+```
+
+`CONCURRENTLY` позволяет обновлять представление без блокировки чтения (требуется уникальный индекс).
+
+### Сводный чеклист оптимизации
+
+| Приём | Когда применять |
+|---|---|
+| Создать индекс | Медленный `WHERE`, `JOIN`, `ORDER BY` |
+| Убрать `SELECT *` | Всегда |
+| Устранить N+1 | Циклические запросы в коде |
+| Keyset pagination | Глубокая пагинация (`OFFSET` > 1000) |
+| `EXISTS` вместо `IN` | Подзапрос возвращает много строк |
+| Избегать функций в `WHERE` | Функция на индексированном столбце |
+| Пул соединений | Всегда |
+| `EXPLAIN ANALYZE` | Любой медленный запрос |
+| Денормализация | Чтение >> запись |
+| Materialized View | Тяжёлые агрегатные запросы |
+
+### Важное
++ Оптимизация должна быть основана на измерениях (`EXPLAIN ANALYZE`), а не на догадках.
++ Не оптимизируйте преждевременно — сначала убедитесь, что запрос действительно является узким местом.
++ Регулярно запускайте `ANALYZE` (или настройте `autovacuum`) для актуальной статистики.
++ Мониторинг: `pg_stat_statements` — расширение для отслеживания самых медленных и частых запросов.
++ При высокой нагрузке рассмотрите read replicas для разделения чтения и записи.
+
+### Частые ошибки
++ Создают индексы «на всякий случай» без проверки их использования.
++ Используют `OFFSET` для пагинации на глубоких страницах — крайне медленно.
++ Кешируют в приложении то, что лучше кешировать на уровне СУБД (materialized views).
++ Не обновляют статистику после массовой загрузки данных.
++ Оптимизируют запрос на тестовых данных (100 строк), а на production (10 млн строк) план совершенно другой.
+
+### Как используется в 2026
++ `pg_stat_statements` является стандартом де-факто для мониторинга запросов в production PostgreSQL.
++ Автоматическая оптимизация: облачные провайдеры (AWS RDS, Google AlloyDB, Supabase) предоставляют автоматические рекомендации по индексам и оптимизации.
++ PostgreSQL 17 улучшил параллельное выполнение запросов — больше операций могут выполняться параллельно.
++ Инструменты observability (Datadog, Grafana + pg_stat_statements) позволяют выявлять медленные запросы в реальном времени.
++ Keyset pagination стал стандартным подходом в REST API вместо OFFSET-based пагинации.
 
 [к оглавлению](#sql)
 

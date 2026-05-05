@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls D:/projects/DEV/interview-preparing/*.md)"
+      "Bash(ls D:/projects/DEV/interview-preparing/*.md)",
+      "Bash(sort -t: -k2 -rn)",
+      "Bash(for file:*)",
+      "Bash(do echo:*)",
+      "Read(//d/projects/DEV/interview-preparing/**)",
+      "Bash(done)"
     ]
   }
 }

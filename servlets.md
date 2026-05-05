@@ -1,6 +1,21 @@
 [Вопросы для собеседования](README.md)
 
 # Servlets, JSP, JSTL
+
+> **Актуальность в 2026.** Servlet API — фундамент, на котором построен Spring MVC (`DispatcherServlet`, `Filter`, `HttpServletRequest/Response`). Понимание этих концепций важно для глубокого понимания Spring. Однако **прямое написание сервлетов и JSP в новых проектах не практикуется** — Spring MVC с аннотациями полностью заменяет ручную работу с Servlet API, а JSP/JSTL вытеснены Thymeleaf и frontend-фреймворками (React, Vue).
+>
+> **Что актуально для Middle+:**
+> - Servlet lifecycle, `HttpServletRequest`/`HttpServletResponse` — основа Spring MVC
+> - Фильтры (`Filter`, `FilterChain`) — используются напрямую в Spring Security (`SecurityFilterChain`)
+> - `ServletContext`, `HttpSession`, cookies — концепции, используемые через Spring API
+> - Servlet Container (Tomcat) — встроен в Spring Boot
+>
+> **Что является legacy:**
+> - JSP, JSTL, EL, скриплеты, пользовательские JSP-теги — на собеседованиях почти не спрашивают
+> - `web.xml` (дескриптор развертывания) — заменён Java-конфигурацией и auto-configuration
+> - `SingleThreadModel`, `GenericServlet` — устаревшие API
+> - `RequestDispatcher.forward()`/`sendRedirect()` — в Spring используются `return "redirect:..."` и `ModelAndView`
+
 + [Что такое _«сервлет»_?](#Что-такое-сервлет)
 + [В чем заключаются преимущества технологии сервлетов над CGI (Common Gateway Interface)?](#В-чем-заключаются-преимущества-технологии-сервлетов-над-cgi-common-gateway-interface)
 + [Какова структура веб-проекта?](#Какова-структура-веб-проекта)

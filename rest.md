@@ -29,6 +29,12 @@
 + [Как обеспечить безопасность REST API?](#Как-обеспечить-безопасность-REST-API)
 + [Что такое идемпотентный ключ (Idempotency Key)?](#Что-такое-идемпотентный-ключ-Idempotency-Key)
 + [Как проектировать REST API для связанных ресурсов?](#Как-проектировать-REST-API-для-связанных-ресурсов)
++ [Что такое подход API Design First?](#Что-такое-подход-API-Design-First)
++ [Чем отличаются REST, GraphQL и gRPC? Когда что использовать?](#Чем-отличаются-REST-GraphQL-и-gRPC-Когда-что-использовать)
++ [Как обеспечить обратную совместимость REST API?](#Как-обеспечить-обратную-совместимость-REST-API)
++ [Что такое асинхронные API и как их проектировать?](#Что-такое-асинхронные-API-и-как-их-проектировать)
++ [Что такое BFF (Backend for Frontend) и API Gateway?](#Что-такое-BFF-Backend-for-Frontend-и-API-Gateway)
++ [Как проектировать API для микросервисной архитектуры?](#Как-проектировать-API-для-микросервисной-архитектуры)
 
 ## Что такое REST?
 __REST (Representational State Transfer)__ — это архитектурный стиль взаимодействия компонентов распределённой системы, предложенный Роем Филдингом (Roy Fielding) в 2000 году в его докторской диссертации.
@@ -1996,5 +2002,1768 @@ public class UserOrderController {
 ```
 
 При проектировании стоит руководствоваться принципом: если ресурс имеет смысл только в контексте родительского — используйте вложенные URI. Если ресурс самостоятелен — выделяйте его на верхний уровень.
+
+[к оглавлению](#REST-API)
+
+## Что такое подход API Design First?
+**API Design First (API-first)** — это подход к разработке, при котором спецификация API (контракт) создаётся **до** написания кода. Спецификация описывается в формате OpenAPI (YAML/JSON), после чего из неё автоматически генерируются серверные интерфейсы, клиентские SDK, документация и тесты.
+
+### API-first vs Code-first
+
+| Характеристика | API-first (Design First) | Code-first |
+|---------------|--------------------------|------------|
+| Последовательность | Спецификация → Код | Код → Спецификация (генерируется) |
+| Источник истины | OpenAPI-спецификация | Исходный код (аннотации) |
+| Параллельная разработка | Да (frontend и backend одновременно) | Нет (frontend ждёт backend) |
+| Согласованность | Контракт фиксирован заранее | Контракт может меняться неконтролируемо |
+| Инструменты | OpenAPI Generator, Swagger Codegen | springdoc-openapi, Swagger annotations |
+
+### Преимущества API-first:
++ **Параллельная разработка** — frontend и backend могут работать одновременно, используя контракт как общую точку отсчёта.
++ **Контракт как документация** — спецификация всегда актуальна, так как код генерируется из неё.
++ **Автоматизированное тестирование** — тесты генерируются на основе спецификации и проверяют соответствие реализации контракту.
++ **Генерация клиентских SDK** — для любого языка (Java, TypeScript, Python, Kotlin и др.).
++ **Раннее обнаружение ошибок** — несовместимые изменения обнаруживаются на этапе проектирования, а не в рантайме.
+
+### Пример OpenAPI-спецификации:
+```yaml
+openapi: 3.0.3
+info:
+  title: User Service API
+  version: 1.0.0
+  description: API для управления пользователями
+
+servers:
+  - url: https://api.example.com/v1
+
+paths:
+  /users:
+    get:
+      operationId: getUsers
+      summary: Получить список пользователей
+      tags:
+        - Users
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [ACTIVE, INACTIVE, BLOCKED]
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 20
+      responses:
+        '200':
+          description: Список пользователей
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserPage'
+    post:
+      operationId: createUser
+      summary: Создать пользователя
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserRequest'
+      responses:
+        '201':
+          description: Пользователь создан
+          headers:
+            Location:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '400':
+          description: Ошибка валидации
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemDetail'
+
+  /users/{id}:
+    get:
+      operationId: getUserById
+      summary: Получить пользователя по ID
+      tags:
+        - Users
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Пользователь найден
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '404':
+          description: Пользователь не найден
+
+components:
+  schemas:
+    CreateUserRequest:
+      type: object
+      required:
+        - name
+        - email
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: "Иван Петров"
+        email:
+          type: string
+          format: email
+          example: "ivan@example.com"
+        age:
+          type: integer
+          minimum: 18
+          example: 30
+
+    UserDto:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        email:
+          type: string
+        age:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+
+    UserPage:
+      type: object
+      properties:
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserDto'
+        totalElements:
+          type: integer
+          format: int64
+        totalPages:
+          type: integer
+        page:
+          type: integer
+        size:
+          type: integer
+
+    ProblemDetail:
+      type: object
+      properties:
+        type:
+          type: string
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - BearerAuth: []
+```
+
+### Настройка генерации кода в Spring Boot (Maven):
+```xml
+<plugin>
+    <groupId>org.openapitools</groupId>
+    <artifactId>openapi-generator-maven-plugin</artifactId>
+    <version>7.5.0</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>generate</goal>
+            </goals>
+            <configuration>
+                <inputSpec>${project.basedir}/src/main/resources/openapi/api.yaml</inputSpec>
+                <generatorName>spring</generatorName>
+                <apiPackage>com.example.api</apiPackage>
+                <modelPackage>com.example.model</modelPackage>
+                <configOptions>
+                    <interfaceOnly>true</interfaceOnly>
+                    <useSpringBoot3>true</useSpringBoot3>
+                    <useTags>true</useTags>
+                    <openApiNullable>false</openApiNullable>
+                    <skipDefaultInterface>false</skipDefaultInterface>
+                </configOptions>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+```
+
+### Сгенерированный интерфейс (результат генерации):
+```java
+// Автоматически сгенерированный интерфейс из OpenAPI-спецификации
+@Tag(name = "Users", description = "Управление пользователями")
+@Generated("org.openapitools.codegen")
+public interface UsersApi {
+
+    @Operation(summary = "Получить список пользователей")
+    @GetMapping(value = "/users", produces = "application/json")
+    ResponseEntity<UserPage> getUsers(
+        @RequestParam(required = false) String status,
+        @RequestParam(defaultValue = "0") Integer page,
+        @RequestParam(defaultValue = "20") Integer size
+    );
+
+    @Operation(summary = "Создать пользователя")
+    @PostMapping(value = "/users", consumes = "application/json", produces = "application/json")
+    ResponseEntity<UserDto> createUser(@Valid @RequestBody CreateUserRequest request);
+
+    @Operation(summary = "Получить пользователя по ID")
+    @GetMapping(value = "/users/{id}", produces = "application/json")
+    ResponseEntity<UserDto> getUserById(@PathVariable Long id);
+}
+```
+
+### Реализация сгенерированного интерфейса:
+```java
+@RestController
+@RequiredArgsConstructor
+public class UsersApiController implements UsersApi {
+
+    private final UserService userService;
+
+    @Override
+    public ResponseEntity<UserPage> getUsers(String status, Integer page, Integer size) {
+        UserPage users = userService.findAll(status, page, size);
+        return ResponseEntity.ok(users);
+    }
+
+    @Override
+    public ResponseEntity<UserDto> createUser(CreateUserRequest request) {
+        UserDto created = userService.create(request);
+        URI location = URI.create("/users/" + created.getId());
+        return ResponseEntity.created(location).body(created);
+    }
+
+    @Override
+    public ResponseEntity<UserDto> getUserById(Long id) {
+        UserDto user = userService.findById(id);
+        return ResponseEntity.ok(user);
+    }
+}
+```
+
+### Генерация клиентского SDK:
+```bash
+# Генерация TypeScript-клиента для frontend
+openapi-generator-cli generate \
+  -i src/main/resources/openapi/api.yaml \
+  -g typescript-axios \
+  -o generated/ts-client
+
+# Генерация Java-клиента для другого сервиса
+openapi-generator-cli generate \
+  -i src/main/resources/openapi/api.yaml \
+  -g java \
+  --library webclient \
+  -o generated/java-client
+```
+
+### Валидация реализации против спецификации (тесты):
+```java
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+class ApiContractTest {
+
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+    @Test
+    void shouldReturnUserById() {
+        ResponseEntity<UserDto> response = restTemplate.getForEntity(
+            "/users/1", UserDto.class);
+
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getBody()).isNotNull();
+        assertThat(response.getBody().getName()).isNotBlank();
+    }
+
+    @Test
+    void shouldReturn400ForInvalidRequest() {
+        CreateUserRequest invalid = new CreateUserRequest("", "not-email", -1);
+
+        ResponseEntity<ProblemDetail> response = restTemplate.postForEntity(
+            "/users", invalid, ProblemDetail.class);
+
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+    }
+}
+```
+
+### Важное
++ API-first означает, что спецификация — единственный источник истины (single source of truth). Код **должен** соответствовать ей, а не наоборот.
++ `interfaceOnly=true` в конфигурации генератора создаёт только интерфейсы — реализацию пишете вы сами.
++ Спецификацию удобно хранить в Git рядом с кодом (`src/main/resources/openapi/api.yaml`).
++ OpenAPI Generator поддерживает более 50 целевых языков и фреймворков.
+
+### Частые ошибки
++ Генерация полного сервера (с реализацией) вместо `interfaceOnly` — приводит к нечитаемому коду и сложности поддержки.
++ Редактирование сгенерированного кода вручную — изменения будут перезаписаны при следующей генерации.
++ Расхождение спецификации и реализации — нужно настроить CI/CD проверку (contract testing).
++ Слишком детализированная спецификация на раннем этапе — начинайте с основных endpoint-ов, детализируйте итеративно.
++ Отсутствие версионирования спецификации — всегда указывайте `version` и ведите историю изменений.
+
+### Как используется в 2026
++ API-first стал стандартом де-факто в крупных компаниях и микросервисных архитектурах.
++ **OpenAPI Generator 7.x** поддерживает Spring Boot 3.x, Jakarta EE, virtual threads.
++ **Spectral** и **Redocly CLI** используются для линтинга OpenAPI-спецификаций в CI/CD.
++ **Backstage** (платформа для developer portal) интегрируется с OpenAPI для автоматического каталога сервисов.
++ Тренд на **AI-assisted API design** — LLM-модели помогают генерировать спецификации из описания на естественном языке.
++ **AsyncAPI** — аналог OpenAPI для асинхронных API (Kafka, RabbitMQ, WebSocket).
+
+[к оглавлению](#REST-API)
+
+## Чем отличаются REST, GraphQL и gRPC? Когда что использовать?
+При проектировании API важно выбрать правильный протокол взаимодействия. Три наиболее популярных подхода — **REST**, **GraphQL** и **gRPC** — решают разные задачи и имеют свои области применения.
+
+### Сравнительная таблица
+
+| Характеристика | REST | GraphQL | gRPC |
+|---------------|------|---------|------|
+| Протокол | HTTP/1.1, HTTP/2 | HTTP/1.1, HTTP/2 | HTTP/2 |
+| Формат данных | JSON, XML | JSON | Protocol Buffers (бинарный) |
+| Схема/контракт | OpenAPI (опционально) | GraphQL Schema (обязательно) | Protobuf (.proto, обязательно) |
+| Стиль | Ресурсо-ориентированный | Запросо-ориентированный | RPC (вызов процедур) |
+| Количество endpoint-ов | Множество (по ресурсу) | Один (`/graphql`) | Множество (по сервису/методу) |
+| Over-fetching | Да (фиксированная структура) | Нет (клиент выбирает поля) | Нет (строгий контракт) |
+| Under-fetching | Да (нужны доп. запросы) | Нет (один запрос) | Да (нужны доп. вызовы) |
+| Streaming | Нет (SSE, WebSocket отдельно) | Subscriptions (WebSocket) | Да (нативная поддержка) |
+| Кэширование | Встроенное (HTTP-кэш) | Сложное (один endpoint) | Нет нативного |
+| Производительность | Средняя | Средняя | Высокая |
+| Типизация | Слабая (зависит от реализации) | Строгая (GraphQL Schema) | Строгая (Protobuf) |
+| Tooling | Swagger UI, Postman | GraphiQL, Apollo Studio | gRPC UI, Evans |
+
+### REST — ресурсо-ориентированный подход
+Лучше всего подходит для простых CRUD-операций с чётко определёнными ресурсами.
+
+```java
+// Spring REST Controller
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserDto> getUser(@PathVariable Long id) {
+        return ResponseEntity.ok(userService.findById(id));
+    }
+
+    @PostMapping
+    public ResponseEntity<UserDto> createUser(@Valid @RequestBody CreateUserRequest request) {
+        UserDto user = userService.create(request);
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }
+}
+```
+
+```bash
+# Пример вызова
+curl -X GET https://api.example.com/api/users/42 \
+  -H "Accept: application/json"
+```
+
+### GraphQL — язык запросов для API
+Клиент сам определяет, какие данные ему нужны. Решает проблемы over-fetching и under-fetching.
+
+```graphql
+# Схема GraphQL
+type Query {
+    user(id: ID!): User
+    users(status: String, page: Int, size: Int): UserPage!
+}
+
+type Mutation {
+    createUser(input: CreateUserInput!): User!
+    updateUser(id: ID!, input: UpdateUserInput!): User!
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    age: Int
+    orders: [Order!]!
+}
+
+type Order {
+    id: ID!
+    status: String!
+    total: Float!
+}
+
+input CreateUserInput {
+    name: String!
+    email: String!
+    age: Int
+}
+```
+
+```java
+// Spring GraphQL Controller
+@Controller
+public class UserGraphQLController {
+
+    @QueryMapping
+    public User user(@Argument Long id) {
+        return userService.findById(id);
+    }
+
+    @QueryMapping
+    public UserPage users(@Argument String status,
+                          @Argument Integer page,
+                          @Argument Integer size) {
+        return userService.findAll(status, page, size);
+    }
+
+    @MutationMapping
+    public User createUser(@Argument CreateUserInput input) {
+        return userService.create(input);
+    }
+
+    // Resolver для вложенного поля — загружается только если клиент запросил
+    @SchemaMapping(typeName = "User", field = "orders")
+    public List<Order> orders(User user) {
+        return orderService.findByUserId(user.getId());
+    }
+}
+```
+
+```bash
+# Клиент запрашивает только нужные поля
+curl -X POST https://api.example.com/graphql \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "query { user(id: 42) { name email orders { id status } } }"
+  }'
+```
+
+Ответ содержит **только запрошенные поля**:
+```json
+{
+  "data": {
+    "user": {
+      "name": "Иван Петров",
+      "email": "ivan@example.com",
+      "orders": [
+        {"id": "1", "status": "DELIVERED"},
+        {"id": "2", "status": "PENDING"}
+      ]
+    }
+  }
+}
+```
+
+### gRPC — высокопроизводительный RPC
+Использует Protocol Buffers для сериализации и HTTP/2 для транспорта. Идеален для межсервисного взаимодействия.
+
+```protobuf
+// user_service.proto
+syntax = "proto3";
+
+package com.example.user;
+
+option java_multiple_files = true;
+option java_package = "com.example.grpc.user";
+
+service UserService {
+    rpc GetUser (GetUserRequest) returns (UserResponse);
+    rpc CreateUser (CreateUserRequest) returns (UserResponse);
+    rpc ListUsers (ListUsersRequest) returns (ListUsersResponse);
+    // Server streaming — сервер отправляет поток данных
+    rpc WatchUserUpdates (WatchRequest) returns (stream UserEvent);
+}
+
+message GetUserRequest {
+    int64 id = 1;
+}
+
+message CreateUserRequest {
+    string name = 1;
+    string email = 2;
+    int32 age = 3;
+}
+
+message UserResponse {
+    int64 id = 1;
+    string name = 2;
+    string email = 3;
+    int32 age = 4;
+}
+
+message ListUsersRequest {
+    string status = 1;
+    int32 page = 2;
+    int32 size = 3;
+}
+
+message ListUsersResponse {
+    repeated UserResponse users = 1;
+    int64 total_elements = 2;
+}
+
+message WatchRequest {
+    int64 user_id = 1;
+}
+
+message UserEvent {
+    string event_type = 1;
+    UserResponse user = 2;
+}
+```
+
+```java
+// Реализация gRPC-сервиса на Spring Boot (grpc-spring-boot-starter)
+@GrpcService
+public class UserGrpcService extends UserServiceGrpc.UserServiceImplBase {
+
+    private final UserService userService;
+
+    @Override
+    public void getUser(GetUserRequest request,
+                        StreamObserver<UserResponse> responseObserver) {
+        User user = userService.findById(request.getId());
+        UserResponse response = UserResponse.newBuilder()
+            .setId(user.getId())
+            .setName(user.getName())
+            .setEmail(user.getEmail())
+            .setAge(user.getAge())
+            .build();
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void watchUserUpdates(WatchRequest request,
+                                 StreamObserver<UserEvent> responseObserver) {
+        // Server streaming — отправляем обновления по мере их появления
+        userService.subscribe(request.getUserId(), event -> {
+            responseObserver.onNext(UserEvent.newBuilder()
+                .setEventType(event.getType())
+                .setUser(toProto(event.getUser()))
+                .build());
+        });
+    }
+}
+```
+
+### Когда что использовать
+
+**REST подходит для:**
++ Публичных API (простота, стандартизированность, HTTP-кэширование).
++ CRUD-операций над ресурсами.
++ Когда нужна максимальная совместимость (любой HTTP-клиент).
++ Браузерных приложений и мобильных клиентов.
+
+**GraphQL подходит для:**
++ Сложных UI с разнородными данными (дашборды, социальные сети).
++ Множества клиентов с разными потребностями (mobile vs web vs admin).
++ Избежания over-fetching / under-fetching.
++ Быстро меняющихся требований к данным.
+
+**gRPC подходит для:**
++ Межсервисного взаимодействия в микросервисах.
++ Высоконагруженных систем (до 10x быстрее REST/JSON).
++ Real-time коммуникации (streaming).
++ Полиглотных архитектур (одна .proto → клиенты на любом языке).
+
+### Комбинированный подход (наиболее распространённый):
+```
+                    ┌──────────────────┐
+                    │   API Gateway    │
+                    │  (REST / GraphQL)│
+                    └────────┬─────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+        ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+        │  Service A │ │  Service B │ │  Service C │
+        └─────┬─────┘ └─────┬─────┘ └─────┬─────┘
+              │              │              │
+              └──────────────┼──────────────┘
+                        gRPC (внутри)
+```
+
+### Важное
++ REST, GraphQL и gRPC — не конкуренты, а инструменты для разных задач. В реальных системах они часто используются вместе.
++ REST остаётся лучшим выбором для публичных API благодаря простоте и повсеместной поддержке.
++ GraphQL не заменяет REST — он решает конкретную проблему гибких запросов со стороны клиента.
++ gRPC требует HTTP/2 и не работает напрямую из браузера (нужен grpc-web прокси).
+
+### Частые ошибки
++ Выбор GraphQL для простого CRUD — избыточная сложность, когда REST справится лучше.
++ Использование REST для межсервисного взаимодействия с высокой нагрузкой — gRPC значительно эффективнее.
++ N+1 проблема в GraphQL — без DataLoader вложенные поля вызывают лавину запросов к БД.
++ Игнорирование HTTP-кэширования REST при переходе на GraphQL — нужно реализовывать кэширование на уровне приложения.
++ Использование gRPC для публичного API без прокси — браузеры не поддерживают gRPC напрямую.
+
+### Как используется в 2026
++ **GraphQL Federation v2** — стандарт для объединения нескольких GraphQL-сервисов в единый граф (Apollo Federation, Netflix DGS).
++ **gRPC + Kotlin coroutines** — нативная поддержка корутин для асинхронных gRPC-вызовов в Spring Boot.
++ **Connect RPC** — новый протокол, совместимый с gRPC, но работающий через обычный HTTP/JSON (удобнее для отладки).
++ Большинство компаний используют **гибридный подход**: REST/GraphQL для внешних клиентов, gRPC для внутренней коммуникации.
++ **Spring Boot 3.x** имеет встроенную поддержку GraphQL (`spring-boot-starter-graphql`) и gRPC через `grpc-spring-boot-starter`.
+
+[к оглавлению](#REST-API)
+
+## Как обеспечить обратную совместимость REST API?
+**Обратная совместимость (backward compatibility)** — это свойство API, при котором обновлённая версия продолжает корректно работать с существующими клиентами без необходимости их изменения.
+
+### Неломающие изменения (non-breaking changes)
+Эти изменения можно вносить безопасно, не нарушая работу клиентов:
+
++ **Добавление нового поля в ответ** — клиенты, не знающие о поле, просто его игнорируют (tolerant reader).
++ **Добавление нового endpoint-а** — не затрагивает существующие.
++ **Добавление нового опционального параметра запроса** — старые запросы работают без него.
++ **Добавление нового значения enum (в ответе)** — клиент должен быть готов к неизвестным значениям.
++ **Расширение допустимого диапазона значений** — например, увеличение максимальной длины строки.
+
+```java
+// Было: UserDto v1
+public record UserDto(Long id, String name, String email) {}
+
+// Стало: UserDto v1 — добавили поле (non-breaking)
+public record UserDto(Long id, String name, String email, String phone) {}
+// Старые клиенты игнорируют поле "phone"
+```
+
+### Ломающие изменения (breaking changes)
+Эти изменения **нарушают** работу существующих клиентов:
+
++ **Удаление поля из ответа** — клиент может зависеть от этого поля.
++ **Переименование поля** — `userName` → `name` — клиент не найдёт старое поле.
++ **Изменение типа поля** — `"age": 30` → `"age": "30"`.
++ **Удаление endpoint-а** — клиент получит 404.
++ **Изменение семантики endpoint-а** — `POST /orders` теперь возвращает другую структуру.
++ **Добавление обязательного параметра** — старые запросы без него сломаются.
++ **Изменение кода ответа** — `200 OK` → `201 Created` может сломать клиентскую логику.
+
+### Стратегии обеспечения обратной совместимости
+
+**1. Версионирование API (URL / Header)**
+```
+GET /api/v1/users      — старая версия
+GET /api/v2/users      — новая версия
+```
+
+Обе версии работают параллельно, давая клиентам время на миграцию.
+
+**2. Заголовки Deprecation и Sunset (RFC 8594, RFC 8977)**
+```java
+@GetMapping("/api/v1/users")
+public ResponseEntity<List<UserV1Dto>> getUsersV1() {
+    List<UserV1Dto> users = userService.findAllV1();
+    return ResponseEntity.ok()
+        .header("Deprecation", "true")
+        .header("Sunset", "Sat, 01 Nov 2026 00:00:00 GMT")
+        .header("Link", "</api/v2/users>; rel=\"successor-version\"")
+        .body(users);
+}
+```
+
+```bash
+# Ответ сервера при вызове устаревшего endpoint-а
+HTTP/1.1 200 OK
+Deprecation: true
+Sunset: Sat, 01 Nov 2026 00:00:00 GMT
+Link: </api/v2/users>; rel="successor-version"
+```
+
+**3. Tolerant Reader Pattern (Закон Постела)**
+> «Будь консервативен в том, что отправляешь, и либерален в том, что принимаешь.»
+
+Клиенты должны:
++ Игнорировать неизвестные поля в ответе.
++ Не зависеть от порядка полей в JSON.
++ Обрабатывать отсутствие необязательных полей.
+
+```java
+// Настройка Jackson для игнорирования неизвестных полей (клиентская сторона)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record UserDto(Long id, String name, String email) {}
+
+// Или глобально
+ObjectMapper mapper = new ObjectMapper();
+mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+```
+
+**4. Паттерн эволюции (API Evolution)**
+Вместо версионирования — постепенное развитие API:
+
+```java
+// Шаг 1: Добавляем новое поле, старое оставляем
+public record UserDto(
+    Long id,
+    String name,
+    String email,
+    @Deprecated String userName,    // старое поле (deprecated)
+    String displayName              // новое поле
+) {
+    // Сериализация: оба поля содержат одно значение
+    @JsonProperty("userName")
+    public String getUserName() {
+        return displayName != null ? displayName : name;
+    }
+}
+
+// Шаг 2: Через несколько релизов удаляем старое поле
+// (после того как все клиенты мигрировали)
+```
+
+**5. Feature Flags для управления поведением API**
+```java
+@GetMapping("/api/users/{id}")
+public ResponseEntity<Object> getUser(@PathVariable Long id,
+                                       @RequestHeader(value = "X-API-Features",
+                                                      required = false) String features) {
+    User user = userService.findById(id);
+
+    if (features != null && features.contains("extended-profile")) {
+        return ResponseEntity.ok(userMapper.toExtendedDto(user));
+    }
+    return ResponseEntity.ok(userMapper.toDto(user));
+}
+```
+
+### Реализация поддержки нескольких версий в Spring:
+```java
+// Подход с отдельными контроллерами
+@RestController
+@RequestMapping("/api/v1/users")
+public class UserControllerV1 {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserV1Dto> getUser(@PathVariable Long id) {
+        User user = userService.findById(id);
+        // V1: name — одна строка
+        return ResponseEntity.ok(new UserV1Dto(user.getId(), user.getFullName(), user.getEmail()));
+    }
+}
+
+@RestController
+@RequestMapping("/api/v2/users")
+public class UserControllerV2 {
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserV2Dto> getUser(@PathVariable Long id) {
+        User user = userService.findById(id);
+        // V2: name разделено на firstName и lastName
+        return ResponseEntity.ok(new UserV2Dto(
+            user.getId(), user.getFirstName(), user.getLastName(), user.getEmail()));
+    }
+}
+```
+
+### Автоматическое обнаружение несовместимых изменений (CI/CD):
+```bash
+# Использование openapi-diff для проверки совместимости
+openapi-diff --fail-on-incompatible \
+  api-spec-v1.yaml \
+  api-spec-v2.yaml
+
+# Результат:
+# - What's New: GET /users/{id}/preferences
+# - What's Deleted: (none)
+# - What's Changed:
+#   - GET /users: added optional query parameter "status"
+# Result: compatible ✅
+```
+
+### Важное
++ Обратная совместимость — это не только техническая, но и организационная задача. Нужна чёткая политика версионирования.
++ Закон Постела (tolerant reader) — ключевой принцип для построения устойчивых интеграций.
++ Заголовки `Deprecation` и `Sunset` — стандартный способ уведомить клиентов о планируемых изменениях.
++ Поддержка старых версий API — это затраты. Планируйте lifecycle заранее (обычно N и N-1 версии).
+
+### Частые ошибки
++ Удаление полей без предварительного deprecated-периода — ломает клиентов внезапно.
++ Изменение типа поля (число → строка) без версионирования — клиенты падают при десериализации.
++ Добавление обязательного параметра в существующий endpoint — все старые запросы перестанут работать.
++ Отсутствие автоматической проверки совместимости в CI/CD — несовместимые изменения попадают в продакшн.
++ Бесконечная поддержка всех версий — вовремя удаляйте старые версии с достаточным периодом предупреждения.
+
+### Как используется в 2026
++ **openapi-diff** и **Optic** интегрируются в CI/CD для автоматической проверки совместимости при каждом pull request.
++ **API lifecycle management** — платформы (Backstage, Kong) управляют жизненным циклом API (draft → published → deprecated → retired).
++ Стандарт **RFC 8594 (Sunset Header)** и **RFC 8977 (Deprecation Header)** широко поддерживаются клиентскими библиотеками.
++ Тренд на **API Evolution** вместо строгого версионирования — добавление полей, deprecated-аннотации, tolerant reader.
++ **Contract testing** (Pact, Spring Cloud Contract) — стандарт для проверки совместимости между producer и consumer.
+
+[к оглавлению](#REST-API)
+
+## Что такое асинхронные API и как их проектировать?
+**Асинхронные API** — это подходы к взаимодействию клиента и сервера, при которых обработка запроса не блокирует клиента и результат доставляется позже (через callback, polling или push-уведомление).
+
+### Когда нужны асинхронные API:
++ **Долгие операции** — генерация отчёта, обработка видео, массовый импорт данных.
++ **Real-time обновления** — чат, биржевые котировки, уведомления.
++ **Событийные уведомления** — платёж завершён, заказ отправлен, статус изменился.
++ **Интеграции** — webhook-и от внешних систем (Stripe, GitHub, Telegram).
+
+### Паттерн 1: Polling (202 Accepted + Location)
+Клиент отправляет запрос, получает `202 Accepted` и периодически проверяет статус операции.
+
+```java
+// Запуск долгой операции
+@PostMapping("/api/reports")
+public ResponseEntity<TaskStatus> createReport(
+        @Valid @RequestBody ReportRequest request) {
+    String taskId = reportService.startGeneration(request);
+
+    URI statusUri = URI.create("/api/reports/tasks/" + taskId);
+    TaskStatus status = new TaskStatus(taskId, "PENDING", null);
+
+    return ResponseEntity.accepted()
+        .location(statusUri)
+        .header("Retry-After", "5")
+        .body(status);
+}
+
+// Проверка статуса
+@GetMapping("/api/reports/tasks/{taskId}")
+public ResponseEntity<TaskStatus> getTaskStatus(@PathVariable String taskId) {
+    TaskStatus status = reportService.getStatus(taskId);
+
+    if ("COMPLETED".equals(status.status())) {
+        // Операция завершена — перенаправляем на результат
+        return ResponseEntity.status(HttpStatus.SEE_OTHER)
+            .location(URI.create(status.resultUrl()))
+            .body(status);
+    }
+    if ("FAILED".equals(status.status())) {
+        return ResponseEntity.ok(status);
+    }
+    // Ещё обрабатывается
+    return ResponseEntity.ok()
+        .header("Retry-After", "5")
+        .body(status);
+}
+
+// DTO
+public record TaskStatus(
+    String taskId,
+    String status,       // PENDING, PROCESSING, COMPLETED, FAILED
+    String resultUrl,
+    Integer progress,    // 0-100
+    String errorMessage
+) {
+    public TaskStatus(String taskId, String status, String resultUrl) {
+        this(taskId, status, resultUrl, null, null);
+    }
+}
+```
+
+```bash
+# 1. Запускаем генерацию отчёта
+curl -X POST https://api.example.com/api/reports \
+  -H "Content-Type: application/json" \
+  -d '{"type": "SALES", "dateFrom": "2026-01-01", "dateTo": "2026-03-31"}'
+
+# Ответ:
+# HTTP/1.1 202 Accepted
+# Location: /api/reports/tasks/abc-123
+# Retry-After: 5
+# {"taskId": "abc-123", "status": "PENDING"}
+
+# 2. Проверяем статус
+curl https://api.example.com/api/reports/tasks/abc-123
+
+# Ответ (в процессе):
+# HTTP/1.1 200 OK
+# Retry-After: 5
+# {"taskId": "abc-123", "status": "PROCESSING", "progress": 65}
+
+# Ответ (завершено):
+# HTTP/1.1 303 See Other
+# Location: /api/reports/files/report-abc-123.pdf
+# {"taskId": "abc-123", "status": "COMPLETED", "resultUrl": "/api/reports/files/report-abc-123.pdf"}
+```
+
+### Паттерн 2: Webhooks (Callback URL)
+Сервер отправляет HTTP-запрос на указанный URL клиента при наступлении события.
+
+```java
+// Регистрация webhook
+@PostMapping("/api/webhooks")
+public ResponseEntity<WebhookRegistration> registerWebhook(
+        @Valid @RequestBody WebhookRequest request) {
+    WebhookRegistration registration = webhookService.register(request);
+    return ResponseEntity.status(HttpStatus.CREATED).body(registration);
+}
+
+public record WebhookRequest(
+    @NotBlank String url,           // URL для callback
+    @NotEmpty Set<String> events,   // ["order.completed", "payment.failed"]
+    String secret                   // секрет для подписи
+) {}
+
+// Отправка webhook при наступлении события
+@Service
+@RequiredArgsConstructor
+@Slf4j
+public class WebhookSender {
+
+    private final RestClient restClient;
+    private final WebhookRepository webhookRepository;
+
+    @Async
+    @TransactionalEventListener
+    public void onOrderCompleted(OrderCompletedEvent event) {
+        List<WebhookRegistration> hooks = webhookRepository
+            .findByEvent("order.completed");
+
+        for (WebhookRegistration hook : hooks) {
+            sendWebhook(hook, event);
+        }
+    }
+
+    private void sendWebhook(WebhookRegistration hook, Object payload) {
+        String body = objectMapper.writeValueAsString(payload);
+        String signature = HmacUtils.hmacSha256Hex(hook.getSecret(), body);
+
+        try {
+            restClient.post()
+                .uri(hook.getUrl())
+                .header("Content-Type", "application/json")
+                .header("X-Webhook-Signature", "sha256=" + signature)
+                .header("X-Webhook-Event", "order.completed")
+                .header("X-Webhook-Id", UUID.randomUUID().toString())
+                .body(body)
+                .retrieve()
+                .toBodilessEntity();
+        } catch (Exception e) {
+            log.error("Webhook delivery failed: {}", hook.getUrl(), e);
+            webhookRetryService.scheduleRetry(hook, payload);
+        }
+    }
+}
+```
+
+```bash
+# Клиент регистрирует webhook
+curl -X POST https://api.example.com/api/webhooks \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://my-app.com/callbacks/orders",
+    "events": ["order.completed", "order.cancelled"],
+    "secret": "whsec_abc123"
+  }'
+
+# Когда заказ завершён, сервер отправит:
+# POST https://my-app.com/callbacks/orders
+# X-Webhook-Signature: sha256=5d3a...
+# X-Webhook-Event: order.completed
+# {"orderId": 42, "status": "COMPLETED", "total": 1500.00}
+```
+
+### Паттерн 3: SSE (Server-Sent Events)
+Сервер отправляет поток событий клиенту через постоянное HTTP-соединение. Однонаправленный (сервер → клиент).
+
+```java
+@RestController
+@RequestMapping("/api/events")
+public class SseController {
+
+    private final SseEmitterService sseService;
+
+    @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public SseEmitter streamEvents(@RequestParam Long userId) {
+        SseEmitter emitter = new SseEmitter(0L); // без таймаута
+        sseService.register(userId, emitter);
+
+        emitter.onCompletion(() -> sseService.unregister(userId));
+        emitter.onTimeout(() -> sseService.unregister(userId));
+
+        return emitter;
+    }
+}
+
+@Service
+public class SseEmitterService {
+
+    private final Map<Long, SseEmitter> emitters = new ConcurrentHashMap<>();
+
+    public void register(Long userId, SseEmitter emitter) {
+        emitters.put(userId, emitter);
+    }
+
+    public void unregister(Long userId) {
+        emitters.remove(userId);
+    }
+
+    public void sendEvent(Long userId, String eventType, Object data) {
+        SseEmitter emitter = emitters.get(userId);
+        if (emitter != null) {
+            try {
+                emitter.send(SseEmitter.event()
+                    .name(eventType)
+                    .data(data, MediaType.APPLICATION_JSON)
+                    .id(UUID.randomUUID().toString())
+                    .reconnectTime(3000));
+            } catch (IOException e) {
+                unregister(userId);
+            }
+        }
+    }
+}
+```
+
+```bash
+# Клиент подключается к потоку событий
+curl -N https://api.example.com/api/events/stream?userId=42
+
+# Сервер отправляет:
+# event: notification
+# id: 550e8400-e29b-41d4-a716-446655440000
+# retry: 3000
+# data: {"type": "ORDER_SHIPPED", "orderId": 7, "message": "Ваш заказ отправлен"}
+#
+# event: notification
+# id: 660e8400-e29b-41d4-a716-446655440001
+# data: {"type": "PAYMENT_RECEIVED", "amount": 1500.00}
+```
+
+### Паттерн 4: WebSocket (двунаправленный)
+Полнодуплексная связь — и клиент, и сервер могут отправлять сообщения.
+
+```java
+@Configuration
+@EnableWebSocketMessageBroker
+public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry registry) {
+        registry.enableSimpleBroker("/topic", "/queue");
+        registry.setApplicationDestinationPrefixes("/app");
+    }
+
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.addEndpoint("/ws")
+            .setAllowedOriginPatterns("*")
+            .withSockJS();
+    }
+}
+
+@Controller
+@RequiredArgsConstructor
+public class ChatController {
+
+    private final SimpMessagingTemplate messagingTemplate;
+
+    // Клиент отправляет сообщение на /app/chat.send
+    @MessageMapping("/chat.send")
+    public void sendMessage(@Payload ChatMessage message,
+                            SimpMessageHeaderAccessor headerAccessor) {
+        String userId = headerAccessor.getUser().getName();
+        message.setSenderId(userId);
+        message.setTimestamp(Instant.now());
+
+        // Отправляем всем подписчикам комнаты
+        messagingTemplate.convertAndSend(
+            "/topic/chat." + message.getRoomId(), message);
+    }
+
+    // Отправка персонального уведомления
+    public void sendNotification(String userId, Object payload) {
+        messagingTemplate.convertAndSendToUser(
+            userId, "/queue/notifications", payload);
+    }
+}
+```
+
+### Сравнение подходов
+
+| Характеристика | Polling | Webhooks | SSE | WebSocket |
+|---------------|---------|----------|-----|-----------|
+| Направление | Клиент → Сервер | Сервер → Клиент | Сервер → Клиент | Двунаправленный |
+| Протокол | HTTP | HTTP | HTTP | WS (поверх HTTP) |
+| Задержка | Высокая (интервал) | Низкая | Низкая | Очень низкая |
+| Нагрузка на сервер | Высокая (частые запросы) | Низкая | Средняя (открытые соединения) | Средняя |
+| Надёжность | Высокая | Средняя (нужны retry) | Средняя (auto-reconnect) | Средняя |
+| Масштабирование | Простое | Простое | Сложнее | Сложнее |
+| Подходит для | Долгие операции | Интеграции, события | Уведомления, ленты | Чат, real-time игры |
+
+### Важное
++ **Polling (202 Accepted)** — самый простой и надёжный подход для долгих операций. Начинайте с него.
++ **Webhooks** — стандарт для интеграций. Обязательно подписывайте payload (HMAC) и реализуйте retry с exponential backoff.
++ **SSE** — простая альтернатива WebSocket для однонаправленных обновлений. Работает через обычный HTTP, поддерживает auto-reconnect.
++ **WebSocket** — используйте только когда нужна полнодуплексная связь (чат, real-time совместное редактирование).
+
+### Частые ошибки
++ Использование WebSocket там, где достаточно SSE — избыточная сложность.
++ Отсутствие retry-механизма для webhook — первая доставка может не пройти.
++ Polling без `Retry-After` заголовка — клиент может перегружать сервер слишком частыми запросами.
++ Отсутствие аутентификации в WebSocket-соединении — необходимо проверять токен при handshake.
++ Хранение состояния SSE/WebSocket в памяти без учёта масштабирования — при нескольких инстансах нужен Redis или брокер сообщений.
+
+### Как используется в 2026
++ **Spring WebFlux + SSE** — реактивный подход для потоковых данных (`Flux<ServerSentEvent>`).
++ **HTTP/2 Server Push** устарел и удалён из Chrome; SSE остаётся основным push-механизмом.
++ **AsyncAPI 3.0** — стандарт описания асинхронных API (WebSocket, Kafka, MQTT), аналог OpenAPI для event-driven систем.
++ **Webhooks стандартизируются** — проект Standard Webhooks (standardwebhooks.com) определяет единый формат подписи и retry.
++ **Virtual threads (Project Loom)** в Java 21+ упрощают обработку большого числа одновременных SSE/WebSocket-соединений.
+
+[к оглавлению](#REST-API)
+
+## Что такое BFF (Backend for Frontend) и API Gateway?
+**BFF (Backend for Frontend)** и **API Gateway** — это архитектурные паттерны, определяющие, как клиенты взаимодействуют с backend-сервисами. Оба решают проблему организации доступа к множеству микросервисов.
+
+### API Gateway — единая точка входа
+
+**API Gateway** — это прокси-сервер, который является единственной точкой входа для всех клиентов. Он маршрутизирует запросы к соответствующим микросервисам и предоставляет сквозную функциональность.
+
+```
+    Web App     Mobile App     Partner API
+       \            |            /
+        \           |           /
+         ┌──────────▼──────────┐
+         │     API Gateway     │
+         │  (routing, auth,    │
+         │   rate limiting,    │
+         │   logging)          │
+         └────┬────┬────┬──────┘
+              │    │    │
+         ┌────▼┐ ┌─▼──┐ ┌▼────┐
+         │User ││Order││Stock│
+         │Svc  ││ Svc ││ Svc │
+         └─────┘ └────┘ └─────┘
+```
+
+Функции API Gateway:
++ **Маршрутизация** — перенаправление запросов к нужному сервису.
++ **Аутентификация и авторизация** — единая проверка токенов.
++ **Rate Limiting** — ограничение частоты запросов.
++ **Логирование и мониторинг** — централизованный сбор метрик.
++ **Трансформация запросов/ответов** — изменение формата данных.
++ **Кэширование** — кэширование ответов на уровне шлюза.
++ **Circuit Breaker** — защита от каскадных сбоев.
+
+### Реализация API Gateway на Spring Cloud Gateway:
+```java
+@Configuration
+public class GatewayConfig {
+
+    @Bean
+    public RouteLocator customRoutes(RouteLocatorBuilder builder) {
+        return builder.routes()
+            .route("user-service", r -> r
+                .path("/api/users/**")
+                .filters(f -> f
+                    .stripPrefix(1)
+                    .addRequestHeader("X-Gateway", "true")
+                    .circuitBreaker(cb -> cb
+                        .setName("userServiceCB")
+                        .setFallbackUri("forward:/fallback/users"))
+                    .retry(retry -> retry.setRetries(3))
+                )
+                .uri("lb://user-service"))
+            .route("order-service", r -> r
+                .path("/api/orders/**")
+                .filters(f -> f
+                    .stripPrefix(1)
+                    .requestRateLimiter(rl -> rl
+                        .setRateLimiter(redisRateLimiter())
+                        .setKeyResolver(userKeyResolver())))
+                .uri("lb://order-service"))
+            .build();
+    }
+}
+```
+
+```yaml
+# application.yml для Spring Cloud Gateway
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "https://frontend.example.com"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin
+        - TokenRelay
+```
+
+### BFF (Backend for Frontend) — отдельный API для каждого типа клиента
+
+**BFF** — это паттерн, при котором для каждого типа клиента (web, mobile, admin, partner) создаётся отдельный backend-сервис, оптимизированный под потребности этого клиента.
+
+```
+    Web App         Mobile App        Admin Panel
+       │                │                  │
+  ┌────▼─────┐    ┌─────▼──────┐    ┌─────▼──────┐
+  │ Web BFF  │    │ Mobile BFF │    │ Admin BFF  │
+  │(подробные│    │(компактные │    │(все данные,│
+  │ данные,  │    │ данные,    │    │ управление)│
+  │ пагинация)│   │ агрегация) │    │            │
+  └──┬───┬───┘    └──┬───┬─────┘    └──┬───┬─────┘
+     │   │           │   │             │   │
+  ┌──▼┐ ┌▼──┐    ┌──▼┐ ┌▼──┐      ┌──▼┐ ┌▼──┐
+  │User│ │Ord│    │User│ │Ord│      │User│ │Ord│
+  │Svc │ │Svc│    │Svc │ │Svc│      │Svc │ │Svc│
+  └────┘ └───┘    └────┘ └───┘      └────┘ └───┘
+```
+
+```java
+// Mobile BFF — компактные данные, агрегация в один запрос
+@RestController
+@RequestMapping("/mobile/api")
+@RequiredArgsConstructor
+public class MobileBffController {
+
+    private final UserServiceClient userClient;
+    private final OrderServiceClient orderClient;
+    private final NotificationServiceClient notificationClient;
+
+    // Один вызов — все данные для главного экрана
+    @GetMapping("/home")
+    public ResponseEntity<MobileHomeResponse> getHomeScreen(
+            @AuthenticationPrincipal UserPrincipal principal) {
+
+        // Параллельные вызовы к микросервисам
+        CompletableFuture<UserSummary> userFuture =
+            CompletableFuture.supplyAsync(() -> userClient.getSummary(principal.getId()));
+        CompletableFuture<List<OrderBrief>> ordersFuture =
+            CompletableFuture.supplyAsync(() -> orderClient.getRecent(principal.getId(), 5));
+        CompletableFuture<Integer> notifCountFuture =
+            CompletableFuture.supplyAsync(() -> notificationClient.getUnreadCount(principal.getId()));
+
+        CompletableFuture.allOf(userFuture, ordersFuture, notifCountFuture).join();
+
+        MobileHomeResponse response = new MobileHomeResponse(
+            userFuture.join(),
+            ordersFuture.join(),
+            notifCountFuture.join()
+        );
+        return ResponseEntity.ok(response);
+    }
+}
+
+// Web BFF — подробные данные с пагинацией
+@RestController
+@RequestMapping("/web/api")
+@RequiredArgsConstructor
+public class WebBffController {
+
+    private final UserServiceClient userClient;
+    private final OrderServiceClient orderClient;
+
+    @GetMapping("/users/{id}/dashboard")
+    public ResponseEntity<WebDashboardResponse> getDashboard(
+            @PathVariable Long id,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size) {
+
+        UserProfile profile = userClient.getFullProfile(id);
+        Page<OrderDetail> orders = orderClient.getByUserId(id, page, size);
+        OrderStatistics stats = orderClient.getStatistics(id);
+
+        return ResponseEntity.ok(new WebDashboardResponse(profile, orders, stats));
+    }
+}
+```
+
+### Сравнение подходов
+
+| Характеристика | Прямые вызовы | API Gateway | BFF |
+|---------------|---------------|-------------|-----|
+| Сложность | Минимальная | Средняя | Высокая |
+| Оптимизация под клиента | Нет | Частичная | Полная |
+| Количество сервисов | N микросервисов | 1 gateway + N | M BFF + N |
+| Агрегация данных | На клиенте | Ограниченная | Полная |
+| Команда | Одна | Одна (gateway) | По BFF на команду |
+| Over-fetching | Да | Да | Нет |
+| Безопасность | На каждом сервисе | Централизованная | На каждом BFF |
+
+### Когда что использовать
+
+**API Gateway (без BFF):**
++ Все клиенты имеют одинаковые потребности.
++ Нужна централизованная маршрутизация, auth и rate limiting.
++ Команда небольшая и не хочет поддерживать дополнительные сервисы.
+
+**BFF:**
++ Клиенты имеют **существенно разные** потребности (mobile vs web vs admin).
++ Нужна агрегация данных из нескольких микросервисов в один вызов.
++ Разные команды отвечают за разные клиенты.
++ Нужна оптимизация ответов под конкретный клиент (размер данных, формат).
+
+**API Gateway + BFF (комбинированный):**
++ API Gateway — для сквозной функциональности (auth, rate limiting, logging).
++ BFF — для агрегации и адаптации данных под конкретный клиент.
+
+```
+    Web App         Mobile App
+       │                │
+       └────────┬───────┘
+         ┌──────▼──────┐
+         │ API Gateway │ ← auth, rate limiting, logging
+         └──┬───────┬──┘
+       ┌────▼──┐ ┌──▼─────┐
+       │Web BFF│ │Mobile  │ ← агрегация, адаптация
+       │       │ │BFF     │
+       └──┬──┬─┘ └──┬──┬──┘
+          │  │      │  │
+       ┌──▼┐ ┌▼──┐  │  │
+       │Svc││Svc │──┘  │
+       │ A ││ B  │─────┘
+       └───┘ └───┘
+```
+
+### Важное
++ API Gateway — обязательный компонент микросервисной архитектуры. Он решает сквозные задачи (auth, rate limiting, logging) в одном месте.
++ BFF не заменяет API Gateway — они дополняют друг друга.
++ Каждый BFF должен принадлежать той же команде, что и клиент, который он обслуживает.
++ BFF не содержит бизнес-логику — только агрегацию, трансформацию и адаптацию данных.
+
+### Частые ошибки
++ Реализация бизнес-логики в API Gateway — шлюз должен быть «тонким», только маршрутизация и сквозные задачи.
++ Единый BFF для всех клиентов — это просто API Gateway, а не BFF. Смысл BFF — в разных API для разных клиентов.
++ Слишком много BFF — каждый BFF требует поддержки. Создавайте BFF только если потребности клиентов действительно различаются.
++ Отсутствие circuit breaker в BFF — если один микросервис недоступен, не должен падать весь BFF.
++ Синхронные вызовы к микросервисам из BFF — используйте `CompletableFuture`, WebClient или virtual threads для параллельных вызовов.
+
+### Как используется в 2026
++ **Spring Cloud Gateway** — стандарт для API Gateway в экосистеме Spring (поддержка reactive и MVC).
++ **GraphQL как альтернатива BFF** — GraphQL решает ту же проблему гибкости запросов, но без дополнительного сервиса.
++ **Netflix Zuul** устарел, замещён Spring Cloud Gateway и Envoy.
++ **Envoy Proxy + Istio** — service mesh как альтернатива API Gateway для внутренней коммуникации.
++ **BFF + Virtual Threads (Java 21+)** — упрощают параллельные вызовы к микросервисам без реактивного стека.
++ **API Gateway as a Service** — Kong Gateway, AWS API Gateway, Azure APIM позволяют не писать свой шлюз.
+
+[к оглавлению](#REST-API)
+
+## Как проектировать API для микросервисной архитектуры?
+Проектирование API для микросервисов требует учёта распределённой природы системы: сетевая ненадёжность, независимое развёртывание сервисов, согласованность данных и отказоустойчивость.
+
+### Синхронное взаимодействие (REST / gRPC)
+
+Один сервис напрямую вызывает другой и ждёт ответа.
+
+```java
+// Вызов другого сервиса через RestClient (Spring Boot 3.2+)
+@Service
+@RequiredArgsConstructor
+public class OrderService {
+
+    private final RestClient userServiceClient;
+
+    public OrderDto createOrder(Long userId, CreateOrderRequest request) {
+        // Синхронный вызов к User Service
+        UserDto user = userServiceClient.get()
+            .uri("/api/users/{id}", userId)
+            .retrieve()
+            .body(UserDto.class);
+
+        if (user == null) {
+            throw new UserNotFoundException("User not found: " + userId);
+        }
+
+        Order order = orderMapper.toEntity(request);
+        order.setUserId(userId);
+        order.setUserEmail(user.email());
+
+        return orderMapper.toDto(orderRepository.save(order));
+    }
+}
+
+// Конфигурация RestClient
+@Configuration
+public class RestClientConfig {
+
+    @Bean
+    public RestClient userServiceClient(RestClient.Builder builder) {
+        return builder
+            .baseUrl("http://user-service:8080")
+            .defaultHeader("Content-Type", "application/json")
+            .requestInterceptor(new TokenRelayInterceptor())
+            .build();
+    }
+}
+```
+
+### Асинхронное взаимодействие (Events / Kafka)
+
+Сервисы общаются через события — отправитель публикует событие, получатели подписаны на него.
+
+```java
+// Публикация события при создании заказа
+@Service
+@RequiredArgsConstructor
+public class OrderService {
+
+    private final OrderRepository orderRepository;
+    private final KafkaTemplate<String, OrderEvent> kafkaTemplate;
+
+    @Transactional
+    public OrderDto createOrder(CreateOrderRequest request) {
+        Order order = orderMapper.toEntity(request);
+        order.setStatus(OrderStatus.CREATED);
+        Order saved = orderRepository.save(order);
+
+        // Публикуем событие
+        OrderEvent event = new OrderEvent(
+            saved.getId(), "ORDER_CREATED",
+            saved.getUserId(), saved.getTotal(), Instant.now()
+        );
+        kafkaTemplate.send("order-events", saved.getId().toString(), event);
+
+        return orderMapper.toDto(saved);
+    }
+}
+
+// Обработка события в другом сервисе (Notification Service)
+@Service
+@Slf4j
+public class OrderEventListener {
+
+    @KafkaListener(topics = "order-events", groupId = "notification-service")
+    public void handleOrderEvent(OrderEvent event) {
+        log.info("Received order event: {}", event);
+
+        if ("ORDER_CREATED".equals(event.eventType())) {
+            notificationService.sendOrderConfirmation(event.userId(), event.orderId());
+        }
+    }
+}
+
+// Событие
+public record OrderEvent(
+    Long orderId,
+    String eventType,
+    Long userId,
+    BigDecimal total,
+    Instant timestamp
+) {}
+```
+
+### API Composition — агрегация данных из нескольких сервисов
+
+```java
+// API Composer — агрегирует данные из нескольких сервисов
+@RestController
+@RequestMapping("/api/customer-view")
+@RequiredArgsConstructor
+public class CustomerViewController {
+
+    private final RestClient userServiceClient;
+    private final RestClient orderServiceClient;
+    private final RestClient loyaltyServiceClient;
+
+    @GetMapping("/{userId}")
+    public ResponseEntity<CustomerView> getCustomerView(@PathVariable Long userId) {
+        // Параллельные вызовы с virtual threads (Java 21+)
+        try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
+            var userTask = scope.fork(() ->
+                userServiceClient.get()
+                    .uri("/api/users/{id}", userId)
+                    .retrieve()
+                    .body(UserDto.class));
+
+            var ordersTask = scope.fork(() ->
+                orderServiceClient.get()
+                    .uri("/api/orders?userId={id}&limit=5", userId)
+                    .retrieve()
+                    .body(new ParameterizedTypeReference<List<OrderDto>>() {}));
+
+            var loyaltyTask = scope.fork(() ->
+                loyaltyServiceClient.get()
+                    .uri("/api/loyalty/{id}", userId)
+                    .retrieve()
+                    .body(LoyaltyDto.class));
+
+            scope.join().throwIfFailed();
+
+            CustomerView view = new CustomerView(
+                userTask.get(), ordersTask.get(), loyaltyTask.get()
+            );
+            return ResponseEntity.ok(view);
+        }
+    }
+}
+```
+
+### Circuit Breaker — защита от каскадных сбоев
+
+Если вызываемый сервис недоступен, Circuit Breaker «размыкает» цепь и возвращает fallback-ответ.
+
+```java
+@Service
+@RequiredArgsConstructor
+public class UserServiceClient {
+
+    private final RestClient restClient;
+    private final CircuitBreakerRegistry circuitBreakerRegistry;
+
+    @CircuitBreaker(name = "userService", fallbackMethod = "getUserFallback")
+    @Retry(name = "userService")
+    @TimeLimiter(name = "userService")
+    public UserDto getUser(Long id) {
+        return restClient.get()
+            .uri("/api/users/{id}", id)
+            .retrieve()
+            .body(UserDto.class);
+    }
+
+    // Fallback — вызывается при сбое
+    private UserDto getUserFallback(Long id, Throwable ex) {
+        log.warn("User service unavailable, returning fallback for user {}", id, ex);
+        return new UserDto(id, "Unknown User", null);
+    }
+}
+```
+
+```yaml
+# application.yml — настройка Resilience4j
+resilience4j:
+  circuitbreaker:
+    instances:
+      userService:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+  retry:
+    instances:
+      userService:
+        max-attempts: 3
+        wait-duration: 500ms
+        exponential-backoff-multiplier: 2
+  timelimiter:
+    instances:
+      userService:
+        timeout-duration: 3s
+```
+
+### Saga Pattern — распределённые транзакции
+
+Saga — это последовательность локальных транзакций, где каждый шаг имеет компенсирующее действие для отката.
+
+```java
+// Хореографическая Saga (через события)
+//
+// 1. Order Service: создать заказ → опубликовать ORDER_CREATED
+// 2. Payment Service: обработать платёж → опубликовать PAYMENT_COMPLETED
+// 3. Stock Service: зарезервировать товар → опубликовать STOCK_RESERVED
+// 4. Delivery Service: создать доставку → опубликовать DELIVERY_SCHEDULED
+//
+// Если на шаге N произошла ошибка, публикуется событие-компенсация:
+// PAYMENT_FAILED → Order Service откатывает заказ (ORDER_CANCELLED)
+
+@Service
+@RequiredArgsConstructor
+public class PaymentEventListener {
+
+    private final PaymentService paymentService;
+    private final KafkaTemplate<String, PaymentEvent> kafkaTemplate;
+
+    @KafkaListener(topics = "order-events", groupId = "payment-service")
+    public void handleOrderCreated(OrderEvent event) {
+        if (!"ORDER_CREATED".equals(event.eventType())) return;
+
+        try {
+            paymentService.processPayment(event.orderId(), event.total());
+
+            kafkaTemplate.send("payment-events",
+                new PaymentEvent(event.orderId(), "PAYMENT_COMPLETED"));
+
+        } catch (InsufficientFundsException e) {
+            // Компенсация — уведомляем об ошибке
+            kafkaTemplate.send("payment-events",
+                new PaymentEvent(event.orderId(), "PAYMENT_FAILED"));
+        }
+    }
+}
+
+// Оркестрационная Saga (централизованный координатор)
+@Service
+@RequiredArgsConstructor
+@Slf4j
+public class OrderSagaOrchestrator {
+
+    private final PaymentServiceClient paymentClient;
+    private final StockServiceClient stockClient;
+    private final DeliveryServiceClient deliveryClient;
+
+    @Transactional
+    public OrderResult executeOrderSaga(Order order) {
+        try {
+            // Шаг 1: Резервируем товар
+            StockReservation reservation = stockClient.reserve(order.getItems());
+
+            // Шаг 2: Обрабатываем платёж
+            PaymentResult payment;
+            try {
+                payment = paymentClient.charge(order.getUserId(), order.getTotal());
+            } catch (Exception e) {
+                // Компенсация шага 1
+                stockClient.cancelReservation(reservation.getId());
+                throw e;
+            }
+
+            // Шаг 3: Создаём доставку
+            try {
+                deliveryClient.schedule(order.getId(), order.getDeliveryAddress());
+            } catch (Exception e) {
+                // Компенсация шагов 1 и 2
+                paymentClient.refund(payment.getId());
+                stockClient.cancelReservation(reservation.getId());
+                throw e;
+            }
+
+            order.setStatus(OrderStatus.CONFIRMED);
+            return OrderResult.success(order);
+
+        } catch (Exception e) {
+            log.error("Order saga failed for order {}", order.getId(), e);
+            order.setStatus(OrderStatus.FAILED);
+            return OrderResult.failure(order, e.getMessage());
+        }
+    }
+}
+```
+
+### Choreography vs Orchestration
+
+| Характеристика | Хореография (события) | Оркестрация (координатор) |
+|---------------|----------------------|--------------------------|
+| Связанность | Слабая (через события) | Средняя (координатор знает все шаги) |
+| Простота | Простые Saga | Сложные Saga с множеством шагов |
+| Отслеживание | Сложно (события распределены) | Просто (всё в координаторе) |
+| Единая точка отказа | Нет | Да (координатор) |
+| Масштабируемость | Высокая | Средняя |
+
+### Практический пример: полная архитектура
+
+```yaml
+# docker-compose.yml — пример микросервисной архитектуры
+services:
+  api-gateway:
+    image: api-gateway:latest
+    ports: ["8080:8080"]
+    environment:
+      USER_SERVICE_URL: http://user-service:8081
+      ORDER_SERVICE_URL: http://order-service:8082
+
+  user-service:
+    image: user-service:latest
+    ports: ["8081:8081"]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://user-db:5432/users
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+
+  order-service:
+    image: order-service:latest
+    ports: ["8082:8082"]
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://order-db:5432/orders
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      USER_SERVICE_URL: http://user-service:8081
+
+  notification-service:
+    image: notification-service:latest
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    ports: ["9092:9092"]
+
+  user-db:
+    image: postgres:16
+  order-db:
+    image: postgres:16
+```
+
+```
+                    ┌────────────┐
+                    │API Gateway │ ← auth, routing, rate limiting
+                    │(port 8080) │
+                    └────┬───┬───┘
+                         │   │
+              ┌──────────┘   └──────────┐
+              │                         │
+        ┌─────▼──────┐           ┌──────▼─────┐
+        │User Service│           │Order Service│ ← REST (синхронно)
+        │(port 8081) │◄──────── │(port 8082)  │
+        └─────┬──────┘           └──────┬──────┘
+              │                         │
+              ▼                         ▼
+        ┌──────────┐              ┌──────────┐
+        │ user-db  │              │ order-db  │
+        └──────────┘              └──────────┘
+              │                         │
+              └──────────┬──────────────┘
+                         ▼
+                  ┌─────────────┐
+                  │    Kafka    │ ← события (асинхронно)
+                  └──────┬──────┘
+                         │
+                  ┌──────▼───────┐
+                  │ Notification │
+                  │   Service    │
+                  └──────────────┘
+```
+
+### Важное
++ **Каждый микросервис владеет своими данными** (database per service). Нет общей БД.
++ **Синхронная связь (REST/gRPC)** — для запросов, которые требуют немедленного ответа. **Асинхронная (Kafka/RabbitMQ)** — для событий и уведомлений.
++ **Circuit Breaker** обязателен для всех синхронных вызовов между сервисами.
++ **Saga Pattern** заменяет распределённые транзакции. Каждый шаг должен иметь компенсирующее действие.
++ **Idempotency** — все обработчики событий должны быть идемпотентными (событие может быть доставлено повторно).
+
+### Частые ошибки
++ **Общая база данных** для нескольких сервисов — нарушает принцип автономности, создаёт tight coupling.
++ **Отсутствие Circuit Breaker** — сбой одного сервиса каскадно «роняет» всю систему.
++ **Синхронные цепочки вызовов** (A → B → C → D) — увеличивают латентность и снижают надёжность. Используйте асинхронные события.
++ **Распределённые транзакции (2PC)** — не масштабируются. Используйте Saga.
++ **Отсутствие idempotency в consumer-ах** — повторная обработка события создаёт дубликаты.
++ **Слишком мелкие сервисы (nano-services)** — overhead на коммуникацию превышает пользу от разделения. Сервис должен покрывать целый bounded context.
+
+### Как используется в 2026
++ **Spring Boot 3.x + Virtual Threads** — виртуальные потоки (Project Loom) позволяют писать синхронный код с производительностью реактивного.
++ **Spring Modulith** — альтернатива микросервисам для проектов среднего размера. Модульный монолит с чёткими границами модулей и возможностью выделения в отдельные сервисы.
++ **Testcontainers** — стандарт для интеграционного тестирования микросервисов (Kafka, PostgreSQL, Redis в Docker).
++ **OpenTelemetry** — единый стандарт для distributed tracing, metrics и logging.
++ **Dapr (Distributed Application Runtime)** — runtime для микросервисов с абстракциями для pub/sub, state management и service invocation.
++ **Service Mesh (Istio, Linkerd)** берёт на себя retry, circuit breaker и mTLS, освобождая код приложения от инфраструктурных задач.
 
 [к оглавлению](#REST-API)
