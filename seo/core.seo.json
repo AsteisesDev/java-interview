@@ -1,0 +1,317 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "generatedAt": "2026-05-05T18:00:00Z",
+  "questions": [
+    {
+      "question": "Чем различаются JRE, JVM и JDK?",
+      "questionSlug": "chem-razlichayutsya-jre-jvm-i-jdk",
+      "grade": "junior",
+      "tags": ["core", "jvm", "jdk", "jre", "основы"],
+      "seo": {
+        "title": "Чем различаются JRE, JVM и JDK — разница простым языком — Gymterview",
+        "description": "JVM исполняет байт-код, JRE — среда для запуска Java-программ, JDK — набор инструментов разработчика. Разница между JRE, JVM и JDK.",
+        "keywords": ["JRE JVM JDK разница", "что такое JDK", "что такое JVM", "Java Runtime Environment"],
+        "ogTitle": "JRE vs JVM vs JDK — в чём разница?",
+        "ogDescription": "JVM исполняет байт-код. JRE = JVM + стандартные библиотеки. JDK = JRE + компилятор и утилиты разработчика.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем различаются JRE, JVM и JDK?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JVM (Java Virtual Machine) — исполняет байт-код Java. JRE (Java Runtime Environment) — минимальная среда для запуска Java-приложений, состоит из JVM и стандартных библиотек. JDK (Java Development Kit) — JRE плюс инструменты разработчика: компилятор, утилиты, документация."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "JRE, JVM и JDK", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют модификаторы доступа?",
+      "questionSlug": "modifikatory-dostupa-java",
+      "grade": "junior",
+      "tags": ["core", "модификаторы-доступа", "основы", "инкапсуляция"],
+      "seo": {
+        "title": "Модификаторы доступа в Java: private, default, protected, public — Gymterview",
+        "description": "Четыре модификатора доступа Java: private, default (package-private), protected, public. Уровни видимости и правила наследования.",
+        "keywords": ["модификаторы доступа Java", "private protected public Java", "package-private Java", "уровни доступа"],
+        "ogTitle": "4 модификатора доступа в Java — от private до public",
+        "ogDescription": "private → default → protected → public. Что видит каждый уровень и как меняется доступ при наследовании.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют модификаторы доступа?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java четыре модификатора доступа: private (только внутри класса), default/package-private (внутри пакета), protected (внутри пакета и в наследниках), public (доступен всем). По возрастанию закрытости: public, protected, default, private."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Модификаторы доступа", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "О чем говорит ключевое слово `final`?",
+      "questionSlug": "klyuchevoe-slovo-final-java",
+      "grade": "junior",
+      "tags": ["core", "final", "модификаторы", "основы"],
+      "seo": {
+        "title": "Ключевое слово final в Java — классы, методы, переменные — Gymterview",
+        "description": "Модификатор final: final класс не наследуется, final метод не переопределяется, final переменная не изменяется после инициализации.",
+        "keywords": ["final Java", "ключевое слово final", "final класс метод переменная", "неизменяемость Java"],
+        "ogTitle": "final в Java — что нельзя изменить?",
+        "ogDescription": "final класс — без наследников. final метод — без переопределения. final переменная — без повторного присвоения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "О чем говорит ключевое слово final?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор final применяется к переменным, параметрам методов, полям, методам и классам. Final класс не может иметь наследников, final метод не переопределяется, final поле не изменяет значение после инициализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Ключевое слово final", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какими значениями инициализируются переменные по умолчанию?",
+      "questionSlug": "znacheniya-peremennyh-po-umolchaniyu",
+      "grade": "junior",
+      "tags": ["core", "переменные", "типы-данных", "основы"],
+      "seo": {
+        "title": "Значения переменных по умолчанию в Java — таблица — Gymterview",
+        "description": "Поля класса инициализируются по умолчанию: int → 0, boolean → false, объекты → null. Локальные переменные не инициализируются.",
+        "keywords": ["значения по умолчанию Java", "инициализация переменных Java", "default values Java", "примитивные типы"],
+        "ogTitle": "Какие значения по умолчанию у переменных в Java?",
+        "ogDescription": "byte/short/int → 0, long → 0L, float → 0f, double → 0d, char → \\u0000, boolean → false, объекты → null.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какими значениями инициализируются переменные по умолчанию?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поля класса в Java получают значения по умолчанию: числовые типы — 0, boolean — false, char — '\\u0000', ссылочные типы — null. Локальные переменные не инициализируются автоматически."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Значения по умолчанию", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о функции `main()`?",
+      "questionSlug": "metod-main-java",
+      "grade": "junior",
+      "tags": ["core", "main", "точка-входа", "основы"],
+      "seo": {
+        "title": "Метод main() в Java — точка входа в программу — Gymterview",
+        "description": "Метод main() — точка входа в Java-программу. Сигнатура public static void main(String[] args). С Java 21 — instance main и unnamed classes.",
+        "keywords": ["main Java", "точка входа Java", "public static void main", "метод main"],
+        "ogTitle": "main() в Java — всё что нужно знать",
+        "ogDescription": "public static void main(String[] args) — точка входа. С Java 21 можно использовать instance main() без static и unnamed classes.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о функции main()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод main() — точка входа в Java-программу. Классическая сигнатура: public static void main(String[] args). В приложении может быть несколько таких методов. Начиная с Java 21 поддерживаются instance main() методы и unnamed classes."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Метод main()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие логические операции и операторы вы знаете?",
+      "questionSlug": "logicheskie-operatory-java",
+      "grade": "junior",
+      "tags": ["core", "операторы", "логика", "основы"],
+      "seo": {
+        "title": "Логические операторы Java: &&, ||, !, ^, == — полный список — Gymterview",
+        "description": "Логические операторы Java: AND (& и &&), OR (| и ||), XOR (^), NOT (!), тернарный (?:). Разница между & и && — short-circuit evaluation.",
+        "keywords": ["логические операторы Java", "&& || Java", "short-circuit evaluation", "тернарный оператор Java"],
+        "ogTitle": "Логические операторы в Java — полный список",
+        "ogDescription": "AND, OR, XOR, NOT, тернарный оператор. Разница между & и && — сокращённое вычисление (short-circuit).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие логические операции и операторы вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Логические операторы Java: & (AND), && (сокращённое AND), | (OR), || (сокращённое OR), ^ (XOR), ! (NOT), == (равно), != (не равно), ?: (тернарный). Сокращённые операторы && и || не вычисляют второй операнд, если результат определён первым."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Логические операторы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое тернарный оператор выбора?",
+      "questionSlug": "ternarnyj-operator-java",
+      "grade": "junior",
+      "tags": ["core", "операторы", "основы"],
+      "seo": {
+        "title": "Тернарный оператор ?: в Java — синтаксис и примеры — Gymterview",
+        "description": "Тернарный оператор ?: заменяет if-then-else. Синтаксис: условие ? выражение1 : выражение2. Оба выражения должны возвращать совместимые типы.",
+        "keywords": ["тернарный оператор Java", "оператор ?: Java", "условный оператор", "if else замена"],
+        "ogTitle": "Тернарный оператор ?: в Java — как работает",
+        "ogDescription": "условие ? выражение1 : выражение2 — компактная замена if-else. Оба операнда должны возвращать совместимые типы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое тернарный оператор выбора?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тернарный условный оператор ?: заменяет некоторые конструкции if-then-else. Синтаксис: условие ? выражение1 : выражение2. Если условие true, вычисляется выражение1, иначе — выражение2. Оба операнда должны возвращать совместимые типы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Тернарный оператор", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие побитовые операции вы знаете?",
+      "questionSlug": "pobitovye-operacii-java",
+      "grade": "junior",
+      "tags": ["core", "операторы", "побитовые-операции", "основы"],
+      "seo": {
+        "title": "Побитовые операции в Java: &, |, ^, ~, <<, >> — Gymterview",
+        "description": "Побитовые операторы Java: NOT (~), AND (&), OR (|), XOR (^), сдвиг влево (<<), сдвиг вправо (>>), беззнаковый сдвиг (>>>).",
+        "keywords": ["побитовые операции Java", "битовый сдвиг Java", "XOR AND OR Java", ">>> оператор"],
+        "ogTitle": "Побитовые операции в Java — полный список",
+        "ogDescription": "NOT, AND, OR, XOR, сдвиг влево, сдвиг вправо, беззнаковый сдвиг вправо — все побитовые операторы Java с описанием.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие побитовые операции вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Побитовые операторы Java: ~ (NOT), & (AND), | (OR), ^ (XOR), >> (сдвиг вправо), >>> (беззнаковый сдвиг вправо), << (сдвиг влево). Каждый из них имеет вариант с присваиванием (&=, |=, ^=, >>=, >>>=, <<=)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Побитовые операции", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Где и для чего используется модификатор `abstract`?",
+      "questionSlug": "modifikator-abstract-java",
+      "grade": "junior",
+      "tags": ["core", "abstract", "абстрактный-класс", "oop"],
+      "seo": {
+        "title": "Модификатор abstract в Java — классы и методы — Gymterview",
+        "description": "Abstract класс — нельзя создать экземпляр, используется как предок. Abstract метод — без реализации, обязывает наследника реализовать.",
+        "keywords": ["abstract Java", "абстрактный класс Java", "абстрактный метод", "модификатор abstract"],
+        "ogTitle": "abstract в Java — абстрактные классы и методы",
+        "ogDescription": "Abstract класс нельзя инстанцировать, но он может иметь конструкторы и поля. Abstract метод не имеет тела — реализация в наследниках.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Где и для чего используется модификатор abstract?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор abstract применяется к классам и методам. Абстрактный класс не может быть инстанцирован, выступает только предком для других классов. Абстрактный метод не имеет реализации — если в классе есть хотя бы один абстрактный метод, весь класс должен быть абстрактным."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Модификатор abstract", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Дайте определение понятию интерфейс. Какие модификаторы по умолчанию имеют поля и методы интерфейсов?",
+      "questionSlug": "interfejs-java-modifikatory",
+      "grade": "junior",
+      "tags": ["core", "interface", "модификаторы", "абстракция"],
+      "seo": {
+        "title": "Интерфейс в Java — определение, модификаторы полей и методов — Gymterview",
+        "description": "Интерфейс определяет контракт: методы public abstract, поля public static final. С Java 8 — default и static методы, с Java 9 — private.",
+        "keywords": ["интерфейс Java", "interface Java определение", "default методы интерфейса", "модификаторы интерфейса"],
+        "ogTitle": "Интерфейсы в Java — что это и какие модификаторы",
+        "ogDescription": "Методы интерфейса — public abstract по умолчанию. Поля — public static final. С Java 8+ — default/static, с Java 9+ — private методы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Дайте определение понятию интерфейс. Какие модификаторы по умолчанию имеют поля и методы интерфейсов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интерфейс определяет контракт — набор методов, которые класс обязуется реализовать. Методы неявно public abstract, поля — public static final. С Java 8 разрешены default и static методы, с Java 9 — private методы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Core", "url": "/topics/core" },
+          { "name": "Интерфейс и модификаторы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}
