@@ -1,0 +1,680 @@
+{
+  "topic": "Многопоточность",
+  "topicSlug": "concurrency",
+  "batch": 1,
+  "generatedAt": "2026-05-09T18:00:00Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Расскажите о модели памяти Java?",
+      "slug": "java-memory-model",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Расскажите о модели памяти Java? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Расскажите о модели памяти Java? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["модель памяти Java", "JMM", "happens-before", "Java Memory Model", "многопоточность", "Java собеседование"],
+        "ogTitle": "Расскажите о модели памяти Java? — Gymterview",
+        "ogDescription": "Разбор вопроса о модели памяти Java (JMM) для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Расскажите о модели памяти Java?", "path": "/topics/concurrency/java-memory-model" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Расскажите о модели памяти Java?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Модель памяти Java (JMM) описывает поведение потоков в среде исполнения Java, определяя набор правил взаимодействия потоков через основную память и отношение happens-before."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "question": "Что такое потокобезопасность?",
+      "slug": "thread-safety",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое «потокобезопасность»? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое «потокобезопасность»? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["потокобезопасность", "thread safety", "синхронизация", "многопоточность", "Java собеседование"],
+        "ogTitle": "Что такое «потокобезопасность»? — Gymterview",
+        "ogDescription": "Разбор вопроса о потокобезопасности (thread safety) для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Что такое «потокобезопасность»?", "path": "/topics/concurrency/thread-safety" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое «потокобезопасность»?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Потокобезопасность (thread safety) — свойство объекта или кода, гарантирующее корректное поведение при использовании несколькими потоками одновременно."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "question": "В чём разница между конкуренцией и параллелизмом?",
+      "slug": "concurrency-vs-parallelism",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "В чём разница между «конкуренцией» и «параллелизмом»? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: В чём разница между «конкуренцией» и «параллелизмом»? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["конкуренция", "параллелизм", "concurrency", "parallelism", "многопоточность", "Java собеседование"],
+        "ogTitle": "В чём разница между «конкуренцией» и «параллелизмом»? — Gymterview",
+        "ogDescription": "Разбор различий между конкуренцией и параллелизмом для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "В чём разница между «конкуренцией» и «параллелизмом»?", "path": "/topics/concurrency/concurrency-vs-parallelism" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "В чём разница между «конкуренцией» и «параллелизмом»?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Конкуренция (concurrency) — это способность системы обрабатывать несколько задач, переключаясь между ними. Параллелизм (parallelism) — одновременное выполнение нескольких задач на разных процессорах."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "question": "Что такое кооперативная многозадачность? Какой тип многозадачности использует Java? Чем обусловлен этот выбор?",
+      "slug": "cooperative-multitasking",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое «кооперативная многозадачность»? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое «кооперативная многозадачность»? Какой тип многозадачности использует Java? Подготовка к собеседованию.",
+        "keywords": ["кооперативная многозадачность", "вытесняющая многозадачность", "multitasking", "многопоточность", "Java собеседование"],
+        "ogTitle": "Что такое «кооперативная многозадачность»? — Gymterview",
+        "ogDescription": "Разбор вопроса о типах многозадачности в Java для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Что такое «кооперативная многозадачность»?", "path": "/topics/concurrency/cooperative-multitasking" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое «кооперативная многозадачность»? Какой тип многозадачности использует Java? Чем обусловлен этот выбор?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Кооперативная многозадачность — тип многозадачности, при котором процесс сам решает, когда передать управление. Java использует вытесняющую многозадачность, где планировщик ОС управляет переключением потоков."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "question": "Что такое ordering, as-if-serial semantics, sequential consistency, visibility, atomicity, happens-before, mutual exclusion, safe publication?",
+      "slug": "ordering-visibility-atomicity-concepts",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое ordering, visibility, atomicity, happens-before? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое ordering, as-if-serial semantics, sequential consistency, visibility, atomicity, happens-before, mutual exclusion, safe publication?",
+        "keywords": ["ordering", "visibility", "atomicity", "happens-before", "sequential consistency", "safe publication", "Java собеседование"],
+        "ogTitle": "Ordering, visibility, atomicity, happens-before — Gymterview",
+        "ogDescription": "Разбор ключевых концепций многопоточности: ordering, visibility, atomicity, happens-before и др."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Ordering, visibility, atomicity, happens-before", "path": "/topics/concurrency/ordering-visibility-atomicity-concepts" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое ordering, as-if-serial semantics, sequential consistency, visibility, atomicity, happens-before, mutual exclusion, safe publication?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Это ключевые концепции модели памяти Java: ordering определяет порядок операций, visibility — видимость изменений между потоками, atomicity — неделимость операций, happens-before — отношение порядка выполнения."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "question": "Чем отличается процесс от потока?",
+      "slug": "process-vs-thread",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Чем отличается процесс от потока? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Чем отличается процесс от потока? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["процесс", "поток", "process", "thread", "многопоточность", "Java собеседование"],
+        "ogTitle": "Чем отличается процесс от потока? — Gymterview",
+        "ogDescription": "Разбор различий между процессом и потоком для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Чем отличается процесс от потока?", "path": "/topics/concurrency/process-vs-thread" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Чем отличается процесс от потока?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Процесс — независимая единица выполнения с собственным адресным пространством. Поток — легковесная единица выполнения внутри процесса, разделяющая память с другими потоками того же процесса."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "question": "Что такое зелёные потоки и есть ли они в Java?",
+      "slug": "green-threads",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое «зелёные потоки» и есть ли они в Java? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое «зелёные потоки» и есть ли они в Java? Подготовка к собеседованию Java Developer.",
+        "keywords": ["зелёные потоки", "green threads", "virtual threads", "многопоточность", "Java собеседование"],
+        "ogTitle": "Что такое «зелёные потоки» и есть ли они в Java? — Gymterview",
+        "ogDescription": "Разбор вопроса о зелёных потоках (green threads) в Java для собеседования."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Что такое «зелёные потоки» и есть ли они в Java?", "path": "/topics/concurrency/green-threads" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое «зелёные потоки» и есть ли они в Java?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Зелёные потоки (green threads) — потоки, управляемые виртуальной машиной, а не ОС. В ранних версиях Java они использовались, но были заменены нативными потоками. В Java 21 появились Virtual Threads (Project Loom)."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "question": "Каким образом можно создать поток?",
+      "slug": "how-to-create-thread",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Каким образом можно создать поток? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Каким образом можно создать поток? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["создание потока", "Thread", "Runnable", "Callable", "многопоточность", "Java собеседование"],
+        "ogTitle": "Каким образом можно создать поток? — Gymterview",
+        "ogDescription": "Разбор способов создания потоков в Java для собеседования."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Каким образом можно создать поток?", "path": "/topics/concurrency/how-to-create-thread" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Каким образом можно создать поток?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Поток в Java можно создать наследованием от класса Thread, реализацией интерфейса Runnable или Callable, а также с помощью ExecutorService."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "question": "Чем различаются Thread и Runnable?",
+      "slug": "thread-vs-runnable",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Чем различаются Thread и Runnable? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Чем различаются Thread и Runnable? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["Thread", "Runnable", "различия", "многопоточность", "Java собеседование"],
+        "ogTitle": "Чем различаются Thread и Runnable? — Gymterview",
+        "ogDescription": "Разбор различий между Thread и Runnable для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Чем различаются Thread и Runnable?", "path": "/topics/concurrency/thread-vs-runnable" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Чем различаются Thread и Runnable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Thread — класс, Runnable — интерфейс. Реализация Runnable предпочтительнее, так как позволяет наследовать от другого класса и лучше разделяет задачу и механизм выполнения."
+        }
+      }
+    },
+    {
+      "id": 10,
+      "question": "В чём заключается разница между методами start() и run()?",
+      "slug": "start-vs-run",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "В чём разница между методами start() и run()? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: В чём заключается разница между методами start() и run()? Подготовка к собеседованию Java Developer.",
+        "keywords": ["start()", "run()", "Thread", "многопоточность", "Java собеседование"],
+        "ogTitle": "В чём разница между start() и run()? — Gymterview",
+        "ogDescription": "Разбор различий между методами start() и run() класса Thread для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "В чём заключается разница между методами start() и run()?", "path": "/topics/concurrency/start-vs-run" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "В чём заключается разница между методами start() и run()?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Метод start() создаёт новый поток и вызывает в нём run(). Прямой вызов run() выполняет код в текущем потоке, не создавая новый."
+        }
+      }
+    },
+    {
+      "id": 11,
+      "question": "Как принудительно запустить поток?",
+      "slug": "force-start-thread",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Как принудительно запустить поток? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Как принудительно запустить поток? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["запуск потока", "Thread.start()", "планировщик потоков", "многопоточность", "Java собеседование"],
+        "ogTitle": "Как принудительно запустить поток? — Gymterview",
+        "ogDescription": "Разбор вопроса о принудительном запуске потока для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Как принудительно запустить поток?", "path": "/topics/concurrency/force-start-thread" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Как принудительно запустить поток?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Принудительно запустить поток невозможно. Вызов start() лишь сообщает планировщику потоков о готовности, а момент запуска определяется операционной системой."
+        }
+      }
+    },
+    {
+      "id": 12,
+      "question": "Что такое монитор в Java?",
+      "slug": "monitor-in-java",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое «монитор» в Java? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое «монитор» в Java? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["монитор", "monitor", "synchronized", "блокировка", "многопоточность", "Java собеседование"],
+        "ogTitle": "Что такое «монитор» в Java? — Gymterview",
+        "ogDescription": "Разбор понятия монитора в Java для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Что такое «монитор» в Java?", "path": "/topics/concurrency/monitor-in-java" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое «монитор» в Java?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Монитор — механизм синхронизации, обеспечивающий взаимное исключение потоков. В Java каждый объект имеет связанный с ним монитор, который используется ключевым словом synchronized."
+        }
+      }
+    },
+    {
+      "id": 13,
+      "question": "Дайте определение понятию синхронизация.",
+      "slug": "synchronization-definition",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Дайте определение понятию «синхронизация» — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Дайте определение понятию «синхронизация». Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["синхронизация", "synchronization", "synchronized", "многопоточность", "Java собеседование"],
+        "ogTitle": "Определение понятию «синхронизация» — Gymterview",
+        "ogDescription": "Разбор понятия синхронизации в Java для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Дайте определение понятию «синхронизация».", "path": "/topics/concurrency/synchronization-definition" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Дайте определение понятию «синхронизация».",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Синхронизация — механизм координации выполнения потоков для обеспечения корректного доступа к разделяемым ресурсам и предотвращения состояний гонки."
+        }
+      }
+    },
+    {
+      "id": 14,
+      "question": "Какие существуют способы синхронизации в Java?",
+      "slug": "synchronization-methods",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Какие существуют способы синхронизации в Java? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Какие существуют способы синхронизации в Java? Подготовка к собеседованию Java Developer.",
+        "keywords": ["способы синхронизации", "synchronized", "ReentrantLock", "volatile", "многопоточность", "Java собеседование"],
+        "ogTitle": "Способы синхронизации в Java — Gymterview",
+        "ogDescription": "Разбор способов синхронизации в Java для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Какие существуют способы синхронизации в Java?", "path": "/topics/concurrency/synchronization-methods" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Какие существуют способы синхронизации в Java?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Основные способы синхронизации: synchronized (методы и блоки), volatile, Lock/ReentrantLock, атомарные переменные, concurrent-коллекции."
+        }
+      }
+    },
+    {
+      "id": 15,
+      "question": "В каких состояниях может находиться поток?",
+      "slug": "thread-states",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "В каких состояниях может находиться поток? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: В каких состояниях может находиться поток? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["состояния потока", "Thread.State", "NEW", "RUNNABLE", "BLOCKED", "WAITING", "TERMINATED", "Java собеседование"],
+        "ogTitle": "Состояния потока в Java — Gymterview",
+        "ogDescription": "Разбор жизненного цикла потока и его состояний для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "В каких состояниях может находиться поток?", "path": "/topics/concurrency/thread-states" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "В каких состояниях может находиться поток?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Поток может находиться в состояниях: NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED."
+        }
+      }
+    },
+    {
+      "id": 16,
+      "question": "Можно ли создавать новые экземпляры класса, пока выполняется static synchronized метод?",
+      "slug": "static-synchronized-new-instances",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Можно ли создавать экземпляры при выполнении static synchronized метода? — Gymterview",
+        "description": "Ответ на вопрос: Можно ли создавать новые экземпляры класса, пока выполняется static synchronized метод?",
+        "keywords": ["static synchronized", "создание экземпляров", "монитор класса", "многопоточность", "Java собеседование"],
+        "ogTitle": "Static synchronized метод и создание экземпляров — Gymterview",
+        "ogDescription": "Разбор вопроса о создании экземпляров при выполнении static synchronized метода."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Можно ли создавать экземпляры при static synchronized методе?", "path": "/topics/concurrency/static-synchronized-new-instances" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Можно ли создавать новые экземпляры класса, пока выполняется static synchronized метод?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да, можно. Static synchronized метод блокирует монитор объекта Class, а конструктор не использует этот монитор, поэтому создание экземпляров не блокируется."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "question": "Зачем может быть нужен private мьютекс?",
+      "slug": "private-mutex",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Зачем может быть нужен private мьютекс? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Зачем может быть нужен private мьютекс? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["private мьютекс", "mutex", "синхронизация", "lock object", "многопоточность", "Java собеседование"],
+        "ogTitle": "Зачем нужен private мьютекс? — Gymterview",
+        "ogDescription": "Разбор применения private мьютекса в Java для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Зачем может быть нужен private мьютекс?", "path": "/topics/concurrency/private-mutex" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Зачем может быть нужен private мьютекс?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Private мьютекс предотвращает внешний доступ к объекту блокировки, защищая от случайной или намеренной синхронизации на том же мониторе извне класса."
+        }
+      }
+    },
+    {
+      "id": 18,
+      "question": "Как работают методы wait() и notify()/notifyAll()?",
+      "slug": "wait-notify",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Как работают методы wait() и notify()/notifyAll()? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Как работают методы wait() и notify()/notifyAll()? Подготовка к собеседованию Java Developer.",
+        "keywords": ["wait()", "notify()", "notifyAll()", "монитор", "многопоточность", "Java собеседование"],
+        "ogTitle": "Как работают wait() и notify()/notifyAll()? — Gymterview",
+        "ogDescription": "Разбор работы методов wait(), notify() и notifyAll() для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Как работают методы wait() и notify()/notifyAll()?", "path": "/topics/concurrency/wait-notify" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Как работают методы wait() и notify()/notifyAll()?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "wait() переводит поток в состояние ожидания, освобождая монитор. notify() пробуждает один ожидающий поток, notifyAll() — все ожидающие потоки на данном мониторе."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "question": "В чем разница между notify() и notifyAll()?",
+      "slug": "notify-vs-notifyall",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "В чем разница между notify() и notifyAll()? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: В чем разница между notify() и notifyAll()? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["notify()", "notifyAll()", "различия", "многопоточность", "Java собеседование"],
+        "ogTitle": "Разница между notify() и notifyAll() — Gymterview",
+        "ogDescription": "Разбор различий между notify() и notifyAll() для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "В чем разница между notify() и notifyAll()?", "path": "/topics/concurrency/notify-vs-notifyall" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "В чем разница между notify() и notifyAll()?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "notify() пробуждает один произвольный поток из ожидающих на мониторе, notifyAll() пробуждает все ожидающие потоки, после чего они конкурируют за захват монитора."
+        }
+      }
+    },
+    {
+      "id": 20,
+      "question": "Почему методы wait() и notify() вызываются только в синхронизированном блоке?",
+      "slug": "wait-notify-synchronized-block",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Почему wait() и notify() вызываются только в synchronized блоке? — Gymterview",
+        "description": "Ответ на вопрос: Почему методы wait() и notify() вызываются только в синхронизированном блоке? Подготовка к собеседованию.",
+        "keywords": ["wait()", "notify()", "synchronized", "IllegalMonitorStateException", "многопоточность", "Java собеседование"],
+        "ogTitle": "Почему wait() и notify() только в synchronized? — Gymterview",
+        "ogDescription": "Разбор причин вызова wait() и notify() только в синхронизированном блоке."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Почему wait() и notify() вызываются в synchronized блоке?", "path": "/topics/concurrency/wait-notify-synchronized-block" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Почему методы wait() и notify() вызываются только в синхронизированном блоке?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Методы wait() и notify() работают с монитором объекта. Поток должен владеть монитором для их вызова, иначе будет выброшено IllegalMonitorStateException."
+        }
+      }
+    },
+    {
+      "id": 21,
+      "question": "Чем отличается работа метода wait() с параметром и без параметра?",
+      "slug": "wait-with-and-without-parameter",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Чем отличается wait() с параметром и без? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Чем отличается работа метода wait() с параметром и без параметра? Подготовка к собеседованию Java Developer.",
+        "keywords": ["wait()", "wait(timeout)", "таймаут ожидания", "многопоточность", "Java собеседование"],
+        "ogTitle": "wait() с параметром и без параметра — Gymterview",
+        "ogDescription": "Разбор различий между wait() с таймаутом и без для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Чем отличается wait() с параметром и без?", "path": "/topics/concurrency/wait-with-and-without-parameter" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Чем отличается работа метода wait() с параметром и без параметра?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "wait() без параметра ожидает до вызова notify()/notifyAll(). wait(timeout) ожидает указанное время в миллисекундах, после чего поток автоматически пробуждается."
+        }
+      }
+    },
+    {
+      "id": 22,
+      "question": "Чем отличаются методы Thread.sleep() и Thread.yield()?",
+      "slug": "sleep-vs-yield",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Чем отличаются Thread.sleep() и Thread.yield()? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Чем отличаются методы Thread.sleep() и Thread.yield()? Подготовка к собеседованию Java Developer.",
+        "keywords": ["Thread.sleep()", "Thread.yield()", "различия", "многопоточность", "Java собеседование"],
+        "ogTitle": "Thread.sleep() vs Thread.yield() — Gymterview",
+        "ogDescription": "Разбор различий между Thread.sleep() и Thread.yield() для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Чем отличаются Thread.sleep() и Thread.yield()?", "path": "/topics/concurrency/sleep-vs-yield" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Чем отличаются методы Thread.sleep() и Thread.yield()?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "sleep() приостанавливает поток на заданное время, переводя в TIMED_WAITING. yield() лишь подсказывает планировщику, что поток готов уступить процессор, но не гарантирует приостановку."
+        }
+      }
+    },
+    {
+      "id": 23,
+      "question": "Как работает метод Thread.join()?",
+      "slug": "thread-join",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Как работает метод Thread.join()? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Как работает метод Thread.join()? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["Thread.join()", "ожидание потока", "многопоточность", "Java собеседование"],
+        "ogTitle": "Как работает Thread.join()? — Gymterview",
+        "ogDescription": "Разбор работы метода Thread.join() для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Как работает метод Thread.join()?", "path": "/topics/concurrency/thread-join" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Как работает метод Thread.join()?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Метод join() блокирует вызывающий поток до тех пор, пока поток, на котором вызван join(), не завершит выполнение. Есть перегрузка с таймаутом."
+        }
+      }
+    },
+    {
+      "id": 24,
+      "question": "Что такое deadlock?",
+      "slug": "deadlock",
+      "topic": "Многопоточность",
+      "topicSlug": "concurrency",
+      "seo": {
+        "title": "Что такое deadlock? — Многопоточность | Gymterview",
+        "description": "Ответ на вопрос: Что такое deadlock? Подготовка к собеседованию Java Developer — тема Многопоточность.",
+        "keywords": ["deadlock", "взаимная блокировка", "тупик", "многопоточность", "Java собеседование"],
+        "ogTitle": "Что такое deadlock? — Gymterview",
+        "ogDescription": "Разбор понятия deadlock (взаимная блокировка) для собеседования Java Developer."
+      },
+      "breadcrumbs": [
+        { "label": "Главная", "path": "/" },
+        { "label": "Многопоточность", "path": "/topics/concurrency" },
+        { "label": "Что такое deadlock?", "path": "/topics/concurrency/deadlock" }
+      ],
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Question",
+        "name": "Что такое deadlock?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deadlock (взаимная блокировка) — ситуация, когда два или более потока навсегда заблокированы, ожидая друг друга для освобождения ресурсов."
+        }
+      }
+    }
+  ]
+}

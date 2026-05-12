@@ -1,0 +1,442 @@
+{
+  "topic": "CI/CD",
+  "topicSlug": "cicd",
+  "batch": 2,
+  "generatedAt": "2026-05-09T16:00:00Z",
+  "questions": [
+    {
+      "question": "Какие триггеры сборки существуют в Jenkins?",
+      "questionSlug": "kakie-triggery-sborki-sushchestvuyut-v-jenkins",
+      "grade": "middle",
+      "tags": ["jenkins", "triggers", "webhook", "cron", "pollSCM", "CI/CD"],
+      "seo": {
+        "title": "Какие триггеры сборки существуют в Jenkins — Gymterview",
+        "description": "Обзор триггеров сборки Jenkins: Webhook, SCM Polling, Cron, Upstream, ручной запуск. Примеры настройки в Jenkinsfile, рекомендации для банковской среды.",
+        "keywords": ["Jenkins триггеры", "webhook", "pollSCM", "cron Jenkins", "githubPush", "upstream trigger", "автоматический запуск сборки", "Jenkinsfile triggers", "Java CI/CD"],
+        "ogTitle": "Триггеры сборки Jenkins: Webhook, Cron, Polling и другие — Gymterview",
+        "ogDescription": "Разбираем 5 способов автоматического запуска сборки в Jenkins с примерами Jenkinsfile. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие триггеры сборки существуют в Jenkins?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenkins поддерживает 5 типов триггеров: Webhook (рекомендуемый — Git-сервер отправляет HTTP-запрос при push/merge), SCM Polling (периодический опрос репозитория через pollSCM), Cron (запуск по расписанию для ночных сборок), Upstream (запуск после завершения другого проекта), Ручной запуск (через UI или REST API). В банковской среде используют комбинацию webhook для разработки и ручной запуск для production."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Триггеры сборки Jenkins", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Jenkins взаимодействует с Docker?",
+      "questionSlug": "kak-jenkins-vzaimodejstvuet-s-docker",
+      "grade": "middle",
+      "tags": ["jenkins", "docker", "docker-agent", "docker-compose", "CI/CD", "containerization"],
+      "seo": {
+        "title": "Как Jenkins взаимодействует с Docker — Gymterview",
+        "description": "Интеграция Jenkins и Docker: Docker как агент сборки, разные образы для стадий, Docker Compose для интеграционных тестов, Dockerfile как агент. Примеры Jenkinsfile.",
+        "keywords": ["Jenkins Docker", "Docker agent", "Docker Pipeline plugin", "docker.build", "docker.withRegistry", "Docker Compose Jenkins", "контейнерная сборка", "Java CI/CD"],
+        "ogTitle": "Jenkins и Docker: 4 уровня интеграции с примерами — Gymterview",
+        "ogDescription": "Docker как агент, разные образы для стадий, Docker Compose для тестов, Dockerfile как агент. Примеры Jenkinsfile для Java-проектов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Jenkins взаимодействует с Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenkins интегрируется с Docker на 4 уровнях: Docker как агент сборки (каждая сборка в чистом контейнере через agent { docker { image 'maven:3.9' } }), разные Docker-образы для разных стадий (agent none + agent per stage), Docker Compose для интеграционных тестов (docker-compose up/down в pre/post), Dockerfile как агент (сборка образа из Dockerfile в репозитории через agent { dockerfile {} })."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Jenkins и Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Multibranch Pipeline?",
+      "questionSlug": "chto-takoe-multibranch-pipeline",
+      "grade": "middle",
+      "tags": ["jenkins", "multibranch", "pipeline", "branches", "pull-request", "CI/CD"],
+      "seo": {
+        "title": "Что такое Multibranch Pipeline в Jenkins — Gymterview",
+        "description": "Multibranch Pipeline в Jenkins: автоматическое создание пайплайнов для каждой ветки с Jenkinsfile, поддержка Pull Request, условные стадии по имени ветки.",
+        "keywords": ["Multibranch Pipeline", "Jenkins ветки", "Jenkinsfile", "branch Jenkins", "Pull Request CI", "BRANCH_NAME", "CHANGE_ID", "when branch", "Java CI/CD"],
+        "ogTitle": "Multibranch Pipeline в Jenkins: автоматические пайплайны для веток — Gymterview",
+        "ogDescription": "Как Multibranch Pipeline создает отдельный пайплайн для каждой ветки. Условные стадии, Pull Request, env.BRANCH_NAME.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Multibranch Pipeline?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Multibranch Pipeline — тип проекта Jenkins, автоматически создающий отдельный пайплайн для каждой ветки репозитория, содержащей Jenkinsfile. Jenkins сканирует репозиторий, находит ветки с Jenkinsfile и создает Job для каждой. При появлении новой ветки — создается Job, при удалении — удаляется. Pull Request автоматически получают свой пайплайн. Переменная env.BRANCH_NAME содержит имя ветки, env.CHANGE_ID — номер PR."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Multibranch Pipeline", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Nexus Repository Manager?",
+      "questionSlug": "chto-takoe-nexus-repository-manager",
+      "grade": "junior",
+      "tags": ["nexus", "repository-manager", "artifacts", "maven", "docker-registry", "CI/CD"],
+      "seo": {
+        "title": "Что такое Nexus Repository Manager — Gymterview",
+        "description": "Nexus Repository Manager: менеджер репозиториев для хранения JAR, Docker-образов, npm-пакетов. Проксирование Maven Central, контроль доступа, версии OSS и Pro.",
+        "keywords": ["Nexus Repository Manager", "Sonatype Nexus", "менеджер репозиториев", "Maven артефакты", "Docker Registry", "Nexus OSS", "Nexus Pro", "приватный репозиторий", "Java CI/CD"],
+        "ogTitle": "Nexus Repository Manager: хранение и управление артефактами — Gymterview",
+        "ogDescription": "Что такое Nexus, зачем он нужен: проксирование, хранение приватных артефактов, контроль доступа. Применение в банковской среде.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Nexus Repository Manager?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sonatype Nexus Repository Manager — менеджер репозиториев артефактов, единая точка хранения и распространения программных компонентов (JAR, WAR, Docker-образы, npm-пакеты). Основные функции: проксирование внешних репозиториев (Maven Central, Docker Hub), хранение приватных артефактов, управление жизненным циклом (snapshot/release), контроль доступа. Версии: OSS (бесплатная) и Pro (staging, SAML, HA). В банках необходим для работы в закрытом контуре и контроля зависимостей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Nexus Repository Manager", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы репозиториев существуют в Nexus?",
+      "questionSlug": "kakie-tipy-repozitoriev-sushchestvuyut-v-nexus",
+      "grade": "middle",
+      "tags": ["nexus", "hosted", "proxy", "group", "repository", "maven"],
+      "seo": {
+        "title": "Какие типы репозиториев существуют в Nexus — Gymterview",
+        "description": "Три типа репозиториев Nexus: Hosted (приватные артефакты), Proxy (кэш Maven Central), Group (объединение под одним URL). Схема взаимодействия maven-public.",
+        "keywords": ["Nexus репозитории", "hosted repository", "proxy repository", "group repository", "maven-releases", "maven-snapshots", "maven-central proxy", "maven-public", "Nexus типы"],
+        "ogTitle": "Типы репозиториев Nexus: Hosted, Proxy, Group — Gymterview",
+        "ogDescription": "Hosted для приватных артефактов, Proxy для кэширования Maven Central, Group для объединения. Схема взаимодействия и примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы репозиториев существуют в Nexus?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Nexus три типа репозиториев: Hosted — хранит артефакты, загруженные непосредственно (maven-releases для релизов, maven-snapshots для snapshot-версий; releases не позволяет перезаписывать артефакты). Proxy — проксирует и кэширует внешние репозитории (maven-central, docker-hub). Group — объединяет несколько hosted и proxy под одним URL (maven-public = maven-releases + maven-snapshots + maven-central). Разработчик настраивает один URL и получает доступ ко всем артефактам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Типы репозиториев Nexus", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем использовать Nexus в проекте?",
+      "questionSlug": "zachem-ispolzovat-nexus-v-proekte",
+      "grade": "junior",
+      "tags": ["nexus", "dependency-management", "caching", "security", "enterprise", "CI/CD"],
+      "seo": {
+        "title": "Зачем использовать Nexus в проекте — Gymterview",
+        "description": "Причины внедрения Nexus: кэширование зависимостей, хранение приватных артефактов, контроль безопасности, воспроизводимость сборки, работа в закрытом контуре.",
+        "keywords": ["Nexus зачем", "кэширование зависимостей", "приватные артефакты", "Nexus IQ", "закрытый контур", "воспроизводимость сборки", "безопасность зависимостей", "enterprise Java"],
+        "ogTitle": "Зачем использовать Nexus в Java-проекте — Gymterview",
+        "ogDescription": "6 причин внедрения Nexus: кэш зависимостей, приватные артефакты, безопасность, воспроизводимость, закрытый контур, единая точка.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем использовать Nexus в проекте?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные причины: кэширование зависимостей (скачиваются из интернета один раз, последующие сборки берут из Nexus по LAN), хранение приватных артефактов (собственные библиотеки), контроль и безопасность (проверка CVE через Nexus IQ, проверка лицензий, аудит загрузок), воспроизводимость сборки (зависимости не исчезнут из публичного репозитория), работа в закрытом контуре (банки, enterprise без прямого доступа в интернет), единая точка распространения для всех команд."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Зачем Nexus в проекте", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить Maven для работы с Nexus?",
+      "questionSlug": "kak-nastroit-maven-dlya-raboty-s-nexus",
+      "grade": "middle",
+      "tags": ["maven", "nexus", "settings.xml", "distributionManagement", "mirror", "deploy"],
+      "seo": {
+        "title": "Как настроить Maven для работы с Nexus — Gymterview",
+        "description": "Настройка Maven и Nexus: settings.xml (servers, mirrors, profiles), distributionManagement в pom.xml, команда mvn deploy. Полные примеры конфигурации.",
+        "keywords": ["Maven Nexus настройка", "settings.xml", "distributionManagement", "mirror Maven", "mvn deploy", "nexus-releases", "nexus-snapshots", "maven-public", "Java CI/CD"],
+        "ogTitle": "Настройка Maven для работы с Nexus: settings.xml и pom.xml — Gymterview",
+        "ogDescription": "Полная конфигурация Maven для Nexus: settings.xml с серверами и зеркалами, distributionManagement в pom.xml, публикация артефактов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить Maven для работы с Nexus?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настраиваются два файла: settings.xml (servers — учетные данные для nexus-releases и nexus-snapshots, mirrors — mirrorOf=* направляет все запросы через Nexus maven-public, profiles — URL репозиториев) и pom.xml (distributionManagement — URL для публикации releases и snapshots). Значения id в distributionManagement должны совпадать с id в servers. Публикация: mvn deploy -s /path/to/settings.xml. В Jenkins settings.xml предоставляется через Config File Provider."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Maven и Nexus", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить Gradle для работы с Nexus?",
+      "questionSlug": "kak-nastroit-gradle-dlya-raboty-s-nexus",
+      "grade": "middle",
+      "tags": ["gradle", "nexus", "maven-publish", "build.gradle", "kotlin-dsl", "deploy"],
+      "seo": {
+        "title": "Как настроить Gradle для работы с Nexus — Gymterview",
+        "description": "Настройка Gradle и Nexus: repositories в build.gradle, maven-publish плагин, gradle.properties, Kotlin DSL. Примеры скачивания и публикации артефактов.",
+        "keywords": ["Gradle Nexus", "build.gradle Nexus", "maven-publish plugin", "gradle publish", "gradle.properties", "Kotlin DSL Nexus", "Gradle репозиторий", "Java CI/CD"],
+        "ogTitle": "Настройка Gradle для работы с Nexus: build.gradle и Kotlin DSL — Gymterview",
+        "ogDescription": "Конфигурация Gradle для Nexus: скачивание зависимостей, публикация через maven-publish, gradle.properties, Kotlin DSL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить Gradle для работы с Nexus?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В build.gradle: блок repositories с maven { url 'nexus.../maven-public/' } и credentials для скачивания зависимостей. Для публикации: плагин maven-publish, блок publishing с publications (MavenPublication from components.java) и repositories (URL releases/snapshots выбирается по version.endsWith('SNAPSHOT')). Credentials из gradle.properties (не коммитить!) или System.getenv(). Kotlin DSL аналогичен. Команда: gradle publish -PnexusUser=... -PnexusPass=..."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Gradle и Nexus", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать Nexus в качестве Docker Registry?",
+      "questionSlug": "kak-ispolzovat-nexus-v-kachestve-docker-registry",
+      "grade": "middle",
+      "tags": ["nexus", "docker", "docker-registry", "docker-hosted", "docker-proxy", "CI/CD"],
+      "seo": {
+        "title": "Как использовать Nexus в качестве Docker Registry — Gymterview",
+        "description": "Настройка Nexus как Docker Registry: hosted, proxy и group репозитории, docker login/push/pull, интеграция с Jenkins, daemon.json для HTTP.",
+        "keywords": ["Nexus Docker Registry", "docker-hosted", "docker-proxy", "docker login Nexus", "docker push Nexus", "Docker v2 API", "daemon.json insecure-registries", "Jenkins Docker Nexus"],
+        "ogTitle": "Nexus как Docker Registry: настройка и использование — Gymterview",
+        "ogDescription": "Создание Docker-репозиториев в Nexus (hosted, proxy, group), docker login/push/pull, интеграция с Jenkins Pipeline.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать Nexus в качестве Docker Registry?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройка в Nexus: создать hosted Docker-репозиторий (docker-hosted, порт 8083), proxy для Docker Hub (docker-hub-proxy, порт 8084), group (docker-group, порт 8085). Использование: docker login nexus:8083, docker tag my-app nexus:8083/my-app:1.0, docker push nexus:8083/my-app:1.0, docker pull nexus:8085/my-app:1.0. В Jenkins: docker.build() + docker.withRegistry() с credentials. Для HTTP — настройка insecure-registries в daemon.json."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Nexus Docker Registry", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать деплой артефактов из Jenkins в Nexus?",
+      "questionSlug": "kak-organizovat-deploj-artefaktov-iz-jenkins-v-nexus",
+      "grade": "middle",
+      "tags": ["jenkins", "nexus", "deploy", "maven-deploy", "nexus-artifact-uploader", "CI/CD"],
+      "seo": {
+        "title": "Как организовать деплой артефактов из Jenkins в Nexus — Gymterview",
+        "description": "Три способа публикации артефактов из Jenkins в Nexus: Maven Deploy, Nexus Artifact Uploader Plugin, REST API (curl). Полный пайплайн с JAR и Docker.",
+        "keywords": ["Jenkins Nexus deploy", "mvn deploy Jenkins", "Nexus Artifact Uploader", "nexusArtifactUploader", "curl Nexus REST API", "configFileProvider", "Jenkins Docker Nexus", "Java CI/CD"],
+        "ogTitle": "Деплой артефактов из Jenkins в Nexus: 3 способа — Gymterview",
+        "ogDescription": "Maven Deploy, Nexus Artifact Uploader Plugin, REST API. Полный Jenkinsfile с публикацией JAR и Docker-образов в Nexus.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать деплой артефактов из Jenkins в Nexus?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три способа: Maven Deploy (рекомендуемый — mvn deploy -s settings.xml через configFileProvider), Nexus Artifact Uploader Plugin (nexusArtifactUploader с указанием nexusVersion, repository, credentialsId и списка artifacts), REST API через curl (--upload-file с withCredentials). Полный пайплайн включает Build, Test, Quality, Package, Publish JAR (mvn deploy), Publish Docker (docker.build + docker.withRegistry с Nexus URL и credentials)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Деплой из Jenkins в Nexus", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Git Flow, GitHub Flow и Trunk-based development?",
+      "questionSlug": "chto-takoe-git-flow-github-flow-i-trunk-based-development",
+      "grade": "middle",
+      "tags": ["git", "branching-strategy", "git-flow", "github-flow", "trunk-based", "CI/CD"],
+      "seo": {
+        "title": "Git Flow, GitHub Flow и Trunk-based development — Gymterview",
+        "description": "Сравнение стратегий ветвления: Git Flow (main/develop/feature/release/hotfix), GitHub Flow (main + feature PR), Trunk-based (один trunk + feature flags).",
+        "keywords": ["Git Flow", "GitHub Flow", "Trunk-based development", "стратегии ветвления", "branching strategy", "feature branch", "feature flags", "release branch", "CI/CD Git"],
+        "ogTitle": "Git Flow vs GitHub Flow vs Trunk-based: сравнение стратегий ветвления — Gymterview",
+        "ogDescription": "Три стратегии ветвления для CI/CD: Git Flow, GitHub Flow, Trunk-based. Сравнение совместимости с CI, применимость в банках и стартапах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Git Flow, GitHub Flow и Trunk-based development?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Git Flow — классическая модель с долгоживущими ветками (main, develop, feature/*, release/*, hotfix/*), подходит для планового релизного цикла, но сложна и медленна для CI. GitHub Flow — упрощенная модель (main всегда deployable + короткоживущие feature ветки через PR), хорошо сочетается с CI/CD. Trunk-based — вся работа в main/trunk, коммиты напрямую или через ветки на 1-2 дня, используются feature flags, максимальная совместимость с CI. В банках часто GitHub Flow или Git Flow."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Git Flow, GitHub Flow, Trunk-based", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Merge vs Rebase в контексте CI — что предпочтительнее?",
+      "questionSlug": "merge-vs-rebase-v-kontekste-ci-chto-predpochtitelnee",
+      "grade": "middle",
+      "tags": ["git", "merge", "rebase", "squash-merge", "CI", "branching"],
+      "seo": {
+        "title": "Merge vs Rebase в контексте CI — что предпочтительнее — Gymterview",
+        "description": "Сравнение Merge и Rebase в CI: влияние на CI-статус, конфликты, force push, git bisect. Рекомендации: rebase для feature-веток, merge/squash для main.",
+        "keywords": ["Merge vs Rebase", "git merge", "git rebase", "squash merge", "CI merge strategy", "force push", "git bisect", "linear history", "feature branch CI"],
+        "ogTitle": "Merge vs Rebase в CI: влияние на пайплайн и рекомендации — Gymterview",
+        "ogDescription": "Как Merge и Rebase влияют на CI: статус сборки, конфликты, повторный запуск CI, bisect. Типичный workflow и squash merge в банках.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Merge vs Rebase в контексте CI — что предпочтительнее?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Merge создает merge-коммит с нелинейной историей, CI проверяет только merge-коммит, конфликты разрешаются один раз, force push не нужен. Rebase переносит коммиты на вершину целевой ветки, создает линейную историю, но требует force push и перезапуска CI для всех перебазированных коммитов. Рекомендации: rebase feature-ветки на main перед merge (актуализация), merge или squash merge в main (сохраняет точку интеграции). В банках часто используют squash merge — все коммиты feature-ветки объединяются в один для упрощения аудита."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Merge vs Rebase в CI", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать CI/CD для Java-микросервисов в банковской среде?",
+      "questionSlug": "kak-organizovat-cicd-dlya-java-mikroservisov-v-bankovskoj-srede",
+      "grade": "senior",
+      "tags": ["CI/CD", "microservices", "banking", "jenkins", "nexus", "sonarqube", "kubernetes", "security"],
+      "seo": {
+        "title": "CI/CD для Java-микросервисов в банковской среде — Gymterview",
+        "description": "Архитектура CI/CD для банковских Java-микросервисов: Jenkins, Nexus, SonarQube, Kubernetes, Vault. Полный Jenkinsfile с Quality Gate, OWASP, ручным подтверждением.",
+        "keywords": ["CI/CD банк", "Java микросервисы CI/CD", "Jenkins банковская среда", "SonarQube Quality Gate", "OWASP Dependency Check", "on-premise CI/CD", "Shared Library Jenkins", "закрытый контур CI/CD"],
+        "ogTitle": "CI/CD для Java-микросервисов в банке: полный пайплайн — Gymterview",
+        "ogDescription": "Инфраструктура (Jenkins, Nexus, SonarQube, Vault), полный Jenkinsfile, Quality Gate, OWASP, ручное подтверждение production.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать CI/CD для Java-микросервисов в банковской среде?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Инфраструктура: Jenkins (on-premise), Nexus (артефакты и Docker-образы), SonarQube (качество кода), GitLab/Bitbucket (VCS), Kubernetes/OpenShift (оркестрация), HashiCorp Vault (секреты). Пайплайн: Checkout, Build (с settings.xml из configFileProvider), параллельные Unit Tests + Security Check (OWASP), SonarQube Analysis, Quality Gate (abortPipeline: true), Package & Publish JAR/Docker в Nexus, Deploy to Dev/Staging, Deploy to Production с input и ограничением submitter: 'release-managers'. Ключевые особенности: обязательный Quality Gate, проверка CVE, ручное подтверждение production, аудит, закрытый контур."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "CI/CD для микросервисов в банке", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить безопасность CI/CD пайплайна?",
+      "questionSlug": "kak-obespechit-bezopasnost-cicd-pajplajnа",
+      "grade": "senior",
+      "tags": ["CI/CD", "security", "credentials", "RBAC", "OWASP", "vault", "audit"],
+      "seo": {
+        "title": "Как обеспечить безопасность CI/CD пайплайна — Gymterview",
+        "description": "Безопасность CI/CD: управление секретами (Vault, Jenkins Credentials), RBAC, эфемерные агенты, OWASP Dependency Check, подпись артефактов, аудит, Script Security.",
+        "keywords": ["безопасность CI/CD", "Jenkins Credentials", "HashiCorp Vault", "RBAC Jenkins", "OWASP Dependency Check", "Docker Content Trust", "Audit Trail Jenkins", "Script Security Plugin", "секреты пайплайн"],
+        "ogTitle": "Безопасность CI/CD пайплайна: 7 ключевых практик — Gymterview",
+        "ogDescription": "Секреты, RBAC, эфемерные агенты, проверка зависимостей, подпись артефактов, аудит, защита Jenkinsfile. Практики для банков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить безопасность CI/CD пайплайна?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7 практик: 1) Управление секретами — Jenkins Credentials Store или HashiCorp Vault, ротация, никогда не в коде. 2) Контроль доступа — RBAC, принцип наименьших привилегий, LDAP/AD. 3) Безопасность агентов — эфемерные контейнеры, изоляция сборок. 4) Проверка зависимостей — OWASP Dependency Check (failBuildOnCVSS=7), Nexus IQ, проверка лицензий. 5) Подпись артефактов — Docker Content Trust, Cosign. 6) Аудит — Audit Trail Plugin, мониторинг аномалий, хранение логов. 7) Защита пайплайна — Jenkinsfile через code review, Script Security Plugin, проверенные Shared Libraries."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "CI/CD", "url": "/topics/cicd" },
+          { "name": "Безопасность CI/CD", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

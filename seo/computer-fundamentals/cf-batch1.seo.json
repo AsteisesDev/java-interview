@@ -1,0 +1,975 @@
+{
+  "topic": "Устройство ПК и сети",
+  "topicSlug": "computer-fundamentals",
+  "batch": 1,
+  "generatedAt": "2026-05-09T17:00:00Z",
+  "questions": [
+    {
+      "question": "Из каких основных компонентов состоит персональный компьютер?",
+      "questionSlug": "iz-kakikh-osnovnykh-komponentov-sostoit-personalnyj-kompyuter",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "hardware",
+        "CPU",
+        "RAM",
+        "SSD",
+        "HDD",
+        "материнская плата"
+      ],
+      "seo": {
+        "title": "Основные компоненты ПК — CPU, RAM, SSD, материнская плата — Gymterview",
+        "description": "Персональный компьютер состоит из CPU, RAM, накопителей (HDD/SSD), материнской платы, блока питания, видеокарты и шин. Разбираем назначение каждого компонента.",
+        "keywords": [
+          "компоненты компьютера",
+          "устройство ПК",
+          "CPU RAM SSD",
+          "материнская плата компоненты",
+          "из чего состоит компьютер"
+        ],
+        "ogTitle": "Из чего состоит ПК — 7 ключевых компонентов",
+        "ogDescription": "CPU, RAM, HDD/SSD, материнская плата, шины, блок питания, GPU — назначение и роль каждого компонента персонального компьютера.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Из каких основных компонентов состоит персональный компьютер?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ПК состоит из: CPU (процессор — выполняет вычисления), RAM (оперативная память — хранит данные для текущей работы), накопители HDD/SSD (долговременное хранение), материнская плата (объединяет компоненты), шины (каналы передачи данных), блок питания (преобразует ток) и видеокарта GPU (обработка графики)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Компоненты ПК",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое процессор (CPU)? Что такое ядра, потоки, тактовая частота?",
+      "questionSlug": "chto-takoe-protsessor-cpu-yadra-potoki-taktovaya-chastota",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "CPU",
+        "ядра",
+        "потоки",
+        "тактовая частота",
+        "Hyper-Threading"
+      ],
+      "seo": {
+        "title": "Процессор CPU — ядра, потоки, тактовая частота — Gymterview",
+        "description": "CPU — центральный процессор, выполняющий машинные инструкции. Ядра обеспечивают параллелизм, Hyper-Threading удваивает потоки, тактовая частота — скорость.",
+        "keywords": [
+          "процессор CPU",
+          "ядра потоки тактовая частота",
+          "Hyper-Threading SMT",
+          "что такое CPU",
+          "разрядность процессора"
+        ],
+        "ogTitle": "CPU — ядра, потоки, тактовая частота простыми словами",
+        "ogDescription": "Ядро — независимый вычислительный блок. Hyper-Threading удваивает логические потоки. Тактовая частота определяет число операций в секунду.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое процессор (CPU)? Что такое ядра, потоки, тактовая частота?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CPU — центральный процессор, выполняющий машинные инструкции. Ядро — независимый вычислительный блок внутри CPU. Hyper-Threading/SMT позволяет одному ядру обрабатывать 2 потока. Тактовая частота (ГГц) — количество тактов в секунду, определяет скорость вычислений на одно ядро."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Процессор CPU",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое кэш процессора (L1, L2, L3)?",
+      "questionSlug": "chto-takoe-kesh-protsessora-l1-l2-l3",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "CPU",
+        "кэш",
+        "L1",
+        "L2",
+        "L3",
+        "cache line",
+        "false sharing"
+      ],
+      "seo": {
+        "title": "Кэш процессора L1, L2, L3 — как работает и зачем нужен — Gymterview",
+        "description": "Кэш CPU — сверхбыстрая память на кристалле процессора. L1 (~1 нс), L2 (~5 нс), L3 (~15 нс). Принцип локальности, cache hit/miss, false sharing в Java.",
+        "keywords": [
+          "кэш процессора L1 L2 L3",
+          "cache hit miss",
+          "кэш-линия cache line",
+          "false sharing Java",
+          "латентность памяти"
+        ],
+        "ogTitle": "Кэш CPU L1/L2/L3 — иерархия, латентность и Java",
+        "ogDescription": "L1 — 1 нс, L2 — 5 нс, L3 — 15 нс, RAM — 100 нс. Кэш хранит копии данных из RAM для ускорения доступа. Cache line = 64 байта.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое кэш процессора (L1, L2, L3)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кэш процессора — сверхбыстрая память на кристалле CPU, хранящая копии часто используемых данных из RAM. Организован в 3 уровня: L1 (32–128 КБ, ~1 нс), L2 (256 КБ–1 МБ, ~5 нс), L3 (8–64 МБ, общий для всех ядер, ~15 нс). Минимальная единица загрузки — кэш-линия (64 байта)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Кэш процессора L1/L2/L3",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как CPU выполняет инструкции? Опишите цикл fetch-decode-execute",
+      "questionSlug": "kak-cpu-vypolnyaet-instruktsii-tsikl-fetch-decode-execute",
+      "grade": "middle",
+      "tags": [
+        "computer-fundamentals",
+        "CPU",
+        "fetch-decode-execute",
+        "ALU",
+        "pipeline",
+        "out-of-order"
+      ],
+      "seo": {
+        "title": "Цикл fetch-decode-execute — как CPU выполняет инструкции — Gymterview",
+        "description": "CPU выполняет инструкции в цикле: fetch (выборка из памяти), decode (декодирование), execute (выполнение в ALU/FPU). Суперскалярность и out-of-order.",
+        "keywords": [
+          "fetch decode execute",
+          "цикл выполнения инструкции CPU",
+          "ALU FPU",
+          "out-of-order execution",
+          "суперскалярность"
+        ],
+        "ogTitle": "Fetch-Decode-Execute — как работает процессор изнутри",
+        "ogDescription": "Fetch — загрузка инструкции по адресу из Program Counter. Decode — разбор операции и операндов. Execute — выполнение в ALU. Плюс memory access и write-back.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как CPU выполняет инструкции? Опишите цикл fetch-decode-execute",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CPU выполняет инструкции в цикле из 5 стадий: Fetch — считывание инструкции из памяти по адресу в Program Counter; Decode — определение типа операции и операндов; Execute — выполнение в ALU/FPU; Memory Access — чтение/запись данных; Write-back — сохранение результата. Современные CPU используют конвейеризацию, суперскалярность и out-of-order execution."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Цикл fetch-decode-execute",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое конвейер процессора (pipeline)?",
+      "questionSlug": "chto-takoe-konvejer-protsessora-pipeline",
+      "grade": "middle",
+      "tags": [
+        "computer-fundamentals",
+        "CPU",
+        "pipeline",
+        "branch prediction",
+        "hazard",
+        "конвейеризация"
+      ],
+      "seo": {
+        "title": "Конвейер процессора (pipeline) — стадии и hazards — Gymterview",
+        "description": "Pipeline разбивает выполнение инструкции на стадии IF/ID/EX/MEM/WB. Разные стадии разных инструкций выполняются параллельно. Data, control и structural hazards.",
+        "keywords": [
+          "конвейер процессора pipeline",
+          "стадии конвейера IF ID EX MEM WB",
+          "branch prediction",
+          "pipeline hazard",
+          "конвейеризация CPU"
+        ],
+        "ogTitle": "Pipeline CPU — параллельное выполнение стадий инструкций",
+        "ogDescription": "Конвейер разбивает инструкцию на стадии (IF, ID, EX, MEM, WB). Пока одна на стадии execute, следующая декодируется, а третья загружается.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое конвейер процессора (pipeline)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Конвейер (pipeline) — техника, при которой выполнение инструкции разбивается на стадии (IF, ID, EX, MEM, WB), и стадии разных инструкций выполняются одновременно. Без конвейера 4 инструкции = 20 тактов, с конвейером = 8 тактов. Проблемы: data hazard, control hazard (решается branch prediction), structural hazard."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Конвейер процессора",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает оперативная память (RAM)?",
+      "questionSlug": "kak-rabotaet-operativnaya-pamyat-ram",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "RAM",
+        "DRAM",
+        "DDR",
+        "память",
+        "адресация"
+      ],
+      "seo": {
+        "title": "Оперативная память RAM — DRAM, DDR4/DDR5, адресация — Gymterview",
+        "description": "RAM — память с произвольным доступом. DRAM хранит биты как заряд конденсатора. DDR5 — до 67 ГБ/с. Байтовая адресация, многоканальность, связь с JVM heap.",
+        "keywords": [
+          "оперативная память RAM",
+          "DRAM DDR4 DDR5",
+          "адресация памяти",
+          "dual channel RAM",
+          "JVM heap RAM"
+        ],
+        "ogTitle": "RAM — как работает оперативная память, DDR4 vs DDR5",
+        "ogDescription": "DRAM хранит биты как заряд конденсатора с периодической регенерацией. DDR передаёт данные по обоим фронтам такта. Латентность ~100 нс.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает оперативная память (RAM)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RAM (Random Access Memory) — энергозависимая память с одинаковым временем доступа к любой ячейке. Тип DRAM хранит каждый бит как заряд конденсатора, требующий периодической регенерации. Стандарты DDR3/DDR4/DDR5 удваивают скорость передачи данных. Многоканальность увеличивает пропускную способность. JVM выделяет heap в RAM."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Оперативная память RAM",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое виртуальная память?",
+      "questionSlug": "chto-takoe-virtualnaya-pamyat",
+      "grade": "middle",
+      "tags": [
+        "computer-fundamentals",
+        "виртуальная память",
+        "paging",
+        "page fault",
+        "TLB",
+        "swap",
+        "MMU"
+      ],
+      "seo": {
+        "title": "Виртуальная память — paging, page fault, TLB, swap — Gymterview",
+        "description": "Виртуальная память изолирует процессы и отображает виртуальные адреса на физические через таблицу страниц и MMU. TLB кэширует трансляции. Swap при нехватке RAM.",
+        "keywords": [
+          "виртуальная память",
+          "paging страницы",
+          "page fault",
+          "TLB кэш",
+          "swap подкачка",
+          "MMU трансляция адресов"
+        ],
+        "ogTitle": "Виртуальная память — страницы, TLB и swap",
+        "ogDescription": "Каждый процесс имеет своё виртуальное адресное пространство. MMU транслирует виртуальные адреса в физические через таблицу страниц. TLB кэширует трансляции.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое виртуальная память?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Виртуальная память — механизм, при котором каждый процесс работает со своим виртуальным адресным пространством, отображаемым на физическую RAM через MMU и таблицу страниц. Обеспечивает изоляцию процессов и абстракцию памяти. Страницы (4 КБ) могут выгружаться на диск (swap). Page fault — дорогая операция загрузки страницы с диска."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Виртуальная память",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются HDD и SSD?",
+      "questionSlug": "chem-otlichayutsya-hdd-i-ssd",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "HDD",
+        "SSD",
+        "NVMe",
+        "SATA",
+        "IOPS",
+        "накопители"
+      ],
+      "seo": {
+        "title": "HDD vs SSD — отличия, IOPS, NVMe, SATA — Gymterview",
+        "description": "HDD — магнитные пластины, 100–200 МБ/с. SSD — флеш-память NAND, до 7000 МБ/с (NVMe). SSD в 1000 раз быстрее при случайном доступе. Сравнение характеристик.",
+        "keywords": [
+          "HDD vs SSD отличия",
+          "NVMe SATA разница",
+          "IOPS SSD HDD",
+          "скорость SSD",
+          "последовательный случайный доступ"
+        ],
+        "ogTitle": "HDD vs SSD — скорость, IOPS и когда что выбрать",
+        "ogDescription": "HDD: 100–200 МБ/с, механические пластины. SSD: до 7000 МБ/с (NVMe), флеш-память. IOPS у SSD в 1000 раз выше — критично для баз данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются HDD и SSD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HDD — жёсткий диск с вращающимися магнитными пластинами (100–200 МБ/с, 75–200 IOPS). SSD — твердотельный накопитель на флеш-памяти NAND (до 7000 МБ/с NVMe, до 1 000 000 IOPS). SSD значительно быстрее при случайном доступе, без шума и вибраций, но дороже за ГБ. Интерфейсы: SATA (до 600 МБ/с), NVMe через PCIe (до 7000+ МБ/с)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "HDD vs SSD",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие системы счисления используются в компьютерах?",
+      "questionSlug": "kakie-sistemy-schisleniya-ispolzuyutsya-v-kompyuterakh",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "двоичная система",
+        "шестнадцатеричная",
+        "binary",
+        "hex",
+        "two's complement"
+      ],
+      "seo": {
+        "title": "Системы счисления в компьютерах — двоичная, hex, десятичная — Gymterview",
+        "description": "Компьютеры используют двоичную (0b1010), шестнадцатеричную (0xFF) и десятичную системы. Перевод между системами в Java. Дополнительный код (two's complement).",
+        "keywords": [
+          "системы счисления компьютер",
+          "двоичная система счисления",
+          "шестнадцатеричная система",
+          "two's complement Java",
+          "перевод двоичная десятичная"
+        ],
+        "ogTitle": "Двоичная, hex и десятичная — системы счисления в IT",
+        "ogDescription": "Двоичная (base-2) — фундамент компьютеров. Hex (base-16) — компактная запись байтов. Десятичная — для людей. Перевод в Java: toBinaryString, toHexString.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие системы счисления используются в компьютерах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Двоичная (binary, base-2) — фундаментальная система, цифры 0 и 1, префикс 0b. Шестнадцатеричная (hex, base-16) — компактная запись двоичных данных, каждая цифра = 4 бита, префикс 0x. Десятичная (base-10) — для человека. Отрицательные числа хранятся в дополнительном коде (two's complement). В Java: Integer.toBinaryString(), toHexString(), parseInt()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Системы счисления",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое побитовые операции?",
+      "questionSlug": "chto-takoe-pobitovye-operatsii",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "побитовые операции",
+        "AND",
+        "OR",
+        "XOR",
+        "сдвиг",
+        "битовые маски"
+      ],
+      "seo": {
+        "title": "Побитовые операции в Java — AND, OR, XOR, сдвиги — Gymterview",
+        "description": "Побитовые операции: & (AND), | (OR), ^ (XOR), ~ (NOT), << >> >>> (сдвиги). Применение: проверка чётности, битовые маски, HashMap, EnumSet.",
+        "keywords": [
+          "побитовые операции Java",
+          "AND OR XOR сдвиг",
+          "битовые маски Java",
+          "EnumSet побитовые операции",
+          "HashMap побитовые операции"
+        ],
+        "ogTitle": "Побитовые операции — AND, OR, XOR, сдвиги в Java",
+        "ogDescription": "& — AND, | — OR, ^ — XOR, ~ — NOT, << — сдвиг влево, >> — арифметический сдвиг вправо, >>> — логический. Применение в HashMap, EnumSet, масках прав.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое побитовые операции?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Побитовые операции выполняются над отдельными битами числа. В Java: & (AND), | (OR), ^ (XOR), ~ (NOT), << (сдвиг влево), >> (арифметический сдвиг вправо), >>> (логический сдвиг вправо). Применение: проверка чётности (n & 1), битовые маски прав доступа, индекс бакета в HashMap ((n-1) & hash), EnumSet."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Побитовые операции",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое кодировки символов? Чем отличаются ASCII, UTF-8, UTF-16?",
+      "questionSlug": "chto-takoe-kodirovki-simvolov-ascii-utf8-utf16",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "кодировки",
+        "ASCII",
+        "UTF-8",
+        "UTF-16",
+        "Unicode",
+        "Compact Strings"
+      ],
+      "seo": {
+        "title": "Кодировки ASCII, UTF-8, UTF-16 — отличия и Java String — Gymterview",
+        "description": "ASCII — 128 символов, 1 байт. UTF-8 — переменная длина 1–4 байта, совместима с ASCII. UTF-16 — 2–4 байта, используется внутри Java String. Compact Strings.",
+        "keywords": [
+          "кодировки символов ASCII UTF-8 UTF-16",
+          "Unicode code point",
+          "Java String UTF-16",
+          "Compact Strings Java 9",
+          "кириллица UTF-8"
+        ],
+        "ogTitle": "ASCII vs UTF-8 vs UTF-16 — какую кодировку использует Java",
+        "ogDescription": "ASCII — 128 символов. UTF-8 — 1–4 байта, стандарт интернета. UTF-16 — 2–4 байта, используется в Java String. С Java 9 — Compact Strings для экономии памяти.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое кодировки символов? Чем отличаются ASCII, UTF-8, UTF-16?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кодировка определяет, как символы представляются в байтах. ASCII — 7 бит, 128 символов, только латиница. UTF-8 — переменная длина (1–4 байта), совместима с ASCII, стандарт интернета. UTF-16 — 2 или 4 байта, используется внутри Java (String, char = 2 байта). Unicode — набор символов с уникальными code points, UTF-8/16 — способы их хранения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Кодировки ASCII, UTF-8, UTF-16",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что делает операционная система? Каковы её основные функции?",
+      "questionSlug": "chto-delaet-operatsionnaya-sistema-osnovnye-funktsii",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "операционная система",
+        "ОС",
+        "kernel",
+        "syscall",
+        "управление процессами"
+      ],
+      "seo": {
+        "title": "Операционная система — 7 основных функций ОС — Gymterview",
+        "description": "ОС управляет процессами, памятью, файловой системой, устройствами, сетью и безопасностью. Ядро работает в kernel mode, приложения обращаются через syscalls.",
+        "keywords": [
+          "операционная система функции",
+          "ОС управление процессами",
+          "kernel mode user mode",
+          "системные вызовы syscalls",
+          "управление памятью ОС"
+        ],
+        "ogTitle": "7 функций операционной системы — от процессов до безопасности",
+        "ogDescription": "ОС управляет процессами, памятью, файлами, устройствами, сетью и безопасностью. Ядро (kernel) работает в привилегированном режиме, приложения — через syscalls.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что делает операционная система? Каковы её основные функции?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ОС — посредник между аппаратурой и приложениями. Основные функции: управление процессами (создание, планирование, синхронизация), управление памятью (виртуальная память, защита, swap), файловая система, управление устройствами (через драйверы), сеть (TCP/IP стек, сокеты), безопасность (аутентификация, права доступа), пользовательский интерфейс (CLI/GUI). Ядро работает в kernel mode, приложения обращаются через syscalls."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Функции ОС",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается процесс от потока?",
+      "questionSlug": "chem-otlichaetsya-protsess-ot-potoka",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "процесс",
+        "поток",
+        "thread",
+        "context switch",
+        "virtual threads"
+      ],
+      "seo": {
+        "title": "Процесс vs поток — отличия, context switch, виртуальные потоки — Gymterview",
+        "description": "Процесс имеет изолированное адресное пространство. Потоки разделяют память процесса. Переключение потоков ~1–10 мкс, процессов ~10–100 мкс. Virtual Threads Java 21.",
+        "keywords": [
+          "процесс vs поток отличия",
+          "context switch стоимость",
+          "thread process разница",
+          "виртуальные потоки Java 21",
+          "переключение контекста"
+        ],
+        "ogTitle": "Процесс vs поток — изоляция, память и context switch",
+        "ogDescription": "Процесс — изолированное адресное пространство. Поток — единица выполнения внутри процесса с общей кучей. Context switch потоков в 10 раз дешевле процессов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается процесс от потока?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Процесс имеет собственное изолированное адресное пространство, создание дорогое (~мс). Поток — единица выполнения внутри процесса, потоки разделяют heap, но имеют свой стек. Переключение контекста потоков (~1–10 мкс) дешевле процессов (~10–100 мкс). В Java: Thread создаёт поток ОС, Virtual Threads (Java 21+) — лёгкие потоки JVM, не привязанные 1:1 к потокам ОС."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Процесс vs поток",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое планировщик процессов (scheduler)?",
+      "questionSlug": "chto-takoe-planirovshchik-protsessov-scheduler",
+      "grade": "middle",
+      "tags": [
+        "computer-fundamentals",
+        "scheduler",
+        "планировщик",
+        "Round Robin",
+        "CFS",
+        "CPU-bound",
+        "I/O-bound"
+      ],
+      "seo": {
+        "title": "Планировщик процессов (scheduler) — алгоритмы и Java — Gymterview",
+        "description": "Scheduler определяет, какой поток выполняется на каком ядре. Алгоритмы: Round Robin, CFS (Linux), Priority Scheduling. CPU-bound vs I/O-bound и размер пула потоков.",
+        "keywords": [
+          "планировщик процессов scheduler",
+          "Round Robin CFS",
+          "квант времени time slice",
+          "CPU-bound I/O-bound",
+          "preemptive multitasking"
+        ],
+        "ogTitle": "Scheduler — как ОС распределяет процессорное время",
+        "ogDescription": "Планировщик переключает потоки по истечении кванта времени (1–10 мс). CFS в Linux использует красно-чёрное дерево. CPU-bound — ядра, I/O-bound — больше потоков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое планировщик процессов (scheduler)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Планировщик — компонент ядра ОС, определяющий, какой поток выполняется на каком ядре CPU. Использует вытесняющую многозадачность с квантом времени 1–10 мс. Алгоритмы: Round Robin (равные кванты), CFS (Linux, справедливое время на красно-чёрном дереве), Priority Scheduling. Для Java: CPU-bound задачи — пул = число ядер, I/O-bound — значительно больше."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Планировщик процессов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое межпроцессное взаимодействие (IPC)?",
+      "questionSlug": "chto-takoe-mezhprotsessnoe-vzaimodejstvie-ipc",
+      "grade": "middle",
+      "tags": [
+        "computer-fundamentals",
+        "IPC",
+        "pipes",
+        "shared memory",
+        "sockets",
+        "сигналы",
+        "семафоры"
+      ],
+      "seo": {
+        "title": "Межпроцессное взаимодействие (IPC) — pipes, shared memory, sockets — Gymterview",
+        "description": "IPC — механизмы обмена данными между изолированными процессами: pipes, shared memory (самый быстрый), sockets, сигналы, очереди сообщений, семафоры.",
+        "keywords": [
+          "IPC межпроцессное взаимодействие",
+          "pipes каналы",
+          "shared memory разделяемая память",
+          "sockets сокеты",
+          "сигналы SIGTERM SIGKILL"
+        ],
+        "ogTitle": "IPC — 7 способов обмена данными между процессами",
+        "ogDescription": "Pipes — однонаправленный поток. Shared memory — самый быстрый IPC. Sockets — универсальный механизм. Сигналы — асинхронные уведомления. Семафоры — синхронизация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое межпроцессное взаимодействие (IPC)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IPC (Inter-Process Communication) — механизмы обмена данными между изолированными процессами. Основные: pipes (однонаправленный поток данных), shared memory (самый быстрый, общий участок памяти), sockets (универсальный, работает по сети), сигналы (асинхронные уведомления: SIGTERM, SIGKILL), очереди сообщений, семафоры (синхронизация). В Java: ProcessBuilder, Socket, MappedByteBuffer."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "IPC — межпроцессное взаимодействие",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое файловая система? Какие файловые системы вы знаете?",
+      "questionSlug": "chto-takoe-fajlovaya-sistema-kakie-fajlovye-sistemy",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "файловая система",
+        "ext4",
+        "NTFS",
+        "FAT32",
+        "inode",
+        "журналирование"
+      ],
+      "seo": {
+        "title": "Файловые системы — ext4, NTFS, FAT32, ZFS, inode — Gymterview",
+        "description": "Файловая система организует данные на накопителе. ext4 (Linux), NTFS (Windows), FAT32 (кроссплатформенная, лимит 4 ГБ). Inode, журналирование и Java NIO.2.",
+        "keywords": [
+          "файловая система ext4 NTFS FAT32",
+          "inode Linux",
+          "журналирование файловой системы",
+          "ZFS XFS APFS",
+          "Java NIO Files Path"
+        ],
+        "ogTitle": "Файловые системы — ext4, NTFS, FAT32, ZFS и inode",
+        "ogDescription": "ext4 — стандарт Linux. NTFS — Windows. FAT32 — кроссплатформенная с лимитом 4 ГБ. Inode хранит метаданные файла. Журналирование защищает от сбоев.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое файловая система? Какие файловые системы вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Файловая система определяет, как данные и метаданные хранятся на накопителе. Основные: ext4 (Linux, журналирование), NTFS (Windows, ACL, шифрование), FAT32 (кроссплатформенная, лимит файла 4 ГБ), exFAT (без ограничений FAT32), XFS, ZFS (checksums, снапшоты). Inode в Unix хранит метаданные файла. Журналирование защищает от потери данных при сбоях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Файловые системы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют уровни модели OSI?",
+      "questionSlug": "kakie-sushchestvuyut-urovni-modeli-osi",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "OSI",
+        "сетевая модель",
+        "L2",
+        "L3",
+        "L4",
+        "L7",
+        "инкапсуляция"
+      ],
+      "seo": {
+        "title": "7 уровней модели OSI — от физического до прикладного — Gymterview",
+        "description": "Модель OSI: физический (биты), канальный (кадры), сетевой (пакеты IP), транспортный (TCP/UDP), сеансовый, представления, прикладной (HTTP). Инкапсуляция данных.",
+        "keywords": [
+          "модель OSI 7 уровней",
+          "уровни OSI таблица",
+          "инкапсуляция данных OSI",
+          "L2 L3 L4 L7",
+          "физический канальный сетевой транспортный"
+        ],
+        "ogTitle": "Модель OSI — 7 уровней сетевого взаимодействия",
+        "ogDescription": "7 уровней OSI: Physical, Data Link, Network (IP), Transport (TCP/UDP), Session, Presentation, Application (HTTP). Данные инкапсулируются на каждом уровне.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют уровни модели OSI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модель OSI содержит 7 уровней (снизу вверх): 1) Физический — передача битов; 2) Канальный — кадры, MAC-адреса, Ethernet; 3) Сетевой — пакеты, IP, маршрутизация; 4) Транспортный — TCP/UDP, сегменты; 5) Сеансовый — управление сеансами; 6) Представления — кодирование, шифрование; 7) Прикладной — HTTP, DNS, FTP. При отправке данные инкапсулируются от L7 к L1, при приёме — декапсулируются."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "Уровни модели OSI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое модель TCP/IP и чем она отличается от OSI?",
+      "questionSlug": "chto-takoe-model-tcp-ip-otlichie-ot-osi",
+      "grade": "junior",
+      "tags": [
+        "computer-fundamentals",
+        "TCP/IP",
+        "OSI",
+        "сетевая модель",
+        "Internet",
+        "Ethernet"
+      ],
+      "seo": {
+        "title": "Модель TCP/IP vs OSI — 4 уровня и отличия — Gymterview",
+        "description": "TCP/IP — практическая модель интернета с 4 уровнями: канальный, сетевой, транспортный, прикладной. OSI — теоретическая с 7 уровнями. Сравнение и соответствие.",
+        "keywords": [
+          "модель TCP/IP",
+          "TCP/IP vs OSI отличия",
+          "4 уровня TCP/IP",
+          "DARPA модель",
+          "прикладной транспортный сетевой канальный"
+        ],
+        "ogTitle": "TCP/IP vs OSI — практическая модель интернета",
+        "ogDescription": "TCP/IP объединяет 7 уровней OSI в 4: канальный (L1+L2), сетевой (IP), транспортный (TCP/UDP), прикладной (L5+L6+L7). TCP/IP — основа реального интернета.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое модель TCP/IP и чем она отличается от OSI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TCP/IP — практическая модель сетевого взаимодействия из 4 уровней: канальный (Ethernet, Wi-Fi), сетевой (IP, ICMP), транспортный (TCP, UDP), прикладной (HTTP, DNS, SSH). Отличия от OSI: 4 уровня вместо 7, объединяет L5-L7 OSI в прикладной и L1-L2 в канальный. OSI — теоретическая модель ISO, TCP/IP — реальная основа интернета (DARPA)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Устройство ПК и сети",
+            "url": "/topics/computer-fundamentals"
+          },
+          {
+            "name": "TCP/IP vs OSI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

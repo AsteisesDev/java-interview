@@ -1,0 +1,1004 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "batch": 5,
+  "generatedAt": "2026-05-09T12:00:00Z",
+  "questions": [
+    {
+      "question": "Расскажите про клонирование объектов.",
+      "questionSlug": "rasskazhite-pro-klonirovanie-obektov",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "clone",
+        "object"
+      ],
+      "seo": {
+        "title": "Клонирование объектов в Java — Gymterview",
+        "description": "Как работает клонирование объектов в Java: метод clone(), интерфейс Cloneable, конструктор копирования, фабричный метод и сериализация. Ответ с примерами.",
+        "keywords": [
+          "клонирование объектов Java",
+          "clone Java",
+          "Cloneable",
+          "копирование объектов",
+          "конструктор копирования"
+        ],
+        "ogTitle": "Клонирование объектов в Java — Gymterview",
+        "ogDescription": "Как работает клонирование объектов в Java: метод clone(), интерфейс Cloneable, конструктор копирования и другие способы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите про клонирование объектов.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для создания нового объекта с таким же состоянием используется клонирование. Класс Object содержит protected метод clone(), осуществляющий побитовое копирование объекта. Для клонирования необходимо переопределить clone() как public, вызвать super.clone() и реализовать интерфейс Cloneable. Если класс не реализует Cloneable, будет выброшено CloneNotSupportedException. Помимо встроенного механизма можно использовать конструктор копирования, фабричный метод или механизм сериализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Клонирование объектов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличие между поверхностным и глубоким клонированием?",
+      "questionSlug": "v-chem-otlichie-mezhdu-poverkhnostnym-i-glubokim-klonirovaniem",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "clone",
+        "shallow-copy",
+        "deep-copy"
+      ],
+      "seo": {
+        "title": "Поверхностное и глубокое клонирование в Java — Gymterview",
+        "description": "Разница между поверхностным (shallow) и глубоким (deep) клонированием объектов в Java. Правила копирования примитивных и ссылочных типов.",
+        "keywords": [
+          "поверхностное клонирование Java",
+          "глубокое клонирование Java",
+          "shallow copy",
+          "deep copy",
+          "clone"
+        ],
+        "ogTitle": "Поверхностное и глубокое клонирование в Java — Gymterview",
+        "ogDescription": "Разница между поверхностным и глубоким клонированием объектов в Java: правила копирования примитивных и ссылочных типов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличие между поверхностным и глубоким клонированием?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поверхностное копирование копирует минимум информации: примитивные поля копируются полностью, а для ссылочных типов копируются только ссылки — оба объекта будут ссылаться на одни и те же объекты. Глубокое копирование дублирует всю информацию: все члены ссылочного типа также клонируются рекурсивно, создавая полностью независимую копию объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Поверхностное и глубокое клонирование",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой способ клонирования предпочтительней?",
+      "questionSlug": "kakoy-sposob-klonirovaniya-predpochtitelney",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "clone",
+        "best-practices"
+      ],
+      "seo": {
+        "title": "Предпочтительный способ клонирования объектов в Java — Gymterview",
+        "description": "Почему конструктор копирования предпочтительнее метода clone() в Java: отсутствие ошибок наследования, явное указание полей, клонирование final полей.",
+        "keywords": [
+          "конструктор копирования Java",
+          "клонирование объектов",
+          "clone vs copy constructor",
+          "best practices clone"
+        ],
+        "ogTitle": "Предпочтительный способ клонирования объектов в Java — Gymterview",
+        "ogDescription": "Почему конструктор копирования предпочтительнее метода clone() в Java.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой способ клонирования предпочтительней?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Наиболее предпочтительным способом клонирования является использование специализированного конструктора копирования. Его преимущества: отсутствие ошибок наследования (не нужно беспокоиться о новых полях в наследниках), поля для клонирования указываются явно, а также возможность клонировать даже final поля."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Предпочтительный способ клонирования",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему метод `clone()` объявлен в классе `Object`, а не в интерфейсе `Cloneable`?",
+      "questionSlug": "pochemu-metod-clone-obyavlen-v-klasse-object-a-ne-v-interfeyse-cloneable",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "clone",
+        "object",
+        "cloneable"
+      ],
+      "seo": {
+        "title": "Почему clone() в Object, а не в Cloneable — Gymterview",
+        "description": "Почему метод clone() объявлен в классе Object, а не в интерфейсе Cloneable: native-реализация поверхностного копирования и маркерный интерфейс.",
+        "keywords": [
+          "clone Object Java",
+          "Cloneable интерфейс",
+          "маркерный интерфейс",
+          "CloneNotSupportedException"
+        ],
+        "ogTitle": "Почему clone() в Object, а не в Cloneable — Gymterview",
+        "ogDescription": "Почему метод clone() объявлен в классе Object с модификатором native, а Cloneable является маркерным интерфейсом.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему метод `clone()` объявлен в классе `Object`, а не в интерфейсе `Cloneable`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод clone() объявлен в классе Object с модификатором native для доступа к стандартному механизму поверхностного копирования объектов. Он также объявлен как protected, чтобы его нельзя было вызвать у не переопределивших его объектов. Интерфейс Cloneable является маркерным (не содержит методов) и нужен лишь для обозначения того, что объект готов к клонированию. Вызов clone() у не Cloneable объекта вызовет CloneNotSupportedException."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "clone() в Object vs Cloneable",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Дайте определение понятию конструктор.",
+      "questionSlug": "dayte-opredelenie-ponyatiyu-konstruktor",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "constructor",
+        "oop"
+      ],
+      "seo": {
+        "title": "Что такое конструктор в Java — Gymterview",
+        "description": "Определение конструктора в Java: специальный метод без возвращаемого типа с именем класса, вызываемый при создании нового объекта для его инициализации.",
+        "keywords": [
+          "конструктор Java",
+          "constructor Java",
+          "создание объекта",
+          "инициализация объекта"
+        ],
+        "ogTitle": "Что такое конструктор в Java — Gymterview",
+        "ogDescription": "Определение конструктора в Java: специальный метод для инициализации объекта при его создании.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Дайте определение понятию конструктор.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Конструктор — это специальный метод, у которого отсутствует возвращаемый тип и который имеет то же имя, что и класс, в котором он используется. Конструктор вызывается при создании нового объекта класса и определяет действия, необходимые для его инициализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Определение конструктора",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое конструктор по умолчанию?",
+      "questionSlug": "chto-takoe-konstruktor-po-umolchaniyu",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "constructor",
+        "default-constructor"
+      ],
+      "seo": {
+        "title": "Конструктор по умолчанию в Java — Gymterview",
+        "description": "Что такое конструктор по умолчанию в Java: автоматическая генерация компилятором конструктора без аргументов, если в классе не определён ни один конструктор.",
+        "keywords": [
+          "конструктор по умолчанию Java",
+          "default constructor",
+          "конструктор без аргументов"
+        ],
+        "ogTitle": "Конструктор по умолчанию в Java — Gymterview",
+        "ogDescription": "Конструктор по умолчанию — конструктор без аргументов, автоматически генерируемый компилятором.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое конструктор по умолчанию?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Если у класса не определить конструктор, то компилятор сгенерирует конструктор без аргументов — так называемый «конструктор по умолчанию». Если у класса уже определён какой-либо конструктор, то конструктор по умолчанию создан не будет и, если он необходим, его нужно описывать явно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Конструктор по умолчанию",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются конструктор по-умолчанию, конструктор копирования и конструктор с параметрами?",
+      "questionSlug": "chem-otlichayutsya-konstruktory-po-umolchaniyu-kopirovaniya-i-s-parametrami",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "constructor",
+        "copy-constructor"
+      ],
+      "seo": {
+        "title": "Виды конструкторов в Java: по умолчанию, копирования, с параметрами — Gymterview",
+        "description": "Различия между конструктором по умолчанию, конструктором копирования и конструктором с параметрами в Java. Подробное объяснение с примерами.",
+        "keywords": [
+          "виды конструкторов Java",
+          "конструктор копирования",
+          "конструктор с параметрами",
+          "default constructor"
+        ],
+        "ogTitle": "Виды конструкторов в Java — Gymterview",
+        "ogDescription": "Различия между конструктором по умолчанию, конструктором копирования и конструктором с параметрами в Java.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются конструктор по-умолчанию, конструктор копирования и конструктор с параметрами?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "У конструктора по умолчанию отсутствуют какие-либо аргументы. Конструктор копирования принимает в качестве аргумента уже существующий объект класса для последующего создания его клона. Конструктор с параметрами имеет в своей сигнатуре аргументы, обычно необходимые для инициализации полей класса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Виды конструкторов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Где и как вы можете использовать приватный конструктор?",
+      "questionSlug": "gde-i-kak-vy-mozhete-ispolzovat-zakrytyy-konstruktor",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "constructor",
+        "private",
+        "singleton"
+      ],
+      "seo": {
+        "title": "Приватный конструктор в Java — Gymterview",
+        "description": "Где и как использовать закрытый (private) конструктор в Java: статические фабричные методы, паттерн Singleton, вложенные классы. Подробный ответ.",
+        "keywords": [
+          "приватный конструктор Java",
+          "private constructor",
+          "singleton Java",
+          "фабричный метод"
+        ],
+        "ogTitle": "Приватный конструктор в Java — Gymterview",
+        "ogDescription": "Где и как использовать закрытый конструктор в Java: статические фабричные методы и вложенные классы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Где и как вы можете использовать приватный конструктор?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Приватный (помеченный ключевым словом private) конструктор может использоваться публичным статическим методом генерации объектов данного класса. Также доступ к нему разрешён вложенным классам и может использоваться для их нужд."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Закрытый конструктор",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите про классы-загрузчики и про динамическую загрузку классов.",
+      "questionSlug": "rasskazhite-pro-klassy-zagruzchiki-i-pro-dinamicheskuyu-zagruzku-klassov",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "classloader",
+        "jvm",
+        "dynamic-loading"
+      ],
+      "seo": {
+        "title": "Классы-загрузчики и динамическая загрузка классов в Java — Gymterview",
+        "description": "Классы-загрузчики в Java: bootstrap, extension, system. Процесс загрузки классов (loading, linking, initialization) и динамическая загрузка.",
+        "keywords": [
+          "ClassLoader Java",
+          "загрузчик классов",
+          "bootstrap classloader",
+          "динамическая загрузка классов",
+          "Class.forName"
+        ],
+        "ogTitle": "Классы-загрузчики и динамическая загрузка классов в Java — Gymterview",
+        "ogDescription": "Иерархия загрузчиков классов в Java: bootstrap, extension, system. Процесс загрузки и динамическая загрузка.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите про классы-загрузчики и про динамическую загрузку классов.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В начале работы программы создаются 3 основных загрузчика: базовый (bootstrap) — загружает Core API, загрузчик расширений (extension) — загружает пакеты из lib/ext, системный (application) — загружает классы из CLASSPATH. Загрузчики иерархические: каждый делегирует запрос родительскому. Процесс загрузки включает: Loading (поиск и загрузка файла), Linking (верификация, подготовка, разрешение зависимостей), Initialization (вызов статических блоков). Загрузку можно инициировать явно (ClassLoader.loadClass(), Class.forName()) или неявно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Классы-загрузчики",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Reflection?",
+      "questionSlug": "chto-takoe-reflection",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "reflection",
+        "runtime"
+      ],
+      "seo": {
+        "title": "Что такое Reflection в Java — Gymterview",
+        "description": "Reflection (рефлексия) в Java: механизм получения данных о программе во время выполнения. Возможности Java Reflection API: классы, методы, поля, конструкторы.",
+        "keywords": [
+          "Reflection Java",
+          "рефлексия Java",
+          "Java Reflection API",
+          "java.lang.reflect",
+          "получение информации о классе"
+        ],
+        "ogTitle": "Что такое Reflection в Java — Gymterview",
+        "ogDescription": "Рефлексия в Java: механизм получения данных о программе в runtime через Java Reflection API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Reflection?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Рефлексия (Reflection) — это механизм получения данных о программе во время её выполнения (runtime). В Java осуществляется с помощью Java Reflection API из пакетов java.lang и java.lang.reflect. Возможности: определение класса объекта, получение информации о модификаторах, полях, методах, конструкторах и суперклассах, создание экземпляров класса, получение и установка значений полей, вызов методов объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Reflection",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужен `equals()`. Чем он отличается от операции `==`?",
+      "questionSlug": "zachem-nuzhen-equals-chem-on-otlichaetsya-ot-operatsii-ravno",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "object",
+        "comparison"
+      ],
+      "seo": {
+        "title": "equals() vs == в Java: в чём разница — Gymterview",
+        "description": "Разница между equals() и == в Java: сравнение ссылок и сравнение по состоянию объектов. Когда использовать equals(), а когда оператор ==.",
+        "keywords": [
+          "equals Java",
+          "== Java",
+          "сравнение объектов",
+          "equals vs ==",
+          "эквивалентность объектов"
+        ],
+        "ogTitle": "equals() vs == в Java — Gymterview",
+        "ogDescription": "Разница между методом equals() и оператором == в Java: сравнение ссылок против сравнения состояния объектов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужен `equals()`. Чем он отличается от операции `==`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод equals() определяет отношение эквивалентности объектов. При сравнении с помощью == сравнение происходит лишь между ссылками. При сравнении по переопределённому разработчиком equals() — по внутреннему состоянию объектов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "equals() vs ==",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какими свойствами обладает порождаемое `equals()` отношение эквивалентности?",
+      "questionSlug": "equals-porozhdaet-otnoshenie-ekvivalentnosti-kakimi-svoystvami-obladaet",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "equivalence"
+      ],
+      "seo": {
+        "title": "Свойства отношения эквивалентности equals() в Java — Gymterview",
+        "description": "Свойства отношения эквивалентности метода equals() в Java: рефлексивность, симметричность, транзитивность, непротиворечивость. Контракт equals().",
+        "keywords": [
+          "equals контракт Java",
+          "рефлексивность equals",
+          "симметричность equals",
+          "транзитивность equals",
+          "отношение эквивалентности"
+        ],
+        "ogTitle": "Свойства отношения эквивалентности equals() — Gymterview",
+        "ogDescription": "Свойства метода equals(): рефлексивность, симметричность, транзитивность и непротиворечивость.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какими свойствами обладает порождаемое `equals()` отношение эквивалентности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Рефлексивность: для любой ссылки x, x.equals(x) вернёт true. Симметричность: x.equals(y) должно вернуть true тогда и только тогда, когда y.equals(x) возвращает true. Транзитивность: если x.equals(y) и y.equals(z) возвращают true, то и x.equals(z) вернёт true. Непротиворечивость: многократный вызов x.equals(y) должен возвращать одно и то же значение при неизменных данных. Для любой ненулевой ссылки x выражение x.equals(null) должно возвращать false."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Свойства equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Если вы хотите переопределить `equals()`, какие условия должны выполняться?",
+      "questionSlug": "esli-vy-khotite-pereopredelit-equals-kakie-usloviya-dolzhny-udovletvoryatsya",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "override"
+      ],
+      "seo": {
+        "title": "Условия переопределения equals() в Java — Gymterview",
+        "description": "Какие условия должны выполняться при переопределении метода equals() в Java: рефлексивность, симметричность, транзитивность, непротиворечивость.",
+        "keywords": [
+          "переопределение equals Java",
+          "контракт equals",
+          "override equals",
+          "условия equals"
+        ],
+        "ogTitle": "Условия переопределения equals() в Java — Gymterview",
+        "ogDescription": "Условия контракта метода equals(): рефлексивность, симметричность, транзитивность, непротиворечивость.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Если вы хотите переопределить `equals()`, какие условия должны выполняться?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При переопределении equals() должны выполняться следующие условия: рефлексивность (x.equals(x) == true), симметричность (x.equals(y) == y.equals(x)), транзитивность (если x.equals(y) и y.equals(z), то x.equals(z)), непротиворечивость (многократные вызовы дают одинаковый результат при неизменных данных), а также x.equals(null) должно возвращать false."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Условия переопределения equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Правила переопределения метода `Object.equals()`.",
+      "questionSlug": "pravila-pereopredeleniya-metoda-object-equals",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "equals",
+        "override",
+        "best-practices"
+      ],
+      "seo": {
+        "title": "Правила переопределения Object.equals() в Java — Gymterview",
+        "description": "Пошаговые правила переопределения метода Object.equals() в Java: проверка ссылки, проверка типа через getClass(), приведение типа, сравнение полей.",
+        "keywords": [
+          "правила equals Java",
+          "переопределение Object.equals",
+          "override equals пошагово",
+          "getClass equals"
+        ],
+        "ogTitle": "Правила переопределения Object.equals() — Gymterview",
+        "ogDescription": "Пошаговые правила переопределения метода equals(): проверка ссылки, типа, приведение и сравнение полей.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Правила переопределения метода `Object.equals()`.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Использование оператора == для проверки, является ли аргумент ссылкой на указанный объект (если да — true, если null — false). 2. Использование getClass() для проверки правильного типа аргумента (если не совпадает — false). 3. Приведение аргумента к правильному типу. 4. Обход всех значимых полей класса и проверка соответствия значений полей текущего объекта и аргумента. По окончании следует проверить рефлексивность, симметричность, транзитивность и непротиворечивость."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Правила переопределения equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая связь между `hashCode()` и `equals()`?",
+      "questionSlug": "kakaya-svyaz-mezhdu-hashcode-i-equals",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "hashcode",
+        "equals",
+        "contract"
+      ],
+      "seo": {
+        "title": "Связь между hashCode() и equals() в Java — Gymterview",
+        "description": "Контракт между hashCode() и equals() в Java: равные объекты должны возвращать одинаковые хэш-коды. Почему нужно переопределять оба метода вместе.",
+        "keywords": [
+          "hashCode equals контракт",
+          "связь hashCode equals",
+          "переопределение hashCode equals",
+          "контракт Java"
+        ],
+        "ogTitle": "Связь между hashCode() и equals() в Java — Gymterview",
+        "ogDescription": "Контракт между hashCode() и equals(): равные объекты должны иметь одинаковые хэш-коды.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая связь между `hashCode()` и `equals()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Равные объекты должны возвращать одинаковые хэш-коды. При переопределении equals() нужно обязательно переопределять и метод hashCode()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Связь hashCode() и equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Если `equals()` переопределен, есть ли какие-либо другие методы, которые следует переопределить?",
+      "questionSlug": "esli-equals-pereopredelen-est-li-drugie-metody-kotorye-sleduet-pereopredelit",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "hashcode",
+        "override"
+      ],
+      "seo": {
+        "title": "Какие методы переопределить вместе с equals() — Gymterview",
+        "description": "Почему при переопределении equals() необходимо также переопределить hashCode() в Java. Контракт между equals и hashCode.",
+        "keywords": [
+          "переопределение equals hashCode",
+          "override equals",
+          "hashCode Java",
+          "контракт equals hashCode"
+        ],
+        "ogTitle": "Какие методы переопределить вместе с equals() — Gymterview",
+        "ogDescription": "При переопределении equals() необходимо также переопределить hashCode() для соблюдения контракта.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Если `equals()` переопределен, есть ли какие-либо другие методы, которые следует переопределить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При переопределении equals() нужно обязательно переопределять и метод hashCode(). Равные объекты должны возвращать одинаковые хэш-коды."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Переопределение equals() и hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что будет, если переопределить `equals()` не переопределяя `hashCode()`? Какие могут возникнуть проблемы?",
+      "questionSlug": "chto-budet-esli-pereopredelit-equals-ne-pereopredelyaya-hashcode",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "equals",
+        "hashcode",
+        "hashmap"
+      ],
+      "seo": {
+        "title": "Проблемы при переопределении equals() без hashCode() — Gymterview",
+        "description": "Что произойдёт, если переопределить equals() без hashCode() в Java: проблемы с HashMap, HashSet и другими коллекциями, использующими хэш-коды.",
+        "keywords": [
+          "equals без hashCode",
+          "проблемы hashCode",
+          "HashMap equals",
+          "нарушение контракта equals"
+        ],
+        "ogTitle": "Проблемы при переопределении equals() без hashCode() — Gymterview",
+        "ogDescription": "Последствия переопределения equals() без hashCode(): некорректная работа HashMap и других хэш-коллекций.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что будет, если переопределить `equals()` не переопределяя `hashCode()`? Какие могут возникнуть проблемы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Классы и методы, которые используют правила контракта hashCode/equals, могут работать некорректно. Для HashMap это может привести к тому, что пара «ключ-значение», помещённая в неё, при использовании нового экземпляра ключа не будет найдена."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "equals() без hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом реализованы методы `hashCode()` и `equals()` в классе `Object`?",
+      "questionSlug": "kakim-obrazom-realizovany-metody-hashcode-i-equals-v-klasse-object",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "hashcode",
+        "equals",
+        "object"
+      ],
+      "seo": {
+        "title": "Реализация hashCode() и equals() в классе Object — Gymterview",
+        "description": "Как реализованы hashCode() и equals() в классе Object: equals() сравнивает ссылки (==), hashCode() — native-метод на основе алгоритма Xorshift в HotSpot.",
+        "keywords": [
+          "Object equals реализация",
+          "Object hashCode реализация",
+          "native hashCode",
+          "Xorshift Java"
+        ],
+        "ogTitle": "Реализация hashCode() и equals() в классе Object — Gymterview",
+        "ogDescription": "Реализация в Object: equals() сравнивает ссылки, hashCode() — native-метод с алгоритмом Xorshift.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каким образом реализованы методы `hashCode()` и `equals()` в классе `Object`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реализация Object.equals() сводится к проверке на равенство двух ссылок: return (this == obj). Реализация Object.hashCode() описана как native, то есть определена не с помощью Java-кода и зависит от реализации JVM. В HotSpot JVM хэш-код по умолчанию вычисляется с помощью алгоритма генерации простых чисел — Xorshift."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Реализация hashCode() и equals() в Object",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен метод `hashCode()`?",
+      "questionSlug": "dlya-chego-nuzhen-metod-hashcode",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "hashcode",
+        "hashing"
+      ],
+      "seo": {
+        "title": "Для чего нужен метод hashCode() в Java — Gymterview",
+        "description": "Назначение метода hashCode() в Java: вычисление хэш-кода объекта, использование в хэш-коллекциях. Коллизии хэш-кодов и их влияние на производительность.",
+        "keywords": [
+          "hashCode Java",
+          "хэш-код объекта",
+          "коллизия хэш-кодов",
+          "хэш-функция Java"
+        ],
+        "ogTitle": "Для чего нужен метод hashCode() в Java — Gymterview",
+        "ogDescription": "Метод hashCode() вычисляет хэш-код объекта для использования в хэш-коллекциях типа HashMap и HashSet.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен метод `hashCode()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод hashCode() необходим для вычисления хэш-кода объекта — целого числа (int), полученного из данных объекта. Для одного и того же объекта хэш-код всегда одинаков. Множество хэш-кодов ограничено типом int, поэтому возможны коллизии: если хэш-коды разные — объекты гарантированно разные; если хэш-коды равны — объекты не обязательно равны."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Метод hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каковы правила переопределения метода `Object.hashCode()`?",
+      "questionSlug": "pravila-pereopredeleniya-metoda-object-hashcode",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "hashcode",
+        "override",
+        "best-practices"
+      ],
+      "seo": {
+        "title": "Правила переопределения hashCode() в Java — Gymterview",
+        "description": "Правила и рекомендации по переопределению метода Object.hashCode() в Java: выбор полей, связь с equals(), использование уникальных примитивных полей.",
+        "keywords": [
+          "переопределение hashCode Java",
+          "правила hashCode",
+          "override hashCode",
+          "хэш-код рекомендации"
+        ],
+        "ogTitle": "Правила переопределения hashCode() в Java — Gymterview",
+        "ogDescription": "Правила переопределения hashCode(): выбор уникальных полей и согласованность с equals().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каковы правила переопределения метода `Object.hashCode()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Общий совет: выбирать поля, которые с большой долей вероятности будут различаться. Необходимо использовать уникальные, лучше всего примитивные поля, например id или uuid. При этом нужно следовать правилу: если поля задействованы при вычислении hashCode(), то они должны быть задействованы и при выполнении equals()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Правила переопределения hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

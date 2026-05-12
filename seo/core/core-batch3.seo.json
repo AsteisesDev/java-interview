@@ -1,0 +1,1025 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "batch": 3,
+  "generatedAt": "2026-05-09T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какое исключение выбрасывается при возникновении ошибки в блоке инициализации класса?",
+      "questionSlug": "isklyuchenie-v-bloke-inicializacii-klassa",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "исключения",
+        "инициализация",
+        "блоки-инициализации"
+      ],
+      "seo": {
+        "title": "Исключение в блоке инициализации класса Java — ExceptionInInitializerError — Gymterview",
+        "description": "В статическом блоке инициализации выбрасывается ExceptionInInitializerError, в нестатическом — пробрасывается исключение-источник. Разбор поведения.",
+        "keywords": [
+          "ExceptionInInitializerError",
+          "блок инициализации Java",
+          "исключение static блок",
+          "ошибка инициализации класса"
+        ],
+        "ogTitle": "Какое исключение выбрасывается в блоке инициализации Java?",
+        "ogDescription": "Статический блок — ExceptionInInitializerError. Нестатический — пробрасывает исключение-источник. Исключения Error пробрасываются напрямую.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какое исключение выбрасывается при возникновении ошибки в блоке инициализации класса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Если возникшее исключение — наследник RuntimeException: для статических блоков инициализации будет выброшено java.lang.ExceptionInInitializerError, для нестатических — проброшено исключение-источник. Если исключение — наследник Error, то в обоих случаях выбрасывается java.lang.Error. Исключение: ThreadDeath — в этом случае никакое исключение выброшено не будет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Исключение в блоке инициализации",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Может ли статический метод быть переопределён или перегружен?",
+      "questionSlug": "staticheskiy-metod-pereopredelenie-peregruzka",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "переопределение",
+        "перегрузка",
+        "методы"
+      ],
+      "seo": {
+        "title": "Можно ли переопределить или перегрузить статический метод в Java — Gymterview",
+        "description": "Статический метод можно перегрузить, но нельзя переопределить. Выбор статического метода происходит на этапе компиляции (раннее связывание).",
+        "keywords": [
+          "переопределение статического метода Java",
+          "перегрузка static метода",
+          "раннее связывание Java",
+          "static overriding"
+        ],
+        "ogTitle": "Статический метод в Java: перегрузка и переопределение",
+        "ogDescription": "Перегрузить — да. Переопределить — нет: выбор статического метода происходит при компиляции, а не во время выполнения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Может ли статический метод быть переопределён или перегружен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Перегружен — да, работает аналогично обычным методам: два статических метода могут иметь одинаковое имя при различии параметров. Переопределён — нет: выбор статического метода происходит при раннем связывании (на этапе компиляции), поэтому всегда вызывается метод родительского класса. К статическим методам рекомендуется обращаться через имя класса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Переопределение static метода",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Могут ли нестатические методы перегрузить статические?",
+      "questionSlug": "nestaticheskie-metody-peregruzka-staticheskih",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "перегрузка",
+        "методы"
+      ],
+      "seo": {
+        "title": "Могут ли нестатические методы перегрузить статические в Java — Gymterview",
+        "description": "Да, нестатические методы могут перегрузить статические. Статический метод принадлежит классу, нестатический — объекту. Это два разных метода.",
+        "keywords": [
+          "перегрузка статических методов Java",
+          "static и нестатический метод",
+          "overloading Java",
+          "перегрузка методов"
+        ],
+        "ogTitle": "Нестатический метод перегружает статический — возможно ли?",
+        "ogDescription": "Да. В итоге получится два разных метода: статический доступен через имя класса, нестатический — через объект.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Могут ли нестатические методы перегрузить статические?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. В итоге получится два разных метода. Статический будет принадлежать классу и доступен через его имя, а нестатический будет принадлежать конкретному объекту и доступен через вызов метода этого объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Перегрузка static методов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли сузить уровень доступа/тип возвращаемого значения при переопределении метода?",
+      "questionSlug": "suzhenie-dostupa-i-tipa-pri-pereopredelenii",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "переопределение",
+        "модификаторы-доступа",
+        "ковариантность"
+      ],
+      "seo": {
+        "title": "Сужение доступа и типа возвращаемого значения при переопределении метода Java — Gymterview",
+        "description": "При переопределении нельзя сузить модификатор доступа и изменить тип возвращаемого значения. Можно сузить возвращаемый тип до совместимого наследника.",
+        "keywords": [
+          "переопределение метода Java",
+          "сужение доступа override",
+          "ковариантный возвращаемый тип",
+          "override правила Java"
+        ],
+        "ogTitle": "Можно ли сузить доступ или тип при переопределении метода?",
+        "ogDescription": "Нельзя сузить модификатор доступа. Тип возвращаемого значения можно сузить только до совместимого наследника (ковариантный тип).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли сузить уровень доступа/тип возвращаемого значения при переопределении метода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При переопределении метода нельзя сузить модификатор доступа (например, с public до private). Изменить тип возвращаемого значения на несовместимый нельзя — будет ошибка компиляции. Однако можно сузить возвращаемое значение, если типы совместимы (ковариантный возвращаемый тип), например вернуть Dog вместо Animal."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Сужение доступа при переопределении",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Возможно ли при переопределении метода изменить: модификатор доступа, возвращаемый тип, тип аргумента или их количество, имена аргументов или их порядок; убирать, добавлять, изменять порядок следования элементов секции `throws`?",
+      "questionSlug": "chto-mozhno-izmenit-pri-pereopredelenii-metoda",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "переопределение",
+        "override",
+        "throws",
+        "LSP"
+      ],
+      "seo": {
+        "title": "Что можно изменить при переопределении метода в Java — Gymterview",
+        "description": "При переопределении метода можно расширить доступ, сузить возвращаемый тип, менять имена аргументов и секцию throws. Нельзя сужать модификатор доступа.",
+        "keywords": [
+          "переопределение метода Java правила",
+          "override throws Java",
+          "принцип подстановки Лисков",
+          "изменение сигнатуры метода"
+        ],
+        "ogTitle": "Правила переопределения метода в Java — что можно менять?",
+        "ogDescription": "Доступ — только расширить. Тип возврата — только сузить. Аргументы изменить нельзя (будет перегрузка). Секцию throws можно сужать и добавлять RuntimeException.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Возможно ли при переопределении метода изменить модификатор доступа, возвращаемый тип, аргументы и секцию throws?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сужать модификатор доступа нельзя (нарушение принципа подстановки Лисков), расширять — можно. Возвращаемый тип можно только сузить (ковариантный тип). Изменение типа, количества или порядка аргументов приведёт к перегрузке, а не переопределению. Секцию throws можно не указывать, можно добавлять наследников уже объявленных исключений или RuntimeException, порядок элементов значения не имеет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Изменения при переопределении метода",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить доступ к переопределенным методам родительского класса?",
+      "questionSlug": "dostup-k-pereopredelennym-metodam-roditelya",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "super",
+        "наследование",
+        "переопределение"
+      ],
+      "seo": {
+        "title": "Доступ к переопределённым методам родительского класса через super — Gymterview",
+        "description": "С помощью ключевого слова super можно обратиться к методам и полям родительского класса, если они не объявлены как private.",
+        "keywords": [
+          "super Java",
+          "доступ к методам родительского класса",
+          "переопределение метода super",
+          "наследование Java"
+        ],
+        "ogTitle": "Как вызвать переопределённый метод родителя в Java?",
+        "ogDescription": "Через ключевое слово super: super.method(). Доступны все члены родительского класса, кроме private.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить доступ к переопределенным методам родительского класса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "С помощью ключевого слова super можно обратиться к любому члену родительского класса — методу или полю, если они не определены с модификатором private. Вызов: super.method()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Доступ через super",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли объявить метод абстрактным и статическим одновременно?",
+      "questionSlug": "abstract-i-static-metod-odnovremenno",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "abstract",
+        "static",
+        "модификаторы"
+      ],
+      "seo": {
+        "title": "Можно ли объявить метод abstract и static одновременно в Java — Gymterview",
+        "description": "Нет, метод не может быть одновременно abstract и static. Компилятор выдаст ошибку: Illegal combination of modifiers: abstract and static.",
+        "keywords": [
+          "abstract static Java",
+          "модификаторы Java",
+          "абстрактный статический метод",
+          "Illegal combination of modifiers"
+        ],
+        "ogTitle": "abstract + static метод в Java — допустимо?",
+        "ogDescription": "Нет. abstract говорит, что метод будет реализован в наследнике, а static — что метод доступен по имени класса. Это взаимоисключающие модификаторы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли объявить метод абстрактным и статическим одновременно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нет. Компилятор выдаст ошибку: Illegal combination of modifiers: 'abstract' and 'static'. Модификатор abstract говорит, что метод будет реализован в другом классе, а static указывает, что метод доступен по имени класса. Эти модификаторы взаимоисключающие."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "abstract и static одновременно",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между членом экземпляра класса и статическим членом класса?",
+      "questionSlug": "raznica-chlen-ekzemplyara-i-staticheskiy-chlen",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "экземпляр",
+        "ООП",
+        "основы"
+      ],
+      "seo": {
+        "title": "Член экземпляра vs статический член класса в Java — Gymterview",
+        "description": "Статический член принадлежит классу и доступен без создания объекта. Член экземпляра принадлежит конкретному объекту и требует его создания.",
+        "keywords": [
+          "статический член класса Java",
+          "член экземпляра Java",
+          "static vs instance",
+          "разница static Java"
+        ],
+        "ogTitle": "Статический член класса и член экземпляра — в чём разница?",
+        "ogDescription": "Static принадлежит классу, доступен без объекта. Instance принадлежит объекту, имеет разные значения для каждого экземпляра.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между членом экземпляра класса и статическим членом класса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статический член принадлежит самому классу и доступен без создания экземпляра. Статические методы могут вызывать только другие статические методы, обращаться только к статическим переменным и не могут ссылаться на this или super. Члены экземпляра принадлежат конкретному объекту, могут иметь разные значения для каждого экземпляра, и их вызов возможен только после создания объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Instance vs static член",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Где разрешена инициализация статических/нестатических полей?",
+      "questionSlug": "gde-razreshena-inicializaciya-poley",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "инициализация",
+        "static",
+        "поля",
+        "конструктор"
+      ],
+      "seo": {
+        "title": "Где можно инициализировать статические и нестатические поля в Java — Gymterview",
+        "description": "Статические поля — при объявлении, в статическом или нестатическом блоке инициализации. Нестатические — при объявлении, в блоке инициализации или конструкторе.",
+        "keywords": [
+          "инициализация полей Java",
+          "статический блок инициализации",
+          "нестатическое поле Java",
+          "конструктор инициализация"
+        ],
+        "ogTitle": "Инициализация полей в Java — static и instance",
+        "ogDescription": "Static поля: при объявлении, в статическом/нестатическом блоке. Нестатические: при объявлении, в блоке инициализации или конструкторе.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Где разрешена инициализация статических/нестатических полей?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статические поля можно инициализировать при объявлении, в статическом или нестатическом блоке инициализации. Нестатические поля можно инициализировать при объявлении, в нестатическом блоке инициализации или в конструкторе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Инициализация полей",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы классов бывают в java?",
+      "questionSlug": "tipy-klassov-v-java",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "классы",
+        "вложенные-классы",
+        "enum",
+        "интерфейсы"
+      ],
+      "seo": {
+        "title": "Типы классов в Java: обычные, вложенные, абстрактные, анонимные — Gymterview",
+        "description": "В Java есть классы верхнего уровня (обычные, абстрактные, final), интерфейсы, enum и вложенные классы (статические, внутренние, локальные, анонимные).",
+        "keywords": [
+          "типы классов Java",
+          "вложенные классы Java",
+          "nested class",
+          "anonymous class Java",
+          "inner class"
+        ],
+        "ogTitle": "Какие типы классов существуют в Java?",
+        "ogDescription": "Top level (обычный, abstract, final), интерфейсы, enum, вложенные (static nested, inner, local, anonymous).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы классов бывают в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Top level class (обычный класс): абстрактный и финализированный. Interfaces (интерфейс). Enum (перечисление). Nested class (вложенный класс): статический вложенный класс (static nested), простой внутренний класс (member inner), локальный класс (local inner), анонимный класс (anonymous inner)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Типы классов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите про вложенные классы. В каких случаях они применяются?",
+      "questionSlug": "vlozhennye-klassy-primenenie",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "вложенные-классы",
+        "nested-class",
+        "inner-class",
+        "ООП"
+      ],
+      "seo": {
+        "title": "Вложенные классы в Java — виды и применение — Gymterview",
+        "description": "Вложенный класс определён внутри другого класса. Четыре вида: static nested, member inner, local inner, anonymous inner. Имеют доступ к приватным членам.",
+        "keywords": [
+          "вложенные классы Java",
+          "nested class Java",
+          "inner class",
+          "когда использовать вложенный класс"
+        ],
+        "ogTitle": "Вложенные классы Java — когда и зачем применять?",
+        "ogDescription": "Вложенный класс обслуживает внешний класс. 4 вида: static nested, member inner, local, anonymous. Имеют доступ к private-полям внешнего класса.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите про вложенные классы. В каких случаях они применяются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Вложенный (nested) класс определён внутри другого класса и должен обслуживать только обрамляющий класс. Вложенные классы имеют доступ ко всем (включая private) полям и методам внешнего класса. Существует четыре категории: статический вложенный, простой внутренний, локальный и анонимный. Внутренние классы ассоциируются с экземпляром внешнего класса, а не с самим классом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Вложенные классы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое статический класс?",
+      "questionSlug": "chto-takoe-staticheskiy-klass",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "вложенные-классы",
+        "nested-class"
+      ],
+      "seo": {
+        "title": "Что такое статический класс в Java — static nested class — Gymterview",
+        "description": "Статический класс — это вложенный класс с модификатором static. К классам верхнего уровня модификатор static неприменим.",
+        "keywords": [
+          "статический класс Java",
+          "static nested class",
+          "static class Java",
+          "вложенный статический класс"
+        ],
+        "ogTitle": "Статический класс в Java — что это?",
+        "ogDescription": "Это вложенный класс, объявленный с ключевым словом static. Модификатор static применим только к вложенным классам, не к классам верхнего уровня.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое статический класс?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это вложенный класс, объявленный с использованием ключевого слова static. К классам верхнего уровня модификатор static неприменим."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Статический класс",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют особенности использования вложенных классов: статических и внутренних? В чем заключается разница между ними?",
+      "questionSlug": "osobennosti-staticheskih-i-vnutrennih-klassov",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "вложенные-классы",
+        "static-nested",
+        "inner-class",
+        "разница"
+      ],
+      "seo": {
+        "title": "Разница между статическим и внутренним вложенным классом Java — Gymterview",
+        "description": "Статический вложенный класс не хранит ссылку на внешний объект и может содержать static-члены. Внутренний класс связан с экземпляром внешнего класса.",
+        "keywords": [
+          "static nested vs inner class",
+          "разница вложенных классов Java",
+          "статический вложенный класс",
+          "внутренний класс Java"
+        ],
+        "ogTitle": "Static nested class vs inner class — в чём разница?",
+        "ogDescription": "Static nested — без ссылки на внешний объект, может иметь static-члены. Inner — хранит ссылку на экземпляр внешнего класса, доступ через Outer.this.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют особенности использования вложенных классов: статических и внутренних?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Вложенные классы имеют доступ ко всем членам обрамляющего класса, включая private. Для статического вложенного класса не нужен объект внешнего класса, но из него нельзя напрямую обращаться к нестатическим членам внешнего класса. Обычные внутренние классы не могут содержать static-членов. В объекте внутреннего класса хранится ссылка на внешний объект (Outer.this), в статическом — нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Static nested vs inner class",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое локальный класс? Каковы его особенности?",
+      "questionSlug": "lokalnyy-klass-osobennosti",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "вложенные-классы",
+        "локальный-класс",
+        "local-inner-class"
+      ],
+      "seo": {
+        "title": "Локальный класс в Java — особенности local inner class — Gymterview",
+        "description": "Локальный класс — вложенный класс, объявленный внутри метода или блока. Виден только в пределах блока, не может быть static, public или private.",
+        "keywords": [
+          "локальный класс Java",
+          "local inner class",
+          "класс внутри метода Java",
+          "вложенный класс в методе"
+        ],
+        "ogTitle": "Что такое локальный класс в Java?",
+        "ogDescription": "Вложенный класс внутри блока или метода. Виден только в пределах блока, не может быть static/public/private, имеет доступ к final-переменным метода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое локальный класс? Каковы его особенности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Локальный класс (local inner class) — вложенный класс, который может быть объявлен в любом блоке, где разрешено объявлять переменные. Особенности: виден только в пределах блока объявления; не может быть private/public/protected или static; не может содержать статических методов и классов (но может иметь final static поля-константы); имеет доступ к полям внешнего класса; может обращаться к final-переменным и параметрам метода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Локальный класс",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое анонимные классы? Где они применяются?",
+      "questionSlug": "anonimnye-klassy-primenenie",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "вложенные-классы",
+        "анонимный-класс",
+        "anonymous-class"
+      ],
+      "seo": {
+        "title": "Анонимные классы в Java — что это и где применяются — Gymterview",
+        "description": "Анонимный класс — локальный вложенный класс без имени, создаётся одновременно с объявлением. Применяется для Comparator, Runnable и callback-ов.",
+        "keywords": [
+          "анонимный класс Java",
+          "anonymous class Java",
+          "анонимный класс пример",
+          "Comparator анонимный класс"
+        ],
+        "ogTitle": "Анонимные классы Java — когда использовать?",
+        "ogDescription": "Локальный класс без имени. Создаётся и используется в одном месте. Применяется для Comparator, Runnable, обработчиков событий.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое анонимные классы? Где они применяются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Анонимный класс — вложенный локальный класс без имени, объявляемый в любом месте, где разрешены выражения. Экземпляр создаётся одновременно с объявлением. Ограничения: используется только в одном месте, не может объявлять новые методы (нет поименованного типа). Применяется для создания объектов функций (Comparator), объектов процессов (Runnable, Thread), в статических методах генерации и для инициализации сложных перечислений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Анонимные классы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом из вложенного класса получить доступ к полю внешнего класса?",
+      "questionSlug": "dostup-k-polyu-vneshnego-klassa-iz-vlozhennogo",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "вложенные-классы",
+        "доступ",
+        "Outer.this"
+      ],
+      "seo": {
+        "title": "Доступ к полям внешнего класса из вложенного класса Java — Gymterview",
+        "description": "Статический вложенный класс имеет доступ только к static-полям. Внутренний класс обращается к полям через Outer.this.field при совпадении имён.",
+        "keywords": [
+          "доступ к внешнему классу Java",
+          "Outer.this Java",
+          "вложенный класс доступ к полям",
+          "nested class access"
+        ],
+        "ogTitle": "Как из вложенного класса обратиться к полю внешнего?",
+        "ogDescription": "Static nested — только static-поля. Inner class — любые поля. При совпадении имён: Outer.this.field.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каким образом из вложенного класса получить доступ к полю внешнего класса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статический вложенный класс имеет прямой доступ только к статическим полям обрамляющего класса. Простой внутренний класс может обратиться к любому полю внешнего класса напрямую. Если у вложенного класса есть поле с таким же именем, то к полю внешнего класса обращаются через Outer.this.field."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Доступ к полям внешнего класса",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется оператор `assert`?",
+      "questionSlug": "operator-assert-java",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "assert",
+        "отладка",
+        "тестирование"
+      ],
+      "seo": {
+        "title": "Оператор assert в Java — для чего нужен и как работает — Gymterview",
+        "description": "Assert проверяет предположения о значениях данных. При false генерируется AssertionError. Используется при разработке и тестировании, отключается в релизе.",
+        "keywords": [
+          "assert Java",
+          "оператор assert",
+          "AssertionError",
+          "утверждения Java",
+          "проверка предположений"
+        ],
+        "ogTitle": "Оператор assert в Java — зачем нужен?",
+        "ogDescription": "Assert проверяет булевское выражение. Если false — выбрасывается AssertionError. Включается при разработке, отключается в продакшене.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется оператор `assert`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Assert (утверждение) — конструкция для проверки предположений о значениях данных в произвольном месте программы. При обнаружении некорректных данных программа аварийно завершается с указанием места ошибки. Утверждения включены при разработке и тестировании, но отключаются в релизе. Форма: assert [boolean]; или assert [boolean] : [сообщение]; При false генерируется java.lang.AssertionError."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Оператор assert",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен сборщик мусора?",
+      "questionSlug": "dlya-chego-nuzhen-sborschik-musora",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "garbage-collector",
+        "GC",
+        "память",
+        "JVM"
+      ],
+      "seo": {
+        "title": "Для чего нужен сборщик мусора (Garbage Collector) в Java — Gymterview",
+        "description": "Сборщик мусора находит неиспользуемые объекты и освобождает память. Два подхода к обнаружению: Reference counting и Tracing (используется в HotSpot).",
+        "keywords": [
+          "сборщик мусора Java",
+          "Garbage Collector",
+          "GC Java",
+          "Reference counting",
+          "Tracing GC"
+        ],
+        "ogTitle": "Зачем нужен Garbage Collector в Java?",
+        "ogDescription": "GC находит мусор (объекты без ссылок) и освобождает память. HotSpot использует подход Tracing с корневыми точками (GC Roots).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен сборщик мусора?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сборщик мусора (Garbage Collector) выполняет две задачи: находит мусор — неиспользуемые объекты, на которые нет ссылок, и освобождает занятую ими память. Существует два подхода к обнаружению мусора: Reference counting (подсчёт ссылок) и Tracing (трассировка от корневых точек GC Root). HotSpot VM использует подход Tracing. Для очистки применяются методы Copying collectors и Mark-and-sweep, а также их комбинация — Generational Garbage Collection."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Сборщик мусора",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает сборщик мусора?",
+      "questionSlug": "kak-rabotaet-sborschik-musora",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "garbage-collector",
+        "GC",
+        "память",
+        "JVM",
+        "GC-Root"
+      ],
+      "seo": {
+        "title": "Как работает сборщик мусора в Java — механизм GC — Gymterview",
+        "description": "GC освобождает место в куче. Объекты без ссылок (недостижимые из GC Root) считаются мусором и удаляются автоматически виртуальной машиной.",
+        "keywords": [
+          "как работает GC Java",
+          "механизм сборки мусора",
+          "GC Root Java",
+          "garbage collection принцип"
+        ],
+        "ogTitle": "Как работает Garbage Collector в Java?",
+        "ogDescription": "GC освобождает кучу от объектов, недостижимых из GC Root. Работает автоматически, без вмешательства программиста, но влияет на производительность.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает сборщик мусора?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сборка мусора — процесс освобождения места в куче (heap). Объекты создаются оператором new, для завершения работы с объектом достаточно убрать все ссылки на него. JVM гарантирует, что объект с ссылками остаётся в памяти, а недостижимые из GC Root объекты удаляются. Память освобождается по усмотрению сборщика. Создание и удаление большого количества объектов влияет на производительность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Как работает GC",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие разновидности сборщиков мусора реализованы в виртуальной машине HotSpot?",
+      "questionSlug": "raznovidnosti-sborschikov-musora-hotspot",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "garbage-collector",
+        "GC",
+        "JVM",
+        "HotSpot",
+        "G1",
+        "ZGC"
+      ],
+      "seo": {
+        "title": "Виды сборщиков мусора в HotSpot JVM: Serial, Parallel, G1, ZGC — Gymterview",
+        "description": "HotSpot JVM предоставляет сборщики мусора: Serial, Parallel, CMS (удалён в Java 14), G1 (по умолчанию с Java 9), ZGC и Shenandoah.",
+        "keywords": [
+          "сборщики мусора HotSpot",
+          "G1 GC Java",
+          "ZGC Java",
+          "Serial Parallel CMS",
+          "виды GC Java"
+        ],
+        "ogTitle": "Виды Garbage Collector в HotSpot JVM",
+        "ogDescription": "Serial, Parallel, G1 (default с Java 9), ZGC (sub-millisecond паузы), Shenandoah. CMS удалён в Java 14.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие разновидности сборщиков мусора реализованы в виртуальной машине HotSpot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В HotSpot VM реализованы: Serial — простой последовательный сборщик; Parallel — параллельный с автоподстройкой; CMS (Concurrent Mark Sweep) — deprecated с Java 9, удалён в Java 14; G1 (Garbage-First) — сборщик по умолчанию с Java 9, для серверных приложений; ZGC — сборщик с паузами менее 1 мс, поддерживает кучу до 16 ТБ (продакшен с Java 15); Shenandoah — сборщик с низкой задержкой от Red Hat."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Виды GC в HotSpot",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

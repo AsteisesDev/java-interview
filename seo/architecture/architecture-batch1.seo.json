@@ -1,0 +1,847 @@
+{
+  "topic": "Архитектура приложений",
+  "topicSlug": "architecture",
+  "batch": 1,
+  "generatedAt": "2026-05-09T14:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое архитектура ПО и какова роль архитектора",
+      "questionSlug": "chto-takoe-arkhitektura-po-i-kakova-rol-arkhitektora",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "basics",
+        "software-design"
+      ],
+      "seo": {
+        "title": "Что такое архитектура ПО и роль архитектора — Gymterview",
+        "description": "Архитектура ПО — ключевые решения об организации системы: структура компонентов, их взаимосвязи и принципы расширяемости. Роль архитектора в проекте.",
+        "keywords": [
+          "архитектура ПО",
+          "роль архитектора",
+          "программная архитектура",
+          "структура системы",
+          "Java архитектура"
+        ],
+        "ogTitle": "Что такое архитектура ПО и роль архитектора — Gymterview",
+        "ogDescription": "Архитектура ПО — ключевые решения об организации системы: структура компонентов, их взаимосвязи и принципы расширяемости.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое архитектура ПО и какова роль архитектора",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Архитектура программного обеспечения — это совокупность ключевых решений об организации системы: выбор структурных элементов и их интерфейсов, поведение и взаимодействие компонентов, архитектурный стиль. Она определяет структуру компонентов, распределение ответственности, принципы расширяемости и подходы к обеспечению качественных атрибутов. Архитектор принимает ключевые технические решения, формирует архитектурные требования, проектирует модули, контролирует технический долг и менторит команду."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Архитектура ПО и роль архитектора",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое монолитная архитектура, каковы её плюсы и минусы",
+      "questionSlug": "chto-takoe-monolitnaya-arkhitektura-kakovy-eyo-plyusy-i-minusy",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "monolith",
+        "deployment"
+      ],
+      "seo": {
+        "title": "Монолитная архитектура: плюсы и минусы — Gymterview",
+        "description": "Монолитная архитектура — стиль, при котором всё приложение разрабатывается и развёртывается как единое целое. Плюсы, минусы и когда монолит оправдан.",
+        "keywords": [
+          "монолитная архитектура",
+          "монолит",
+          "плюсы монолита",
+          "минусы монолита",
+          "WAR JAR",
+          "Java монолит"
+        ],
+        "ogTitle": "Монолитная архитектура: плюсы и минусы — Gymterview",
+        "ogDescription": "Монолитная архитектура — стиль, при котором всё приложение разрабатывается и развёртывается как единое целое.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое монолитная архитектура, каковы её плюсы и минусы",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Монолитная архитектура — это архитектурный стиль, при котором всё приложение разрабатывается, развёртывается и масштабируется как единое целое в одном артефакте (WAR/JAR). Плюсы: простота разработки, развёртывания и отладки, отсутствие сетевых накладных расходов, лёгкая транзакционная целостность. Минусы: сложность масштабирования, долгий цикл развёртывания, высокая связанность, технологическая привязка и сложность для больших команд. Монолит оправдан на старте проекта, для небольших команд и в MVP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Монолитная архитектура",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое многослойная (layered) архитектура",
+      "questionSlug": "chto-takoe-mnogoslojnaya-layered-arkhitektura",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "layered",
+        "spring",
+        "patterns"
+      ],
+      "seo": {
+        "title": "Многослойная (layered) архитектура — Gymterview",
+        "description": "Многослойная архитектура — паттерн, при котором система разделяется на горизонтальные слои: Controller, Service, Repository. Каждый слой зависит от нижележащего.",
+        "keywords": [
+          "многослойная архитектура",
+          "layered architecture",
+          "трёхслойная архитектура",
+          "Controller Service Repository",
+          "Spring Boot слои"
+        ],
+        "ogTitle": "Многослойная (layered) архитектура — Gymterview",
+        "ogDescription": "Многослойная архитектура — паттерн, при котором система разделяется на горизонтальные слои, каждый из которых зависит только от нижележащего.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое многослойная (layered) архитектура",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Многослойная (layered) архитектура — один из наиболее распространённых архитектурных паттернов, при котором система разделяется на горизонтальные слои, каждый из которых выполняет определённую роль и зависит только от нижележащего. Классическая трёхслойная архитектура в Spring включает Controller (Web-слой, принимает запросы), Service (бизнес-слой, содержит бизнес-логику) и Repository (слой доступа к данным, выполняет CRUD-операции)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Многослойная архитектура",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое гексагональная архитектура (Ports and Adapters)",
+      "questionSlug": "chto-takoe-geksagonalnaya-arkhitektura-ports-and-adapters",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "hexagonal",
+        "ports-and-adapters",
+        "clean-code"
+      ],
+      "seo": {
+        "title": "Гексагональная архитектура (Ports and Adapters) — Gymterview",
+        "description": "Гексагональная архитектура изолирует бизнес-логику от внешнего мира через порты (интерфейсы) и адаптеры (реализации). Примеры на Java и Spring.",
+        "keywords": [
+          "гексагональная архитектура",
+          "Ports and Adapters",
+          "Hexagonal Architecture",
+          "порты и адаптеры",
+          "Алистер Кокберн",
+          "Java архитектура"
+        ],
+        "ogTitle": "Гексагональная архитектура (Ports and Adapters) — Gymterview",
+        "ogDescription": "Гексагональная архитектура изолирует бизнес-логику от внешнего мира через порты и адаптеры. Примеры на Java.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое гексагональная архитектура (Ports and Adapters)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Гексагональная архитектура (Hexagonal Architecture), предложенная Алистером Кокберном, изолирует ядро приложения (бизнес-логику) от внешнего мира с помощью портов (интерфейсов) и адаптеров (реализаций). Входящие порты определяют Use Case-интерфейсы, исходящие — интерфейсы для БД и внешних сервисов. Адаптеры — конкретные реализации: REST-контроллеры, JPA-репозитории, Kafka-продюсеры. Это обеспечивает отличную тестируемость и возможность замены инфраструктурных компонентов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Гексагональная архитектура",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Clean Architecture (чистая архитектура)",
+      "questionSlug": "chto-takoe-clean-architecture-chistaya-arkhitektura",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "clean-architecture",
+        "uncle-bob",
+        "solid"
+      ],
+      "seo": {
+        "title": "Clean Architecture (чистая архитектура) — Gymterview",
+        "description": "Clean Architecture Роберта Мартина: зависимости направлены только внутрь. Entities, Use Cases, Interface Adapters, Frameworks. Структура пакетов в Java.",
+        "keywords": [
+          "Clean Architecture",
+          "чистая архитектура",
+          "Роберт Мартин",
+          "Uncle Bob",
+          "Dependency Rule",
+          "правило зависимостей"
+        ],
+        "ogTitle": "Clean Architecture (чистая архитектура) — Gymterview",
+        "ogDescription": "Clean Architecture Роберта Мартина: зависимости направлены только внутрь — от внешних слоёв к внутренним.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Clean Architecture (чистая архитектура)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clean Architecture — концепция Роберта Мартина, основной принцип которой: зависимости направлены только внутрь. Состоит из четырёх слоёв: Entities (бизнес-объекты и правила), Use Cases (сценарии использования), Interface Adapters (контроллеры, презентеры, маппинг) и Frameworks & Drivers (фреймворки, БД, веб-серверы). Правило зависимостей гласит: ничто во внутреннем слое не должно знать о внешнем слое. Отличие от гексагональной архитектуры — явное выделение слоя Use Cases и чёткая иерархия из четырёх колец."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Clean Architecture",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Onion Architecture (луковая архитектура)",
+      "questionSlug": "chto-takoe-onion-architecture-lukovaya-arkhitektura",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "onion-architecture",
+        "domain-model"
+      ],
+      "seo": {
+        "title": "Onion Architecture (луковая архитектура) — Gymterview",
+        "description": "Onion Architecture Джеффри Палермо: зависимости направлены к центру. Слои: Domain Model, Domain Services, Application Services, Infrastructure.",
+        "keywords": [
+          "Onion Architecture",
+          "луковая архитектура",
+          "Джеффри Палермо",
+          "Domain Model",
+          "слои архитектуры"
+        ],
+        "ogTitle": "Onion Architecture (луковая архитектура) — Gymterview",
+        "ogDescription": "Onion Architecture — архитектурный стиль, в котором зависимости направлены к центру: от инфраструктуры к доменной модели.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Onion Architecture (луковая архитектура)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Onion Architecture — архитектурный стиль, предложенный Джеффри Палермо, где зависимости направлены только к центру. Слои от центра к периферии: Domain Model (сущности, Value Objects), Domain Services (доменная логика), Application Services (координация сценариев, транзакции) и Infrastructure (реализации репозиториев, фреймворки). Интерфейсы репозиториев определяются в доменном слое, а реализации — в инфраструктурном. Концептуально схожа с Clean и Hexagonal Architecture, но акцентирует слои вокруг доменной модели."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Onion Architecture",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как принципы SOLID применяются в контексте архитектуры",
+      "questionSlug": "kak-printsipy-solid-primenyayutsya-v-kontekste-arkhitektury",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "solid",
+        "design-principles",
+        "oop"
+      ],
+      "seo": {
+        "title": "Принципы SOLID в контексте архитектуры — Gymterview",
+        "description": "Применение пяти принципов SOLID на уровне архитектуры: SRP для границ сервисов, OCP для расширяемости, LSP, ISP и DIP для модулей. Примеры на Java.",
+        "keywords": [
+          "SOLID архитектура",
+          "принципы SOLID",
+          "SRP",
+          "OCP",
+          "LSP",
+          "ISP",
+          "DIP",
+          "инверсия зависимостей"
+        ],
+        "ogTitle": "Принципы SOLID в контексте архитектуры — Gymterview",
+        "ogDescription": "Применение принципов SOLID на уровне модулей и компонентов архитектуры. Примеры на Java.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как принципы SOLID применяются в контексте архитектуры",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SOLID применимы не только на уровне классов, но и на уровне модулей и компонентов. SRP определяет границы сервисов (каждый модуль отвечает за одну бизнес-область). OCP — система расширяется через новые модули, а не через изменение существующих. LSP — любой компонент, реализующий порт, может быть заменён другой реализацией. ISP — API модулей должны быть узкоспециализированными. DIP — фундамент гексагональной и чистой архитектуры: бизнес-логика не зависит от инфраструктуры, оба зависят от абстракций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "SOLID в архитектуре",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что означают принципы DRY, KISS и YAGNI",
+      "questionSlug": "chto-oznachayut-printsipy-dry-kiss-i-yagni",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "design-principles",
+        "best-practices"
+      ],
+      "seo": {
+        "title": "Принципы DRY, KISS и YAGNI — Gymterview",
+        "description": "DRY — не повторяйся, KISS — делай проще, YAGNI — вам это не понадобится. Объяснение принципов проектирования с примерами на Java.",
+        "keywords": [
+          "DRY",
+          "KISS",
+          "YAGNI",
+          "Don't Repeat Yourself",
+          "Keep It Simple",
+          "принципы проектирования",
+          "Java"
+        ],
+        "ogTitle": "Принципы DRY, KISS и YAGNI — Gymterview",
+        "ogDescription": "DRY — не повторяйся, KISS — делай проще, YAGNI — вам это не понадобится. Примеры и объяснения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что означают принципы DRY, KISS и YAGNI",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DRY (Don't Repeat Yourself) — каждый фрагмент знания должен иметь единственное представление в системе; дублирование ведёт к рассинхронизации, но случайно совпадающий код разных концепций объединять не нужно. KISS (Keep It Simple, Stupid) — простое решение лучше сложного, архитектурная сложность должна быть оправдана бизнес-требованиями. YAGNI (You Aren't Gonna Need It) — не реализуйте функциональность «на будущее», проектируйте расширяемую архитектуру, но реализуйте только то, что нужно сейчас."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "DRY, KISS и YAGNI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Coupling и Cohesion (связанность и сцепленность)",
+      "questionSlug": "chto-takoe-coupling-i-cohesion-svyazannost-i-stseplennost",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "coupling",
+        "cohesion",
+        "design-principles"
+      ],
+      "seo": {
+        "title": "Coupling и Cohesion (связанность и сцепленность) — Gymterview",
+        "description": "Coupling — степень взаимозависимости модулей, Cohesion — степень фокусировки модуля на одной задаче. Идеал: Low Coupling + High Cohesion. Типы связанности.",
+        "keywords": [
+          "Coupling",
+          "Cohesion",
+          "связанность",
+          "сцепленность",
+          "Low Coupling",
+          "High Cohesion",
+          "модули"
+        ],
+        "ogTitle": "Coupling и Cohesion (связанность и сцепленность) — Gymterview",
+        "ogDescription": "Coupling — степень взаимозависимости модулей, Cohesion — степень фокусировки модуля. Идеал: Low Coupling + High Cohesion.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Coupling и Cohesion (связанность и сцепленность)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coupling (связанность) — степень взаимозависимости между модулями; чем ниже, тем лучше, так как модули можно изменять независимо. Cohesion (сцепленность) — степень, в которой элементы внутри модуля работают над одной задачей; чем выше, тем лучше. Идеал: Low Coupling + High Cohesion. Типы связанности от худшей к лучшей: content, common, control, stamp, data, message coupling. Снижению coupling способствуют интерфейсы, события, Dependency Injection и чёткие API-контракты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Coupling и Cohesion",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое DDD (Domain-Driven Design), назовите основные понятия",
+      "questionSlug": "chto-takoe-ddd-domain-driven-design-nazovite-osnovnye-ponyatiya",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "ddd",
+        "domain-driven-design",
+        "bounded-context"
+      ],
+      "seo": {
+        "title": "DDD (Domain-Driven Design): основные понятия — Gymterview",
+        "description": "Domain-Driven Design — подход, в центре которого предметная область. Ubiquitous Language, Bounded Context, Entity, Value Object, Aggregate, Domain Event.",
+        "keywords": [
+          "DDD",
+          "Domain-Driven Design",
+          "Bounded Context",
+          "Ubiquitous Language",
+          "Aggregate",
+          "Entity",
+          "Value Object",
+          "Эрик Эванс"
+        ],
+        "ogTitle": "DDD (Domain-Driven Design): основные понятия — Gymterview",
+        "ogDescription": "Domain-Driven Design — подход к разработке, в центре которого предметная область бизнеса. Основные паттерны и понятия.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое DDD (Domain-Driven Design), назовите основные понятия",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Domain-Driven Design — подход к разработке, предложенный Эриком Эвансом, при котором в центре проектирования находится предметная область бизнеса. Стратегические паттерны: Ubiquitous Language (единый язык разработчиков и бизнес-экспертов) и Bounded Context (явная граница, внутри которой модель однозначна). Тактические паттерны: Entity (объект с уникальной идентичностью), Value Object (неизменяемый объект, определяемый атрибутами), Aggregate (кластер связанных объектов с корнем), Repository, Domain Event и Domain Service."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "DDD (Domain-Driven Design)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие архитектурные стили существуют, сравните монолит, SOA, микросервисы и serverless",
+      "questionSlug": "kakie-arkhitekturnye-stili-sushchestvuyut-sravnite-monolit-soa-mikroservisy-i-serverless",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "monolith",
+        "soa",
+        "microservices",
+        "serverless"
+      ],
+      "seo": {
+        "title": "Сравнение архитектурных стилей: монолит, SOA, микросервисы, serverless — Gymterview",
+        "description": "Сравнение четырёх архитектурных стилей: монолит, SOA, микросервисы и serverless. Критерии: масштабирование, развёртывание, связь компонентов, транзакции.",
+        "keywords": [
+          "архитектурные стили",
+          "монолит",
+          "SOA",
+          "микросервисы",
+          "serverless",
+          "сравнение архитектур",
+          "FaaS"
+        ],
+        "ogTitle": "Монолит vs SOA vs Микросервисы vs Serverless — Gymterview",
+        "ogDescription": "Сравнение четырёх архитектурных стилей по критериям масштабирования, развёртывания и сложности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие архитектурные стили существуют, сравните монолит, SOA, микросервисы и serverless",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Монолит — единое приложение в одном процессе, простое в разработке. SOA — крупные сервисы, взаимодействующие через Enterprise Service Bus (ESB), типично SOAP/WSDL. Микросервисы — множество мелких независимых сервисов по Bounded Context, общение через REST/gRPC/Message Broker. Serverless — код в виде функций (FaaS), управляемых облачной платформой. Выбор зависит от размера проекта, команды и требований: монолит для малых проектов, микросервисы для крупных, serverless для event-driven задач с нестабильной нагрузкой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Сравнение архитектурных стилей",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Event-Driven Architecture (EDA)",
+      "questionSlug": "chto-takoe-event-driven-architecture-eda",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "event-driven",
+        "kafka",
+        "messaging"
+      ],
+      "seo": {
+        "title": "Event-Driven Architecture (EDA) — Gymterview",
+        "description": "Event-Driven Architecture — стиль, где компоненты взаимодействуют через события. Топологии: Broker и Mediator. Типы событий. Примеры с Kafka и Spring.",
+        "keywords": [
+          "Event-Driven Architecture",
+          "EDA",
+          "событийная архитектура",
+          "Kafka",
+          "брокер событий",
+          "Domain Event",
+          "асинхронное взаимодействие"
+        ],
+        "ogTitle": "Event-Driven Architecture (EDA) — Gymterview",
+        "ogDescription": "Event-Driven Architecture — стиль, где компоненты взаимодействуют посредством событий через брокер сообщений.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Event-Driven Architecture (EDA)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event-Driven Architecture (EDA) — архитектурный стиль, в котором компоненты системы взаимодействуют посредством событий (фактов, произошедших в системе). Основные топологии: Broker (события публикуются в брокер, подписчики забирают нужные) и Mediator (центральный посредник координирует обработку). Типы событий: Event Notification, Event-Carried State Transfer и Domain Event. Плюсы: слабая связанность, масштабируемость, отказоустойчивость. Минусы: сложность отладки, eventual consistency, необходимость обеспечения идемпотентности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "Event-Driven Architecture",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CQRS (Command Query Responsibility Segregation)",
+      "questionSlug": "chto-takoe-cqrs-command-query-responsibility-segregation",
+      "grade": "senior",
+      "tags": [
+        "architecture",
+        "cqrs",
+        "event-sourcing",
+        "patterns"
+      ],
+      "seo": {
+        "title": "CQRS (Command Query Responsibility Segregation) — Gymterview",
+        "description": "CQRS — паттерн, разделяющий операции чтения и записи на отдельные модели. Когда применять, примеры на Java, связь с Event Sourcing.",
+        "keywords": [
+          "CQRS",
+          "Command Query Responsibility Segregation",
+          "разделение чтения и записи",
+          "Event Sourcing",
+          "паттерн CQRS"
+        ],
+        "ogTitle": "CQRS (Command Query Responsibility Segregation) — Gymterview",
+        "ogDescription": "CQRS — паттерн, разделяющий операции чтения (Query) и записи (Command) на отдельные модели.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CQRS (Command Query Responsibility Segregation)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CQRS — паттерн, разделяющий операции чтения (Query) и записи (Command) на отдельные модели, позволяя оптимизировать каждую сторону независимо. Command изменяет состояние и ничего не возвращает, Query только читает. Применяется когда нагрузка на чтение превышает запись, модели для чтения и записи сильно отличаются, или нужна независимая масштабируемость. Часто комбинируется с Event Sourcing. Не стоит применять для простых CRUD-приложений и когда eventual consistency неприемлема."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "CQRS",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём различия паттернов MVC, MVP и MVVM",
+      "questionSlug": "v-chyom-razlichiya-patternov-mvc-mvp-i-mvvm",
+      "grade": "junior",
+      "tags": [
+        "architecture",
+        "mvc",
+        "mvp",
+        "mvvm",
+        "patterns"
+      ],
+      "seo": {
+        "title": "Различия MVC, MVP и MVVM — Gymterview",
+        "description": "Сравнение паттернов MVC, MVP и MVVM: связь View-Model, тестируемость, сложность, типичное применение. Spring MVC, Android, JavaFX.",
+        "keywords": [
+          "MVC",
+          "MVP",
+          "MVVM",
+          "Model View Controller",
+          "паттерны представления",
+          "Spring MVC",
+          "data binding"
+        ],
+        "ogTitle": "Различия паттернов MVC, MVP и MVVM — Gymterview",
+        "ogDescription": "Сравнение трёх паттернов разделения представления и логики: MVC, MVP и MVVM.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём различия паттернов MVC, MVP и MVVM",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Все три паттерна разделяют представление (UI) и логику, но по-разному организуют взаимодействие. MVC: Controller принимает ввод, управляет Model и выбирает View; View может читать Model напрямую. MVP: Presenter — единственный посредник между пассивным View и Model, они не знают друг о друге. MVVM: ViewModel связан с View через двустороннее data binding. MVC типичен для Spring-приложений, MVP — для Android/Desktop, MVVM — для JavaFX и SPA-фреймворков."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "MVC, MVP и MVVM",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CAP-теорема",
+      "questionSlug": "chto-takoe-cap-teorema",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "cap-theorem",
+        "distributed-systems",
+        "consistency"
+      ],
+      "seo": {
+        "title": "CAP-теорема (теорема Брюера) — Gymterview",
+        "description": "CAP-теорема: в распределённой системе невозможно одновременно обеспечить Consistency, Availability и Partition Tolerance. CP vs AP системы.",
+        "keywords": [
+          "CAP-теорема",
+          "теорема Брюера",
+          "Consistency",
+          "Availability",
+          "Partition Tolerance",
+          "CP системы",
+          "AP системы"
+        ],
+        "ogTitle": "CAP-теорема (теорема Брюера) — Gymterview",
+        "ogDescription": "CAP-теорема: невозможно одновременно обеспечить согласованность, доступность и устойчивость к разделению в распределённой системе.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CAP-теорема",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CAP-теорема (теорема Брюера) утверждает, что в распределённой системе невозможно одновременно обеспечить три свойства: Consistency (все узлы видят одинаковые данные), Availability (каждый запрос получает ответ) и Partition Tolerance (система работает при потере связи между узлами). Поскольку сетевые разделения неизбежны, выбор фактически между CP (согласованность, например HBase, ZooKeeper) и AP (доступность, например Cassandra, DynamoDB). Для финансовых операций обычно выбирают CP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "CAP-теорема",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между BASE и ACID",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-base-i-acid",
+      "grade": "middle",
+      "tags": [
+        "architecture",
+        "acid",
+        "base",
+        "distributed-systems",
+        "databases"
+      ],
+      "seo": {
+        "title": "Разница между BASE и ACID — Gymterview",
+        "description": "ACID — атомарность, согласованность, изолированность, долговечность для реляционных БД. BASE — базовая доступность и eventual consistency для NoSQL.",
+        "keywords": [
+          "ACID",
+          "BASE",
+          "транзакции",
+          "eventual consistency",
+          "NoSQL",
+          "PostgreSQL",
+          "Cassandra",
+          "распределённые системы"
+        ],
+        "ogTitle": "Разница между BASE и ACID — Gymterview",
+        "ogDescription": "Два подхода к управлению данными: ACID для строгой согласованности и BASE для высокой доступности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между BASE и ACID",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ACID — свойства классических реляционных транзакций: Atomicity (атомарность), Consistency (согласованность), Isolation (изолированность), Durability (долговечность). Обеспечивает немедленную согласованность, пессимистичный подход с блокировками. BASE — подход распределённых NoSQL-систем: Basically Available (базовая доступность), Soft state (мягкое состояние), Eventually consistent (согласованность в конечном счёте). Оптимистичный подход с горизонтальным масштабированием. В банковских приложениях основные операции используют ACID, вспомогательные — BASE."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Архитектура приложений",
+            "url": "/topics/architecture"
+          },
+          {
+            "name": "BASE vs ACID",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,1493 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "batch": 6,
+  "generatedAt": "2026-05-09T12:00:00Z",
+  "questions": [
+    {
+      "question": "Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете `hashCode()`?",
+      "questionSlug": "est-li-kakie-libo-rekomendacii-o-tom-kakie-polya-sledyet-ispolzovat-pri-podschete-hashcode",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "hashCode",
+        "equals",
+        "Object"
+      ],
+      "seo": {
+        "title": "Какие поля использовать при подсчёте hashCode() — Gymterview",
+        "description": "Рекомендации по выбору полей для вычисления hashCode() в Java. Используйте уникальные примитивные поля, задействованные также в equals().",
+        "keywords": [
+          "hashCode",
+          "equals",
+          "Java",
+          "поля hashCode",
+          "рекомендации hashCode",
+          "собеседование Java"
+        ],
+        "ogTitle": "Какие поля использовать при подсчёте hashCode() — Gymterview",
+        "ogDescription": "Рекомендации по выбору полей для вычисления hashCode() в Java: уникальные примитивные поля, согласованность с equals().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Есть ли какие-либо рекомендации о том, какие поля следует использовать при подсчете `hashCode()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Общий совет: выбирать поля, которые с большой долей вероятности будут различаться. Для этого необходимо использовать уникальные, лучше всего примитивные поля, например, такие как id, uuid. При этом нужно следовать правилу: если поля задействованы при вычислении hashCode(), то они должны быть задействованы и при выполнении equals()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Поля для hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Могут ли у разных объектов быть одинаковые `hashCode()`?",
+      "questionSlug": "mogut-li-u-raznykh-obektov-byt-odinakovye-hashcode",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "hashCode",
+        "коллизия",
+        "Object"
+      ],
+      "seo": {
+        "title": "Могут ли у разных объектов быть одинаковые hashCode() — Gymterview",
+        "description": "Да, у разных объектов могут быть одинаковые hashCode(). Такая ситуация называется коллизией. Вероятность зависит от алгоритма генерации хэш-кода.",
+        "keywords": [
+          "hashCode",
+          "коллизия",
+          "Java",
+          "одинаковый hashCode",
+          "хэш-код",
+          "собеседование Java"
+        ],
+        "ogTitle": "Могут ли у разных объектов быть одинаковые hashCode() — Gymterview",
+        "ogDescription": "Да, могут. Ситуация, когда у разных объектов одинаковые хэш-коды, называется коллизией.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Могут ли у разных объектов быть одинаковые `hashCode()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, могут. Метод hashCode() не гарантирует уникальность возвращаемого значения. Ситуация, когда у разных объектов одинаковые хэш-коды, называется коллизией. Вероятность возникновения коллизии зависит от используемого алгоритма генерации хэш-кода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Одинаковые hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Если у класса `Point{int x, y;}` реализовать метод `equals(Object that) {(return this.x == that.x && this.y == that.y)}`, но сделать хэш код в виде `int hashCode() {return x;}`, то будут ли корректно такие точки помещаться и извлекаться из `HashSet`?",
+      "questionSlug": "esli-u-klassa-point-int-x-y-realizovat-equals-no-sdelat-hashcode-return-x-budut-li-korrektno-tochki-pomeshchatsya-v-hashset",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "hashCode",
+        "equals",
+        "HashSet",
+        "HashMap"
+      ],
+      "seo": {
+        "title": "Point с hashCode() {return x;} и HashSet — корректно ли работает? — Gymterview",
+        "description": "Разбор работы HashSet с классом Point, у которого hashCode() возвращает только x. Точки будут помещаться и извлекаться корректно, но с низкой производительностью.",
+        "keywords": [
+          "hashCode",
+          "equals",
+          "HashSet",
+          "HashMap",
+          "коллизия",
+          "Point",
+          "Java",
+          "собеседование"
+        ],
+        "ogTitle": "Point с hashCode() {return x;} и HashSet — Gymterview",
+        "ogDescription": "Точки будут помещаться и извлекаться корректно, но производительность будет низкой из-за большого количества коллизий.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Если у класса Point{int x, y;} реализовать метод equals, но сделать hashCode() {return x;}, будут ли корректно точки помещаться и извлекаться из HashSet?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HashSet использует HashMap для хранения элементов. У всех экземпляров класса Point хэш-код будет одинаковым для объектов с одинаковым x, что приведёт к вырождению хэш-таблицы в список. При коллизии HashMap проверяет элементы через equals(). Элементы будут успешно добавляться и извлекаться, но производительность будет невысокой из-за неэффективной хэш-функции, порождающей большое количество коллизий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Point и HashSet",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Могут ли у разных объектов `(ref0 != ref1)` быть `ref0.equals(ref1) == true`?",
+      "questionSlug": "mogut-li-u-raznykh-obektov-ref0-ne-ravno-ref1-byt-ref0-equals-ref1-true",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "Object",
+        "ссылки"
+      ],
+      "seo": {
+        "title": "Могут ли разные объекты быть equals() == true — Gymterview",
+        "description": "Да, у разных объектов (ref0 != ref1) может быть ref0.equals(ref1) == true, если в классе переопределён метод equals().",
+        "keywords": [
+          "equals",
+          "Java",
+          "разные объекты",
+          "сравнение объектов",
+          "переопределение equals",
+          "собеседование"
+        ],
+        "ogTitle": "Могут ли разные объекты быть equals() == true — Gymterview",
+        "ogDescription": "Да, если в классе переопределён метод equals(). По умолчанию Object.equals() возвращает true только при совпадении ссылок.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Могут ли у разных объектов `(ref0 != ref1)` быть `ref0.equals(ref1) == true`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, могут. Для этого в классе этих объектов должен быть переопределен метод equals(). Если используется метод Object.equals(), то для двух ссылок x и y метод вернет true тогда и только тогда, когда обе ссылки указывают на один и тот же объект (т.е. x == y возвращает true)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Разные объекты и equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Могут ли у разных ссылок на один объект `(ref0 == ref1)` быть `ref0.equals(ref1) == false`?",
+      "questionSlug": "mogut-li-u-raznykh-ssylok-na-odin-obekt-ref0-ravno-ref1-byt-ref0-equals-ref1-false",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "Object",
+        "рефлексивность"
+      ],
+      "seo": {
+        "title": "Могут ли ссылки на один объект дать equals() == false — Gymterview",
+        "description": "В общем случае могут, если метод equals() реализован некорректно и не выполняет свойство рефлексивности: x.equals(x) должен возвращать true.",
+        "keywords": [
+          "equals",
+          "рефлексивность",
+          "Java",
+          "ссылки",
+          "один объект",
+          "контракт equals",
+          "собеседование"
+        ],
+        "ogTitle": "Могут ли ссылки на один объект дать equals() == false — Gymterview",
+        "ogDescription": "Могут, если equals() реализован некорректно и нарушает свойство рефлексивности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Могут ли у разных ссылок на один объект `(ref0 == ref1)` быть `ref0.equals(ref1) == false`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В общем случае могут, если метод equals() реализован некорректно и не выполняет свойство рефлексивности: для любых ненулевых ссылок x метод x.equals(x) должен возвращать true."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Ссылки на один объект и equals()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли так реализовать метод `equals(Object that) {return this.hashCode() == that.hashCode()}`?",
+      "questionSlug": "mozhno-li-tak-realizovat-equals-cherez-hashcode",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "hashCode",
+        "Object"
+      ],
+      "seo": {
+        "title": "Можно ли реализовать equals() через сравнение hashCode() — Gymterview",
+        "description": "Строго говоря нельзя, поскольку hashCode() не гарантирует уникальность значения для каждого объекта. Однако для Object такой код допустим.",
+        "keywords": [
+          "equals",
+          "hashCode",
+          "Java",
+          "реализация equals",
+          "сравнение hashCode",
+          "собеседование"
+        ],
+        "ogTitle": "Можно ли реализовать equals() через hashCode() — Gymterview",
+        "ogDescription": "Нельзя, так как hashCode() не гарантирует уникальность. Но для класса Object такой код допустим.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли так реализовать метод `equals(Object that) {return this.hashCode() == that.hashCode()}`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Строго говоря нельзя, поскольку метод hashCode() не гарантирует уникальность значения для каждого объекта. Однако для сравнения экземпляров класса Object такой код допустим, т.к. метод hashCode() в классе Object возвращает уникальные значения для разных объектов (его вычисление основано на использовании алгоритма генерации случайных чисел)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "equals() через hashCode()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В `equals()` требуется проверять, что аргумент `equals(Object that)` такого же типа что и сам объект. В чем разница между `this.getClass() == that.getClass()` и `that instanceof MyClass`?",
+      "questionSlug": "v-equals-raznica-mezhdu-getclass-i-instanceof",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "equals",
+        "getClass",
+        "instanceof",
+        "Object"
+      ],
+      "seo": {
+        "title": "Разница между getClass() и instanceof в equals() — Gymterview",
+        "description": "instanceof проверяет принадлежность к классу или его наследнику, а getClass() проверяет точное совпадение класса. Для корректного equals() используйте getClass().",
+        "keywords": [
+          "equals",
+          "getClass",
+          "instanceof",
+          "Java",
+          "проверка типа",
+          "контракт equals",
+          "собеседование"
+        ],
+        "ogTitle": "getClass() vs instanceof в equals() — Gymterview",
+        "ogDescription": "instanceof проверяет принадлежность к классу или наследнику, getClass() — точное совпадение. Для equals() предпочтительнее getClass().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между this.getClass() == that.getClass() и that instanceof MyClass в контексте equals()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оператор instanceof сравнивает объект и указанный тип. Его можно использовать для проверки, является ли данный объект экземпляром некоторого класса, либо экземпляром его дочернего класса, либо экземпляром класса, который реализует указанный интерфейс. this.getClass() == that.getClass() проверяет два класса на идентичность, поэтому для корректной реализации контракта метода equals() необходимо использовать точное сравнение с помощью метода getClass()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "getClass() vs instanceof",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли реализовать метод `equals()` класса `MyClass` вот так: `class MyClass {public boolean equals(MyClass that) {return this == that;}}`?",
+      "questionSlug": "mozhno-li-realizovat-equals-myclass-s-parametrom-myclass",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "equals",
+        "перегрузка",
+        "переопределение",
+        "Object"
+      ],
+      "seo": {
+        "title": "equals(MyClass that) — переопределение или перегрузка? — Gymterview",
+        "description": "Метод equals(MyClass that) не переопределяет equals() класса Object, а перегружает его. Для переопределения параметр должен быть типа Object.",
+        "keywords": [
+          "equals",
+          "перегрузка",
+          "переопределение",
+          "Java",
+          "MyClass",
+          "Object",
+          "собеседование"
+        ],
+        "ogTitle": "equals(MyClass that) — перегрузка вместо переопределения — Gymterview",
+        "ogDescription": "Такой метод не переопределяет equals() класса Object, а перегружает его, что является ошибкой.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли реализовать метод `equals()` класса `MyClass` вот так: `class MyClass {public boolean equals(MyClass that) {return this == that;}}`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реализовать можно, но данный метод не переопределяет метод equals() класса Object, а перегружает его. Для корректного переопределения параметр метода должен быть типа Object."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "equals() с параметром MyClass",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Есть класс `Point{int x, y;}`. Почему хэш код в виде `31 * x + y` предпочтительнее чем `x + y`?",
+      "questionSlug": "pochemu-hash-kod-31-x-plus-y-predpochtitelneye-chem-x-plus-y",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "hashCode",
+        "хэш-функция",
+        "Point"
+      ],
+      "seo": {
+        "title": "Почему hashCode 31*x+y лучше чем x+y — Gymterview",
+        "description": "Множитель 31 в хэш-коде создаёт зависимость значения от очерёдности обработки полей, что порождает лучшую хэш-функцию с меньшим числом коллизий.",
+        "keywords": [
+          "hashCode",
+          "хэш-функция",
+          "множитель 31",
+          "Java",
+          "Point",
+          "коллизии",
+          "собеседование"
+        ],
+        "ogTitle": "Почему hashCode 31*x+y лучше чем x+y — Gymterview",
+        "ogDescription": "Множитель создаёт зависимость хэш-кода от очерёдности обработки полей, порождая лучшую хэш-функцию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Есть класс `Point{int x, y;}`. Почему хэш код в виде `31 * x + y` предпочтительнее чем `x + y`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Множитель создает зависимость значения хэш-кода от очередности обработки полей, что в итоге порождает лучшую хэш-функцию. Например, для точек (1, 2) и (2, 1) хэш x + y будет одинаковым (3), а 31 * x + y даст разные значения (33 и 63), что уменьшает количество коллизий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "hashCode: 31*x+y vs x+y",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите иерархию исключений.",
+      "questionSlug": "opishite-ierarkhiyu-isklyucheniy",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "Throwable",
+        "Exception",
+        "Error"
+      ],
+      "seo": {
+        "title": "Иерархия исключений в Java — Gymterview",
+        "description": "Все исключения наследуются от Throwable: Error — серьёзные проблемы уровня JVM, Exception — решаемые проблемы в программе. Подробная схема иерархии.",
+        "keywords": [
+          "иерархия исключений",
+          "Throwable",
+          "Exception",
+          "Error",
+          "Java",
+          "исключения",
+          "собеседование"
+        ],
+        "ogTitle": "Иерархия исключений в Java — Gymterview",
+        "ogDescription": "Все исключения наследуются от Throwable. Error — проблемы JVM, Exception — решаемые проблемы программы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите иерархию исключений в Java.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Исключения делятся на несколько классов, но все они имеют общего предка — класс Throwable, потомками которого являются классы Exception и Error. Ошибки (Errors) представляют собой более серьёзные проблемы уровня JVM, которые не следует обрабатывать в программе. Исключения (Exceptions) являются результатом проблем в программе, которые решаемы и последствия которых возможно устранить внутри программы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Иерархия исключений",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие виды исключений в Java вы знаете, чем они отличаются?",
+      "questionSlug": "kakie-vidy-isklyucheniy-v-java-vy-znaete-chem-oni-otlichayutsya",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "checked",
+        "unchecked",
+        "RuntimeException"
+      ],
+      "seo": {
+        "title": "Виды исключений в Java: checked и unchecked — Gymterview",
+        "description": "В Java исключения делятся на checked (проверяемые) и unchecked (непроверяемые). Checked обязательно обрабатываются, unchecked — нет.",
+        "keywords": [
+          "checked exception",
+          "unchecked exception",
+          "RuntimeException",
+          "Java",
+          "виды исключений",
+          "собеседование"
+        ],
+        "ogTitle": "Виды исключений в Java — Gymterview",
+        "ogDescription": "Checked — обязательно обрабатываются блоком catch или объявляются в throws. Unchecked — не требуют обязательной обработки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие виды исключений в Java вы знаете, чем они отличаются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java все исключения делятся на два типа: checked (контролируемые/проверяемые) — должны обрабатываться блоком catch или описываться в заголовке метода через throws, проверяются на этапе компиляции; unchecked (неконтролируемые/непроверяемые) — включают ошибки Error и исключения RuntimeException и его наследников, которые могут не обрабатываться блоком catch."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Виды исключений",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое checked и unchecked exception?",
+      "questionSlug": "chto-takoe-checked-i-unchecked-exception",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "checked",
+        "unchecked",
+        "компиляция"
+      ],
+      "seo": {
+        "title": "Checked и unchecked исключения в Java — Gymterview",
+        "description": "Checked исключения проверяются компилятором и требуют обработки. Unchecked — это RuntimeException и Error, обработка которых не обязательна.",
+        "keywords": [
+          "checked exception",
+          "unchecked exception",
+          "Java",
+          "RuntimeException",
+          "Error",
+          "компилятор",
+          "собеседование"
+        ],
+        "ogTitle": "Checked и unchecked исключения в Java — Gymterview",
+        "ogDescription": "Checked проверяются компилятором. Unchecked включают RuntimeException и Error, обработка не обязательна.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое checked и unchecked exception?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Checked (проверяемые) исключения должны обрабатываться блоком catch или описываться в заголовке метода (throws IOException). Наличие обработчика проверяется на этапе компиляции. Unchecked (непроверяемые) исключения включают ошибки Error (например OutOfMemoryError) и исключения RuntimeException и его наследников (например NullPointerException), которые могут не обрабатываться."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Checked и unchecked",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой оператор позволяет принудительно выбросить исключение?",
+      "questionSlug": "kakoy-operator-pozvolyaet-prinuditelno-vybrosit-isklyuchenie",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "throw"
+      ],
+      "seo": {
+        "title": "Оператор throw для выброса исключения в Java — Gymterview",
+        "description": "Оператор throw позволяет принудительно выбросить исключение в Java. Синтаксис: throw new Exception(). Разбор с примерами.",
+        "keywords": [
+          "throw",
+          "выброс исключения",
+          "Java",
+          "оператор throw",
+          "исключения",
+          "собеседование"
+        ],
+        "ogTitle": "Оператор throw в Java — Gymterview",
+        "ogDescription": "Оператор throw позволяет принудительно выбросить исключение: throw new Exception().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой оператор позволяет принудительно выбросить исключение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это оператор throw. Пример использования: throw new Exception();"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Оператор throw",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "О чем говорит ключевое слово `throws`?",
+      "questionSlug": "o-chem-govorit-klyuchevoe-slovo-throws",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "throws",
+        "метод"
+      ],
+      "seo": {
+        "title": "Ключевое слово throws в Java — Gymterview",
+        "description": "Модификатор throws прописывается в заголовке метода и указывает, что метод потенциально может выбросить исключение с указанным типом.",
+        "keywords": [
+          "throws",
+          "Java",
+          "ключевое слово",
+          "заголовок метода",
+          "исключения",
+          "собеседование"
+        ],
+        "ogTitle": "Ключевое слово throws в Java — Gymterview",
+        "ogDescription": "throws указывает в заголовке метода, что метод может выбросить исключение указанного типа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "О чем говорит ключевое слово `throws`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор throws прописывается в заголовке метода и указывает на то, что метод потенциально может выбросить исключение с указанным типом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Ключевое слово throws",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как написать собственное (пользовательское) исключение?",
+      "questionSlug": "kak-napisat-sobstvennoe-polzovatelskoe-isklyuchenie",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "custom exception",
+        "наследование"
+      ],
+      "seo": {
+        "title": "Как написать собственное исключение в Java — Gymterview",
+        "description": "Для создания пользовательского исключения необходимо унаследоваться от Exception или RuntimeException. Пример кода и рекомендации.",
+        "keywords": [
+          "пользовательское исключение",
+          "custom exception",
+          "Java",
+          "Exception",
+          "RuntimeException",
+          "собеседование"
+        ],
+        "ogTitle": "Создание пользовательского исключения в Java — Gymterview",
+        "ogDescription": "Унаследуйтесь от Exception или RuntimeException и определите нужные конструкторы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как написать собственное (пользовательское) исключение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Необходимо унаследоваться от базового класса требуемого типа исключений (например, от Exception или RuntimeException). В пользовательском классе исключения рекомендуется определить конструктор по умолчанию, конструктор с сообщением (String) и конструктор с причиной (Throwable)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Пользовательское исключение",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют unchecked exception?",
+      "questionSlug": "kakie-sushchestvuyut-unchecked-exception",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "unchecked",
+        "RuntimeException"
+      ],
+      "seo": {
+        "title": "Список unchecked исключений в Java — Gymterview",
+        "description": "Наиболее частые unchecked исключения: NullPointerException, ClassCastException, IllegalArgumentException, IndexOutOfBoundsException и другие.",
+        "keywords": [
+          "unchecked exception",
+          "RuntimeException",
+          "NullPointerException",
+          "Java",
+          "список исключений",
+          "собеседование"
+        ],
+        "ogTitle": "Unchecked исключения в Java — Gymterview",
+        "ogDescription": "NullPointerException, ClassCastException, IllegalArgumentException, IndexOutOfBoundsException и другие часто встречающиеся unchecked исключения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют unchecked exception?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Наиболее часто встречающиеся: ArithmeticException, ClassCastException, ConcurrentModificationException, IllegalArgumentException, IllegalStateException, IndexOutOfBoundsException, NoSuchElementException, NullPointerException, UnsupportedOperationException."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Unchecked исключения",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что представляет из себя ошибки класса `Error`?",
+      "questionSlug": "chto-takoe-error",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "Error",
+        "JVM"
+      ],
+      "seo": {
+        "title": "Что такое Error в Java — Gymterview",
+        "description": "Error — наиболее серьёзные проблемы уровня JVM (например, нехватка памяти). Обрабатывать их не запрещается, но не рекомендуется.",
+        "keywords": [
+          "Error",
+          "Java",
+          "JVM",
+          "OutOfMemoryError",
+          "StackOverflowError",
+          "ошибки",
+          "собеседование"
+        ],
+        "ogTitle": "Что такое Error в Java — Gymterview",
+        "ogDescription": "Error — серьёзные проблемы уровня JVM, которые не рекомендуется обрабатывать в программе.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Error в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ошибки класса Error представляют собой наиболее серьёзные проблемы уровня JVM. Например, исключения такого рода возникают, если закончилась память, доступная виртуальной машине. Обрабатывать такие ошибки не запрещается, но делать этого не рекомендуется."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Класс Error",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о `OutOfMemoryError`?",
+      "questionSlug": "chto-vy-znaete-o-outofmemoryerror",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "исключения",
+        "Error",
+        "OutOfMemoryError",
+        "JVM",
+        "память"
+      ],
+      "seo": {
+        "title": "OutOfMemoryError в Java: типы и причины — Gymterview",
+        "description": "OutOfMemoryError возникает при нехватке памяти JVM. Виды: Java heap space, PermGen space, GC overhead limit exceeded, unable to create new native thread.",
+        "keywords": [
+          "OutOfMemoryError",
+          "Java heap space",
+          "PermGen space",
+          "GC overhead",
+          "JVM",
+          "память",
+          "собеседование"
+        ],
+        "ogTitle": "OutOfMemoryError в Java — Gymterview",
+        "ogDescription": "Типы OutOfMemoryError: Java heap space, PermGen space, GC overhead limit exceeded, unable to create new native thread.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о `OutOfMemoryError`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OutOfMemoryError выбрасывается, когда JVM не может создать объект из-за нехватки памяти, а сборщик мусора не может высвободить достаточное её количество. Типы: java.lang.OutOfMemoryError: Java heap space — не хватает места в куче; PermGen space (до Java 8) — нехватка места в Permanent области; GC overhead limit exceeded — сборщик мусора постоянно работает, но памяти мало; unable to create new native thread — невозможно создать новые потоки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "OutOfMemoryError",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите работу блока try-catch-finally.",
+      "questionSlug": "opishite-rabotu-bloka-try-catch-finally",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "try",
+        "catch",
+        "finally"
+      ],
+      "seo": {
+        "title": "Блок try-catch-finally в Java — Gymterview",
+        "description": "try — начало блока кода с потенциальной ошибкой, catch — перехват и обработка исключений, finally — блок, который выполняется в любом случае.",
+        "keywords": [
+          "try-catch-finally",
+          "Java",
+          "обработка исключений",
+          "try",
+          "catch",
+          "finally",
+          "собеседование"
+        ],
+        "ogTitle": "Работа блока try-catch-finally в Java — Gymterview",
+        "ogDescription": "try — потенциально опасный код, catch — обработка исключений, finally — выполняется всегда.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите работу блока try-catch-finally.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "try — ключевое слово для отметки начала блока кода, который потенциально может привести к ошибке. catch — ключевое слово для отметки начала блока кода, предназначенного для перехвата и обработки исключений в случае их возникновения. finally — ключевое слово для отметки начала дополнительного блока кода, который помещается после последнего блока catch. Управление передаётся в блок finally в любом случае, было выброшено исключение или нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "try-catch-finally",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое механизм try-with-resources?",
+      "questionSlug": "chto-takoe-mekhanizm-try-with-resources",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "try-with-resources",
+        "AutoCloseable",
+        "Java 7"
+      ],
+      "seo": {
+        "title": "Механизм try-with-resources в Java — Gymterview",
+        "description": "try-with-resources (Java 7+) автоматически закрывает ресурсы, реализующие AutoCloseable. Компилятор создаёт неявный блок finally для освобождения ресурсов.",
+        "keywords": [
+          "try-with-resources",
+          "AutoCloseable",
+          "Java 7",
+          "закрытие ресурсов",
+          "исключения",
+          "собеседование"
+        ],
+        "ogTitle": "try-with-resources в Java — Gymterview",
+        "ogDescription": "Конструкция Java 7, автоматически закрывающая ресурсы AutoCloseable после выхода из блока try.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое механизм try-with-resources?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Конструкция, появившаяся в Java 7, позволяет использовать блок try-catch не заботясь о закрытии ресурсов. Ресурсы объявляются в скобках после try, а компилятор неявно создаёт секцию finally для освобождения занятых ресурсов. Под ресурсами подразумеваются сущности, реализующие интерфейс java.lang.AutoCloseable. Блоки catch и явный finally выполняются уже после закрытия ресурсов в неявном finally."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "try-with-resources",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Возможно ли использование блока try-finally (без `catch`)?",
+      "questionSlug": "vozmozhno-li-ispolzovanie-bloka-try-finally-bez-catch",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "try",
+        "finally"
+      ],
+      "seo": {
+        "title": "Блок try-finally без catch в Java — Gymterview",
+        "description": "Да, запись try-finally без catch допустима в Java, но лучше иметь блок catch для обработки исключений.",
+        "keywords": [
+          "try-finally",
+          "без catch",
+          "Java",
+          "исключения",
+          "блок finally",
+          "собеседование"
+        ],
+        "ogTitle": "try-finally без catch в Java — Gymterview",
+        "ogDescription": "Запись допустима, но рекомендуется использовать catch для обработки исключений.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Возможно ли использование блока try-finally (без `catch`)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Такая запись допустима, но смысла в такой записи не так много, всё же лучше иметь блок catch, в котором будет обрабатываться необходимое исключение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "try-finally без catch",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Может ли один блок `catch` отлавливать сразу несколько исключений?",
+      "questionSlug": "mozhet-li-odin-blok-catch-otlavlivat-srazu-neskolko-isklyucheniy",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "catch",
+        "multi-catch",
+        "Java 7"
+      ],
+      "seo": {
+        "title": "Multi-catch: несколько исключений в одном блоке catch — Gymterview",
+        "description": "Да, с Java 7 можно перехватывать несколько исключений в одном блоке catch через оператор | (вертикальная черта): catch(IOException | SQLException ex).",
+        "keywords": [
+          "multi-catch",
+          "несколько исключений",
+          "catch",
+          "Java 7",
+          "IOException",
+          "SQLException",
+          "собеседование"
+        ],
+        "ogTitle": "Несколько исключений в одном catch — Gymterview",
+        "ogDescription": "С Java 7 можно перехватывать несколько исключений в одном catch: catch(IOException | SQLException ex).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Может ли один блок `catch` отлавливать сразу несколько исключений?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java 7 стала доступна новая языковая конструкция, с помощью которой можно перехватывать несколько исключений одним блоком catch: catch(IOException | SQLException ex). Исключения перечисляются через оператор | (вертикальная черта)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Multi-catch",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Всегда ли исполняется блок `finally`?",
+      "questionSlug": "vsegda-li-ispolnyaetsya-blok-finally",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "finally"
+      ],
+      "seo": {
+        "title": "Всегда ли выполняется блок finally в Java — Gymterview",
+        "description": "Код в блоке finally выполняется всегда, независимо от того, было выброшено исключение или нет. Есть редкие исключительные ситуации.",
+        "keywords": [
+          "finally",
+          "Java",
+          "исключения",
+          "блок finally",
+          "выполнение finally",
+          "собеседование"
+        ],
+        "ogTitle": "Всегда ли выполняется блок finally — Gymterview",
+        "ogDescription": "Да, код в блоке finally выполняется всегда, независимо от наличия исключения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Всегда ли исполняется блок `finally`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Код в блоке finally будет выполнен всегда, независимо от того, выброшено исключение или нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Выполнение finally",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Существуют ли ситуации, когда блок `finally` не будет выполнен?",
+      "questionSlug": "sushchestvuyut-li-situacii-kogda-blok-finally-ne-budet-vypolnen",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "исключения",
+        "finally",
+        "System.exit"
+      ],
+      "seo": {
+        "title": "Когда блок finally не выполняется в Java — Gymterview",
+        "description": "Блок finally не будет выполнен, если JVM завершает работу принудительно, например при вызове System.exit(0) внутри блока try.",
+        "keywords": [
+          "finally не выполняется",
+          "System.exit",
+          "Java",
+          "JVM",
+          "исключения",
+          "блок finally",
+          "собеседование"
+        ],
+        "ogTitle": "Когда finally не выполняется — Gymterview",
+        "ogDescription": "finally не выполнится при принудительном завершении JVM, например через System.exit(0).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Существуют ли ситуации, когда блок `finally` не будет выполнен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, например, когда JVM «умирает» — в такой ситуации finally недостижим и не будет выполнен, так как происходит принудительный системный выход из программы. Например, при вызове System.exit(0) внутри блока try."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "finally не выполняется",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Может ли метод main() выбросить исключение во вне и если да, то где будет происходить обработка данного исключения?",
+      "questionSlug": "mozhet-li-metod-main-vybrosit-isklyuchenie-vo-vne",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "main",
+        "JVM"
+      ],
+      "seo": {
+        "title": "Может ли метод main() выбросить исключение — Gymterview",
+        "description": "Да, метод main() может выбросить исключение, и оно будет передано в виртуальную машину Java (JVM) для обработки.",
+        "keywords": [
+          "main",
+          "исключение",
+          "Java",
+          "JVM",
+          "throws",
+          "метод main",
+          "собеседование"
+        ],
+        "ogTitle": "Исключение из метода main() — Gymterview",
+        "ogDescription": "Метод main() может выбросить исключение, которое будет передано в JVM.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Может ли метод main() выбросить исключение во вне и если да, то где будет происходить обработка данного исключения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Может, и оно будет передано в виртуальную машину Java (JVM)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Исключение из main()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Предположим, есть метод, который может выбросить `IOException` и `FileNotFoundException` в какой последовательности должны идти блоки `catch`? Сколько блоков `catch` будет выполнено?",
+      "questionSlug": "posledovatelnost-blokov-catch-ioexception-filenotfoundexception",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "исключения",
+        "catch",
+        "IOException",
+        "FileNotFoundException"
+      ],
+      "seo": {
+        "title": "Порядок блоков catch: IOException и FileNotFoundException — Gymterview",
+        "description": "Сначала обрабатывается FileNotFoundException, затем IOException, так как FileNotFoundException наследует IOException. Выполняется только один блок catch.",
+        "keywords": [
+          "catch порядок",
+          "IOException",
+          "FileNotFoundException",
+          "Java",
+          "исключения",
+          "иерархия",
+          "собеседование"
+        ],
+        "ogTitle": "Порядок блоков catch для IOException и FileNotFoundException — Gymterview",
+        "ogDescription": "Сначала FileNotFoundException, затем IOException. Будет выполнен только один блок catch.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В какой последовательности должны идти блоки catch для IOException и FileNotFoundException? Сколько блоков catch будет выполнено?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обрабатывать исключения нужно от «младшего» к старшему. Так как FileNotFoundException extends IOException, сначала нужно обработать FileNotFoundException, а затем IOException. Нельзя поставить в первый блок catch(Exception ex), иначе все дальнейшие блоки catch уже ничего не смогут обработать. Будет выполнен только один блок catch — тот, который первым соответствует типу выброшенного исключения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Порядок блоков catch",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое generics?",
+      "questionSlug": "chto-takoe-generics",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "generics",
+        "типизация",
+        "параметризация"
+      ],
+      "seo": {
+        "title": "Что такое Generics в Java — Gymterview",
+        "description": "Generics — набор свойств языка для определения и использования обобщённых типов и методов с типизированными параметрами. Wildcards, стирание типов, PECS.",
+        "keywords": [
+          "generics",
+          "Java",
+          "обобщённые типы",
+          "wildcards",
+          "type erasure",
+          "PECS",
+          "параметризация",
+          "собеседование"
+        ],
+        "ogTitle": "Generics в Java — Gymterview",
+        "ogDescription": "Generics позволяют определять обобщённые типы и методы с типизированными параметрами для типобезопасности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое generics?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Generics — это набор свойств языка, позволяющих определять и использовать обобщённые типы и методы. Обобщённые типы отличаются от обычных тем, что имеют типизированные параметры. Например, LinkedList<E> — обобщённый тип с параметром E. В generics используются wildcards: ? (неограниченный), ? extends T (верхняя граница), ? super T (нижняя граница). Принцип выбора описывается правилом PECS. Информация о типах стирается в runtime (type erasure)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Generics",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое интернационализация, локализация?",
+      "questionSlug": "chto-takoe-internacionalizaciya-lokalizaciya",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "интернационализация",
+        "локализация",
+        "i18n",
+        "l10n"
+      ],
+      "seo": {
+        "title": "Интернационализация и локализация в Java — Gymterview",
+        "description": "Интернационализация (i18n) — создание приложений, легко адаптируемых под разные языки. Локализация (l10n) — адаптация интерфейса под конкретный язык.",
+        "keywords": [
+          "интернационализация",
+          "локализация",
+          "i18n",
+          "l10n",
+          "Java",
+          "Locale",
+          "собеседование"
+        ],
+        "ogTitle": "Интернационализация и локализация в Java — Gymterview",
+        "ogDescription": "Интернационализация — подготовка приложения к поддержке разных языков. Локализация — адаптация интерфейса под конкретный язык.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое интернационализация, локализация?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интернационализация (internationalization) — способ создания приложений, при котором их можно легко адаптировать для разных аудиторий, говорящих на разных языках. Локализация (localization) — адаптация интерфейса приложения под несколько языков. Добавление нового языка может внести определённые сложности в локализацию интерфейса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Интернационализация и локализация",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

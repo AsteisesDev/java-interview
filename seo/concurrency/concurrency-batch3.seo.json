@@ -1,0 +1,1031 @@
+{
+  "topic": "Многопоточность",
+  "topicSlug": "concurrency",
+  "batch": 3,
+  "generatedAt": "2026-05-09T18:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое ThreadLocal-переменная?",
+      "questionSlug": "chto-takoe-threadlocal-peremennaya",
+      "grade": "middle",
+      "tags": ["concurrency", "ThreadLocal", "потоки", "изоляция-данных"],
+      "seo": {
+        "title": "Что такое ThreadLocal-переменная в Java — изоляция данных потоков — Gymterview",
+        "description": "ThreadLocal позволяет каждому потоку иметь собственную копию переменной. Разбор механизма, проблем с Virtual Threads и рекомендация использовать ScopedValue.",
+        "keywords": ["ThreadLocal Java", "ThreadLocal переменная", "изоляция данных потоков", "ThreadLocal Virtual Threads", "ScopedValue"],
+        "ogTitle": "ThreadLocal-переменная в Java — зачем нужна и как работает",
+        "ogDescription": "ThreadLocal хранит отдельную копию переменной для каждого потока. С Virtual Threads (Java 21+) рекомендуется ScopedValue.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ThreadLocal-переменная?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ThreadLocal — класс, позволяющий имея одну переменную, иметь различное её значение для каждого из потоков. У каждого потока есть ассоциированная таблица ThreadLocal-переменных. Доступ к значению осуществляется через методы get() и set(). ThreadLocal изолирует ссылки, а не сами объекты. С появлением Virtual Threads (Java 21+) ThreadLocal создаёт проблемы с потреблением памяти — рекомендуется использовать ScopedValue."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "ThreadLocal-переменная", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Назовите различия между synchronized и ReentrantLock",
+      "questionSlug": "razlichiya-mezhdu-synchronized-i-reentrantlock",
+      "grade": "middle",
+      "tags": ["concurrency", "synchronized", "ReentrantLock", "Lock", "блокировки"],
+      "seo": {
+        "title": "Различия между synchronized и ReentrantLock в Java — Gymterview",
+        "description": "ReentrantLock предоставляет расширенные возможности блокировки: lock polling, прерываемое ожидание и высокую производительность при состязательности.",
+        "keywords": ["synchronized vs ReentrantLock", "ReentrantLock Java", "блокировка Java", "Lock интерфейс", "синхронизация потоков"],
+        "ogTitle": "synchronized vs ReentrantLock — в чём разница?",
+        "ogDescription": "ReentrantLock более масштабируем при состязании за ресурс, но требует явного unlock в finally. synchronized проще и автоматически снимает блокировку.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Назовите различия между synchronized и ReentrantLock?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ReentrantLock — реализация Lock, предоставляющая более тонкий контроль блокировки: lock polling, ожидание заданной длительности и прерываемое ожидание. ReentrantLock более масштабируем при высокой состязательности. Однако блокировку необходимо снимать вручную в finally-блоке. При отсутствии состязания synchronized может быть быстрее."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "synchronized vs ReentrantLock", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ReadWriteLock?",
+      "questionSlug": "chto-takoe-readwritelock",
+      "grade": "middle",
+      "tags": ["concurrency", "ReadWriteLock", "ReentrantReadWriteLock", "блокировки", "чтение-запись"],
+      "seo": {
+        "title": "Что такое ReadWriteLock в Java — блокировка чтения и записи — Gymterview",
+        "description": "ReadWriteLock оперирует парой блокировок: для чтения (разделяемая) и для записи (эксклюзивная). Реализация ReentrantReadWriteLock поддерживает до 65535 блокировок.",
+        "keywords": ["ReadWriteLock Java", "ReentrantReadWriteLock", "блокировка чтения записи", "read write lock", "многопоточность"],
+        "ogTitle": "ReadWriteLock в Java — разделяемая и эксклюзивная блокировка",
+        "ogDescription": "ReadWriteLock позволяет нескольким потокам читать одновременно, блокируя доступ только при записи. Реализация — ReentrantReadWriteLock.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ReadWriteLock?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ReadWriteLock — интерфейс, расширяющий базовый Lock. Оперирует парой связанных блокировок: для чтения и для записи. Блокировка чтения может удерживаться несколькими потоками одновременно, пока нет записывающего потока. Блокировка записи эксклюзивна. Реализация ReentrantReadWriteLock поддерживает до 65535 блокировок каждого типа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "ReadWriteLock", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое блокирующий метод?",
+      "questionSlug": "chto-takoe-blokiruyushchiy-metod",
+      "grade": "junior",
+      "tags": ["concurrency", "блокирующий-метод", "асинхронность", "потоки"],
+      "seo": {
+        "title": "Что такое блокирующий метод в Java — определение и примеры — Gymterview",
+        "description": "Блокирующий метод не возвращает контроль вызывающему коду до завершения задания. Пример — метод accept() у ServerSocket. Противоположность — асинхронные методы.",
+        "keywords": ["блокирующий метод Java", "blocking method", "accept ServerSocket", "асинхронные методы Java"],
+        "ogTitle": "Блокирующий метод в Java — что это?",
+        "ogDescription": "Блокирующий метод не отдаёт контроль до завершения задачи. Пример: ServerSocket.accept(). Существуют также асинхронные неблокирующие методы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое блокирующий метод?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Блокирующий метод — метод, который блокируется до тех пор, пока задание не выполнится. Например, метод accept() у ServerSocket блокируется в ожидании подключения клиента. Контроль не вернётся к вызывающему методу до завершения задания. Также существуют асинхронные или неблокирующиеся методы, которые могут завершиться до выполнения задачи."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Блокирующий метод", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое фреймворк Fork/Join?",
+      "questionSlug": "chto-takoe-freymvork-fork-join",
+      "grade": "middle",
+      "tags": ["concurrency", "Fork/Join", "ForkJoinPool", "параллелизм", "work-stealing"],
+      "seo": {
+        "title": "Фреймворк Fork/Join в Java — рекурсивное распараллеливание задач — Gymterview",
+        "description": "Fork/Join (JDK 7) рекурсивно разбивает задачу на подзадачи для параллельного выполнения. Использует work-stealing алгоритм для балансировки нагрузки.",
+        "keywords": ["Fork Join Java", "ForkJoinPool", "work-stealing алгоритм", "параллельные вычисления Java", "RecursiveTask"],
+        "ogTitle": "Fork/Join фреймворк в Java — как работает",
+        "ogDescription": "Fork/Join разбивает задачу на подзадачи рекурсивно, решает параллельно и объединяет результат. Использует work-stealing для эффективности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое фреймворк Fork/Join?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Фреймворк Fork/Join (JDK 7) — набор классов для параллельного выполнения задач, которые можно рекурсивно разбить на подзадачи. На этапе Fork задача делится на меньшие, на этапе Join решения объединяются. Использует work-stealing алгоритм: потоки, завершившие свои подзадачи, могут «украсть» подзадачи у занятых потоков."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Fork/Join фреймворк", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Semaphore?",
+      "questionSlug": "chto-takoe-semaphore",
+      "grade": "middle",
+      "tags": ["concurrency", "Semaphore", "синхронизатор", "счётчик", "ограничение-доступа"],
+      "seo": {
+        "title": "Что такое Semaphore в Java — семафор со счётчиком — Gymterview",
+        "description": "Semaphore — синхронизатор с счётчиком: поток уменьшает счётчик при входе и увеличивает при выходе. При нуле — блокировка. Используется для ограничения доступа к ресурсам.",
+        "keywords": ["Semaphore Java", "семафор Java", "синхронизатор", "ограничение доступа к ресурсу", "пул подключений"],
+        "ogTitle": "Semaphore в Java — управление доступом к ограниченным ресурсам",
+        "ogDescription": "Semaphore управляет доступом через счётчик: при нуле поток блокируется. Применяется для защиты дорогих ресурсов, например подключений к БД.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Semaphore?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semaphore — синхронизатор, реализующий шаблон Семафор. Доступ управляется счётчиком: при входе потока в блок кода счётчик уменьшается, при выходе — увеличивается. Если счётчик равен нулю, поток блокируется. Используется для защиты ресурсов, доступных в ограниченном количестве, например подключений к БД в пуле."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Semaphore", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое double checked locking Singleton?",
+      "questionSlug": "chto-takoe-double-checked-locking-singleton",
+      "grade": "middle",
+      "tags": ["concurrency", "Singleton", "double-checked-locking", "volatile", "паттерны"],
+      "seo": {
+        "title": "Double checked locking Singleton в Java — потокобезопасный Одиночка — Gymterview",
+        "description": "Double checked locking оптимизирует Singleton, блокируясь только при первом создании экземпляра. Обязательно использование volatile для корректности.",
+        "keywords": ["double checked locking Java", "Singleton потокобезопасный", "volatile Singleton", "DCL паттерн", "Одиночка Java"],
+        "ogTitle": "Double Checked Locking Singleton — зачем volatile обязателен",
+        "ogDescription": "DCL Singleton блокируется только при первом создании экземпляра. Без volatile другой поток может получить не полностью сконструированный объект.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое double checked locking Singleton?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Double checked locking Singleton — способ создания потокобезопасного Одиночки, оптимизирующий производительность: блокировка происходит только при первом создании экземпляра. Требование volatile обязательно — без него возможна ситуация, при которой другой поток получит не полностью сконструированный объект из-за модели памяти Java."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Double Checked Locking Singleton", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать потокобезопасный Singleton?",
+      "questionSlug": "kak-sozdat-potokobezopasnyy-singleton",
+      "grade": "middle",
+      "tags": ["concurrency", "Singleton", "потокобезопасность", "enum", "паттерны"],
+      "seo": {
+        "title": "Как создать потокобезопасный Singleton в Java — 5 способов — Gymterview",
+        "description": "Пять способов создания потокобезопасного Singleton: static field, enum, synchronized accessor, double checked locking + volatile, On Demand Holder Idiom.",
+        "keywords": ["потокобезопасный Singleton Java", "Singleton enum", "Holder Idiom", "Singleton паттерн", "thread-safe Singleton"],
+        "ogTitle": "5 способов создать потокобезопасный Singleton в Java",
+        "ogDescription": "Static field, Enum, Synchronized Accessor, Double Checked Locking + volatile, On Demand Holder Idiom — все варианты потокобезопасного Singleton.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать потокобезопасный Singleton?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существует пять основных способов: 1) Static field — public static final поле, 2) Enum — использование перечисления, 3) Synchronized Accessor — synchronized метод getInstance(), 4) Double Checked Locking с volatile, 5) On Demand Holder Idiom — использование статического внутреннего класса, экземпляр которого инициализируется при первом обращении."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Потокобезопасный Singleton", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем полезны неизменяемые объекты?",
+      "questionSlug": "chem-polezny-neizmenyaemye-obekty",
+      "grade": "junior",
+      "tags": ["concurrency", "immutability", "неизменяемость", "потокобезопасность"],
+      "seo": {
+        "title": "Чем полезны неизменяемые объекты в многопоточности Java — Gymterview",
+        "description": "Неизменяемые объекты (immutable) не требуют синхронизации в многопоточном коде. Принципы создания: инициализация в конструкторе, отсутствие setter-ов.",
+        "keywords": ["immutable объекты Java", "неизменяемые объекты", "многопоточность immutable", "потокобезопасность без синхронизации"],
+        "ogTitle": "Неизменяемые объекты и многопоточность в Java",
+        "ogDescription": "Immutable-объекты безопасны без синхронизации. Для создания: только конструктор, без set-методов, копии изменяемых объектов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем полезны неизменяемые объекты?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неизменяемость (immutability) облегчает написание многопоточного кода: неизменяемый объект может использоваться без синхронизации. Для создания неизменяемого класса необходимо: инициализировать все поля только в конструкторе, не иметь методов setX(), не допускать утечек ссылок, хранить копии изменяемых объектов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Неизменяемые объекты", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое busy spin?",
+      "questionSlug": "chto-takoe-busy-spin",
+      "grade": "middle",
+      "tags": ["concurrency", "busy-spin", "кэш-процессора", "оптимизация", "ожидание"],
+      "seo": {
+        "title": "Что такое busy spin в Java — активное ожидание без уступки CPU — Gymterview",
+        "description": "Busy spin — техника активного ожидания пустым циклом вместо wait/sleep/yield. Сохраняет кэш процессора, избегая переключения на другое ядро.",
+        "keywords": ["busy spin Java", "активное ожидание", "busy waiting", "кэш процессора Java", "spin lock"],
+        "ogTitle": "Busy spin в Java — зачем крутить пустой цикл?",
+        "ogDescription": "Busy spin сохраняет кэш процессора, выполняя пустой цикл вместо уступки CPU через wait/sleep. Избегает перестройки кэша при смене ядра.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое busy spin?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Busy spin — техника, при которой поток ожидает условия, выполняя пустой цикл, вместо вызова wait(), sleep() или yield(). Это сохраняет кэш процессора, так как в многоядерных системах приостановленный поток может продолжить выполнение на другом ядре, что влечёт затратную перестройку процессорного кэша."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Busy spin", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите принципы, которым вы следуете в многопоточном программировании",
+      "questionSlug": "principy-mnogopotochnogo-programmirovaniya",
+      "grade": "middle",
+      "tags": ["concurrency", "принципы", "лучшие-практики", "синхронизация", "многопоточность"],
+      "seo": {
+        "title": "Принципы многопоточного программирования в Java — лучшие практики — Gymterview",
+        "description": "Ключевые принципы: значимые имена потоков, минимизация блокировок, обработка прерываний, использование синхронизаторов вместо wait/notify, Concurrent Collections.",
+        "keywords": ["принципы многопоточности Java", "лучшие практики потоки", "синхронизация best practices", "concurrent programming Java"],
+        "ogTitle": "Лучшие практики многопоточного программирования в Java",
+        "ogDescription": "Именуйте потоки, минимизируйте блокировки, обрабатывайте прерывания, используйте синхронизаторы вместо wait/notify и Concurrent Collections.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите принципы, которым вы следуете в многопоточном программировании?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные принципы: 1) Давайте значимые имена потокам для упрощения отладки. 2) Избегайте блокировок, предпочитайте синхронизированные блоки вместо методов. 3) Обрабатывайте прерывания тщательно. 4) Обрабатывайте исключения, включая InterruptedException. 5) Предпочитайте синхронизаторы (CountDownLatch, Semaphore) вместо wait/notify. 6) Используйте Concurrent Collections вместо Synchronized Collections."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Принципы многопоточности", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое из следующих утверждений о потоках неверно?",
+      "questionSlug": "kakoe-utverzhdenie-o-potokah-neverno",
+      "grade": "junior",
+      "tags": ["concurrency", "Thread", "start", "run", "потоки"],
+      "seo": {
+        "title": "Утверждения о потоках Java — вопрос с подвохом — Gymterview",
+        "description": "Вызов run() напрямую не генерирует исключение, но выполняет код в текущем потоке. Правильный запуск потока — метод start(). Разбор всех утверждений.",
+        "keywords": ["Thread run vs start", "утверждения о потоках Java", "IllegalThreadStateException", "запуск потока Java"],
+        "ogTitle": "Какое утверждение о потоках в Java неверно?",
+        "ogDescription": "Прямой вызов run() не бросает исключение — код выполняется в текущем потоке. Двойной вызов start() бросает IllegalThreadStateException.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какое из следующих утверждений о потоках неверно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неверно утверждение, что вызов run() напрямую генерирует исключение. На самом деле run() выполнится в текущем потоке без ошибки, но новый поток не будет создан. Вызов start() дважды бросит IllegalThreadStateException. Порядок запуска потоков может не совпадать с порядком выполнения. При sleep() в synchronized блоке блокировка не снимается."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Утверждения о потоках", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Даны 3 потока Т1, Т2 и Т3. Как реализовать выполнение в последовательности Т1, Т2, Т3?",
+      "questionSlug": "posledovatelnoe-vypolnenie-treh-potokov",
+      "grade": "junior",
+      "tags": ["concurrency", "Thread.join", "последовательность", "потоки"],
+      "seo": {
+        "title": "Последовательное выполнение трёх потоков T1, T2, T3 в Java — Gymterview",
+        "description": "Для последовательного выполнения потоков Т1, Т2, Т3 используется метод join(): Т3 вызывает Т2.join(), Т2 вызывает Т1.join().",
+        "keywords": ["последовательность потоков Java", "Thread.join пример", "порядок выполнения потоков", "T1 T2 T3 потоки"],
+        "ogTitle": "Как выполнить потоки Т1, Т2, Т3 последовательно?",
+        "ogDescription": "Запустите последний поток первым и используйте join() в обратном порядке: Т3 вызывает Т2.join(), Т2 вызывает Т1.join().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Даны 3 потока Т1, Т2 и Т3. Как реализовать выполнение в последовательности Т1, Т2, Т3?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Используйте метод join(): запустите последний поток первым, затем вызывайте join() в обратном порядке — Т3 вызывает Т2.join(), а Т2 вызывает Т1.join(). Таким образом Т1 завершится первым, а Т3 последним."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Последовательность потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите минимальный неблокирующий стек (всего два метода — push() и pop())",
+      "questionSlug": "minimalnyy-neblokiruyushchiy-stek-push-pop",
+      "grade": "senior",
+      "tags": ["concurrency", "неблокирующий-стек", "AtomicReference", "CAS", "lock-free"],
+      "seo": {
+        "title": "Неблокирующий стек на AtomicReference в Java — push и pop — Gymterview",
+        "description": "Реализация lock-free стека на AtomicReference с методами push() и pop() через CAS-операцию compareAndSet. Пример кода с объяснением.",
+        "keywords": ["неблокирующий стек Java", "lock-free stack", "AtomicReference стек", "CAS compareAndSet", "потокобезопасный стек"],
+        "ogTitle": "Минимальный неблокирующий стек в Java — AtomicReference + CAS",
+        "ogDescription": "Lock-free стек с push() и pop() через AtomicReference.compareAndSet(). Потокобезопасная структура данных без блокировок.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите минимальный неблокирующий стек (всего два метода — push() и pop()).",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неблокирующий стек реализуется через AtomicReference для хранения вершины стека. Методы push() и pop() используют цикл с compareAndSet (CAS): чтение текущей вершины, подготовка нового состояния и атомарная замена. Если другой поток изменил вершину — операция повторяется."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Неблокирующий стек", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите минимальный неблокирующий стек (всего два метода — push() и pop()) с использованием Semaphore",
+      "questionSlug": "neblokiruyushchiy-stek-s-semaphore",
+      "grade": "senior",
+      "tags": ["concurrency", "Semaphore", "стек", "потокобезопасность"],
+      "seo": {
+        "title": "Потокобезопасный стек на Semaphore в Java — push и pop — Gymterview",
+        "description": "Реализация потокобезопасного стека с использованием Semaphore для управления доступом. Методы push() и pop() защищены семафором с одним разрешением.",
+        "keywords": ["стек Semaphore Java", "потокобезопасный стек", "Semaphore пример", "стек push pop", "синхронизация стека"],
+        "ogTitle": "Стек на Semaphore в Java — потокобезопасная реализация",
+        "ogDescription": "Semaphore(1) управляет доступом к стеку: acquireUninterruptibly() перед операцией, release() в finally-блоке.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите минимальный неблокирующий стек (всего два метода — push() и pop()) с использованием Semaphore.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стек на Semaphore использует семафор с одним разрешением для взаимоисключающего доступа. Методы push() и pop() вызывают acquireUninterruptibly() для захвата и release() в finally для освобождения. Внутри используется связный список узлов Node."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Стек на Semaphore", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите минимальный неблокирующий ArrayList (всего четыре метода — add(), get(), remove(), size())",
+      "questionSlug": "minimalnyy-neblokiruyushchiy-arraylist",
+      "grade": "senior",
+      "tags": ["concurrency", "неблокирующий-ArrayList", "volatile", "copy-on-write", "потокобезопасность"],
+      "seo": {
+        "title": "Неблокирующий ArrayList в Java — add, get, remove, size — Gymterview",
+        "description": "Реализация потокобезопасного ArrayList на volatile массиве с copy-on-write семантикой. Четыре метода: add(), get(), remove(), size().",
+        "keywords": ["неблокирующий ArrayList Java", "copy-on-write ArrayList", "volatile массив", "потокобезопасный список", "CopyOnWrite"],
+        "ogTitle": "Неблокирующий ArrayList в Java — volatile + copy-on-write",
+        "ogDescription": "ArrayList на volatile массиве: каждая модификация создаёт новую копию массива. Чтение без блокировки, запись через Arrays.copyOf.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите минимальный неблокирующий ArrayList (всего четыре метода — add(), get(), remove(), size()).",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неблокирующий ArrayList реализуется через volatile массив Object[]. При каждой модификации (add, remove) создаётся новая копия массива через Arrays.copyOf. Методы get() и size() работают без блокировки, так как volatile гарантирует видимость актуального состояния массива."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Неблокирующий ArrayList", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите потокобезопасную реализацию класса с неблокирующим методом BigInteger next(), который возвращает элементы последовательности: [1, 2, 4, 8, 16, ...]",
+      "questionSlug": "potokobezopasnyy-biginteger-next-posledovatelnost",
+      "grade": "senior",
+      "tags": ["concurrency", "AtomicReference", "CAS", "BigInteger", "lock-free"],
+      "seo": {
+        "title": "Потокобезопасный генератор степеней двойки на AtomicReference — Gymterview",
+        "description": "Lock-free реализация генератора последовательности [1, 2, 4, 8, 16, ...] через AtomicReference и CAS-цикл с BigInteger.shiftLeft(1).",
+        "keywords": ["AtomicReference BigInteger", "потокобезопасный генератор", "CAS цикл Java", "lock-free последовательность", "степени двойки"],
+        "ogTitle": "Lock-free генератор степеней двойки в Java",
+        "ogDescription": "AtomicReference хранит текущее значение BigInteger. Метод next() в CAS-цикле сдвигает значение влево (shiftLeft) для получения следующей степени двойки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите потокобезопасную реализацию класса с неблокирующим методом BigInteger next(), который возвращает элементы последовательности: [1, 2, 4, 8, 16, ...].",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реализация использует AtomicReference<BigInteger> и CAS-цикл: метод next() читает текущее значение, вычисляет следующее через shiftLeft(1) и пытается атомарно заменить. Если другой поток изменил значение — операция повторяется. Начальное значение null, первый вызов возвращает BigInteger.valueOf(1)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Генератор степеней двойки", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите простейший многопоточный ограниченный буфер с использованием synchronized",
+      "questionSlug": "ogranichenyy-bufer-synchronized",
+      "grade": "senior",
+      "tags": ["concurrency", "synchronized", "буфер", "producer-consumer", "wait-notify"],
+      "seo": {
+        "title": "Ограниченный буфер на synchronized в Java — производитель-потребитель — Gymterview",
+        "description": "Реализация многопоточного bounded buffer с synchronized, wait() и notify(). Циклический массив с методами put() и get() для паттерна producer-consumer.",
+        "keywords": ["ограниченный буфер Java", "synchronized буфер", "producer consumer Java", "bounded buffer", "wait notify пример"],
+        "ogTitle": "Bounded Buffer на synchronized — producer-consumer в Java",
+        "ogDescription": "Циклический буфер на synchronized: put() блокируется при заполнении, get() — при пустом буфере. Синхронизация через wait/notify.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите простейший многопоточный ограниченный буфер с использованием synchronized.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ограниченный буфер реализуется как циклический массив с двумя указателями (in, out) и volatile size. Метод put() блокируется через wait() при заполненном буфере и уведомляет через notify() о наличии данных. Метод get() блокируется при пустом буфере. Используются отдельные объекты-мониторы isEmpty и isFull."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Буфер на synchronized", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите простейший многопоточный ограниченный буфер с использованием ReentrantLock",
+      "questionSlug": "ogranichenyy-bufer-reentrantlock",
+      "grade": "senior",
+      "tags": ["concurrency", "ReentrantLock", "Condition", "буфер", "producer-consumer"],
+      "seo": {
+        "title": "Ограниченный буфер на ReentrantLock в Java — Condition await/signal — Gymterview",
+        "description": "Реализация bounded buffer на ReentrantLock с Condition: await() для ожидания и signal() для уведомления. Сравнение с synchronized-версией.",
+        "keywords": ["ReentrantLock буфер Java", "Condition await signal", "bounded buffer Lock", "producer consumer ReentrantLock"],
+        "ogTitle": "Bounded Buffer на ReentrantLock — Condition вместо wait/notify",
+        "ogDescription": "Циклический буфер на ReentrantLock: lockInterruptibly() для прерываемой блокировки, Condition.await() и signal() вместо wait/notify.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите простейший многопоточный ограниченный буфер с использованием ReentrantLock.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Буфер на ReentrantLock использует Condition вместо wait/notify: isEmpty и isFull создаются через lock.newCondition(). Метод put() вызывает isFull.await() при заполнении и isEmpty.signal() после добавления. Метод get() — наоборот. Блокировка через lockInterruptibly() позволяет прерывание, unlock() обязателен в finally."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Буфер на ReentrantLock", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CompletableFuture и как он работает?",
+      "questionSlug": "chto-takoe-completablefuture-kak-rabotaet",
+      "grade": "middle",
+      "tags": ["concurrency", "CompletableFuture", "асинхронность", "Future", "CompletionStage"],
+      "seo": {
+        "title": "Что такое CompletableFuture в Java — принцип работы и примеры — Gymterview",
+        "description": "CompletableFuture (Java 8) — результат асинхронного вычисления с API для цепочек операций, комбинирования задач и обработки ошибок в функциональном стиле.",
+        "keywords": ["CompletableFuture Java", "асинхронное программирование", "supplyAsync", "thenApply", "CompletionStage"],
+        "ogTitle": "CompletableFuture в Java — асинхронные цепочки операций",
+        "ogDescription": "CompletableFuture позволяет строить цепочки асинхронных операций, комбинировать задачи через thenCombine/allOf и обрабатывать ошибки через exceptionally/handle.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CompletableFuture и как он работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CompletableFuture (Java 8) реализует Future и CompletionStage. Работает по принципу «обещания» (promise): объект создаётся до получения результата и завершается позднее — автоматически через supplyAsync/runAsync или вручную через complete(). Поддерживает цепочки операций (thenApply, thenCompose), комбинирование (thenCombine, allOf, anyOf) и обработку ошибок (exceptionally, handle). По умолчанию использует ForkJoinPool.commonPool()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "CompletableFuture", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные методы есть у CompletableFuture?",
+      "questionSlug": "osnovnye-metody-completablefuture",
+      "grade": "middle",
+      "tags": ["concurrency", "CompletableFuture", "thenApply", "thenCompose", "exceptionally", "allOf"],
+      "seo": {
+        "title": "Основные методы CompletableFuture в Java — полный обзор — Gymterview",
+        "description": "Категории методов CompletableFuture: создание (supplyAsync), трансформация (thenApply), цепочки (thenCompose), комбинирование (thenCombine, allOf), обработка ошибок (exceptionally, handle).",
+        "keywords": ["методы CompletableFuture", "thenApply vs thenCompose", "exceptionally handle", "allOf anyOf", "CompletableFuture API"],
+        "ogTitle": "Методы CompletableFuture — создание, трансформация, комбинирование",
+        "ogDescription": "supplyAsync, thenApply, thenCompose, thenCombine, allOf, anyOf, exceptionally, handle, whenComplete — полный обзор API CompletableFuture.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные методы есть у CompletableFuture?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Методы делятся на категории: создание (supplyAsync, runAsync, completedFuture), трансформация (thenApply — аналог map), цепочки (thenCompose — аналог flatMap), потребление (thenAccept, thenRun), комбинирование (thenCombine, thenAcceptBoth), выбор первого (applyToEither, acceptEither), обработка ошибок (exceptionally, handle, whenComplete), множественные (allOf, anyOf). Ключевое различие: thenApply оборачивает результат, thenCompose — разворачивает вложенный CompletableFuture."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Методы CompletableFuture", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое асинхронное программирование в Java и какие основные паттерны существуют?",
+      "questionSlug": "asinhronnoe-programmirovanie-java-patterny",
+      "grade": "middle",
+      "tags": ["concurrency", "асинхронность", "Callback", "Future", "реактивные-потоки", "Virtual-Threads", "Event-Loop"],
+      "seo": {
+        "title": "Асинхронное программирование в Java — 5 паттернов — Gymterview",
+        "description": "Основные паттерны: Callback, Future/Promise, Reactive Streams, Async/Await через Virtual Threads, Event Loop. Выбор зависит от задачи.",
+        "keywords": ["асинхронное программирование Java", "паттерны асинхронности", "Callback Java", "Reactive Streams", "Virtual Threads async"],
+        "ogTitle": "5 паттернов асинхронного программирования в Java",
+        "ogDescription": "Callback, Future/Promise, Reactive Streams, Virtual Threads (async/await), Event Loop — обзор паттернов с примерами кода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое асинхронное программирование в Java и какие основные паттерны существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Асинхронное программирование — выполнение задач без блокировки вызывающего потока. Паттерны: 1) Callback — обратный вызов (проблема callback hell), 2) Future/Promise — CompletableFuture с цепочками, 3) Reactive Streams — Publisher-Subscriber с backpressure, 4) Async/Await через Virtual Threads (Java 21) — синхронный код, работающий асинхронно, 5) Event Loop — один поток обрабатывает события (Vert.x, Netty)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Асинхронное программирование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Virtual Threads (Project Loom) и чем они отличаются от Platform Threads?",
+      "questionSlug": "virtual-threads-project-loom-vs-platform-threads",
+      "grade": "middle",
+      "tags": ["concurrency", "Virtual-Threads", "Project-Loom", "Platform-Threads", "Java-21", "carrier-threads"],
+      "seo": {
+        "title": "Virtual Threads vs Platform Threads в Java 21 — Project Loom — Gymterview",
+        "description": "Virtual Threads — легковесные потоки JVM (Java 21). Миллионы потоков, несколько КБ памяти, автоматический unmount при блокировке. Сравнение с Platform Threads.",
+        "keywords": ["Virtual Threads Java", "Project Loom", "виртуальные потоки", "Platform Threads", "carrier threads", "Java 21 потоки"],
+        "ogTitle": "Virtual Threads (Java 21) — чем отличаются от Platform Threads?",
+        "ogDescription": "Virtual Threads управляются JVM, занимают КБ памяти, создаются миллионами. Platform Threads — обёртка над ОС-потоками, ~1 МБ, лимит — тысячи.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Virtual Threads (Project Loom) и чем они отличаются от Platform Threads?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Virtual Threads (Java 21, JEP 444) — легковесные потоки, управляемые JVM, а не ОС. Занимают несколько КБ (vs ~1 МБ), можно создать миллионы (vs тысячи). Работают по модели M:N поверх carrier threads. При блокирующей операции JVM автоматически отсоединяет виртуальный поток от носителя. Подходят для IO-bound задач. Не дают преимущества для CPU-bound. Проблема pinning при synchronized с блокировками внутри."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Virtual Threads vs Platform Threads", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Structured Concurrency (StructuredTaskScope) и зачем это нужно?",
+      "questionSlug": "structured-concurrency-structuredtaskscope",
+      "grade": "senior",
+      "tags": ["concurrency", "Structured-Concurrency", "StructuredTaskScope", "Virtual-Threads", "Java-21"],
+      "seo": {
+        "title": "Structured Concurrency и StructuredTaskScope в Java 21 — Gymterview",
+        "description": "Structured Concurrency привязывает жизненный цикл подзадач к родительской области видимости. ShutdownOnFailure и ShutdownOnSuccess стратегии.",
+        "keywords": ["Structured Concurrency Java", "StructuredTaskScope", "ShutdownOnFailure", "ShutdownOnSuccess", "структурированная конкуренция"],
+        "ogTitle": "StructuredTaskScope — структурированная конкуренция в Java",
+        "ogDescription": "StructuredTaskScope гарантирует, что все дочерние потоки завершатся до выхода из блока. ShutdownOnFailure — все или ничего, ShutdownOnSuccess — первый успешный.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Structured Concurrency (StructuredTaskScope) и зачем это нужно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Structured Concurrency (JEP 462) — подход, при котором жизненный цикл параллельных подзадач привязан к области видимости кода. StructuredTaskScope гарантирует, что все fork-подзадачи завершатся до выхода из try-with-resources. Стратегии: ShutdownOnFailure (отмена всех при ошибке любой), ShutdownOnSuccess (отмена при первом успехе). Решает проблемы утечек потоков и неполной обработки ошибок."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Structured Concurrency", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между ScopedValue и ThreadLocal?",
+      "questionSlug": "raznica-mezhdu-scopedvalue-i-threadlocal",
+      "grade": "senior",
+      "tags": ["concurrency", "ScopedValue", "ThreadLocal", "Virtual-Threads", "Java-21", "контекст"],
+      "seo": {
+        "title": "ScopedValue vs ThreadLocal в Java 21 — ключевые различия — Gymterview",
+        "description": "ScopedValue — иммутабельный, автоматически очищается, оптимизирован для Virtual Threads. ThreadLocal — мутабельный, требует remove(), проблемы с памятью.",
+        "keywords": ["ScopedValue Java", "ScopedValue vs ThreadLocal", "ThreadLocal проблемы", "Virtual Threads контекст", "JEP 464"],
+        "ogTitle": "ScopedValue vs ThreadLocal — что выбрать в Java 21?",
+        "ogDescription": "ScopedValue иммутабелен и автоматически очищается. ThreadLocal мутабелен и требует ручного remove(). Для Virtual Threads рекомендуется ScopedValue.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между ScopedValue и ThreadLocal?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ScopedValue (JEP 464, preview Java 21+) иммутабелен в пределах scope, автоматически очищается при выходе из runWhere/callWhere, оптимизирован для чтения без хэш-таблицы. ThreadLocal мутабелен (set/get/remove), живёт пока жив поток, часто вызывает утечки при забытом remove(). ScopedValue автоматически доступен в StructuredTaskScope.fork(). При миллионах Virtual Threads ThreadLocal создаёт огромное потребление памяти."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "ScopedValue vs ThreadLocal", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют Concurrent Collections и в чём их особенности?",
+      "questionSlug": "concurrent-collections-osobennosti",
+      "grade": "middle",
+      "tags": ["concurrency", "ConcurrentHashMap", "CopyOnWriteArrayList", "BlockingQueue", "ConcurrentLinkedQueue", "коллекции"],
+      "seo": {
+        "title": "Concurrent Collections в Java — ConcurrentHashMap, CopyOnWriteArrayList, BlockingQueue — Gymterview",
+        "description": "Обзор потокобезопасных коллекций java.util.concurrent: ConcurrentHashMap, CopyOnWriteArrayList, ConcurrentLinkedQueue, BlockingQueue и реализации, ConcurrentSkipListMap.",
+        "keywords": ["Concurrent Collections Java", "ConcurrentHashMap", "CopyOnWriteArrayList", "BlockingQueue", "потокобезопасные коллекции"],
+        "ogTitle": "Concurrent Collections — потокобезопасные коллекции Java",
+        "ogDescription": "ConcurrentHashMap (CAS-блокировка бакетов), CopyOnWriteArrayList (копирование при записи), BlockingQueue (блокирующая очередь) и другие.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют Concurrent Collections и в чём их особенности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные: ConcurrentHashMap — CAS-блокировка на уровне бакетов, чтение без блокировки, null запрещён. CopyOnWriteArrayList — копирование массива при записи, идеально при преобладании чтений. ConcurrentLinkedQueue — lock-free очередь на CAS. BlockingQueue (ArrayBlockingQueue, LinkedBlockingQueue, SynchronousQueue и др.) — блокирующие при пустой/полной очереди. ConcurrentSkipListMap/Set — отсортированные concurrent-коллекции O(log n)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Concurrent Collections", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое StampedLock и чем он отличается от ReentrantReadWriteLock?",
+      "questionSlug": "stampedlock-vs-reentrantreadwritelock",
+      "grade": "senior",
+      "tags": ["concurrency", "StampedLock", "ReentrantReadWriteLock", "оптимистичное-чтение", "блокировки"],
+      "seo": {
+        "title": "StampedLock vs ReentrantReadWriteLock в Java — оптимистичное чтение — Gymterview",
+        "description": "StampedLock (Java 8) поддерживает три режима: запись, чтение и оптимистичное чтение. Не реентрабелен, но быстрее при преобладании чтений.",
+        "keywords": ["StampedLock Java", "StampedLock vs ReentrantReadWriteLock", "оптимистичное чтение", "tryOptimisticRead", "штампованная блокировка"],
+        "ogTitle": "StampedLock — оптимистичное чтение и конвертация блокировок",
+        "ogDescription": "StampedLock поддерживает оптимистичное чтение (без блокировки), конвертацию read->write. Не реентрабелен, без Condition и fairness.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое StampedLock и чем он отличается от ReentrantReadWriteLock?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "StampedLock (Java 8) поддерживает три режима: запись (эксклюзивная), чтение (разделяемая) и оптимистичное чтение (неблокирующее — возвращает штамп для последующей валидации). Отличия от ReentrantReadWriteLock: есть оптимистичное чтение, но нет реентрабельности, нет Condition, нет fairness policy. Поддерживает конвертацию блокировок (read -> write). Лучше для структур с преобладанием чтения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "StampedLock vs ReentrantReadWriteLock", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Phaser и когда его использовать?",
+      "questionSlug": "chto-takoe-phaser-kogda-ispolzovat",
+      "grade": "senior",
+      "tags": ["concurrency", "Phaser", "синхронизатор", "фазы", "барьер", "динамические-участники"],
+      "seo": {
+        "title": "Phaser в Java — многофазный синхронизатор с динамическими участниками — Gymterview",
+        "description": "Phaser (Java 7) объединяет CountDownLatch и CyclicBarrier: несколько фаз, динамическое число участников, иерархическая структура. Примеры использования.",
+        "keywords": ["Phaser Java", "многофазная синхронизация", "arriveAndAwaitAdvance", "динамические участники", "Phaser vs CyclicBarrier"],
+        "ogTitle": "Phaser — динамический многофазный барьер в Java",
+        "ogDescription": "Phaser поддерживает несколько фаз синхронизации с динамическим числом участников. Комбинирует CountDownLatch и CyclicBarrier.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Phaser и когда его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Phaser (Java 7) — синхронизатор, объединяющий CountDownLatch и CyclicBarrier. Поддерживает несколько фаз (этапов), динамическое добавление/удаление участников (register/arriveAndDeregister), иерархическую структуру (tiered phasers). Метод arriveAndAwaitAdvance() — основной: «я завершил фазу и жду остальных». Переопределение onAdvance() управляет количеством фаз. Используется в ETL, map-reduce, игровых серверах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Phaser", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Exchanger и для чего он используется?",
+      "questionSlug": "chto-takoe-exchanger-dlya-chego",
+      "grade": "middle",
+      "tags": ["concurrency", "Exchanger", "синхронизатор", "обмен-данными", "двойная-буферизация"],
+      "seo": {
+        "title": "Exchanger в Java — обмен данными между двумя потоками — Gymterview",
+        "description": "Exchanger — синхронизатор для обмена объектами между двумя потоками. Метод exchange() блокирует до встречного вызова. Применяется в двойной буферизации.",
+        "keywords": ["Exchanger Java", "обмен данными потоки", "exchange метод", "двойная буферизация Java", "парная синхронизация"],
+        "ogTitle": "Exchanger — парный обмен данными между потоками в Java",
+        "ogDescription": "Exchanger позволяет двум потокам атомарно обменяться объектами. exchange() блокируется, пока второй поток не вызовет тот же метод.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Exchanger и для чего он используется?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Exchanger<V> — синхронизатор для обмена данными между двумя потоками. Каждый поток вызывает exchange(), передавая свой объект и блокируясь до ответного вызова. После встречи каждый получает объект другого. Обмен атомарен. Работает строго для двух потоков. Используйте версию с таймаутом в production. Применяется в двойной буферизации, pipeline-обработке."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Exchanger", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CompletionService и когда его применять?",
+      "questionSlug": "chto-takoe-completionservice-kogda-primenyat",
+      "grade": "middle",
+      "tags": ["concurrency", "CompletionService", "ExecutorCompletionService", "scatter-gather", "асинхронность"],
+      "seo": {
+        "title": "CompletionService в Java — обработка задач по мере завершения — Gymterview",
+        "description": "CompletionService отделяет создание задач от получения результатов. take() возвращает первую завершённую задачу, решая проблему head-of-line blocking.",
+        "keywords": ["CompletionService Java", "ExecutorCompletionService", "take poll", "scatter gather Java", "обработка по мере готовности"],
+        "ogTitle": "CompletionService — обработка результатов в порядке завершения",
+        "ogDescription": "ExecutorCompletionService объединяет Executor и BlockingQueue: take() берёт первый завершённый Future, не ожидая медленные задачи.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CompletionService и когда его применять?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CompletionService — интерфейс, отделяющий создание задач от получения результатов. Реализация ExecutorCompletionService объединяет Executor и BlockingQueue. Метод take() блокирующе возвращает первый завершённый Future. Решает проблему head-of-line blocking: не нужно ждать медленную задачу для обработки быстрых. Идеален для scatter-gather паттерна."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "CompletionService", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое реактивные потоки и java.util.concurrent.Flow API?",
+      "questionSlug": "reaktivnye-potoki-flow-api",
+      "grade": "senior",
+      "tags": ["concurrency", "Reactive-Streams", "Flow-API", "backpressure", "Publisher", "Subscriber", "SubmissionPublisher"],
+      "seo": {
+        "title": "Реактивные потоки и Flow API в Java — backpressure и Publisher-Subscriber — Gymterview",
+        "description": "Reactive Streams — стандарт асинхронной обработки потоков данных с backpressure. Java 9 Flow API: Publisher, Subscriber, Subscription, Processor. SubmissionPublisher.",
+        "keywords": ["Reactive Streams Java", "Flow API", "backpressure", "Publisher Subscriber", "SubmissionPublisher", "реактивные потоки"],
+        "ogTitle": "Flow API — реактивные потоки с backpressure в Java",
+        "ogDescription": "Flow API (Java 9) определяет Publisher, Subscriber, Subscription, Processor. Backpressure через request(n). SubmissionPublisher — встроенная реализация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое реактивные потоки и java.util.concurrent.Flow API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reactive Streams — стандарт асинхронной обработки данных с неблокирующим backpressure. Java 9 включает стандарт через java.util.concurrent.Flow с четырьмя интерфейсами: Publisher (источник), Subscriber (потребитель с onSubscribe/onNext/onError/onComplete), Subscription (связь с request(n) для backpressure и cancel()), Processor (промежуточный обработчик). SubmissionPublisher — встроенная реализация Publisher. Flow API — стандарт совместимости, для полноценной работы используют Reactor или RxJava."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Реактивные потоки и Flow API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое модель акторов и как она реализована в Java?",
+      "questionSlug": "model-aktorov-realizaciya-v-java",
+      "grade": "senior",
+      "tags": ["concurrency", "Actor-Model", "Akka", "Pekko", "акторы", "сообщения", "mailbox"],
+      "seo": {
+        "title": "Модель акторов в Java — Akka/Pekko, принципы и реализация — Gymterview",
+        "description": "Модель акторов: изолированное состояние, асинхронные сообщения, mailbox. Реализации: Akka/Pekko, упрощённая на BlockingQueue + Virtual Threads.",
+        "keywords": ["модель акторов Java", "Actor Model", "Akka Java", "Pekko", "акторы многопоточность", "mailbox сообщения"],
+        "ogTitle": "Actor Model в Java — изоляция состояния через сообщения",
+        "ogDescription": "Акторы не разделяют состояние, общаются через асинхронные сообщения. Нет блокировок, нет deadlock. Реализации: Akka/Pekko, Virtual Threads + BlockingQueue.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое модель акторов и как она реализована в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модель акторов (Карл Хьюитт, 1973) — модель параллельных вычислений, где актор: получает и обрабатывает сообщения по одному, создаёт новых акторов, отправляет сообщения, изменяет своё состояние. Акторы никогда не разделяют состояние — вся коммуникация через асинхронные сообщения. Реализации в Java: Akka/Apache Pekko (полнофункциональная), упрощённая — на BlockingQueue + Virtual Threads. Обработка ошибок по принципу «let it crash» через супервизоры."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Модель акторов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются корутины, Virtual Threads и Platform Threads?",
+      "questionSlug": "korutiny-virtual-threads-platform-threads-otlichiya",
+      "grade": "senior",
+      "tags": ["concurrency", "корутины", "Virtual-Threads", "Platform-Threads", "Kotlin", "сравнение"],
+      "seo": {
+        "title": "Корутины vs Virtual Threads vs Platform Threads — сравнение — Gymterview",
+        "description": "Platform Threads — ОС-потоки (~1 МБ, тысячи). Virtual Threads — JVM-потоки (КБ, миллионы). Корутины Kotlin — уровень языка (сотни байт, кооперативные).",
+        "keywords": ["корутины vs Virtual Threads", "Platform Threads vs Virtual Threads", "Kotlin coroutines Java", "сравнение потоков", "кооперативная многозадачность"],
+        "ogTitle": "Корутины, Virtual Threads, Platform Threads — что выбрать?",
+        "ogDescription": "Platform Threads — ОС, вытесняющее планирование. Virtual Threads — JVM, автоматический unmount. Корутины Kotlin — язык, явные suspend-точки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются корутины, Virtual Threads и Platform Threads?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Platform Threads — обёртка над ОС-потоками, вытесняющее планирование, ~1 МБ стека, лимит — тысячи, для CPU-bound задач. Virtual Threads (Java 21) — управляются JVM, модель M:N, несколько КБ, миллионы, автоматический unmount при блокировке, для IO-bound. Корутины Kotlin — уровень языка, кооперативное планирование, suspend-функции, сотни байт, встроенная Structured Concurrency. Virtual Threads — ответ Java на корутины: обычный блокирующий код, который JVM делает неблокирующим."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Корутины vs Virtual vs Platform Threads", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

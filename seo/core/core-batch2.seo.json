@@ -1,0 +1,514 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "batch": 2,
+  "generatedAt": "2026-05-09T12:00:00Z",
+  "questions": [
+    {
+      "question": "Чем абстрактный класс отличается от интерфейса? В каких случаях следует использовать абстрактный класс, а в каких интерфейс?",
+      "questionSlug": "abstraktnyj-klass-vs-interfejs",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "abstract",
+        "interface",
+        "oop",
+        "наследование"
+      ],
+      "seo": {
+        "title": "Абстрактный класс vs интерфейс в Java — 5 ключевых отличий — Gymterview",
+        "description": "Абстрактный класс содержит частичную реализацию и поддерживает одиночное наследование. Интерфейс — контракт с множественной реализацией. Когда что использовать.",
+        "keywords": [
+          "абстрактный класс vs интерфейс Java",
+          "abstract class interface разница",
+          "когда использовать абстрактный класс",
+          "интерфейс или абстрактный класс"
+        ],
+        "ogTitle": "Абстрактный класс vs интерфейс — 5 отличий и правила выбора",
+        "ogDescription": "Абстрактный класс — для иерархии is-a с общим кодом. Интерфейс — контракт для несвязанных классов. Множественная реализация только через интерфейсы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем абстрактный класс отличается от интерфейса в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Класс может реализовать несколько интерфейсов, но наследоваться только от одного класса. Абстрактный класс — инструмент для частичной реализации поведения в иерархии is-a. Интерфейс — контракт, описывающий возможности. Абстрактные классы используют для однотипных классов с общим кодом, интерфейсы — во всех остальных случаях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Абстрактный класс vs интерфейс",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему в некоторых интерфейсах вообще не определяют методов?",
+      "questionSlug": "markernye-interfejsy-java",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "interface",
+        "marker",
+        "Cloneable",
+        "Serializable"
+      ],
+      "seo": {
+        "title": "Маркерные интерфейсы в Java — Cloneable, Serializable — Gymterview",
+        "description": "Маркерные интерфейсы не содержат методов. Они помечают класс как принадлежащий определённому типу. Примеры: Cloneable, Serializable, RandomAccess.",
+        "keywords": [
+          "маркерные интерфейсы Java",
+          "marker interface",
+          "Cloneable Java",
+          "Serializable маркерный интерфейс"
+        ],
+        "ogTitle": "Маркерные интерфейсы — зачем интерфейс без методов?",
+        "ogDescription": "Маркерный интерфейс указывает принадлежность класса к типу без определения методов. Cloneable, Serializable, RandomAccess — примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему в некоторых интерфейсах вообще не определяют методов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это маркерные интерфейсы (marker interfaces). Они просто указывают, что класс относится к определённому типу, не определяя при этом методов. Примеры: Cloneable — поддержка клонирования, Serializable — поддержка сериализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Маркерные интерфейсы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему нельзя объявить метод интерфейса с модификатором `final`?",
+      "questionSlug": "final-metod-interfejsa",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "interface",
+        "final",
+        "модификаторы"
+      ],
+      "seo": {
+        "title": "Почему метод интерфейса не может быть final в Java — Gymterview",
+        "description": "Методы интерфейса неявно abstract — они требуют реализации в классе. Модификатор final запрещает переопределение, что противоречит самой сути интерфейса.",
+        "keywords": [
+          "final метод интерфейса Java",
+          "почему нельзя final в интерфейсе",
+          "модификаторы интерфейса Java",
+          "abstract final противоречие"
+        ],
+        "ogTitle": "final + interface = ошибка компиляции. Почему?",
+        "ogDescription": "Методы интерфейса неявно abstract — их нужно реализовать. final запрещает переопределение. Эти два модификатора взаимоисключающие.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему нельзя объявить метод интерфейса с модификатором `final`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Все методы интерфейсов неявно объявляются как абстрактные, то есть их невозможно выполнить, не реализовав в другом классе. Модификатор final запрещает переопределение метода, что делает его использование с абстрактным методом бессмысленным и противоречивым."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "final в интерфейсе",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что имеет более высокий уровень абстракции - класс, абстрактный класс или интерфейс?",
+      "questionSlug": "uroven-abstrakcii-klass-interfejs",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "абстракция",
+        "interface",
+        "abstract",
+        "oop"
+      ],
+      "seo": {
+        "title": "Уровни абстракции: класс, абстрактный класс, интерфейс — Gymterview",
+        "description": "Интерфейс имеет наивысший уровень абстракции: он определяет только контракт. Абстрактный класс — средний уровень. Обычный класс — конкретная реализация.",
+        "keywords": [
+          "уровень абстракции Java",
+          "класс абстрактный класс интерфейс",
+          "абстракция в Java",
+          "иерархия абстракции ООП"
+        ],
+        "ogTitle": "Класс → абстрактный класс → интерфейс: уровни абстракции",
+        "ogDescription": "Интерфейс — наивысший уровень абстракции (только контракт). Абстрактный класс — частичная реализация. Класс — полная реализация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что имеет более высокий уровень абстракции - класс, абстрактный класс или интерфейс?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интерфейс имеет самый высокий уровень абстракции, так как он определяет только контракт — набор методов без реализации. Абстрактный класс имеет средний уровень абстракции, допуская частичную реализацию. Обычный класс — конкретная реализация."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Уровни абстракции",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Может ли объект получить доступ к члену класса, объявленному как `private`? Если да, то каким образом?",
+      "questionSlug": "dostup-k-private-peremennoj",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "private",
+        "модификаторы-доступа",
+        "Reflection",
+        "инкапсуляция"
+      ],
+      "seo": {
+        "title": "Как получить доступ к private-переменной в Java — 4 способа — Gymterview",
+        "description": "Доступ к private-переменным: изнутри класса, через вложенные классы, через геттеры/сеттеры, через Reflection API (setAccessible). Примеры кода.",
+        "keywords": [
+          "доступ к private Java",
+          "private переменная доступ",
+          "Reflection API Java",
+          "setAccessible Java пример"
+        ],
+        "ogTitle": "4 способа получить доступ к private-полю в Java",
+        "ogDescription": "Изнутри класса, через вложенные классы, через геттеры/сеттеры, через Reflection API с setAccessible(true).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Может ли объект получить доступ к private-переменной класса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Способы: 1) внутри класса доступ открыт; 2) вложенный класс имеет полный доступ к приватным членам внешнего класса; 3) через публичные геттеры/сеттеры; 4) через Reflection API — вызов field.setAccessible(true) позволяет прочитать или изменить приватное поле."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Доступ к private",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каков порядок вызова конструкторов и блоков инициализации с учётом иерархии классов?",
+      "questionSlug": "poryadok-konstruktorov-i-blokov-inicializacii",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "конструктор",
+        "инициализация",
+        "static",
+        "наследование"
+      ],
+      "seo": {
+        "title": "Порядок вызова конструкторов и блоков инициализации в Java — Gymterview",
+        "description": "Порядок инициализации: статические блоки предков → статические блоки класса → нестатические блоки предков → конструктор предка → нестатические блоки → конструктор.",
+        "keywords": [
+          "порядок инициализации Java",
+          "порядок вызова конструкторов",
+          "блоки инициализации Java",
+          "static блок порядок"
+        ],
+        "ogTitle": "Порядок инициализации классов в Java с иерархией",
+        "ogDescription": "Parent static → Child static → Parent non-static → Parent constructor → Child non-static → Child constructor. Полный порядок с примерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каков порядок вызова конструкторов и блоков инициализации с учётом иерархии классов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сначала выполняются статические блоки от корневого предка вниз по иерархии. Затем — нестатические блоки и конструктор корневого предка, далее нестатические блоки и конструктор каждого потомка по цепочке. Порядок: Parent static → Child static → Parent non-static → Parent constructor → Child non-static → Child constructor."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Порядок инициализации",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужны и какие бывают блоки инициализации?",
+      "questionSlug": "bloki-inicializacii-java",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "инициализация",
+        "static",
+        "конструктор"
+      ],
+      "seo": {
+        "title": "Блоки инициализации в Java — статические и нестатические — Gymterview",
+        "description": "Блоки инициализации — код в фигурных скобках внутри класса. Статические выполняются при загрузке класса, нестатические — перед каждым конструктором.",
+        "keywords": [
+          "блоки инициализации Java",
+          "static блок Java",
+          "нестатический блок инициализации",
+          "instance initializer block"
+        ],
+        "ogTitle": "Статические и нестатические блоки инициализации в Java",
+        "ogDescription": "Статический блок — при загрузке класса, один раз. Нестатический — перед каждым вызовом конструктора. Особенности и примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужны и какие бывают блоки инициализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Блоки инициализации — код в фигурных скобках внутри класса вне методов и конструкторов. Бывают статические (выполняются один раз при загрузке класса) и нестатические (выполняются перед каждым вызовом конструктора). Несколько блоков выполняются в порядке следования в коде."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Блоки инициализации",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "К каким конструкциям Java применим модификатор `static`?",
+      "questionSlug": "modifikator-static-java",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "модификаторы",
+        "основы"
+      ],
+      "seo": {
+        "title": "Модификатор static в Java — к чему применим — Gymterview",
+        "description": "Модификатор static применим к полям, методам, вложенным классам, блокам инициализации и членам секции import. Список и особенности.",
+        "keywords": [
+          "static Java",
+          "модификатор static",
+          "static поле метод класс",
+          "static import Java"
+        ],
+        "ogTitle": "К чему применим static в Java — полный список",
+        "ogDescription": "static применим к: полям, методам, вложенным классам, блокам инициализации, import. Нельзя: к верхнеуровневым классам и локальным переменным.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "К каким конструкциям Java применим модификатор `static`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор static применим к: полям класса, методам, вложенным классам, блокам инициализации и членам секции import (static import). Он делает элемент принадлежащим классу, а не экземпляру."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Модификатор static",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в Java используются статические блоки инициализации?",
+      "questionSlug": "staticheskie-bloki-inicializacii",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "static",
+        "инициализация",
+        "classloader"
+      ],
+      "seo": {
+        "title": "Статические блоки инициализации в Java — назначение и пример — Gymterview",
+        "description": "Статический блок выполняется один раз при загрузке класса. Используется для инициализации статических полей, загрузки ресурсов, регистрации драйверов.",
+        "keywords": [
+          "статический блок инициализации Java",
+          "static initializer block",
+          "загрузка класса Java",
+          "инициализация static полей"
+        ],
+        "ogTitle": "Зачем нужен static {} блок в Java?",
+        "ogDescription": "Статический блок выполняется один раз при загрузке класса загрузчиком. Используется для сложной инициализации static полей и загрузки ресурсов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в Java используются статические блоки инициализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статические блоки инициализации выполняются один раз при загрузке класса загрузчиком, до создания объектов этого класса. Используются для выполнения кода, который должен быть выполнен единожды: инициализация сложных статических полей, загрузка нативных библиотек, регистрация драйверов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Статические блоки инициализации",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что произойдёт, если в блоке инициализации возникнет исключительная ситуация?",
+      "questionSlug": "isklyuchenie-v-bloke-inicializacii",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "инициализация",
+        "исключения",
+        "static",
+        "ExceptionInInitializerError"
+      ],
+      "seo": {
+        "title": "Исключение в блоке инициализации Java — что произойдёт — Gymterview",
+        "description": "В статическом блоке явный throw — ошибка компиляции. RuntimeException в static → ExceptionInInitializerError. В нестатическом — требуется throws в конструкторах.",
+        "keywords": [
+          "исключение в блоке инициализации Java",
+          "ExceptionInInitializerError",
+          "static блок исключение",
+          "ошибка инициализации класса"
+        ],
+        "ogTitle": "Исключение в static {} блоке — что произойдёт?",
+        "ogDescription": "Явный throw в static блоке — ошибка компиляции. RuntimeException → ExceptionInInitializerError. В нестатическом блоке — нужен throws в конструкторах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что произойдёт, если в блоке инициализации возникнет исключительная ситуация?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для статического блока: явное выбрасывание checked-исключения — ошибка компиляции. RuntimeException приведёт к ExceptionInInitializerError, класс не будет инициализирован. Для нестатического блока: checked-исключения должны быть объявлены в throws всех конструкторов, иначе ошибка компиляции. При возникновении исключения объект не будет создан."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Исключение в блоке инициализации",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

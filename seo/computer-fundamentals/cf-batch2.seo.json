@@ -1,0 +1,535 @@
+{
+  "topic": "Устройство ПК и сети",
+  "topicSlug": "computer-fundamentals",
+  "batch": 2,
+  "generatedAt": "2026-05-09T17:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Ethernet, MAC-адрес, коммутатор и ARP?",
+      "questionSlug": "chto-takoe-ethernet-mac-adres-kommutator-i-arp",
+      "grade": "junior",
+      "tags": ["сети", "ethernet", "mac-адрес", "коммутатор", "arp", "канальный-уровень", "l2"],
+      "seo": {
+        "title": "Ethernet, MAC-адрес, коммутатор и ARP — канальный уровень L2 — Gymterview",
+        "description": "Ethernet — стандарт проводных LAN (IEEE 802.3). MAC-адрес — 48-битный идентификатор сетевого интерфейса. Коммутатор направляет кадры по CAM-таблице. ARP определяет MAC по IP.",
+        "keywords": ["Ethernet что это", "MAC-адрес формат", "коммутатор switch", "ARP протокол", "канальный уровень L2", "CAM table"],
+        "ogTitle": "Ethernet, MAC-адрес, коммутатор и ARP — основы канального уровня",
+        "ogDescription": "Ethernet определяет формат кадров в LAN. MAC-адрес (48 бит) идентифицирует устройство. Коммутатор передаёт кадры по таблице MAC. ARP находит MAC по IP через broadcast.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Ethernet, MAC-адрес, коммутатор и ARP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ethernet — стандарт IEEE 802.3 для проводных LAN, определяющий формат кадра и правила доступа к среде. MAC-адрес — уникальный 48-битный идентификатор сетевого интерфейса (AA:BB:CC:DD:EE:FF). Коммутатор (switch) — устройство L2, направляющее кадры по CAM-таблице (MAC → порт). ARP — протокол определения MAC-адреса по IP через broadcast-запрос в локальной сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Ethernet, MAC, коммутатор, ARP", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое IP-адресация? Чем отличаются IPv4 и IPv6?",
+      "questionSlug": "chto-takoe-ip-adresatsiya-chem-otlichayutsya-ipv4-i-ipv6",
+      "grade": "junior",
+      "tags": ["сети", "ip", "ipv4", "ipv6", "адресация", "сетевой-уровень", "l3"],
+      "seo": {
+        "title": "IPv4 vs IPv6 — сравнение IP-адресации, форматы и отличия — Gymterview",
+        "description": "IPv4 — 32 бита, 4.3 млрд адресов. IPv6 — 128 бит, 3.4×10³⁸ адресов. Сравнение: формат, NAT, IPSec, заголовки. Частные диапазоны и работа в Java.",
+        "keywords": ["IPv4 vs IPv6", "IP-адресация", "IPv4 формат", "IPv6 формат", "частные IP-адреса", "сетевой уровень L3"],
+        "ogTitle": "IPv4 vs IPv6 — ключевые различия IP-адресации",
+        "ogDescription": "IPv4: 32 бита, 4.3 млрд адресов, нужен NAT. IPv6: 128 бит, 3.4×10³⁸ адресов, NAT не нужен, IPSec встроен. Частные диапазоны: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое IP-адресация? Чем отличаются IPv4 и IPv6?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IP-адрес — уникальный логический идентификатор устройства на сетевом уровне (L3). IPv4 — 32-битный адрес (192.168.1.100), ~4.3 млрд адресов, широко используется NAT. IPv6 — 128-битный (2001:db8::1), ~3.4×10³⁸ адресов, NAT не нужен, IPSec встроен, фиксированный заголовок 40 байт. Частные диапазоны IPv4: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "IPv4 vs IPv6", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое маска подсети и CIDR? Как разбивать сеть на подсети?",
+      "questionSlug": "chto-takoe-maska-podseti-i-cidr-kak-razbivat-set-na-podseti",
+      "grade": "junior",
+      "tags": ["сети", "маска-подсети", "cidr", "подсети", "subnetting", "ip"],
+      "seo": {
+        "title": "Маска подсети и CIDR — разбиение сети на подсети с примерами — Gymterview",
+        "description": "Маска подсети определяет сетевую и хостовую части IP. CIDR — компактная запись (192.168.1.0/24). Пошаговый пример вычисления адреса сети, broadcast и разбиения на подсети.",
+        "keywords": ["маска подсети", "CIDR нотация", "разбиение на подсети", "subnetting", "вычисление подсети пример", "сетевая и хостовая часть"],
+        "ogTitle": "Маска подсети и CIDR — как разбивать сеть на подсети",
+        "ogDescription": "Маска подсети — 32-битное число, разделяющее IP на сетевую и хостовую части. CIDR: /24 = 254 хоста, /26 = 62 хоста. Пошаговый пример с побитовым AND.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое маска подсети и CIDR? Как разбивать сеть на подсети?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Маска подсети — 32-битное число, определяющее сетевую и хостовую части IP-адреса (единицы — сеть, нули — хосты). CIDR — компактная запись: 192.168.1.0/24 означает 24 бита сети, 8 бит хостов (254 хоста). Для разбиения 10.0.0.0/24 на 4 подсети нужны 2 дополнительных бита (/26): 10.0.0.0/26, 10.0.0.64/26, 10.0.0.128/26, 10.0.0.192/26 — по 62 хоста каждая."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Маска подсети и CIDR", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются TCP и UDP?",
+      "questionSlug": "chem-otlichayutsya-tcp-i-udp",
+      "grade": "junior",
+      "tags": ["сети", "tcp", "udp", "транспортный-уровень", "l4", "протоколы"],
+      "seo": {
+        "title": "TCP vs UDP — 8 отличий транспортных протоколов — Gymterview",
+        "description": "TCP — надёжная доставка, гарантированный порядок, контроль потока и перегрузки. UDP — быстрый, без соединения, без гарантий. Сравнение, примеры использования и механизмы надёжности TCP.",
+        "keywords": ["TCP vs UDP", "отличия TCP UDP", "TCP протокол", "UDP протокол", "транспортный уровень L4", "TCP надёжность"],
+        "ogTitle": "TCP vs UDP — сравнение транспортных протоколов",
+        "ogDescription": "TCP: connection-oriented, гарантированная доставка, порядок, flow control. UDP: connectionless, быстрый, 8-байт заголовок. TCP для HTTP/SSH, UDP для DNS/VoIP.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются TCP и UDP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TCP — connection-oriented, гарантирует доставку, порядок, контроль потока и перегрузки, заголовок 20-60 байт. Используется для HTTP, SSH, JDBC. UDP — connectionless, нет гарантии доставки и порядка, заголовок 8 байт, быстрее. Используется для DNS, VoIP, онлайн-игр. Механизмы надёжности TCP: sequence numbers, ACK, retransmission, sliding window, congestion control."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "TCP vs UDP", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое трёхстороннее рукопожатие (three-way handshake)?",
+      "questionSlug": "chto-takoe-tryokhstoronneye-rukopozhatie-three-way-handshake",
+      "grade": "junior",
+      "tags": ["сети", "tcp", "three-way-handshake", "syn", "ack", "соединение"],
+      "seo": {
+        "title": "Three-way handshake TCP — SYN, SYN-ACK, ACK — как устанавливается соединение — Gymterview",
+        "description": "TCP three-way handshake: SYN (seq=x) → SYN-ACK (seq=y, ack=x+1) → ACK (ack=y+1). Зачем три шага, завершение через four-way handshake и TIME_WAIT.",
+        "keywords": ["three-way handshake", "трёхстороннее рукопожатие", "TCP SYN SYN-ACK ACK", "установление TCP соединения", "four-way handshake", "TIME_WAIT"],
+        "ogTitle": "Three-way handshake — как TCP устанавливает соединение",
+        "ogDescription": "SYN (seq=x) → SYN-ACK (seq=y, ack=x+1) → ACK (ack=y+1). Три шага нужны для согласования ISN обоих сторон. Завершение: FIN → ACK → FIN → ACK.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое трёхстороннее рукопожатие (three-way handshake)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three-way handshake — процедура установления TCP-соединения из трёх шагов: 1) клиент отправляет SYN с начальным seq=x, 2) сервер отвечает SYN-ACK (seq=y, ack=x+1), 3) клиент отправляет ACK (ack=y+1). Три шага нужны для согласования ISN обеих сторон и защиты от дублей. Завершение — four-way handshake (FIN/ACK), после чего клиент находится в TIME_WAIT ~60 секунд."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Three-way handshake", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое порты? Какие well-known порты вы знаете?",
+      "questionSlug": "chto-takoe-porty-kakie-well-known-porty-vy-znaete",
+      "grade": "junior",
+      "tags": ["сети", "порты", "well-known-порты", "tcp", "udp", "endpoint"],
+      "seo": {
+        "title": "Сетевые порты и well-known порты — 80, 443, 22, 5432 и другие — Gymterview",
+        "description": "Порт — 16-битное число (0-65535), идентифицирующее сервис на хосте. Well-known (0-1023): HTTP 80, HTTPS 443, SSH 22, DNS 53. Registered: PostgreSQL 5432, Kafka 9092.",
+        "keywords": ["сетевые порты", "well-known порты", "порт 80 443", "порт что это", "диапазоны портов", "ephemeral порты"],
+        "ogTitle": "Сетевые порты — well-known, registered и ephemeral",
+        "ogDescription": "Порт (0-65535) идентифицирует приложение на хосте. Well-known: HTTP 80, HTTPS 443, SSH 22, DNS 53, PostgreSQL 5432, Redis 6379, Kafka 9092.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое порты? Какие well-known порты вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Порт — 16-битное число (0-65535), идентифицирующее приложение на хосте. Диапазоны: well-known (0-1023) — системные, registered (1024-49151) — зарегистрированные, ephemeral (49152-65535) — динамические. Основные порты: SSH 22, DNS 53, HTTP 80, HTTPS 443, PostgreSQL 5432, Redis 6379, Tomcat 8080, Kafka 9092."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Порты и well-known порты", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает DNS?",
+      "questionSlug": "kak-rabotaet-dns",
+      "grade": "junior",
+      "tags": ["сети", "dns", "доменные-имена", "резолвинг", "кэширование", "ttl"],
+      "seo": {
+        "title": "Как работает DNS — иерархия, рекурсивный запрос и кэширование — Gymterview",
+        "description": "DNS преобразует доменные имена в IP. Иерархия: корневые серверы → TLD (.com, .ru) → авторитативные. Рекурсивный запрос через резолвер, кэширование по TTL.",
+        "keywords": ["DNS как работает", "DNS резолвинг", "рекурсивный DNS запрос", "DNS иерархия", "TTL DNS", "DNS кэширование"],
+        "ogTitle": "Как работает DNS — от домена до IP-адреса",
+        "ogDescription": "DNS — распределённая иерархическая система. Запрос: кэш браузера → кэш ОС → резолвер → корневой сервер → TLD → авторитативный. Результат кэшируется по TTL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает DNS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DNS — распределённая иерархическая система, преобразующая доменные имена в IP-адреса. Процесс: кэш браузера → кэш ОС → рекурсивный резолвер (8.8.8.8) → итеративный запрос к корневому серверу → TLD-серверу (.com) → авторитативному серверу домена. Результат кэшируется на время TTL. JVM кэширует DNS-ответы (настройка networkaddress.cache.ttl)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Как работает DNS", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы DNS-записей существуют?",
+      "questionSlug": "kakie-tipy-dns-zapisej-sushchestvuyut",
+      "grade": "junior",
+      "tags": ["сети", "dns", "dns-записи", "a-запись", "cname", "mx", "txt", "ns"],
+      "seo": {
+        "title": "Типы DNS-записей — A, AAAA, CNAME, MX, NS, TXT, PTR, SRV — Gymterview",
+        "description": "DNS Resource Records: A (IPv4), AAAA (IPv6), CNAME (алиас), MX (почта), NS (name server), TXT (SPF/DKIM), PTR (reverse DNS), SRV (сервис). Примеры и утилиты.",
+        "keywords": ["типы DNS-записей", "A запись DNS", "CNAME DNS", "MX запись", "TXT SPF DKIM", "PTR запись", "DNS Resource Records"],
+        "ogTitle": "Типы DNS-записей — A, CNAME, MX, TXT и другие",
+        "ogDescription": "A — домен → IPv4. AAAA — домен → IPv6. CNAME — алиас. MX — почтовый сервер. NS — авторитативный сервер. TXT — SPF/DKIM. PTR — reverse DNS. SRV — сервис с портом.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы DNS-записей существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные DNS-записи: A (домен → IPv4), AAAA (домен → IPv6), CNAME (алиас домена), MX (почтовый сервер с приоритетом), NS (авторитативный DNS-сервер), TXT (SPF, DKIM, верификация), SOA (метаинформация зоны), PTR (обратная запись IP → домен), SRV (сервис с хостом и портом). Утилиты проверки: nslookup, dig."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Типы DNS-записей", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает HTTP/HTTPS? Что такое TLS?",
+      "questionSlug": "kak-rabotaet-http-https-chto-takoe-tls",
+      "grade": "junior",
+      "tags": ["сети", "http", "https", "tls", "ssl", "шифрование", "сертификат", "x509"],
+      "seo": {
+        "title": "HTTP/HTTPS и TLS — структура запроса, TLS handshake и сертификаты — Gymterview",
+        "description": "HTTP — протокол запрос-ответ. HTTPS = HTTP + TLS: шифрование, целостность, аутентификация. TLS handshake: ClientHello → Certificate → KeyExchange. Сертификат X.509 и CA.",
+        "keywords": ["HTTP HTTPS разница", "TLS что это", "TLS handshake", "HTTPS шифрование", "сертификат X.509", "SSL TLS"],
+        "ogTitle": "HTTP/HTTPS и TLS — как работает шифрование веб-трафика",
+        "ogDescription": "HTTP — открытый текст. HTTPS оборачивает HTTP в TLS: шифрование, целостность, аутентификация. TLS handshake согласовывает ключи. Сертификат X.509 подписан CA.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает HTTP/HTTPS? Что такое TLS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP — протокол прикладного уровня на модели запрос-ответ, данные передаются открытым текстом. HTTPS = HTTP + TLS: обеспечивает шифрование, целостность и аутентификацию (порт 443). TLS Handshake: ClientHello → ServerHello + Certificate (X.509) → ClientKeyExchange → Finished. Сертификат содержит публичный ключ и подписан CA (Let's Encrypt, DigiCert). TLS 1.3 упрощён до 1 RTT."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "HTTP/HTTPS и TLS", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются HTTP/1.1, HTTP/2 и HTTP/3?",
+      "questionSlug": "chem-otlichayutsya-http-1-1-http-2-i-http-3",
+      "grade": "middle",
+      "tags": ["сети", "http", "http2", "http3", "quic", "мультиплексирование", "hpack"],
+      "seo": {
+        "title": "HTTP/1.1 vs HTTP/2 vs HTTP/3 — сравнение версий протокола — Gymterview",
+        "description": "HTTP/1.1 — текстовый, один запрос на соединение. HTTP/2 — бинарный, мультиплексирование, HPACK, Server Push. HTTP/3 — QUIC поверх UDP, нет head-of-line blocking, 0-RTT.",
+        "keywords": ["HTTP/1.1 vs HTTP/2", "HTTP/2 vs HTTP/3", "QUIC протокол", "мультиплексирование HTTP/2", "head-of-line blocking", "HPACK QPACK"],
+        "ogTitle": "HTTP/1.1, HTTP/2 и HTTP/3 — эволюция протокола",
+        "ogDescription": "HTTP/1.1: текстовый, 6-8 TCP-соединений. HTTP/2: бинарный, мультиплексирование в одном TCP, HPACK. HTTP/3: QUIC (UDP), потоки независимы, 0-RTT, TLS 1.3 встроен.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются HTTP/1.1, HTTP/2 и HTTP/3?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP/1.1 (1997) — текстовый, один запрос на соединение, head-of-line blocking. HTTP/2 (2015) — бинарный, мультиплексирование потоков в одном TCP, сжатие заголовков HPACK, Server Push, но head-of-line blocking на уровне TCP. HTTP/3 (2022) — QUIC поверх UDP, потоки независимы (нет HOL blocking), встроенный TLS 1.3, поддержка 0-RTT при повторном подключении."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "HTTP/1.1 vs HTTP/2 vs HTTP/3", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое WebSocket и чем он отличается от HTTP?",
+      "questionSlug": "chto-takoe-websocket-i-chem-on-otlichaetsya-ot-http",
+      "grade": "middle",
+      "tags": ["сети", "websocket", "http", "full-duplex", "real-time", "spring-websocket"],
+      "seo": {
+        "title": "WebSocket vs HTTP — двунаправленное соединение в реальном времени — Gymterview",
+        "description": "WebSocket — full-duplex протокол поверх TCP (RFC 6455). Отличия от HTTP: постоянное соединение, обе стороны отправляют, фрейм 2-14 байт. Handshake через HTTP Upgrade.",
+        "keywords": ["WebSocket что это", "WebSocket vs HTTP", "WebSocket handshake", "full-duplex протокол", "ws wss", "Spring WebSocket"],
+        "ogTitle": "WebSocket vs HTTP — когда использовать двунаправленное соединение",
+        "ogDescription": "WebSocket — full-duplex, постоянное соединение, фрейм 2-14 байт. HTTP — запрос-ответ, заголовки в каждом сообщении. WebSocket для чатов, уведомлений, live-данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое WebSocket и чем он отличается от HTTP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WebSocket (RFC 6455) — протокол full-duplex двунаправленной связи поверх TCP. Отличия от HTTP: постоянное соединение (не запрос-ответ), обе стороны отправляют в любой момент, заголовки только при handshake (фрейм 2-14 байт), протокол ws:// / wss://. Устанавливается через HTTP Upgrade (101 Switching Protocols). Применяется для чатов, уведомлений, биржевых котировок."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "WebSocket vs HTTP", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое NAT и зачем он нужен?",
+      "questionSlug": "chto-takoe-nat-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": ["сети", "nat", "snat", "dnat", "pat", "маршрутизатор", "ipv4"],
+      "seo": {
+        "title": "NAT — Network Address Translation, типы SNAT, DNAT, PAT — Gymterview",
+        "description": "NAT преобразует приватные IP в публичные на маршрутизаторе. Типы: SNAT (исходящий трафик), DNAT (port forwarding), PAT (трансляция портов). Экономия IPv4, безопасность.",
+        "keywords": ["NAT что это", "Network Address Translation", "SNAT DNAT PAT", "NAT таблица", "port forwarding", "NAT зачем нужен"],
+        "ogTitle": "NAT — преобразование IP-адресов на маршрутизаторе",
+        "ogDescription": "NAT заменяет приватный IP (192.168.x.x) на публичный. SNAT — исходящий трафик. DNAT — port forwarding. PAT — множество устройств через один IP с разными портами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое NAT и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NAT (Network Address Translation) — механизм преобразования IP-адресов при прохождении пакетов через маршрутизатор. Экономит IPv4-адреса (сотни устройств за одним публичным IP) и повышает безопасность. Типы: SNAT (подмена адреса источника, выход в Интернет), DNAT (подмена назначения, port forwarding), PAT (трансляция портов, множество устройств через один IP)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "NAT", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает маршрутизация? Что такое таблица маршрутизации и default gateway?",
+      "questionSlug": "kak-rabotaet-marshrutizatsiya-chto-takoe-tablitsa-marshrutizatsii-i-default-gateway",
+      "grade": "junior",
+      "tags": ["сети", "маршрутизация", "routing", "default-gateway", "ospf", "bgp", "longest-prefix-match"],
+      "seo": {
+        "title": "Маршрутизация, таблица маршрутизации и default gateway — Gymterview",
+        "description": "Маршрутизация — определение пути пакета на L3. Таблица маршрутизации: сеть → шлюз → интерфейс. Longest prefix match. Default gateway (0.0.0.0/0). OSPF и BGP.",
+        "keywords": ["маршрутизация как работает", "таблица маршрутизации", "default gateway", "longest prefix match", "OSPF BGP", "статическая динамическая маршрутизация"],
+        "ogTitle": "Маршрутизация — таблица маршрутов, default gateway, OSPF и BGP",
+        "ogDescription": "Маршрутизатор сравнивает IP назначения с таблицей (longest prefix match). Default gateway (0.0.0.0/0) — маршрут по умолчанию. OSPF — внутренняя, BGP — между провайдерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает маршрутизация? Что такое таблица маршрутизации и default gateway?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Маршрутизация — процесс определения пути пакета на L3. Таблица маршрутизации содержит записи: сеть назначения, маска, шлюз, интерфейс, метрика. Маршрутизатор выбирает наиболее конкретный маршрут (longest prefix match). Default gateway — маршрутизатор для пакетов вне локальной сети (маршрут 0.0.0.0/0). Статическая маршрутизация — вручную, динамическая — OSPF (внутри сети), BGP (между провайдерами)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Маршрутизация и default gateway", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как пакет проходит путь от клиента до сервера через сеть?",
+      "questionSlug": "kak-paket-prokhodit-put-ot-klienta-do-servera-cherez-set",
+      "grade": "middle",
+      "tags": ["сети", "пакет", "инкапсуляция", "osi", "tcp-ip", "маршрутизация", "arp", "nat"],
+      "seo": {
+        "title": "Путь пакета от клиента до сервера — 12 шагов через сеть — Gymterview",
+        "description": "Полный путь HTTP-запроса: DNS → TCP handshake → сегментация (L4) → IP-заголовок (L3) → ARP → Ethernet-кадр (L2) → физическая среда → маршрутизатор (NAT) → сервер.",
+        "keywords": ["путь пакета через сеть", "инкапсуляция пакета", "как пакет проходит", "L2 L3 L4 L7", "маршрутизация пакета", "сетевой стек"],
+        "ogTitle": "Путь пакета от клиента до сервера — все уровни модели OSI",
+        "ogDescription": "DNS-резолвинг → HTTP-запрос (L7) → TCP-сегмент (L4) → IP-пакет (L3) → ARP → Ethernet-кадр (L2) → физическая среда (L1) → маршрутизатор (NAT) → сервер.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как пакет проходит путь от клиента до сервера через сеть?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Полный путь HTTP-запроса: 1) DNS-резолвинг домена в IP, 2) формирование HTTP-запроса (L7), 3) TCP three-way handshake + TLS (L4), 4) сегментация данных, 5) добавление IP-заголовка (L3), 6) ARP для определения MAC шлюза (L2), 7) формирование Ethernet-кадра, 8) передача по физической среде (L1), 9) маршрутизатор: NAT, новый L2-кадр, 10) через Интернет (несколько hops), 11) сервер собирает сегменты, 12) ответ идёт обратным путём."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Путь пакета через сеть", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое VPN? Какие типы VPN существуют?",
+      "questionSlug": "chto-takoe-vpn-kakie-tipy-vpn-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["сети", "vpn", "ipsec", "openvpn", "wireguard", "туннелирование", "шифрование"],
+      "seo": {
+        "title": "VPN — типы IPSec, OpenVPN, WireGuard и принцип работы — Gymterview",
+        "description": "VPN создаёт зашифрованный туннель через Интернет. Типы: IPSec (L3, корпоративный), OpenVPN (TCP/UDP, гибкий), WireGuard (минималистичный, быстрый). Туннелирование и инкапсуляция.",
+        "keywords": ["VPN что это", "типы VPN", "IPSec VPN", "OpenVPN", "WireGuard", "VPN туннелирование", "Site-to-Site VPN"],
+        "ogTitle": "VPN — IPSec, OpenVPN и WireGuard: сравнение типов",
+        "ogDescription": "VPN шифрует трафик через публичную сеть. IPSec — L3, корпоративный. OpenVPN — TCP/UDP, гибкий. WireGuard — 4000 строк, быстрый, современная криптография.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое VPN? Какие типы VPN существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VPN (Virtual Private Network) — технология зашифрованного туннеля между устройствами через Интернет. Исходный пакет шифруется и инкапсулируется в новый. Типы: IPSec — сетевой уровень (L3), ESP/AH, широко используется для Site-to-Site VPN. OpenVPN — open-source, поверх TCP/UDP, использует TLS и OpenSSL. WireGuard — минималистичный (~4000 строк), UDP, Curve25519/ChaCha20, встроен в ядро Linux."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "VPN и типы VPN", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Proxy и Reverse Proxy?",
+      "questionSlug": "chto-takoe-proxy-i-reverse-proxy",
+      "grade": "middle",
+      "tags": ["сети", "proxy", "reverse-proxy", "nginx", "балансировка", "tls-терминация", "кэширование"],
+      "seo": {
+        "title": "Proxy vs Reverse Proxy — Forward Proxy и Nginx Reverse Proxy — Gymterview",
+        "description": "Forward Proxy — посредник на стороне клиента (анонимность, фильтрация). Reverse Proxy — перед серверами (балансировка, TLS-терминация, кэширование). Пример конфигурации Nginx.",
+        "keywords": ["Proxy vs Reverse Proxy", "Forward Proxy", "Reverse Proxy Nginx", "балансировка нагрузки", "TLS-терминация", "X-Forwarded-For"],
+        "ogTitle": "Proxy и Reverse Proxy — зачем нужны и чем отличаются",
+        "ogDescription": "Forward Proxy — между клиентом и Интернетом (анонимность, фильтрация). Reverse Proxy (Nginx) — перед backend: балансировка, SSL-терминация, кэширование, защита.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Proxy и Reverse Proxy?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Forward Proxy — посредник между клиентом и сервером (анонимность, кэширование, фильтрация). Reverse Proxy — посредник перед backend-серверами: балансировка нагрузки (round-robin, least connections), SSL/TLS-терминация, кэширование статики, сжатие, защита. Типичная схема: Nginx (reverse proxy, SSL) → Spring Boot (API) → PostgreSQL. Заголовки X-Forwarded-For передают реальный IP клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "Proxy и Reverse Proxy", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CDN и зачем он нужен?",
+      "questionSlug": "chto-takoe-cdn-i-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": ["сети", "cdn", "кэширование", "edge-server", "cache-control", "cloudflare", "производительность"],
+      "seo": {
+        "title": "CDN — Content Delivery Network, как работает и зачем нужен — Gymterview",
+        "description": "CDN — распределённая сеть edge-серверов для быстрой доставки контента. Снижает latency (200 мс → 20 мс), нагрузку на origin, защищает от DDoS. Cache-Control заголовки.",
+        "keywords": ["CDN что это", "Content Delivery Network", "CDN как работает", "edge server", "Cache-Control CDN", "Cloudflare CloudFront"],
+        "ogTitle": "CDN — зачем нужна сеть доставки контента",
+        "ogDescription": "CDN размещает контент на edge-серверах по всему миру. Cache hit — 20 мс вместо 200 мс. Снижает нагрузку на origin, защищает от DDoS. Cloudflare, CloudFront, Akamai.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CDN и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CDN (Content Delivery Network) — географически распределённая сеть edge-серверов для быстрой доставки контента. DNS направляет пользователя на ближайший edge: cache hit — ответ за ~20 мс, cache miss — запрос к origin с кэшированием. Преимущества: снижение latency, разгрузка origin, высокая доступность, защита от DDoS. Провайдеры: Cloudflare, AWS CloudFront, Akamai. Управление кэшем через Cache-Control, ETag."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Устройство ПК и сети", "url": "/topics/computer-fundamentals" },
+          { "name": "CDN", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

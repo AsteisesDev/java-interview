@@ -1,0 +1,845 @@
+{
+  "topic": "Многопоточность",
+  "topicSlug": "concurrency",
+  "batch": 2,
+  "generatedAt": "2026-05-09T18:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое livelock?",
+      "questionSlug": "chto-takoe-livelock",
+      "grade": "middle",
+      "tags": ["concurrency", "livelock", "deadlock", "блокировка", "многопоточность"],
+      "seo": {
+        "title": "Что такое livelock в Java — отличие от deadlock — Gymterview",
+        "description": "Livelock — взаимная блокировка, при которой потоки не останавливаются, а бесконечно реагируют друг на друга без продвижения. Отличие от deadlock и пример.",
+        "keywords": ["livelock Java", "livelock vs deadlock", "livelock пример", "взаимная блокировка потоков"],
+        "ogTitle": "Livelock в Java — потоки работают, но ничего не делают",
+        "ogDescription": "Livelock — потоки постоянно меняют состояние в ответ друг на друга, но не продвигаются. Часто возникает при попытке предотвратить deadlock.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое livelock в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Livelock — тип взаимной блокировки, при котором потоки выполняют бесполезную работу, зацикливаясь при попытке получить ресурсы. Состояния потоков постоянно меняются, но КПД системы падает до нуля. Аналогия: два человека в узком коридоре бесконечно уступают друг другу дорогу."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Livelock", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проверить, удерживает ли поток монитор определённого ресурса?",
+      "questionSlug": "proverit-uderzhivaet-li-potok-monitor",
+      "grade": "middle",
+      "tags": ["concurrency", "monitor", "holdsLock", "синхронизация", "Thread"],
+      "seo": {
+        "title": "Thread.holdsLock() — проверка удержания монитора в Java — Gymterview",
+        "description": "Метод Thread.holdsLock(lock) возвращает true, если текущий поток удерживает монитор указанного объекта. Применение для отладки синхронизации.",
+        "keywords": ["Thread.holdsLock Java", "проверка монитора потока", "удержание монитора Java", "holdsLock пример"],
+        "ogTitle": "Как проверить, удерживает ли поток монитор объекта?",
+        "ogDescription": "Thread.holdsLock(lock) возвращает true, когда текущий поток удерживает монитор у определённого объекта.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проверить, удерживает ли поток монитор определённого ресурса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод Thread.holdsLock(lock) возвращает true, когда текущий поток удерживает монитор у определённого объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Thread.holdsLock()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "На каком объекте происходит синхронизация при вызове static synchronized метода?",
+      "questionSlug": "sinhronizaciya-static-synchronized-metoda",
+      "grade": "middle",
+      "tags": ["concurrency", "synchronized", "static", "монитор", "Class"],
+      "seo": {
+        "title": "Синхронизация static synchronized метода в Java — на каком объекте — Gymterview",
+        "description": "Статический synchronized метод синхронизируется на объекте Class, а не на this. Объект класса существует в единственном экземпляре и выступает монитором.",
+        "keywords": ["static synchronized Java", "на чём синхронизируется статический метод", "монитор статического метода", "synchronized static разница"],
+        "ogTitle": "Static synchronized метод — какой объект выступает монитором?",
+        "ogDescription": "У статического метода нет this. Монитором выступает объект SomeClass.class — единственный экземпляр Class для данного класса.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "На каком объекте происходит синхронизация при вызове static synchronized метода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "У синхронизированного статического метода нет доступа к this. Монитором выступает объект Class, который существует в единственном экземпляре. Конструкция public static synchronized void someMethod() эквивалентна synchronized(SomeClass.class) { ... }."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Static synchronized метод", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется ключевое слово volatile, synchronized, transient, native?",
+      "questionSlug": "volatile-synchronized-transient-native",
+      "grade": "junior",
+      "tags": ["concurrency", "volatile", "synchronized", "transient", "native", "ключевые слова"],
+      "seo": {
+        "title": "volatile, synchronized, transient, native в Java — назначение — Gymterview",
+        "description": "volatile отключает кэширование переменной потоками. synchronized обеспечивает синхронизацию. transient исключает поле из сериализации. native — платформозависимый код.",
+        "keywords": ["volatile Java", "synchronized Java", "transient Java", "native Java", "ключевые слова многопоточность"],
+        "ogTitle": "volatile, synchronized, transient, native — для чего каждое?",
+        "ogDescription": "volatile — единственный экземпляр переменной для всех потоков. synchronized — синхронизация. transient — исключение из сериализации. native — нативный код.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется ключевое слово volatile, synchronized, transient, native?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "volatile — вынуждает потоки использовать единственный экземпляр переменной без кэширования. synchronized — обеспечивает синхронизацию в методах или блоках кода. transient и native к многопоточности не относятся: transient исключает поле из сериализации, native указывает на платформозависимую реализацию метода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "volatile, synchronized, transient, native", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём различия между volatile и Atomic переменными?",
+      "questionSlug": "volatile-vs-atomic",
+      "grade": "middle",
+      "tags": ["concurrency", "volatile", "Atomic", "AtomicInteger", "атомарность", "CAS"],
+      "seo": {
+        "title": "volatile vs Atomic в Java — в чём разница — Gymterview",
+        "description": "volatile гарантирует видимость, но не атомарность составных операций. Atomic-классы (AtomicInteger и др.) обеспечивают атомарные операции через CAS.",
+        "keywords": ["volatile vs Atomic Java", "AtomicInteger volatile разница", "атомарность Java", "CAS Java"],
+        "ogTitle": "volatile vs Atomic — видимость и атомарность",
+        "ogDescription": "volatile обеспечивает видимость переменной, но count++ не станет атомарным. AtomicInteger.getAndIncrement() — атомарная замена инкремента.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём различия между volatile и Atomic переменными?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "volatile принуждает использовать единственный экземпляр переменной, но не гарантирует атомарность. Операция count++ не станет атомарной от volatile. Atomic-классы (AtomicInteger и др.) предоставляют атомарные методы вроде getAndIncrement() на основе CAS-операций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "volatile vs Atomic", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём заключаются различия между java.util.concurrent.Atomic*.compareAndSwap() и java.util.concurrent.Atomic*.weakCompareAndSwap()",
+      "questionSlug": "compareandswap-vs-weakcompareandswap",
+      "grade": "senior",
+      "tags": ["concurrency", "Atomic", "CAS", "compareAndSwap", "weakCompareAndSwap", "memory barrier"],
+      "seo": {
+        "title": "compareAndSwap vs weakCompareAndSwap в Java — Gymterview",
+        "description": "weakCompareAndSwap не создаёт memory barrier, не гарантирует happens-before и может вернуть false без причины. Более лёгкая, но менее надёжная операция.",
+        "keywords": ["compareAndSwap Java", "weakCompareAndSwap Java", "CAS weak Java", "memory barrier Atomic"],
+        "ogTitle": "compareAndSwap vs weakCompareAndSwap — 3 ключевых отличия",
+        "ogDescription": "weakCompareAndSwap не создаёт memory barrier, зависит от кэша CPU и может ложно вернуть false. Поддерживается не всеми архитектурами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём различия между compareAndSwap() и weakCompareAndSwap()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "weakCompareAndSwap() не создаёт memory barrier и не даёт гарантии happens-before. Она зависит от кэша/CPU и может вернуть false без видимых причин. Это более лёгкая операция, но поддерживаемая не всеми архитектурами и не всегда эффективная."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "compareAndSwap vs weakCompareAndSwap", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что значит приоритет потока?",
+      "questionSlug": "prioritet-potoka",
+      "grade": "junior",
+      "tags": ["concurrency", "Thread", "приоритет", "setPriority", "планировщик"],
+      "seo": {
+        "title": "Приоритет потока в Java — setPriority, MIN/MAX/NORM — Gymterview",
+        "description": "Приоритет потока влияет на решения планировщика. Диапазон от MIN_PRIORITY (1) до MAX_PRIORITY (10), по умолчанию NORM_PRIORITY (5).",
+        "keywords": ["приоритет потока Java", "setPriority Java", "Thread priority", "MIN_PRIORITY MAX_PRIORITY"],
+        "ogTitle": "Приоритет потока в Java — от 1 до 10",
+        "ogDescription": "Приоритеты помогают планировщику распределять процессорное время. По умолчанию NORM_PRIORITY = 5. Реальное влияние зависит от ОС.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что значит приоритет потока в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Приоритеты потоков используются планировщиком для распределения процессорного времени. Диапазон: MIN_PRIORITY (1) — MAX_PRIORITY (10), по умолчанию NORM_PRIORITY (5). Устанавливается методом setPriority(), получается через getPriority(). На практике влияние зависит от ОС."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Приоритет потока", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое потоки-демоны?",
+      "questionSlug": "potoki-demony",
+      "grade": "junior",
+      "tags": ["concurrency", "daemon", "Thread", "setDaemon", "фоновый поток"],
+      "seo": {
+        "title": "Потоки-демоны в Java — setDaemon, isDaemon — Gymterview",
+        "description": "Потоки-демоны работают в фоне и обслуживают основные потоки. JVM завершает демонов автоматически после окончания работы main. setDaemon(true) до start().",
+        "keywords": ["потоки-демоны Java", "daemon thread Java", "setDaemon Java", "фоновый поток Java"],
+        "ogTitle": "Потоки-демоны — фоновые потоки в Java",
+        "ogDescription": "Потоки-демоны обслуживают основные потоки и завершаются автоматически при окончании main(). Устанавливаются через setDaemon(true) до запуска.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое потоки-демоны в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Потоки-демоны работают в фоновом режиме и обслуживают основные потоки приложения. JVM может завершить демон-поток при окончании main(), не дожидаясь его завершения. Устанавливается вызовом setDaemon(true) до start(). Проверка — isDaemon()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Потоки-демоны", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли сделать основной поток программы демоном?",
+      "questionSlug": "mozhno-li-sdelat-main-potok-demonom",
+      "grade": "junior",
+      "tags": ["concurrency", "daemon", "main", "Thread"],
+      "seo": {
+        "title": "Можно ли сделать main-поток демоном в Java — Gymterview",
+        "description": "Нет, основной поток нельзя сделать демоном. Потоки-демоны обслуживают основные потоки и не могут существовать без них.",
+        "keywords": ["main поток демон Java", "основной поток daemon", "setDaemon main thread", "можно ли main демон"],
+        "ogTitle": "Основной поток — демон? Нет!",
+        "ogDescription": "Основной поток (main) нельзя сделать демоном. Демоны обслуживают основные потоки и не могут существовать без них.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли сделать основной поток программы демоном?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нет. Потоки-демоны описывают фоновые процессы для обслуживания основных потоков выполнения и не могут существовать без них."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Main-поток и daemon", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что значит усыпить поток?",
+      "questionSlug": "usypit-potok-thread-sleep",
+      "grade": "junior",
+      "tags": ["concurrency", "Thread.sleep", "interrupt", "InterruptedException"],
+      "seo": {
+        "title": "Thread.sleep() — усыпление потока в Java — Gymterview",
+        "description": "Усыпить поток — приостановить его на заданное время вызовом Thread.sleep(). Поток можно разбудить раньше через interrupt() с выбросом InterruptedException.",
+        "keywords": ["Thread.sleep Java", "усыпить поток Java", "sleep interrupt", "InterruptedException sleep"],
+        "ogTitle": "Thread.sleep() — как приостановить поток на время",
+        "ogDescription": "Thread.sleep() приостанавливает поток на указанное время в миллисекундах. Досрочный выход — через interrupt() с InterruptedException.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что значит усыпить поток в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Усыпить поток — приостановить его на определённое время вызовом Thread.sleep() с указанием миллисекунд. До истечения времени поток может быть разбужен вызовом interrupt() с выбрасыванием InterruptedException."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Thread.sleep()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются два интерфейса Runnable и Callable?",
+      "questionSlug": "runnable-vs-callable",
+      "grade": "junior",
+      "tags": ["concurrency", "Runnable", "Callable", "Future", "интерфейс"],
+      "seo": {
+        "title": "Runnable vs Callable в Java — 4 отличия — Gymterview",
+        "description": "Callable появился в Java 5, возвращает Future с результатом и может выбрасывать checked-исключения. Runnable — void run() без исключений.",
+        "keywords": ["Runnable vs Callable Java", "Callable Java", "Runnable Callable разница", "Future Callable"],
+        "ogTitle": "Runnable vs Callable — 4 ключевых отличия",
+        "ogDescription": "Runnable.run() — void, без checked-исключений. Callable.call() — возвращает Future, может бросать checked-исключения. Callable — с Java 5.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются интерфейсы Runnable и Callable?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Runnable (Java 1.0) определяет метод run() без возвращаемого значения и без checked-исключений. Callable (Java 5) определяет метод call(), который возвращает объект Future с результатом и может выбрасывать проверяемые исключения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Runnable vs Callable", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое FutureTask?",
+      "questionSlug": "chto-takoe-futuretask",
+      "grade": "middle",
+      "tags": ["concurrency", "FutureTask", "Future", "Callable", "Runnable", "асинхронность"],
+      "seo": {
+        "title": "FutureTask в Java — отменяемое асинхронное вычисление — Gymterview",
+        "description": "FutureTask — базовая реализация Future. Оборачивает Callable или Runnable, предоставляет методы запуска, остановки и получения результата вычисления.",
+        "keywords": ["FutureTask Java", "FutureTask пример", "Future Callable обёртка", "асинхронное вычисление Java"],
+        "ogTitle": "FutureTask — обёртка для асинхронных вычислений",
+        "ogDescription": "FutureTask реализует Future и Runnable. Оборачивает Callable/Runnable, позволяет запускать, отменять и получать результат вычисления.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое FutureTask в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FutureTask — отменяемое асинхронное вычисление с базовой реализацией Future. Оборачивает Callable и Runnable, предоставляет методы запуска и остановки вычисления, получения результата. Результат доступен только после завершения — get() блокируется до этого момента. Реализует Runnable и может быть передан в Executor."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "FutureTask", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем заключаются различия между CyclicBarrier и CountDownLatch?",
+      "questionSlug": "cyclicbarrier-vs-countdownlatch",
+      "grade": "middle",
+      "tags": ["concurrency", "CyclicBarrier", "CountDownLatch", "синхронизатор", "барьер"],
+      "seo": {
+        "title": "CyclicBarrier vs CountDownLatch в Java — Gymterview",
+        "description": "CountDownLatch — одноразовый замок с обратным отсчётом. CyclicBarrier — многоразовый барьер синхронизации потоков. Главное отличие — повторное использование.",
+        "keywords": ["CyclicBarrier vs CountDownLatch", "CountDownLatch Java", "CyclicBarrier Java", "синхронизатор потоков"],
+        "ogTitle": "CyclicBarrier vs CountDownLatch — одноразовый и многоразовый",
+        "ogDescription": "CountDownLatch — одноразовый: после достижения нуля повторно использовать нельзя. CyclicBarrier — многоразовый барьер с опциональным действием.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем различия между CyclicBarrier и CountDownLatch?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CountDownLatch — одноразовый замок: потоки ждут, пока счётчик не достигнет нуля. CyclicBarrier — многоразовый барьер: потоки встречаются в точке синхронизации и освобождаются одновременно. Главное отличие: CountDownLatch можно использовать лишь один раз, CyclicBarrier — неоднократно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "CyclicBarrier vs CountDownLatch", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое race condition?",
+      "questionSlug": "chto-takoe-race-condition",
+      "grade": "middle",
+      "tags": ["concurrency", "race condition", "состояние гонки", "ошибка проектирования"],
+      "seo": {
+        "title": "Race condition (состояние гонки) в Java — Gymterview",
+        "description": "Race condition — ошибка многопоточной системы, при которой результат зависит от порядка выполнения потоков. Приводит к недетерминированному поведению.",
+        "keywords": ["race condition Java", "состояние гонки Java", "гонка потоков", "race condition пример"],
+        "ogTitle": "Race condition — когда порядок потоков решает всё",
+        "ogDescription": "Состояние гонки — ошибка, при которой поведение системы зависит от того, какой поток выполнится первым. Результат недетерминирован.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое race condition в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Race condition (состояние гонки) — ошибка проектирования многопоточной системы, при которой работа зависит от порядка выполнения потоков. Когда поток, который должен исполниться первым, проигрывает гонку — поведение кода изменяется непредсказуемо."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Race condition", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Существует ли способ решения проблемы race condition?",
+      "questionSlug": "reshenie-race-condition",
+      "grade": "middle",
+      "tags": ["concurrency", "race condition", "synchronized", "volatile", "синхронизация"],
+      "seo": {
+        "title": "Как решить race condition в Java — 3 способа — Gymterview",
+        "description": "Три подхода: локальная копия переменной с volatile, синхронизированный блок (synchronized), комбинирование обоих методов. Лучшее решение — правильное проектирование.",
+        "keywords": ["решение race condition Java", "как избежать race condition", "synchronized race condition", "volatile race condition"],
+        "ogTitle": "Решение race condition — volatile, synchronized и комбинация",
+        "ogDescription": "Локальная копия с volatile, синхронизация через synchronized, комбинирование методов. Лучшая защита — правильная архитектура.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Существует ли способ решения проблемы race condition?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три способа: 1) локальная копия переменной (volatile) — работает для одной атомарной переменной; 2) синхронизация через synchronized; 3) комбинирование — копирование в синхронизированном блоке. Лучший способ — правильное проектирование многозадачной системы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Решение race condition", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как остановить поток?",
+      "questionSlug": "kak-ostanovit-potok",
+      "grade": "middle",
+      "tags": ["concurrency", "Thread", "interrupt", "isInterrupted", "остановка потока"],
+      "seo": {
+        "title": "Как остановить поток в Java — interrupt() и флаги — Gymterview",
+        "description": "В Java принят уведомительный порядок остановки: interrupt() выставляет флаг, поток проверяет isInterrupted() и принимает решение. stop() — deprecated.",
+        "keywords": ["остановить поток Java", "Thread.interrupt Java", "isInterrupted Java", "остановка потока без stop"],
+        "ogTitle": "Как корректно остановить поток в Java",
+        "ogDescription": "Метод interrupt() выставляет флаг прерывания. Поток проверяет isInterrupted() и решает — продолжить или завершиться. Thread.stop() deprecated.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как остановить поток в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java принят уведомительный порядок остановки. Метод interrupt() выставляет внутренний флаг прерывания. Поток периодически проверяет его через isInterrupted() и принимает решение о завершении. interrupt() также выводит поток из sleep()/wait() с выбросом InterruptedException. Альтернатива — собственный volatile-флаг."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Остановка потока", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему не рекомендуется использовать метод Thread.stop()?",
+      "questionSlug": "pochemu-ne-thread-stop",
+      "grade": "middle",
+      "tags": ["concurrency", "Thread.stop", "deprecated", "безопасность потоков"],
+      "seo": {
+        "title": "Почему Thread.stop() deprecated в Java — Gymterview",
+        "description": "Thread.stop() прерывает поток в недетерминированном месте. Открытые ресурсы, блокировки и транзакции остаются в неопределённом состоянии.",
+        "keywords": ["Thread.stop deprecated Java", "почему нельзя Thread.stop", "остановка потока Java", "Thread.stop проблемы"],
+        "ogTitle": "Thread.stop() — почему deprecated и чем опасен",
+        "ogDescription": "Thread.stop() прерывает поток в произвольном месте: ресурсы не освобождены, блокировки не сняты, транзакции не закрыты. Консистентность нарушается.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему не рекомендуется использовать метод Thread.stop()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Thread.stop() прерывает поток в недетерминированном месте выполнения. Неясно, что делать с открытыми ресурсами: сетевыми соединениями, блокировками, транзакциями БД. Принудительное снятие блокировок может нарушить консистентность системы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Thread.stop() deprecated", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что происходит, когда в потоке выбрасывается исключение?",
+      "questionSlug": "isklyuchenie-v-potoke",
+      "grade": "middle",
+      "tags": ["concurrency", "exception", "UncaughtExceptionHandler", "Thread"],
+      "seo": {
+        "title": "Исключение в потоке Java — UncaughtExceptionHandler — Gymterview",
+        "description": "Непойманное исключение завершает поток (состояние dead). Если установлен UncaughtExceptionHandler, он перехватит исключение перед завершением.",
+        "keywords": ["исключение в потоке Java", "UncaughtExceptionHandler Java", "непойманное исключение поток", "thread exception handler"],
+        "ogTitle": "Что происходит при исключении в потоке?",
+        "ogDescription": "Непойманное исключение убивает поток. UncaughtExceptionHandler позволяет перехватить его и обработать перед завершением потока.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что происходит, когда в потоке выбрасывается исключение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Если исключение не поймано — поток переходит в состояние dead. Если установлен UncaughtExceptionHandler, JVM вызовет его метод uncaughtException(), передав поток и исключение как аргументы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Исключение в потоке", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между interrupted() и isInterrupted()?",
+      "questionSlug": "interrupted-vs-isinterrupted",
+      "grade": "middle",
+      "tags": ["concurrency", "Thread", "interrupted", "isInterrupted", "прерывание"],
+      "seo": {
+        "title": "interrupted() vs isInterrupted() в Java — Gymterview",
+        "description": "Thread.interrupted() — статический, проверяет текущий поток и сбрасывает флаг. isInterrupted() — нестатический, проверяет другой поток без сброса флага.",
+        "keywords": ["interrupted vs isInterrupted Java", "Thread.interrupted Java", "isInterrupted Java", "флаг прерывания потока"],
+        "ogTitle": "interrupted() vs isInterrupted() — сброс флага или нет",
+        "ogDescription": "Thread.interrupted() — статический, сбрасывает флаг прерывания. isInterrupted() — нестатический, не сбрасывает. Оба проверяют статус прерывания.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между interrupted() и isInterrupted()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Thread.interrupted() — статический метод, проверяет текущий поток и сбрасывает флаг прерывания. isInterrupted() — нестатический, проверяет статус прерывания другого потока без изменения флага."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "interrupted() vs isInterrupted()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое пул потоков?",
+      "questionSlug": "chto-takoe-pul-potokov",
+      "grade": "middle",
+      "tags": ["concurrency", "thread pool", "Executor", "ExecutorService", "Executors", "ThreadPoolExecutor"],
+      "seo": {
+        "title": "Пул потоков в Java — Executor, ExecutorService, типы пулов — Gymterview",
+        "description": "Пул потоков переиспользует созданные потоки вместо создания новых. Executors предоставляет фабрики: Fixed, Cached, Scheduled, SingleThread, Virtual (Java 21+).",
+        "keywords": ["пул потоков Java", "thread pool Java", "ExecutorService Java", "Executors newFixedThreadPool", "newVirtualThreadPerTaskExecutor"],
+        "ogTitle": "Пул потоков — переиспользование вместо создания",
+        "ogDescription": "Executor framework (Java 5+) создаёт пулы: Fixed, Cached, Scheduled, SingleThread. Java 21 добавил newVirtualThreadPerTaskExecutor() для виртуальных потоков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое пул потоков в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пул потоков (thread pool) создаётся при запуске приложения и переиспользует потоки для обработки задач. Java 5+ предоставляет Executor framework: newFixedThreadPool — фиксированное число потоков, newCachedThreadPool — динамический пул, newScheduledThreadPool — для отложенных задач. Java 21 добавил newVirtualThreadPerTaskExecutor() для IO-bound задач."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Пул потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какого размера должен быть пул потоков?",
+      "questionSlug": "razmer-pula-potokov",
+      "grade": "middle",
+      "tags": ["concurrency", "thread pool", "размер пула", "CPU-bound", "IO-bound", "производительность"],
+      "seo": {
+        "title": "Оптимальный размер пула потоков — формула N*(1+WT/ST) — Gymterview",
+        "description": "CPU-bound задачи: N или N+1 потоков (N — число процессоров). IO-bound задачи: N*(1 + WT/ST), где WT — время ожидания, ST — время обработки.",
+        "keywords": ["размер пула потоков Java", "оптимальный thread pool size", "формула размера пула", "CPU-bound IO-bound пул"],
+        "ogTitle": "Размер пула потоков — формула для CPU и IO задач",
+        "ogDescription": "CPU-bound: N+1 потоков. IO-bound: N*(1+WT/ST). Слишком мало — очередь растёт, слишком много — переключения контекста замедляют систему.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какого размера должен быть пул потоков?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для CPU-bound задач на N-процессорной системе оптимально N или N+1 потоков. Для IO-bound задач: N*(1 + WT/ST), где WT — время ожидания, ST — время обработки. Слишком мало потоков — очередь растёт, слишком много — частые переключения контекста."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Размер пула потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что будет, если очередь пула потоков уже заполнена, но подаётся новая задача?",
+      "questionSlug": "ochered-pula-zapolnena",
+      "grade": "middle",
+      "tags": ["concurrency", "thread pool", "RejectedExecutionException", "RejectedExecutionHandler", "очередь"],
+      "seo": {
+        "title": "Переполнение очереди пула потоков — RejectedExecutionHandler — Gymterview",
+        "description": "При заполненной очереди задача отклоняется: submit() выбрасывает RejectedExecutionException и вызывается RejectedExecutionHandler.",
+        "keywords": ["очередь пула потоков заполнена Java", "RejectedExecutionException", "RejectedExecutionHandler", "thread pool overflow"],
+        "ogTitle": "Очередь пула потоков заполнена — что произойдёт?",
+        "ogDescription": "Задача отклоняется: submit() выбрасывает RejectedExecutionException, срабатывает RejectedExecutionHandler.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что будет, если очередь пула потоков заполнена?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Задача будет отклонена. Метод submit() у ThreadPoolExecutor выбрасывает RejectedExecutionException, после чего вызывается RejectedExecutionHandler."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Переполнение очереди пула", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём заключается различие между методами submit() и execute() у пула потоков?",
+      "questionSlug": "submit-vs-execute",
+      "grade": "middle",
+      "tags": ["concurrency", "submit", "execute", "Executor", "ExecutorService", "Future"],
+      "seo": {
+        "title": "submit() vs execute() в пуле потоков Java — Gymterview",
+        "description": "execute(Runnable) — из Executor, ничего не возвращает. submit() — из ExecutorService, принимает Runnable/Callable и возвращает Future для контроля выполнения.",
+        "keywords": ["submit vs execute Java", "ExecutorService submit", "Executor execute", "Future submit Java"],
+        "ogTitle": "submit() vs execute() — возвращает ли пул результат?",
+        "ogDescription": "execute() определён в Executor — ничего не возвращает. submit() из ExecutorService — возвращает Future для контроля и получения результата.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём различие между submit() и execute() у пула потоков?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "execute(Runnable) определён в интерфейсе Executor, выполняет задачу и ничего не возвращает. submit() определён в ExecutorService, принимает Runnable или Callable и возвращает объект Future для контроля выполнения и получения результата."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "submit() vs execute()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем заключаются различия между стеком (stack) и кучей (heap) с точки зрения многопоточности?",
+      "questionSlug": "stack-vs-heap-mnogopoochnost",
+      "grade": "middle",
+      "tags": ["concurrency", "stack", "heap", "память", "volatile", "кэширование"],
+      "seo": {
+        "title": "Stack vs Heap в многопоточности Java — Gymterview",
+        "description": "Стек — у каждого потока свой, хранит локальные переменные. Куча — общая для всех потоков, хранит объекты. volatile заставляет читать из кучи.",
+        "keywords": ["stack vs heap многопоточность Java", "стек поток Java", "куча потоки Java", "volatile heap"],
+        "ogTitle": "Stack vs Heap — что видят потоки?",
+        "ogDescription": "Стек у каждого потока свой и изолирован. Куча общая для всех — объекты видны всем потокам. volatile предотвращает кэширование в стеке.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются стек и куча с точки зрения многопоточности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стек у каждого потока свой — хранит локальные переменные и стек вызовов, невидим другим потокам. Куча — общая память для всех потоков, в ней создаются объекты. Потоки кэшируют значения из кучи в стек — volatile заставляет читать напрямую из кучи."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Stack vs Heap в многопоточности", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как поделиться данными между двумя потоками?",
+      "questionSlug": "podelitsya-dannymi-mezhdu-potokami",
+      "grade": "middle",
+      "tags": ["concurrency", "обмен данными", "BlockingQueue", "Exchanger", "общий объект"],
+      "seo": {
+        "title": "Обмен данными между потоками Java — BlockingQueue, Exchanger — Gymterview",
+        "description": "Потоки обмениваются данными через общий объект, BlockingQueue или Exchanger. Exchanger блокирует поток до обмена данными с другим потоком.",
+        "keywords": ["обмен данными между потоками Java", "BlockingQueue потоки", "Exchanger Java", "общий объект потоков"],
+        "ogTitle": "Как поделиться данными между потоками?",
+        "ogDescription": "Через общий объект, BlockingQueue или Exchanger. Exchanger.exchange() блокирует до момента обмена данными между двумя потоками.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как поделиться данными между двумя потоками?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Через общий объект или параллельные структуры данных (BlockingQueue). Exchanger позволяет двум потокам обменяться данными: метод exchange() блокирует поток до момента, когда второй поток передаст свои данные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Обмен данными между потоками", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой параметр запуска JVM используется для контроля размера стека потока?",
+      "questionSlug": "parametr-jvm-razmer-steka-potoka",
+      "grade": "junior",
+      "tags": ["concurrency", "JVM", "-Xss", "стек", "параметры запуска"],
+      "seo": {
+        "title": "Параметр -Xss — размер стека потока JVM — Gymterview",
+        "description": "Параметр запуска JVM -Xss задаёт размер стека для каждого потока. Пример: -Xss512k устанавливает стек размером 512 КБ.",
+        "keywords": ["-Xss JVM", "размер стека потока Java", "JVM параметр стека", "thread stack size JVM"],
+        "ogTitle": "-Xss — контроль размера стека потока",
+        "ogDescription": "Параметр -Xss управляет размером стека каждого потока в JVM. По умолчанию зависит от платформы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой параметр JVM контролирует размер стека потока?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Параметр -Xss. Например, -Xss512k устанавливает размер стека потока в 512 КБ."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Параметр -Xss", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить дамп потока?",
+      "questionSlug": "kak-poluchit-damp-potoka",
+      "grade": "middle",
+      "tags": ["concurrency", "thread dump", "heap dump", "jmap", "JConsole", "HPROF", "OutOfMemoryError"],
+      "seo": {
+        "title": "Дамп потока в Java — jmap, JConsole, Ctrl+Break — Gymterview",
+        "description": "Интерактивные методы: Ctrl+Break, jmap, gcore, JConsole (HotSpotDiagnostic MBean). По событию: -XX:+HeapDumpOnOutOfMemoryError. Формат HPROF.",
+        "keywords": ["дамп потока Java", "heap dump Java", "jmap дамп", "HeapDumpOnOutOfMemoryError", "thread dump JConsole"],
+        "ogTitle": "Как получить дамп потока — 5 способов",
+        "ogDescription": "Ctrl+Break, jmap, gcore, JConsole и -XX:+HeapDumpOnOutOfMemoryError. HotSpot генерирует дампы в формате HPROF.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить дамп потока в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интерактивные методы: Ctrl+Break с опцией -XX:+HeapDumpOnCtrlBreak, утилита jmap, команда gcore в ОС, JConsole через MBean HotSpotDiagnostic. По событию: опция -XX:+HeapDumpOnOutOfMemoryError автоматически создаёт дамп при OutOfMemoryError. Формат — HPROF."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Многопоточность", "url": "/topics/concurrency" },
+          { "name": "Дамп потока", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "topic": "Архитектура приложений",
+  "topicSlug": "architecture",
+  "batch": 2,
+  "generatedAt": "2026-05-09T14:00:00Z",
+  "questions": [
+    {
+      "question": "Чем отличается горизонтальное масштабирование от вертикального?",
+      "questionSlug": "chem-otlichaetsya-gorizontalnoe-masshtabirovanie-ot-vertikalnogo",
+      "grade": "junior",
+      "tags": ["architecture", "scalability", "infrastructure"],
+      "seo": {
+        "title": "Горизонтальное и вертикальное масштабирование: отличия — Gymterview",
+        "description": "Чем отличается горизонтальное масштабирование (Scale Out) от вертикального (Scale Up)? Сравнение подходов, стратегии масштабирования и типичные решения для Java-приложений.",
+        "keywords": ["горизонтальное масштабирование", "вертикальное масштабирование", "scale out", "scale up", "масштабирование приложений", "архитектура"],
+        "ogTitle": "Горизонтальное и вертикальное масштабирование: отличия — Gymterview",
+        "ogDescription": "Сравнение горизонтального и вертикального масштабирования: плюсы, минусы и стратегии применения в Java-приложениях.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается горизонтальное масштабирование от вертикального?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Вертикальное масштабирование (Scale Up) — увеличение мощности одного сервера (CPU, RAM, диски), а горизонтальное (Scale Out) — добавление новых серверов в кластер. Вертикальное проще, но ограничено оборудованием и имеет единую точку отказа, тогда как горизонтальное теоретически безгранично, обеспечивает высокую отказоустойчивость, но требует балансировки нагрузки, репликации и шардирования БД. Типичный подход — вертикальное масштабирование для БД и горизонтальное для stateless-сервисов за балансировщиком."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Горизонтальное vs вертикальное масштабирование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое балансировка нагрузки (load balancing)?",
+      "questionSlug": "chto-takoe-balansirovka-nagruzki-load-balancing",
+      "grade": "junior",
+      "tags": ["architecture", "load-balancing", "infrastructure"],
+      "seo": {
+        "title": "Балансировка нагрузки (Load Balancing): алгоритмы и уровни — Gymterview",
+        "description": "Что такое балансировка нагрузки? Алгоритмы Round Robin, Least Connections, IP Hash. Разница между L4 и L7 балансировкой. Примеры Nginx, HAProxy, AWS ALB.",
+        "keywords": ["балансировка нагрузки", "load balancing", "round robin", "least connections", "L4 L7 балансировка", "Nginx", "HAProxy"],
+        "ogTitle": "Балансировка нагрузки (Load Balancing): алгоритмы и уровни — Gymterview",
+        "ogDescription": "Разбор алгоритмов балансировки нагрузки, сравнение L4 и L7 балансировки с примерами на Nginx и HAProxy.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое балансировка нагрузки (load balancing)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Балансировка нагрузки — распределение входящих запросов между несколькими серверами для обеспечения высокой доступности и равномерного распределения ресурсов. Основные алгоритмы: Round Robin, Weighted Round Robin, Least Connections, Least Response Time, IP Hash и Random. Различают L4-балансировку (транспортный уровень, TCP/UDP) и L7-балансировку (уровень приложения, HTTP), которая позволяет маршрутизировать по URL, заголовкам и cookies."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Балансировка нагрузки", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие стратегии кэширования существуют?",
+      "questionSlug": "kakie-strategii-keshirovaniya-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["architecture", "caching", "redis", "performance"],
+      "seo": {
+        "title": "Стратегии кэширования: Cache-Aside, Write-Through, Write-Behind — Gymterview",
+        "description": "Какие стратегии кэширования существуют? Cache-Aside, Write-Through, Write-Behind, Read-Through, Refresh-Ahead. Инструменты: Redis, Caffeine, EhCache. Примеры на Spring.",
+        "keywords": ["стратегии кэширования", "cache-aside", "write-through", "write-behind", "Redis", "Caffeine", "Spring Cache", "кэширование Java"],
+        "ogTitle": "Стратегии кэширования: Cache-Aside, Write-Through, Write-Behind — Gymterview",
+        "ogDescription": "Обзор стратегий кэширования в Java-приложениях: Cache-Aside, Write-Through, Write-Behind с примерами на Spring и Redis.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие стратегии кэширования существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные стратегии кэширования: Cache-Aside (приложение само управляет кэшем, при промахе читает из БД), Write-Through (данные пишутся одновременно в кэш и БД), Write-Behind (данные пишутся в кэш немедленно, в БД — асинхронно), Read-Through (кэш сам обращается к БД при промахе) и Refresh-Ahead (кэш обновляет данные до истечения TTL). В Java-экосистеме используются Redis, EhCache, Caffeine и Hazelcast. Ключевые проблемы — Cache Stampede, устаревшие данные и сложность инвалидации кэша."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Стратегии кэширования", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужен Message Broker? В чём разница между очередью и топиком?",
+      "questionSlug": "zachem-nuzhen-message-broker-v-chem-raznitsa-mezhdu-ocheredyu-i-topikom",
+      "grade": "middle",
+      "tags": ["architecture", "message-broker", "kafka", "rabbitmq", "messaging"],
+      "seo": {
+        "title": "Message Broker: очередь vs топик, Kafka и RabbitMQ — Gymterview",
+        "description": "Зачем нужен Message Broker? Разница между очередью (Point-to-Point) и топиком (Pub/Sub). Сравнение Kafka, RabbitMQ, ActiveMQ. Примеры использования в Java.",
+        "keywords": ["message broker", "очередь", "топик", "Kafka", "RabbitMQ", "pub/sub", "point-to-point", "брокер сообщений"],
+        "ogTitle": "Message Broker: очередь vs топик, Kafka и RabbitMQ — Gymterview",
+        "ogDescription": "Зачем нужен брокер сообщений? Разница между очередью и топиком, сравнение Kafka и RabbitMQ для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужен Message Broker? В чём разница между очередью и топиком?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Message Broker — промежуточное ПО для передачи сообщений между компонентами системы, обеспечивающее слабую связанность, асинхронность, буферизацию и гарантию доставки. Очередь (Queue) работает по модели Point-to-Point, где каждое сообщение обрабатывается одним потребителем. Топик (Topic) работает по модели Pub/Sub, где каждое сообщение получают все подписчики. Популярные брокеры: Apache Kafka (высокая пропускная способность, хранение истории), RabbitMQ (гибкая маршрутизация, AMQP), ActiveMQ и Redis Streams."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Message Broker: очередь и топик", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое идемпотентность операций?",
+      "questionSlug": "chto-takoe-idempotentnost-operatsiy",
+      "grade": "middle",
+      "tags": ["architecture", "idempotency", "rest-api", "reliability"],
+      "seo": {
+        "title": "Идемпотентность операций: определение и способы обеспечения — Gymterview",
+        "description": "Что такое идемпотентность? Идемпотентность HTTP-методов, Idempotency Key, условные операции. Почему это критично в банковских системах и микросервисах.",
+        "keywords": ["идемпотентность", "idempotency", "idempotency key", "HTTP методы", "идемпотентные операции", "REST API"],
+        "ogTitle": "Идемпотентность операций: определение и способы обеспечения — Gymterview",
+        "ogDescription": "Что такое идемпотентность операций? Способы обеспечения: Idempotency Key, условные операции, проектирование идемпотентных API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое идемпотентность операций?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Идемпотентность — свойство операции, при котором многократное выполнение с одними и теми же входными данными даёт тот же результат, что и однократное. HTTP-методы GET, PUT, DELETE идемпотентны, а POST и PATCH — нет. Это критично при сетевых сбоях, retry-политиках и дублировании сообщений в очередях. Основные способы обеспечения: Idempotency Key (уникальный ключ от клиента), условные операции в БД и проектирование операций как установка состояния вместо приращения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Идемпотентность операций", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое API-first подход?",
+      "questionSlug": "chto-takoe-api-first-podkhod",
+      "grade": "middle",
+      "tags": ["architecture", "api", "openapi", "swagger", "design"],
+      "seo": {
+        "title": "API-first подход: проектирование API до реализации — Gymterview",
+        "description": "Что такое API-first подход? Проектирование API с OpenAPI/Swagger до написания кода. Порядок работы, инструменты, плюсы и минусы для Java-разработчиков.",
+        "keywords": ["API-first", "OpenAPI", "Swagger", "проектирование API", "контракт API", "Spring Cloud Contract", "code generation"],
+        "ogTitle": "API-first подход: проектирование API до реализации — Gymterview",
+        "ogDescription": "Разбор API-first подхода: проектирование контракта API до написания кода, OpenAPI-спецификация и автогенерация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое API-first подход?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "API-first — подход к разработке, при котором API проектируется и описывается (обычно в формате OpenAPI/Swagger) до написания кода реализации. API становится контрактом между командами, что позволяет вести параллельную разработку frontend и backend. Из спецификации автоматически генерируются контроллеры, клиенты, DTO и документация. Инструменты: OpenAPI Generator, Swagger UI, Spring Cloud Contract, Prism."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "API-first подход", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между Stateless и Stateful приложениями?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-stateless-i-stateful-prilozheniyami",
+      "grade": "junior",
+      "tags": ["architecture", "stateless", "stateful", "scalability", "jwt"],
+      "seo": {
+        "title": "Stateless vs Stateful приложения: различия и подходы — Gymterview",
+        "description": "В чём разница между Stateless и Stateful приложениями? Масштабирование, отказоустойчивость, JWT-токены, Spring Session. Какой подход выбрать для Java-проекта.",
+        "keywords": ["stateless", "stateful", "без состояния", "JWT", "сессии", "масштабирование", "Spring Session", "архитектура"],
+        "ogTitle": "Stateless vs Stateful приложения: различия и подходы — Gymterview",
+        "ogDescription": "Сравнение Stateless и Stateful приложений: масштабирование, отказоустойчивость, JWT, Spring Session для Java-проектов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между Stateless и Stateful приложениями?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Stateless-приложение не хранит состояние клиента между запросами — каждый запрос содержит всю необходимую информацию (например, JWT-токен). Stateful-приложение хранит сессию в памяти сервера между запросами. Stateless проще масштабировать горизонтально (любой узел обработает запрос) и обеспечивает высокую отказоустойчивость. Для перевода приложения в Stateless используют JWT-токены, внешнее хранение сессий (Redis, Spring Session) и хранение состояния на стороне клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Stateless vs Stateful", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Feature Flags (флаги функциональности)?",
+      "questionSlug": "chto-takoe-feature-flags-flagi-funktsionalnosti",
+      "grade": "middle",
+      "tags": ["architecture", "feature-flags", "deployment", "devops"],
+      "seo": {
+        "title": "Feature Flags (флаги функциональности): типы и инструменты — Gymterview",
+        "description": "Что такое Feature Flags? Типы флагов: Release, Experiment, Ops, Permission Toggle. Инструменты Togglz, Unleash, LaunchDarkly. Лучшие практики для Java.",
+        "keywords": ["feature flags", "feature toggles", "флаги функциональности", "Togglz", "Unleash", "LaunchDarkly", "A/B тестирование"],
+        "ogTitle": "Feature Flags (флаги функциональности): типы и инструменты — Gymterview",
+        "ogDescription": "Разбор Feature Flags: типы флагов, инструменты Togglz и Unleash, лучшие практики применения в Java-проектах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Feature Flags (флаги функциональности)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Feature Flags (Feature Toggles) — техника, позволяющая включать и выключать функциональность без повторного развёртывания приложения. Существуют четыре типа: Release Toggle (скрытие незавершённой фичи), Experiment Toggle (A/B-тестирование), Ops Toggle (оперативное отключение при деградации) и Permission Toggle (доступ для определённых пользователей). Инструменты: Togglz, Unleash, LaunchDarkly. Важно удалять флаги после полного включения функции, чтобы не засорять код."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Feature Flags", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ADR (Architecture Decision Records)?",
+      "questionSlug": "chto-takoe-adr-architecture-decision-records",
+      "grade": "middle",
+      "tags": ["architecture", "adr", "documentation", "decision-making"],
+      "seo": {
+        "title": "ADR (Architecture Decision Records): фиксация архитектурных решений — Gymterview",
+        "description": "Что такое ADR? Структура записи: статус, контекст, решение, обоснование, последствия. Принципы ведения Architecture Decision Records в проектах.",
+        "keywords": ["ADR", "Architecture Decision Records", "архитектурные решения", "документация архитектуры", "принятие решений"],
+        "ogTitle": "ADR (Architecture Decision Records): фиксация архитектурных решений — Gymterview",
+        "ogDescription": "Что такое ADR и как документировать архитектурные решения? Структура, статусы и принципы ведения записей.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ADR (Architecture Decision Records)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ADR (Architecture Decision Records) — документ, фиксирующий принятое архитектурное решение, его контекст, причины и последствия. ADR решает проблему «почему мы это сделали?». Типичная структура включает статус (Proposed, Accepted, Rejected, Superseded), контекст проблемы, принятое решение, обоснование выбора и последствия. Каждое решение хранится в отдельном файле в репозитории рядом с кодом, старые ADR не удаляются, а помечаются как Superseded."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "ADR", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое нефункциональные требования (NFR)?",
+      "questionSlug": "chto-takoe-nefunktsionalnye-trebovaniya-nfr",
+      "grade": "middle",
+      "tags": ["architecture", "nfr", "requirements", "quality-attributes"],
+      "seo": {
+        "title": "Нефункциональные требования (NFR): категории и метрики — Gymterview",
+        "description": "Что такое нефункциональные требования? Производительность, доступность, масштабируемость, безопасность, надёжность, наблюдаемость. SLA, RTO, RPO и метрики.",
+        "keywords": ["нефункциональные требования", "NFR", "SLA", "RTO", "RPO", "производительность", "доступность", "масштабируемость", "безопасность"],
+        "ogTitle": "Нефункциональные требования (NFR): категории и метрики — Gymterview",
+        "ogDescription": "Обзор нефункциональных требований: производительность, доступность, безопасность, наблюдаемость. Как фиксировать и измерять NFR.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое нефункциональные требования (NFR)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нефункциональные требования (NFR) описывают, как система должна работать (качество), а не что она должна делать (функции). Основные категории: производительность (время отклика, пропускная способность), доступность (SLA, RTO, RPO), масштабируемость, безопасность (OAuth2, TLS, PCI DSS), надёжность, наблюдаемость (логирование, метрики, трассировка) и сопровождаемость. Каждое требование должно быть измеримым — с конкретной метрикой, способом измерения и мониторинга."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Нефункциональные требования (NFR)", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Repository?",
+      "questionSlug": "chto-takoe-pattern-repository",
+      "grade": "junior",
+      "tags": ["architecture", "repository", "patterns", "ddd", "data-access"],
+      "seo": {
+        "title": "Паттерн Repository: абстракция доступа к данным — Gymterview",
+        "description": "Что такое паттерн Repository? Абстракция для доступа к данным, отличие от DAO, реализация в Spring Data JPA. Примеры на Java для собеседования.",
+        "keywords": ["паттерн Repository", "репозиторий", "DAO vs Repository", "Spring Data JPA", "доступ к данным", "DDD"],
+        "ogTitle": "Паттерн Repository: абстракция доступа к данным — Gymterview",
+        "ogDescription": "Разбор паттерна Repository: абстракция работы с данными, отличие от DAO, реализация в Spring Data JPA.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Repository?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Repository — паттерн, предоставляющий абстракцию для доступа к данным, создающий иллюзию работы с коллекцией объектов в памяти и скрывающий детали хранения. Он изолирует бизнес-логику от способа хранения, упрощает тестирование и соответствует принципу DIP из SOLID. В отличие от DAO, который ориентирован на таблицу БД, Repository ориентирован на доменный объект (агрегат). В DDD репозиторий создаётся для каждого Aggregate Root, а не для каждой таблицы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Паттерн Repository", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Unit of Work?",
+      "questionSlug": "chto-takoe-pattern-unit-of-work",
+      "grade": "middle",
+      "tags": ["architecture", "unit-of-work", "patterns", "jpa", "hibernate"],
+      "seo": {
+        "title": "Паттерн Unit of Work: единица работы в JPA и Hibernate — Gymterview",
+        "description": "Что такое паттерн Unit of Work? Отслеживание изменений, атомарные транзакции, реализация через Persistence Context в JPA/Hibernate. Примеры на Java.",
+        "keywords": ["Unit of Work", "единица работы", "Persistence Context", "JPA", "Hibernate", "dirty checking", "@Transactional"],
+        "ogTitle": "Паттерн Unit of Work: единица работы в JPA и Hibernate — Gymterview",
+        "ogDescription": "Разбор паттерна Unit of Work: отслеживание изменений, dirty checking и реализация через Persistence Context в Hibernate.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Unit of Work?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unit of Work — паттерн, который отслеживает все изменения доменных объектов в рамках одной бизнес-операции и выполняет их в БД как единую атомарную транзакцию. Это обеспечивает группировку операций, минимизацию обращений к БД и целостность данных. В Java/Spring реализуется неявно через JPA/Hibernate: аннотация @Transactional начинает транзакцию, Persistence Context отслеживает managed-сущности, а при коммите Hibernate выполняет dirty checking и генерирует SQL. Persistence Context в JPA — это и есть реализация Unit of Work."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Паттерн Unit of Work", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Dependency Injection работает как архитектурный принцип?",
+      "questionSlug": "kak-dependency-injection-rabotaet-kak-arkhitekturnyy-printsip",
+      "grade": "middle",
+      "tags": ["architecture", "dependency-injection", "solid", "spring", "dip"],
+      "seo": {
+        "title": "Dependency Injection как архитектурный принцип — Gymterview",
+        "description": "Как Dependency Injection работает на архитектурном уровне? Три способа внедрения в Spring, инверсия зависимостей (DIP), Composition Root. Примеры на Java.",
+        "keywords": ["Dependency Injection", "DI", "внедрение зависимостей", "DIP", "инверсия зависимостей", "Spring", "Composition Root"],
+        "ogTitle": "Dependency Injection как архитектурный принцип — Gymterview",
+        "ogDescription": "Разбор DI на архитектурном уровне: инверсия зависимостей, три способа внедрения в Spring, Composition Root.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Dependency Injection работает как архитектурный принцип?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dependency Injection — принцип, при котором объект получает зависимости извне, а не создаёт их сам. На архитектурном уровне DI реализует Dependency Inversion Principle (DIP): модуль бизнес-логики определяет интерфейсы (порты), модуль инфраструктуры предоставляет реализации (адаптеры), а конфигурация (Composition Root) связывает их. В Spring предпочтительно внедрение через конструктор — зависимости явные, поля final, объект невозможно создать без зависимостей. DI снижает coupling между модулями и обеспечивает тестируемость через мок-объекты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Dependency Injection как принцип", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как спроектировать модуль с нуля? Пошаговый подход.",
+      "questionSlug": "kak-sproektirovat-modul-s-nulya-poshagovyy-podkhod",
+      "grade": "middle",
+      "tags": ["architecture", "design", "module", "ddd", "bounded-context"],
+      "seo": {
+        "title": "Как спроектировать модуль с нуля: пошаговый подход — Gymterview",
+        "description": "Как спроектировать модуль с нуля? 8 шагов: бизнес-требования, Bounded Context, API, архитектура, доменная модель, NFR, хранение данных, обработка ошибок.",
+        "keywords": ["проектирование модуля", "архитектура модуля", "Bounded Context", "доменная модель", "API контракт", "пошаговый подход"],
+        "ogTitle": "Как спроектировать модуль с нуля: пошаговый подход — Gymterview",
+        "ogDescription": "Системный подход к проектированию модуля: от бизнес-требований до обработки ошибок за 8 шагов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как спроектировать модуль с нуля? Пошаговый подход.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проектирование модуля включает 8 шагов: 1) понять бизнес-требования, 2) определить границы модуля (Bounded Context), 3) определить API-контракт (REST, gRPC, Events), 4) выбрать архитектуру (простой CRUD или гексагональная), 5) спроектировать доменную модель (Entity, Value Objects, Aggregates), 6) определить нефункциональные требования (RPS, SLA), 7) спроектировать хранение данных (выбор БД, схема, кэширование), 8) спроектировать обработку ошибок (retry, fallback, Dead Letter Queue)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Проектирование модуля с нуля", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Saga-паттерн в распределённых системах?",
+      "questionSlug": "chto-takoe-saga-pattern-v-raspredelyonnykh-sistemakh",
+      "grade": "senior",
+      "tags": ["architecture", "saga", "distributed-systems", "microservices", "transactions"],
+      "seo": {
+        "title": "Saga-паттерн: распределённые транзакции в микросервисах — Gymterview",
+        "description": "Что такое Saga-паттерн? Оркестрация vs хореография, компенсирующие транзакции, eventual consistency. Примеры реализации на Java для микросервисов.",
+        "keywords": ["Saga паттерн", "распределённые транзакции", "оркестрация", "хореография", "компенсирующие транзакции", "eventual consistency", "микросервисы"],
+        "ogTitle": "Saga-паттерн: распределённые транзакции в микросервисах — Gymterview",
+        "ogDescription": "Разбор Saga-паттерна: оркестрация и хореография, компенсирующие транзакции в распределённых системах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Saga-паттерн в распределённых системах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Saga — паттерн управления распределёнными транзакциями, при котором длинная бизнес-транзакция разбивается на последовательность локальных транзакций. Каждая обновляет данные в своём сервисе и публикует событие для следующего шага, а при ошибке выполняются компенсирующие транзакции. Два подхода: оркестрация (центральный координатор управляет шагами) и хореография (каждый сервис слушает события и сам решает, что делать). Saga обеспечивает eventual consistency в микросервисной архитектуре, где ACID-транзакция через несколько БД невозможна."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Архитектура приложений", "url": "/topics/architecture" },
+          { "name": "Saga-паттерн", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

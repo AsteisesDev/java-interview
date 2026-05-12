@@ -1,0 +1,1064 @@
+{
+  "topic": "Java Core",
+  "topicSlug": "core",
+  "batch": 4,
+  "generatedAt": "2026-05-09T12:00:00Z",
+  "questions": [
+    {
+      "question": "Опишите алгоритм работы какого-нибудь сборщика мусора, реализованного в виртуальной машине HotSpot.",
+      "questionSlug": "opishite-algoritm-raboty-kakogo-nibud-sborschika-musora-realizovannogo-v-virtualnoj-mashine-hotspot",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "jvm",
+        "garbage-collection"
+      ],
+      "seo": {
+        "title": "Алгоритм работы сборщика мусора HotSpot (Serial GC) — Gymterview",
+        "description": "Подробное описание алгоритма работы Serial Garbage Collector в HotSpot: области памяти Young/Old generation, копирующий сборщик и mark-sweep-compact.",
+        "keywords": [
+          "сборщик мусора",
+          "HotSpot",
+          "Serial GC",
+          "garbage collector",
+          "Young generation",
+          "Old generation",
+          "mark-sweep-compact",
+          "Java"
+        ],
+        "ogTitle": "Алгоритм работы сборщика мусора HotSpot (Serial GC) — Gymterview",
+        "ogDescription": "Разбор алгоритма Serial GC: области Eden, Survivor, Old generation, копирующий сборщик и фаза mark-sweep-compact.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите алгоритм работы какого-нибудь сборщика мусора, реализованного в виртуальной машине HotSpot.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Serial GC делит память на Young generation (Eden + два Survivor spaces) и Old generation. В Young generation используется копирующий алгоритм: живые объекты из Eden и From space копируются в To space, затем области меняются ролями. В Old generation применяется алгоритм mark-sweep-compact: пометка живых объектов, удаление мёртвых и уплотнение памяти. Во время сборки приложение приостанавливается (stop-the-world)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Алгоритм Serial GC в HotSpot",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое `finalize()`? Зачем он нужен?",
+      "questionSlug": "chto-takoe-finalize-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "jvm",
+        "garbage-collection"
+      ],
+      "seo": {
+        "title": "Метод finalize() в Java: назначение и особенности — Gymterview",
+        "description": "Что такое метод finalize() в Java, зачем он нужен, почему он устарел начиная с Java 9 и какие альтернативы существуют: try-with-resources и Cleaner API.",
+        "keywords": [
+          "finalize",
+          "Java",
+          "сборщик мусора",
+          "деструктор",
+          "garbage collector",
+          "Cleaner API",
+          "try-with-resources"
+        ],
+        "ogTitle": "Метод finalize() в Java: назначение и особенности — Gymterview",
+        "ogDescription": "Разбор метода finalize(): вызов перед удалением объекта сборщиком мусора, проблемы и современные альтернативы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое `finalize()`? Зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод finalize() наследуется от Object и вызывается сборщиком мусора перед удалением объекта. Позволяет запрограммировать действия по очистке ресурсов (закрытие соединений, снятие блокировок). Устарел с Java 9 — вместо него рекомендуется использовать try-with-resources или java.lang.ref.Cleaner API. Вызов finalize() не гарантируется, объект после него должен быть повторно собран GC, а «возрождение» объекта через сохранение ссылки возможно только один раз."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Метод finalize()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что произойдет со сборщиком мусора, если выполнение метода `finalize()` требует ощутимо много времени, или в процессе выполнения будет выброшено исключение?",
+      "questionSlug": "chto-proizojdet-so-sborschikom-musora-esli-vypolnenie-metoda-finalize-trebuet-oschutimo-mnogo-vremeni-ili-budet-vybrosheno-isklyuchenie",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "jvm",
+        "garbage-collection",
+        "finalize"
+      ],
+      "seo": {
+        "title": "Поведение GC при долгом finalize() или исключении — Gymterview",
+        "description": "Как ведёт себя сборщик мусора Java, если finalize() выполняется долго или выбрасывает исключение. Поток Finalizer и его влияние на GC.",
+        "keywords": [
+          "finalize",
+          "сборщик мусора",
+          "Finalizer",
+          "исключение",
+          "garbage collector",
+          "Java",
+          "FinalizerThread"
+        ],
+        "ogTitle": "Поведение GC при долгом finalize() или исключении — Gymterview",
+        "ogDescription": "Метод finalize() выполняется в отдельном потоке Finalizer — зависание или исключение не блокирует сборщик мусора.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что произойдет со сборщиком мусора, если выполнение метода `finalize()` требует ощутимо много времени, или в процессе выполнения будет выброшено исключение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Вызов finalize() происходит в отдельном потоке Finalizer (java.lang.ref.Finalizer.FinalizerThread). Методы finalize() вызываются последовательно. Если finalize() зависнет, он подвесит поток Finalizer, но не сам сборщик мусора. Объекты без finalize() будут исправно удаляться, а имеющие finalize() будут копиться в очереди. Исключения, выброшенные в finalize(), игнорируются потоком Finalizer и не влияют на работу GC."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "GC и долгий finalize()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются `final`, `finally` и `finalize()`?",
+      "questionSlug": "chem-otlichayutsya-final-finally-i-finalize",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "keywords",
+        "exceptions",
+        "garbage-collection"
+      ],
+      "seo": {
+        "title": "Разница между final, finally и finalize() в Java — Gymterview",
+        "description": "Чем отличаются ключевое слово final, блок finally и метод finalize() в Java. Подробное сравнение с примерами кода для собеседования.",
+        "keywords": [
+          "final",
+          "finally",
+          "finalize",
+          "Java",
+          "модификатор",
+          "исключения",
+          "сборщик мусора",
+          "собеседование"
+        ],
+        "ogTitle": "Разница между final, finally и finalize() в Java — Gymterview",
+        "ogDescription": "final — модификатор неизменности, finally — гарантированный блок кода, finalize() — метод очистки перед сборкой мусора.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются `final`, `finally` и `finalize()`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор final запрещает наследование класса, переопределение метода и изменение значения поля/переменной. Оператор finally гарантирует выполнение блока кода независимо от исключений в try-catch. Метод finalize() вызывается сборщиком мусора перед удалением объекта для выполнения действий по очистке ресурсов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "final vs finally vs finalize()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Heap и Stack память в Java? Какая разница между ними?",
+      "questionSlug": "chto-takoe-heap-i-stack-pamyat-v-java-kakaya-raznitsa-mezhdu-nimi",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "jvm",
+        "memory"
+      ],
+      "seo": {
+        "title": "Heap и Stack память в Java: разница и особенности — Gymterview",
+        "description": "Что такое Heap (куча) и Stack (стек) в Java, чем они отличаются. Хранение объектов, примитивов, ссылок. StackOverflowError и OutOfMemoryError.",
+        "keywords": [
+          "Heap",
+          "Stack",
+          "куча",
+          "стек",
+          "память Java",
+          "StackOverflowError",
+          "OutOfMemoryError",
+          "JVM"
+        ],
+        "ogTitle": "Heap и Stack память в Java: разница и особенности — Gymterview",
+        "ogDescription": "Куча хранит объекты и доступна всему приложению, стек содержит локальные переменные и ссылки, работает по LIFO.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Heap и Stack память в Java? Какая разница между ними?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heap (куча) используется для выделения памяти под объекты и классы, доступна всем частям приложения. Stack (стек) содержит локальные переменные примитивных типов и ссылки на объекты, работает по схеме LIFO и используется только одним потоком. Стек значительно меньше кучи и работает быстрее. При переполнении стека выбрасывается StackOverflowError, кучи — OutOfMemoryError."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Heap и Stack память",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Верно ли утверждение, что примитивные типы данных всегда хранятся в стеке, а экземпляры ссылочных типов данных в куче?",
+      "questionSlug": "verno-li-utverzhdenie-chto-primitivnye-tipy-dannyh-vsegda-hranyatsya-v-steke-a-ekzemplyary-ssylochnyh-tipov-v-kuche",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "jvm",
+        "memory",
+        "primitives"
+      ],
+      "seo": {
+        "title": "Примитивы в стеке, объекты в куче — всегда ли это так? — Gymterview",
+        "description": "Верно ли, что примитивы всегда хранятся в стеке, а ссылочные типы в куче? Разбор хранения примитивных полей объектов в Java для собеседования.",
+        "keywords": [
+          "примитивные типы",
+          "стек",
+          "куча",
+          "heap",
+          "stack",
+          "хранение данных",
+          "Java",
+          "память"
+        ],
+        "ogTitle": "Примитивы в стеке, объекты в куче — всегда ли это так? — Gymterview",
+        "ogDescription": "Не совсем верно: примитивное поле экземпляра класса хранится в куче вместе с объектом, а не в стеке.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Верно ли утверждение, что примитивные типы данных всегда хранятся в стеке, а экземпляры ссылочных типов данных в куче?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Не совсем. Примитивное поле экземпляра класса хранится не в стеке, а в куче. Любой объект (всё, что явно или неявно создаётся при помощи оператора new) хранится в куче. В стеке хранятся только локальные примитивные переменные и ссылки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Примитивы в стеке или куче",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом передаются переменные в методы, по значению или по ссылке?",
+      "questionSlug": "kakim-obrazom-peredayutsya-peremennye-v-metody-po-znacheniyu-ili-po-ssylke",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "methods",
+        "pass-by-value"
+      ],
+      "seo": {
+        "title": "Передача переменных в методы Java: по значению или по ссылке? — Gymterview",
+        "description": "Как передаются переменные в методы Java — по значению или по ссылке. Разбор передачи примитивов и ссылочных типов с примерами кода.",
+        "keywords": [
+          "передача по значению",
+          "pass by value",
+          "передача по ссылке",
+          "Java",
+          "параметры метода",
+          "примитивы",
+          "ссылки"
+        ],
+        "ogTitle": "Передача переменных в методы Java: по значению или по ссылке? — Gymterview",
+        "ogDescription": "В Java параметры всегда передаются по значению — копируется значение примитива или копия ссылки на объект.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каким образом передаются переменные в методы, по значению или по ссылке?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java параметры всегда передаются только по значению. Для примитивов копируется значение, для ссылочных типов — копия ссылки. Через копию ссылки можно изменить внутреннее состояние объекта, но нельзя изменить саму оригинальную ссылку, указывающую на экземпляр."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Передача по значению или ссылке",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите про приведение типов. Что такое понижение и повышение типа?",
+      "questionSlug": "rasskazhite-pro-privedenie-tipov-chto-takoe-ponizhenie-i-povyshenie-tipa",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "types",
+        "casting"
+      ],
+      "seo": {
+        "title": "Приведение типов в Java: upcasting и downcasting — Gymterview",
+        "description": "Что такое приведение типов в Java: повышение (upcasting) и понижение (downcasting), расширение и сужение примитивных и ссылочных типов с примерами.",
+        "keywords": [
+          "приведение типов",
+          "casting",
+          "upcasting",
+          "downcasting",
+          "повышение типа",
+          "понижение типа",
+          "Java",
+          "типы данных"
+        ],
+        "ogTitle": "Приведение типов в Java: upcasting и downcasting — Gymterview",
+        "ogDescription": "Повышение типа (upcasting) происходит автоматически, понижение (downcasting) требует явного указания и может вызвать ClassCastException.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите про приведение типов. Что такое понижение и повышение типа?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Приведение типов (casting) — преобразование значения одного типа в другой. Повышение (upcasting/widening) — переход от более конкретного типа к менее конкретному, происходит автоматически и безопасно. Понижение (downcasting/narrowing) — переход от менее конкретного к более конкретному, требует явного указания типа и может вызвать ClassCastException. Для примитивов расширение сохраняет данные, а сужение может привести к их потере."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Приведение типов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда в приложении может быть выброшено исключение `ClassCastException`?",
+      "questionSlug": "kogda-v-prilozhenii-mozhet-byt-vybrosheno-isklyuchenie-classcastexception",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "exceptions",
+        "casting"
+      ],
+      "seo": {
+        "title": "ClassCastException в Java: когда возникает — Gymterview",
+        "description": "Когда выбрасывается ClassCastException в Java. Разбор ошибки приведения типов — потомок RuntimeException, возникает при некорректном downcasting.",
+        "keywords": [
+          "ClassCastException",
+          "приведение типов",
+          "RuntimeException",
+          "Java",
+          "исключение",
+          "downcasting"
+        ],
+        "ogTitle": "ClassCastException в Java: когда возникает — Gymterview",
+        "ogDescription": "ClassCastException выбрасывается при попытке некорректного приведения объекта к несовместимому типу во время выполнения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда в приложении может быть выброшено исключение `ClassCastException`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ClassCastException (потомок RuntimeException) выбрасывается при ошибке приведения типа — когда объект пытаются привести к типу, экземпляром которого он не является. Например, при нисходящем приведении (downcasting) объекта родительского класса к дочернему, если реальный тип объекта не соответствует целевому."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "ClassCastException",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое литералы?",
+      "questionSlug": "chto-takoe-literaly",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "basics",
+        "literals"
+      ],
+      "seo": {
+        "title": "Литералы в Java: что это и какие бывают — Gymterview",
+        "description": "Что такое литералы в Java — явно заданные значения-константы в коде программы. Виды литералов: числовые, строковые, символьные, логические.",
+        "keywords": [
+          "литералы",
+          "Java",
+          "константы",
+          "строковые литералы",
+          "числовые литералы",
+          "типы данных"
+        ],
+        "ogTitle": "Литералы в Java: что это и какие бывают — Gymterview",
+        "ogDescription": "Литералы — это явно заданные значения в коде программы, константы определённого типа, присутствующие в момент запуска.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое литералы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Литералы — это явно заданные значения в коде программы, константы определённого типа, которые находятся в коде в момент запуска. Например, \"Hello world!\" — строковый литерал, 0b1101010110 — числовой литерал. Литералы бывают разных типов: целочисленные, с плавающей точкой, символьные, строковые и логические."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Литералы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое autoboxing (автоупаковка) в Java и каковы правила упаковки примитивных типов в классы-обертки?",
+      "questionSlug": "chto-takoe-autoboxing-avtoupakovka-v-java-i-kakovy-pravila-upakovki-primitivnyh-tipov-v-klassy-obertki",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "autoboxing",
+        "primitives",
+        "wrappers"
+      ],
+      "seo": {
+        "title": "Autoboxing в Java: автоупаковка примитивов в обёртки — Gymterview",
+        "description": "Что такое autoboxing (автоупаковка) в Java, правила упаковки примитивных типов в классы-обёртки, кэширование значений в диапазоне -128..127.",
+        "keywords": [
+          "autoboxing",
+          "автоупаковка",
+          "классы-обертки",
+          "примитивы",
+          "Integer",
+          "boxing",
+          "unboxing",
+          "Java"
+        ],
+        "ogTitle": "Autoboxing в Java: автоупаковка примитивов в обёртки — Gymterview",
+        "ogDescription": "Автоупаковка — неявная инициализация объектов классов-оберток значениями примитивных типов без явного использования конструктора.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое autoboxing (автоупаковка) в Java и каковы правила упаковки примитивных типов в классы-обертки?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Автоупаковка — механизм неявной инициализации объектов классов-оберток (Integer, Long и др.) значениями примитивных типов без явного вызова конструктора. Происходит при прямом присваивании или передаче в параметры метода. Требует точного соответствия типов для переменных. Целочисленные обёртки в диапазоне -128..+127, созданные автоупаковкой, кэшируются JVM — обёртки с одинаковыми значениями будут ссылками на один объект."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Autoboxing (автоупаковка)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть особенности класса `String`?",
+      "questionSlug": "kakie-est-osobennosti-klassa-string",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string"
+      ],
+      "seo": {
+        "title": "Особенности класса String в Java — Gymterview",
+        "description": "Ключевые особенности класса String в Java: неизменяемость, пул строк, конкатенация оператором +, использование в switch с Java 7.",
+        "keywords": [
+          "String",
+          "Java",
+          "неизменяемый",
+          "immutable",
+          "пул строк",
+          "конкатенация",
+          "строки"
+        ],
+        "ogTitle": "Особенности класса String в Java — Gymterview",
+        "ogDescription": "String — неизменяемый (immutable) и финализированный тип данных. Литералы хранятся в пуле строк, поддерживает конкатенацию через +.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть особенности класса `String`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "String — неизменяемый (immutable) и финализированный тип данных. Строки-литералы и интернированные объекты String хранятся в пуле строк. Объект String можно создать с помощью двойных кавычек. Поддерживается конкатенация оператором +. Начиная с Java 7, строки можно использовать в конструкции switch."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Особенности класса String",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое пул строк?",
+      "questionSlug": "chto-takoe-pul-strok",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string",
+        "memory"
+      ],
+      "seo": {
+        "title": "Пул строк (String Pool) в Java — Gymterview",
+        "description": "Что такое пул строк в Java: хранение в Heap, интернирование, экономия памяти, паттерн Flyweight. Compact Strings в Java 9 и метод intern().",
+        "keywords": [
+          "пул строк",
+          "String Pool",
+          "Java",
+          "интернирование",
+          "intern",
+          "Flyweight",
+          "Compact Strings",
+          "Heap"
+        ],
+        "ogTitle": "Пул строк (String Pool) в Java — Gymterview",
+        "ogDescription": "Пул строк — набор строк в Heap, экономящий память за счёт повторного использования одинаковых строковых объектов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое пул строк?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пул строк — набор строк, хранящийся в Heap. Возможен благодаря неизменяемости строк. При создании строки через литерал сначала ищется строка с таким же значением в пуле; если найдена — возвращается ссылка на неё. При использовании new создаётся новый объект, который можно поместить в пул методом intern(). Пул строк — пример паттерна Flyweight. С Java 9 строки хранятся в byte[] вместо char[] (Compact Strings)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Пул строк",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему `String` неизменяемый и финализированный класс?",
+      "questionSlug": "pochemu-string-neizmenyaemyj-i-finalizirovannyj-klass",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "string",
+        "immutable"
+      ],
+      "seo": {
+        "title": "Почему String неизменяемый и final класс в Java — Gymterview",
+        "description": "Почему класс String в Java является immutable и final: пул строк, безопасность, потокобезопасность, кэширование hashCode, загрузка классов.",
+        "keywords": [
+          "String",
+          "immutable",
+          "final",
+          "неизменяемый",
+          "Java",
+          "потокобезопасность",
+          "пул строк",
+          "hashCode"
+        ],
+        "ogTitle": "Почему String неизменяемый и final класс в Java — Gymterview",
+        "ogDescription": "Неизменяемость String обеспечивает работу пула строк, безопасность, потокобезопасность и кэширование hashCode.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему `String` неизменяемый и финализированный класс?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неизменяемость String обеспечивает: работу пула строк (интернирование невозможно с изменяемыми строками), безопасность (нельзя подменить значение пароля или URL), потокобезопасность без синхронизации, корректную загрузку классов через classloader, кэширование hashCode при создании (эффективный ключ HashMap)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Почему String immutable",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему `char[]` предпочтительнее `String` для хранения пароля?",
+      "questionSlug": "pochemu-char-predpochtitelnee-string-dlya-hraneniya-parolya",
+      "grade": "middle",
+      "tags": [
+        "core",
+        "string",
+        "security"
+      ],
+      "seo": {
+        "title": "Почему char[] лучше String для хранения пароля в Java — Gymterview",
+        "description": "Почему массив char[] предпочтительнее String для хранения пароля в Java: возможность очистки памяти, риски пула строк и безопасность.",
+        "keywords": [
+          "char массив",
+          "String",
+          "пароль",
+          "безопасность",
+          "Java",
+          "пул строк",
+          "security",
+          "хранение пароля"
+        ],
+        "ogTitle": "Почему char[] лучше String для хранения пароля в Java — Gymterview",
+        "ogDescription": "Строка остаётся в пуле до сборки мусора. Массив char[] можно очистить сразу после использования, исключив утечку пароля.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему `char[]` предпочтительнее `String` для хранения пароля?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Строка после создания остаётся в пуле до удаления сборщиком мусора, и всё это время пароль доступен в памяти в виде текста. Массив char[] можно явно очистить (заполнить нулями) сразу после использования пароля, что устраняет риск утечки через доступ к памяти."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "char[] vs String для пароля",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему строка является популярным ключом в `HashMap` в Java?",
+      "questionSlug": "pochemu-stroka-yavlyaetsya-populyarnym-klyuchom-v-hashmap-v-java",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string",
+        "collections",
+        "hashmap"
+      ],
+      "seo": {
+        "title": "Почему String популярный ключ HashMap в Java — Gymterview",
+        "description": "Почему строка является популярным ключом HashMap в Java: неизменяемость, кэширование hashCode при создании, быстрая обработка ключей.",
+        "keywords": [
+          "String",
+          "HashMap",
+          "ключ",
+          "hashCode",
+          "кэширование",
+          "Java",
+          "неизменяемость",
+          "immutable"
+        ],
+        "ogTitle": "Почему String популярный ключ HashMap в Java — Gymterview",
+        "ogDescription": "Строки неизменяемы, их hashCode кэшируется при создании — повторный пересчёт не нужен, что ускоряет работу HashMap.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему строка является популярным ключом в `HashMap` в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поскольку строки неизменяемы, их хэш код вычисляется и кэшируется в момент создания, не требуя повторного пересчёта при дальнейшем использовании. Поэтому в качестве ключа HashMap они обрабатываются быстрее других объектов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "String как ключ HashMap",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что делает метод `intern()` в классе `String`?.",
+      "questionSlug": "chto-delaet-metod-intern-v-klasse-string",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string",
+        "memory"
+      ],
+      "seo": {
+        "title": "Метод String.intern() в Java — Gymterview",
+        "description": "Что делает метод intern() в классе String: сохранение строки в пуле строк или получение ссылки на существующую строку из пула.",
+        "keywords": [
+          "intern",
+          "String",
+          "пул строк",
+          "String Pool",
+          "Java",
+          "интернирование строк"
+        ],
+        "ogTitle": "Метод String.intern() в Java — Gymterview",
+        "ogDescription": "Метод intern() помещает строку в пул строк или возвращает ссылку на уже существующую строку с таким же значением.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что делает метод `intern()` в классе `String`?.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод intern() используется для сохранения строки в пуле строк или получения ссылки на строку, если такая строка уже находится в пуле. Это позволяет экономить память и сравнивать строки по ссылке (==) вместо equals()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Метод intern()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли использовать строки в конструкции `switch`?",
+      "questionSlug": "mozhno-li-ispolzovat-stroki-v-konstruktsii-switch",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string",
+        "control-flow"
+      ],
+      "seo": {
+        "title": "Строки в switch в Java — Gymterview",
+        "description": "Можно ли использовать строки в конструкции switch в Java: поддержка с Java 7, чувствительность к регистру, сравнение через equals() и NullPointerException.",
+        "keywords": [
+          "switch",
+          "String",
+          "Java 7",
+          "строки",
+          "управляющие конструкции",
+          "equals",
+          "NullPointerException"
+        ],
+        "ogTitle": "Строки в switch в Java — Gymterview",
+        "ogDescription": "С Java 7 строки можно использовать в switch. Сравнение выполняется через equals(), строки чувствительны к регистру.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли использовать строки в конструкции `switch`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, начиная с Java 7 в операторе switch можно использовать строки. Строки чувствительны к регистру, сравнение выполняется через equals(), поэтому нужно предусмотреть проверку на null во избежание NullPointerException. Компилятор генерирует более эффективный байткод для строк в switch, чем для цепочки if-else."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Строки в switch",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая основная разница между `String`, `StringBuffer`, `StringBuilder`?",
+      "questionSlug": "kakaya-osnovnaya-raznitsa-mezhdu-string-stringbuffer-stringbuilder",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "string",
+        "stringbuffer",
+        "stringbuilder"
+      ],
+      "seo": {
+        "title": "String vs StringBuffer vs StringBuilder в Java — Gymterview",
+        "description": "Основная разница между String, StringBuffer и StringBuilder в Java: неизменяемость, потокобезопасность, производительность и применение.",
+        "keywords": [
+          "String",
+          "StringBuffer",
+          "StringBuilder",
+          "Java",
+          "immutable",
+          "потокобезопасность",
+          "конкатенация",
+          "сравнение"
+        ],
+        "ogTitle": "String vs StringBuffer vs StringBuilder в Java — Gymterview",
+        "ogDescription": "String — неизменяемый, StringBuffer — изменяемый и синхронизированный, StringBuilder — изменяемый и несинхронизированный (быстрее).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая основная разница между `String`, `StringBuffer`, `StringBuilder`?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "String — неизменяемый (immutable), нельзя модифицировать, только заменить новым экземпляром. StringBuffer — изменяемый и потокобезопасный (синхронизированный), используется для частой модификации строк в многопоточной среде. StringBuilder (добавлен в Java 5) — идентичен StringBuffer, но не синхронизирован, поэтому работает быстрее в однопоточной среде."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "String vs StringBuffer vs StringBuilder",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое класс `Object`? Какие в нем есть методы?",
+      "questionSlug": "chto-takoe-klass-object-kakie-v-nem-est-metody",
+      "grade": "junior",
+      "tags": [
+        "core",
+        "object",
+        "methods"
+      ],
+      "seo": {
+        "title": "Класс Object в Java: методы и назначение — Gymterview",
+        "description": "Класс Object в Java — базовый класс для всех объектов. Обзор методов: equals, hashCode, toString, clone, getClass, wait, notify, finalize.",
+        "keywords": [
+          "Object",
+          "Java",
+          "базовый класс",
+          "equals",
+          "hashCode",
+          "toString",
+          "clone",
+          "wait",
+          "notify",
+          "finalize"
+        ],
+        "ogTitle": "Класс Object в Java: методы и назначение — Gymterview",
+        "ogDescription": "Object — базовый класс всех объектов Java. Содержит методы equals, hashCode, toString, clone, getClass, wait, notify, finalize.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое класс `Object`? Какие в нем есть методы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Object — базовый класс для всех объектов в Java. Любой класс наследуется от Object. Его методы: equals(Object) — сравнение по значению, hashCode() — хэш-код объекта, toString() — строковое представление, getClass() — класс объекта в runtime, clone() — копия объекта, notify()/notifyAll() — возобновление ожидающих потоков, wait() — приостановка потока, finalize() — вызывается GC перед удалением объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java Core",
+            "url": "/topics/core"
+          },
+          {
+            "name": "Класс Object и его методы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

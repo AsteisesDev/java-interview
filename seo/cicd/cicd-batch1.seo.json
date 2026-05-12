@@ -1,0 +1,746 @@
+{
+  "topic": "CI/CD",
+  "topicSlug": "cicd",
+  "batch": 1,
+  "generatedAt": "2026-05-09T16:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое CI (Continuous Integration)",
+      "questionSlug": "chto-takoe-ci-continuous-integration",
+      "grade": "junior",
+      "tags": [
+        "cicd",
+        "continuous-integration",
+        "автоматизация",
+        "сборка",
+        "тестирование"
+      ],
+      "seo": {
+        "title": "Что такое CI (Continuous Integration) — практика непрерывной интеграции — Gymterview",
+        "description": "CI — практика частой интеграции кода в общий репозиторий с автоматической сборкой и тестированием. Принципы CI, типичный цикл и зачем это нужно разработчику.",
+        "keywords": [
+          "Continuous Integration",
+          "CI что это",
+          "непрерывная интеграция",
+          "CI практика разработки",
+          "автоматическая сборка"
+        ],
+        "ogTitle": "Что такое CI (Continuous Integration) — принципы и цикл работы",
+        "ogDescription": "Continuous Integration — регулярная интеграция кода с автоматической сборкой и тестами. Быстрая обратная связь и раннее обнаружение ошибок.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CI (Continuous Integration)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Continuous Integration — практика, при которой разработчики регулярно интегрируют код в общий репозиторий, после чего автоматически выполняются сборка и тестирование. Принципы: единый репозиторий, автоматическая сборка и тесты, быстрая обратная связь, частая интеграция."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Что такое CI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CD (Continuous Delivery и Continuous Deployment)",
+      "questionSlug": "chto-takoe-cd-continuous-delivery-i-continuous-deployment",
+      "grade": "junior",
+      "tags": [
+        "cicd",
+        "continuous-delivery",
+        "continuous-deployment",
+        "деплой",
+        "автоматизация"
+      ],
+      "seo": {
+        "title": "Continuous Delivery vs Continuous Deployment — в чём разница — Gymterview",
+        "description": "Continuous Delivery — код всегда готов к деплою, но релиз ручной. Continuous Deployment — автоматический деплой на production. Сравнение и применимость.",
+        "keywords": [
+          "Continuous Delivery",
+          "Continuous Deployment",
+          "CD что это",
+          "разница Delivery Deployment",
+          "непрерывная доставка"
+        ],
+        "ogTitle": "Continuous Delivery vs Continuous Deployment — ключевые различия",
+        "ogDescription": "Continuous Delivery — ручной деплой по кнопке. Continuous Deployment — автоматический. В банках используют Delivery, в стартапах — Deployment.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CD (Continuous Delivery и Continuous Deployment)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Continuous Delivery — код всегда готов к деплою на production, но развёртывание выполняется вручную. Continuous Deployment — расширение Delivery, при котором каждое изменение, прошедшее пайплайн, автоматически разворачивается на production без ручного вмешательства."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Continuous Delivery vs Deployment",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужен CI/CD",
+      "questionSlug": "zachem-nuzhen-cicd",
+      "grade": "junior",
+      "tags": [
+        "cicd",
+        "преимущества",
+        "автоматизация",
+        "devops"
+      ],
+      "seo": {
+        "title": "Зачем нужен CI/CD — 7 преимуществ непрерывной интеграции и доставки — Gymterview",
+        "description": "CI/CD решает проблемы интеграционного ада, ручных ошибок и долгого цикла обратной связи. Раннее обнаружение багов, ускорение доставки, повторяемость сборки.",
+        "keywords": [
+          "зачем нужен CI/CD",
+          "преимущества CI/CD",
+          "CI/CD проблемы без",
+          "автоматизация сборки преимущества"
+        ],
+        "ogTitle": "Зачем нужен CI/CD — преимущества и проблемы без него",
+        "ogDescription": "Без CI/CD — интеграционный ад, ручные ошибки, поздние баги. С CI/CD — раннее обнаружение ошибок, ускорение доставки, повторяемость процесса.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужен CI/CD",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CI/CD обеспечивает раннее обнаружение ошибок, уменьшение рисков за счёт маленьких частых изменений, ускорение доставки, повторяемость сборки, прозрачность процесса и снижение стоимости исправлений. Без CI/CD возникают интеграционный ад, ручные ошибки и непредсказуемые релизы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Зачем нужен CI/CD",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каковы основные этапы CI/CD пайплайна",
+      "questionSlug": "osnovnye-etapy-cicd-pajplajna",
+      "grade": "junior",
+      "tags": [
+        "cicd",
+        "pipeline",
+        "этапы",
+        "сборка",
+        "тестирование",
+        "деплой"
+      ],
+      "seo": {
+        "title": "8 этапов CI/CD пайплайна — от Checkout до Smoke Tests — Gymterview",
+        "description": "Типичный CI/CD пайплайн для Java: Checkout, Build, Test, Code Quality, Package, Publish, Deploy, Acceptance Tests. Пример Jenkinsfile с этапами.",
+        "keywords": [
+          "этапы CI/CD пайплайна",
+          "CI/CD pipeline stages",
+          "стадии пайплайна",
+          "Checkout Build Test Deploy"
+        ],
+        "ogTitle": "8 этапов CI/CD пайплайна — полный цикл от кода до продакшена",
+        "ogDescription": "Checkout, Build, Test, Quality, Package, Publish, Deploy, Smoke Tests — 8 этапов типичного CI/CD пайплайна для Java-проекта с примером Jenkinsfile.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каковы основные этапы CI/CD пайплайна",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Типичный CI/CD пайплайн включает 8 этапов: Checkout (получение кода), Build (сборка), Test (тестирование), Code Quality (статический анализ, SonarQube), Package (создание JAR/Docker-образа), Publish (загрузка в Nexus), Deploy (развёртывание) и Smoke/Acceptance Tests (приёмочные тесты)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Этапы пайплайна",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие best practices CI/CD вы знаете",
+      "questionSlug": "best-practices-cicd",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "best-practices",
+        "pipeline-as-code",
+        "infrastructure-as-code",
+        "feature-flags"
+      ],
+      "seo": {
+        "title": "Best practices CI/CD — 14 лучших практик для CI и CD — Gymterview",
+        "description": "Лучшие практики CI: частые коммиты, быстрая сборка, автотесты. Практики CD: Pipeline as Code, IaC, идентичные окружения, feature flags, секреты не в коде.",
+        "keywords": [
+          "best practices CI/CD",
+          "лучшие практики CI/CD",
+          "Pipeline as Code",
+          "Infrastructure as Code",
+          "feature flags CI/CD"
+        ],
+        "ogTitle": "14 лучших практик CI/CD — от частых коммитов до feature flags",
+        "ogDescription": "CI: коммитьте часто, чините сборку сразу, быстрый пайплайн. CD: Pipeline as Code, IaC, идентичные окружения, rollback, секреты не в коде.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие best practices CI/CD вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CI: частые коммиты, не коммитить сломанный код, чинить сборку немедленно, писать автотесты, быстрая сборка, собирать артефакт один раз. CD: Infrastructure as Code, Pipeline as Code, идентичные окружения, feature flags, мониторинг, rollback, секреты не в коде, версионирование артефактов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Best practices CI/CD",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют стратегии деплоя",
+      "questionSlug": "strategii-deploya",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "deploy",
+        "blue-green",
+        "canary",
+        "rolling-update",
+        "стратегии"
+      ],
+      "seo": {
+        "title": "5 стратегий деплоя — Blue-Green, Canary, Rolling Update — Gymterview",
+        "description": "Стратегии развёртывания: Recreate, Rolling Update, Blue-Green, Canary, A/B Testing. Сравнение плюсов, минусов и применимости в банковской среде.",
+        "keywords": [
+          "стратегии деплоя",
+          "Blue-Green Deployment",
+          "Canary Deployment",
+          "Rolling Update",
+          "стратегии развёртывания"
+        ],
+        "ogTitle": "5 стратегий деплоя — от Recreate до Canary Deployment",
+        "ogDescription": "Recreate — даунтайм. Rolling Update — поэтапно. Blue-Green — мгновенный откат. Canary — 5% трафика. A/B — бизнес-гипотезы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют стратегии деплоя",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные стратегии: Recreate (остановить старую, запустить новую — есть даунтайм), Rolling Update (обновление по одному инстансу), Blue-Green (два окружения с переключением трафика, мгновенный откат), Canary (новая версия на 5% трафика с мониторингом), A/B Testing (разные версии для разных групп пользователей)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Стратегии деплоя",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Jenkins",
+      "questionSlug": "chto-takoe-jenkins",
+      "grade": "junior",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "автоматизация",
+        "open-source",
+        "java"
+      ],
+      "seo": {
+        "title": "Что такое Jenkins — CI/CD сервер автоматизации на Java — Gymterview",
+        "description": "Jenkins — open-source сервер автоматизации на Java для CI/CD. Более 1800 плагинов, Pipeline as Code, распределённая архитектура master/agent, REST API.",
+        "keywords": [
+          "Jenkins что это",
+          "Jenkins CI/CD",
+          "Jenkins сервер автоматизации",
+          "Jenkins Java",
+          "Jenkins плагины"
+        ],
+        "ogTitle": "Что такое Jenkins — open-source CI/CD сервер на Java",
+        "ogDescription": "Jenkins — бесплатный сервер автоматизации с 1800+ плагинами. Поддержка Pipeline as Code, распределённой сборки, REST API. Популярен в enterprise.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Jenkins",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenkins — open-source сервер автоматизации на Java (лицензия MIT) для реализации CI/CD. Кроссплатформенный, расширяемый (1800+ плагинов), поддерживает Pipeline as Code через Jenkinsfile, распределённую сборку master/agent, веб-интерфейс и REST API."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Что такое Jenkins",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова архитектура Jenkins (master/agent)",
+      "questionSlug": "arkhitektura-jenkins-master-agent",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "master",
+        "agent",
+        "архитектура",
+        "docker",
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Архитектура Jenkins master/agent — Controller и Node — Gymterview",
+        "description": "Jenkins Master управляет конфигурацией и распределяет задачи. Agent выполняет сборки. Подключение через SSH, JNLP, Docker, Kubernetes. Примеры Jenkinsfile.",
+        "keywords": [
+          "Jenkins архитектура",
+          "Jenkins master agent",
+          "Jenkins Controller Node",
+          "Jenkins Docker agent",
+          "Jenkins Kubernetes"
+        ],
+        "ogTitle": "Архитектура Jenkins master/agent — как устроена распределённая сборка",
+        "ogDescription": "Master управляет и распределяет задачи. Agent выполняет сборки. Подключение: SSH, JNLP, Docker, Kubernetes. Агенты помечаются labels.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова архитектура Jenkins (master/agent)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenkins использует распределённую архитектуру master/agent. Master (Controller) управляет конфигурацией, планированием и распределением задач. Agent (Node) — рабочая машина для выполнения сборок. Способы подключения агентов: SSH, JNLP, Docker-контейнер, Kubernetes Pod."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Архитектура master/agent",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Jenkinsfile и чем отличается Declarative Pipeline от Scripted Pipeline",
+      "questionSlug": "jenkinsfile-declarative-vs-scripted-pipeline",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "jenkinsfile",
+        "declarative-pipeline",
+        "scripted-pipeline",
+        "groovy"
+      ],
+      "seo": {
+        "title": "Jenkinsfile — Declarative vs Scripted Pipeline — сравнение — Gymterview",
+        "description": "Jenkinsfile описывает CI/CD пайплайн на Groovy DSL. Declarative — структурированный и рекомендуемый. Scripted — полноценный Groovy для сложных случаев.",
+        "keywords": [
+          "Jenkinsfile что это",
+          "Declarative Pipeline",
+          "Scripted Pipeline",
+          "Declarative vs Scripted",
+          "Pipeline as Code Jenkins"
+        ],
+        "ogTitle": "Jenkinsfile — Declarative vs Scripted Pipeline: что выбрать",
+        "ogDescription": "Declarative Pipeline — строгий синтаксис, валидация до запуска, секция post. Scripted — полный Groovy, гибкость, ошибки в runtime. Рекомендуется Declarative.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Jenkinsfile и чем отличается Declarative Pipeline от Scripted Pipeline",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jenkinsfile — текстовый файл с описанием CI/CD пайплайна на Groovy DSL, хранится в корне репозитория. Declarative Pipeline — структурированный синтаксис, проще, валидируется до запуска, рекомендуется Jenkins. Scripted Pipeline — полноценный Groovy, максимальная гибкость, но сложнее и ошибки только в runtime."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Declarative vs Scripted Pipeline",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные секции Jenkinsfile вы знаете",
+      "questionSlug": "osnovnye-sektsii-jenkinsfile",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "jenkinsfile",
+        "pipeline",
+        "agent",
+        "stages",
+        "post",
+        "environment"
+      ],
+      "seo": {
+        "title": "Секции Jenkinsfile — agent, stages, steps, post, environment — Gymterview",
+        "description": "Основные секции Declarative Pipeline: pipeline, agent, stages, steps, environment, tools, options, triggers, post. Примеры каждой секции с кодом.",
+        "keywords": [
+          "секции Jenkinsfile",
+          "Jenkinsfile agent",
+          "Jenkinsfile stages",
+          "Jenkinsfile post",
+          "Jenkinsfile environment options"
+        ],
+        "ogTitle": "Основные секции Jenkinsfile — полный обзор с примерами",
+        "ogDescription": "pipeline, agent, stages, steps, environment, tools, options, triggers, post — все секции Declarative Pipeline с примерами Groovy-кода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные секции Jenkinsfile вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Declarative Pipeline включает секции: pipeline (корневой блок), agent (где выполняется), stages/stage (стадии), steps (шаги), environment (переменные окружения), tools (JDK, Maven), options (timeout, timestamps), triggers (cron, pollSCM, webhook), post (always, success, failure, cleanup)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Секции Jenkinsfile",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать параметры, условия и параллельные стадии в Jenkins Pipeline",
+      "questionSlug": "parametry-usloviya-parallelnye-stadii-jenkins-pipeline",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "parameters",
+        "when",
+        "parallel",
+        "pipeline"
+      ],
+      "seo": {
+        "title": "Parameters, when, parallel в Jenkins Pipeline — примеры — Gymterview",
+        "description": "Параметры (string, choice, boolean) задают входные данные. when — условное выполнение стадии. parallel — параллельные стадии для ускорения пайплайна.",
+        "keywords": [
+          "Jenkins parameters",
+          "Jenkins when условие",
+          "Jenkins parallel стадии",
+          "параметры Jenkins Pipeline",
+          "параллельные стадии Jenkins"
+        ],
+        "ogTitle": "Параметры, условия и параллельные стадии в Jenkins Pipeline",
+        "ogDescription": "parameters — входные данные при запуске. when — условное выполнение (branch, expression). parallel — параллельные стадии для ускорения пайплайна.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать параметры, условия и параллельные стадии в Jenkins Pipeline",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Parameters (string, choice, booleanParam, password) задают входные данные при запуске сборки, доступны через params. When определяет условия выполнения стадии (branch, expression, allOf, not). Parallel позволяет запускать стадии параллельно для ускорения пайплайна, например, Unit Tests, Integration Tests и Security Scan одновременно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Параметры, условия и parallel",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие плагины Jenkins наиболее часто используются",
+      "questionSlug": "populyarnye-plaginy-jenkins",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "плагины",
+        "pipeline",
+        "sonarqube",
+        "docker",
+        "git"
+      ],
+      "seo": {
+        "title": "Популярные плагины Jenkins — 25+ плагинов по категориям — Gymterview",
+        "description": "Плагины Jenkins для сборки (Pipeline, Blue Ocean), Git, Maven, тестов (JUnit, JaCoCo, SonarQube), деплоя (Docker, Nexus, SSH), безопасности (RBAC, LDAP).",
+        "keywords": [
+          "плагины Jenkins",
+          "Jenkins plugins",
+          "Jenkins Blue Ocean",
+          "Jenkins SonarQube",
+          "Jenkins Docker Pipeline"
+        ],
+        "ogTitle": "25+ популярных плагинов Jenkins — полный обзор по категориям",
+        "ogDescription": "Pipeline, Blue Ocean, Git, Maven, JUnit, JaCoCo, SonarQube, Docker Pipeline, Nexus, Credentials Binding, RBAC, LDAP, Slack — обзор ключевых плагинов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие плагины Jenkins наиболее часто используются",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные плагины: Pipeline и Blue Ocean (визуализация), Git и GitHub (VCS), Maven и Gradle (сборка), JUnit и JaCoCo (тестирование), SonarQube Scanner (качество кода), Docker Pipeline и Nexus Artifact Uploader (деплой), Credentials Binding и Role-based Authorization (безопасность), Email Extension и Slack (уведомления)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Популярные плагины Jenkins",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Shared Libraries в Jenkins",
+      "questionSlug": "shared-libraries-jenkins",
+      "grade": "senior",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "shared-libraries",
+        "groovy",
+        "переиспользование",
+        "стандартизация"
+      ],
+      "seo": {
+        "title": "Shared Libraries в Jenkins — переиспользование логики пайплайнов — Gymterview",
+        "description": "Shared Libraries выносят общую логику пайплайнов в отдельный Git-репозиторий. Структура: vars/, src/, resources/. Подключение через @Library в Jenkinsfile.",
+        "keywords": [
+          "Shared Libraries Jenkins",
+          "Jenkins shared library",
+          "vars groovy Jenkins",
+          "@Library Jenkins",
+          "переиспользование пайплайнов"
+        ],
+        "ogTitle": "Shared Libraries в Jenkins — стандартизация пайплайнов для команд",
+        "ogDescription": "Shared Libraries — общая логика в отдельном Git-репозитории. Структура: vars (функции), src (классы), resources. Подключение: @Library('name') _.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Shared Libraries в Jenkins",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shared Libraries — механизм Jenkins для выноса общей логики пайплайнов в отдельный Git-репозиторий. Структура: vars/ (глобальные функции, вызываемые из Jenkinsfile), src/ (Groovy-классы), resources/ (конфиги, шаблоны). Подключаются через @Library('name') _ и позволяют стандартизировать CI/CD для десятков микросервисов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Shared Libraries",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять Credentials в Jenkins",
+      "questionSlug": "credentials-v-jenkins",
+      "grade": "middle",
+      "tags": [
+        "cicd",
+        "jenkins",
+        "credentials",
+        "безопасность",
+        "секреты",
+        "withCredentials"
+      ],
+      "seo": {
+        "title": "Credentials в Jenkins — безопасное хранение секретов — Gymterview",
+        "description": "Jenkins Credentials хранит пароли, SSH-ключи, токены в зашифрованном виде. Типы: username/password, secret text, SSH key. Использование через withCredentials.",
+        "keywords": [
+          "Jenkins Credentials",
+          "Jenkins секреты",
+          "withCredentials Jenkins",
+          "Jenkins credentials binding",
+          "управление секретами Jenkins"
+        ],
+        "ogTitle": "Credentials в Jenkins — типы, scope и использование в Pipeline",
+        "ogDescription": "Типы: username/password, secret text, secret file, SSH key, certificate. Scope: Global, System, Folder. Использование: environment credentials() и withCredentials.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять Credentials в Jenkins",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Credentials — механизм безопасного хранения секретов в Jenkins. Типы: Username with password, Secret text, Secret file, SSH key, Certificate. Области видимости: Global, System, Folder. Используются через environment { VAR = credentials('id') } или withCredentials([...]). Секреты маскируются в логах как ****."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "CI/CD",
+            "url": "/topics/cicd"
+          },
+          {
+            "name": "Credentials в Jenkins",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}
