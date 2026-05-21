@@ -1,0 +1,504 @@
+{
+  "topic": "Работа в CLI (Bash)",
+  "topicSlug": "bash",
+  "batch": 1,
+  "generatedAt": "2026-05-09T15:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое shell, bash, zsh? В чём различия?",
+      "questionSlug": "chto-takoe-shell-bash-zsh-v-chyom-razlichiya",
+      "grade": "junior",
+      "tags": ["bash", "shell", "zsh", "cli", "linux"],
+      "seo": {
+        "title": "Что такое shell, bash, zsh? Различия и сравнение — Gymterview",
+        "description": "Разбираем понятия shell, bash и zsh: что это за оболочки командной строки, чем они отличаются друг от друга и какую выбрать для работы в Linux и macOS.",
+        "keywords": ["shell", "bash", "zsh", "оболочка командной строки", "различия bash zsh", "Bourne Again Shell", "Z Shell", "cli"],
+        "ogTitle": "Shell, Bash, Zsh — что это и в чём различия? | Gymterview",
+        "ogDescription": "Подробное сравнение shell-оболочек bash и zsh: автодополнение, глобинг, плагины, конфигурация и POSIX-совместимость.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое shell, bash, zsh? В чём различия?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shell — программа-интерпретатор командной строки, предоставляющая интерфейс между пользователем и ОС. Bash (Bourne Again Shell) — стандартная оболочка Linux, созданная в 1989 году. Zsh (Z Shell) — расширенная оболочка с продвинутым автодополнением, расширенным глобингом и поддержкой Oh My Zsh, по умолчанию в macOS с Catalina."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Shell, Bash, Zsh", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные команды навигации по файловой системе существуют?",
+      "questionSlug": "kakie-osnovnye-komandy-navigatsii-po-failovoi-sisteme-sushchestvuyut",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "навигация", "файловая система"],
+      "seo": {
+        "title": "Команды навигации по файловой системе в Linux — Gymterview",
+        "description": "Основные команды навигации в терминале Linux: pwd, cd, ls, tree. Примеры использования, ключи и подробный разбор вывода ls -la для собеседования.",
+        "keywords": ["команды навигации linux", "pwd", "cd", "ls", "tree", "файловая система", "терминал", "bash команды"],
+        "ogTitle": "Навигация по файловой системе в Linux: pwd, cd, ls, tree | Gymterview",
+        "ogDescription": "Разбор основных команд навигации в терминале: pwd, cd, ls с ключами, tree. Примеры и подробный вывод ls -la.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные команды навигации по файловой системе существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные команды навигации: pwd — показывает текущую директорию, cd — переход между директориями (поддерживает абсолютные и относительные пути, ~, -, ..), ls — вывод содержимого директории (ключи -l, -a, -h, -S, -t, -R), tree — древовидный вывод структуры каталогов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Команды навигации", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с файлами и директориями из командной строки?",
+      "questionSlug": "kak-rabotat-s-failami-i-direktoriyami-iz-komandnoi-stroki",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "файлы", "директории"],
+      "seo": {
+        "title": "Работа с файлами и директориями в командной строке Linux — Gymterview",
+        "description": "Как создавать, копировать, перемещать и удалять файлы и директории в Linux: команды mkdir, touch, cp, mv, rm с примерами и ключами.",
+        "keywords": ["mkdir", "touch", "cp", "mv", "rm", "создание файлов linux", "удаление файлов", "копирование файлов", "bash"],
+        "ogTitle": "Файлы и директории в командной строке: mkdir, cp, mv, rm | Gymterview",
+        "ogDescription": "Полный разбор команд для работы с файлами и директориями в Linux: создание, копирование, перемещение и удаление.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с файлами и директориями из командной строки?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для работы с файлами и директориями используются команды: mkdir (-p для вложенных) — создание директорий, touch — создание файлов, cp (-r для рекурсивного) — копирование, mv — перемещение и переименование, rm (-r для директорий, -f для принудительного) — удаление."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Файлы и директории", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как просматривать содержимое файлов?",
+      "questionSlug": "kak-prosmatrivat-soderzhimoe-failov",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "cat", "less", "head", "tail"],
+      "seo": {
+        "title": "Просмотр содержимого файлов в Linux: cat, less, head, tail — Gymterview",
+        "description": "Как просматривать содержимое файлов в терминале Linux: команды cat, less, more, head, tail с примерами. Разбор ключей и сценариев использования.",
+        "keywords": ["cat", "less", "more", "head", "tail", "просмотр файлов linux", "содержимое файлов", "bash"],
+        "ogTitle": "Просмотр файлов в Linux: cat, less, head, tail | Gymterview",
+        "ogDescription": "Разбор команд для просмотра содержимого файлов в терминале: cat, less, more, head, tail с практическими примерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как просматривать содержимое файлов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные команды просмотра файлов: cat — вывод всего содержимого, less/more — постраничный просмотр с навигацией, head — вывод первых строк файла, tail — вывод последних строк (с ключом -f для отслеживания изменений в реальном времени)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Просмотр файлов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое wildcards (glob patterns) и как их использовать?",
+      "questionSlug": "chto-takoe-wildcards-glob-patterns-i-kak-ikh-ispolzovat",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "wildcards", "glob", "шаблоны"],
+      "seo": {
+        "title": "Wildcards (glob patterns) в Bash: что это и как использовать — Gymterview",
+        "description": "Что такое wildcards и glob patterns в Bash: символы *, ?, [], {}, расширенные шаблоны. Примеры использования масок для подстановки имён файлов.",
+        "keywords": ["wildcards", "glob patterns", "маски файлов", "bash шаблоны", "подстановка файлов", "звёздочка bash", "glob"],
+        "ogTitle": "Wildcards и glob patterns в Bash — подстановка имён файлов | Gymterview",
+        "ogDescription": "Подробный разбор wildcards в Bash: *, ?, [], {} и расширенные glob patterns с примерами использования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое wildcards (glob patterns) и как их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wildcards (glob patterns) — специальные символы, которые shell раскрывает в список подходящих имён файлов до передачи команде. Основные: * — любое количество символов, ? — один символ, [abc] — один из указанных символов, {a,b} — перебор вариантов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Wildcards и glob patterns", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает перенаправление ввода/вывода?",
+      "questionSlug": "kak-rabotaet-perenapravlenie-vvoda-vyvoda",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "перенаправление", "stdin", "stdout", "stderr"],
+      "seo": {
+        "title": "Перенаправление ввода/вывода в Bash: stdin, stdout, stderr — Gymterview",
+        "description": "Как работает перенаправление ввода/вывода в Bash: операторы >, >>, <, 2>, &>, потоки stdin, stdout, stderr. Примеры и подробное объяснение.",
+        "keywords": ["перенаправление ввода вывода", "stdin", "stdout", "stderr", "bash redirect", "оператор >", "оператор >>", "2>&1"],
+        "ogTitle": "Перенаправление ввода/вывода в Bash — stdin, stdout, stderr | Gymterview",
+        "ogDescription": "Разбор перенаправления потоков в Unix: stdin (0), stdout (1), stderr (2), операторы >, >>, <, 2>, &> с примерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает перенаправление ввода/вывода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Unix каждый процесс имеет три стандартных потока: stdin (0) — ввод, stdout (1) — вывод, stderr (2) — ошибки. Перенаправление выполняется операторами: > — запись в файл, >> — дозапись, < — чтение из файла, 2> — перенаправление ошибок, &> — оба потока, 2>&1 — stderr в stdout."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Перенаправление ввода/вывода", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое пайпы (pipes) и как их использовать?",
+      "questionSlug": "chto-takoe-paipy-pipes-i-kak-ikh-ispolzovat",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "pipe", "конвейер"],
+      "seo": {
+        "title": "Пайпы (pipes) в Bash: что это и как использовать — Gymterview",
+        "description": "Что такое пайпы (pipes) в Linux: оператор |, конвейеры команд, философия Unix. Примеры комбинирования команд через пайпы для обработки данных.",
+        "keywords": ["пайпы", "pipes", "конвейер bash", "оператор |", "pipe linux", "философия unix", "комбинирование команд"],
+        "ogTitle": "Пайпы (pipes) в Bash — конвейеры обработки данных | Gymterview",
+        "ogDescription": "Подробный разбор пайпов в Unix/Linux: оператор |, создание конвейеров команд и философия Unix — каждая программа делает одну вещь хорошо.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое пайпы (pipes) и как их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пайп (|) — механизм, соединяющий stdout одной команды со stdin другой, создавая конвейер обработки данных. Это ключевой принцип философии Unix: каждая программа делает одну вещь хорошо, а для сложных задач программы комбинируются через пайпы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Пайпы (pipes)", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как искать файлы с помощью find?",
+      "questionSlug": "kak-iskat-faily-s-pomoshchyu-find",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "find", "поиск файлов"],
+      "seo": {
+        "title": "Команда find в Linux: поиск файлов с примерами — Gymterview",
+        "description": "Как использовать команду find для поиска файлов в Linux: поиск по имени, типу, размеру, дате, правам. Примеры с -name, -type, -size, -exec.",
+        "keywords": ["find linux", "поиск файлов", "find команда", "find -name", "find -type", "find -exec", "find -size", "bash find"],
+        "ogTitle": "Команда find в Linux — поиск файлов по имени, типу, размеру | Gymterview",
+        "ogDescription": "Полный разбор команды find: поиск файлов по имени, типу, размеру, дате модификации, правам доступа с ключами -name, -type, -size, -exec.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как искать файлы с помощью find?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Команда find рекурсивно ищет файлы по заданным критериям: -name — по имени, -type f/d — по типу (файл/директория), -size — по размеру, -mtime — по дате модификации, -perm — по правам. Действия: -exec для выполнения команд над найденными файлами, -delete для удаления."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Команда find", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать grep для поиска текста?",
+      "questionSlug": "kak-ispolzovat-grep-dlya-poiska-teksta",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "grep", "поиск текста", "регулярные выражения"],
+      "seo": {
+        "title": "Команда grep в Linux: поиск текста с примерами — Gymterview",
+        "description": "Как использовать grep для поиска текста в файлах Linux: ключи -i, -r, -n, -l, -v, -c, регулярные выражения, egrep и практические примеры.",
+        "keywords": ["grep", "поиск текста linux", "grep команда", "grep -r", "grep регулярные выражения", "egrep", "grep примеры"],
+        "ogTitle": "Команда grep — поиск текста в файлах Linux | Gymterview",
+        "ogDescription": "Полный разбор команды grep: поиск текста по шаблону, регулярные выражения, рекурсивный поиск, ключи -i, -r, -n, -l, -v.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать grep для поиска текста?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Grep ищет строки, соответствующие шаблону, в файлах. Основные ключи: -i — без учёта регистра, -r — рекурсивный поиск, -n — номера строк, -l — только имена файлов, -v — инверсия, -c — количество совпадений. Поддерживает регулярные выражения (egrep/grep -E)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Команда grep", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать sed для обработки текста?",
+      "questionSlug": "kak-ispolzovat-sed-dlya-obrabotki-teksta",
+      "grade": "middle",
+      "tags": ["bash", "cli", "linux", "sed", "обработка текста", "потоковый редактор"],
+      "seo": {
+        "title": "Команда sed в Linux: потоковый редактор текста — Gymterview",
+        "description": "Как использовать sed для обработки текста в Linux: замена строк, удаление, вставка, регулярные выражения. Примеры sed с ключами -i, -n, -e.",
+        "keywords": ["sed", "sed linux", "потоковый редактор", "sed замена", "sed примеры", "sed -i", "обработка текста bash"],
+        "ogTitle": "Команда sed — потоковая обработка текста в Linux | Gymterview",
+        "ogDescription": "Разбор команды sed: замена текста (s///), удаление строк (d), вставка, адресация по номерам строк и регулярным выражениям.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать sed для обработки текста?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sed (stream editor) — потоковый редактор для преобразования текста. Основные операции: s/old/new/ — замена, d — удаление строк, i/a — вставка до/после строки. Поддерживает адресацию по номерам строк и регулярным выражениям. Ключ -i редактирует файл на месте."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Команда sed", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать awk для обработки текста?",
+      "questionSlug": "kak-ispolzovat-awk-dlya-obrabotki-teksta",
+      "grade": "middle",
+      "tags": ["bash", "cli", "linux", "awk", "обработка текста"],
+      "seo": {
+        "title": "Команда awk в Linux: обработка текста по столбцам — Gymterview",
+        "description": "Как использовать awk для обработки текста в Linux: выборка столбцов, фильтрация, вычисления, встроенные переменные NR, NF, FS. Примеры и синтаксис.",
+        "keywords": ["awk", "awk linux", "обработка текста awk", "awk примеры", "awk столбцы", "awk NR NF", "awk -F"],
+        "ogTitle": "Команда awk — обработка текста по столбцам в Linux | Gymterview",
+        "ogDescription": "Полный разбор awk: выборка полей, фильтрация строк, вычисления, встроенные переменные NR, NF, FS, BEGIN/END блоки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать awk для обработки текста?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Awk — мощный инструмент для обработки структурированного текста. Работает по принципу «шаблон — действие»: разбивает строки на поля ($1, $2, ...) по разделителю. Встроенные переменные: NR — номер строки, NF — количество полей, FS — разделитель. Поддерживает BEGIN/END блоки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Команда awk", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают команды sort, uniq, wc, cut и tr?",
+      "questionSlug": "kak-rabotayut-komandy-sort-uniq-wc-cut-i-tr",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "sort", "uniq", "wc", "cut", "tr"],
+      "seo": {
+        "title": "Команды sort, uniq, wc, cut и tr в Linux — Gymterview",
+        "description": "Как работают утилиты sort, uniq, wc, cut и tr в Linux: сортировка, уникальные строки, подсчёт слов, вырезание столбцов, замена символов с примерами.",
+        "keywords": ["sort linux", "uniq", "wc", "cut", "tr", "сортировка linux", "подсчёт строк", "вырезание столбцов"],
+        "ogTitle": "sort, uniq, wc, cut, tr — утилиты обработки текста в Linux | Gymterview",
+        "ogDescription": "Разбор текстовых утилит: sort — сортировка, uniq — уникальные строки, wc — подсчёт, cut — вырезание полей, tr — замена символов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают команды sort, uniq, wc, cut и tr?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sort — сортировка строк (ключи -n, -r, -k, -t). Uniq — удаление дублей из отсортированных данных (-c для подсчёта). Wc — подсчёт строк, слов, байтов (-l, -w, -c). Cut — вырезание полей или символов (-f, -d, -c). Tr — замена или удаление символов (-d, -s)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "sort, uniq, wc, cut, tr", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое переменные окружения и как с ними работать?",
+      "questionSlug": "chto-takoe-peremennye-okruzheniya-i-kak-s-nimi-rabotat",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "переменные окружения", "PATH", "export"],
+      "seo": {
+        "title": "Переменные окружения в Linux: PATH, export, env — Gymterview",
+        "description": "Что такое переменные окружения в Linux и как с ними работать: export, env, PATH, HOME, USER. Локальные и глобальные переменные, конфигурация.",
+        "keywords": ["переменные окружения", "environment variables", "PATH", "export", "env", "bash переменные", "HOME", "USER"],
+        "ogTitle": "Переменные окружения в Linux — PATH, export, env | Gymterview",
+        "ogDescription": "Разбор переменных окружения: создание через export, основные переменные PATH, HOME, USER, различие локальных и экспортированных переменных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое переменные окружения и как с ними работать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Переменные окружения — именованные значения, доступные процессу и его дочерним процессам, используемые для конфигурации. Основные: PATH — директории поиска программ, HOME — домашняя директория, USER — имя пользователя. Создаются через export, просматриваются через env или printenv."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Переменные окружения", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое алиасы и файлы конфигурации shell?",
+      "questionSlug": "chto-takoe-aliasy-i-faily-konfiguratsii-shell",
+      "grade": "junior",
+      "tags": ["bash", "cli", "linux", "alias", "bashrc", "конфигурация"],
+      "seo": {
+        "title": "Алиасы и файлы конфигурации shell: .bashrc, .zshrc — Gymterview",
+        "description": "Что такое алиасы в Bash и файлы конфигурации shell: .bashrc, .bash_profile, .zshrc. Создание alias, порядок загрузки конфигурационных файлов.",
+        "keywords": ["alias bash", "алиасы linux", ".bashrc", ".bash_profile", ".zshrc", "конфигурация shell", "alias команда"],
+        "ogTitle": "Алиасы и конфигурация shell — .bashrc, .bash_profile, .zshrc | Gymterview",
+        "ogDescription": "Подробный разбор алиасов в bash и файлов конфигурации: .bashrc, .bash_profile, .zshrc, порядок загрузки и различие login/non-login shell.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое алиасы и файлы конфигурации shell?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Алиасы (alias) — сокращения для часто используемых команд, создающие короткие имена для длинных команд. Файлы конфигурации: .bashrc — для интерактивных non-login сессий, .bash_profile — для login-сессий, .zshrc — аналог для zsh. Алиасы обычно записываются в эти файлы для постоянного действия."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Алиасы и конфигурация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять процессами в Linux?",
+      "questionSlug": "kak-upravlyat-protsessami-v-linux",
+      "grade": "middle",
+      "tags": ["bash", "cli", "linux", "процессы", "ps", "top", "kill"],
+      "seo": {
+        "title": "Управление процессами в Linux: ps, top, kill, jobs — Gymterview",
+        "description": "Как управлять процессами в Linux: просмотр через ps и top, фоновые процессы, kill, jobs, fg, bg. Примеры управления и мониторинга процессов.",
+        "keywords": ["процессы linux", "ps", "top", "kill", "jobs", "fg", "bg", "управление процессами", "PID"],
+        "ogTitle": "Управление процессами в Linux — ps, top, kill, jobs | Gymterview",
+        "ogDescription": "Разбор управления процессами: просмотр через ps/top, завершение через kill, фоновые процессы (&, jobs, fg, bg), приоритеты nice/renice.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять процессами в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Просмотр процессов: ps aux — все процессы, top/htop — интерактивный мониторинг. Завершение: kill PID, kill -9 PID (принудительное). Фоновые процессы: команда & — запуск в фоне, Ctrl+Z — приостановка, jobs — список, fg/bg — перевод на передний план/в фон."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Управление процессами", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое сигналы в Unix/Linux?",
+      "questionSlug": "chto-takoe-signaly-v-unix-linux",
+      "grade": "middle",
+      "tags": ["bash", "cli", "linux", "сигналы", "signals", "kill", "trap"],
+      "seo": {
+        "title": "Сигналы в Unix/Linux: SIGTERM, SIGKILL, SIGHUP, trap — Gymterview",
+        "description": "Что такое сигналы в Unix/Linux: SIGTERM, SIGKILL, SIGHUP, SIGINT и другие. Отправка сигналов через kill, перехват через trap. Таблица сигналов.",
+        "keywords": ["сигналы unix", "signals linux", "SIGTERM", "SIGKILL", "SIGHUP", "SIGINT", "kill сигнал", "trap bash"],
+        "ogTitle": "Сигналы в Unix/Linux — SIGTERM, SIGKILL, trap | Gymterview",
+        "ogDescription": "Подробный разбор сигналов Unix: SIGTERM, SIGKILL, SIGHUP, SIGINT — назначение, отправка через kill, перехват через trap в bash-скриптах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сигналы в Unix/Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сигналы — асинхронные уведомления, отправляемые процессам для управления их поведением. Основные: SIGTERM (15) — корректное завершение, SIGKILL (9) — принудительное завершение (нельзя перехватить), SIGINT (2) — прерывание (Ctrl+C), SIGHUP (1) — закрытие терминала. Перехват сигналов в скриптах выполняется через trap."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Сигналы Unix/Linux", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "topic": "Безопасность контейнеров",
+  "topicSlug": "container-security",
+  "batch": 1,
+  "generatedAt": "2026-05-09T19:00:00Z",
+  "questions": [
+    {
+      "question": "Какие основные угрозы безопасности контейнеров существуют?",
+      "questionSlug": "kakie-osnovnye-ugrozy-bezopasnosti-kontejnerov-sushchestvuyut",
+      "grade": "junior",
+      "tags": ["container-security", "docker", "kubernetes", "угрозы", "attack-surface"],
+      "seo": {
+        "title": "Угрозы безопасности контейнеров — 5 категорий рисков Docker и Kubernetes — Gymterview",
+        "description": "Основные угрозы контейнеров: уязвимости образов, побег из контейнера, неправильная настройка RBAC, supply chain атаки и перехват трафика. Разбор по категориям.",
+        "keywords": ["угрозы безопасности контейнеров", "container escape", "Docker безопасность", "Kubernetes угрозы", "supply chain security"],
+        "ogTitle": "Угрозы безопасности контейнеров — 5 категорий рисков",
+        "ogDescription": "Уязвимости образов, побег из контейнера, RBAC, supply chain и сетевые атаки. Полный разбор угроз Docker и Kubernetes для банковских систем.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные угрозы безопасности контейнеров существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Угрозы контейнеров делятся на 5 категорий: уровень образов (уязвимости, вредоносные образы, утечка секретов), уровень runtime (побег из контейнера, запуск от root, привилегированный режим), уровень оркестрации (RBAC, сетевые политики, API-сервер), уровень цепочки поставок (подмена зависимостей, компрометация CI/CD) и уровень сети (MITM, незашифрованный трафик)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Угрозы безопасности контейнеров", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое принцип наименьших привилегий и как он применяется в контейнерах?",
+      "questionSlug": "chto-takoe-princip-naimenshikh-privilegij-i-kak-on-primenyaetsya-v-kontejnerakh",
+      "grade": "junior",
+      "tags": ["container-security", "least-privilege", "docker", "kubernetes", "securityContext"],
+      "seo": {
+        "title": "Принцип наименьших привилегий в контейнерах — Docker и Kubernetes — Gymterview",
+        "description": "Принцип наименьших привилегий (PoLP) в контейнерах: удаление capabilities, запрет привилегированного режима, read-only FS, securityContext в Kubernetes.",
+        "keywords": ["принцип наименьших привилегий", "Least Privilege контейнеры", "capabilities Docker", "securityContext Kubernetes", "allowPrivilegeEscalation"],
+        "ogTitle": "Принцип наименьших привилегий в Docker и Kubernetes",
+        "ogDescription": "PoLP в контейнерах: запуск не от root, удаление capabilities (--cap-drop=ALL), запрет привилегированного режима, securityContext в Kubernetes.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое принцип наименьших привилегий и как он применяется в контейнерах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Принцип наименьших привилегий (Principle of Least Privilege) — каждый субъект должен иметь только минимально необходимые права. В контейнерах: запуск не от root (USER в Dockerfile), удаление capabilities (--cap-drop=ALL), запрет привилегированного режима, read-only FS, allowPrivilegeEscalation: false в Kubernetes securityContext."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Принцип наименьших привилегий", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как запустить контейнер не от пользователя root?",
+      "questionSlug": "kak-zapustit-kontejner-ne-ot-polzovatelya-root",
+      "grade": "junior",
+      "tags": ["container-security", "docker", "root", "USER", "runAsNonRoot"],
+      "seo": {
+        "title": "Запуск контейнера не от root — USER, runAsNonRoot, userns-remap — Gymterview",
+        "description": "Как запустить Docker-контейнер от непривилегированного пользователя: USER в Dockerfile, runAsNonRoot в Kubernetes, user namespace remapping. Типичные проблемы.",
+        "keywords": ["контейнер не от root", "USER Dockerfile", "runAsNonRoot Kubernetes", "userns-remap Docker", "безопасность контейнера root"],
+        "ogTitle": "Запуск контейнера не от root — 3 уровня защиты",
+        "ogDescription": "USER в Dockerfile, runAsNonRoot в Kubernetes и user namespace remapping. Решение типичных проблем: порты, права на запись, временные файлы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как запустить контейнер не от пользователя root?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три уровня защиты: 1) USER в Dockerfile — создать пользователя через adduser и переключиться на него. 2) runAsNonRoot: true в Kubernetes securityContext — Kubernetes откажется запускать под от root. 3) User namespace remapping в Docker daemon — UID 0 внутри контейнера сопоставляется с непривилегированным UID на хосте."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Запуск не от root", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем использовать минимальные базовые образы и какие варианты существуют?",
+      "questionSlug": "zachem-ispolzovat-minimalnye-bazovye-obrazy-i-kakie-varianty-sushchestvuyut",
+      "grade": "junior",
+      "tags": ["container-security", "docker", "alpine", "distroless", "jlink", "base-image"],
+      "seo": {
+        "title": "Минимальные базовые образы для Java — Alpine, Distroless, jlink — Gymterview",
+        "description": "Сравнение базовых образов для Java: eclipse-temurin JDK/JRE, Alpine, Google Distroless, кастомный JRE через jlink. Размер, attack surface, уязвимости.",
+        "keywords": ["минимальные базовые образы Docker", "distroless Java", "Alpine JRE", "jlink Docker", "attack surface контейнер"],
+        "ogTitle": "Минимальные базовые образы для Java — Alpine vs Distroless vs jlink",
+        "ogDescription": "Alpine (~90 MB), Distroless (~230 MB без shell), jlink (~60 MB). Чем меньше компонентов — тем меньше поверхность атаки и уязвимостей.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем использовать минимальные базовые образы и какие варианты существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Чем меньше компонентов в образе, тем меньше поверхность атаки. Варианты для Java: Alpine-based (~90 MB, есть shell), Google Distroless (~230 MB, без shell и пакетного менеджера), кастомный JRE через jlink (~60 MB, только нужные модули). Для production рекомендуется distroless или alpine с jlink."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Минимальные базовые образы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как сканировать Docker-образы на уязвимости?",
+      "questionSlug": "kak-skanirovat-docker-obrazy-na-uyazvimosti",
+      "grade": "middle",
+      "tags": ["container-security", "trivy", "snyk", "clair", "grype", "vulnerability-scanning"],
+      "seo": {
+        "title": "Сканирование Docker-образов на уязвимости — Trivy, Snyk, Grype — Gymterview",
+        "description": "Инструменты сканирования образов: Trivy, Snyk, Clair, Grype. Интеграция в Jenkins и GitHub Actions. Автоматическая блокировка сборки при CRITICAL уязвимостях.",
+        "keywords": ["сканирование Docker образов", "Trivy Docker", "Snyk container", "Grype Anchore", "уязвимости контейнеров CVE"],
+        "ogTitle": "Сканирование Docker-образов на уязвимости — Trivy, Snyk, Clair, Grype",
+        "ogDescription": "Trivy, Snyk, Clair, Grype — open-source сканеры для Docker-образов. Примеры интеграции в Jenkins и GitHub Actions с блокировкой при CRITICAL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как сканировать Docker-образы на уязвимости?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные инструменты: Trivy (Aqua Security) — популярный open-source CLI-сканер, Snyk — коммерческий с бесплатным tier, Clair (Quay) — серверный сканер для реестров, Grype (Anchore) — быстрый CLI. Сканеры анализируют пакеты ОС и зависимости, сверяя с базами CVE. Рекомендуется интегрировать в CI/CD с --exit-code 1 для блокировки сборки при CRITICAL уязвимостях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Сканирование образов на уязвимости", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое подпись и верификация образов?",
+      "questionSlug": "chto-takoe-podpis-i-verifikaciya-obrazov",
+      "grade": "middle",
+      "tags": ["container-security", "cosign", "sigstore", "docker-content-trust", "kyverno", "image-signing"],
+      "seo": {
+        "title": "Подпись и верификация Docker-образов — Cosign, DCT, Kyverno — Gymterview",
+        "description": "Подпись образов гарантирует целостность и происхождение. Docker Content Trust, Cosign (Sigstore), верификация в Kubernetes через Kyverno. Интеграция в CI/CD.",
+        "keywords": ["подпись Docker образов", "Cosign Sigstore", "Docker Content Trust", "верификация образов Kubernetes", "Kyverno verify image"],
+        "ogTitle": "Подпись и верификация Docker-образов — Cosign, DCT, Kyverno",
+        "ogDescription": "Docker Content Trust (Notary), Cosign (Sigstore) для подписи образов. Kyverno и Connaisseur для верификации в Kubernetes. Подпись по digest, не по тегу.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое подпись и верификация образов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Подпись образов гарантирует, что образ создан доверенным источником и не был изменён. Инструменты: Docker Content Trust (Notary) — встроенный механизм, Cosign (Sigstore) — современный стандарт с keyless-подписью через OIDC. Верификация в Kubernetes через Kyverno или Connaisseur (admission controller). Важно подписывать по digest (@sha256:...), а не по тегу."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Подпись и верификация образов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как правильно управлять секретами в контейнерах?",
+      "questionSlug": "kak-pravilno-upravlyat-sekretami-v-kontejnerakh",
+      "grade": "middle",
+      "tags": ["container-security", "secrets", "vault", "kubernetes-secrets", "sealed-secrets", "external-secrets"],
+      "seo": {
+        "title": "Управление секретами в контейнерах — Vault, K8s Secrets, Sealed Secrets — Gymterview",
+        "description": "Как НЕ хранить секреты (ENV, ARG, plain-text). Правильные способы: Kubernetes Secrets, HashiCorp Vault, Docker Secrets, Sealed Secrets, External Secrets Operator.",
+        "keywords": ["секреты контейнеры", "HashiCorp Vault Kubernetes", "Kubernetes Secrets", "Sealed Secrets Bitnami", "External Secrets Operator"],
+        "ogTitle": "Управление секретами в контейнерах — 5 правильных способов",
+        "ogDescription": "Kubernetes Secrets (base64, не шифрование!), HashiCorp Vault (enterprise), Docker Secrets, Sealed Secrets (Git-safe), External Secrets Operator.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как правильно управлять секретами в контейнерах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нельзя хранить секреты в ENV/ARG Dockerfile или plain-text в манифестах. Правильные способы: Kubernetes Secrets (base64, не шифрование — нужно включить encryption at rest), HashiCorp Vault с Agent Injector, Docker Secrets (Swarm, tmpfs), Sealed Secrets (Bitnami, можно хранить в Git), External Secrets Operator для интеграции с внешними хранилищами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Управление секретами", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать multistage builds для повышения безопасности?",
+      "questionSlug": "kak-ispolzovat-multistage-builds-dlya-povysheniya-bezopasnosti",
+      "grade": "middle",
+      "tags": ["container-security", "docker", "multistage-build", "jlink", "dockerfile"],
+      "seo": {
+        "title": "Multistage builds для безопасности Docker — Java-примеры — Gymterview",
+        "description": "Multistage build исключает из финального образа JDK, Maven, исходники и build-утилиты. Примеры для Java: layered Spring Boot jar, jlink, .dockerignore.",
+        "keywords": ["multistage build Docker", "multistage build безопасность", "Docker multistage Java", "layered jar Spring Boot", "dockerignore"],
+        "ogTitle": "Multistage builds для безопасности Docker — уменьшение attack surface",
+        "ogDescription": "Multistage build удаляет из финального образа JDK, Maven, исходники, .git и тесты. Результат: образ ~60 MB вместо ~800 MB, минимальная поверхность атаки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать multistage builds для повышения безопасности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Multistage build — Dockerfile с несколькими этапами, где в финальный образ копируются только необходимые артефакты. Из финального образа исключаются: JDK с компилятором, Maven/Gradle, исходный код, тесты, .git. Для Java рекомендуется layered Spring Boot jar и jlink для кастомного JRE. Результат: образ ~60 MB вместо ~800 MB."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Multistage builds для безопасности", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем и как использовать read-only файловую систему в контейнерах?",
+      "questionSlug": "zachem-i-kak-ispolzovat-read-only-fajlovuyu-sistemu-v-kontejnerakh",
+      "grade": "middle",
+      "tags": ["container-security", "docker", "kubernetes", "read-only", "tmpfs", "emptyDir"],
+      "seo": {
+        "title": "Read-only файловая система в контейнерах — Docker и Kubernetes — Gymterview",
+        "description": "Read-only FS предотвращает внедрение вредоносного кода и модификацию файлов. Настройка --read-only в Docker, readOnlyRootFilesystem в Kubernetes. Типичные tmpfs.",
+        "keywords": ["read-only файловая система контейнер", "readOnlyRootFilesystem Kubernetes", "Docker read-only", "tmpfs контейнер", "emptyDir Kubernetes"],
+        "ogTitle": "Read-only файловая система в Docker и Kubernetes",
+        "ogDescription": "--read-only в Docker и readOnlyRootFilesystem в Kubernetes. Монтирование tmpfs/emptyDir для /tmp, /app/logs. Флаги noexec и nosuid для защиты.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем и как использовать read-only файловую систему в контейнерах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Read-only FS защищает от внедрения вредоносного кода, модификации конфигурации и записи бэкдоров. В Docker: --read-only с --tmpfs для /tmp. В Kubernetes: readOnlyRootFilesystem: true с emptyDir для записи. Для Java нужны writable: /tmp (временные файлы JVM), /app/logs (логи), /var/cache. Рекомендуется emptyDir с medium: Memory."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Read-only файловая система", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Network Policies в Kubernetes и как они защищают приложение?",
+      "questionSlug": "chto-takoe-network-policies-v-kubernetes-i-kak-oni-zashchishchayut-prilozhenie",
+      "grade": "middle",
+      "tags": ["container-security", "kubernetes", "network-policies", "calico", "cilium", "микросегментация"],
+      "seo": {
+        "title": "Network Policies в Kubernetes — микросегментация сети — Gymterview",
+        "description": "Network Policies ограничивают сетевой трафик между подами. Default deny, ingress/egress правила, Calico и Cilium. Примеры для банковских микросервисов.",
+        "keywords": ["Network Policies Kubernetes", "микросегментация Kubernetes", "Calico network policy", "Cilium сетевые политики", "default deny Kubernetes"],
+        "ogTitle": "Network Policies в Kubernetes — ограничение трафика между подами",
+        "ogDescription": "По умолчанию в Kubernetes любой под может обращаться к любому. Network Policies реализуют микросегментацию: default deny, ingress/egress правила по labels.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Network Policies в Kubernetes и как они защищают приложение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Network Policies — ресурсы Kubernetes, ограничивающие сетевой трафик между подами на уровне L3/L4. По умолчанию все поды могут общаться друг с другом. Network Policies реализуют микросегментацию: default deny all, затем разрешение только необходимого трафика по labels. Требуют CNI-плагин с поддержкой (Calico, Cilium, Weave Net)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Network Policies в Kubernetes", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Pod Security Standards и Pod Security Admission?",
+      "questionSlug": "chto-takoe-pod-security-standards-i-pod-security-admission",
+      "grade": "middle",
+      "tags": ["container-security", "kubernetes", "pod-security-standards", "PSA", "PodSecurityPolicy"],
+      "seo": {
+        "title": "Pod Security Standards и Pod Security Admission в Kubernetes — Gymterview",
+        "description": "Три уровня Pod Security Standards: Privileged, Baseline, Restricted. Pod Security Admission заменяет PodSecurityPolicy. Режимы enforce, audit, warn.",
+        "keywords": ["Pod Security Standards", "Pod Security Admission", "PSS Kubernetes", "PodSecurityPolicy замена", "Restricted Baseline Privileged"],
+        "ogTitle": "Pod Security Standards и Admission — 3 уровня безопасности подов",
+        "ogDescription": "Privileged — без ограничений, Baseline — минимальные, Restricted — максимальные. Pod Security Admission применяет стандарты на уровне namespace.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Pod Security Standards и Pod Security Admission?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pod Security Standards (PSS) — три уровня безопасности подов: Privileged (без ограничений), Baseline (минимальные ограничения, запрет hostNetwork, privileged), Restricted (максимальная безопасность, runAsNonRoot, drop ALL capabilities). Pod Security Admission (PSA) — встроенный admission controller (замена PodSecurityPolicy), применяющий PSS на уровне namespace в режимах enforce, audit и warn."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Pod Security Standards и Admission", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Security Context в Kubernetes?",
+      "questionSlug": "chto-takoe-security-context-v-kubernetes",
+      "grade": "middle",
+      "tags": ["container-security", "kubernetes", "securityContext", "capabilities", "seccomp", "AppArmor"],
+      "seo": {
+        "title": "Security Context в Kubernetes — настройка безопасности подов и контейнеров — Gymterview",
+        "description": "Security Context задаёт параметры безопасности на уровне пода и контейнера: runAsUser, capabilities, seccomp, AppArmor, readOnlyRootFilesystem, fsGroup.",
+        "keywords": ["Security Context Kubernetes", "securityContext pod", "capabilities drop ALL", "seccomp profile Kubernetes", "AppArmor Kubernetes"],
+        "ogTitle": "Security Context в Kubernetes — runAsUser, capabilities, seccomp",
+        "ogDescription": "Security Context настраивает: runAsUser/runAsGroup, capabilities (drop ALL), seccomp-профиль, AppArmor, readOnlyRootFilesystem, allowPrivilegeEscalation.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Security Context в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Security Context — настройки безопасности на уровне пода (runAsUser, runAsGroup, fsGroup, supplementalGroups) и контейнера (capabilities, seccompProfile, appArmorProfile, readOnlyRootFilesystem, allowPrivilegeEscalation, runAsNonRoot). Позволяет точно контролировать привилегии и изоляцию каждого контейнера в поде."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Security Context в Kubernetes", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

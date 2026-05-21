@@ -1,0 +1,908 @@
+{
+  "topic": "Настройка и безопасность сети",
+  "topicSlug": "network-security",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как настроить статический IP-адрес в Linux?",
+      "questionSlug": "kak-nastroit-staticheskij-ip-adres-v-linux",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как настроить статический IP-адрес в Linux? — Gymterview",
+        "description": "Статический IP-адрес — это фиксированный адрес, который не меняется при перезагрузке системы. В серверной среде статические адреса обязательны для обеспечения с",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Как настроить статический IP-адрес в Linux? — Gymterview",
+        "ogDescription": "Статический IP-адрес — это фиксированный адрес, который не меняется при перезагрузке системы. В серверной среде статичес",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить статический IP-адрес в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статический IP-адрес — это фиксированный адрес, который не меняется при перезагрузке системы. В серверной среде статические адреса обязательны для обеспечения стабильной работы сервисов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как настроить статический IP-адрес в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает DHCP и как его настроить?",
+      "questionSlug": "kak-rabotaet-dhcp-i-kak-ego-nastroit",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как работает DHCP и как его настроить? — Gymterview",
+        "description": "DHCP (Dynamic Host Configuration Protocol) — протокол автоматического назначения IP-адресов и сетевых параметров устройствам в сети.",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Как работает DHCP и как его настроить? — Gymterview",
+        "ogDescription": "DHCP (Dynamic Host Configuration Protocol) — протокол автоматического назначения IP-адресов и сетевых параметров устройс",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает DHCP и как его настроить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DHCP (Dynamic Host Configuration Protocol) — протокол автоматического назначения IP-адресов и сетевых параметров устройствам в сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как работает DHCP и как его настроить?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить DNS в Linux?",
+      "questionSlug": "kak-nastroit-dns-v-linux",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как настроить DNS в Linux? — Gymterview",
+        "description": "DNS (Domain Name System) — система, преобразующая доменные имена в IP-адреса. Корректная настройка DNS критически важна для работы микросервисов, которые обраща",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Как настроить DNS в Linux? — Gymterview",
+        "ogDescription": "DNS (Domain Name System) — система, преобразующая доменные имена в IP-адреса. Корректная настройка DNS критически важна ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить DNS в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DNS (Domain Name System) — система, преобразующая доменные имена в IP-адреса. Корректная настройка DNS критически важна для работы микросервисов, которые обращаются друг к другу по именам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как настроить DNS в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить маршрутизацию в Linux?",
+      "questionSlug": "kak-nastroit-marshrutizatsiyu-v-linux",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как настроить маршрутизацию в Linux? — Gymterview",
+        "description": "Маршрутизация — механизм определения пути сетевых пакетов: через какой шлюз и интерфейс отправлять пакеты к определённым адресам.",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Как настроить маршрутизацию в Linux? — Gymterview",
+        "ogDescription": "Маршрутизация — механизм определения пути сетевых пакетов: через какой шлюз и интерфейс отправлять пакеты к определённым",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить маршрутизацию в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Маршрутизация — механизм определения пути сетевых пакетов: через какой шлюз и интерфейс отправлять пакеты к определённым адресам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как настроить маршрутизацию в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие инструменты диагностики сети существуют и как ими пользоваться?",
+      "questionSlug": "kakie-instrumenty-diagnostiki-seti-sushchestvuyut-i-kak-imi-polzovatsya",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Какие инструменты диагностики сети существуют и как ими поль — Gymterview",
+        "description": "Инструменты диагностики сети — набор утилит для выявления причин сетевых проблем: от недоступности хоста до анализа содержимого пакетов. Умение ими пользоваться",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Какие инструменты диагностики сети существуют и как ими поль — Gymterview",
+        "ogDescription": "Инструменты диагностики сети — набор утилит для выявления причин сетевых проблем: от недоступности хоста до анализа соде",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие инструменты диагностики сети существуют и как ими пользоваться?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Инструменты диагностики сети — набор утилит для выявления причин сетевых проблем: от недоступности хоста до анализа содержимого пакетов. Умение ими пользоваться — ключевой навык при работе с микросервисами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Какие инструменты диагностики сети существуют и как ими поль",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проверить прослушиваемые порты и доступность сервисов?",
+      "questionSlug": "kak-proverit-proslushivaemye-porty-i-dostupnost-servisov",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как проверить прослушиваемые порты и доступность сервисов? — Gymterview",
+        "description": "Проверка прослушиваемых портов — это способ убедиться, что сервис запущен, слушает на ожидаемом адресе и доступен по сети.",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Как проверить прослушиваемые порты и доступность сервисов? — Gymterview",
+        "ogDescription": "Проверка прослушиваемых портов — это способ убедиться, что сервис запущен, слушает на ожидаемом адресе и доступен по сет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проверить прослушиваемые порты и доступность сервисов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проверка прослушиваемых портов — это способ убедиться, что сервис запущен, слушает на ожидаемом адресе и доступен по сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как проверить прослушиваемые порты и доступность сервисов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое iptables и как работает фильтрация трафика?",
+      "questionSlug": "chto-takoe-iptables-i-kak-rabotaet-filtratsiya-trafika",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое iptables и как работает фильтрация трафика? — Gymterview",
+        "description": "iptables — утилита для управления встроенным в ядро Linux межсетевым экраном (Netfilter), позволяющая задавать правила фильтрации, NAT и модификации сетевых пак",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое iptables и как работает фильтрация трафика? — Gymterview",
+        "ogDescription": "iptables — утилита для управления встроенным в ядро Linux межсетевым экраном (Netfilter), позволяющая задавать правила ф",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое iptables и как работает фильтрация трафика?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iptables — утилита для управления встроенным в ядро Linux межсетевым экраном (Netfilter), позволяющая задавать правила фильтрации, NAT и модификации сетевых пакетов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое iptables и как работает фильтрация трафика?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ufw и как им пользоваться?",
+      "questionSlug": "chto-takoe-ufw-i-kak-im-polzovatsya",
+      "grade": "junior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое ufw и как им пользоваться? — Gymterview",
+        "description": "UFW (Uncomplicated Firewall) — упрощённая надстройка над iptables, предоставляющая удобный интерфейс для управления межсетевым экраном без необходимости писать ",
+        "keywords": [
+          "network-security",
+          "junior"
+        ],
+        "ogTitle": "Что такое ufw и как им пользоваться? — Gymterview",
+        "ogDescription": "UFW (Uncomplicated Firewall) — упрощённая надстройка над iptables, предоставляющая удобный интерфейс для управления межс",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ufw и как им пользоваться?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "UFW (Uncomplicated Firewall) — упрощённая надстройка над iptables, предоставляющая удобный интерфейс для управления межсетевым экраном без необходимости писать сложные правила iptables вручную."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое ufw и как им пользоваться?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое DMZ и зачем она нужна?",
+      "questionSlug": "chto-takoe-dmz-i-zachem-ona-nuzhna",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое DMZ и зачем она нужна? — Gymterview",
+        "description": "DMZ (Demilitarized Zone, демилитаризованная зона) — изолированный сегмент сети между внешней (интернет) и внутренней (корпоративной) сетями, содержащий сервисы,",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое DMZ и зачем она нужна? — Gymterview",
+        "ogDescription": "DMZ (Demilitarized Zone, демилитаризованная зона) — изолированный сегмент сети между внешней (интернет) и внутренней (ко",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое DMZ и зачем она нужна?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DMZ (Demilitarized Zone, демилитаризованная зона) — изолированный сегмент сети между внешней (интернет) и внутренней (корпоративной) сетями, содержащий сервисы, которые должны быть доступны извне, но не имеют прямого доступа к внутренней сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое DMZ и зачем она нужна?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает TLS/SSL и что такое цепочка доверия сертификатов?",
+      "questionSlug": "kak-rabotaet-tls-ssl-i-chto-takoe-tsepochka-doveriya-sertifikatov",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как работает TLS/SSL и что такое цепочка доверия сертификато — Gymterview",
+        "description": "TLS (Transport Layer Security) — криптографический протокол, обеспечивающий конфиденциальность и целостность данных при передаче по сети. SSL — устаревший предш",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Как работает TLS/SSL и что такое цепочка доверия сертификато — Gymterview",
+        "ogDescription": "TLS (Transport Layer Security) — криптографический протокол, обеспечивающий конфиденциальность и целостность данных при ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает TLS/SSL и что такое цепочка доверия сертификатов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TLS (Transport Layer Security) — криптографический протокол, обеспечивающий конфиденциальность и целостность данных при передаче по сети. SSL — устаревший предшественник TLS. В production используется TLS 1.2 и TLS 1.3."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как работает TLS/SSL и что такое цепочка доверия сертификато",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое mTLS и зачем нужна двусторонняя аутентификация?",
+      "questionSlug": "chto-takoe-mtls-i-zachem-nuzhna-dvustoronnyaya-autentifikatsiya",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое mTLS и зачем нужна двусторонняя аутентификация? — Gymterview",
+        "description": "mTLS (Mutual TLS) — расширение TLS, при котором не только клиент проверяет сертификат сервера, но и сервер проверяет сертификат клиента. Обе стороны аутентифици",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое mTLS и зачем нужна двусторонняя аутентификация? — Gymterview",
+        "ogDescription": "mTLS (Mutual TLS) — расширение TLS, при котором не только клиент проверяет сертификат сервера, но и сервер проверяет сер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое mTLS и зачем нужна двусторонняя аутентификация?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "mTLS (Mutual TLS) — расширение TLS, при котором не только клиент проверяет сертификат сервера, но и сервер проверяет сертификат клиента. Обе стороны аутентифицируют друг друга на уровне транспорта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое mTLS и зачем нужна двусторонняя аутентификация?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить HTTPS в Nginx с редиректом с HTTP?",
+      "questionSlug": "kak-nastroit-https-v-nginx-s-redirektom-s-http",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как настроить HTTPS в Nginx с редиректом с HTTP? — Gymterview",
+        "description": "Настройка HTTPS в Nginx — это конфигурация TLS-терминации на reverse proxy с обязательным перенаправлением HTTP-трафика на защищённое соединение.",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Как настроить HTTPS в Nginx с редиректом с HTTP? — Gymterview",
+        "ogDescription": "Настройка HTTPS в Nginx — это конфигурация TLS-терминации на reverse proxy с обязательным перенаправлением HTTP-трафика ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить HTTPS в Nginx с редиректом с HTTP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройка HTTPS в Nginx — это конфигурация TLS-терминации на reverse proxy с обязательным перенаправлением HTTP-трафика на защищённое соединение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как настроить HTTPS в Nginx с редиректом с HTTP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как усилить безопасность SSH-сервера?",
+      "questionSlug": "kak-usilit-bezopasnost-ssh-servera",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как усилить безопасность SSH-сервера? — Gymterview",
+        "description": "Hardening SSH-сервера — комплекс мер по усилению защиты SSH от несанкционированного доступа, включающий отключение небезопасных методов аутентификации, ограниче",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Как усилить безопасность SSH-сервера? — Gymterview",
+        "ogDescription": "Hardening SSH-сервера — комплекс мер по усилению защиты SSH от несанкционированного доступа, включающий отключение небез",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как усилить безопасность SSH-сервера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hardening SSH-сервера — комплекс мер по усилению защиты SSH от несанкционированного доступа, включающий отключение небезопасных методов аутентификации, ограничение доступа и мониторинг попыток входа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как усилить безопасность SSH-сервера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют методы защиты от DDoS-атак?",
+      "questionSlug": "kakie-sushchestvuyut-metody-zashchity-ot-ddos-atak",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Какие существуют методы защиты от DDoS-атак? — Gymterview",
+        "description": "DDoS (Distributed Denial of Service) — распределённая атака на отказ в обслуживании, при которой множество источников одновременно генерируют трафик к целевому ",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Какие существуют методы защиты от DDoS-атак? — Gymterview",
+        "ogDescription": "DDoS (Distributed Denial of Service) — распределённая атака на отказ в обслуживании, при которой множество источников од",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют методы защиты от DDoS-атак?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DDoS (Distributed Denial of Service) — распределённая атака на отказ в обслуживании, при которой множество источников одновременно генерируют трафик к целевому серверу, делая его недоступным для легитимных пользователей. Защита строится на нескольких уровнях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Какие существуют методы защиты от DDoS-атак?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные атаки на сеть существуют и как от них защищаться?",
+      "questionSlug": "kakie-osnovnye-ataki-na-set-sushchestvuyut-i-kak-ot-nikh-zashchishchatsya",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Какие основные атаки на сеть существуют и как от них защищат — Gymterview",
+        "description": "Основные сетевые атаки — это типовые способы перехвата, подмены или нарушения работы сетевого трафика, для которых существуют известные методы защиты.",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Какие основные атаки на сеть существуют и как от них защищат — Gymterview",
+        "ogDescription": "Основные сетевые атаки — это типовые способы перехвата, подмены или нарушения работы сетевого трафика, для которых сущес",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные атаки на сеть существуют и как от них защищаться?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные сетевые атаки — это типовые способы перехвата, подмены или нарушения работы сетевого трафика, для которых существуют известные методы защиты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Какие основные атаки на сеть существуют и как от них защищат",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое OWASP Top 10 и какие уязвимости наиболее актуальны для Java-разработчика?",
+      "questionSlug": "chto-takoe-owasp-top-10-i-kakie-uyazvimosti-naibolee-aktualny-dlya-java-razrabot",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое OWASP Top 10 и какие уязвимости наиболее актуальны — Gymterview",
+        "description": "OWASP Top 10 — регулярно обновляемый список десяти наиболее критичных уязвимостей веб-приложений, публикуемый организацией OWASP (Open Web Application Security ",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое OWASP Top 10 и какие уязвимости наиболее актуальны — Gymterview",
+        "ogDescription": "OWASP Top 10 — регулярно обновляемый список десяти наиболее критичных уязвимостей веб-приложений, публикуемый организаци",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое OWASP Top 10 и какие уязвимости наиболее актуальны для Java-разработчика?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OWASP Top 10 — регулярно обновляемый список десяти наиболее критичных уязвимостей веб-приложений, публикуемый организацией OWASP (Open Web Application Security Project). Текущая версия — 2021 года."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое OWASP Top 10 и какие уязвимости наиболее актуальны",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает CORS и как его настроить?",
+      "questionSlug": "kak-rabotaet-cors-i-kak-ego-nastroit",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как работает CORS и как его настроить? — Gymterview",
+        "description": "CORS (Cross-Origin Resource Sharing) — механизм, позволяющий браузеру делать запросы к серверу на другом домене (origin). По умолчанию браузер блокирует такие з",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Как работает CORS и как его настроить? — Gymterview",
+        "ogDescription": "CORS (Cross-Origin Resource Sharing) — механизм, позволяющий браузеру делать запросы к серверу на другом домене (origin)",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает CORS и как его настроить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CORS (Cross-Origin Resource Sharing) — механизм, позволяющий браузеру делать запросы к серверу на другом домене (origin). По умолчанию браузер блокирует такие запросы из соображений безопасности (Same-Origin Policy)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как работает CORS и как его настроить?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JWT, какова его структура и лучшие практики использования?",
+      "questionSlug": "chto-takoe-jwt-kakova-ego-struktura-i-luchshie-praktiki-ispolzovaniya",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое JWT, какова его структура и лучшие практики исполь — Gymterview",
+        "description": "JWT (JSON Web Token) — компактный самодостаточный токен для безопасной передачи информации между сторонами в формате JSON, широко используемый для аутентификаци",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое JWT, какова его структура и лучшие практики исполь — Gymterview",
+        "ogDescription": "JWT (JSON Web Token) — компактный самодостаточный токен для безопасной передачи информации между сторонами в формате JSO",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JWT, какова его структура и лучшие практики использования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JWT (JSON Web Token) — компактный самодостаточный токен для безопасной передачи информации между сторонами в формате JSON, широко используемый для аутентификации и авторизации в REST API."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое JWT, какова его структура и лучшие практики исполь",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает OAuth 2.0 и OpenID Connect?",
+      "questionSlug": "kak-rabotaet-oauth-20-i-openid-connect",
+      "grade": "senior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как работает OAuth 2.0 и OpenID Connect? — Gymterview",
+        "description": "OAuth 2.0 — протокол авторизации, позволяющий приложению получить ограниченный доступ к ресурсам пользователя без передачи его пароля. OpenID Connect (OIDC) — н",
+        "keywords": [
+          "network-security",
+          "senior"
+        ],
+        "ogTitle": "Как работает OAuth 2.0 и OpenID Connect? — Gymterview",
+        "ogDescription": "OAuth 2.0 — протокол авторизации, позволяющий приложению получить ограниченный доступ к ресурсам пользователя без переда",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает OAuth 2.0 и OpenID Connect?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OAuth 2.0 — протокол авторизации, позволяющий приложению получить ограниченный доступ к ресурсам пользователя без передачи его пароля. OpenID Connect (OIDC) — надстройка над OAuth 2.0, добавляющая аутентификацию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как работает OAuth 2.0 и OpenID Connect?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое NetworkPolicy в Kubernetes?",
+      "questionSlug": "chto-takoe-networkpolicy-v-kubernetes",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое NetworkPolicy в Kubernetes? — Gymterview",
+        "description": "NetworkPolicy — ресурс Kubernetes, позволяющий контролировать сетевой трафик между подами на уровне IP-адресов и портов. По умолчанию в Kubernetes все поды могу",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое NetworkPolicy в Kubernetes? — Gymterview",
+        "ogDescription": "NetworkPolicy — ресурс Kubernetes, позволяющий контролировать сетевой трафик между подами на уровне IP-адресов и портов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое NetworkPolicy в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NetworkPolicy — ресурс Kubernetes, позволяющий контролировать сетевой трафик между подами на уровне IP-адресов и портов. По умолчанию в Kubernetes все поды могут обмениваться трафиком друг с другом — NetworkPolicy ограничивает это поведение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое NetworkPolicy в Kubernetes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

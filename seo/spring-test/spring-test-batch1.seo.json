@@ -1,0 +1,908 @@
+{
+  "topic": "Тестирование в Spring Boot",
+  "topicSlug": "spring-test",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Каковы основные отличия JUnit 5 от JUnit 4?",
+      "questionSlug": "kakovy-osnovnye-otlichiya-junit-5-ot-junit-4",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Каковы основные отличия JUnit 5 от JUnit 4? — Gymterview",
+        "description": "JUnit 5 — полностью переписанный фреймворк для тестирования, состоящий из трёх модулей:",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Каковы основные отличия JUnit 5 от JUnit 4? — Gymterview",
+        "ogDescription": "JUnit 5 — полностью переписанный фреймворк для тестирования, состоящий из трёх модулей:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каковы основные отличия JUnit 5 от JUnit 4?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JUnit 5 — полностью переписанный фреймворк для тестирования, состоящий из трёх модулей:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Каковы основные отличия JUnit 5 от JUnit 4?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие новые аннотации появились в JUnit 5?",
+      "questionSlug": "kakie-novye-annotatsii-poyavilis-v-junit-5",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Какие новые аннотации появились в JUnit 5? — Gymterview",
+        "description": "JUnit 5 вводит ряд новых аннотаций, расширяющих возможности написания тестов:",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Какие новые аннотации появились в JUnit 5? — Gymterview",
+        "ogDescription": "JUnit 5 вводит ряд новых аннотаций, расширяющих возможности написания тестов:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие новые аннотации появились в JUnit 5?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JUnit 5 вводит ряд новых аннотаций, расширяющих возможности написания тестов:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Какие новые аннотации появились в JUnit 5?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие методы утверждений (assertions) предоставляет JUnit 5?",
+      "questionSlug": "kakie-metody-utverzhdenij-assertions-predostavlyaet-junit-5",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Какие методы утверждений (assertions) предоставляет JUnit 5? — Gymterview",
+        "description": "JUnit 5 значительно расширил набор утверждений по сравнению с JUnit 4, добавив `assertAll`, `assertThrows` и `assertTimeout`.",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Какие методы утверждений (assertions) предоставляет JUnit 5? — Gymterview",
+        "ogDescription": "JUnit 5 значительно расширил набор утверждений по сравнению с JUnit 4, добавив `assertAll`, `assertThrows` и `assertTime",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие методы утверждений (assertions) предоставляет JUnit 5?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JUnit 5 значительно расширил набор утверждений по сравнению с JUnit 4, добавив `assertAll`, `assertThrows` и `assertTimeout`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Какие методы утверждений (assertions) предоставляет JUnit 5?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое SpringBootTest и как он работает?",
+      "questionSlug": "chto-takoe-springboottest-i-kak-on-rabotaet",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое SpringBootTest и как он работает? — Gymterview",
+        "description": "`@SpringBootTest` — аннотация, которая создаёт полный контекст Spring-приложения для интеграционного тестирования. Она является заменой устаревших `@SpringAppli",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Что такое SpringBootTest и как он работает? — Gymterview",
+        "ogDescription": "`@SpringBootTest` — аннотация, которая создаёт полный контекст Spring-приложения для интеграционного тестирования. Она я",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SpringBootTest и как он работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@SpringBootTest` — аннотация, которая создаёт полный контекст Spring-приложения для интеграционного тестирования. Она является заменой устаревших `@SpringApplicationConfiguration` и `@IntegrationTest`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое SpringBootTest и как он работает?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие режимы webEnvironment существуют в SpringBootTest?",
+      "questionSlug": "kakie-rezhimy-webenvironment-sushchestvuyut-v-springboottest",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Какие режимы webEnvironment существуют в SpringBootTest? — Gymterview",
+        "description": "Параметр `webEnvironment` аннотации `@SpringBootTest` определяет, как будет запущено веб-окружение.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Какие режимы webEnvironment существуют в SpringBootTest? — Gymterview",
+        "ogDescription": "Параметр `webEnvironment` аннотации `@SpringBootTest` определяет, как будет запущено веб-окружение.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие режимы webEnvironment существуют в SpringBootTest?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Параметр `webEnvironment` аннотации `@SpringBootTest` определяет, как будет запущено веб-окружение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Какие режимы webEnvironment существуют в SpringBootTest?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Spring кэширует контекст в тестах и что такое DirtiesContext?",
+      "questionSlug": "kak-spring-keshiruet-kontekst-v-testakh-i-chto-takoe-dirtiescontext",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как Spring кэширует контекст в тестах и что такое DirtiesCon — Gymterview",
+        "description": "Spring TestContext Framework кэширует `ApplicationContext` между тестами для повышения производительности. Контекст создаётся один раз и переиспользуется всеми ",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как Spring кэширует контекст в тестах и что такое DirtiesCon — Gymterview",
+        "ogDescription": "Spring TestContext Framework кэширует `ApplicationContext` между тестами для повышения производительности. Контекст созд",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Spring кэширует контекст в тестах и что такое DirtiesContext?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring TestContext Framework кэширует `ApplicationContext` между тестами для повышения производительности. Контекст создаётся один раз и переиспользуется всеми тестами с одинаковой конфигурацией."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как Spring кэширует контекст в тестах и что такое DirtiesCon",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое MockBean и SpyBean?",
+      "questionSlug": "chto-takoe-mockbean-i-spybean",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое MockBean и SpyBean? — Gymterview",
+        "description": "`@MockBean` и `@SpyBean` — аннотации Spring Boot Test, позволяющие подменять бины в контексте Spring моками и шпионами Mockito.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Что такое MockBean и SpyBean? — Gymterview",
+        "ogDescription": "`@MockBean` и `@SpyBean` — аннотации Spring Boot Test, позволяющие подменять бины в контексте Spring моками и шпионами M",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое MockBean и SpyBean?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@MockBean` и `@SpyBean` — аннотации Spring Boot Test, позволяющие подменять бины в контексте Spring моками и шпионами Mockito."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое MockBean и SpyBean?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каковы основы работы с Mockito?",
+      "questionSlug": "kakovy-osnovy-raboty-s-mockito",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Каковы основы работы с Mockito? — Gymterview",
+        "description": "Mockito — библиотека для создания мок-объектов в Java-тестах. Она позволяет подменять зависимости и задавать их поведение.",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Каковы основы работы с Mockito? — Gymterview",
+        "ogDescription": "Mockito — библиотека для создания мок-объектов в Java-тестах. Она позволяет подменять зависимости и задавать их поведени",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каковы основы работы с Mockito?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mockito — библиотека для создания мок-объектов в Java-тестах. Она позволяет подменять зависимости и задавать их поведение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Каковы основы работы с Mockito?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между doReturn/when и when/thenReturn в Mockito?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-doreturn-when-i-when-thenreturn-v-mockito",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "В чём разница между doReturn/when и when/thenReturn в Mockit — Gymterview",
+        "description": "Обе конструкции задают поведение мока, но имеют критические различия при работе со spy-объектами и void-методами.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "В чём разница между doReturn/when и when/thenReturn в Mockit — Gymterview",
+        "ogDescription": "Обе конструкции задают поведение мока, но имеют критические различия при работе со spy-объектами и void-методами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между doReturn/when и when/thenReturn в Mockito?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обе конструкции задают поведение мока, но имеют критические различия при работе со spy-объектами и void-методами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "В чём разница между doReturn/when и when/thenReturn в Mockit",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать контроллеры с помощью MockMvc и WebMvcTest?",
+      "questionSlug": "kak-testirovat-kontrollery-s-pomoshchyu-mockmvc-i-webmvctest",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как тестировать контроллеры с помощью MockMvc и WebMvcTest? — Gymterview",
+        "description": "`@WebMvcTest` — срезовая (slice) аннотация, которая поднимает только веб-слой Spring MVC: контроллеры, `@ControllerAdvice`, `@JsonComponent`, фильтры, `WebMvcCo",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать контроллеры с помощью MockMvc и WebMvcTest? — Gymterview",
+        "ogDescription": "`@WebMvcTest` — срезовая (slice) аннотация, которая поднимает только веб-слой Spring MVC: контроллеры, `@ControllerAdvic",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать контроллеры с помощью MockMvc и WebMvcTest?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@WebMvcTest` — срезовая (slice) аннотация, которая поднимает только веб-слой Spring MVC: контроллеры, `@ControllerAdvice`, `@JsonComponent`, фильтры, `WebMvcConfigurer`. Сервисы, репозитории и прочие бины не загружаются — их нужно мокать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как тестировать контроллеры с помощью MockMvc и WebMvcTest?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выполнять запросы и проверять результаты в MockMvc?",
+      "questionSlug": "kak-vypolnyat-zaprosy-i-proveryat-rezultaty-v-mockmvc",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как выполнять запросы и проверять результаты в MockMvc? — Gymterview",
+        "description": "`MockMvc` предоставляет DSL для выполнения HTTP-запросов и проверки ответов без запуска реального сервера.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как выполнять запросы и проверять результаты в MockMvc? — Gymterview",
+        "ogDescription": "`MockMvc` предоставляет DSL для выполнения HTTP-запросов и проверки ответов без запуска реального сервера.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выполнять запросы и проверять результаты в MockMvc?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`MockMvc` предоставляет DSL для выполнения HTTP-запросов и проверки ответов без запуска реального сервера."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как выполнять запросы и проверять результаты в MockMvc?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать сервисный слой с помощью MockitoExtension?",
+      "questionSlug": "kak-testirovat-servisnyj-sloj-s-pomoshchyu-mockitoextension",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как тестировать сервисный слой с помощью MockitoExtension? — Gymterview",
+        "description": "Для юнит-тестирования сервисного слоя не нужен контекст Spring. Используется `@ExtendWith(MockitoExtension.class)` совместно с `@Mock` и `@InjectMocks`.",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Как тестировать сервисный слой с помощью MockitoExtension? — Gymterview",
+        "ogDescription": "Для юнит-тестирования сервисного слоя не нужен контекст Spring. Используется `@ExtendWith(MockitoExtension.class)` совме",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать сервисный слой с помощью MockitoExtension?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для юнит-тестирования сервисного слоя не нужен контекст Spring. Используется `@ExtendWith(MockitoExtension.class)` совместно с `@Mock` и `@InjectMocks`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как тестировать сервисный слой с помощью MockitoExtension?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать репозитории с помощью DataJpaTest?",
+      "questionSlug": "kak-testirovat-repozitorii-s-pomoshchyu-datajpatest",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как тестировать репозитории с помощью DataJpaTest? — Gymterview",
+        "description": "`@DataJpaTest` — срезовая аннотация для тестирования JPA-репозиториев. Она загружает только компоненты, связанные с JPA (`@Entity`, `@Repository`, `EntityManage",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать репозитории с помощью DataJpaTest? — Gymterview",
+        "ogDescription": "`@DataJpaTest` — срезовая аннотация для тестирования JPA-репозиториев. Она загружает только компоненты, связанные с JPA ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать репозитории с помощью DataJpaTest?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@DataJpaTest` — срезовая аннотация для тестирования JPA-репозиториев. Она загружает только компоненты, связанные с JPA (`@Entity`, `@Repository`, `EntityManager`), автоматически настраивает встроенную базу данных и применяет `@Transactional` с откатом после каждого теста."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как тестировать репозитории с помощью DataJpaTest?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Testcontainers и зачем они нужны?",
+      "questionSlug": "chto-takoe-testcontainers-i-zachem-oni-nuzhny",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое Testcontainers и зачем они нужны? — Gymterview",
+        "description": "Testcontainers — библиотека, позволяющая запускать Docker-контейнеры прямо из тестов. Она решает проблему расхождения между тестовой (H2) и боевой (PostgreSQL, ",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Что такое Testcontainers и зачем они нужны? — Gymterview",
+        "ogDescription": "Testcontainers — библиотека, позволяющая запускать Docker-контейнеры прямо из тестов. Она решает проблему расхождения ме",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Testcontainers и зачем они нужны?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Testcontainers — библиотека, позволяющая запускать Docker-контейнеры прямо из тестов. Она решает проблему расхождения между тестовой (H2) и боевой (PostgreSQL, MySQL) базами данных, обеспечивая тестирование на реальной СУБД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое Testcontainers и зачем они нужны?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать Sql и SqlGroup для подготовки тестовых данных?",
+      "questionSlug": "kak-ispolzovat-sql-i-sqlgroup-dlya-podgotovki-testovykh-dannykh",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как использовать Sql и SqlGroup для подготовки тестовых данн — Gymterview",
+        "description": "`@Sql` — аннотация Spring Test, позволяющая выполнять SQL-скрипты до или после теста для подготовки и очистки тестовых данных.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как использовать Sql и SqlGroup для подготовки тестовых данн — Gymterview",
+        "ogDescription": "`@Sql` — аннотация Spring Test, позволяющая выполнять SQL-скрипты до или после теста для подготовки и очистки тестовых д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать Sql и SqlGroup для подготовки тестовых данных?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Sql` — аннотация Spring Test, позволяющая выполнять SQL-скрипты до или после теста для подготовки и очистки тестовых данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как использовать Sql и SqlGroup для подготовки тестовых данн",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать TestRestTemplate для интеграционных тестов?",
+      "questionSlug": "kak-ispolzovat-testresttemplate-dlya-integratsionnykh-testov",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как использовать TestRestTemplate для интеграционных тестов? — Gymterview",
+        "description": "`TestRestTemplate` — обёртка над `RestTemplate`, предназначенная для интеграционных тестов с реальным HTTP-сервером. Работает только с `webEnvironment = RANDOM_",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как использовать TestRestTemplate для интеграционных тестов? — Gymterview",
+        "ogDescription": "`TestRestTemplate` — обёртка над `RestTemplate`, предназначенная для интеграционных тестов с реальным HTTP-сервером. Раб",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать TestRestTemplate для интеграционных тестов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`TestRestTemplate` — обёртка над `RestTemplate`, предназначенная для интеграционных тестов с реальным HTTP-сервером. Работает только с `webEnvironment = RANDOM_PORT` или `DEFINED_PORT`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как использовать TestRestTemplate для интеграционных тестов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать WebTestClient для тестирования реактивных и обычных приложений?",
+      "questionSlug": "kak-ispolzovat-webtestclient-dlya-testirovaniya-reaktivnykh-i-obychnykh-prilozhe",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как использовать WebTestClient для тестирования реактивных и — Gymterview",
+        "description": "`WebTestClient` — клиент для тестирования веб-приложений, поддерживающий как реактивные (WebFlux), так и классические (MVC) приложения. Предоставляет fluent API",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как использовать WebTestClient для тестирования реактивных и — Gymterview",
+        "ogDescription": "`WebTestClient` — клиент для тестирования веб-приложений, поддерживающий как реактивные (WebFlux), так и классические (M",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать WebTestClient для тестирования реактивных и обычных приложений?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`WebTestClient` — клиент для тестирования веб-приложений, поддерживающий как реактивные (WebFlux), так и классические (MVC) приложения. Предоставляет fluent API для выполнения запросов и проверки ответов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как использовать WebTestClient для тестирования реактивных и",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить профили для тестов?",
+      "questionSlug": "kak-nastroit-profili-dlya-testov",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как настроить профили для тестов? — Gymterview",
+        "description": "Spring Boot позволяет использовать отдельные файлы конфигурации для тестового окружения через механизм профилей.",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Как настроить профили для тестов? — Gymterview",
+        "ogDescription": "Spring Boot позволяет использовать отдельные файлы конфигурации для тестового окружения через механизм профилей.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить профили для тестов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot позволяет использовать отдельные файлы конфигурации для тестового окружения через механизм профилей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как настроить профили для тестов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает Transactional в тестах и что такое автоматический rollback?",
+      "questionSlug": "kak-rabotaet-transactional-v-testakh-i-chto-takoe-avtomaticheskij-rollback",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как работает Transactional в тестах и что такое автоматическ — Gymterview",
+        "description": "Когда тестовый метод или класс аннотирован `@Transactional`, Spring Test автоматически оборачивает каждый тест в транзакцию и откатывает её после завершения. Эт",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как работает Transactional в тестах и что такое автоматическ — Gymterview",
+        "ogDescription": "Когда тестовый метод или класс аннотирован `@Transactional`, Spring Test автоматически оборачивает каждый тест в транзак",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает Transactional в тестах и что такое автоматический rollback?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Когда тестовый метод или класс аннотирован `@Transactional`, Spring Test автоматически оборачивает каждый тест в транзакцию и откатывает её после завершения. Это гарантирует, что тестовые данные не загрязняют базу для последующих тестов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как работает Transactional в тестах и что такое автоматическ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое AssertJ и чем он лучше стандартных assertions?",
+      "questionSlug": "chto-takoe-assertj-i-chem-on-luchshe-standartnykh-assertions",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое AssertJ и чем он лучше стандартных assertions? — Gymterview",
+        "description": "AssertJ — библиотека fluent assertions для Java, предоставляющая читаемый и удобный API для написания проверок. Spring Boot включает AssertJ в стартер `spring-b",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Что такое AssertJ и чем он лучше стандартных assertions? — Gymterview",
+        "ogDescription": "AssertJ — библиотека fluent assertions для Java, предоставляющая читаемый и удобный API для написания проверок. Spring B",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое AssertJ и чем он лучше стандартных assertions?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AssertJ — библиотека fluent assertions для Java, предоставляющая читаемый и удобный API для написания проверок. Spring Boot включает AssertJ в стартер `spring-boot-starter-test` по умолчанию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое AssertJ и чем он лучше стандартных assertions?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

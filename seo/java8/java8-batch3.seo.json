@@ -1,0 +1,908 @@
+{
+  "topic": "Java 8",
+  "topicSlug": "java8",
+  "batch": 3,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как вывести на экран 10 случайных чисел используя forEach?",
+      "questionSlug": "kak-vyvesti-na-ekran-10-sluchajnykh-chisel-ispolzuya-foreach",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как вывести на экран 10 случайных чисел используя forEach? — Gymterview",
+        "description": "Для генерации случайных чисел можно использовать метод `ints()` класса `Random`, который возвращает бесконечный `IntStream`, ограничив его через `limit()`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как вывести на экран 10 случайных чисел используя forEach? — Gymterview",
+        "ogDescription": "Для генерации случайных чисел можно использовать метод `ints()` класса `Random`, который возвращает бесконечный `IntStre",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вывести на экран 10 случайных чисел используя forEach?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для генерации случайных чисел можно использовать метод `ints()` класса `Random`, который возвращает бесконечный `IntStream`, ограничив его через `limit()`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как вывести на экран 10 случайных чисел используя forEach?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как можно вывести на экран уникальные квадраты чисел используя метод map?",
+      "questionSlug": "kak-mozhno-vyvesti-na-ekran-unikalnye-kvadraty-chisel-ispolzuya-metod-map",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как можно вывести на экран уникальные квадраты чисел использ — Gymterview",
+        "description": "Для получения уникальных квадратов применяется комбинация `map()` (преобразование) и `distinct()` (удаление дубликатов):",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как можно вывести на экран уникальные квадраты чисел использ — Gymterview",
+        "ogDescription": "Для получения уникальных квадратов применяется комбинация `map()` (преобразование) и `distinct()` (удаление дубликатов):",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как можно вывести на экран уникальные квадраты чисел используя метод map?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для получения уникальных квадратов применяется комбинация `map()` (преобразование) и `distinct()` (удаление дубликатов):"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как можно вывести на экран уникальные квадраты чисел использ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как вывести на экран количество пустых строк с помощью метода filter?",
+      "questionSlug": "kak-vyvesti-na-ekran-kolichestvo-pustykh-strok-s-pomoshchyu-metoda-filter",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как вывести на экран количество пустых строк с помощью метод — Gymterview",
+        "description": "Для подсчёта пустых строк используется `filter()` с предикатом `String::isEmpty` и терминальная операция `count()`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как вывести на экран количество пустых строк с помощью метод — Gymterview",
+        "ogDescription": "Для подсчёта пустых строк используется `filter()` с предикатом `String::isEmpty` и терминальная операция `count()`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вывести на экран количество пустых строк с помощью метода filter?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для подсчёта пустых строк используется `filter()` с предикатом `String::isEmpty` и терминальная операция `count()`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как вывести на экран количество пустых строк с помощью метод",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как вывести на экран 10 случайных чисел в порядке возрастания?",
+      "questionSlug": "kak-vyvesti-na-ekran-10-sluchajnykh-chisel-v-poryadke-vozrastaniya",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как вывести на экран 10 случайных чисел в порядке возрастани — Gymterview",
+        "description": "Для вывода отсортированных случайных чисел достаточно добавить `sorted()` в цепочку между `limit()` и `forEach()`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как вывести на экран 10 случайных чисел в порядке возрастани — Gymterview",
+        "ogDescription": "Для вывода отсортированных случайных чисел достаточно добавить `sorted()` в цепочку между `limit()` и `forEach()`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вывести на экран 10 случайных чисел в порядке возрастания?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для вывода отсортированных случайных чисел достаточно добавить `sorted()` в цепочку между `limit()` и `forEach()`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как вывести на экран 10 случайных чисел в порядке возрастани",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как найти максимальное число в наборе?",
+      "questionSlug": "kak-najti-maksimalnoe-chislo-v-nabore",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как найти максимальное число в наборе? — Gymterview",
+        "description": "Для нахождения максимального числа используется `mapToInt()` для перехода к примитивному стриму и метод `max()`, который возвращает `OptionalInt`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как найти максимальное число в наборе? — Gymterview",
+        "ogDescription": "Для нахождения максимального числа используется `mapToInt()` для перехода к примитивному стриму и метод `max()`, который",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как найти максимальное число в наборе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для нахождения максимального числа используется `mapToInt()` для перехода к примитивному стриму и метод `max()`, который возвращает `OptionalInt`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как найти максимальное число в наборе?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как найти минимальное число в наборе?",
+      "questionSlug": "kak-najti-minimalnoe-chislo-v-nabore",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как найти минимальное число в наборе? — Gymterview",
+        "description": "Аналогично поиску максимума, для минимума используется метод `min()`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как найти минимальное число в наборе? — Gymterview",
+        "ogDescription": "Аналогично поиску максимума, для минимума используется метод `min()`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как найти минимальное число в наборе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Аналогично поиску максимума, для минимума используется метод `min()`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как найти минимальное число в наборе?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить сумму всех чисел в наборе?",
+      "questionSlug": "kak-poluchit-summu-vsekh-chisel-v-nabore",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить сумму всех чисел в наборе? — Gymterview",
+        "description": "Для суммирования используется метод `sum()` примитивного стрима `IntStream`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить сумму всех чисел в наборе? — Gymterview",
+        "ogDescription": "Для суммирования используется метод `sum()` примитивного стрима `IntStream`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить сумму всех чисел в наборе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для суммирования используется метод `sum()` примитивного стрима `IntStream`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить сумму всех чисел в наборе?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить среднее значение всех чисел?",
+      "questionSlug": "kak-poluchit-srednee-znachenie-vsekh-chisel",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить среднее значение всех чисел? — Gymterview",
+        "description": "Для вычисления среднего используется метод `average()` примитивного стрима, который возвращает `OptionalDouble`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить среднее значение всех чисел? — Gymterview",
+        "ogDescription": "Для вычисления среднего используется метод `average()` примитивного стрима, который возвращает `OptionalDouble`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить среднее значение всех чисел?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для вычисления среднего используется метод `average()` примитивного стрима, который возвращает `OptionalDouble`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить среднее значение всех чисел?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие дополнительные методы для работы с ассоциативными массивами появились в Java 8?",
+      "questionSlug": "kakie-dopolnitelnye-metody-dlya-raboty-s-assotsiativnymi-massivami-poyavilis-v-j",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие дополнительные методы для работы с ассоциативными масс — Gymterview",
+        "description": "Java 8 добавила в интерфейс `Map` набор `default`-методов, которые значительно упрощают типичные операции «проверь — вставь — обнови».",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие дополнительные методы для работы с ассоциативными масс — Gymterview",
+        "ogDescription": "Java 8 добавила в интерфейс `Map` набор `default`-методов, которые значительно упрощают типичные операции «проверь — вст",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие дополнительные методы для работы с ассоциативными массивами появились в Java 8?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 8 добавила в интерфейс `Map` набор `default`-методов, которые значительно упрощают типичные операции «проверь — вставь — обнови»."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие дополнительные методы для работы с ассоциативными масс",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое LocalDateTime?",
+      "questionSlug": "chto-takoe-localdatetime",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое LocalDateTime? — Gymterview",
+        "description": "`LocalDateTime` — класс из пакета `java.time`, объединяющий дату (`LocalDate`) и время (`LocalTime`) в календарной системе ISO-8601 без привязки к часовому пояс",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое LocalDateTime? — Gymterview",
+        "ogDescription": "`LocalDateTime` — класс из пакета `java.time`, объединяющий дату (`LocalDate`) и время (`LocalTime`) в календарной систе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое LocalDateTime?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`LocalDateTime` — класс из пакета `java.time`, объединяющий дату (`LocalDate`) и время (`LocalTime`) в календарной системе ISO-8601 без привязки к часовому поясу. Время хранится с точностью до наносекунд. Этот класс является неизменяемым (immutable) и потокобезопасным."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое LocalDateTime?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ZonedDateTime?",
+      "questionSlug": "chto-takoe-zoneddatetime",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое ZonedDateTime? — Gymterview",
+        "description": "`ZonedDateTime` — класс из `java.time`, представляющий дату и время с полной информацией о часовом поясе. Это аналог `java.util.Calendar` из старого API, но неи",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое ZonedDateTime? — Gymterview",
+        "ogDescription": "`ZonedDateTime` — класс из `java.time`, представляющий дату и время с полной информацией о часовом поясе. Это аналог `ja",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ZonedDateTime?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ZonedDateTime` — класс из `java.time`, представляющий дату и время с полной информацией о часовом поясе. Это аналог `java.util.Calendar` из старого API, но неизменяемый и потокобезопасный. Включает `LocalDateTime` + `ZoneId` + `ZoneOffset`, что позволяет корректно обрабатывать переходы на летнее/зи"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое ZonedDateTime?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить текущую дату с использованием Date Time API из Java 8?",
+      "questionSlug": "kak-poluchit-tekushchuyu-datu-s-ispolzovaniem-date-time-api-iz-java-8",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить текущую дату с использованием Date Time API из  — Gymterview",
+        "description": "Текущая дата получается вызовом статического метода `now()` у класса `LocalDate`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить текущую дату с использованием Date Time API из  — Gymterview",
+        "ogDescription": "Текущая дата получается вызовом статического метода `now()` у класса `LocalDate`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить текущую дату с использованием Date Time API из Java 8?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Текущая дата получается вызовом статического метода `now()` у класса `LocalDate`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить текущую дату с использованием Date Time API из ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как добавить 1 неделю, 1 месяц, 1 год, 10 лет к текущей дате с использованием Date Time API?",
+      "questionSlug": "kak-dobavit-1-nedelyu-1-mesyats-1-god-10-let-k-tekushchej-date-s-ispolzovaniem-d",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как добавить 1 неделю, 1 месяц, 1 год, 10 лет к текущей дате — Gymterview",
+        "description": "Классы `java.time` предоставляют семейство методов `plus*()` для добавления временных единиц. Все методы возвращают новый объект (immutable), не изменяя исходны",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как добавить 1 неделю, 1 месяц, 1 год, 10 лет к текущей дате — Gymterview",
+        "ogDescription": "Классы `java.time` предоставляют семейство методов `plus*()` для добавления временных единиц. Все методы возвращают новы",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как добавить 1 неделю, 1 месяц, 1 год, 10 лет к текущей дате с использованием Date Time API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Классы `java.time` предоставляют семейство методов `plus*()` для добавления временных единиц. Все методы возвращают новый объект (immutable), не изменяя исходный."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как добавить 1 неделю, 1 месяц, 1 год, 10 лет к текущей дате",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить следующий вторник используя Date Time API?",
+      "questionSlug": "kak-poluchit-sleduyushchij-vtornik-ispolzuya-date-time-api",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить следующий вторник используя Date Time API? — Gymterview",
+        "description": "Для нахождения следующего вторника используется механизм `TemporalAdjusters`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить следующий вторник используя Date Time API? — Gymterview",
+        "ogDescription": "Для нахождения следующего вторника используется механизм `TemporalAdjusters`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить следующий вторник используя Date Time API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для нахождения следующего вторника используется механизм `TemporalAdjusters`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить следующий вторник используя Date Time API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить вторую субботу текущего месяца используя Date Time API?",
+      "questionSlug": "kak-poluchit-vtoruyu-subbotu-tekushchego-mesyatsa-ispolzuya-date-time-api",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить вторую субботу текущего месяца используя Date T — Gymterview",
+        "description": "Для нахождения второй субботы нужно сначала найти первую субботу месяца, а затем перейти к следующей:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить вторую субботу текущего месяца используя Date T — Gymterview",
+        "ogDescription": "Для нахождения второй субботы нужно сначала найти первую субботу месяца, а затем перейти к следующей:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить вторую субботу текущего месяца используя Date Time API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для нахождения второй субботы нужно сначала найти первую субботу месяца, а затем перейти к следующей:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить вторую субботу текущего месяца используя Date T",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить текущее время с точностью до миллисекунд используя Date Time API?",
+      "questionSlug": "kak-poluchit-tekushchee-vremya-s-tochnostyu-do-millisekund-ispolzuya-date-time-a",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить текущее время с точностью до миллисекунд исполь — Gymterview",
+        "description": "Для получения текущего момента времени с миллисекундной точностью используется `Instant`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить текущее время с точностью до миллисекунд исполь — Gymterview",
+        "ogDescription": "Для получения текущего момента времени с миллисекундной точностью используется `Instant`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить текущее время с точностью до миллисекунд используя Date Time API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для получения текущего момента времени с миллисекундной точностью используется `Instant`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить текущее время с точностью до миллисекунд исполь",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить текущее время по местному времени с точностью до миллисекунд используя Date Time API?",
+      "questionSlug": "kak-poluchit-tekushchee-vremya-po-mestnomu-vremeni-s-tochnostyu-do-millisekund-i",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как получить текущее время по местному времени с точностью д — Gymterview",
+        "description": "Для преобразования `Instant` (UTC) в локальное время используется `LocalDateTime.ofInstant()` с указанием часового пояса:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как получить текущее время по местному времени с точностью д — Gymterview",
+        "ogDescription": "Для преобразования `Instant` (UTC) в локальное время используется `LocalDateTime.ofInstant()` с указанием часового пояса",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить текущее время по местному времени с точностью до миллисекунд используя Date Time API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для преобразования `Instant` (UTC) в локальное время используется `LocalDateTime.ofInstant()` с указанием часового пояса:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как получить текущее время по местному времени с точностью д",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как определить повторяемую аннотацию?",
+      "questionSlug": "kak-opredelit-povtoryaemuyu-annotatsiyu",
+      "grade": "middle",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как определить повторяемую аннотацию? — Gymterview",
+        "description": "Повторяемая аннотация (repeatable annotation) — это аннотация, которую можно применить к одному элементу несколько раз. Для её создания необходимо определить ан",
+        "keywords": [
+          "java8",
+          "middle"
+        ],
+        "ogTitle": "Как определить повторяемую аннотацию? — Gymterview",
+        "ogDescription": "Повторяемая аннотация (repeatable annotation) — это аннотация, которую можно применить к одному элементу несколько раз. ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как определить повторяемую аннотацию?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Повторяемая аннотация (repeatable annotation) — это аннотация, которую можно применить к одному элементу несколько раз. Для её создания необходимо определить аннотацию-контейнер и пометить повторяемую аннотацию мета-аннотацией `@Repeatable`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как определить повторяемую аннотацию?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Nashorn?",
+      "questionSlug": "chto-takoe-nashorn",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое Nashorn? — Gymterview",
+        "description": "Nashorn — это встроенный JavaScript-движок, разработанный Oracle для Java 8 как замена устаревшего Rhino (Mozilla). Nashorn компилирует JavaScript-код в байт-ко",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое Nashorn? — Gymterview",
+        "ogDescription": "Nashorn — это встроенный JavaScript-движок, разработанный Oracle для Java 8 как замена устаревшего Rhino (Mozilla). Nash",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Nashorn?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nashorn — это встроенный JavaScript-движок, разработанный Oracle для Java 8 как замена устаревшего Rhino (Mozilla). Nashorn компилирует JavaScript-код в байт-код JVM непосредственно в памяти, что обеспечивает в 2-10 раз более высокую производительность по сравнению с Rhino."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое Nashorn?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое jjs?",
+      "questionSlug": "chto-takoe-jjs",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое jjs? — Gymterview",
+        "description": "`jjs` — это утилита командной строки, поставляемая с JDK 8, которая позволяет выполнять JavaScript-код прямо в консоли с использованием движка Nashorn. Она може",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое jjs? — Gymterview",
+        "ogDescription": "`jjs` — это утилита командной строки, поставляемая с JDK 8, которая позволяет выполнять JavaScript-код прямо в консоли с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое jjs?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`jjs` — это утилита командной строки, поставляемая с JDK 8, которая позволяет выполнять JavaScript-код прямо в консоли с использованием движка Nashorn. Она может работать как в интерактивном режиме (REPL), так и выполнять скрипты из файлов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое jjs?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

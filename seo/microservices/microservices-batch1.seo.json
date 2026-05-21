@@ -1,0 +1,908 @@
+{
+  "topic": "Микросервисы",
+  "topicSlug": "microservices",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое микросервисная архитектура?",
+      "questionSlug": "chto-takoe-mikroservisnaya-arkhitektura",
+      "grade": "junior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое микросервисная архитектура? — Gymterview",
+        "description": "Микросервисная архитектура — это подход к разработке программного обеспечения, при котором приложение строится как набор небольших, автономных сервисов, каждый ",
+        "keywords": [
+          "microservices",
+          "junior"
+        ],
+        "ogTitle": "Что такое микросервисная архитектура? — Gymterview",
+        "ogDescription": "Микросервисная архитектура — это подход к разработке программного обеспечения, при котором приложение строится как набор",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое микросервисная архитектура?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Микросервисная архитектура — это подход к разработке программного обеспечения, при котором приложение строится как набор небольших, автономных сервисов, каждый из которых работает в собственном процессе, развёртывается независимо и взаимодействует с другими сервисами через чётко определённые API (об"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое микросервисная архитектура?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем микросервисная архитектура отличается от монолитной?",
+      "questionSlug": "chem-mikroservisnaya-arkhitektura-otlichaetsya-ot-monolitnoj",
+      "grade": "junior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Чем микросервисная архитектура отличается от монолитной? — Gymterview",
+        "description": "Монолит — это единое приложение, в котором все компоненты (UI, бизнес-логика, доступ к данным) развёртываются как один артефакт. Микросервисы — набор отдельных ",
+        "keywords": [
+          "microservices",
+          "junior"
+        ],
+        "ogTitle": "Чем микросервисная архитектура отличается от монолитной? — Gymterview",
+        "ogDescription": "Монолит — это единое приложение, в котором все компоненты (UI, бизнес-логика, доступ к данным) развёртываются как один а",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем микросервисная архитектура отличается от монолитной?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Монолит — это единое приложение, в котором все компоненты (UI, бизнес-логика, доступ к данным) развёртываются как один артефакт. Микросервисы — набор отдельных приложений, каждое со своей кодовой базой и хранилищем."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Чем микросервисная архитектура отличается от монолитной?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие преимущества у микросервисной архитектуры?",
+      "questionSlug": "kakie-preimushchestva-u-mikroservisnoj-arkhitektury",
+      "grade": "junior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Какие преимущества у микросервисной архитектуры? — Gymterview",
+        "description": "Основные преимущества микросервисов связаны с независимостью компонентов: независимое развёртывание, масштабирование, разработка и выбор технологий.",
+        "keywords": [
+          "microservices",
+          "junior"
+        ],
+        "ogTitle": "Какие преимущества у микросервисной архитектуры? — Gymterview",
+        "ogDescription": "Основные преимущества микросервисов связаны с независимостью компонентов: независимое развёртывание, масштабирование, ра",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие преимущества у микросервисной архитектуры?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные преимущества микросервисов связаны с независимостью компонентов: независимое развёртывание, масштабирование, разработка и выбор технологий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Какие преимущества у микросервисной архитектуры?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие недостатки у микросервисной архитектуры?",
+      "questionSlug": "kakie-nedostatki-u-mikroservisnoj-arkhitektury",
+      "grade": "junior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Какие недостатки у микросервисной архитектуры? — Gymterview",
+        "description": "Главные недостатки микросервисов — это сложность распределённой системы: сетевые задержки, согласованность данных, операционная нагрузка и сложность отладки.",
+        "keywords": [
+          "microservices",
+          "junior"
+        ],
+        "ogTitle": "Какие недостатки у микросервисной архитектуры? — Gymterview",
+        "ogDescription": "Главные недостатки микросервисов — это сложность распределённой системы: сетевые задержки, согласованность данных, опера",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие недостатки у микросервисной архитектуры?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Главные недостатки микросервисов — это сложность распределённой системы: сетевые задержки, согласованность данных, операционная нагрузка и сложность отладки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Какие недостатки у микросервисной архитектуры?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда стоит использовать микросервисы, а когда нет?",
+      "questionSlug": "kogda-stoit-ispolzovat-mikroservisy-a-kogda-net",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Когда стоит использовать микросервисы, а когда нет? — Gymterview",
+        "description": "Решение о переходе на микросервисы определяется масштабом системы, размером команды и зрелостью DevOps-культуры. Начинать новый проект с микросервисов почти все",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Когда стоит использовать микросервисы, а когда нет? — Gymterview",
+        "ogDescription": "Решение о переходе на микросервисы определяется масштабом системы, размером команды и зрелостью DevOps-культуры. Начинат",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда стоит использовать микросервисы, а когда нет?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Решение о переходе на микросервисы определяется масштабом системы, размером команды и зрелостью DevOps-культуры. Начинать новый проект с микросервисов почти всегда ошибочно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Когда стоит использовать микросервисы, а когда нет?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие принципы декомпозиции на микросервисы существуют?",
+      "questionSlug": "kakie-printsipy-dekompozitsii-na-mikroservisy-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Какие принципы декомпозиции на микросервисы существуют? — Gymterview",
+        "description": "Правильная декомпозиция — ключ к успешной микросервисной архитектуре. Она определяет границы сервисов так, чтобы минимизировать связность и максимизировать авто",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Какие принципы декомпозиции на микросервисы существуют? — Gymterview",
+        "ogDescription": "Правильная декомпозиция — ключ к успешной микросервисной архитектуре. Она определяет границы сервисов так, чтобы минимиз",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие принципы декомпозиции на микросервисы существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Правильная декомпозиция — ключ к успешной микросервисной архитектуре. Она определяет границы сервисов так, чтобы минимизировать связность и максимизировать автономность каждого сервиса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Какие принципы декомпозиции на микросервисы существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Bounded Context и как он связан с микросервисами?",
+      "questionSlug": "chto-takoe-bounded-context-i-kak-on-svyazan-s-mikroservisami",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое Bounded Context и как он связан с микросервисами? — Gymterview",
+        "description": "Bounded Context (ограниченный контекст) — это центральная концепция Domain-Driven Design, обозначающая границу, внутри которой определённая модель предметной об",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое Bounded Context и как он связан с микросервисами? — Gymterview",
+        "ogDescription": "Bounded Context (ограниченный контекст) — это центральная концепция Domain-Driven Design, обозначающая границу, внутри к",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Bounded Context и как он связан с микросервисами?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bounded Context (ограниченный контекст) — это центральная концепция Domain-Driven Design, обозначающая границу, внутри которой определённая модель предметной области является согласованной и единообразной."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое Bounded Context и как он связан с микросервисами?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие способы взаимодействия микросервисов существуют?",
+      "questionSlug": "kakie-sposoby-vzaimodejstviya-mikroservisov-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Какие способы взаимодействия микросервисов существуют? — Gymterview",
+        "description": "Взаимодействие микросервисов делится на два основных типа: синхронное (Request-Response) и асинхронное (Event-Driven).",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Какие способы взаимодействия микросервисов существуют? — Gymterview",
+        "ogDescription": "Взаимодействие микросервисов делится на два основных типа: синхронное (Request-Response) и асинхронное (Event-Driven).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие способы взаимодействия микросервисов существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Взаимодействие микросервисов делится на два основных типа: синхронное (Request-Response) и асинхронное (Event-Driven)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Какие способы взаимодействия микросервисов существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать синхронное взаимодействие микросервисов через REST?",
+      "questionSlug": "kak-organizovat-sinkhronnoe-vzaimodejstvie-mikroservisov-cherez-rest",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать синхронное взаимодействие микросервисов чер — Gymterview",
+        "description": "В Spring Boot для синхронного взаимодействия между микросервисами используются HTTP-клиенты: RestTemplate (устаревший), WebClient (рекомендуемый), Declarative H",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать синхронное взаимодействие микросервисов чер — Gymterview",
+        "ogDescription": "В Spring Boot для синхронного взаимодействия между микросервисами используются HTTP-клиенты: RestTemplate (устаревший), ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать синхронное взаимодействие микросервисов через REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Spring Boot для синхронного взаимодействия между микросервисами используются HTTP-клиенты: RestTemplate (устаревший), WebClient (рекомендуемый), Declarative HTTP Client (Spring 6+) и OpenFeign."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать синхронное взаимодействие микросервисов чер",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое gRPC и когда его стоит использовать вместо REST?",
+      "questionSlug": "chto-takoe-grpc-i-kogda-ego-stoit-ispolzovat-vmesto-rest",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое gRPC и когда его стоит использовать вместо REST? — Gymterview",
+        "description": "gRPC (gRPC Remote Procedure Call) — это высокопроизводительный фреймворк для удалённого вызова процедур, использующий Protocol Buffers для сериализации и HTTP/2",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое gRPC и когда его стоит использовать вместо REST? — Gymterview",
+        "ogDescription": "gRPC (gRPC Remote Procedure Call) — это высокопроизводительный фреймворк для удалённого вызова процедур, использующий Pr",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое gRPC и когда его стоит использовать вместо REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "gRPC (gRPC Remote Procedure Call) — это высокопроизводительный фреймворк для удалённого вызова процедур, использующий Protocol Buffers для сериализации и HTTP/2 как транспортный протокол."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое gRPC и когда его стоит использовать вместо REST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать асинхронное взаимодействие через брокеры сообщений?",
+      "questionSlug": "kak-organizovat-asinkhronnoe-vzaimodejstvie-cherez-brokery-soobshchenij",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать асинхронное взаимодействие через брокеры со — Gymterview",
+        "description": "Асинхронное взаимодействие позволяет сервисам обмениваться данными без ожидания немедленного ответа. Два основных брокера: Apache Kafka (распределённый лог собы",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать асинхронное взаимодействие через брокеры со — Gymterview",
+        "ogDescription": "Асинхронное взаимодействие позволяет сервисам обмениваться данными без ожидания немедленного ответа. Два основных брокер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать асинхронное взаимодействие через брокеры сообщений?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Асинхронное взаимодействие позволяет сервисам обмениваться данными без ожидания немедленного ответа. Два основных брокера: Apache Kafka (распределённый лог событий) и RabbitMQ (классическая очередь сообщений)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать асинхронное взаимодействие через брокеры со",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое API Gateway и зачем он нужен?",
+      "questionSlug": "chto-takoe-api-gateway-i-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое API Gateway и зачем он нужен? — Gymterview",
+        "description": "API Gateway — это единая точка входа для всех клиентских запросов к микросервисам. Он выступает обратным прокси, маршрутизирует запросы к соответствующим сервис",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое API Gateway и зачем он нужен? — Gymterview",
+        "ogDescription": "API Gateway — это единая точка входа для всех клиентских запросов к микросервисам. Он выступает обратным прокси, маршрут",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое API Gateway и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "API Gateway — это единая точка входа для всех клиентских запросов к микросервисам. Он выступает обратным прокси, маршрутизирует запросы к соответствующим сервисам и выполняет сквозные функции: аутентификацию, rate limiting, логирование."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое API Gateway и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Service Discovery и как оно работает?",
+      "questionSlug": "chto-takoe-service-discovery-i-kak-ono-rabotaet",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое Service Discovery и как оно работает? — Gymterview",
+        "description": "Service Discovery — это механизм, позволяющий микросервисам автоматически находить друг друга в сети без жёсткого указания IP-адресов и портов.",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое Service Discovery и как оно работает? — Gymterview",
+        "ogDescription": "Service Discovery — это механизм, позволяющий микросервисам автоматически находить друг друга в сети без жёсткого указан",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Service Discovery и как оно работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Service Discovery — это механизм, позволяющий микросервисам автоматически находить друг друга в сети без жёсткого указания IP-адресов и портов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое Service Discovery и как оно работает?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать конфигурацию микросервисов?",
+      "questionSlug": "kak-organizovat-konfiguratsiyu-mikroservisov",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать конфигурацию микросервисов? — Gymterview",
+        "description": "Централизованная конфигурация позволяет управлять настройками всех микросервисов из одного места и менять их без переразвёртывания. Основные инструменты: Spring",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать конфигурацию микросервисов? — Gymterview",
+        "ogDescription": "Централизованная конфигурация позволяет управлять настройками всех микросервисов из одного места и менять их без перераз",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать конфигурацию микросервисов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Централизованная конфигурация позволяет управлять настройками всех микросервисов из одного места и менять их без переразвёртывания. Основные инструменты: Spring Cloud Config, Consul KV, HashiCorp Vault, Kubernetes ConfigMaps."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать конфигурацию микросервисов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Circuit Breaker?",
+      "questionSlug": "chto-takoe-pattern-circuit-breaker",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Circuit Breaker? — Gymterview",
+        "description": "Circuit Breaker (автоматический выключатель) — это паттерн отказоустойчивости, который предотвращает каскадные сбои в распределённой системе, «размыкая цепь» пр",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Circuit Breaker? — Gymterview",
+        "ogDescription": "Circuit Breaker (автоматический выключатель) — это паттерн отказоустойчивости, который предотвращает каскадные сбои в ра",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Circuit Breaker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circuit Breaker (автоматический выключатель) — это паттерн отказоустойчивости, который предотвращает каскадные сбои в распределённой системе, «размыкая цепь» при обнаружении проблем с вызываемым сервисом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Circuit Breaker?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Saga и как он решает проблему распределённых транзакций?",
+      "questionSlug": "chto-takoe-pattern-saga-i-kak-on-reshaet-problemu-raspredelyonnykh-tranzaktsij",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Saga и как он решает проблему распределённ — Gymterview",
+        "description": "Saga — это паттерн управления распределёнными транзакциями, при котором длинная бизнес-транзакция разбивается на последовательность локальных транзакций в разны",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое паттерн Saga и как он решает проблему распределённ — Gymterview",
+        "ogDescription": "Saga — это паттерн управления распределёнными транзакциями, при котором длинная бизнес-транзакция разбивается на последо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Saga и как он решает проблему распределённых транзакций?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Saga — это паттерн управления распределёнными транзакциями, при котором длинная бизнес-транзакция разбивается на последовательность локальных транзакций в разных сервисах. При сбое выполняются компенсирующие транзакции для отмены уже выполненных шагов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Saga и как он решает проблему распределённ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Event Sourcing?",
+      "questionSlug": "chto-takoe-event-sourcing",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое Event Sourcing? — Gymterview",
+        "description": "Event Sourcing — это паттерн хранения данных, при котором состояние объекта определяется не текущим снимком (snapshot), а последовательностью доменных событий, ",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое Event Sourcing? — Gymterview",
+        "ogDescription": "Event Sourcing — это паттерн хранения данных, при котором состояние объекта определяется не текущим снимком (snapshot), ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Event Sourcing?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event Sourcing — это паттерн хранения данных, при котором состояние объекта определяется не текущим снимком (snapshot), а последовательностью доменных событий, которые произошли с этим объектом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое Event Sourcing?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CQRS?",
+      "questionSlug": "chto-takoe-cqrs",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое CQRS? — Gymterview",
+        "description": "CQRS (Command Query Responsibility Segregation) — это паттерн, разделяющий модели чтения и записи данных. Команды (Commands) изменяют состояние, запросы (Querie",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое CQRS? — Gymterview",
+        "ogDescription": "CQRS (Command Query Responsibility Segregation) — это паттерн, разделяющий модели чтения и записи данных. Команды (Comma",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CQRS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CQRS (Command Query Responsibility Segregation) — это паттерн, разделяющий модели чтения и записи данных. Команды (Commands) изменяют состояние, запросы (Queries) читают данные. Для каждой задачи используется своя оптимизированная модель."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое CQRS?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Outbox?",
+      "questionSlug": "chto-takoe-pattern-outbox",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Outbox? — Gymterview",
+        "description": "Outbox (Transactional Outbox) — это паттерн, решающий проблему атомарности при необходимости одновременно обновить базу данных и опубликовать событие в брокер с",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое паттерн Outbox? — Gymterview",
+        "ogDescription": "Outbox (Transactional Outbox) — это паттерн, решающий проблему атомарности при необходимости одновременно обновить базу ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Outbox?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Outbox (Transactional Outbox) — это паттерн, решающий проблему атомарности при необходимости одновременно обновить базу данных и опубликовать событие в брокер сообщений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Outbox?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Strangler Fig?",
+      "questionSlug": "chto-takoe-pattern-strangler-fig",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Strangler Fig? — Gymterview",
+        "description": "Strangler Fig (душитель) — это паттерн постепенной миграции от монолита к микросервисам. Вместо рискованного «Big Bang» переписывания, новая функциональность ре",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Strangler Fig? — Gymterview",
+        "ogDescription": "Strangler Fig (душитель) — это паттерн постепенной миграции от монолита к микросервисам. Вместо рискованного «Big Bang» ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Strangler Fig?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Strangler Fig (душитель) — это паттерн постепенной миграции от монолита к микросервисам. Вместо рискованного «Big Bang» переписывания, новая функциональность реализуется в микросервисах, а существующая постепенно перемещается из монолита."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Strangler Fig?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

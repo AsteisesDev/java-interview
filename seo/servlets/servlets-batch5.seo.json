@@ -1,0 +1,638 @@
+{
+  "topic": "Servlets, JSP, JSTL",
+  "topicSlug": "servlets",
+  "batch": 5,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какая разница между c:set и jsp:useBean",
+      "questionSlug": "kakaya-raznitsa-mezhdu-cset-i-jspusebean",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какая разница между c:set и jsp:useBean — Gymterview",
+        "description": "Оба тега создают объекты и помещают их в заданную область видимости, но `<c:set>` более гибкий: он может устанавливать произвольные значения, а `<jsp:useBean>` ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какая разница между c:set и jsp:useBean — Gymterview",
+        "ogDescription": "Оба тега создают объекты и помещают их в заданную область видимости, но `<c:set>` более гибкий: он может устанавливать п",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая разница между c:set и jsp:useBean",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оба тега создают объекты и помещают их в заданную область видимости, но `<c:set>` более гибкий: он может устанавливать произвольные значения, а `<jsp:useBean>` только создаёт экземпляр конкретного Java-класса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какая разница между c:set и jsp:useBean",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается c:import от jsp:include и директивы include",
+      "questionSlug": "chem-otlichaetsya-cimport-ot-jspinclude-i-direktivy-include",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Чем отличается c:import от jsp:include и директивы include — Gymterview",
+        "description": "Три механизма включения контента в JSP различаются по времени включения, источнику данных и способу обработки.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Чем отличается c:import от jsp:include и директивы include — Gymterview",
+        "ogDescription": "Три механизма включения контента в JSP различаются по времени включения, источнику данных и способу обработки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается c:import от jsp:include и директивы include",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три механизма включения контента в JSP различаются по времени включения, источнику данных и способу обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Чем отличается c:import от jsp:include и директивы include",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как можно расширить функциональность JSP",
+      "questionSlug": "kak-mozhno-rasshirit-funktsionalnost-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как можно расширить функциональность JSP — Gymterview",
+        "description": "Функциональность JSP расширяется через создание пользовательских тегов (Custom Tags). Разработчик создаёт Java-класс с логикой тега, описывает его в TLD-файле (",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как можно расширить функциональность JSP — Gymterview",
+        "ogDescription": "Функциональность JSP расширяется через создание пользовательских тегов (Custom Tags). Разработчик создаёт Java-класс с л",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как можно расширить функциональность JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Функциональность JSP расширяется через создание пользовательских тегов (Custom Tags). Разработчик создаёт Java-класс с логикой тега, описывает его в TLD-файле (Tag Library Descriptor) и подключает библиотеку на JSP-странице через директиву `taglib`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как можно расширить функциональность JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о написании пользовательских JSP тегов",
+      "questionSlug": "chto-vy-znaete-o-napisanii-polzovatelskikh-jsp-tegov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что вы знаете о написании пользовательских JSP тегов — Gymterview",
+        "description": "Пользовательский JSP-тег создаётся в три шага: написание Java-класса (Tag Handler), создание TLD-файла с описанием тега и подключение библиотеки на JSP-странице",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что вы знаете о написании пользовательских JSP тегов — Gymterview",
+        "ogDescription": "Пользовательский JSP-тег создаётся в три шага: написание Java-класса (Tag Handler), создание TLD-файла с описанием тега ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о написании пользовательских JSP тегов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пользовательский JSP-тег создаётся в три шага: написание Java-класса (Tag Handler), создание TLD-файла с описанием тега и подключение библиотеки на JSP-странице."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что вы знаете о написании пользовательских JSP тегов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Приведите пример использования собственных тегов",
+      "questionSlug": "privedite-primer-ispolzovaniya-sobstvennykh-tegov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Приведите пример использования собственных тегов — Gymterview",
+        "description": "Практический пример: тег для форматирования числа по шаблону (функциональность, отсутствующая в стандартном JSTL).",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Приведите пример использования собственных тегов — Gymterview",
+        "ogDescription": "Практический пример: тег для форматирования числа по шаблону (функциональность, отсутствующая в стандартном JSTL).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Приведите пример использования собственных тегов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Практический пример: тег для форматирования числа по шаблону (функциональность, отсутствующая в стандартном JSTL)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Приведите пример использования собственных тегов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как сделать перенос строки в HTML средствами JSP",
+      "questionSlug": "kak-sdelat-perenos-stroki-v-html-sredstvami-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как сделать перенос строки в HTML средствами JSP — Gymterview",
+        "description": "Для вставки HTML-тега `<br>` через JSP используется тег `<c:out>` с атрибутом `escapeXml=\"false\"`, который отключает экранирование HTML-символов:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как сделать перенос строки в HTML средствами JSP — Gymterview",
+        "ogDescription": "Для вставки HTML-тега `<br>` через JSP используется тег `<c:out>` с атрибутом `escapeXml=\"false\"`, который отключает экр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как сделать перенос строки в HTML средствами JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для вставки HTML-тега `<br>` через JSP используется тег `<c:out>` с атрибутом `escapeXml=\"false\"`, который отключает экранирование HTML-символов:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как сделать перенос строки в HTML средствами JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему не нужно конфигурировать стандартные JSP теги в web.xml",
+      "questionSlug": "pochemu-ne-nuzhno-konfigurirovat-standartnye-jsp-tegi-v-webxml",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Почему не нужно конфигурировать стандартные JSP теги в web.x — Gymterview",
+        "description": "Стандартные JSP-теги (JSTL) не требуют конфигурации в `web.xml`, потому что их TLD-файлы (Tag Library Descriptor) уже упакованы внутри JAR-файлов JSTL в директо",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Почему не нужно конфигурировать стандартные JSP теги в web.x — Gymterview",
+        "ogDescription": "Стандартные JSP-теги (JSTL) не требуют конфигурации в `web.xml`, потому что их TLD-файлы (Tag Library Descriptor) уже уп",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему не нужно конфигурировать стандартные JSP теги в web.xml",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стандартные JSP-теги (JSTL) не требуют конфигурации в `web.xml`, потому что их TLD-файлы (Tag Library Descriptor) уже упакованы внутри JAR-файлов JSTL в директории `META-INF/`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Почему не нужно конфигурировать стандартные JSP теги в web.x",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как можно обработать ошибки JSP страниц",
+      "questionSlug": "kak-mozhno-obrabotat-oshibki-jsp-stranits",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как можно обработать ошибки JSP страниц — Gymterview",
+        "description": "Обработка ошибок в JSP выполняется через механизм error pages: на JSP-странице указывается страница ошибок, которая получает объект исключения и формирует понят",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как можно обработать ошибки JSP страниц — Gymterview",
+        "ogDescription": "Обработка ошибок в JSP выполняется через механизм error pages: на JSP-странице указывается страница ошибок, которая полу",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как можно обработать ошибки JSP страниц",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обработка ошибок в JSP выполняется через механизм error pages: на JSP-странице указывается страница ошибок, которая получает объект исключения и формирует понятный ответ пользователю."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как можно обработать ошибки JSP страниц",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как происходит обработка ошибок с помощью JSTL",
+      "questionSlug": "kak-proiskhodit-obrabotka-oshibok-s-pomoshchyu-jstl",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как происходит обработка ошибок с помощью JSTL — Gymterview",
+        "description": "JSTL предоставляет теги `<c:catch>` и `<c:if>` для перехвата и обработки исключений непосредственно на JSP-странице, аналогично блоку try-catch в Java.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как происходит обработка ошибок с помощью JSTL — Gymterview",
+        "ogDescription": "JSTL предоставляет теги `<c:catch>` и `<c:if>` для перехвата и обработки исключений непосредственно на JSP-странице, ана",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как происходит обработка ошибок с помощью JSTL",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSTL предоставляет теги `<c:catch>` и `<c:if>` для перехвата и обработки исключений непосредственно на JSP-странице, аналогично блоку try-catch в Java."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как происходит обработка ошибок с помощью JSTL",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как конфигурируется JSP в дескрипторе развертывания",
+      "questionSlug": "kak-konfiguriruetsya-jsp-v-deskriptore-razvertyvaniya",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как конфигурируется JSP в дескрипторе развертывания — Gymterview",
+        "description": "Элемент `<jsp-config>` в `web.xml` позволяет настроить глобальные параметры для JSP-страниц: управление скриплетами, EL, кодировкой, буферизацией и подключение ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как конфигурируется JSP в дескрипторе развертывания — Gymterview",
+        "ogDescription": "Элемент `<jsp-config>` в `web.xml` позволяет настроить глобальные параметры для JSP-страниц: управление скриплетами, EL,",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как конфигурируется JSP в дескрипторе развертывания",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Элемент `<jsp-config>` в `web.xml` позволяет настроить глобальные параметры для JSP-страниц: управление скриплетами, EL, кодировкой, буферизацией и подключение библиотек тегов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как конфигурируется JSP в дескрипторе развертывания",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли использовать Javascript на JSP странице",
+      "questionSlug": "mozhno-li-ispolzovat-javascript-na-jsp-stranitse",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Можно ли использовать Javascript на JSP странице — Gymterview",
+        "description": "Да, JavaScript можно использовать на JSP-странице. JSP — серверная технология, которая генерирует HTML-ответ. JavaScript, как и любой другой HTML-контент (CSS, ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Можно ли использовать Javascript на JSP странице — Gymterview",
+        "ogDescription": "Да, JavaScript можно использовать на JSP-странице. JSP — серверная технология, которая генерирует HTML-ответ. JavaScript",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли использовать Javascript на JSP странице",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, JavaScript можно использовать на JSP-странице. JSP — серверная технология, которая генерирует HTML-ответ. JavaScript, как и любой другой HTML-контент (CSS, изображения), является частью этого HTML и выполняется на стороне клиента (в браузере)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Можно ли использовать Javascript на JSP странице",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Всегда ли создается объект сессии на JSP странице",
+      "questionSlug": "vsegda-li-sozdaetsya-obekt-sessii-na-jsp-stranitse",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Всегда ли создается объект сессии на JSP странице — Gymterview",
+        "description": "По умолчанию JSP-страница автоматически создаёт объект `HttpSession` при обработке запроса. Это поведение можно отключить через директиву `page`:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Всегда ли создается объект сессии на JSP странице — Gymterview",
+        "ogDescription": "По умолчанию JSP-страница автоматически создаёт объект `HttpSession` при обработке запроса. Это поведение можно отключит",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Всегда ли создается объект сессии на JSP странице",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "По умолчанию JSP-страница автоматически создаёт объект `HttpSession` при обработке запроса. Это поведение можно отключить через директиву `page`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Всегда ли создается объект сессии на JSP странице",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая разница между JSPWriter и сервлетным PrintWriter",
+      "questionSlug": "kakaya-raznitsa-mezhdu-jspwriter-i-servletnym-printwriter",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какая разница между JSPWriter и сервлетным PrintWriter — Gymterview",
+        "description": "`JspWriter` и `PrintWriter` — оба используются для записи текстовых данных в HTTP-ответ, но `JspWriter` добавляет слой буферизации поверх `PrintWriter`.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какая разница между JSPWriter и сервлетным PrintWriter — Gymterview",
+        "ogDescription": "`JspWriter` и `PrintWriter` — оба используются для записи текстовых данных в HTTP-ответ, но `JspWriter` добавляет слой б",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая разница между JSPWriter и сервлетным PrintWriter",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`JspWriter` и `PrintWriter` — оба используются для записи текстовых данных в HTTP-ответ, но `JspWriter` добавляет слой буферизации поверх `PrintWriter`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какая разница между JSPWriter и сервлетным PrintWriter",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите общие практические принципы работы с JSP",
+      "questionSlug": "opishite-obshchie-prakticheskie-printsipy-raboty-s-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Опишите общие практические принципы работы с JSP — Gymterview",
+        "description": "Хорошие практики работы с JSP основаны на принципе разделения ответственности: JSP — только для представления (View), вся логика — в сервлетах и сервисах.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Опишите общие практические принципы работы с JSP — Gymterview",
+        "ogDescription": "Хорошие практики работы с JSP основаны на принципе разделения ответственности: JSP — только для представления (View), вс",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите общие практические принципы работы с JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Хорошие практики работы с JSP основаны на принципе разделения ответственности: JSP — только для представления (View), вся логика — в сервлетах и сервисах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Опишите общие практические принципы работы с JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

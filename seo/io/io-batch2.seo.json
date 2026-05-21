@@ -1,0 +1,504 @@
+{
+  "topic": "Потоки ввода/вывода в Java",
+  "topicSlug": "io",
+  "batch": 2,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какой класс предназначен для работы с элементами файловой системы?",
+      "questionSlug": "kakoy-klass-prednaznachen-dlya-raboty-s-elementami-faylovoy-sistemy",
+      "grade": "junior",
+      "tags": ["io", "file", "core", "основы"],
+      "seo": {
+        "title": "Класс File в Java — Gymterview",
+        "description": "Класс java.io.File: работа с файлами и каталогами, создание, удаление, проверки. Почему в новом коде лучше использовать Path и Files (NIO.2).",
+        "keywords": ["File", "java.io.File", "файловая система", "createNewFile", "mkdir", "exists", "Path", "NIO.2", "Java IO", "собеседование"],
+        "ogTitle": "Класс File для работы с файловой системой — Gymterview",
+        "ogDescription": "java.io.File: создание, удаление, проверки файлов и каталогов. Сравнение с NIO.2 Path/Files.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой класс предназначен для работы с элементами файловой системы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Класс java.io.File представляет путь к файлу или каталогу в файловой системе. Позволяет создавать (createNewFile, mkdir), удалять (delete), переименовывать (renameTo) файлы, проверять их свойства (exists, isFile, isDirectory), получать информацию (length, lastModified, getAbsolutePath). В новом коде рекомендуется NIO.2 (Path, Files)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Класс File", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие методы класса File вы знаете?",
+      "questionSlug": "kakie-metody-klassa-file-vy-znaete",
+      "grade": "junior",
+      "tags": ["io", "file", "core"],
+      "seo": {
+        "title": "Методы класса File в Java — Gymterview",
+        "description": "Методы java.io.File по категориям: создание, удаление, проверки, получение информации, листинг каталога. Таблица с описанием 15+ методов.",
+        "keywords": ["File методы", "createNewFile", "mkdir", "mkdirs", "delete", "exists", "isFile", "isDirectory", "listFiles", "getName", "Java", "собеседование"],
+        "ogTitle": "Методы класса File в Java — Gymterview",
+        "ogDescription": "Полный обзор методов java.io.File: создание, удаление, проверки, получение информации, листинг каталога.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие методы класса File вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Создание: createNewFile(), mkdir(), mkdirs(). Удаление: delete(), deleteOnExit(). Проверки: exists(), isFile(), isDirectory(), isHidden(), canRead(), canWrite(). Информация: getName(), getParent(), getAbsolutePath(), getCanonicalPath(), length(), lastModified(). Листинг: list(), listFiles(), listFiles(FileFilter). Переименование: renameTo(File)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Методы File", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете об интерфейсе FileFilter?",
+      "questionSlug": "chto-vy-znaete-ob-interfeyse-filefilter",
+      "grade": "junior",
+      "tags": ["io", "file", "interface", "core"],
+      "seo": {
+        "title": "Интерфейс FileFilter в Java — Gymterview",
+        "description": "FileFilter: функциональный интерфейс для фильтрации файлов. Метод accept(), использование с лямбдами, сравнение с FilenameFilter и NIO.2 аналогами.",
+        "keywords": ["FileFilter", "FilenameFilter", "accept", "listFiles", "лямбда", "функциональный интерфейс", "DirectoryStream", "Java IO", "собеседование"],
+        "ogTitle": "Интерфейс FileFilter в Java — Gymterview",
+        "ogDescription": "FileFilter — функциональный интерфейс с методом accept(File) для фильтрации файлов при вызове listFiles().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете об интерфейсе FileFilter?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FileFilter — функциональный интерфейс из java.io с единственным методом boolean accept(File pathname). Используется с File.listFiles(FileFilter) для фильтрации элементов каталога. Реализуется через лямбду: dir.listFiles(f -> f.getName().endsWith(\".java\")). Альтернатива — FilenameFilter с методом accept(File dir, String name). В NIO.2 аналог — DirectoryStream.Filter<Path>."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "FileFilter", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выбрать все элементы определенного каталога по критерию?",
+      "questionSlug": "kak-vybrat-vse-elementy-opredelyonnogo-kataloga-po-kriteriyu",
+      "grade": "junior",
+      "tags": ["io", "file", "nio", "core"],
+      "seo": {
+        "title": "Фильтрация файлов каталога в Java — Gymterview",
+        "description": "Как выбрать файлы по расширению или критерию: File.listFiles(FileFilter), Files.list(), Files.walk(), DirectoryStream. Примеры с лямбдами.",
+        "keywords": ["listFiles", "FileFilter", "FilenameFilter", "Files.list", "Files.walk", "DirectoryStream", "фильтрация файлов", "Java", "собеседование"],
+        "ogTitle": "Фильтрация файлов каталога по критерию в Java — Gymterview",
+        "ogDescription": "Подходы к фильтрации файлов: File.listFiles(FileFilter), NIO.2 Files.list(), Files.walk() с Stream API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выбрать все элементы определенного каталога по критерию?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Через java.io: File.listFiles(FileFilter) или File.listFiles(FilenameFilter) с лямбдой. Через NIO.2 (рекомендуемый): Files.newDirectoryStream(path, \"*.java\") с glob-шаблоном, Files.list(path) с filter() для одного уровня, Files.walk(path) для рекурсивного обхода. Stream от Files.list/walk требует try-with-resources."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Фильтрация каталога", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о RandomAccessFile?",
+      "questionSlug": "chto-vy-znaete-o-randomaccessfile",
+      "grade": "middle",
+      "tags": ["io", "file", "core"],
+      "seo": {
+        "title": "RandomAccessFile в Java — Gymterview",
+        "description": "RandomAccessFile: произвольный доступ к файлу через seek() и getFilePointer(). Не входит в иерархию InputStream/OutputStream. Режимы доступа, пример.",
+        "keywords": ["RandomAccessFile", "seek", "getFilePointer", "произвольный доступ", "файл", "чтение запись", "Java IO", "бинарный файл", "собеседование"],
+        "ogTitle": "RandomAccessFile — произвольный доступ к файлу — Gymterview",
+        "ogDescription": "RandomAccessFile: чтение и запись в произвольном месте файла. Методы seek(), getFilePointer(), режимы доступа r/rw/rws/rwd.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о RandomAccessFile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RandomAccessFile — класс java.io для чтения и записи в произвольном месте файла. Не входит в иерархию InputStream/OutputStream. Ключевые методы: seek(long) — перемещение позиции, getFilePointer() — текущая позиция, length() — размер файла, skipBytes(int). Поддерживает типизированное чтение/запись (readInt, writeUTF). Конструктор требует режим доступа (r, rw, rws, rwd)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "RandomAccessFile", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие режимы доступа к файлу есть у RandomAccessFile?",
+      "questionSlug": "kakie-rezhimy-dostupa-k-faylu-est-u-randomaccessfile",
+      "grade": "middle",
+      "tags": ["io", "file", "core"],
+      "seo": {
+        "title": "Режимы доступа RandomAccessFile — Gymterview",
+        "description": "Четыре режима RandomAccessFile: r (чтение), rw (чтение/запись), rws (синхронная запись данных и метаданных), rwd (синхронная запись данных). Сравнение.",
+        "keywords": ["RandomAccessFile", "режим доступа", "r", "rw", "rws", "rwd", "fsync", "синхронная запись", "Java IO", "собеседование"],
+        "ogTitle": "Режимы доступа к файлу в RandomAccessFile — Gymterview",
+        "ogDescription": "Режимы r, rw, rws, rwd в RandomAccessFile: отличия в гарантиях записи на диск и производительности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие режимы доступа к файлу есть у RandomAccessFile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Четыре режима: \"r\" — только чтение (запись бросает IOException), \"rw\" — чтение и запись (создаёт файл при отсутствии), \"rws\" — чтение/запись с синхронной записью содержимого и метаданных на диск (аналог fsync), \"rwd\" — чтение/запись с синхронной записью только содержимого (метаданные асинхронно, производительнее rws)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Режимы RandomAccessFile", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие классы поддерживают чтение и запись потоков в компрессированном формате?",
+      "questionSlug": "kakie-klassy-podderzhivayut-chtenie-i-zapis-potokov-v-kompressirovannom-formate",
+      "grade": "middle",
+      "tags": ["io", "compression", "core"],
+      "seo": {
+        "title": "Классы для сжатия данных в Java — Gymterview",
+        "description": "Классы java.util.zip: ZipOutputStream, GZIPOutputStream, DeflaterOutputStream и их аналоги для чтения. Форматы ZIP, GZIP, Deflate. HTTP-сжатие.",
+        "keywords": ["ZipOutputStream", "GZIPOutputStream", "DeflaterOutputStream", "ZipInputStream", "GZIPInputStream", "InflaterInputStream", "сжатие", "java.util.zip", "собеседование"],
+        "ogTitle": "Классы для сжатия данных в Java — Gymterview",
+        "ogDescription": "ZIP, GZIP, Deflate: классы для сжатия и распаковки потоков данных из пакета java.util.zip.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие классы поддерживают чтение и запись потоков в компрессированном формате?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пакет java.util.zip: ZIP — ZipOutputStream/ZipInputStream (архивы с несколькими файлами), GZIP — GZIPOutputStream/GZIPInputStream (сжатие одного потока, используется в HTTP), Deflate — DeflaterOutputStream/InflaterInputStream (низкоуровневое сжатие). ZIP и GZIP классы наследуют Deflater/Inflater. Все работают как обёртки (паттерн Декоратор)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Сжатие данных", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Существует ли возможность перенаправить потоки стандартного ввода/вывода?",
+      "questionSlug": "sushchestvuet-li-vozmozhnost-perenapravit-potoki-standartnogo-vvoda-vyvoda",
+      "grade": "junior",
+      "tags": ["io", "core", "основы"],
+      "seo": {
+        "title": "Перенаправление стандартного ввода/вывода Java — Gymterview",
+        "description": "Перенаправление System.in, System.out, System.err через setIn(), setOut(), setErr(). Примеры: запись в файл, перехват вывода для тестирования.",
+        "keywords": ["System.setIn", "System.setOut", "System.setErr", "перенаправление", "stdin", "stdout", "stderr", "PrintStream", "Java", "собеседование"],
+        "ogTitle": "Перенаправление потоков ввода/вывода в Java — Gymterview",
+        "ogDescription": "Как перенаправить System.in, System.out, System.err через статические методы класса System.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Существует ли возможность перенаправить потоки стандартного ввода/вывода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, класс System предоставляет методы: setIn(InputStream) — перенаправление stdin, setOut(PrintStream) — stdout, setErr(PrintStream) — stderr. Позволяет записывать вывод в файл, читать ввод из файла или перехватывать вывод для тестирования через ByteArrayOutputStream."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Перенаправление потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой символ является разделителем при указании пути в файловой системе?",
+      "questionSlug": "kakoy-simvol-yavlyaetsya-razdelitelem-pri-ukazanii-puti-v-faylovoy-sisteme",
+      "grade": "junior",
+      "tags": ["io", "file", "core", "основы"],
+      "seo": {
+        "title": "Разделитель пути в файловой системе Java — Gymterview",
+        "description": "Разделитель пути: \\ в Windows, / в Linux. File.separator, File.pathSeparator. Почему лучше использовать Path.of() вместо конкатенации строк.",
+        "keywords": ["File.separator", "File.separatorChar", "File.pathSeparator", "разделитель пути", "Path.of", "кроссплатформенный", "Java", "собеседование"],
+        "ogTitle": "Разделитель пути в файловой системе Java — Gymterview",
+        "ogDescription": "Разделитель каталогов: \\ (Windows), / (Linux). File.separator, Path.of() для кроссплатформенного кода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой символ является разделителем при указании пути в файловой системе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Windows — обратная косая черта (\\), в Linux/macOS — прямая (/). В Java: File.separator или File.separatorChar. Прямая косая черта / работает на всех платформах в Java. Для кроссплатформенного кода рекомендуется Path.of(\"dir\", \"subdir\", \"file.txt\"). File.pathSeparator — разделитель путей в переменных окружения (; в Windows, : в Linux)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Разделитель пути", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое абсолютный путь и относительный путь?",
+      "questionSlug": "chto-takoe-absolyutnyy-put-i-otnositelnyy-put",
+      "grade": "junior",
+      "tags": ["io", "file", "core", "основы"],
+      "seo": {
+        "title": "Абсолютный и относительный путь в Java — Gymterview",
+        "description": "Абсолютный путь начинается от корня FS, относительный — от текущей директории. Примеры, спецсимволы (., ..), toAbsolutePath(), normalize().",
+        "keywords": ["абсолютный путь", "относительный путь", "toAbsolutePath", "normalize", "getAbsolutePath", "File", "Path", "Java", "собеседование"],
+        "ogTitle": "Абсолютный и относительный путь в Java — Gymterview",
+        "ogDescription": "Определение абсолютного и относительного пути. Примеры, спецсимволы, методы toAbsolutePath() и normalize().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое абсолютный путь и относительный путь?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Абсолютный путь однозначно указывает расположение от корня файловой системы (/ или C:\\), не зависит от текущей директории. Относительный путь указывает расположение относительно текущей рабочей директории. Спецсимволы: . (текущий каталог), .. (родительский). В Java: file.getAbsolutePath(), path.toAbsolutePath(), path.normalize() (убирает . и ..)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Абсолютный и относительный путь", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое символьная ссылка?",
+      "questionSlug": "chto-takoe-simvolnaya-ssylka",
+      "grade": "junior",
+      "tags": ["io", "file", "nio", "core"],
+      "seo": {
+        "title": "Символьная ссылка (symlink) в Java — Gymterview",
+        "description": "Символьная ссылка: определение, отличие от жёсткой ссылки, работа в Java через NIO.2 (createSymbolicLink, isSymbolicLink, readSymbolicLink).",
+        "keywords": ["символьная ссылка", "symlink", "симлинк", "жёсткая ссылка", "createSymbolicLink", "isSymbolicLink", "readSymbolicLink", "NIO.2", "Java", "собеседование"],
+        "ogTitle": "Символьная ссылка (symlink) в Java — Gymterview",
+        "ogDescription": "Что такое символьная ссылка, отличие от жёсткой, работа в Java через Files.createSymbolicLink() и NIO.2.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое символьная ссылка?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Символьная (символическая) ссылка — специальный файл, содержащий путь к другому файлу или каталогу. При обращении ОС перенаправляет к цели. Отличие от жёсткой ссылки: работает между FS, может ссылаться на каталоги, становится «битой» при удалении цели. В Java NIO.2: Files.createSymbolicLink(), Files.isSymbolicLink(), Files.readSymbolicLink()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Символьная ссылка", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое NIO.2 и чем он отличается от java.io.File?",
+      "questionSlug": "chto-takoe-nio2-i-chem-on-otlichaetsya-ot-java-io-file",
+      "grade": "middle",
+      "tags": ["nio", "io", "file", "core"],
+      "seo": {
+        "title": "NIO.2 (Path, Files) vs java.io.File — Gymterview",
+        "description": "NIO.2: интерфейс Path, класс Files. Отличия от File: иммутабельность, информативные исключения, символьные ссылки, Stream API, walkFileTree.",
+        "keywords": ["NIO.2", "Path", "Files", "java.io.File", "java.nio.file", "иммутабельный", "walkFileTree", "readString", "writeString", "Java 7", "собеседование"],
+        "ogTitle": "NIO.2 vs java.io.File — что выбрать — Gymterview",
+        "ogDescription": "Сравнение NIO.2 (Path, Files) и java.io.File: иммутабельность, исключения, символьные ссылки, Stream API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое NIO.2 и чем он отличается от java.io.File?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NIO.2 (java.nio.file, Java 7+) — API для файловой системы с интерфейсом Path и утилитным классом Files. Отличия от File: Path иммутабелен, Files бросает информативные исключения (вместо boolean/null), полная поддержка символьных ссылок, интеграция со Stream API (lines, walk, list), readString/writeString (Java 11+). File считается устаревшим подходом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "NIO.2 vs File", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с файлами и каталогами через Files API?",
+      "questionSlug": "kak-rabotat-s-faylami-i-katalogami-cherez-files-api",
+      "grade": "middle",
+      "tags": ["nio", "io", "file", "core"],
+      "seo": {
+        "title": "Files API: работа с файлами и каталогами — Gymterview",
+        "description": "java.nio.file.Files: чтение, запись, копирование, удаление, обход дерева каталогов, создание директорий. Примеры readString, walk, walkFileTree.",
+        "keywords": ["Files API", "java.nio.file.Files", "readString", "writeString", "walk", "walkFileTree", "copy", "move", "delete", "createDirectories", "Java NIO.2", "собеседование"],
+        "ogTitle": "Files API в Java — работа с файлами и каталогами — Gymterview",
+        "ogDescription": "Полный обзор Files API: чтение/запись, копирование/перемещение, обход дерева, создание каталогов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с файлами и каталогами через Files API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Files предоставляет статические методы: чтение (readString, readAllLines, lines), запись (writeString, write), копирование/перемещение (copy, move с StandardCopyOption), удаление (delete, deleteIfExists), создание каталогов (createDirectories), обход дерева (walk, walkFileTree, list, find). Stream-методы (lines, walk, list) требуют try-with-resources. Files.delete не удаляет непустой каталог."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Files API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ByteBuffer и как с ним работать?",
+      "questionSlug": "chto-takoe-bytebuffer-i-kak-s-nim-rabotat",
+      "grade": "middle",
+      "tags": ["nio", "io", "performance", "core"],
+      "seo": {
+        "title": "ByteBuffer в Java NIO — Gymterview",
+        "description": "ByteBuffer: свойства (capacity, position, limit, mark), heap vs direct буферы, операции put/get/flip/clear/compact. Паттерн чтения из канала.",
+        "keywords": ["ByteBuffer", "java.nio", "flip", "clear", "compact", "allocateDirect", "heap buffer", "direct buffer", "FileChannel", "Java NIO", "собеседование"],
+        "ogTitle": "ByteBuffer в Java NIO — как работать — Gymterview",
+        "ogDescription": "ByteBuffer: создание (heap vs direct), операции put/get/flip/clear/compact, паттерн чтения из канала.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ByteBuffer и как с ним работать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ByteBuffer — буфер для байтовых данных в java.nio, ключевой компонент NIO. Свойства: capacity, position, limit, mark. Создание: allocate (heap), allocateDirect (нативная память), wrap. Цикл: put → flip (переключение в режим чтения) → get → clear/compact. Heap-буфер управляется GC, direct-буфер эффективнее для интенсивного I/O. flip() обязателен между записью и чтением."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "ByteBuffer", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать чтение большого файла без загрузки в память?",
+      "questionSlug": "kak-realizovat-chtenie-bolshogo-fayla-bez-zagruzki-v-pamyat",
+      "grade": "middle",
+      "tags": ["io", "nio", "performance", "core"],
+      "seo": {
+        "title": "Чтение большого файла без загрузки в память — Gymterview",
+        "description": "Подходы к чтению больших файлов: Files.lines(), BufferedReader, FileChannel + ByteBuffer, MappedByteBuffer. Сравнение по памяти и скорости.",
+        "keywords": ["большой файл", "Files.lines", "BufferedReader", "FileChannel", "ByteBuffer", "MappedByteBuffer", "memory-mapped", "OutOfMemoryError", "потоковое чтение", "собеседование"],
+        "ogTitle": "Чтение большого файла без загрузки в память Java — Gymterview",
+        "ogDescription": "Files.lines(), BufferedReader, FileChannel + ByteBuffer, MappedByteBuffer: потоковое чтение больших файлов без OutOfMemoryError.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать чтение большого файла без загрузки в память?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Текстовые файлы: Files.lines() — ленивый Stream<String>, BufferedReader.readLine() — классический подход. Бинарные: FileChannel + ByteBuffer — чтение блоками, MappedByteBuffer — отображение в виртуальную память (ОС управляет подгрузкой страниц). Нельзя использовать readAllBytes()/readAllLines() — приводит к OutOfMemoryError. Для файлов >2 ГБ MappedByteBuffer создаётся по частям."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Чтение большого файла", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое try-with-resources и как правильно закрывать ресурсы?",
+      "questionSlug": "chto-takoe-try-with-resources-i-kak-pravilno-zakryvat-resursy",
+      "grade": "junior",
+      "tags": ["io", "core", "основы"],
+      "seo": {
+        "title": "try-with-resources в Java — Gymterview",
+        "description": "try-with-resources: автоматическое закрытие ресурсов AutoCloseable (Java 7+). Порядок закрытия, suppressed exceptions, effectively final (Java 9+).",
+        "keywords": ["try-with-resources", "AutoCloseable", "Closeable", "close", "suppressed exceptions", "effectively final", "Java 7", "Java 9", "ресурсы", "собеседование"],
+        "ogTitle": "try-with-resources — автоматическое закрытие ресурсов — Gymterview",
+        "ogDescription": "Как try-with-resources автоматически закрывает ресурсы. Порядок закрытия, подавленные исключения, effectively final.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое try-with-resources и как правильно закрывать ресурсы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "try-with-resources (Java 7+) — конструкция, автоматически закрывающая ресурсы AutoCloseable при выходе из try. Ресурсы закрываются в обратном порядке объявления. Если исключение в try и close() — исключение close() становится suppressed (getSuppressed()). С Java 9 можно использовать effectively final переменные. Работает для InputStream, OutputStream, Connection, Channel, Stream от Files.lines()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "try-with-resources", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

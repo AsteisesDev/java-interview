@@ -1,0 +1,908 @@
+{
+  "topic": "Servlets, JSP, JSTL",
+  "topicSlug": "servlets",
+  "batch": 3,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Расскажите об интерфейсе SingleThreadModel",
+      "questionSlug": "rasskazhite-ob-interfejse-singlethreadmodel",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Расскажите об интерфейсе SingleThreadModel — Gymterview",
+        "description": "`SingleThreadModel` — маркерный интерфейс (без методов), при реализации которого контейнер гарантирует, что метод `service()` сервлета не будет одновременно вып",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Расскажите об интерфейсе SingleThreadModel — Gymterview",
+        "ogDescription": "`SingleThreadModel` — маркерный интерфейс (без методов), при реализации которого контейнер гарантирует, что метод `servi",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите об интерфейсе SingleThreadModel",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`SingleThreadModel` — маркерный интерфейс (без методов), при реализации которого контейнер гарантирует, что метод `service()` сервлета не будет одновременно выполняться в двух потоках. Контейнер реализует это либо через синхронизацию доступа к единственному экземпляру, либо через пул экземпляров сер"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Расскажите об интерфейсе SingleThreadModel",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что означает URL encoding и как это осуществить в Java",
+      "questionSlug": "chto-oznachaet-url-encoding-i-kak-eto-osushchestvit-v-java",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что означает URL encoding и как это осуществить в Java — Gymterview",
+        "description": "URL encoding (процентное кодирование) — это преобразование специальных символов и символов за пределами ASCII в URL-безопасный формат, где они заменяются на `%X",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что означает URL encoding и как это осуществить в Java — Gymterview",
+        "ogDescription": "URL encoding (процентное кодирование) — это преобразование специальных символов и символов за пределами ASCII в URL-безо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что означает URL encoding и как это осуществить в Java",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "URL encoding (процентное кодирование) — это преобразование специальных символов и символов за пределами ASCII в URL-безопасный формат, где они заменяются на `%XX` (процент + hex-код). Это необходимо, потому что URL может содержать только ограниченный набор символов (латинские буквы, цифры, `-`, `_`,"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что означает URL encoding и как это осуществить в Java",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие различные методы управления сессией в сервлетах вы знаете",
+      "questionSlug": "kakie-razlichnye-metody-upravleniya-sessiej-v-servletakh-vy-znaete",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие различные методы управления сессией в сервлетах вы зна — Gymterview",
+        "description": "HTTP — stateless протокол, и для отслеживания состояния пользователя между запросами используются различные механизмы управления сессией. Каждый из них имеет св",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Какие различные методы управления сессией в сервлетах вы зна — Gymterview",
+        "ogDescription": "HTTP — stateless протокол, и для отслеживания состояния пользователя между запросами используются различные механизмы уп",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие различные методы управления сессией в сервлетах вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP — stateless протокол, и для отслеживания состояния пользователя между запросами используются различные механизмы управления сессией. Каждый из них имеет свои ограничения и область применения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие различные методы управления сессией в сервлетах вы зна",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое cookies",
+      "questionSlug": "chto-takoe-cookies",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое cookies — Gymterview",
+        "description": "Cookies — это небольшие фрагменты данных (пары ключ-значение), которые сервер отправляет клиенту в HTTP-заголовке `Set-Cookie`, а клиент сохраняет и возвращает ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое cookies — Gymterview",
+        "ogDescription": "Cookies — это небольшие фрагменты данных (пары ключ-значение), которые сервер отправляет клиенту в HTTP-заголовке `Set-C",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое cookies",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cookies — это небольшие фрагменты данных (пары ключ-значение), которые сервер отправляет клиенту в HTTP-заголовке `Set-Cookie`, а клиент сохраняет и возвращает серверу с каждым последующим запросом в заголовке `Cookie`. Максимальный размер одного cookie — 4 КБ, браузеры ограничивают количество cooki"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое cookies",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие методы для работы с cookies предусмотрены в сервлетах",
+      "questionSlug": "kakie-metody-dlya-raboty-s-cookies-predusmotreny-v-servletakh",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие методы для работы с cookies предусмотрены в сервлетах — Gymterview",
+        "description": "Servlet API предоставляет класс `javax.servlet.http.Cookie` для работы с cookies. Чтение и запись cookies выполняется через разные объекты — запрос и ответ соот",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие методы для работы с cookies предусмотрены в сервлетах — Gymterview",
+        "ogDescription": "Servlet API предоставляет класс `javax.servlet.http.Cookie` для работы с cookies. Чтение и запись cookies выполняется че",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие методы для работы с cookies предусмотрены в сервлетах",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Servlet API предоставляет класс `javax.servlet.http.Cookie` для работы с cookies. Чтение и запись cookies выполняется через разные объекты — запрос и ответ соответственно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие методы для работы с cookies предусмотрены в сервлетах",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое URL Rewriting",
+      "questionSlug": "chto-takoe-url-rewriting",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое URL Rewriting — Gymterview",
+        "description": "URL Rewriting — это механизм управления сессией, при котором идентификатор сессии добавляется к каждому URL как параметр (`;jsessionid=ABC123`). Используется ка",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое URL Rewriting — Gymterview",
+        "ogDescription": "URL Rewriting — это механизм управления сессией, при котором идентификатор сессии добавляется к каждому URL как параметр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое URL Rewriting",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "URL Rewriting — это механизм управления сессией, при котором идентификатор сессии добавляется к каждому URL как параметр (`;jsessionid=ABC123`). Используется как fallback, когда cookies отключены в браузере клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое URL Rewriting",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужны и чем отличаются методы encodeURL() и encodeRedirectURL()",
+      "questionSlug": "zachem-nuzhny-i-chem-otlichayutsya-metody-encodeurl-i-encoderedirecturl",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Зачем нужны и чем отличаются методы encodeURL() и encodeRedi — Gymterview",
+        "description": "Оба метода интерфейса `HttpServletResponse` добавляют `jsessionid` к URL, если клиент не поддерживает cookies. Разница в контексте использования: `encodeURL()` ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Зачем нужны и чем отличаются методы encodeURL() и encodeRedi — Gymterview",
+        "ogDescription": "Оба метода интерфейса `HttpServletResponse` добавляют `jsessionid` к URL, если клиент не поддерживает cookies. Разница в",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужны и чем отличаются методы encodeURL() и encodeRedirectURL()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оба метода интерфейса `HttpServletResponse` добавляют `jsessionid` к URL, если клиент не поддерживает cookies. Разница в контексте использования: `encodeURL()` — для ссылок в HTML, `encodeRedirectURL()` — для URL, передаваемых в `sendRedirect()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Зачем нужны и чем отличаются методы encodeURL() и encodeRedi",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое сессия",
+      "questionSlug": "chto-takoe-sessiya",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое сессия — Gymterview",
+        "description": "Сессия (Session) — это серверный механизм хранения состояния клиента между несколькими HTTP-запросами. Поскольку HTTP — stateless протокол, сессия решает пробле",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое сессия — Gymterview",
+        "ogDescription": "Сессия (Session) — это серверный механизм хранения состояния клиента между несколькими HTTP-запросами. Поскольку HTTP — ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сессия",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сессия (Session) — это серверный механизм хранения состояния клиента между несколькими HTTP-запросами. Поскольку HTTP — stateless протокол, сессия решает проблему «запоминания» пользователя: его аутентификации, корзины покупок, настроек и других данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое сессия",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как уведомить объект в сессии, что сессия недействительна или закончилась",
+      "questionSlug": "kak-uvedomit-obekt-v-sessii-chto-sessiya-nedejstvitelna-ili-zakonchilas",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как уведомить объект в сессии, что сессия недействительна ил — Gymterview",
+        "description": "Для уведомления объекта об окончании или инвалидации сессии используется интерфейс `javax.servlet.http.HttpSessionBindingListener`. Объект, реализующий этот инт",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Как уведомить объект в сессии, что сессия недействительна ил — Gymterview",
+        "ogDescription": "Для уведомления объекта об окончании или инвалидации сессии используется интерфейс `javax.servlet.http.HttpSessionBindin",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как уведомить объект в сессии, что сессия недействительна или закончилась",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для уведомления объекта об окончании или инвалидации сессии используется интерфейс `javax.servlet.http.HttpSessionBindingListener`. Объект, реализующий этот интерфейс, автоматически получает callback при добавлении в сессию и удалении из неё."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как уведомить объект в сессии, что сессия недействительна ил",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой существует эффективный способ проверить что все сервлеты доступны только для пользователя с верной сессией",
+      "questionSlug": "kakoj-sushchestvuet-effektivnyj-sposob-proverit-chto-vse-servlety-dostupny-tolko",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какой существует эффективный способ проверить что все сервле — Gymterview",
+        "description": "Сервлетный фильтр (Filter) — наиболее эффективный способ централизованной проверки сессии для всех запросов. Фильтр перехватывает каждый запрос до того, как он ",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Какой существует эффективный способ проверить что все сервле — Gymterview",
+        "ogDescription": "Сервлетный фильтр (Filter) — наиболее эффективный способ централизованной проверки сессии для всех запросов. Фильтр пере",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой существует эффективный способ проверить что все сервлеты доступны только для пользователя с верной сессией",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сервлетный фильтр (Filter) — наиболее эффективный способ централизованной проверки сессии для всех запросов. Фильтр перехватывает каждый запрос до того, как он достигнет сервлета, и может проверить наличие и валидность сессии."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какой существует эффективный способ проверить что все сервле",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить transport layer security для веб-приложения",
+      "questionSlug": "kak-obespechit-transport-layer-security-dlya-veb-prilozheniya",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как обеспечить transport layer security для веб-приложения — Gymterview",
+        "description": "Transport Layer Security (TLS/SSL) обеспечивается настройкой HTTPS в контейнере сервлетов. Для этого необходимо: получить SSL-сертификат, настроить HTTPS-коннек",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Как обеспечить transport layer security для веб-приложения — Gymterview",
+        "ogDescription": "Transport Layer Security (TLS/SSL) обеспечивается настройкой HTTPS в контейнере сервлетов. Для этого необходимо: получит",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить transport layer security для веб-приложения",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transport Layer Security (TLS/SSL) обеспечивается настройкой HTTPS в контейнере сервлетов. Для этого необходимо: получить SSL-сертификат, настроить HTTPS-коннектор в контейнере, и опционально — настроить перенаправление HTTP на HTTPS."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как обеспечить transport layer security для веб-приложения",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать подключение к базе данных и журналирование в сервлете",
+      "questionSlug": "kak-organizovat-podklyuchenie-k-baze-dannykh-i-zhurnalirovanie-v-servlete",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как организовать подключение к базе данных и журналирование  — Gymterview",
+        "description": "Подключение к базе данных инициализируется в `ServletContextListener` при старте приложения и сохраняется как атрибут контекста для общего доступа. Это обеспечи",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Как организовать подключение к базе данных и журналирование  — Gymterview",
+        "ogDescription": "Подключение к базе данных инициализируется в `ServletContextListener` при старте приложения и сохраняется как атрибут ко",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать подключение к базе данных и журналирование в сервлете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Подключение к базе данных инициализируется в `ServletContextListener` при старте приложения и сохраняется как атрибут контекста для общего доступа. Это обеспечивает единственную точку инициализации и корректное закрытие ресурсов при остановке приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как организовать подключение к базе данных и журналирование ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные особенности появились в спецификации Servlet 3",
+      "questionSlug": "kakie-osnovnye-osobennosti-poyavilis-v-spetsifikatsii-servlet-3",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие основные особенности появились в спецификации Servlet  — Gymterview",
+        "description": "Servlet 3.0 (JSR 315, 2009) — значительное обновление спецификации, которое устранило необходимость в `web.xml` для типовых сценариев и добавило поддержку асинх",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Какие основные особенности появились в спецификации Servlet  — Gymterview",
+        "ogDescription": "Servlet 3.0 (JSR 315, 2009) — значительное обновление спецификации, которое устранило необходимость в `web.xml` для типо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные особенности появились в спецификации Servlet 3",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Servlet 3.0 (JSR 315, 2009) — значительное обновление спецификации, которое устранило необходимость в `web.xml` для типовых сценариев и добавило поддержку асинхронной обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие основные особенности появились в спецификации Servlet ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие способы аутентификации доступны сервлету",
+      "questionSlug": "kakie-sposoby-autentifikatsii-dostupny-servletu",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие способы аутентификации доступны сервлету — Gymterview",
+        "description": "Спецификация сервлетов определяет четыре стандартных типа аутентификации, настраиваемых через `web.xml`.",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Какие способы аутентификации доступны сервлету — Gymterview",
+        "ogDescription": "Спецификация сервлетов определяет четыре стандартных типа аутентификации, настраиваемых через `web.xml`.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие способы аутентификации доступны сервлету",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Спецификация сервлетов определяет четыре стандартных типа аутентификации, настраиваемых через `web.xml`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие способы аутентификации доступны сервлету",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Java Server Pages (JSP)",
+      "questionSlug": "chto-takoe-java-server-pages-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое Java Server Pages (JSP) — Gymterview",
+        "description": "JSP (JavaServer Pages) — технология создания динамических веб-страниц, которая позволяет встраивать Java-код в HTML-шаблоны. JSP-страница транслируется в Java-с",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое Java Server Pages (JSP) — Gymterview",
+        "ogDescription": "JSP (JavaServer Pages) — технология создания динамических веб-страниц, которая позволяет встраивать Java-код в HTML-шабл",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Java Server Pages (JSP)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSP (JavaServer Pages) — технология создания динамических веб-страниц, которая позволяет встраивать Java-код в HTML-шаблоны. JSP-страница транслируется в Java-сервлет компилятором Jasper, компилируется в байт-код и выполняется контейнером. Результат — обычный HTML, который отправляется клиенту."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое Java Server Pages (JSP)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужен JSP",
+      "questionSlug": "zachem-nuzhen-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Зачем нужен JSP — Gymterview",
+        "description": "JSP решает проблему создания динамических HTML-страниц без написания громоздкого Java-кода в сервлетах. В чистом сервлете генерация HTML выполняется через `resp",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Зачем нужен JSP — Gymterview",
+        "ogDescription": "JSP решает проблему создания динамических HTML-страниц без написания громоздкого Java-кода в сервлетах. В чистом сервлет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужен JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSP решает проблему создания динамических HTML-страниц без написания громоздкого Java-кода в сервлетах. В чистом сервлете генерация HTML выполняется через `response.getWriter().println(\"<html>...\")`, что делает код нечитаемым и подверженным ошибкам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Зачем нужен JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обрабатываются JSP страницы от запроса к серверу до ответа пользователю",
+      "questionSlug": "kak-obrabatyvayutsya-jsp-stranitsy-ot-zaprosa-k-serveru-do-otveta-polzovatelyu",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как обрабатываются JSP страницы от запроса к серверу до отве — Gymterview",
+        "description": "Обработка JSP-страницы включает трансляцию в сервлет, компиляцию и выполнение. При первом запросе происходят все три этапа, при последующих — только выполнение ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как обрабатываются JSP страницы от запроса к серверу до отве — Gymterview",
+        "ogDescription": "Обработка JSP-страницы включает трансляцию в сервлет, компиляцию и выполнение. При первом запросе происходят все три эта",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обрабатываются JSP страницы от запроса к серверу до ответа пользователю",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обработка JSP-страницы включает трансляцию в сервлет, компиляцию и выполнение. При первом запросе происходят все три этапа, при последующих — только выполнение (кэширование)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как обрабатываются JSP страницы от запроса к серверу до отве",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите об этапах жизненного цикла JSP",
+      "questionSlug": "rasskazhite-ob-etapakh-zhiznennogo-tsikla-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Расскажите об этапах жизненного цикла JSP — Gymterview",
+        "description": "Жизненный цикл JSP управляется контейнером и состоит из семи фаз. Первые три происходят при первом обращении (или при изменении JSP-файла), остальные — при кажд",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Расскажите об этапах жизненного цикла JSP — Gymterview",
+        "ogDescription": "Жизненный цикл JSP управляется контейнером и состоит из семи фаз. Первые три происходят при первом обращении (или при из",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите об этапах жизненного цикла JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Жизненный цикл JSP управляется контейнером и состоит из семи фаз. Первые три происходят при первом обращении (или при изменении JSP-файла), остальные — при каждом запросе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Расскажите об этапах жизненного цикла JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите о методах жизненного цикла JSP",
+      "questionSlug": "rasskazhite-o-metodakh-zhiznennogo-tsikla-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Расскажите о методах жизненного цикла JSP — Gymterview",
+        "description": "Контейнер создаёт из JSP-страницы класс сервлета, наследующий `javax.servlet.jsp.HttpJspBase`, с тремя ключевыми методами жизненного цикла.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Расскажите о методах жизненного цикла JSP — Gymterview",
+        "ogDescription": "Контейнер создаёт из JSP-страницы класс сервлета, наследующий `javax.servlet.jsp.HttpJspBase`, с тремя ключевыми методам",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите о методах жизненного цикла JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнер создаёт из JSP-страницы класс сервлета, наследующий `javax.servlet.jsp.HttpJspBase`, с тремя ключевыми методами жизненного цикла."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Расскажите о методах жизненного цикла JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие методы жизненного цикла JSP могут быть переопределены",
+      "questionSlug": "kakie-metody-zhiznennogo-tsikla-jsp-mogut-byt-pereopredeleny",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие методы жизненного цикла JSP могут быть переопределены — Gymterview",
+        "description": "Переопределить можно только `jspInit()` и `jspDestroy()`. Метод `_jspService()` генерируется контейнером автоматически из содержимого JSP-страницы и не подлежит",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие методы жизненного цикла JSP могут быть переопределены — Gymterview",
+        "ogDescription": "Переопределить можно только `jspInit()` и `jspDestroy()`. Метод `_jspService()` генерируется контейнером автоматически и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие методы жизненного цикла JSP могут быть переопределены",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Переопределить можно только `jspInit()` и `jspDestroy()`. Метод `_jspService()` генерируется контейнером автоматически из содержимого JSP-страницы и не подлежит переопределению."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие методы жизненного цикла JSP могут быть переопределены",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

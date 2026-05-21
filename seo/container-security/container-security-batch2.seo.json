@@ -1,0 +1,349 @@
+{
+  "topic": "Безопасность контейнеров",
+  "topicSlug": "container-security",
+  "batch": 2,
+  "generatedAt": "2026-05-09T19:00:00Z",
+  "questions": [
+    {
+      "question": "Как работает RBAC в Kubernetes?",
+      "questionSlug": "kak-rabotaet-rbac-v-kubernetes",
+      "grade": "middle",
+      "tags": ["container-security", "kubernetes", "rbac", "authorization", "access-control"],
+      "seo": {
+        "title": "RBAC в Kubernetes: Role, ClusterRole, RoleBinding — Gymterview",
+        "description": "Как работает RBAC (Role-Based Access Control) в Kubernetes? Объекты Role, ClusterRole, RoleBinding, ClusterRoleBinding. ServiceAccount для Java-приложений, минимальные права и аудит RBAC.",
+        "keywords": ["RBAC Kubernetes", "Role-Based Access Control", "Role ClusterRole", "RoleBinding", "ServiceAccount Kubernetes", "управление доступом Kubernetes", "безопасность контейнеров"],
+        "ogTitle": "RBAC в Kubernetes: Role, ClusterRole, RoleBinding — Gymterview",
+        "ogDescription": "Механизм авторизации RBAC в Kubernetes: объекты Role, ClusterRole, RoleBinding, настройка ServiceAccount с минимальными правами для Java-приложений.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает RBAC в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RBAC (Role-Based Access Control) — механизм авторизации в Kubernetes, определяющий, кто может выполнять какие действия над какими ресурсами. Основные объекты: Role (разрешения в namespace), ClusterRole (разрешения на уровне кластера), RoleBinding и ClusterRoleBinding (привязка ролей к субъектам). Субъекты — User, Group и ServiceAccount. Каждый микросервис должен иметь свой ServiceAccount с минимальными правами, использовать resourceNames для ограничения доступа к конкретным ресурсам и отключать automountServiceAccountToken по умолчанию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "RBAC в Kubernetes", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как ограничение ресурсов защищает от DoS-атак?",
+      "questionSlug": "kak-ogranichenie-resursov-zashchishchaet-ot-dos-atak",
+      "grade": "middle",
+      "tags": ["container-security", "kubernetes", "docker", "resource-limits", "dos-protection"],
+      "seo": {
+        "title": "Ограничение ресурсов контейнеров: защита от DoS-атак — Gymterview",
+        "description": "Как resource limits в Kubernetes и Docker защищают от DoS-атак? Requests и limits, LimitRange, ResourceQuota. Настройка JVM с UseContainerSupport и MaxRAMPercentage.",
+        "keywords": ["resource limits Kubernetes", "requests limits", "LimitRange", "ResourceQuota", "DoS защита контейнеров", "UseContainerSupport JVM", "MaxRAMPercentage"],
+        "ogTitle": "Ограничение ресурсов контейнеров: защита от DoS-атак — Gymterview",
+        "ogDescription": "Resource limits в Kubernetes и Docker: requests vs limits, настройка JVM для контейнеров, LimitRange и ResourceQuota для защиты от DoS-атак.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как ограничение ресурсов защищает от DoS-атак?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Resource limits в Kubernetes и Docker предотвращают ситуацию, когда один контейнер потребляет все ресурсы хоста. Requests — минимальные гарантированные ресурсы для планировщика, limits — максимальный потолок (при превышении memory — OOMKill, CPU — throttling). LimitRange задаёт ограничения по умолчанию для namespace, ResourceQuota — суммарные лимиты. Для JVM используется -XX:+UseContainerSupport и -XX:MaxRAMPercentage=75.0, чтобы JVM корректно учитывала cgroup-лимиты контейнера."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Ограничение ресурсов и DoS-защита", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Supply Chain Security в контексте контейнеров?",
+      "questionSlug": "chto-takoe-supply-chain-security-v-kontekste-konteynerov",
+      "grade": "senior",
+      "tags": ["container-security", "supply-chain", "sbom", "slsa", "cosign", "dependency-check"],
+      "seo": {
+        "title": "Supply Chain Security контейнеров: SBOM, SLSA, Cosign — Gymterview",
+        "description": "Что такое Supply Chain Security для контейнеров? SBOM (Software Bill of Materials), SLSA уровни, проверка зависимостей OWASP Dependency Check, подпись артефактов Cosign, provenance.",
+        "keywords": ["Supply Chain Security", "SBOM", "SLSA", "Cosign", "Dependency Check", "безопасность цепочки поставок", "Trivy SBOM", "CycloneDX"],
+        "ogTitle": "Supply Chain Security контейнеров: SBOM, SLSA, Cosign — Gymterview",
+        "ogDescription": "Безопасность цепочки поставок контейнеров: генерация SBOM, уровни SLSA, проверка зависимостей, подпись и верификация артефактов с Cosign.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Supply Chain Security в контексте контейнеров?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Supply Chain Security — обеспечение целостности и безопасности всех компонентов от исходного кода до финального образа. Включает: SBOM (Software Bill of Materials) — перечень всех компонентов образа (Trivy, Syft); проверку зависимостей (OWASP Dependency Check, failBuildOnCVSS); фиксацию версий и pin по digest; верификацию артефактов; SLSA (4 уровня зрелости безопасности); provenance — подтверждение происхождения артефакта через cosign attest. Полный пайплайн включает dependency check, сборку, генерацию SBOM, сканирование, подпись образа и прикрепление SBOM."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Supply Chain Security", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Docker Bench for Security?",
+      "questionSlug": "chto-takoe-docker-bench-for-security",
+      "grade": "middle",
+      "tags": ["container-security", "docker", "cis-benchmark", "audit", "kube-bench"],
+      "seo": {
+        "title": "Docker Bench for Security: аудит CIS Benchmark — Gymterview",
+        "description": "Что такое Docker Bench for Security? Автоматический аудит Docker-хоста по CIS Docker Benchmark. Категории проверок, интерпретация результатов, kube-bench для Kubernetes.",
+        "keywords": ["Docker Bench for Security", "CIS Docker Benchmark", "аудит безопасности Docker", "kube-bench", "CIS Kubernetes Benchmark", "безопасность контейнеров"],
+        "ogTitle": "Docker Bench for Security: аудит CIS Benchmark — Gymterview",
+        "ogDescription": "Docker Bench for Security — инструмент аудита безопасности Docker по CIS Benchmark: категории проверок, автоматизация в CI/CD и kube-bench для Kubernetes.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Docker Bench for Security?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker Bench for Security — автоматизированный инструмент аудита, проверяющий конфигурацию Docker-хоста и контейнеров на соответствие CIS Docker Benchmark. Проверяет 7 категорий: конфигурацию хоста, настройки Docker daemon, права на конфигурационные файлы, образы и Dockerfile (USER, HEALTHCHECK), параметры runtime (privileged, host network, read-only FS), операционную безопасность и Docker Swarm. Результаты — PASS, WARN и FAIL. Для Kubernetes существует аналог kube-bench, проверяющий CIS Kubernetes Benchmark."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Docker Bench for Security", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как защитить Docker daemon?",
+      "questionSlug": "kak-zashchitit-docker-daemon",
+      "grade": "middle",
+      "tags": ["container-security", "docker", "daemon", "tls", "rootless-docker"],
+      "seo": {
+        "title": "Защита Docker daemon: TLS, rootless, authorization plugins — Gymterview",
+        "description": "Как защитить Docker daemon? Защита Docker socket, настройка TLS для удалённого доступа, daemon.json параметры безопасности, Authorization Plugin, Rootless Docker.",
+        "keywords": ["Docker daemon безопасность", "Docker socket защита", "Docker TLS", "daemon.json", "Rootless Docker", "Docker authorization plugin", "userns-remap"],
+        "ogTitle": "Защита Docker daemon: TLS, rootless, authorization plugins — Gymterview",
+        "ogDescription": "Защита Docker daemon: настройка TLS, ограничение доступа к socket, параметры daemon.json (icc, userns-remap, no-new-privileges), Rootless Docker.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как защитить Docker daemon?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker daemon работает с правами root, и его компрометация означает полный контроль над хостом. Защита включает: ограничение доступа к Docker socket (не монтировать в контейнеры); настройку TLS с клиентскими сертификатами для удалённого доступа; конфигурацию daemon.json — tlsverify, icc: false (запрет межконтейнерного взаимодействия), userns-remap (маппинг UID), no-new-privileges; использование Authorization Plugin для политик доступа; Rootless Docker — запуск daemon от обычного пользователя; ограничение логов через max-size и max-file."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Защита Docker daemon", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает изоляция контейнеров на уровне ядра Linux?",
+      "questionSlug": "kak-rabotaet-izolyatsiya-konteynerov-na-urovne-yadra-linux",
+      "grade": "senior",
+      "tags": ["container-security", "linux", "namespaces", "cgroups", "seccomp", "capabilities"],
+      "seo": {
+        "title": "Изоляция контейнеров: namespaces, cgroups, seccomp — Gymterview",
+        "description": "Как работает изоляция контейнеров на уровне ядра Linux? Linux namespaces (PID, NET, MNT, UTS, IPC, USER), cgroups, seccomp, capabilities. gVisor, Kata Containers для усиления изоляции.",
+        "keywords": ["изоляция контейнеров", "Linux namespaces", "cgroups", "seccomp", "capabilities Linux", "gVisor", "Kata Containers", "container escape"],
+        "ogTitle": "Изоляция контейнеров: namespaces, cgroups, seccomp — Gymterview",
+        "ogDescription": "Механизмы изоляции контейнеров на уровне ядра Linux: namespaces, cgroups, seccomp, capabilities. Ограничения изоляции и технологии усиления — gVisor, Kata Containers.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает изоляция контейнеров на уровне ядра Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнеры используют одно ядро Linux с хостом, а изоляция обеспечивается механизмами ядра. Linux Namespaces (PID, NET, MNT, UTS, IPC, USER, Cgroup) создают иллюзию отдельной ОС. Cgroups ограничивают потребление ресурсов (CPU, memory, blkio, pids). Seccomp фильтрует системные вызовы — Docker блокирует ~44 опасных из 300+. Capabilities дробят привилегии root на отдельные права. Ограничения: общее ядро означает, что уязвимость ядра может привести к container escape. Для усиления изоляции применяют gVisor (виртуальное ядро), Kata Containers (лёгкие VM) и Firecracker (microVM)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Изоляция контейнеров на уровне ядра", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Runtime Security и как работает Falco?",
+      "questionSlug": "chto-takoe-runtime-security-i-kak-rabotaet-falco",
+      "grade": "senior",
+      "tags": ["container-security", "runtime-security", "falco", "ebpf", "monitoring"],
+      "seo": {
+        "title": "Runtime Security и Falco: мониторинг контейнеров в реальном времени — Gymterview",
+        "description": "Что такое Runtime Security? Как работает Falco — обнаружение аномалий в контейнерах через eBPF. Правила Falco, Falcosidekick, обнаружение shell, криптомайнеров, чтения чувствительных файлов.",
+        "keywords": ["Runtime Security", "Falco", "eBPF", "runtime мониторинг контейнеров", "Falcosidekick", "обнаружение аномалий", "CNCF Falco"],
+        "ogTitle": "Runtime Security и Falco: мониторинг контейнеров в реальном времени — Gymterview",
+        "ogDescription": "Runtime Security с Falco: перехват системных вызовов через eBPF, правила обнаружения аномалий, интеграция с Slack и Elasticsearch через Falcosidekick.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Runtime Security и как работает Falco?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Runtime Security — обнаружение аномального поведения контейнеров в реальном времени, в отличие от статического сканирования образов. Falco (CNCF graduated) — ведущий open-source инструмент: перехватывает системные вызовы через eBPF, анализирует их по правилам и генерирует оповещения. Обнаруживает: запуск shell в контейнере, чтение чувствительных файлов, нестандартные исходящие подключения, запись в /etc, криптомайнеры. Falcosidekick маршрутизирует оповещения в Slack, Elasticsearch, Prometheus. Альтернативы: Sysdig Secure, Aqua Security, Prisma Cloud."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Runtime Security и Falco", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать процесс обновления и патчинга базовых образов?",
+      "questionSlug": "kak-organizovat-protsess-obnovleniya-i-patchinga-bazovykh-obrazov",
+      "grade": "middle",
+      "tags": ["container-security", "docker", "patching", "renovate", "dependabot", "trivy"],
+      "seo": {
+        "title": "Обновление и патчинг базовых Docker-образов: процесс и автоматизация — Gymterview",
+        "description": "Как организовать процесс обновления базовых образов? Pin по digest, Renovate и Dependabot, периодическое сканирование Trivy, процесс патчинга по CVSS, еженедельная пересборка.",
+        "keywords": ["патчинг базовых образов", "обновление Docker образов", "Renovate Docker", "Dependabot Docker", "pin digest", "Trivy сканирование", "CVSS патчинг"],
+        "ogTitle": "Обновление и патчинг базовых Docker-образов: процесс и автоматизация — Gymterview",
+        "ogDescription": "Процесс обновления базовых Docker-образов: pin по digest, автоматизация с Renovate/Dependabot, периодическое сканирование и пересборка образов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать процесс обновления и патчинга базовых образов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Процесс патчинга включает: фиксацию версий через pin по digest (неизменная ссылка на конкретный образ); автоматическое обнаружение обновлений с Renovate/Dependabot; периодическое пересканирование развёрнутых образов через CronJob с Trivy; процесс реагирования по CVSS — Critical (24 часа), High (7 дней), Medium (следующий релиз), Low (бэклог); еженедельную пересборку образов с флагами --pull и --no-cache для получения свежего базового образа и полной пересборки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Обновление и патчинг базовых образов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как встроить проверки безопасности в CI/CD пайплайн?",
+      "questionSlug": "kak-vstroit-proverki-bezopasnosti-v-cicd-pajplajn",
+      "grade": "senior",
+      "tags": ["container-security", "cicd", "sast", "sca", "dast", "shift-left", "jenkins"],
+      "seo": {
+        "title": "Проверки безопасности в CI/CD: SAST, SCA, Image Scan, DAST — Gymterview",
+        "description": "Как встроить security gates в CI/CD пайплайн? SAST (SonarQube, SpotBugs), SCA (Dependency Check), Secret Detection, Image Scan (Trivy), IaC Scan, DAST (OWASP ZAP). Полный Jenkinsfile.",
+        "keywords": ["безопасность CI/CD", "SAST", "SCA", "DAST", "shift-left security", "Trivy CI/CD", "SonarQube", "OWASP ZAP", "security gates", "hadolint"],
+        "ogTitle": "Проверки безопасности в CI/CD: SAST, SCA, Image Scan, DAST — Gymterview",
+        "ogDescription": "Полный безопасный CI/CD пайплайн: статический анализ (SAST), проверка зависимостей (SCA), сканирование образов, проверка манифестов и динамическое тестирование (DAST).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как встроить проверки безопасности в CI/CD пайплайн?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Security gates — обязательные проверки в пайплайне, блокирующие продвижение артефакта при обнаружении проблем (shift-left security). Этапы: SAST — статический анализ кода (SonarQube, SpotBugs, Semgrep); SCA — проверка зависимостей (OWASP Dependency Check, failBuildOnCVSS=7); Secret Scan — поиск утечек секретов (Trivy, GitLeaks); Image Scan — сканирование Docker-образа (Trivy, Grype); IaC Scan — проверка K8s манифестов и Dockerfile (Trivy config, kubesec, hadolint); подпись образа (Cosign) и генерация SBOM; DAST — динамическое тестирование работающего приложения (OWASP ZAP). Ни одна CRITICAL-уязвимость не должна попасть в production."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Безопасность в CI/CD пайплайне", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое OWASP Docker Top 10?",
+      "questionSlug": "chto-takoe-owasp-docker-top-10",
+      "grade": "middle",
+      "tags": ["container-security", "owasp", "docker", "best-practices", "checklist"],
+      "seo": {
+        "title": "OWASP Docker Top 10: 10 главных рисков безопасности Docker — Gymterview",
+        "description": "Что такое OWASP Docker Top 10? Десять критичных рисков: Secure User Mapping, Patch Management, Network Segmentation, Hardening, Security Contexts, Secrets, Resources, Image Integrity, Immutable, Logging.",
+        "keywords": ["OWASP Docker Top 10", "Docker безопасность", "Docker best practices", "контейнерная безопасность чек-лист", "D01-D10 Docker", "OWASP контейнеры"],
+        "ogTitle": "OWASP Docker Top 10: 10 главных рисков безопасности Docker — Gymterview",
+        "ogDescription": "OWASP Docker Top 10 — десять критичных рисков безопасности Docker: от управления пользователями и патчами до логирования и неизменяемости контейнеров.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое OWASP Docker Top 10?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OWASP Docker Top 10 — список критичных рисков безопасности Docker от OWASP. D01 — Secure User Mapping (не запускать от root); D02 — Patch Management (регулярное обновление); D03 — Network Segmentation (Network Policies, deny-by-default); D04 — Secure Defaults (hardening daemon, CIS Benchmark); D05 — Security Contexts (drop ALL capabilities, read-only FS); D06 — Protect Secrets (Vault, Sealed Secrets); D07 — Resource Protection (limits CPU, памяти, PID); D08 — Image Integrity (подпись Cosign, верификация); D09 — Immutable Paradigm (неизменяемые контейнеры); D10 — Logging (централизованный сбор, Falco)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "OWASP Docker Top 10", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить безопасность Java-приложения в контейнере в банковской среде?",
+      "questionSlug": "kak-obespechit-bezopasnost-java-prilozheniya-v-konteynere-v-bankovskoy-srede",
+      "grade": "senior",
+      "tags": ["container-security", "java", "kubernetes", "banking", "pci-dss", "comprehensive"],
+      "seo": {
+        "title": "Безопасность Java-приложения в контейнере для банка: полный чек-лист — Gymterview",
+        "description": "Как обеспечить безопасность Java-приложения в контейнере в банковской среде? Безопасный Dockerfile с multistage build, Kubernetes Deployment с Security Context, Network Policy, Vault, Spring Boot конфигурация, итоговый чек-лист.",
+        "keywords": ["безопасность Java контейнер банк", "Dockerfile безопасность", "Kubernetes Security Context", "PCI DSS контейнеры", "Network Policy Kubernetes", "Vault Kubernetes", "Spring Boot production security"],
+        "ogTitle": "Безопасность Java-приложения в контейнере для банка: полный чек-лист — Gymterview",
+        "ogDescription": "Комплексное руководство по безопасности Java-приложения в контейнере для банковской среды: Dockerfile, Kubernetes Deployment, Network Policy, Vault, чек-лист PCI DSS.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить безопасность Java-приложения в контейнере в банковской среде?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Комплексный подход включает: безопасный Dockerfile (multistage build, Alpine/Distroless, pin по digest, USER non-root, HEALTHCHECK, JVM с UseContainerSupport и MaxRAMPercentage); Kubernetes Deployment (runAsNonRoot, readOnlyRootFilesystem, drop ALL capabilities, seccompProfile RuntimeDefault, resource limits, Vault для секретов, topologySpreadConstraints); Network Policy (deny-by-default, разрешение только необходимых подключений); namespace с Pod Security Standards restricted; Spring Boot конфигурация (ограниченный actuator, отключение деталей health). Чек-лист охватывает образ, Kubernetes, секреты, CI/CD и runtime мониторинг."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Безопасность контейнеров", "url": "/topics/container-security" },
+          { "name": "Безопасность Java в контейнере для банка", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

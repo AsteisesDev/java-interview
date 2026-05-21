@@ -1,0 +1,908 @@
+{
+  "topic": "Основы Web",
+  "topicSlug": "web",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое WWW?",
+      "questionSlug": "chto-takoe-www",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое WWW? — Gymterview",
+        "description": "WWW (World Wide Web, Всемирная паутина) — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьюте",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое WWW? — Gymterview",
+        "ogDescription": "WWW (World Wide Web, Всемирная паутина) — распределённая система, предоставляющая доступ к связанным между собой докумен",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое WWW?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WWW (World Wide Web, Всемирная паутина) — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключённых к Интернету."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое WWW?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое W3C?",
+      "questionSlug": "chto-takoe-w3c",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое W3C? — Gymterview",
+        "description": "W3C (World Wide Web Consortium, Консорциум Всемирной паутины) — международная организация, разрабатывающая и внедряющая технологические стандарты для WWW.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое W3C? — Gymterview",
+        "ogDescription": "W3C (World Wide Web Consortium, Консорциум Всемирной паутины) — международная организация, разрабатывающая и внедряющая ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое W3C?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "W3C (World Wide Web Consortium, Консорциум Всемирной паутины) — международная организация, разрабатывающая и внедряющая технологические стандарты для WWW."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое W3C?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют уровни модели OSI?",
+      "questionSlug": "kakie-sushchestvuyut-urovni-modeli-osi",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Какие существуют уровни модели OSI? — Gymterview",
+        "description": "Модель OSI (Open Systems Interconnection) — эталонная семиуровневая модель сетевого взаимодействия, описывающая, как данные проходят путь от приложения до физич",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют уровни модели OSI? — Gymterview",
+        "ogDescription": "Модель OSI (Open Systems Interconnection) — эталонная семиуровневая модель сетевого взаимодействия, описывающая, как дан",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют уровни модели OSI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модель OSI (Open Systems Interconnection) — эталонная семиуровневая модель сетевого взаимодействия, описывающая, как данные проходят путь от приложения до физического носителя и обратно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Какие существуют уровни модели OSI?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое TCP/IP?",
+      "questionSlug": "chto-takoe-tcp-ip",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое TCP/IP? — Gymterview",
+        "description": "TCP/IP — стек протоколов, лежащий в основе Интернета. Название объединяет два ключевых протокола: IP (Internet Protocol) для маршрутизации пакетов и TCP (Transm",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое TCP/IP? — Gymterview",
+        "ogDescription": "TCP/IP — стек протоколов, лежащий в основе Интернета. Название объединяет два ключевых протокола: IP (Internet Protocol)",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое TCP/IP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TCP/IP — стек протоколов, лежащий в основе Интернета. Название объединяет два ключевых протокола: IP (Internet Protocol) для маршрутизации пакетов и TCP (Transmission Control Protocol) для надёжной доставки данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое TCP/IP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое UDP?",
+      "questionSlug": "chto-takoe-udp",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое UDP? — Gymterview",
+        "description": "UDP (User Datagram Protocol, Протокол пользовательских датаграмм) — транспортный протокол, обеспечивающий доставку данных без установления соединения и без гара",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое UDP? — Gymterview",
+        "ogDescription": "UDP (User Datagram Protocol, Протокол пользовательских датаграмм) — транспортный протокол, обеспечивающий доставку данны",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое UDP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "UDP (User Datagram Protocol, Протокол пользовательских датаграмм) — транспортный протокол, обеспечивающий доставку данных без установления соединения и без гарантии получения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое UDP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются TCP и UDP?",
+      "questionSlug": "chem-otlichayutsya-tcp-i-udp",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Чем отличаются TCP и UDP? — Gymterview",
+        "description": "TCP — ориентированный на соединение протокол с гарантированной доставкой. UDP — протокол без соединения, быстрый, но без гарантий.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Чем отличаются TCP и UDP? — Gymterview",
+        "ogDescription": "TCP — ориентированный на соединение протокол с гарантированной доставкой. UDP — протокол без соединения, быстрый, но без",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются TCP и UDP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TCP — ориентированный на соединение протокол с гарантированной доставкой. UDP — протокол без соединения, быстрый, но без гарантий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Чем отличаются TCP и UDP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое протокол передачи данных? Какие протоколы вы знаете?",
+      "questionSlug": "chto-takoe-protokol-peredachi-dannykh-kakie-protokoly-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое протокол передачи данных? Какие протоколы вы знает — Gymterview",
+        "description": "Протокол передачи данных — набор правил и соглашений, определяющих формат и порядок обмена данными между программами или устройствами в сети.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое протокол передачи данных? Какие протоколы вы знает — Gymterview",
+        "ogDescription": "Протокол передачи данных — набор правил и соглашений, определяющих формат и порядок обмена данными между программами или",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое протокол передачи данных? Какие протоколы вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Протокол передачи данных — набор правил и соглашений, определяющих формат и порядок обмена данными между программами или устройствами в сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое протокол передачи данных? Какие протоколы вы знает",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое HTTP и HTTPS? Чем они отличаются?",
+      "questionSlug": "chto-takoe-http-i-https-chem-oni-otlichayutsya",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое HTTP и HTTPS? Чем они отличаются? — Gymterview",
+        "description": "HTTP (HyperText Transfer Protocol) — протокол прикладного уровня для передачи гипертекстовых документов. HTTPS — его защищённое расширение, использующее шифрова",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое HTTP и HTTPS? Чем они отличаются? — Gymterview",
+        "ogDescription": "HTTP (HyperText Transfer Protocol) — протокол прикладного уровня для передачи гипертекстовых документов. HTTPS — его защ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое HTTP и HTTPS? Чем они отличаются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP (HyperText Transfer Protocol) — протокол прикладного уровня для передачи гипертекстовых документов. HTTPS — его защищённое расширение, использующее шифрование через TLS/SSL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое HTTP и HTTPS? Чем они отличаются?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое FTP?",
+      "questionSlug": "chto-takoe-ftp",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое FTP? — Gymterview",
+        "description": "FTP (File Transfer Protocol, Протокол передачи файлов) — протокол прикладного уровня для передачи файлов между компьютерами в сети TCP.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое FTP? — Gymterview",
+        "ogDescription": "FTP (File Transfer Protocol, Протокол передачи файлов) — протокол прикладного уровня для передачи файлов между компьютер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое FTP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FTP (File Transfer Protocol, Протокол передачи файлов) — протокол прикладного уровня для передачи файлов между компьютерами в сети TCP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое FTP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются методы GET и POST?",
+      "questionSlug": "chem-otlichayutsya-metody-get-i-post",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Чем отличаются методы GET и POST? — Gymterview",
+        "description": "GET передаёт данные серверу через URL (в строке запроса), а POST — через тело HTTP-запроса. Это определяет ключевые различия в видимости, размере и назначении к",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Чем отличаются методы GET и POST? — Gymterview",
+        "ogDescription": "GET передаёт данные серверу через URL (в строке запроса), а POST — через тело HTTP-запроса. Это определяет ключевые разл",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются методы GET и POST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GET передаёт данные серверу через URL (в строке запроса), а POST — через тело HTTP-запроса. Это определяет ключевые различия в видимости, размере и назначении каждого метода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Чем отличаются методы GET и POST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое MIME тип?",
+      "questionSlug": "chto-takoe-mime-tip",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое MIME тип? — Gymterview",
+        "description": "MIME (Multipurpose Internet Mail Extensions) — стандарт, описывающий типы содержимого для передачи по сети файлов различного формата: текстов, изображений, виде",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое MIME тип? — Gymterview",
+        "ogDescription": "MIME (Multipurpose Internet Mail Extensions) — стандарт, описывающий типы содержимого для передачи по сети файлов различ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое MIME тип?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MIME (Multipurpose Internet Mail Extensions) — стандарт, описывающий типы содержимого для передачи по сети файлов различного формата: текстов, изображений, видео, аудио, архивов и других."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое MIME тип?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Web server?",
+      "questionSlug": "chto-takoe-web-server",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое Web server? — Gymterview",
+        "description": "Web server (Веб-сервер) — программное обеспечение (или компьютер, на котором оно работает), принимающее HTTP-запросы от клиентов и возвращающее им HTTP-ответы, ",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое Web server? — Gymterview",
+        "ogDescription": "Web server (Веб-сервер) — программное обеспечение (или компьютер, на котором оно работает), принимающее HTTP-запросы от ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Web server?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Web server (Веб-сервер) — программное обеспечение (или компьютер, на котором оно работает), принимающее HTTP-запросы от клиентов и возвращающее им HTTP-ответы, обычно в виде HTML-страниц, изображений и других ресурсов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое Web server?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Web application?",
+      "questionSlug": "chto-takoe-web-application",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое Web application? — Gymterview",
+        "description": "Web application (Веб-приложение) — клиент-серверное приложение, в котором клиентом выступает браузер, а сервером — веб-сервер или сервер приложений.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое Web application? — Gymterview",
+        "ogDescription": "Web application (Веб-приложение) — клиент-серверное приложение, в котором клиентом выступает браузер, а сервером — веб-с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Web application?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Web application (Веб-приложение) — клиент-серверное приложение, в котором клиентом выступает браузер, а сервером — веб-сервер или сервер приложений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое Web application?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Application server?",
+      "questionSlug": "chto-takoe-application-server",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое Application server? — Gymterview",
+        "description": "Application server (Сервер приложений) — программа, предоставляющая среду для выполнения серверных приложений и управляющая их жизненным циклом в соответствии с",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое Application server? — Gymterview",
+        "ogDescription": "Application server (Сервер приложений) — программа, предоставляющая среду для выполнения серверных приложений и управляю",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Application server?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Application server (Сервер приложений) — программа, предоставляющая среду для выполнения серверных приложений и управляющая их жизненным циклом в соответствии со спецификациями (например, Jakarta EE)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое Application server?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются Web server и Application server?",
+      "questionSlug": "chem-otlichayutsya-web-server-i-application-server",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Чем отличаются Web server и Application server? — Gymterview",
+        "description": "Web server обслуживает HTTP-запросы и отдаёт контент, а Application server выполняет серверную бизнес-логику. Эти понятия описывают разные аспекты, и одна прогр",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Чем отличаются Web server и Application server? — Gymterview",
+        "ogDescription": "Web server обслуживает HTTP-запросы и отдаёт контент, а Application server выполняет серверную бизнес-логику. Эти поняти",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются Web server и Application server?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Web server обслуживает HTTP-запросы и отдаёт контент, а Application server выполняет серверную бизнес-логику. Эти понятия описывают разные аспекты, и одна программа может быть одновременно и тем, и другим."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Чем отличаются Web server и Application server?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое AJAX? Как принципиально устроена эта технология?",
+      "questionSlug": "chto-takoe-ajax-kak-printsipialno-ustroena-eta-tekhnologiya",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое AJAX? Как принципиально устроена эта технология? — Gymterview",
+        "description": "AJAX (Asynchronous JavaScript and XML) — подход к построению интерактивных веб-приложений, при котором обмен данными с сервером происходит в фоновом режиме, без",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое AJAX? Как принципиально устроена эта технология? — Gymterview",
+        "ogDescription": "AJAX (Asynchronous JavaScript and XML) — подход к построению интерактивных веб-приложений, при котором обмен данными с с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое AJAX? Как принципиально устроена эта технология?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AJAX (Asynchronous JavaScript and XML) — подход к построению интерактивных веб-приложений, при котором обмен данными с сервером происходит в фоновом режиме, без полной перезагрузки страницы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое AJAX? Как принципиально устроена эта технология?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое WebSocket?",
+      "questionSlug": "chto-takoe-websocket",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое WebSocket? — Gymterview",
+        "description": "WebSocket — протокол полнодуплексной связи поверх TCP-соединения, предназначенный для обмена сообщениями между браузером и сервером в режиме реального времени.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое WebSocket? — Gymterview",
+        "ogDescription": "WebSocket — протокол полнодуплексной связи поверх TCP-соединения, предназначенный для обмена сообщениями между браузером",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое WebSocket?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WebSocket — протокол полнодуплексной связи поверх TCP-соединения, предназначенный для обмена сообщениями между браузером и сервером в режиме реального времени."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое WebSocket?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JSON?",
+      "questionSlug": "chto-takoe-json",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое JSON? — Gymterview",
+        "description": "JSON (JavaScript Object Notation) — легковесный текстовый формат обмена данными, основанный на синтаксисе JavaScript-объектов, но независимый от языка программи",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое JSON? — Gymterview",
+        "ogDescription": "JSON (JavaScript Object Notation) — легковесный текстовый формат обмена данными, основанный на синтаксисе JavaScript-объ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JSON?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSON (JavaScript Object Notation) — легковесный текстовый формат обмена данными, основанный на синтаксисе JavaScript-объектов, но независимый от языка программирования."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое JSON?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JSON схема?",
+      "questionSlug": "chto-takoe-json-skhema",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое JSON схема? — Gymterview",
+        "description": "JSON Schema — язык описания структуры JSON-документа, использующий сам JSON в качестве синтаксиса.",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое JSON схема? — Gymterview",
+        "ogDescription": "JSON Schema — язык описания структуры JSON-документа, использующий сам JSON в качестве синтаксиса.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JSON схема?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSON Schema — язык описания структуры JSON-документа, использующий сам JSON в качестве синтаксиса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое JSON схема?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое cookies?",
+      "questionSlug": "chto-takoe-cookies",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое cookies? — Gymterview",
+        "description": "Cookies (куки) — небольшие фрагменты данных, отправляемые сервером и хранимые на устройстве пользователя в браузере. При каждом запросе к сайту браузер автомати",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое cookies? — Gymterview",
+        "ogDescription": "Cookies (куки) — небольшие фрагменты данных, отправляемые сервером и хранимые на устройстве пользователя в браузере. При",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое cookies?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cookies (куки) — небольшие фрагменты данных, отправляемые сервером и хранимые на устройстве пользователя в браузере. При каждом запросе к сайту браузер автоматически пересылает соответствующие cookies серверу в составе HTTP-заголовка."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое cookies?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "topic": "JDBC",
+  "topicSlug": "jdbc",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое JDBC",
+      "questionSlug": "chto-takoe-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы", "sql"],
+      "seo": {
+        "title": "Что такое JDBC -- Gymterview",
+        "description": "Что такое JDBC (Java DataBase Connectivity): стандарт взаимодействия Java-приложений с СУБД, концепция драйверов и подключения к базам данных через URL.",
+        "keywords": ["JDBC", "Java DataBase Connectivity", "драйвер JDBC", "java.sql", "подключение к БД", "Java", "собеседование"],
+        "ogTitle": "Что такое JDBC -- Gymterview",
+        "ogDescription": "JDBC -- промышленный стандарт работы Java с базами данных. Разбираем концепцию драйверов и API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JDBC (Java DataBase Connectivity) -- промышленный стандарт взаимодействия Java-приложений с различными СУБД. Реализован в виде пакетов java.sql и javax.sql. Основан на концепции драйверов, которые позволяют получать соединение с базой данных по специальному URL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Что такое JDBC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем заключаются преимущества использования JDBC",
+      "questionSlug": "v-chem-zaklyuchayutsya-preimushchestva-ispolzovaniya-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы"],
+      "seo": {
+        "title": "Преимущества использования JDBC -- Gymterview",
+        "description": "Преимущества JDBC: абстракция от конкретной СУБД, лёгкость разработки, подключение через URL, минимальные изменения при смене базы данных на собеседовании.",
+        "keywords": ["преимущества JDBC", "JDBC плюсы", "абстракция БД", "Java", "собеседование"],
+        "ogTitle": "Преимущества использования JDBC -- Gymterview",
+        "ogDescription": "Зачем нужен JDBC: унифицированный интерфейс, абстракция от СУБД, подключение через URL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем заключаются преимущества использования JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Преимущества JDBC: лёгкость разработки (не нужно знать специфику СУБД), код не меняется при переходе на другую БД, не нужна клиентская программа, подключение через URL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Преимущества JDBC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что из себя представляет JDBC URL",
+      "questionSlug": "chto-iz-sebya-predstavlyaet-jdbc-url",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы", "configuration"],
+      "seo": {
+        "title": "Что такое JDBC URL -- Gymterview",
+        "description": "Структура JDBC URL: протокол (jdbc:), подпротокол (mysql, postgresql), подимя (хост:порт/база). Примеры для MySQL, PostgreSQL, Oracle, H2 на собеседовании.",
+        "keywords": ["JDBC URL", "строка подключения", "jdbc:mysql", "jdbc:postgresql", "connection string", "Java", "собеседование"],
+        "ogTitle": "Что такое JDBC URL -- Gymterview",
+        "ogDescription": "Разбираем структуру JDBC URL: протокол, подпротокол, подимя. Примеры для разных СУБД.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что из себя представляет JDBC URL",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JDBC URL -- строка подключения к БД из трёх частей: протокол (всегда jdbc:), подпротокол (имя драйвера: mysql, postgresql), подимя (идентификатор БД: //hostname:port/database). Пример: jdbc:mysql://localhost:3306/Test."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "JDBC URL", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Из каких частей состоит JDBC",
+      "questionSlug": "iz-kakikh-chastey-sostoit-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы", "архитектура"],
+      "seo": {
+        "title": "Из каких частей состоит JDBC -- Gymterview",
+        "description": "JDBC состоит из двух частей: JDBC API (пакеты java.sql и javax.sql) и JDBC-драйвер, специфичный для каждой СУБД. Паттерн Bridge в действии.",
+        "keywords": ["JDBC API", "JDBC-драйвер", "java.sql", "javax.sql", "архитектура JDBC", "Java", "собеседование"],
+        "ogTitle": "Из каких частей состоит JDBC -- Gymterview",
+        "ogDescription": "Две части JDBC: API (java.sql, javax.sql) и JDBC-драйвер для конкретной СУБД.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Из каких частей состоит JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JDBC состоит из двух частей: JDBC API (набор классов и интерфейсов в пакетах java.sql и javax.sql) и JDBC-драйвер (компонент, специфичный для каждой базы данных). JDBC превращает вызовы API в родные команды сервера БД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Части JDBC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите основные классы и интерфейсы JDBC",
+      "questionSlug": "perechislite-osnovnye-klassy-i-interfeysy-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "interface", "основы"],
+      "seo": {
+        "title": "Основные классы и интерфейсы JDBC -- Gymterview",
+        "description": "Классы и интерфейсы JDBC: DriverManager, DataSource, Connection, Statement, PreparedStatement, CallableStatement, ResultSet и их роль в работе с БД.",
+        "keywords": ["DriverManager", "DataSource", "Connection", "Statement", "PreparedStatement", "ResultSet", "JDBC интерфейсы", "Java", "собеседование"],
+        "ogTitle": "Основные классы и интерфейсы JDBC -- Gymterview",
+        "ogDescription": "Разбираем ключевые интерфейсы JDBC: Connection, Statement, PreparedStatement, ResultSet, DataSource.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите основные классы и интерфейсы JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные: DriverManager (загрузка драйвера, получение соединения), DataSource (альтернатива с пулом), Connection (сессия с БД, транзакции), Statement/PreparedStatement/CallableStatement (формирование запросов), ResultSet (навигация по результатам), ResultSetMetaData и DatabaseMetaData (метаинформация)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Классы и интерфейсы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите основные этапы работы с базой данных при использовании JDBC",
+      "questionSlug": "opishite-osnovnye-etapy-raboty-s-bazoy-dannykh-pri-ispolzovanii-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы"],
+      "seo": {
+        "title": "Этапы работы с базой данных в JDBC -- Gymterview",
+        "description": "6 этапов работы с БД через JDBC: регистрация драйверов, соединение, создание запроса, выполнение, обработка результатов, закрытие соединения.",
+        "keywords": ["этапы JDBC", "работа с БД", "JDBC workflow", "Connection", "Statement", "ResultSet", "Java", "собеседование"],
+        "ogTitle": "Этапы работы с базой данных в JDBC -- Gymterview",
+        "ogDescription": "Последовательность работы с БД через JDBC: от регистрации драйвера до закрытия соединения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите основные этапы работы с базой данных при использовании JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Шесть этапов: 1) регистрация драйверов, 2) установление соединения с БД, 3) создание запросов, 4) выполнение запросов, 5) обработка результатов, 6) закрытие соединения. Рекомендуется использовать try-with-resources для гарантированного закрытия ресурсов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Этапы работы с БД", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите основные типы данных используемые в JDBC и как они связаны с типами Java",
+      "questionSlug": "perechislite-osnovnye-tipy-dannykh-ispolzuemye-v-jdbc-i-kak-oni-svyazany-s-tipami-java",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "типы-данных"],
+      "seo": {
+        "title": "Типы данных JDBC и их связь с типами Java -- Gymterview",
+        "description": "Маппинг типов JDBC на Java: VARCHAR-String, INTEGER-Integer, BIGINT-Long, TIMESTAMP-java.sql.Timestamp, DECIMAL-BigDecimal. Полная таблица соответствий.",
+        "keywords": ["типы JDBC", "JDBC types", "маппинг типов", "VARCHAR", "INTEGER", "TIMESTAMP", "BigDecimal", "Java", "собеседование"],
+        "ogTitle": "Типы данных JDBC и их связь с типами Java -- Gymterview",
+        "ogDescription": "Полная таблица маппинга JDBC-типов на Java: строки, числа, даты, бинарные данные.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите основные типы данных используемые в JDBC и как они связаны с типами Java",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные маппинги: CHAR/VARCHAR/LONGVARCHAR -> String, NUMERIC/DECIMAL -> BigDecimal, INTEGER -> Integer, BIGINT -> Long, REAL -> Float, FLOAT/DOUBLE -> Double, DATE -> java.sql.Date, TIME -> java.sql.Time, TIMESTAMP -> java.sql.Timestamp, BINARY/VARBINARY -> byte[], CLOB -> Clob, BLOB -> Blob."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Типы данных JDBC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как зарегистрировать драйвер JDBC",
+      "questionSlug": "kak-zaregistrirovat-drayver-jdbc",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы"],
+      "seo": {
+        "title": "Как зарегистрировать драйвер JDBC -- Gymterview",
+        "description": "Способы регистрации JDBC-драйвера: DriverManager.registerDriver(), Class.forName(), автоматическая регистрация через SPI (JDBC 4.0+) на собеседовании.",
+        "keywords": ["регистрация драйвера JDBC", "Class.forName", "DriverManager", "SPI", "JDBC 4.0", "Java", "собеседование"],
+        "ogTitle": "Как зарегистрировать драйвер JDBC -- Gymterview",
+        "ogDescription": "Три способа регистрации JDBC-драйвера: DriverManager, Class.forName и автоматический SPI.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как зарегистрировать драйвер JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три способа: 1) DriverManager.registerDriver(new Driver()), 2) Class.forName(\"полное имя класса драйвера\"), 3) автоматически через SPI (JDBC 4.0+, Java 6+) -- достаточно добавить JAR в classpath. В современных проектах ручная регистрация не нужна."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Регистрация драйвера", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как установить соединение с базой данных",
+      "questionSlug": "kak-ustanovit-soedinenie-s-bazoy-dannykh",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы"],
+      "seo": {
+        "title": "Как установить соединение с базой данных в JDBC -- Gymterview",
+        "description": "Установка соединения с БД через DriverManager.getConnection(): три перегрузки (URL, URL+Properties, URL+user+password). DataSource как альтернатива.",
+        "keywords": ["getConnection", "DriverManager", "DataSource", "Connection", "подключение к БД", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Как установить соединение с базой данных в JDBC -- Gymterview",
+        "ogDescription": "Создание Connection через DriverManager.getConnection() и DataSource. Три перегрузки метода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как установить соединение с базой данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Через DriverManager.getConnection() с тремя вариантами параметров: только URL, URL + Properties, URL + user + password. Результат -- объект Connection. В продуктивном коде используется DataSource с поддержкой пула соединений вместо DriverManager."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Соединение с БД", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие уровни изоляции транзакций поддерживаются в JDBC",
+      "questionSlug": "kakie-urovni-izolyatsii-tranzaktsiy-podderzhivayutsya-v-jdbc",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "transaction", "sql"],
+      "seo": {
+        "title": "Уровни изоляции транзакций в JDBC -- Gymterview",
+        "description": "Уровни изоляции транзакций JDBC: READ_UNCOMMITTED, READ_COMMITTED, REPEATABLE_READ, SERIALIZABLE. Аномалии: dirty read, non-repeatable read, phantom read.",
+        "keywords": ["уровни изоляции", "TRANSACTION_READ_COMMITTED", "TRANSACTION_SERIALIZABLE", "dirty read", "phantom read", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Уровни изоляции транзакций в JDBC -- Gymterview",
+        "ogDescription": "Четыре уровня изоляции в JDBC: какие аномалии допускает каждый. Таблица сравнения и методы установки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие уровни изоляции транзакций поддерживаются в JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JDBC поддерживает 5 уровней изоляции (константы Connection): TRANSACTION_NONE, READ_UNCOMMITTED (допускает все аномалии), READ_COMMITTED (защищает от dirty read), REPEATABLE_READ (защищает от dirty и non-repeatable read), SERIALIZABLE (защищает от всех аномалий). Устанавливается через setTransactionIsolation()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Уровни изоляции", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "При помощи чего формируются запросы к базе данных",
+      "questionSlug": "pri-pomoshchi-chego-formiruyutsya-zaprosy-k-baze-dannykh",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "sql", "interface"],
+      "seo": {
+        "title": "Формирование запросов к базе данных в JDBC -- Gymterview",
+        "description": "Три интерфейса для запросов в JDBC: Statement (без параметров), PreparedStatement (с параметрами), CallableStatement (хранимые процедуры) на собеседовании.",
+        "keywords": ["Statement", "PreparedStatement", "CallableStatement", "запросы к БД", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Формирование запросов к базе данных в JDBC -- Gymterview",
+        "ogDescription": "Statement, PreparedStatement и CallableStatement: три интерфейса для SQL-запросов в JDBC.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "При помощи чего формируются запросы к базе данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Запросы формируются через три интерфейса: Statement (простые запросы без параметров, создаётся через createStatement()), PreparedStatement (параметризованные запросы, prepareStatement()), CallableStatement (хранимые процедуры, prepareCall())."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Формирование запросов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается Statement от PreparedStatement",
+      "questionSlug": "chem-otlichaetsya-statement-ot-preparedstatement",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "sql", "security", "performance"],
+      "seo": {
+        "title": "Statement vs PreparedStatement в JDBC -- Gymterview",
+        "description": "Отличия Statement от PreparedStatement: параметризация, прекомпиляция, защита от SQL Injection, кэширование query plan. Таблица сравнения на собеседовании.",
+        "keywords": ["Statement", "PreparedStatement", "SQL Injection", "query plan", "прекомпиляция", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Statement vs PreparedStatement в JDBC -- Gymterview",
+        "ogDescription": "Сравнение Statement и PreparedStatement: безопасность, производительность, параметризация запросов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается Statement от PreparedStatement",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statement используется для простых запросов без параметров, компилируется каждый раз, уязвим к SQL Injection. PreparedStatement поддерживает параметры через ?, прекомпилируется один раз (план кэшируется СУБД), защищён от SQL Injection. Правило: всегда используйте PreparedStatement для DML."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Statement vs PreparedStatement", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как осуществляется запрос к базе данных и обработка результатов",
+      "questionSlug": "kak-osushchestvlyaetsya-zapros-k-baze-dannykh-i-obrabotka-rezultatov",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "sql"],
+      "seo": {
+        "title": "Запрос к базе данных и обработка ResultSet в JDBC -- Gymterview",
+        "description": "Методы выполнения запросов: executeQuery (SELECT), executeUpdate (INSERT/UPDATE/DELETE), execute (любые). Работа с ResultSet и курсором на собеседовании.",
+        "keywords": ["executeQuery", "executeUpdate", "execute", "ResultSet", "курсор", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Запрос к базе данных и обработка ResultSet в JDBC -- Gymterview",
+        "ogDescription": "Три метода execute в JDBC и навигация по ResultSet с помощью курсора.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как осуществляется запрос к базе данных и обработка результатов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Запросы выполняются через методы Statement: executeQuery() для SELECT (возвращает ResultSet), executeUpdate() для INSERT/UPDATE/DELETE (возвращает int), execute() для любых SQL-команд. ResultSet содержит курсор, который перемещается методом next(). Значения полей читаются через getString(), getInt() и подобные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Запрос и обработка результатов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как вызвать хранимую процедуру",
+      "questionSlug": "kak-vyzvat-khranimuyu-protseduru",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "sql"],
+      "seo": {
+        "title": "Как вызвать хранимую процедуру в JDBC -- Gymterview",
+        "description": "Вызов хранимых процедур в JDBC через CallableStatement: синтаксис { call proc(?, ?) }, входные/выходные параметры, registerOutParameter на собеседовании.",
+        "keywords": ["хранимая процедура", "CallableStatement", "prepareCall", "registerOutParameter", "stored procedure", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Как вызвать хранимую процедуру в JDBC -- Gymterview",
+        "ogDescription": "CallableStatement для вызова хранимых процедур: синтаксис, входные и выходные параметры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вызвать хранимую процедуру",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Через CallableStatement с синтаксисом { call procedureName(?, ?) }. Входные параметры задаются через setString/setInt, выходные регистрируются через registerOutParameter(). Выбор интерфейса: без параметров -- Statement, с входными -- PreparedStatement, с входными и выходными -- CallableStatement."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Хранимые процедуры", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как закрыть соединение с базой данных",
+      "questionSlug": "kak-zakryt-soedinenie-s-bazoy-dannykh",
+      "grade": "junior",
+      "tags": ["jdbc", "databases", "основы"],
+      "seo": {
+        "title": "Как закрыть соединение с базой данных в JDBC -- Gymterview",
+        "description": "Закрытие Connection в JDBC: метод close(), try-with-resources (Java 7+), порядок закрытия ресурсов ResultSet-Statement-Connection на собеседовании.",
+        "keywords": ["close", "try-with-resources", "Connection", "закрытие соединения", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Как закрыть соединение с базой данных в JDBC -- Gymterview",
+        "ogDescription": "Правильное закрытие JDBC-ресурсов: close(), try-with-resources, порядок закрытия.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как закрыть соединение с базой данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Через метод close() объекта Connection или автоматически через try-with-resources (Java 7+). Порядок закрытия: ResultSet -> Statement -> Connection. При использовании пула соединений close() возвращает соединение в пул, а не уничтожает его."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Закрытие соединения", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Connection Pool и зачем он нужен",
+      "questionSlug": "chto-takoe-connection-pool-i-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "performance", "spring-boot"],
+      "seo": {
+        "title": "Connection Pool (пул соединений) в JDBC -- Gymterview",
+        "description": "Что такое Connection Pool: принцип работы, DataSource vs DriverManager, HikariCP, размер пула, connection leak. Сравнение популярных реализаций на собеседовании.",
+        "keywords": ["Connection Pool", "пул соединений", "HikariCP", "DataSource", "DriverManager", "connection leak", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Connection Pool (пул соединений) в JDBC -- Gymterview",
+        "ogDescription": "Пул соединений: принцип заимствование-использование-возврат, HikariCP, DataSource, размер пула.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Connection Pool и зачем он нужен",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connection Pool -- механизм управления набором заранее созданных соединений с БД для повторного использования. Создание соединения занимает 50-100 мс, из пула -- ~1 мс. Принцип: заимствование -> использование -> возврат. HikariCP -- стандарт в Spring Boot. Оптимальный размер: (CPU cores * 2) + spindle count."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Connection Pool", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое HikariCP и как его настроить",
+      "questionSlug": "chto-takoe-hikaricp-i-kak-ego-nastroit",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "performance", "spring-boot", "configuration"],
+      "seo": {
+        "title": "HikariCP: настройка пула соединений в Spring Boot -- Gymterview",
+        "description": "HikariCP -- высокопроизводительный пул JDBC-соединений и стандарт Spring Boot. Ключевые параметры: maximumPoolSize, connectionTimeout, maxLifetime, leakDetection.",
+        "keywords": ["HikariCP", "пул соединений", "maximumPoolSize", "connectionTimeout", "maxLifetime", "Spring Boot", "JDBC", "Java", "собеседование"],
+        "ogTitle": "HikariCP: настройка пула соединений в Spring Boot -- Gymterview",
+        "ogDescription": "Настройка HikariCP: ключевые параметры, Spring Boot application.yml, мониторинг, рекомендации для продакшена.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое HikariCP и как его настроить",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HikariCP -- высокопроизводительный пул JDBC-соединений, стандарт Spring Boot с версии 2.0. Ключевые параметры: maximumPoolSize (10), connectionTimeout (30 сек), maxLifetime (30 мин), leakDetectionThreshold. В продакшене minimumIdle = maximumPoolSize, maxLifetime меньше wait_timeout СУБД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "HikariCP", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выполнять batch-операции в JDBC",
+      "questionSlug": "kak-vypolnyat-batch-operatsii-v-jdbc",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "performance", "batch"],
+      "seo": {
+        "title": "Batch-операции в JDBC -- Gymterview",
+        "description": "Batch-операции JDBC: addBatch, executeBatch, clearBatch. Сравнение производительности, batch с PreparedStatement, Spring JdbcTemplate batchUpdate на собеседовании.",
+        "keywords": ["batch", "addBatch", "executeBatch", "пакетные операции", "BatchUpdateException", "JdbcTemplate", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Batch-операции в JDBC -- Gymterview",
+        "ogDescription": "Пакетные операции в JDBC: сокращение сетевых вызовов, batch с PreparedStatement, разбиение на части.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выполнять batch-операции в JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Batch-операции отправляют несколько SQL-команд за один сетевой вызов. Методы: addBatch() добавляет команду, executeBatch() отправляет пакет, clearBatch() очищает. Вставка 10000 записей: одиночный INSERT ~10 сек, batch ~0.5 сек. Рекомендуется разбивать на части по 1000-5000 записей и оборачивать в транзакцию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Batch-операции", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять транзакциями в JDBC",
+      "questionSlug": "kak-upravlyat-tranzaktsiyami-v-jdbc",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "transaction"],
+      "seo": {
+        "title": "Управление транзакциями в JDBC -- Gymterview",
+        "description": "Транзакции в JDBC: setAutoCommit(false), commit, rollback, Savepoint. Сравнение с Spring @Transactional: propagation, изоляция, декларативный подход.",
+        "keywords": ["транзакции", "setAutoCommit", "commit", "rollback", "Savepoint", "@Transactional", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Управление транзакциями в JDBC -- Gymterview",
+        "ogDescription": "Ручное управление транзакциями в JDBC: autoCommit, commit, rollback, Savepoint. Сравнение с Spring @Transactional.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять транзакциями в JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Транзакция -- набор операций, выполняемых как единое целое. По умолчанию autoCommit=true. Для ручного управления: setAutoCommit(false), затем commit() при успехе или rollback() при ошибке. Savepoint позволяет частичный откат. В реальных проектах используется Spring @Transactional для декларативного управления."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Транзакции", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть альтернативы чистому JDBC",
+      "questionSlug": "kakie-est-alternativy-chistomu-jdbc",
+      "grade": "middle",
+      "tags": ["jdbc", "databases", "jpa", "hibernate", "spring-data", "orm"],
+      "seo": {
+        "title": "Альтернативы чистому JDBC: JdbcTemplate, jOOQ, JPA, MyBatis, R2DBC -- Gymterview",
+        "description": "Альтернативы JDBC: Spring JdbcTemplate, jOOQ, JPA/Hibernate, MyBatis, R2DBC. Сравнительная таблица: уровень абстракции, контроль SQL, когда использовать.",
+        "keywords": ["JdbcTemplate", "jOOQ", "JPA", "Hibernate", "MyBatis", "R2DBC", "Spring Data", "ORM", "JDBC", "Java", "собеседование"],
+        "ogTitle": "Альтернативы чистому JDBC: JdbcTemplate, jOOQ, JPA, MyBatis, R2DBC -- Gymterview",
+        "ogDescription": "Сравнение инструментов доступа к данным в Java: от низкоуровневого JDBC до ORM и реактивного R2DBC.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть альтернативы чистому JDBC",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные альтернативы: Spring JdbcTemplate (обёртка над JDBC, убирает шаблонный код), jOOQ (типобезопасный SQL), JPA/Hibernate (ORM, высокий уровень абстракции), MyBatis (SQL-маппинг, полный контроль над SQL), R2DBC (реактивный доступ). Все кроме R2DBC работают поверх JDBC. Выбор зависит от задачи: JPA для CRUD, jOOQ для сложного SQL, JdbcTemplate для баланса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JDBC", "url": "/topics/jdbc" },
+          { "name": "Альтернативы JDBC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

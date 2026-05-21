@@ -1,0 +1,908 @@
+{
+  "topic": "Kubernetes",
+  "topicSlug": "kubernetes",
+  "batch": 1,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Kubernetes и зачем он нужен?",
+      "questionSlug": "chto-takoe-kubernetes-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Kubernetes и зачем он нужен? — Gymterview",
+        "description": "Kubernetes (K8s) — платформа с открытым исходным кодом для автоматизации развёртывания, масштабирования и управления контейнеризированными приложениями. Разрабо",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Что такое Kubernetes и зачем он нужен? — Gymterview",
+        "ogDescription": "Kubernetes (K8s) — платформа с открытым исходным кодом для автоматизации развёртывания, масштабирования и управления кон",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Kubernetes и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kubernetes (K8s) — платформа с открытым исходным кодом для автоматизации развёртывания, масштабирования и управления контейнеризированными приложениями. Разработана Google и передана в Cloud Native Computing Foundation (CNCF)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Kubernetes и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем Kubernetes отличается от Docker Compose и Docker Swarm?",
+      "questionSlug": "chem-kubernetes-otlichaetsya-ot-docker-compose-i-docker-swarm",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Чем Kubernetes отличается от Docker Compose и Docker Swarm? — Gymterview",
+        "description": "Docker Compose, Docker Swarm и Kubernetes решают задачу запуска нескольких контейнеров, но на разных масштабах и с разным уровнем возможностей.",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Чем Kubernetes отличается от Docker Compose и Docker Swarm? — Gymterview",
+        "ogDescription": "Docker Compose, Docker Swarm и Kubernetes решают задачу запуска нескольких контейнеров, но на разных масштабах и с разны",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем Kubernetes отличается от Docker Compose и Docker Swarm?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker Compose, Docker Swarm и Kubernetes решают задачу запуска нескольких контейнеров, но на разных масштабах и с разным уровнем возможностей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Чем Kubernetes отличается от Docker Compose и Docker Swarm?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова архитектура кластера Kubernetes?",
+      "questionSlug": "kakova-arkhitektura-klastera-kubernetes",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Какова архитектура кластера Kubernetes? — Gymterview",
+        "description": "Кластер Kubernetes состоит из Master Node (управляющий узел, Control Plane) и Worker Nodes (рабочие узлы).",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Какова архитектура кластера Kubernetes? — Gymterview",
+        "ogDescription": "Кластер Kubernetes состоит из Master Node (управляющий узел, Control Plane) и Worker Nodes (рабочие узлы).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова архитектура кластера Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кластер Kubernetes состоит из Master Node (управляющий узел, Control Plane) и Worker Nodes (рабочие узлы)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Какова архитектура кластера Kubernetes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Pod?",
+      "questionSlug": "chto-takoe-pod",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Pod? — Gymterview",
+        "description": "Pod — минимальная единица развёртывания в Kubernetes. Представляет собой группу из одного или нескольких контейнеров, которые разделяют общее сетевое пространст",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Что такое Pod? — Gymterview",
+        "ogDescription": "Pod — минимальная единица развёртывания в Kubernetes. Представляет собой группу из одного или нескольких контейнеров, ко",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Pod?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pod — минимальная единица развёртывания в Kubernetes. Представляет собой группу из одного или нескольких контейнеров, которые разделяют общее сетевое пространство (один IP-адрес), могут разделять общие тома (volumes) и управляются как единое целое."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Pod?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каков жизненный цикл Pod?",
+      "questionSlug": "kakov-zhiznennyj-tsikl-pod",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Каков жизненный цикл Pod? — Gymterview",
+        "description": "Pod проходит через несколько фаз (phases) за время своей жизни. Фаза отражает общее состояние Pod'а, а не отдельных контейнеров внутри него.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Каков жизненный цикл Pod? — Gymterview",
+        "ogDescription": "Pod проходит через несколько фаз (phases) за время своей жизни. Фаза отражает общее состояние Pod'а, а не отдельных конт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каков жизненный цикл Pod?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pod проходит через несколько фаз (phases) за время своей жизни. Фаза отражает общее состояние Pod'а, а не отдельных контейнеров внутри него."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Каков жизненный цикл Pod?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Init-контейнеры и Sidecar-контейнеры?",
+      "questionSlug": "chto-takoe-init-kontejnery-i-sidecar-kontejnery",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Init-контейнеры и Sidecar-контейнеры? — Gymterview",
+        "description": "Init-контейнеры и Sidecar-контейнеры — два паттерна для расширения функциональности Pod'а через дополнительные контейнеры. Init-контейнеры запускаются до основн",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Init-контейнеры и Sidecar-контейнеры? — Gymterview",
+        "ogDescription": "Init-контейнеры и Sidecar-контейнеры — два паттерна для расширения функциональности Pod'а через дополнительные контейнер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Init-контейнеры и Sidecar-контейнеры?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Init-контейнеры и Sidecar-контейнеры — два паттерна для расширения функциональности Pod'а через дополнительные контейнеры. Init-контейнеры запускаются до основного приложения, Sidecar-контейнеры работают параллельно с ним."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Init-контейнеры и Sidecar-контейнеры?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ReplicaSet?",
+      "questionSlug": "chto-takoe-replicaset",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое ReplicaSet? — Gymterview",
+        "description": "ReplicaSet — контроллер, который гарантирует, что указанное количество одинаковых Pod'ов (реплик) запущено в любой момент времени.",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Что такое ReplicaSet? — Gymterview",
+        "ogDescription": "ReplicaSet — контроллер, который гарантирует, что указанное количество одинаковых Pod'ов (реплик) запущено в любой момен",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ReplicaSet?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ReplicaSet — контроллер, который гарантирует, что указанное количество одинаковых Pod'ов (реплик) запущено в любой момент времени."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое ReplicaSet?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Deployment и какие стратегии обновления существуют?",
+      "questionSlug": "chto-takoe-deployment-i-kakie-strategii-obnovleniya-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Deployment и какие стратегии обновления существуют — Gymterview",
+        "description": "Deployment — основной объект для управления развёртыванием stateless-приложений в Kubernetes. Deployment управляет ReplicaSet'ами, которые, в свою очередь, упра",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Deployment и какие стратегии обновления существуют — Gymterview",
+        "ogDescription": "Deployment — основной объект для управления развёртыванием stateless-приложений в Kubernetes. Deployment управляет Repli",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Deployment и какие стратегии обновления существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deployment — основной объект для управления развёртыванием stateless-приложений в Kubernetes. Deployment управляет ReplicaSet'ами, которые, в свою очередь, управляют Pod'ами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Deployment и какие стратегии обновления существуют",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Service и какие типы существуют?",
+      "questionSlug": "chto-takoe-service-i-kakie-tipy-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Service и какие типы существуют? — Gymterview",
+        "description": "Service — абстракция, которая определяет логическую группу Pod'ов и политику доступа к ним. Обеспечивает стабильный сетевой эндпоинт (IP-адрес и DNS-имя) для на",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Service и какие типы существуют? — Gymterview",
+        "ogDescription": "Service — абстракция, которая определяет логическую группу Pod'ов и политику доступа к ним. Обеспечивает стабильный сете",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Service и какие типы существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Service — абстракция, которая определяет логическую группу Pod'ов и политику доступа к ним. Обеспечивает стабильный сетевой эндпоинт (IP-адрес и DNS-имя) для набора Pod'ов, даже если сами Pod'ы пересоздаются и их IP-адреса меняются."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Service и какие типы существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Ingress и Ingress Controller?",
+      "questionSlug": "chto-takoe-ingress-i-ingress-controller",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Ingress и Ingress Controller? — Gymterview",
+        "description": "Ingress — объект Kubernetes, который управляет внешним HTTP/HTTPS-доступом к сервисам внутри кластера. Позволяет определять правила маршрутизации на основе хост",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Ingress и Ingress Controller? — Gymterview",
+        "ogDescription": "Ingress — объект Kubernetes, который управляет внешним HTTP/HTTPS-доступом к сервисам внутри кластера. Позволяет определ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Ingress и Ingress Controller?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ingress — объект Kubernetes, который управляет внешним HTTP/HTTPS-доступом к сервисам внутри кластера. Позволяет определять правила маршрутизации на основе хоста и пути запроса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Ingress и Ingress Controller?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Namespace и зачем он нужен?",
+      "questionSlug": "chto-takoe-namespace-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Namespace и зачем он нужен? — Gymterview",
+        "description": "Namespace — механизм виртуального разделения кластера Kubernetes на логически изолированные пространства.",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Что такое Namespace и зачем он нужен? — Gymterview",
+        "ogDescription": "Namespace — механизм виртуального разделения кластера Kubernetes на логически изолированные пространства.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Namespace и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Namespace — механизм виртуального разделения кластера Kubernetes на логически изолированные пространства."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Namespace и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ConfigMap и Secret?",
+      "questionSlug": "chto-takoe-configmap-i-secret",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое ConfigMap и Secret? — Gymterview",
+        "description": "ConfigMap и Secret — объекты Kubernetes для хранения конфигурационных данных отдельно от образа контейнера. ConfigMap — для обычных настроек, Secret — для конфи",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Что такое ConfigMap и Secret? — Gymterview",
+        "ogDescription": "ConfigMap и Secret — объекты Kubernetes для хранения конфигурационных данных отдельно от образа контейнера. ConfigMap — ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ConfigMap и Secret?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ConfigMap и Secret — объекты Kubernetes для хранения конфигурационных данных отдельно от образа контейнера. ConfigMap — для обычных настроек, Secret — для конфиденциальных данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое ConfigMap и Secret?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как передать конфигурацию в Java/Spring Boot приложение через ConfigMap и Secret?",
+      "questionSlug": "kak-peredat-konfiguratsiyu-v-java-spring-boot-prilozhenie-cherez-configmap-i-sec",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Как передать конфигурацию в Java/Spring Boot приложение чере — Gymterview",
+        "description": "Spring Boot приложения гибко работают с конфигурацией из Kubernetes. Существует три основных подхода, различающихся по сложности и возможностям.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Как передать конфигурацию в Java/Spring Boot приложение чере — Gymterview",
+        "ogDescription": "Spring Boot приложения гибко работают с конфигурацией из Kubernetes. Существует три основных подхода, различающихся по с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как передать конфигурацию в Java/Spring Boot приложение через ConfigMap и Secret?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot приложения гибко работают с конфигурацией из Kubernetes. Существует три основных подхода, различающихся по сложности и возможностям."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Как передать конфигурацию в Java/Spring Boot приложение чере",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы Volumes существуют в Kubernetes?",
+      "questionSlug": "kakie-tipy-volumes-sushchestvuyut-v-kubernetes",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Какие типы Volumes существуют в Kubernetes? — Gymterview",
+        "description": "Volume — механизм хранения данных для Pod'ов. В отличие от файловой системы контейнера, данные в Volume переживают перезапуск контейнера (но не обязательно удал",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Какие типы Volumes существуют в Kubernetes? — Gymterview",
+        "ogDescription": "Volume — механизм хранения данных для Pod'ов. В отличие от файловой системы контейнера, данные в Volume переживают перез",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы Volumes существуют в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Volume — механизм хранения данных для Pod'ов. В отличие от файловой системы контейнера, данные в Volume переживают перезапуск контейнера (но не обязательно удаление Pod'а)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Какие типы Volumes существуют в Kubernetes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое PersistentVolume и PersistentVolumeClaim?",
+      "questionSlug": "chto-takoe-persistentvolume-i-persistentvolumeclaim",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое PersistentVolume и PersistentVolumeClaim? — Gymterview",
+        "description": "PersistentVolume (PV) — ресурс хранилища в кластере, который существует независимо от Pod'ов. PersistentVolumeClaim (PVC) — запрос на хранилище от пользователя.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое PersistentVolume и PersistentVolumeClaim? — Gymterview",
+        "ogDescription": "PersistentVolume (PV) — ресурс хранилища в кластере, который существует независимо от Pod'ов. PersistentVolumeClaim (PVC",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое PersistentVolume и PersistentVolumeClaim?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PersistentVolume (PV) — ресурс хранилища в кластере, который существует независимо от Pod'ов. PersistentVolumeClaim (PVC) — запрос на хранилище от пользователя. Вместе они разделяют ответственность: администратор управляет хранилищем (PV), разработчик запрашивает нужный объём (PVC)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое PersistentVolume и PersistentVolumeClaim?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Liveness, Readiness и Startup Probes?",
+      "questionSlug": "chto-takoe-liveness-readiness-i-startup-probes",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Liveness, Readiness и Startup Probes? — Gymterview",
+        "description": "Probes (пробы) — механизм проверки состояния контейнера в Kubernetes. Liveness определяет, жив ли контейнер, Readiness — готов ли принимать трафик, Startup — за",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Liveness, Readiness и Startup Probes? — Gymterview",
+        "ogDescription": "Probes (пробы) — механизм проверки состояния контейнера в Kubernetes. Liveness определяет, жив ли контейнер, Readiness —",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Liveness, Readiness и Startup Probes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probes (пробы) — механизм проверки состояния контейнера в Kubernetes. Liveness определяет, жив ли контейнер, Readiness — готов ли принимать трафик, Startup — завершился ли запуск."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Liveness, Readiness и Startup Probes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Requests и Limits для ресурсов?",
+      "questionSlug": "chto-takoe-requests-i-limits-dlya-resursov",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Requests и Limits для ресурсов? — Gymterview",
+        "description": "Requests — минимальное количество ресурсов, гарантированное контейнеру (используется Scheduler'ом для выбора ноды). Limits — максимальное количество ресурсов, к",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Requests и Limits для ресурсов? — Gymterview",
+        "ogDescription": "Requests — минимальное количество ресурсов, гарантированное контейнеру (используется Scheduler'ом для выбора ноды). Limi",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Requests и Limits для ресурсов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Requests — минимальное количество ресурсов, гарантированное контейнеру (используется Scheduler'ом для выбора ноды). Limits — максимальное количество ресурсов, которое контейнер может потребить."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Requests и Limits для ресурсов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Horizontal Pod Autoscaler (HPA)?",
+      "questionSlug": "chto-takoe-horizontal-pod-autoscaler-hpa",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Horizontal Pod Autoscaler (HPA)? — Gymterview",
+        "description": "HPA (Horizontal Pod Autoscaler) — контроллер, который автоматически масштабирует количество Pod'ов в Deployment в зависимости от наблюдаемых метрик.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Horizontal Pod Autoscaler (HPA)? — Gymterview",
+        "ogDescription": "HPA (Horizontal Pod Autoscaler) — контроллер, который автоматически масштабирует количество Pod'ов в Deployment в зависи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Horizontal Pod Autoscaler (HPA)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HPA (Horizontal Pod Autoscaler) — контроллер, который автоматически масштабирует количество Pod'ов в Deployment в зависимости от наблюдаемых метрик."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Horizontal Pod Autoscaler (HPA)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные команды kubectl нужно знать?",
+      "questionSlug": "kakie-osnovnye-komandy-kubectl-nuzhno-znat",
+      "grade": "junior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Какие основные команды kubectl нужно знать? — Gymterview",
+        "description": "kubectl — CLI-инструмент для управления кластером Kubernetes. Все команды работают с API Server.",
+        "keywords": [
+          "kubernetes",
+          "junior"
+        ],
+        "ogTitle": "Какие основные команды kubectl нужно знать? — Gymterview",
+        "ogDescription": "kubectl — CLI-инструмент для управления кластером Kubernetes. Все команды работают с API Server.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные команды kubectl нужно знать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "kubectl — CLI-инструмент для управления кластером Kubernetes. Все команды работают с API Server."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Какие основные команды kubectl нужно знать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выглядит YAML-манифест для деплоя Java/Spring Boot приложения?",
+      "questionSlug": "kak-vyglyadit-yaml-manifest-dlya-deploya-java-spring-boot-prilozheniya",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Как выглядит YAML-манифест для деплоя Java/Spring Boot прило — Gymterview",
+        "description": "Полный набор манифестов для развёртывания типичного Spring Boot приложения включает Deployment, Service, Ingress, ConfigMap, Secret и HPA.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Как выглядит YAML-манифест для деплоя Java/Spring Boot прило — Gymterview",
+        "ogDescription": "Полный набор манифестов для развёртывания типичного Spring Boot приложения включает Deployment, Service, Ingress, Config",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выглядит YAML-манифест для деплоя Java/Spring Boot приложения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Полный набор манифестов для развёртывания типичного Spring Boot приложения включает Deployment, Service, Ingress, ConfigMap, Secret и HPA."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Как выглядит YAML-манифест для деплоя Java/Spring Boot прило",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

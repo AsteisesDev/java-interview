@@ -1,0 +1,908 @@
+{
+  "topic": "Apache Kafka",
+  "topicSlug": "kafka",
+  "batch": 1,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Apache Kafka?",
+      "questionSlug": "chto-takoe-apache-kafka",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Что такое Apache Kafka? — Gymterview",
+        "description": "Apache Kafka — это распределённая платформа потоковой передачи данных с открытым исходным кодом, разработанная для высокоскоростной обработки больших объёмов да",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Что такое Apache Kafka? — Gymterview",
+        "ogDescription": "Apache Kafka — это распределённая платформа потоковой передачи данных с открытым исходным кодом, разработанная для высок",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Apache Kafka?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apache Kafka — это распределённая платформа потоковой передачи данных с открытым исходным кодом, разработанная для высокоскоростной обработки больших объёмов данных с минимальной задержкой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Что такое Apache Kafka?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные компоненты Kafka?",
+      "questionSlug": "kakie-osnovnye-komponenty-kafka",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие основные компоненты Kafka? — Gymterview",
+        "description": "Kafka состоит из нескольких ключевых компонентов, которые вместе обеспечивают распределённую потоковую обработку данных.",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Какие основные компоненты Kafka? — Gymterview",
+        "ogDescription": "Kafka состоит из нескольких ключевых компонентов, которые вместе обеспечивают распределённую потоковую обработку данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные компоненты Kafka?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka состоит из нескольких ключевых компонентов, которые вместе обеспечивают распределённую потоковую обработку данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие основные компоненты Kafka?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена архитектура топика?",
+      "questionSlug": "kak-ustroena-arkhitektura-topika",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как устроена архитектура топика? — Gymterview",
+        "description": "Топик — это логическая единица организации данных в Kafka, разбитая на партиции для параллельной обработки.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как устроена архитектура топика? — Gymterview",
+        "ogDescription": "Топик — это логическая единица организации данных в Kafka, разбитая на партиции для параллельной обработки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена архитектура топика?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Топик — это логическая единица организации данных в Kafka, разбитая на партиции для параллельной обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как устроена архитектура топика?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие настройки топика Kafka существуют?",
+      "questionSlug": "kakie-nastrojki-topika-kafka-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие настройки топика Kafka существуют? — Gymterview",
+        "description": "Настройки топика определяют поведение хранения, репликации и очистки данных.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какие настройки топика Kafka существуют? — Gymterview",
+        "ogDescription": "Настройки топика определяют поведение хранения, репликации и очистки данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие настройки топика Kafka существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройки топика определяют поведение хранения, репликации и очистки данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие настройки топика Kafka существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена архитектура брокера?",
+      "questionSlug": "kak-ustroena-arkhitektura-brokera",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как устроена архитектура брокера? — Gymterview",
+        "description": "Брокер — это сервер Kafka, который принимает, хранит и отдаёт сообщения. Кластер Kafka состоит из нескольких брокеров.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как устроена архитектура брокера? — Gymterview",
+        "ogDescription": "Брокер — это сервер Kafka, который принимает, хранит и отдаёт сообщения. Кластер Kafka состоит из нескольких брокеров.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена архитектура брокера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Брокер — это сервер Kafka, который принимает, хранит и отдаёт сообщения. Кластер Kafka состоит из нескольких брокеров."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как устроена архитектура брокера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие настройки брокера Kafka существуют?",
+      "questionSlug": "kakie-nastrojki-brokera-kafka-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие настройки брокера Kafka существуют? — Gymterview",
+        "description": "Настройки брокера определяют поведение репликации, хранения, производительности и безопасности.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какие настройки брокера Kafka существуют? — Gymterview",
+        "ogDescription": "Настройки брокера определяют поведение репликации, хранения, производительности и безопасности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие настройки брокера Kafka существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройки брокера определяют поведение репликации, хранения, производительности и безопасности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие настройки брокера Kafka существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена архитектура продюсера?",
+      "questionSlug": "kak-ustroena-arkhitektura-prodyusera",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как устроена архитектура продюсера? — Gymterview",
+        "description": "Продюсер — это клиент Kafka, который формирует, буферизирует и отправляет сообщения в топики.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как устроена архитектура продюсера? — Gymterview",
+        "ogDescription": "Продюсер — это клиент Kafka, который формирует, буферизирует и отправляет сообщения в топики.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена архитектура продюсера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Продюсер — это клиент Kafka, который формирует, буферизирует и отправляет сообщения в топики."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как устроена архитектура продюсера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие настройки продюсера существуют?",
+      "questionSlug": "kakie-nastrojki-prodyusera-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие настройки продюсера существуют? — Gymterview",
+        "description": "Настройки продюсера определяют сериализацию, буферизацию, сжатие, партицирование и гарантии доставки.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какие настройки продюсера существуют? — Gymterview",
+        "ogDescription": "Настройки продюсера определяют сериализацию, буферизацию, сжатие, партицирование и гарантии доставки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие настройки продюсера существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройки продюсера определяют сериализацию, буферизацию, сжатие, партицирование и гарантии доставки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие настройки продюсера существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выглядит пример конфигурации Kafka Producer?",
+      "questionSlug": "kak-vyglyadit-primer-konfiguratsii-kafka-producer",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как выглядит пример конфигурации Kafka Producer? — Gymterview",
+        "description": "Рассмотрим три подхода к созданию продюсера: нативный Kafka API, Spring Kafka и Spring Cloud Stream.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как выглядит пример конфигурации Kafka Producer? — Gymterview",
+        "ogDescription": "Рассмотрим три подхода к созданию продюсера: нативный Kafka API, Spring Kafka и Spring Cloud Stream.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выглядит пример конфигурации Kafka Producer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Рассмотрим три подхода к созданию продюсера: нативный Kafka API, Spring Kafka и Spring Cloud Stream."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как выглядит пример конфигурации Kafka Producer?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена архитектура консюмера?",
+      "questionSlug": "kak-ustroena-arkhitektura-konsyumera",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как устроена архитектура консюмера? — Gymterview",
+        "description": "Консюмер — это клиент Kafka, который подписывается на топики и читает сообщения, используя Kafka Consumer API. Потребители могут быть объединены в группы (Consu",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как устроена архитектура консюмера? — Gymterview",
+        "ogDescription": "Консюмер — это клиент Kafka, который подписывается на топики и читает сообщения, используя Kafka Consumer API. Потребите",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена архитектура консюмера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Консюмер — это клиент Kafka, который подписывается на топики и читает сообщения, используя Kafka Consumer API. Потребители могут быть объединены в группы (Consumer Groups)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как устроена архитектура консюмера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие настройки консюмера существуют?",
+      "questionSlug": "kakie-nastrojki-konsyumera-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие настройки консюмера существуют? — Gymterview",
+        "description": "Настройки консюмера определяют подключение, смещения, группы и поведение при чтении.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какие настройки консюмера существуют? — Gymterview",
+        "ogDescription": "Настройки консюмера определяют подключение, смещения, группы и поведение при чтении.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие настройки консюмера существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Настройки консюмера определяют подключение, смещения, группы и поведение при чтении."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие настройки консюмера существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выглядит пример конфигурации Kafka Consumer?",
+      "questionSlug": "kak-vyglyadit-primer-konfiguratsii-kafka-consumer",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как выглядит пример конфигурации Kafka Consumer? — Gymterview",
+        "description": "Рассмотрим конфигурацию консюмера с разными гарантиями доставки и через разные фреймворки.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как выглядит пример конфигурации Kafka Consumer? — Gymterview",
+        "ogDescription": "Рассмотрим конфигурацию консюмера с разными гарантиями доставки и через разные фреймворки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выглядит пример конфигурации Kafka Consumer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Рассмотрим конфигурацию консюмера с разными гарантиями доставки и через разные фреймворки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как выглядит пример конфигурации Kafka Consumer?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные API предоставляет Kafka?",
+      "questionSlug": "kakie-osnovnye-api-predostavlyaet-kafka",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какие основные API предоставляет Kafka? — Gymterview",
+        "description": "Kafka предоставляет четыре основных API для взаимодействия с платформой.",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Какие основные API предоставляет Kafka? — Gymterview",
+        "ogDescription": "Kafka предоставляет четыре основных API для взаимодействия с платформой.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные API предоставляет Kafka?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka предоставляет четыре основных API для взаимодействия с платформой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какие основные API предоставляет Kafka?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Producer API?",
+      "questionSlug": "kakova-rol-producer-api",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Producer API? — Gymterview",
+        "description": "Producer API используется для публикации потока сообщений в топики Kafka. Он управляет партицированием сообщений, сжатием и балансировкой нагрузки между несколь",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Какова роль Producer API? — Gymterview",
+        "ogDescription": "Producer API используется для публикации потока сообщений в топики Kafka. Он управляет партицированием сообщений, сжатие",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Producer API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Producer API используется для публикации потока сообщений в топики Kafka. Он управляет партицированием сообщений, сжатием и балансировкой нагрузки между несколькими брокерами. Продюсер также отвечает за повторные попытки при неудачной публикации и может быть настроен на различные уровни гарантий дос"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Producer API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Consumer API?",
+      "questionSlug": "kakova-rol-consumer-api",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Consumer API? — Gymterview",
+        "description": "Consumer API обеспечивает механизм для чтения сообщений из топиков. Он позволяет приложениям и микросервисам подписываться на топики, читать данные и обрабатыва",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Какова роль Consumer API? — Gymterview",
+        "ogDescription": "Consumer API обеспечивает механизм для чтения сообщений из топиков. Он позволяет приложениям и микросервисам подписывать",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Consumer API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consumer API обеспечивает механизм для чтения сообщений из топиков. Он позволяет приложениям и микросервисам подписываться на топики, читать данные и обрабатывать их — для хранения, анализа или реактивной обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Consumer API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Connector API?",
+      "questionSlug": "kakova-rol-connector-api",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Connector API? — Gymterview",
+        "description": "Connector API является частью Kafka Connect — инфраструктуры для интеграции внешних систем с Kafka. Он упрощает подключение различных источников данных (Source ",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какова роль Connector API? — Gymterview",
+        "ogDescription": "Connector API является частью Kafka Connect — инфраструктуры для интеграции внешних систем с Kafka. Он упрощает подключе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Connector API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connector API является частью Kafka Connect — инфраструктуры для интеграции внешних систем с Kafka. Он упрощает подключение различных источников данных (Source Connectors) и систем-приёмников (Sink Connectors), обеспечивая автоматическое перемещение данных между ними без написания кода продюсеров и "
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Connector API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Streams API?",
+      "questionSlug": "kakova-rol-streams-api",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Streams API? — Gymterview",
+        "description": "Streams API — это компонент Kafka для создания приложений потоковой обработки данных в реальном времени. Он предоставляет высокоуровневый интерфейс для фильтрац",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какова роль Streams API? — Gymterview",
+        "ogDescription": "Streams API — это компонент Kafka для создания приложений потоковой обработки данных в реальном времени. Он предоставляе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Streams API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Streams API — это компонент Kafka для создания приложений потоковой обработки данных в реальном времени. Он предоставляет высокоуровневый интерфейс для фильтрации, агрегации, объединения данных и вычисления оконных функций. Kafka Streams работает как библиотека внутри JVM-приложения, не требуя отдел"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Streams API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Transactions API?",
+      "questionSlug": "kakova-rol-transactions-api",
+      "grade": "senior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Transactions API? — Gymterview",
+        "description": "Transactions API позволяет выполнять атомарные обновления для нескольких топиков. Он обеспечивает exactly-once гарантию для приложений, которые читают данные из",
+        "keywords": [
+          "kafka",
+          "senior"
+        ],
+        "ogTitle": "Какова роль Transactions API? — Gymterview",
+        "ogDescription": "Transactions API позволяет выполнять атомарные обновления для нескольких топиков. Он обеспечивает exactly-once гарантию ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Transactions API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transactions API позволяет выполнять атомарные обновления для нескольких топиков. Он обеспечивает exactly-once гарантию для приложений, которые читают данные из одного топика и пишут в другой. Это критически важно для потоковой обработки, где каждое входное событие должно повлиять на выходные данные"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Transactions API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Quota API?",
+      "questionSlug": "kakova-rol-quota-api",
+      "grade": "senior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль Quota API? — Gymterview",
+        "description": "Quota API позволяет настраивать квоты для каждого клиента, ограничивая скорость создания или потребления данных. Это предотвращает ситуацию, когда один клиент п",
+        "keywords": [
+          "kafka",
+          "senior"
+        ],
+        "ogTitle": "Какова роль Quota API? — Gymterview",
+        "ogDescription": "Quota API позволяет настраивать квоты для каждого клиента, ограничивая скорость создания или потребления данных. Это пре",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Quota API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quota API позволяет настраивать квоты для каждого клиента, ограничивая скорость создания или потребления данных. Это предотвращает ситуацию, когда один клиент потребляет слишком много ресурсов брокера, обеспечивая справедливое распределение ресурсов и защиту от сценариев отказа в обслуживании."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль Quota API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль AdminClient API?",
+      "questionSlug": "kakova-rol-adminclient-api",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Какова роль AdminClient API? — Gymterview",
+        "description": "AdminClient API предоставляет программный интерфейс для управления топиками, брокерами, конфигурацией и другими объектами Kafka. Его можно использовать для созд",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Какова роль AdminClient API? — Gymterview",
+        "ogDescription": "AdminClient API предоставляет программный интерфейс для управления топиками, брокерами, конфигурацией и другими объектам",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль AdminClient API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AdminClient API предоставляет программный интерфейс для управления топиками, брокерами, конфигурацией и другими объектами Kafka. Его можно использовать для создания, удаления и описания топиков, управления ACL, получения информации о кластере и выполнения административных задач без CLI."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Какова роль AdminClient API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

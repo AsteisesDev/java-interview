@@ -1,0 +1,908 @@
+{
+  "topic": "Java 8",
+  "topicSlug": "java8",
+  "batch": 2,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Для чего нужны функциональные интерфейсы ObjDoubleConsumer, ObjIntConsumer и ObjLongConsumer?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-objdoubleconsumer-objintconsumer-i-o",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы ObjDoubleConsumer,  — Gymterview",
+        "description": "Эти интерфейсы представляют операцию, принимающую два аргумента — объект типа `T` и примитив — и ничего не возвращающую. Они являются специализированными версия",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы ObjDoubleConsumer,  — Gymterview",
+        "ogDescription": "Эти интерфейсы представляют операцию, принимающую два аргумента — объект типа `T` и примитив — и ничего не возвращающую.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы ObjDoubleConsumer, ObjIntConsumer и ObjLongConsumer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти интерфейсы представляют операцию, принимающую два аргумента — объект типа `T` и примитив — и ничего не возвращающую. Они являются специализированными версиями `BiConsumer`, где второй аргумент — примитив, что позволяет избежать автобоксинга."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы ObjDoubleConsumer, ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое StringJoiner?",
+      "questionSlug": "chto-takoe-stringjoiner",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое StringJoiner? — Gymterview",
+        "description": "`StringJoiner` — класс из пакета `java.util`, предназначенный для объединения строк через разделитель с возможностью задать префикс и суффикс. Он появился в Jav",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое StringJoiner? — Gymterview",
+        "ogDescription": "`StringJoiner` — класс из пакета `java.util`, предназначенный для объединения строк через разделитель с возможностью зад",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое StringJoiner?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`StringJoiner` — класс из пакета `java.util`, предназначенный для объединения строк через разделитель с возможностью задать префикс и суффикс. Он появился в Java 8 как альтернатива ручной конкатенации в циклах и используется внутри `String.join()` и `Collectors.joining()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое StringJoiner?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое default методы интерфейса?",
+      "questionSlug": "chto-takoe-default-metody-interfejsa",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое default методы интерфейса? — Gymterview",
+        "description": "`default`-метод интерфейса — это метод с реализацией, объявленный в интерфейсе с ключевым словом `default`. Класс, реализующий интерфейс, наследует эту реализац",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое default методы интерфейса? — Gymterview",
+        "ogDescription": "`default`-метод интерфейса — это метод с реализацией, объявленный в интерфейсе с ключевым словом `default`. Класс, реали",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое default методы интерфейса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`default`-метод интерфейса — это метод с реализацией, объявленный в интерфейсе с ключевым словом `default`. Класс, реализующий интерфейс, наследует эту реализацию и может, но не обязан, её переопределить. Главная причина появления — возможность добавлять новые методы в существующие интерфейсы без на"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое default методы интерфейса?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как вызывать default метод интерфейса в реализующем этот интерфейс классе?",
+      "questionSlug": "kak-vyzyvat-default-metod-interfejsa-v-realizuyushchem-etot-interfejs-klasse",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как вызывать default метод интерфейса в реализующем этот инт — Gymterview",
+        "description": "Для вызова `default`-метода интерфейса из класса-реализации используется синтаксис `ИмяИнтерфейса.super.имяМетода()`. Это особенно полезно при конфликте `defaul",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как вызывать default метод интерфейса в реализующем этот инт — Gymterview",
+        "ogDescription": "Для вызова `default`-метода интерфейса из класса-реализации используется синтаксис `ИмяИнтерфейса.super.имяМетода()`. Эт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вызывать default метод интерфейса в реализующем этот интерфейс классе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для вызова `default`-метода интерфейса из класса-реализации используется синтаксис `ИмяИнтерфейса.super.имяМетода()`. Это особенно полезно при конфликте `default`-методов из нескольких интерфейсов, когда нужно явно указать, какую реализацию использовать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как вызывать default метод интерфейса в реализующем этот инт",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое static метод интерфейса?",
+      "questionSlug": "chto-takoe-static-metod-interfejsa",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое static метод интерфейса? — Gymterview",
+        "description": "`static`-метод интерфейса — это метод с реализацией, принадлежащий самому интерфейсу, а не его экземплярам. В отличие от `default`-методов, статические методы и",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое static метод интерфейса? — Gymterview",
+        "ogDescription": "`static`-метод интерфейса — это метод с реализацией, принадлежащий самому интерфейсу, а не его экземплярам. В отличие от",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое static метод интерфейса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`static`-метод интерфейса — это метод с реализацией, принадлежащий самому интерфейсу, а не его экземплярам. В отличие от `default`-методов, статические методы интерфейса нельзя переопределить в классе-реализации и нельзя вызвать через объект — только через имя интерфейса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое static метод интерфейса?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как вызывать static метод интерфейса?",
+      "questionSlug": "kak-vyzyvat-static-metod-interfejsa",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как вызывать static метод интерфейса? — Gymterview",
+        "description": "Статический метод интерфейса вызывается исключительно через имя интерфейса, аналогично вызову статического метода класса. Вызов через объект класса-реализации и",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как вызывать static метод интерфейса? — Gymterview",
+        "ogDescription": "Статический метод интерфейса вызывается исключительно через имя интерфейса, аналогично вызову статического метода класса",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как вызывать static метод интерфейса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статический метод интерфейса вызывается исключительно через имя интерфейса, аналогично вызову статического метода класса. Вызов через объект класса-реализации или через ссылку на интерфейс невозможен — это приведёт к ошибке компиляции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как вызывать static метод интерфейса?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Optional?",
+      "questionSlug": "chto-takoe-optional",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое Optional? — Gymterview",
+        "description": "`Optional<T>` — контейнер-обёртка, который может содержать или не содержать ненулевое значение. Он предоставляет декларативный способ работы с потенциально отсу",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое Optional? — Gymterview",
+        "ogDescription": "`Optional<T>` — контейнер-обёртка, который может содержать или не содержать ненулевое значение. Он предоставляет деклара",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Optional?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Optional<T>` — контейнер-обёртка, который может содержать или не содержать ненулевое значение. Он предоставляет декларативный способ работы с потенциально отсутствующими значениями вместо ручных `if (x != null)` проверок, что снижает вероятность `NullPointerException`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое Optional?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Stream?",
+      "questionSlug": "chto-takoe-stream",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое Stream? — Gymterview",
+        "description": "`Stream` — это абстракция конвейера вычислений над последовательностью элементов. Стрим не хранит данные, а описывает цепочку операций, которые выполняются лени",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое Stream? — Gymterview",
+        "ogDescription": "`Stream` — это абстракция конвейера вычислений над последовательностью элементов. Стрим не хранит данные, а описывает це",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Stream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Stream` — это абстракция конвейера вычислений над последовательностью элементов. Стрим не хранит данные, а описывает цепочку операций, которые выполняются лениво при вызове терминальной операции. Это ключевое отличие от коллекций: коллекция — структура данных, стрим — конвейер обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое Stream?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют способы создания стрима?",
+      "questionSlug": "kakie-sushchestvuyut-sposoby-sozdaniya-strima",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие существуют способы создания стрима? — Gymterview",
+        "description": "Стримы можно создать из множества источников данных. Ниже перечислены восемь основных способов.",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют способы создания стрима? — Gymterview",
+        "ogDescription": "Стримы можно создать из множества источников данных. Ниже перечислены восемь основных способов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют способы создания стрима?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стримы можно создать из множества источников данных. Ниже перечислены восемь основных способов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие существуют способы создания стрима?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между Collection и Stream?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-collection-i-stream",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "В чем разница между Collection и Stream? — Gymterview",
+        "description": "`Collection` и `Stream` решают принципиально разные задачи, хотя часто работают вместе. Коллекция — это структура данных для хранения и доступа к элементам. Стр",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "В чем разница между Collection и Stream? — Gymterview",
+        "ogDescription": "`Collection` и `Stream` решают принципиально разные задачи, хотя часто работают вместе. Коллекция — это структура данных",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между Collection и Stream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Collection` и `Stream` решают принципиально разные задачи, хотя часто работают вместе. Коллекция — это структура данных для хранения и доступа к элементам. Стрим — конвейер для декларативной обработки данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "В чем разница между Collection и Stream?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен метод collect в стримах?",
+      "questionSlug": "dlya-chego-nuzhen-metod-collect-v-strimakh",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужен метод collect в стримах? — Gymterview",
+        "description": "`collect()` — терминальная операция стрима, которая сворачивает элементы в изменяемый контейнер: коллекцию, строку, `Map` или любую другую структуру данных. Мет",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен метод collect в стримах? — Gymterview",
+        "ogDescription": "`collect()` — терминальная операция стрима, которая сворачивает элементы в изменяемый контейнер: коллекцию, строку, `Map",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен метод collect в стримах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`collect()` — терминальная операция стрима, которая сворачивает элементы в изменяемый контейнер: коллекцию, строку, `Map` или любую другую структуру данных. Метод принимает `Collector`, определяющий четыре этапа: создание аккумулятора (supplier), добавление элемента (accumulator), объединение аккуму"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужен метод collect в стримах?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в стримах применяются методы forEach и forEachOrdered?",
+      "questionSlug": "dlya-chego-v-strimakh-primenyayutsya-metody-foreach-i-foreachordered",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего в стримах применяются методы forEach и forEachOrder — Gymterview",
+        "description": "`forEach()` и `forEachOrdered()` — терминальные операции, которые применяют заданную функцию (`Consumer`) к каждому элементу стрима. Разница проявляется при пар",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего в стримах применяются методы forEach и forEachOrder — Gymterview",
+        "ogDescription": "`forEach()` и `forEachOrdered()` — терминальные операции, которые применяют заданную функцию (`Consumer`) к каждому элем",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в стримах применяются методы forEach и forEachOrdered?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`forEach()` и `forEachOrdered()` — терминальные операции, которые применяют заданную функцию (`Consumer`) к каждому элементу стрима. Разница проявляется при параллельной обработке."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего в стримах применяются методы forEach и forEachOrder",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в стримах предназначены методы map, mapToInt, mapToDouble, mapToLong?",
+      "questionSlug": "dlya-chego-v-strimakh-prednaznacheny-metody-map-maptoint-maptodouble-maptolong",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего в стримах предназначены методы map, mapToInt, mapTo — Gymterview",
+        "description": "`map()` — промежуточная операция, которая преобразует каждый элемент стрима с помощью заданной функции. Результат `map()` — новый стрим с преобразованными элеме",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего в стримах предназначены методы map, mapToInt, mapTo — Gymterview",
+        "ogDescription": "`map()` — промежуточная операция, которая преобразует каждый элемент стрима с помощью заданной функции. Результат `map()",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в стримах предназначены методы map, mapToInt, mapToDouble, mapToLong?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`map()` — промежуточная операция, которая преобразует каждый элемент стрима с помощью заданной функции. Результат `map()` — новый стрим с преобразованными элементами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего в стримах предназначены методы map, mapToInt, mapTo",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова цель метода filter в стримах?",
+      "questionSlug": "kakova-tsel-metoda-filter-v-strimakh",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какова цель метода filter в стримах? — Gymterview",
+        "description": "`filter()` — промежуточная операция, принимающая `Predicate<T>` и возвращающая стрим, содержащий только те элементы, для которых предикат вернул `true`. Элемент",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какова цель метода filter в стримах? — Gymterview",
+        "ogDescription": "`filter()` — промежуточная операция, принимающая `Predicate<T>` и возвращающая стрим, содержащий только те элементы, для",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова цель метода filter в стримах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`filter()` — промежуточная операция, принимающая `Predicate<T>` и возвращающая стрим, содержащий только те элементы, для которых предикат вернул `true`. Элементы, не прошедшие проверку, исключаются из дальнейшей обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какова цель метода filter в стримах?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в стримах предназначен метод limit?",
+      "questionSlug": "dlya-chego-v-strimakh-prednaznachen-metod-limit",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего в стримах предназначен метод limit? — Gymterview",
+        "description": "`limit(long maxSize)` — промежуточная операция, которая ограничивает стрим заданным количеством первых элементов. Она особенно важна при работе с бесконечными с",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего в стримах предназначен метод limit? — Gymterview",
+        "ogDescription": "`limit(long maxSize)` — промежуточная операция, которая ограничивает стрим заданным количеством первых элементов. Она ос",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в стримах предназначен метод limit?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`limit(long maxSize)` — промежуточная операция, которая ограничивает стрим заданным количеством первых элементов. Она особенно важна при работе с бесконечными стримами (`Stream.iterate`, `Stream.generate`), где без `limit()` конечная операция никогда не завершится."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего в стримах предназначен метод limit?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в стримах предназначен метод sorted?",
+      "questionSlug": "dlya-chego-v-strimakh-prednaznachen-metod-sorted",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего в стримах предназначен метод sorted? — Gymterview",
+        "description": "`sorted()` — промежуточная операция, которая возвращает стрим с элементами, отсортированными в натуральном порядке (по `Comparable`) или по заданному `Comparato",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего в стримах предназначен метод sorted? — Gymterview",
+        "ogDescription": "`sorted()` — промежуточная операция, которая возвращает стрим с элементами, отсортированными в натуральном порядке (по `",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в стримах предназначен метод sorted?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`sorted()` — промежуточная операция, которая возвращает стрим с элементами, отсортированными в натуральном порядке (по `Comparable`) или по заданному `Comparator`. Исходная коллекция при этом не изменяется — `sorted()` создаёт отсортированное представление."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего в стримах предназначен метод sorted?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего в стримах предназначены методы flatMap, flatMapToInt, flatMapToDouble, flatMapToLong?",
+      "questionSlug": "dlya-chego-v-strimakh-prednaznacheny-metody-flatmap-flatmaptoint-flatmaptodouble",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего в стримах предназначены методы flatMap, flatMapToIn — Gymterview",
+        "description": "`flatMap()` — промежуточная операция, которая преобразует каждый элемент в стрим, а затем объединяет (выпрямляет) все полученные стримы в один. Это ключевое отл",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего в стримах предназначены методы flatMap, flatMapToIn — Gymterview",
+        "ogDescription": "`flatMap()` — промежуточная операция, которая преобразует каждый элемент в стрим, а затем объединяет (выпрямляет) все по",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего в стримах предназначены методы flatMap, flatMapToInt, flatMapToDouble, flatMapToLong?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`flatMap()` — промежуточная операция, которая преобразует каждый элемент в стрим, а затем объединяет (выпрямляет) все полученные стримы в один. Это ключевое отличие от `map()`: если `map()` преобразует элемент в один элемент, то `flatMap()` — в ноль, один или несколько элементов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего в стримах предназначены методы flatMap, flatMapToIn",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите о параллельной обработке в Java 8",
+      "questionSlug": "rasskazhite-o-parallelnoj-obrabotke-v-java-8",
+      "grade": "middle",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Расскажите о параллельной обработке в Java 8 — Gymterview",
+        "description": "Параллельные стримы позволяют автоматически распределить обработку данных по нескольким ядрам процессора. Данные разбиваются на части, каждая часть обрабатывает",
+        "keywords": [
+          "java8",
+          "middle"
+        ],
+        "ogTitle": "Расскажите о параллельной обработке в Java 8 — Gymterview",
+        "ogDescription": "Параллельные стримы позволяют автоматически распределить обработку данных по нескольким ядрам процессора. Данные разбива",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите о параллельной обработке в Java 8",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Параллельные стримы позволяют автоматически распределить обработку данных по нескольким ядрам процессора. Данные разбиваются на части, каждая часть обрабатывается в отдельном потоке, а затем результаты объединяются. Под капотом используется общий `ForkJoinPool` (доступен через `ForkJoinPool.commonPo"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Расскажите о параллельной обработке в Java 8",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие конечные методы работы со стримами вы знаете?",
+      "questionSlug": "kakie-konechnye-metody-raboty-so-strimami-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие конечные методы работы со стримами вы знаете? — Gymterview",
+        "description": "Конечные (терминальные) операции запускают обработку конвейера и возвращают результат — значение, коллекцию или `void`. После вызова терминальной операции стрим",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие конечные методы работы со стримами вы знаете? — Gymterview",
+        "ogDescription": "Конечные (терминальные) операции запускают обработку конвейера и возвращают результат — значение, коллекцию или `void`. ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие конечные методы работы со стримами вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Конечные (терминальные) операции запускают обработку конвейера и возвращают результат — значение, коллекцию или `void`. После вызова терминальной операции стрим закрывается и повторно использоваться не может."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие конечные методы работы со стримами вы знаете?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие промежуточные методы работы со стримами вы знаете?",
+      "questionSlug": "kakie-promezhutochnye-metody-raboty-so-strimami-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие промежуточные методы работы со стримами вы знаете? — Gymterview",
+        "description": "Промежуточные (intermediate) операции возвращают новый стрим и выполняются лениво — только при вызове терминальной операции. Их можно выстраивать в цепочки прои",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие промежуточные методы работы со стримами вы знаете? — Gymterview",
+        "ogDescription": "Промежуточные (intermediate) операции возвращают новый стрим и выполняются лениво — только при вызове терминальной опера",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие промежуточные методы работы со стримами вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Промежуточные (intermediate) операции возвращают новый стрим и выполняются лениво — только при вызове терминальной операции. Их можно выстраивать в цепочки произвольной длины."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие промежуточные методы работы со стримами вы знаете?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

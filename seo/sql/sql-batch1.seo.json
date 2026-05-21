@@ -1,0 +1,908 @@
+{
+  "topic": "SQL",
+  "topicSlug": "sql",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое SQL?",
+      "questionSlug": "chto-takoe-sql",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое SQL? — Gymterview",
+        "description": "SQL (Structured Query Language) — формальный непроцедурный язык программирования, применяемый для создания, модификации и управления данными в реляционных базах",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что такое SQL? — Gymterview",
+        "ogDescription": "SQL (Structured Query Language) — формальный непроцедурный язык программирования, применяемый для создания, модификации ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SQL (Structured Query Language) — формальный непроцедурный язык программирования, применяемый для создания, модификации и управления данными в реляционных базах данных. SQL не является языком общего назначения: он специализирован для работы с табличными данными и реализует декларативный подход, при "
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое SQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют операторы SQL?",
+      "questionSlug": "kakie-sushchestvuyut-operatory-sql",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какие существуют операторы SQL? — Gymterview",
+        "description": "Операторы SQL делятся на четыре категории в зависимости от их назначения. Каждая категория формирует отдельный подъязык (sublanguage), и понимание этого деления",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют операторы SQL? — Gymterview",
+        "ogDescription": "Операторы SQL делятся на четыре категории в зависимости от их назначения. Каждая категория формирует отдельный подъязык ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют операторы SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Операторы SQL делятся на четыре категории в зависимости от их назначения. Каждая категория формирует отдельный подъязык (sublanguage), и понимание этого деления помогает правильно классифицировать любую SQL-команду."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какие существуют операторы SQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что означает NULL в SQL?",
+      "questionSlug": "chto-oznachaet-null-v-sql",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что означает NULL в SQL? — Gymterview",
+        "description": "`NULL` — специальный маркер, обозначающий отсутствие какого-либо значения в поле таблицы. Это не ноль, не пустая строка и не `FALSE` — это именно отсутствие инф",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что означает NULL в SQL? — Gymterview",
+        "ogDescription": "`NULL` — специальный маркер, обозначающий отсутствие какого-либо значения в поле таблицы. Это не ноль, не пустая строка ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что означает NULL в SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`NULL` — специальный маркер, обозначающий отсутствие какого-либо значения в поле таблицы. Это не ноль, не пустая строка и не `FALSE` — это именно отсутствие информации, неизвестность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что означает NULL в SQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое временная таблица и для чего она используется?",
+      "questionSlug": "chto-takoe-vremennaya-tablitsa-i-dlya-chego-ona-ispolzuetsya",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое временная таблица и для чего она используется? — Gymterview",
+        "description": "Временная таблица — объект базы данных, который существует только в рамках текущей сессии или транзакции и автоматически удаляется по её завершении. Временные т",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что такое временная таблица и для чего она используется? — Gymterview",
+        "ogDescription": "Временная таблица — объект базы данных, который существует только в рамках текущей сессии или транзакции и автоматически",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое временная таблица и для чего она используется?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Временная таблица — объект базы данных, который существует только в рамках текущей сессии или транзакции и автоматически удаляется по её завершении. Временные таблицы создаются в специальной системной области (в PostgreSQL — схема `pg_temp`, в SQL Server — база `tempdb`) и не видны другим соединения"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое временная таблица и для чего она используется?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое представление (view) и для чего оно применяется?",
+      "questionSlug": "chto-takoe-predstavlenie-view-i-dlya-chego-ono-primenyaetsya",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое представление (view) и для чего оно применяется? — Gymterview",
+        "description": "Представление (View) — виртуальная таблица, определяемая SQL-запросом. Представление не хранит данные самостоятельно: при каждом обращении к нему СУБД выполняет",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что такое представление (view) и для чего оно применяется? — Gymterview",
+        "ogDescription": "Представление (View) — виртуальная таблица, определяемая SQL-запросом. Представление не хранит данные самостоятельно: пр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое представление (view) и для чего оно применяется?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Представление (View) — виртуальная таблица, определяемая SQL-запросом. Представление не хранит данные самостоятельно: при каждом обращении к нему СУБД выполняет сохранённый `SELECT`-запрос и возвращает актуальный результат. Представления работают в запросах и DML-операторах так же, как обычные табли"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое представление (view) и для чего оно применяется?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каков общий синтаксис оператора SELECT?",
+      "questionSlug": "kakov-obshchij-sintaksis-operatora-select",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Каков общий синтаксис оператора SELECT? — Gymterview",
+        "description": "`SELECT` — оператор DML, возвращающий набор данных (выборку) из базы данных, удовлетворяющих заданному условию. Это наиболее часто используемый оператор SQL, и ",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Каков общий синтаксис оператора SELECT? — Gymterview",
+        "ogDescription": "`SELECT` — оператор DML, возвращающий набор данных (выборку) из базы данных, удовлетворяющих заданному условию. Это наиб",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каков общий синтаксис оператора SELECT?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`SELECT` — оператор DML, возвращающий набор данных (выборку) из базы данных, удовлетворяющих заданному условию. Это наиболее часто используемый оператор SQL, и понимание порядка его клауз критически важно для написания корректных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Каков общий синтаксис оператора SELECT?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JOIN?",
+      "questionSlug": "chto-takoe-join",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое JOIN? — Gymterview",
+        "description": "`JOIN` — оператор SQL, реализующий операцию соединения реляционной алгебры. Он предназначен для объединения данных из двух или более таблиц в один результирующи",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что такое JOIN? — Gymterview",
+        "ogDescription": "`JOIN` — оператор SQL, реализующий операцию соединения реляционной алгебры. Он предназначен для объединения данных из дв",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JOIN?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`JOIN` — оператор SQL, реализующий операцию соединения реляционной алгебры. Он предназначен для объединения данных из двух или более таблиц в один результирующий набор на основе условия связи между ними."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое JOIN?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют типы JOIN?",
+      "questionSlug": "kakie-sushchestvuyut-tipy-join",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какие существуют типы JOIN? — Gymterview",
+        "description": "Существует пять основных типов соединений, каждый из которых определяет, какие строки попадают в результат при наличии или отсутствии совпадений.",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют типы JOIN? — Gymterview",
+        "ogDescription": "Существует пять основных типов соединений, каждый из которых определяет, какие строки попадают в результат при наличии и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют типы JOIN?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существует пять основных типов соединений, каждый из которых определяет, какие строки попадают в результат при наличии или отсутствии совпадений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какие существуют типы JOIN?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что лучше использовать JOIN или подзапросы?",
+      "questionSlug": "chto-luchshe-ispolzovat-join-ili-podzaprosy",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что лучше использовать JOIN или подзапросы? — Gymterview",
+        "description": "В большинстве случаев предпочтительнее `JOIN`, поскольку оптимизатор СУБД обычно строит для него более эффективный план выполнения. Кроме того, `JOIN` позволяет",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что лучше использовать JOIN или подзапросы? — Gymterview",
+        "ogDescription": "В большинстве случаев предпочтительнее `JOIN`, поскольку оптимизатор СУБД обычно строит для него более эффективный план ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что лучше использовать JOIN или подзапросы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В большинстве случаев предпочтительнее `JOIN`, поскольку оптимизатор СУБД обычно строит для него более эффективный план выполнения. Кроме того, `JOIN` позволяет включить в `SELECT` столбцы из нескольких таблиц, что невозможно при использовании подзапроса в `WHERE`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что лучше использовать JOIN или подзапросы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется оператор HAVING?",
+      "questionSlug": "dlya-chego-ispolzuetsya-operator-having",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего используется оператор HAVING? — Gymterview",
+        "description": "`HAVING` используется для фильтрации групп, созданных оператором `GROUP BY`, по заданным условиям. Он работает с результатами агрегатных функций (`COUNT`, `SUM`",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для чего используется оператор HAVING? — Gymterview",
+        "ogDescription": "`HAVING` используется для фильтрации групп, созданных оператором `GROUP BY`, по заданным условиям. Он работает с результ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется оператор HAVING?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`HAVING` используется для фильтрации групп, созданных оператором `GROUP BY`, по заданным условиям. Он работает с результатами агрегатных функций (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`), что невозможно сделать в `WHERE`, поскольку `WHERE` выполняется до группировки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего используется оператор HAVING?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем различие между операторами HAVING и WHERE?",
+      "questionSlug": "v-chem-razlichie-mezhdu-operatorami-having-i-where",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "В чем различие между операторами HAVING и WHERE? — Gymterview",
+        "description": "`WHERE` фильтрует строки до группировки и вычисления агрегатных функций, а `HAVING` фильтрует группы после группировки и агрегации. Это ключевое различие, опред",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "В чем различие между операторами HAVING и WHERE? — Gymterview",
+        "ogDescription": "`WHERE` фильтрует строки до группировки и вычисления агрегатных функций, а `HAVING` фильтрует группы после группировки и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем различие между операторами HAVING и WHERE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`WHERE` фильтрует строки до группировки и вычисления агрегатных функций, а `HAVING` фильтрует группы после группировки и агрегации. Это ключевое различие, определяющее, где какой оператор использовать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "В чем различие между операторами HAVING и WHERE?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется оператор ORDER BY?",
+      "questionSlug": "dlya-chego-ispolzuetsya-operator-order-by",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего используется оператор ORDER BY? — Gymterview",
+        "description": "`ORDER BY` упорядочивает результат запроса по значениям одного или нескольких столбцов. Без `ORDER BY` порядок строк в результате не гарантирован — СУБД может в",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для чего используется оператор ORDER BY? — Gymterview",
+        "ogDescription": "`ORDER BY` упорядочивает результат запроса по значениям одного или нескольких столбцов. Без `ORDER BY` порядок строк в р",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется оператор ORDER BY?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ORDER BY` упорядочивает результат запроса по значениям одного или нескольких столбцов. Без `ORDER BY` порядок строк в результате не гарантирован — СУБД может вернуть их в любом порядке, который окажется наиболее эффективным."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего используется оператор ORDER BY?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется оператор GROUP BY?",
+      "questionSlug": "dlya-chego-ispolzuetsya-operator-group-by",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего используется оператор GROUP BY? — Gymterview",
+        "description": "`GROUP BY` группирует строки результата по одинаковым значениям в указанных столбцах и позволяет применять агрегатные функции (`COUNT`, `SUM`, `AVG`, `MIN`, `MA",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для чего используется оператор GROUP BY? — Gymterview",
+        "ogDescription": "`GROUP BY` группирует строки результата по одинаковым значениям в указанных столбцах и позволяет применять агрегатные фу",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется оператор GROUP BY?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`GROUP BY` группирует строки результата по одинаковым значениям в указанных столбцах и позволяет применять агрегатные функции (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) к каждой группе. Без `GROUP BY` агрегатная функция применяется ко всему набору данных и возвращает одну строку."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего используется оператор GROUP BY?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как GROUP BY обрабатывает значение NULL?",
+      "questionSlug": "kak-group-by-obrabatyvaet-znachenie-null",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Как GROUP BY обрабатывает значение NULL? — Gymterview",
+        "description": "При использовании `GROUP BY` все значения `NULL` считаются равными друг другу и объединяются в одну группу. Это единственное место в SQL, где `NULL = NULL` — во",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Как GROUP BY обрабатывает значение NULL? — Gymterview",
+        "ogDescription": "При использовании `GROUP BY` все значения `NULL` считаются равными друг другу и объединяются в одну группу. Это единстве",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как GROUP BY обрабатывает значение NULL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При использовании `GROUP BY` все значения `NULL` считаются равными друг другу и объединяются в одну группу. Это единственное место в SQL, где `NULL = NULL` — во всех остальных контекстах результат сравнения `NULL` с `NULL` даёт `NULL`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Как GROUP BY обрабатывает значение NULL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между операторами GROUP BY и DISTINCT?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-operatorami-group-by-i-distinct",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "В чем разница между операторами GROUP BY и DISTINCT? — Gymterview",
+        "description": "`DISTINCT` удаляет дублирующиеся строки из результата, оставляя только уникальные комбинации значений. `GROUP BY` создаёт группы для каждой уникальной комбинаци",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "В чем разница между операторами GROUP BY и DISTINCT? — Gymterview",
+        "ogDescription": "`DISTINCT` удаляет дублирующиеся строки из результата, оставляя только уникальные комбинации значений. `GROUP BY` создаё",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между операторами GROUP BY и DISTINCT?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`DISTINCT` удаляет дублирующиеся строки из результата, оставляя только уникальные комбинации значений. `GROUP BY` создаёт группы для каждой уникальной комбинации значений и позволяет применять к ним агрегатные функции. Оба оператора считают `NULL` отдельным значением."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "В чем разница между операторами GROUP BY и DISTINCT?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите основные агрегатные функции",
+      "questionSlug": "perechislite-osnovnye-agregatnye-funktsii",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Перечислите основные агрегатные функции — Gymterview",
+        "description": "Агрегатные функции принимают набор значений (группу строк) и сводят их к одному результирующему значению. Они используются совместно с `GROUP BY` для вычислений",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Перечислите основные агрегатные функции — Gymterview",
+        "ogDescription": "Агрегатные функции принимают набор значений (группу строк) и сводят их к одному результирующему значению. Они используют",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите основные агрегатные функции",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Агрегатные функции принимают набор значений (группу строк) и сводят их к одному результирующему значению. Они используются совместно с `GROUP BY` для вычислений по группам или без него — для вычислений по всему набору данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Перечислите основные агрегатные функции",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между COUNT(*) и COUNT(column)?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-count-i-countcolumn",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "В чем разница между COUNT(*) и COUNT(column)? — Gymterview",
+        "description": "`COUNT(*)` подсчитывает общее количество строк в наборе, включая строки с `NULL`-значениями, поскольку оперирует записями, а не конкретными столбцами. `COUNT(co",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "В чем разница между COUNT(*) и COUNT(column)? — Gymterview",
+        "ogDescription": "`COUNT(*)` подсчитывает общее количество строк в наборе, включая строки с `NULL`-значениями, поскольку оперирует записям",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между COUNT(*) и COUNT(column)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`COUNT(*)` подсчитывает общее количество строк в наборе, включая строки с `NULL`-значениями, поскольку оперирует записями, а не конкретными столбцами. `COUNT(column)` подсчитывает количество не-`NULL` значений в указанном столбце, пропуская строки, где этот столбец равен `NULL`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "В чем разница между COUNT(*) и COUNT(column)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что делает оператор EXISTS?",
+      "questionSlug": "chto-delaet-operator-exists",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что делает оператор EXISTS? — Gymterview",
+        "description": "`EXISTS` принимает подзапрос в качестве аргумента и возвращает `TRUE`, если подзапрос возвращает хотя бы одну строку, и `FALSE`, если подзапрос не возвращает ни",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Что делает оператор EXISTS? — Gymterview",
+        "ogDescription": "`EXISTS` принимает подзапрос в качестве аргумента и возвращает `TRUE`, если подзапрос возвращает хотя бы одну строку, и ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что делает оператор EXISTS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`EXISTS` принимает подзапрос в качестве аргумента и возвращает `TRUE`, если подзапрос возвращает хотя бы одну строку, и `FALSE`, если подзапрос не возвращает ни одной строки. В отличие от `IN`, оператор `EXISTS` не загружает весь результат подзапроса — он останавливается, как только найдена первая с"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что делает оператор EXISTS?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используются операторы IN, BETWEEN, LIKE?",
+      "questionSlug": "dlya-chego-ispolzuyutsya-operatory-in-between-like",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего используются операторы IN, BETWEEN, LIKE? — Gymterview",
+        "description": "Эти три оператора используются в `WHERE` для фильтрации строк по различным критериям: принадлежность к набору, попадание в диапазон и соответствие шаблону.",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для чего используются операторы IN, BETWEEN, LIKE? — Gymterview",
+        "ogDescription": "Эти три оператора используются в `WHERE` для фильтрации строк по различным критериям: принадлежность к набору, попадание",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используются операторы IN, BETWEEN, LIKE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти три оператора используются в `WHERE` для фильтрации строк по различным критериям: принадлежность к набору, попадание в диапазон и соответствие шаблону."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего используются операторы IN, BETWEEN, LIKE?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего применяется ключевое слово UNION?",
+      "questionSlug": "dlya-chego-primenyaetsya-klyuchevoe-slovo-union",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего применяется ключевое слово UNION? — Gymterview",
+        "description": "`UNION` объединяет результаты двух или более `SELECT`-запросов в единый результирующий набор. Оба запроса должны возвращать одинаковое число столбцов, а типы да",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для чего применяется ключевое слово UNION? — Gymterview",
+        "ogDescription": "`UNION` объединяет результаты двух или более `SELECT`-запросов в единый результирующий набор. Оба запроса должны возвращ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего применяется ключевое слово UNION?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`UNION` объединяет результаты двух или более `SELECT`-запросов в единый результирующий набор. Оба запроса должны возвращать одинаковое число столбцов, а типы данных в соответствующих позициях должны быть совместимы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего применяется ключевое слово UNION?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

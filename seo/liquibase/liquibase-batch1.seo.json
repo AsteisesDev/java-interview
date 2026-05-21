@@ -1,0 +1,908 @@
+{
+  "topic": "Liquibase",
+  "topicSlug": "liquibase",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Liquibase и зачем нужны миграции БД?",
+      "questionSlug": "chto-takoe-liquibase-i-zachem-nuzhny-migratsii-bd",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое Liquibase и зачем нужны миграции БД? — Gymterview",
+        "description": "Liquibase — это open-source библиотека для управления и отслеживания изменений схемы базы данных (database migrations). Она позволяет версионировать структуру Б",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Что такое Liquibase и зачем нужны миграции БД? — Gymterview",
+        "ogDescription": "Liquibase — это open-source библиотека для управления и отслеживания изменений схемы базы данных (database migrations). ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Liquibase и зачем нужны миграции БД?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liquibase — это open-source библиотека для управления и отслеживания изменений схемы базы данных (database migrations). Она позволяет версионировать структуру БД так же, как исходный код версионируется в Git."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое Liquibase и зачем нужны миграции БД?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём отличия Liquibase от Flyway?",
+      "questionSlug": "v-chyom-otlichiya-liquibase-ot-flyway",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "В чём отличия Liquibase от Flyway? — Gymterview",
+        "description": "Liquibase и Flyway — два самых популярных инструмента миграции БД в Java-экосистеме. Основные различия:",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "В чём отличия Liquibase от Flyway? — Gymterview",
+        "ogDescription": "Liquibase и Flyway — два самых популярных инструмента миграции БД в Java-экосистеме. Основные различия:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём отличия Liquibase от Flyway?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liquibase и Flyway — два самых популярных инструмента миграции БД в Java-экосистеме. Основные различия:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "В чём отличия Liquibase от Flyway?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое changelog, changeset, author и id?",
+      "questionSlug": "chto-takoe-changelog-changeset-author-i-id",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое changelog, changeset, author и id? — Gymterview",
+        "description": "Changelog, changeset, author и id — четыре базовых понятия Liquibase, образующие иерархию миграций.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Что такое changelog, changeset, author и id? — Gymterview",
+        "ogDescription": "Changelog, changeset, author и id — четыре базовых понятия Liquibase, образующие иерархию миграций.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое changelog, changeset, author и id?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Changelog, changeset, author и id — четыре базовых понятия Liquibase, образующие иерархию миграций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое changelog, changeset, author и id?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие форматы changelog поддерживает Liquibase?",
+      "questionSlug": "kakie-formaty-changelog-podderzhivaet-liquibase",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Какие форматы changelog поддерживает Liquibase? — Gymterview",
+        "description": "Liquibase поддерживает четыре формата описания changelog: XML, YAML, JSON и SQL.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Какие форматы changelog поддерживает Liquibase? — Gymterview",
+        "ogDescription": "Liquibase поддерживает четыре формата описания changelog: XML, YAML, JSON и SQL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие форматы changelog поддерживает Liquibase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liquibase поддерживает четыре формата описания changelog: XML, YAML, JSON и SQL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Какие форматы changelog поддерживает Liquibase?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова структура changeset?",
+      "questionSlug": "kakova-struktura-changeset",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Какова структура changeset? — Gymterview",
+        "description": "Changeset — основной строительный блок миграции. Он содержит атрибуты идентификации, опциональные предусловия, одно или несколько изменений и инструкции для отк",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Какова структура changeset? — Gymterview",
+        "ogDescription": "Changeset — основной строительный блок миграции. Он содержит атрибуты идентификации, опциональные предусловия, одно или ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова структура changeset?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Changeset — основной строительный блок миграции. Он содержит атрибуты идентификации, опциональные предусловия, одно или несколько изменений и инструкции для отката."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Какова структура changeset?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные типы изменений (change types) существуют в Liquibase?",
+      "questionSlug": "kakie-osnovnye-tipy-izmenenij-change-types-sushchestvuyut-v-liquibase",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Какие основные типы изменений (change types) существуют в Li — Gymterview",
+        "description": "Change types — это встроенные операции Liquibase, которые абстрагируют SQL-команды и позволяют описывать изменения схемы декларативно.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Какие основные типы изменений (change types) существуют в Li — Gymterview",
+        "ogDescription": "Change types — это встроенные операции Liquibase, которые абстрагируют SQL-команды и позволяют описывать изменения схемы",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные типы изменений (change types) существуют в Liquibase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Change types — это встроенные операции Liquibase, которые абстрагируют SQL-команды и позволяют описывать изменения схемы декларативно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Какие основные типы изменений (change types) существуют в Li",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое preconditions (предусловия)?",
+      "questionSlug": "chto-takoe-preconditions-predusloviya",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое preconditions (предусловия)? — Gymterview",
+        "description": "Preconditions — это проверки, которые Liquibase выполняет перед применением changeset (или перед обработкой всего changelog). Если предусловие не выполнено, Liq",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Что такое preconditions (предусловия)? — Gymterview",
+        "ogDescription": "Preconditions — это проверки, которые Liquibase выполняет перед применением changeset (или перед обработкой всего change",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое preconditions (предусловия)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Preconditions — это проверки, которые Liquibase выполняет перед применением changeset (или перед обработкой всего changelog). Если предусловие не выполнено, Liquibase может пропустить changeset, пометить его как выполненный, вызвать ошибку или остановиться."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое preconditions (предусловия)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое contexts и labels? Когда их использовать?",
+      "questionSlug": "chto-takoe-contexts-i-labels-kogda-ikh-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое contexts и labels? Когда их использовать? — Gymterview",
+        "description": "Contexts и labels — два механизма фильтрации changeset-ов, позволяющие выполнять разные наборы миграций в зависимости от окружения или задачи.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Что такое contexts и labels? Когда их использовать? — Gymterview",
+        "ogDescription": "Contexts и labels — два механизма фильтрации changeset-ов, позволяющие выполнять разные наборы миграций в зависимости от",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое contexts и labels? Когда их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contexts и labels — два механизма фильтрации changeset-ов, позволяющие выполнять разные наборы миграций в зависимости от окружения или задачи."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое contexts и labels? Когда их использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает rollback в Liquibase?",
+      "questionSlug": "kak-rabotaet-rollback-v-liquibase",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как работает rollback в Liquibase? — Gymterview",
+        "description": "Rollback — это механизм отката изменений, внесённых changeset-ами. Liquibase поддерживает автоматический и ручной rollback.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Как работает rollback в Liquibase? — Gymterview",
+        "ogDescription": "Rollback — это механизм отката изменений, внесённых changeset-ами. Liquibase поддерживает автоматический и ручной rollba",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает rollback в Liquibase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rollback — это механизм отката изменений, внесённых changeset-ами. Liquibase поддерживает автоматический и ручной rollback."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как работает rollback в Liquibase?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое DATABASECHANGELOG и DATABASECHANGELOGLOCK?",
+      "questionSlug": "chto-takoe-databasechangelog-i-databasechangeloglock",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое DATABASECHANGELOG и DATABASECHANGELOGLOCK? — Gymterview",
+        "description": "DATABASECHANGELOG и DATABASECHANGELOGLOCK — две служебные таблицы, которые Liquibase автоматически создаёт в БД при первом запуске для отслеживания состояния ми",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Что такое DATABASECHANGELOG и DATABASECHANGELOGLOCK? — Gymterview",
+        "ogDescription": "DATABASECHANGELOG и DATABASECHANGELOGLOCK — две служебные таблицы, которые Liquibase автоматически создаёт в БД при перв",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое DATABASECHANGELOG и DATABASECHANGELOGLOCK?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DATABASECHANGELOG и DATABASECHANGELOGLOCK — две служебные таблицы, которые Liquibase автоматически создаёт в БД при первом запуске для отслеживания состояния миграций и предотвращения конкурентного выполнения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое DATABASECHANGELOG и DATABASECHANGELOGLOCK?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое checksum и зачем он нужен?",
+      "questionSlug": "chto-takoe-checksum-i-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое checksum и зачем он нужен? — Gymterview",
+        "description": "Checksum (контрольная сумма) — это MD5-хеш, который Liquibase вычисляет для каждого changeset на основе его содержимого и сохраняет в столбце `MD5SUM` таблицы D",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Что такое checksum и зачем он нужен? — Gymterview",
+        "ogDescription": "Checksum (контрольная сумма) — это MD5-хеш, который Liquibase вычисляет для каждого changeset на основе его содержимого ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое checksum и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Checksum (контрольная сумма) — это MD5-хеш, который Liquibase вычисляет для каждого changeset на основе его содержимого и сохраняет в столбце `MD5SUM` таблицы DATABASECHANGELOG."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое checksum и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные команды есть в Liquibase?",
+      "questionSlug": "kakie-osnovnye-komandy-est-v-liquibase",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Какие основные команды есть в Liquibase? — Gymterview",
+        "description": "Команды Liquibase делятся на четыре категории: обновление, откат, информационные и вспомогательные.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Какие основные команды есть в Liquibase? — Gymterview",
+        "ogDescription": "Команды Liquibase делятся на четыре категории: обновление, откат, информационные и вспомогательные.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные команды есть в Liquibase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Команды Liquibase делятся на четыре категории: обновление, откат, информационные и вспомогательные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Какие основные команды есть в Liquibase?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как интегрировать Liquibase со Spring Boot?",
+      "questionSlug": "kak-integrirovat-liquibase-so-spring-boot",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как интегрировать Liquibase со Spring Boot? — Gymterview",
+        "description": "Интеграция Liquibase со Spring Boot сводится к добавлению зависимости и настройке свойств — автоконфигурация Spring Boot делает остальное.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Как интегрировать Liquibase со Spring Boot? — Gymterview",
+        "ogDescription": "Интеграция Liquibase со Spring Boot сводится к добавлению зависимости и настройке свойств — автоконфигурация Spring Boot",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как интегрировать Liquibase со Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интеграция Liquibase со Spring Boot сводится к добавлению зависимости и настройке свойств — автоконфигурация Spring Boot делает остальное."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как интегрировать Liquibase со Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие best practices существуют при работе с Liquibase?",
+      "questionSlug": "kakie-best-practices-sushchestvuyut-pri-rabote-s-liquibase",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Какие best practices существуют при работе с Liquibase? — Gymterview",
+        "description": "Best practices Liquibase — это набор проверенных правил, которые предотвращают типичные проблемы с миграциями в командной разработке и на продакшене.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Какие best practices существуют при работе с Liquibase? — Gymterview",
+        "ogDescription": "Best practices Liquibase — это набор проверенных правил, которые предотвращают типичные проблемы с миграциями в командно",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие best practices существуют при работе с Liquibase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Best practices Liquibase — это набор проверенных правил, которые предотвращают типичные проблемы с миграциями в командной разработке и на продакшене."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Какие best practices существуют при работе с Liquibase?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с данными в Liquibase (insert, loadData, loadUpdateData)?",
+      "questionSlug": "kak-rabotat-s-dannymi-v-liquibase-insert-loaddata-loadupdatedata",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как работать с данными в Liquibase (insert, loadData, loadUp — Gymterview",
+        "description": "Liquibase поддерживает три основных способа работы с данными: поштучная вставка через insert, массовая загрузка из CSV через loadData и upsert-загрузка через lo",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Как работать с данными в Liquibase (insert, loadData, loadUp — Gymterview",
+        "ogDescription": "Liquibase поддерживает три основных способа работы с данными: поштучная вставка через insert, массовая загрузка из CSV ч",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с данными в Liquibase (insert, loadData, loadUpdateData)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liquibase поддерживает три основных способа работы с данными: поштучная вставка через insert, массовая загрузка из CSV через loadData и upsert-загрузка через loadUpdateData."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как работать с данными в Liquibase (insert, loadData, loadUp",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое tag и tagDatabase?",
+      "questionSlug": "chto-takoe-tag-i-tagdatabase",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что такое tag и tagDatabase? — Gymterview",
+        "description": "Tag — это именованная метка, которая ставится на определённое состояние БД и используется как контрольная точка для отката.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Что такое tag и tagDatabase? — Gymterview",
+        "ogDescription": "Tag — это именованная метка, которая ставится на определённое состояние БД и используется как контрольная точка для отка",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое tag и tagDatabase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tag — это именованная метка, которая ставится на определённое состояние БД и используется как контрольная точка для отката."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что такое tag и tagDatabase?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать параметры и подстановки (property substitution)?",
+      "questionSlug": "kak-ispolzovat-parametry-i-podstanovki-property-substitution",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как использовать параметры и подстановки (property substitut — Gymterview",
+        "description": "Property substitution — механизм Liquibase, позволяющий использовать переменные в changelog-файлах для адаптации миграций под разные окружения и СУБД.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Как использовать параметры и подстановки (property substitut — Gymterview",
+        "ogDescription": "Property substitution — механизм Liquibase, позволяющий использовать переменные в changelog-файлах для адаптации миграци",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать параметры и подстановки (property substitution)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Property substitution — механизм Liquibase, позволяющий использовать переменные в changelog-файлах для адаптации миграций под разные окружения и СУБД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как использовать параметры и подстановки (property substitut",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать changelog-и с помощью include и includeAll?",
+      "questionSlug": "kak-organizovat-changelog-i-s-pomoshchyu-include-i-includeall",
+      "grade": "junior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как организовать changelog-и с помощью include и includeAll? — Gymterview",
+        "description": "Include и includeAll — два механизма декомпозиции changelog-ов, позволяющие разбить один большой файл на логические модули.",
+        "keywords": [
+          "liquibase",
+          "junior"
+        ],
+        "ogTitle": "Как организовать changelog-и с помощью include и includeAll? — Gymterview",
+        "ogDescription": "Include и includeAll — два механизма декомпозиции changelog-ов, позволяющие разбить один большой файл на логические моду",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать changelog-и с помощью include и includeAll?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Include и includeAll — два механизма декомпозиции changelog-ов, позволяющие разбить один большой файл на логические модули."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как организовать changelog-и с помощью include и includeAll?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать Liquibase в CI/CD пайплайне?",
+      "questionSlug": "kak-ispolzovat-liquibase-v-ci-cd-pajplajne",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как использовать Liquibase в CI/CD пайплайне? — Gymterview",
+        "description": "Liquibase интегрируется в CI/CD двумя основными способами: автоматический запуск при старте приложения (Spring Boot) или отдельный шаг в пайплайне.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Как использовать Liquibase в CI/CD пайплайне? — Gymterview",
+        "ogDescription": "Liquibase интегрируется в CI/CD двумя основными способами: автоматический запуск при старте приложения (Spring Boot) или",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать Liquibase в CI/CD пайплайне?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Liquibase интегрируется в CI/CD двумя основными способами: автоматический запуск при старте приложения (Spring Boot) или отдельный шаг в пайплайне."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как использовать Liquibase в CI/CD пайплайне?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Liquibase работает с несколькими экземплярами приложения (кластер)?",
+      "questionSlug": "kak-liquibase-rabotaet-s-neskolkimi-ekzemplyarami-prilozheniya-klaster",
+      "grade": "senior",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как Liquibase работает с несколькими экземплярами приложения — Gymterview",
+        "description": "В кластерном окружении Liquibase использует таблицу DATABASECHANGELOGLOCK для предотвращения одновременного выполнения миграций несколькими экземплярами.",
+        "keywords": [
+          "liquibase",
+          "senior"
+        ],
+        "ogTitle": "Как Liquibase работает с несколькими экземплярами приложения — Gymterview",
+        "ogDescription": "В кластерном окружении Liquibase использует таблицу DATABASECHANGELOGLOCK для предотвращения одновременного выполнения м",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Liquibase работает с несколькими экземплярами приложения (кластер)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В кластерном окружении Liquibase использует таблицу DATABASECHANGELOGLOCK для предотвращения одновременного выполнения миграций несколькими экземплярами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как Liquibase работает с несколькими экземплярами приложения",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "topic": "Docker",
+  "topicSlug": "docker",
+  "batch": 2,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие основные директивы используются в docker-compose.yml?",
+      "questionSlug": "kakie-osnovnye-direktivy-ispolzuyutsya-v-docker-compose-yml",
+      "grade": "middle",
+      "tags": ["docker", "docker-compose", "yaml", "configuration"],
+      "seo": {
+        "title": "Директивы docker-compose.yml: services, ports, volumes — Gymterview",
+        "description": "Ключевые директивы docker-compose.yml: services, image/build, ports, environment, volumes, networks, depends_on, restart, healthcheck. Примеры конфигурации.",
+        "keywords": ["docker-compose.yml директивы", "services", "ports", "volumes", "depends_on", "healthcheck", "environment", "networks", "restart", "собеседование"],
+        "ogTitle": "Директивы docker-compose.yml — Gymterview",
+        "ogDescription": "Обзор ключевых директив docker-compose.yml: services, ports, volumes, depends_on с condition: service_healthy, healthcheck.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные директивы используются в docker-compose.yml?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ключевые директивы: services (определение контейнеров), image/build (образ или сборка), ports (маппинг портов хост:контейнер), environment/env_file (переменные окружения), volumes (монтирование томов и bind mounts), networks (определение сетей), depends_on (порядок запуска, с condition: service_healthy для ожидания готовности), restart (политика перезапуска), healthcheck (проверка состояния сервиса)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Директивы docker-compose.yml", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое тома (volumes) и bind mounts?",
+      "questionSlug": "chto-takoe-toma-volumes-i-bind-mounts",
+      "grade": "middle",
+      "tags": ["docker", "volume", "bind-mount", "data-persistence"],
+      "seo": {
+        "title": "Docker Volumes vs Bind Mounts — Gymterview",
+        "description": "Тома (volumes) и bind mounts в Docker: управление данными, сравнительная таблица, tmpfs. Когда использовать volumes (данные БД) и bind mounts (конфиги).",
+        "keywords": ["Docker volumes", "bind mounts", "тома Docker", "данные контейнера", "tmpfs", "персистентность данных", "docker volume create", "собеседование"],
+        "ogTitle": "Docker Volumes vs Bind Mounts: сравнение и применение — Gymterview",
+        "ogDescription": "Volumes управляются Docker (данные БД), bind mounts монтируют директории хоста (конфиги). Сравнение, tmpfs и примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое тома (volumes) и bind mounts?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Механизмы сохранения данных вне жизненного цикла контейнера. Volumes — управляемые Docker хранилища в /var/lib/docker/volumes/, портативные, подходят для данных БД. Bind mounts — монтирование конкретной директории хоста, подходят для конфигов и исходного кода при разработке. tmpfs — хранение только в RAM, для временных конфиденциальных данных. При удалении контейнера данные в volumes сохраняются, в writable layer — теряются."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Volumes и Bind Mounts", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы сетей существуют в Docker?",
+      "questionSlug": "kakie-tipy-setey-sushchestvuyut-v-docker",
+      "grade": "middle",
+      "tags": ["docker", "networking", "bridge", "overlay"],
+      "seo": {
+        "title": "Типы сетей Docker: bridge, host, none, overlay — Gymterview",
+        "description": "Типы сетей Docker: bridge (по умолчанию, DNS по имени контейнера), host (без изоляции), none (полная изоляция), overlay (кластер). Пользовательские сети.",
+        "keywords": ["Docker сети", "bridge network", "host network", "overlay network", "Docker DNS", "docker network create", "сетевые драйверы", "собеседование"],
+        "ogTitle": "Типы сетей Docker: bridge, host, none, overlay — Gymterview",
+        "ogDescription": "Четыре типа сетей Docker. В пользовательской bridge-сети работает DNS по имени контейнера, в дефолтной — нет.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы сетей существуют в Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Четыре типа сетей: bridge (по умолчанию) — изолированная сеть на хосте, в пользовательской bridge-сети работает DNS по имени контейнера; host — контейнер использует сетевой стек хоста напрямую, максимальная производительность; none — полная сетевая изоляция, только loopback; overlay — объединяет контейнеры на разных хостах (Docker Swarm, Kubernetes). Важно: в стандартной bridge-сети (docker0) DNS по имени не работает."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Типы сетей Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как написать Dockerfile для Spring Boot приложения?",
+      "questionSlug": "kak-napisat-dockerfile-dlya-spring-boot-prilozheniya",
+      "grade": "middle",
+      "tags": ["docker", "dockerfile", "spring-boot", "jvm", "best-practices"],
+      "seo": {
+        "title": "Dockerfile для Spring Boot приложения — Gymterview",
+        "description": "Dockerfile для Spring Boot: простой (5 строк) и production-ready (multi-stage, непривилегированный пользователь, health check, JVM-флаги MaxRAMPercentage).",
+        "keywords": ["Dockerfile Spring Boot", "Docker Java", "eclipse-temurin", "MaxRAMPercentage", "UseContainerSupport", "multi-stage build", "health check Docker", "собеседование"],
+        "ogTitle": "Dockerfile для Spring Boot: от простого до production-ready — Gymterview",
+        "ogDescription": "Два варианта Dockerfile для Spring Boot: минимальный и production-ready с multi-stage, USER, HEALTHCHECK и JVM-флагами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как написать Dockerfile для Spring Boot приложения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Минимальный вариант (5 строк): FROM eclipse-temurin:17-jre-alpine, WORKDIR, COPY JAR, EXPOSE, ENTRYPOINT. Production-ready: multi-stage build (Maven + JRE), непривилегированный пользователь (USER appuser), HEALTHCHECK с Actuator, JVM-флаги: -XX:+UseContainerSupport (включён с JDK 10+), -XX:MaxRAMPercentage=75.0 (heap не вся память JVM), -Djava.security.egd=file:/dev/./urandom (ускорение запуска)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Dockerfile для Spring Boot", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое layered JAR в Spring Boot и как его использовать с Docker?",
+      "questionSlug": "chto-takoe-layered-jar-v-spring-boot-i-kak-ego-ispolzovat-s-docker",
+      "grade": "senior",
+      "tags": ["docker", "spring-boot", "layered-jar", "optimization", "caching"],
+      "seo": {
+        "title": "Layered JAR в Spring Boot и Docker — Gymterview",
+        "description": "Layered JAR (Spring Boot 2.3+) разделяет JAR на 4 слоя для оптимизации кэширования Docker: dependencies, spring-boot-loader, snapshot-dependencies, application.",
+        "keywords": ["layered JAR", "Spring Boot Docker", "jarmode layertools", "Docker кэширование", "dependencies слой", "JarLauncher", "Spring Boot 3", "собеседование"],
+        "ogTitle": "Layered JAR в Spring Boot: оптимизация Docker-сборки — Gymterview",
+        "ogDescription": "Layered JAR разделяет Spring Boot JAR на 4 слоя по частоте изменений. При изменении кода пересобирается только последний слой.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое layered JAR в Spring Boot и как его использовать с Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Layered JAR (Spring Boot 2.3+, по умолчанию в 3.x) разделяет JAR на 4 слоя: dependencies (меняются редко), spring-boot-loader (почти не меняется), snapshot-dependencies (меняются чаще), application (код, меняется при каждой сборке). В Dockerfile: java -Djarmode=layertools -jar app.jar extract, затем COPY каждый слой отдельно. При изменении только кода Docker пересобирает лишь последний слой, остальные берутся из кэша."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Layered JAR", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как передавать переменные окружения и конфигурацию в Docker-контейнер?",
+      "questionSlug": "kak-peredavat-peremennye-okruzheniya-i-konfiguraciyu-v-docker-konteyner",
+      "grade": "junior",
+      "tags": ["docker", "environment-variables", "configuration", "spring-boot", "security"],
+      "seo": {
+        "title": "Переменные окружения и конфигурация в Docker — Gymterview",
+        "description": "Способы передачи конфигурации в Docker-контейнер: флаг -e, --env-file, ENV в Dockerfile, ARG, Docker Compose, монтирование файлов. Spring Boot relaxed binding.",
+        "keywords": ["Docker переменные окружения", "docker run -e", "env-file", "Docker ENV", "Docker ARG", "Spring Boot конфигурация", "relaxed binding", "секреты Docker", "собеседование"],
+        "ogTitle": "Переменные окружения в Docker — Gymterview",
+        "ogDescription": "Способы конфигурирования Docker-контейнера: -e, --env-file, ENV, ARG, Compose. Spring Boot relaxed binding и безопасность секретов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как передавать переменные окружения и конфигурацию в Docker-контейнер?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Способы: 1) docker run -e KEY=VALUE, 2) docker run --env-file .env, 3) ENV в Dockerfile (значения по умолчанию), 4) ARG + ENV (параметризация при сборке), 5) Docker Compose environment/env_file, 6) монтирование файлов конфигурации (-v). Spring Boot автоматически маппит переменные через relaxed binding: SPRING_DATASOURCE_URL → spring.datasource.url. Секреты нельзя зашивать в Dockerfile (видны в docker history) — передавайте при запуске или через Docker Secrets."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Переменные окружения в Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое health check в Docker?",
+      "questionSlug": "chto-takoe-health-check-v-docker",
+      "grade": "middle",
+      "tags": ["docker", "healthcheck", "monitoring", "spring-boot", "actuator"],
+      "seo": {
+        "title": "Health check в Docker — Gymterview",
+        "description": "Health check в Docker: определение в Dockerfile и docker-compose.yml, параметры (interval, timeout, retries, start_period), Spring Boot Actuator, depends_on.",
+        "keywords": ["Docker health check", "HEALTHCHECK", "healthy unhealthy", "depends_on service_healthy", "Spring Boot Actuator", "start_period", "docker-compose healthcheck", "собеседование"],
+        "ogTitle": "Health check в Docker: Dockerfile и Compose — Gymterview",
+        "ogDescription": "Механизм health check в Docker: статусы healthy/unhealthy, параметры, интеграция с Spring Boot Actuator и depends_on condition.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое health check в Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Health check — механизм определения работоспособности приложения внутри контейнера. Статусы: healthy, unhealthy, starting. Параметры: interval (частота проверки), timeout (макс. ожидание), retries (попытки до unhealthy), start_period (начальный период без учёта неудач). Определяется в Dockerfile (HEALTHCHECK) или docker-compose.yml (healthcheck). Для Spring Boot используйте Actuator (/actuator/health). В Alpine используйте wget вместо curl."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Health check в Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроено логирование в Docker?",
+      "questionSlug": "kak-ustroeno-logirovanie-v-docker",
+      "grade": "middle",
+      "tags": ["docker", "logging", "monitoring", "elk", "spring-boot"],
+      "seo": {
+        "title": "Логирование в Docker: драйверы и best practices — Gymterview",
+        "description": "Логирование в Docker: перехват stdout/stderr, драйверы (json-file, fluentd, awslogs), max-size/max-file, JSON-логирование в Spring Boot, ELK/Loki.",
+        "keywords": ["Docker логирование", "docker logs", "logging driver", "json-file", "fluentd", "max-size", "ELK Stack", "Grafana Loki", "Spring Boot логи", "собеседование"],
+        "ogTitle": "Логирование в Docker: драйверы и настройка — Gymterview",
+        "ogDescription": "Docker перехватывает stdout/stderr контейнера. Драйверы логирования, ограничение размера и интеграция с ELK/Loki.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроено логирование в Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker перехватывает stdout и stderr контейнера и направляет в logging driver. Драйверы: json-file (по умолчанию), local, syslog, journald, fluentd, awslogs, gelf. Команды: docker logs, docker logs -f (follow), docker logs --tail 100. Ключевой принцип: приложение пишет в stdout/stderr, не в файлы. Обязательно настройте max-size/max-file, иначе логи заполнят диск. В production — ELK Stack, Grafana Loki, Graylog."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Логирование в Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Docker используется в CI/CD?",
+      "questionSlug": "kak-docker-ispolzuetsya-v-ci-cd",
+      "grade": "middle",
+      "tags": ["docker", "ci-cd", "devops", "testcontainers", "spring-boot"],
+      "seo": {
+        "title": "Docker в CI/CD: сборка, тестирование, деплой — Gymterview",
+        "description": "Docker в CI/CD: единообразная среда сборки, упаковка в образ, GitLab CI и GitHub Actions, интеграционные тесты с Testcontainers. Примеры pipeline.",
+        "keywords": ["Docker CI/CD", "GitLab CI Docker", "GitHub Actions Docker", "Testcontainers", "Docker Registry", "docker build push", "интеграционные тесты", "собеседование"],
+        "ogTitle": "Docker в CI/CD: от сборки до деплоя — Gymterview",
+        "ogDescription": "Docker на всех этапах CI/CD: сборка в контейнере, образ как артефакт, Testcontainers для тестов, деплой образа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Docker используется в CI/CD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker в CI/CD: 1) Единообразная среда сборки — сборка внутри контейнера гарантирует одинаковый результат. 2) Упаковка в образ — Docker-образ как стандартный артефакт деплоя, тегируется по git commit SHA. 3) Тестирование — Testcontainers запускает реальные БД (PostgreSQL, Redis) в интеграционных тестах. 4) Деплой — pull образа из реестра и запуск. Поддерживается в GitLab CI, GitHub Actions, Jenkins."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Docker в CI/CD", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие практики безопасности следует соблюдать при работе с Docker?",
+      "questionSlug": "kakie-praktiki-bezopasnosti-sleduet-soblyudat-pri-rabote-s-docker",
+      "grade": "senior",
+      "tags": ["docker", "security", "best-practices", "distroless", "vulnerability-scanning"],
+      "seo": {
+        "title": "Практики безопасности Docker — Gymterview",
+        "description": "Безопасность Docker: непривилегированный USER, минимальные образы (alpine, distroless), no secrets in image, сканирование уязвимостей (Trivy), read-only FS.",
+        "keywords": ["Docker безопасность", "Docker security", "непривилегированный пользователь", "distroless", "Trivy", "Docker Scout", "read-only filesystem", "секреты Docker", "собеседование"],
+        "ogTitle": "Безопасность Docker: 9 практик — Gymterview",
+        "ogDescription": "Практики безопасности Docker: USER, минимальные образы, no secrets in image, сканирование, read-only FS, ограничение ресурсов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие практики безопасности следует соблюдать при работе с Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ключевые практики: 1) Не запускать от root (USER appuser). 2) Минимальные базовые образы (alpine, distroless). 3) Не хранить секреты в образе (ENV/COPY .env — антипаттерн). 4) Конкретные теги вместо latest. 5) Сканирование уязвимостей (Trivy, Docker Scout). 6) Read-only файловая система (--read-only). 7) Ограничение ресурсов (--memory, --cpus). 8) --no-install-recommends и удаление в том же слое. 9) .dockerignore и multi-stage build."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Безопасность Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Docker взаимодействует с JVM? Какие есть нюансы?",
+      "questionSlug": "kak-docker-vzaimodeystvuet-s-jvm-kakie-est-nyuansy",
+      "grade": "senior",
+      "tags": ["docker", "jvm", "memory", "performance", "spring-boot"],
+      "seo": {
+        "title": "Docker и JVM: нюансы взаимодействия — Gymterview",
+        "description": "Нюансы JVM в Docker: UseContainerSupport, MaxRAMPercentage=75%, cgroups, настройка CPU, exec-форма ENTRYPOINT для SIGTERM, graceful shutdown Spring Boot.",
+        "keywords": ["Docker JVM", "UseContainerSupport", "MaxRAMPercentage", "cgroups", "OOM kill Docker", "graceful shutdown", "PID 1", "Java Docker", "собеседование"],
+        "ogTitle": "Docker и JVM: память, CPU и graceful shutdown — Gymterview",
+        "ogDescription": "Три нюанса JVM в Docker: UseContainerSupport (лимиты контейнера), MaxRAMPercentage=75% (heap не вся память), exec-форма для SIGTERM.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Docker взаимодействует с JVM? Какие есть нюансы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три ключевых нюанса: 1) UseContainerSupport (включён с Java 10+) — JVM определяет лимиты по cgroups контейнера, а не хоста; до Java 10 JVM не знала о лимитах и получала OOM kill. 2) MaxRAMPercentage=75% — heap это не вся память JVM (есть Metaspace, thread stacks, direct memory, code cache, GC overhead). 3) Exec-форма ENTRYPOINT — Java-процесс получает PID 1 и SIGTERM для graceful shutdown. CPU лимиты влияют на GC-потоки и ForkJoinPool."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Docker и JVM", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать docker-compose для Java-приложения с базой данных?",
+      "questionSlug": "kak-organizovat-docker-compose-dlya-java-prilozheniya-s-bazoy-dannykh",
+      "grade": "middle",
+      "tags": ["docker", "docker-compose", "spring-boot", "postgresql", "redis"],
+      "seo": {
+        "title": "Docker Compose для Spring Boot + PostgreSQL + Redis — Gymterview",
+        "description": "Docker Compose для Java-приложения: Spring Boot + PostgreSQL + Redis + Nginx. Health check, depends_on, volumes, ресурсные ограничения, .env для секретов.",
+        "keywords": ["docker-compose Spring Boot", "docker-compose PostgreSQL", "docker-compose Redis", "depends_on service_healthy", "Docker Compose Java", "собеседование"],
+        "ogTitle": "Docker Compose для Java: Spring Boot + PostgreSQL + Redis — Gymterview",
+        "ogDescription": "Полный docker-compose.yml: Spring Boot + PostgreSQL + Redis + Nginx с health check, volumes и ограничением ресурсов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать docker-compose для Java-приложения с базой данных?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Типичный стек: Spring Boot (build + environment + healthcheck), PostgreSQL (image + volume + healthcheck), Redis (image + volume + healthcheck), Nginx (reverse proxy). Ключевые моменты: health check для всех сервисов, depends_on с condition: service_healthy, секреты в .env файле (не коммитится), именованные тома для данных БД, ограничение ресурсов (memory, cpus) для JVM-приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Docker Compose для Java", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Docker Registry и Docker Hub?",
+      "questionSlug": "chto-takoe-docker-registry-i-docker-hub",
+      "grade": "junior",
+      "tags": ["docker", "registry", "docker-hub", "основы"],
+      "seo": {
+        "title": "Docker Registry и Docker Hub — Gymterview",
+        "description": "Docker Registry — сервер для хранения образов. Docker Hub — крупнейший публичный реестр. Типы реестров, именование образов, работа с Docker Hub и приватными.",
+        "keywords": ["Docker Registry", "Docker Hub", "реестр образов", "docker pull", "docker push", "docker login", "приватный реестр", "Amazon ECR", "GitHub CR", "собеседование"],
+        "ogTitle": "Docker Registry и Docker Hub — Gymterview",
+        "ogDescription": "Docker Registry — хранилище образов (аналог Maven Central для JAR). Docker Hub — главный публичный реестр. Именование и работа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Docker Registry и Docker Hub?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker Registry — сервер для хранения и распространения Docker-образов через HTTP API. Типы: публичные (Docker Hub), приватные (GitLab CR, GitHub CR, Amazon ECR, Google AR) и self-hosted (registry:2). Docker Hub — крупнейший публичный реестр с официальными (openjdk, postgres, nginx), верифицированными и пользовательскими образами. Именование: [registry/]namespace/repository:tag. В production используют приватные реестры."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Docker Registry и Docker Hub", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается контейнер от образа?",
+      "questionSlug": "chem-otlichaetsya-konteyner-ot-obraza",
+      "grade": "junior",
+      "tags": ["docker", "image", "container", "основы"],
+      "seo": {
+        "title": "Контейнер vs образ в Docker — Gymterview",
+        "description": "Отличие контейнера от образа: образ — неизменяемый шаблон (класс), контейнер — запущенный экземпляр (объект) с writable layer. Таблица сравнения и аналогия.",
+        "keywords": ["контейнер vs образ", "Docker image", "Docker container", "writable layer", "read-only layers", "docker run", "docker build", "Java аналогия класс объект", "собеседование"],
+        "ogTitle": "Контейнер vs образ в Docker — Gymterview",
+        "ogDescription": "Образ — класс (immutable шаблон), контейнер — объект (экземпляр с writable layer). Сравнение, создание и жизненный цикл.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается контейнер от образа?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Образ — неизменяемый шаблон (набор read-only слоёв), контейнер — запущенный экземпляр образа с writable layer. Аналогия для Java: образ — класс, контейнер — объект. Из одного образа можно создать множество контейнеров. Образ создаётся через docker build/pull, контейнер — через docker run. При удалении контейнера writable layer теряется, данные нужно хранить в volumes."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Контейнер vs образ", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

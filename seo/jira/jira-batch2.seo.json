@@ -1,0 +1,411 @@
+{
+  "topic": "Разработка для Jira",
+  "topicSlug": "jira",
+  "batch": 2,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как работать с Event Listener в плагине?",
+      "questionSlug": "kak-rabotat-s-event-listener-v-plagine",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "event-driven", "event-listener"],
+      "seo": {
+        "title": "Как работать с Event Listener в плагине Jira DC — Gymterview",
+        "description": "Event Listener в Jira DC: @EventListener, EventPublisher register/unregister, IssueEvent, кастомные события, асинхронная обработка. Примеры на Java.",
+        "keywords": ["Event Listener", "EventPublisher", "@EventListener", "IssueEvent", "Jira события", "кастомные события", "Jira DC plugin", "Java"],
+        "ogTitle": "Event Listener в Jira DC плагинах: подписка и обработка событий — Gymterview",
+        "ogDescription": "Как подписаться на события Jira: register/unregister, типы событий, кастомные события, асинхронная обработка тяжёлой логики.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с Event Listener в плагине?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event Listener реагирует на события Jira через @EventListener и EventPublisher. Обязательно register в afterPropertiesSet и unregister в destroy (иначе утечка памяти). Listener вызывается синхронно — тяжёлую логику выносите в отдельный поток. IssueEvent.getEventTypeId() сравнивайте с константами EventType. Поддерживаются кастомные события через eventPublisher.publish()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Event Listener", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает кластеризация в Jira Data Center и как это влияет на плагины?",
+      "questionSlug": "kak-rabotaet-klasterizatsiya-v-jira-data-center-i-kak-eto-vliyaet-na-plaginy",
+      "grade": "senior",
+      "tags": ["jira", "jira-data-center", "clustering", "architecture", "caching"],
+      "seo": {
+        "title": "Кластеризация в Jira Data Center и влияние на плагины — Gymterview",
+        "description": "Кластер Jira DC: Hazelcast, shared DB/FS, stateless-дизайн плагинов, ClusterLockService, CacheManager, межнодовые сообщения. Чек-лист совместимости.",
+        "keywords": ["Jira Data Center", "кластеризация", "Hazelcast", "ClusterLockService", "CacheManager", "stateless", "distributed cache", "Jira DC plugin"],
+        "ogTitle": "Кластеризация Jira DC: stateless плагины, распределённые блокировки — Gymterview",
+        "ogDescription": "Как кластер Jira DC влияет на плагины: stateless-дизайн, CacheManager, ClusterLockService, чек-лист совместимости.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает кластеризация в Jira Data Center и как это влияет на плагины?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jira DC — кластер из нескольких нод за Load Balancer с общей БД и файловой системой, Hazelcast для distributed cache и messaging. Плагины должны быть stateless: CacheManager вместо ConcurrentHashMap, ClusterLockService для эксклюзивных задач, SAL PluginScheduler вместо java.util.Timer. Маркер atlassian-data-center-compatible=true обязателен для Marketplace."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Кластеризация DC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать плагины Jira DC?",
+      "questionSlug": "kak-testirovat-plaginy-jira-dc",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "testing", "junit"],
+      "seo": {
+        "title": "Как тестировать плагины Jira DC — Gymterview",
+        "description": "Тестирование Jira DC плагинов: юнит-тесты (Mockito), интеграционные тесты (@Wired, AtlassianPluginsTestRunner), REST API тесты, atlas-unit-test.",
+        "keywords": ["тестирование Jira плагинов", "atlas-unit-test", "atlas-integration-test", "Mockito", "AtlassianPluginsTestRunner", "Jira DC", "JUnit"],
+        "ogTitle": "Тестирование плагинов Jira DC: unit, integration, UI тесты — Gymterview",
+        "ogDescription": "Как тестировать Jira DC плагины: Mockito для юнит-тестов, AtlassianPluginsTestRunner для интеграционных, REST API тесты.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать плагины Jira DC?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три уровня: юнит-тесты (Mockito, мокируют Jira-сервисы, atlas-unit-test), интеграционные (@Wired, AtlassianPluginsTestRunner, запуск реальной Jira, atlas-integration-test), UI-тесты (Page Objects). Рекомендуемое покрытие: 70%+ юнит-тестами, ключевые сценарии — интеграционными. Docker-based тестовые окружения стали стандартом для CI/CD."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Тестирование плагинов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как отлаживать и профилировать плагины?",
+      "questionSlug": "kak-otlazhivat-i-profilirovat-plaginy",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "debugging", "performance", "logging"],
+      "seo": {
+        "title": "Как отлаживать и профилировать плагины Jira DC — Gymterview",
+        "description": "Отладка Jira DC плагинов: atlas-debug (remote debug 5005), SLF4J логирование, thread dump, heap dump, JFR. Типичные проблемы и диагностика.",
+        "keywords": ["atlas-debug", "remote debug", "SLF4J", "thread dump", "heap dump", "JFR", "Jira плагин отладка", "профилирование"],
+        "ogTitle": "Отладка и профилирование плагинов Jira DC — Gymterview",
+        "ogDescription": "Remote debug, SLF4J, thread/heap dump, JFR: как диагностировать memory leak, thread starvation, медленные запросы в Jira DC.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как отлаживать и профилировать плагины?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "atlas-debug запускает Jira с remote debug на порту 5005. Логирование через SLF4J (LoggerFactory.getLogger). Thread dump (jstack) — при зависании, Heap dump (jmap) — при OOM. JFR (Java Flight Recorder) — zero-overhead профилирование в production. Логи: <JIRA_HOME>/log/atlassian-jira.log. Уровень логирования меняется через Administration → Logging."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Отладка плагинов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Forge и как создать Forge-приложение?",
+      "questionSlug": "chto-takoe-forge-i-kak-sozdat-forge-prilozhenie",
+      "grade": "middle",
+      "tags": ["jira", "jira-forge", "jira-cloud", "serverless", "typescript"],
+      "seo": {
+        "title": "Что такое Forge и как создать Forge-приложение — Gymterview",
+        "description": "Forge: serverless платформа Atlassian для Jira Cloud. Создание приложения, manifest.yml, resolver (backend), UI Kit, Custom UI, triggers, деплой.",
+        "keywords": ["Forge", "Atlassian Forge", "serverless", "Jira Cloud", "manifest.yml", "resolver", "UI Kit", "Custom UI", "TypeScript"],
+        "ogTitle": "Forge: serverless приложения для Jira Cloud — Gymterview",
+        "ogDescription": "Как создать Forge-приложение: Forge CLI, manifest.yml, resolvers, UI Kit/Custom UI, triggers, forge deploy/tunnel.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Forge и как создать Forge-приложение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Forge — serverless-платформа Atlassian для Jira Cloud (TypeScript, Node.js 18+). Код в sandbox Atlassian, лимиты: 25s timeout, 512MB RAM. Создание: forge create, структура: manifest.yml (модули, scopes), resolvers (backend), UI Kit или Custom UI (React). Деплой: forge deploy + forge install. forge tunnel — для локальной разработки. api.asUser() и api.asApp() для REST вызовов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Forge", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Connect и чем он отличается от Forge?",
+      "questionSlug": "chto-takoe-connect-i-chem-on-otlichaetsya-ot-forge",
+      "grade": "middle",
+      "tags": ["jira", "jira-connect", "jira-cloud", "jwt", "spring-boot"],
+      "seo": {
+        "title": "Что такое Connect и чем он отличается от Forge — Gymterview",
+        "description": "Atlassian Connect: self-hosted приложения для Jira Cloud через iframe и REST API. JWT-аутентификация, lifecycle callbacks. Сравнение Forge vs Connect.",
+        "keywords": ["Atlassian Connect", "Forge vs Connect", "JWT", "iframe", "Jira Cloud", "lifecycle", "мультитенантность", "shared secret"],
+        "ogTitle": "Connect vs Forge: два фреймворка Jira Cloud — Gymterview",
+        "ogDescription": "Atlassian Connect: self-hosted, полный контроль, JWT. Сравнение с Forge: хостинг, язык, БД, timeout, сложность деплоя.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Connect и чем он отличается от Forge?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connect — фреймворк для self-hosted Cloud-приложений, интегрированных через iframe и REST API с JWT-аутентификацией. Отличия от Forge: любой язык (не только TypeScript), собственная БД (не 32KB лимит), нет timeout (не 25s), но нужен свой сервер и CI/CD. Мультитенантность — ключевой вызов: данные изолированы по clientKey. Atlassian рекомендует Forge для новых, Connect для сложных enterprise-приложений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Connect", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает аутентификация и авторизация в Jira Cloud приложениях?",
+      "questionSlug": "kak-rabotaet-autentifikatsiya-i-avtorizatsiya-v-jira-cloud-prilozheniyakh",
+      "grade": "senior",
+      "tags": ["jira", "jira-cloud", "oauth", "jwt", "security"],
+      "seo": {
+        "title": "Аутентификация и авторизация в Jira Cloud приложениях — Gymterview",
+        "description": "Аутентификация Jira Cloud: OAuth 2.0 (3LO, 2LO), API Tokens, JWT (Connect), автоматическая (Forge). Scopes, Spring Boot OAuth2 конфигурация.",
+        "keywords": ["OAuth 2.0", "JWT", "API Token", "Forge auth", "Connect JWT", "scopes", "Jira Cloud аутентификация", "Spring Security"],
+        "ogTitle": "Аутентификация Jira Cloud: OAuth, JWT, API Token, Forge — Gymterview",
+        "ogDescription": "Методы аутентификации в Jira Cloud по типам приложений: Forge (автоматическая), Connect (JWT), внешние (OAuth 2.0, API Token).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает аутентификация и авторизация в Jira Cloud приложениях?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Зависит от типа приложения: Forge — автоматическая (api.asUser/api.asApp, scopes в manifest.yml), Connect — JWT с shared secret (HMAC-SHA256), внешние интеграции — OAuth 2.0 (3LO для user context, 2LO для app context) или API Token (email + token). Scopes: read:jira-work, write:jira-work, read:jira-user. Refresh tokens обновлять до истечения (90 дней). PKCE для SPA/мобильных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Аутентификация Cloud", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Forge Storage API и Custom UI?",
+      "questionSlug": "chto-takoe-forge-storage-api-i-custom-ui",
+      "grade": "middle",
+      "tags": ["jira", "jira-forge", "jira-cloud", "data-persistence"],
+      "seo": {
+        "title": "Forge Storage API и Custom UI — Gymterview",
+        "description": "Forge Storage: Key-Value (32KB), Entity Storage (queryable), Secrets. Custom UI: React + Atlaskit, @forge/bridge, invoke/view/router. Примеры кода.",
+        "keywords": ["Forge Storage", "Entity Storage", "Key-Value", "Custom UI", "Atlaskit", "@forge/bridge", "React", "Jira Cloud", "Forge"],
+        "ogTitle": "Forge Storage API и Custom UI: хранение данных и React UI — Gymterview",
+        "ogDescription": "Forge Storage: KV (32KB), Entity Storage (с индексами), Secrets. Custom UI: React + Atlaskit через @forge/bridge.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Forge Storage API и Custom UI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Forge Storage — встроенное хранилище без собственной БД: Key-Value (32KB/ключ, простые данные), Entity Storage (32KB/entity, с индексами и query), Secrets (4KB, зашифрованы). Custom UI — полноценное React-приложение вместо декларативного UI Kit, использует @forge/bridge (invoke для backend, view.getContext для контекста). Atlaskit — библиотека UI-компонентов Atlassian."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Forge Storage и Custom UI", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обрабатывать события в Jira Cloud?",
+      "questionSlug": "kak-obrabatyvat-sobytiya-v-jira-cloud",
+      "grade": "middle",
+      "tags": ["jira", "jira-cloud", "event-driven", "jira-forge", "webhooks"],
+      "seo": {
+        "title": "Как обрабатывать события в Jira Cloud — Gymterview",
+        "description": "Обработка событий Jira Cloud: Forge Triggers (avi:jira:created:issue), Connect Webhooks, Scheduled Triggers. Сравнение DC Event Listener vs Cloud.",
+        "keywords": ["Forge Triggers", "Jira Cloud события", "avi:jira:created:issue", "Connect Webhooks", "Scheduled Triggers", "event-driven", "at-least-once"],
+        "ogTitle": "События в Jira Cloud: Forge Triggers и Connect Webhooks — Gymterview",
+        "ogDescription": "Forge Triggers vs Connect Webhooks: async обработка, at-least-once доставка, scheduled triggers, сравнение с DC Event Listener.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обрабатывать события в Jira Cloud?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Два механизма: Forge Triggers (рекомендуемый, async serverless, автоматический retry 3x, events: avi:jira:created:issue и др.) и Connect Webhooks (HTTP POST, свой сервер). Отличия от DC: асинхронная доставка, at-least-once, порядок не гарантирован, 25s timeout для Forge. Scheduled Triggers: minute/hour/day/week. Idempotent-обработка обязательна."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "События Cloud", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие ограничения и лимиты существуют в Jira Cloud API?",
+      "questionSlug": "kakie-ogranicheniya-i-limity-sushchestvuyut-v-jira-cloud-api",
+      "grade": "middle",
+      "tags": ["jira", "jira-cloud", "rate-limiting", "performance"],
+      "seo": {
+        "title": "Ограничения и лимиты Jira Cloud API — Gymterview",
+        "description": "Лимиты Jira Cloud: rate limiting (100 req/min), пагинация (maxResults 100), Forge лимиты (25s timeout, 512MB, 32KB storage). Обработка HTTP 429.",
+        "keywords": ["Jira Cloud лимиты", "rate limiting", "HTTP 429", "Retry-After", "maxResults", "Forge timeout", "Forge Storage лимиты", "пагинация"],
+        "ogTitle": "Лимиты Jira Cloud API: rate limiting, пагинация, Forge ограничения — Gymterview",
+        "ogDescription": "Все ограничения Jira Cloud API: rate limiting, пагинация, Forge-специфичные лимиты (timeout, memory, storage).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ограничения и лимиты существуют в Jira Cloud API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rate Limiting: ~100 req/min per user, ~500 req/min per Connect app. Пагинация: maxResults до 100 для /search. Forge: 25s timeout (sync), 512MB RAM, 32KB per storage key, 50GB total, 6MB payload, 4KB console log. JQL: 4000 символов, до 1000 значений в IN. Обработка: exponential backoff, Retry-After header, bulk-операции вместо одиночных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Лимиты Cloud API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проектировать приложение, совместимое с DC и Cloud?",
+      "questionSlug": "kak-proektirovat-prilozhenie-sovmestimoe-s-dc-i-cloud",
+      "grade": "senior",
+      "tags": ["jira", "architecture", "jira-data-center", "jira-cloud"],
+      "seo": {
+        "title": "Как проектировать приложение, совместимое с DC и Cloud — Gymterview",
+        "description": "Dual-platform Jira приложение: общая бизнес-логика, адаптеры для DC (P2/AO) и Cloud (Forge/Storage). Абстракция JiraIssueAdapter, миграция данных.",
+        "keywords": ["dual-platform", "DC и Cloud", "Jira адаптер", "бизнес-логика", "миграция данных", "Active Objects", "Forge Storage", "архитектура"],
+        "ogTitle": "Dual-platform Jira: совместимость DC и Cloud — Gymterview",
+        "ogDescription": "Архитектура dual-platform приложения: shared business logic, DC adapter (P2/AO), Cloud adapter (Forge/Storage).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проектировать приложение, совместимое с DC и Cloud?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dual-platform = два отдельных проекта с общей бизнес-логикой (Java shared library), а не единый codebase (языки разные: Java vs TypeScript). Общие интерфейсы (JiraIssueAdapter), платформенные адаптеры: DC (P2, Active Objects, Jira Java API), Cloud (Forge/Connect, Storage API, REST API v3). Feature parity — осознанный выбор, не все функции воспроизводимы на обеих платформах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "DC + Cloud совместимость", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть best practices при разработке для Jira?",
+      "questionSlug": "kakie-est-best-practices-pri-razrabotke-dlya-jira",
+      "grade": "middle",
+      "tags": ["jira", "best-practices", "security", "performance"],
+      "seo": {
+        "title": "Best practices при разработке для Jira — Gymterview",
+        "description": "Best practices Jira-разработки: производительность (пагинация, CacheManager), безопасность (SQL injection, XSS, XSRF), UX (AUI, Atlaskit), upgrade tasks.",
+        "keywords": ["Jira best practices", "CacheManager", "SQL injection", "XSS", "AUI", "Atlaskit", "upgrade tasks", "PluginSettings", "Java"],
+        "ogTitle": "Best practices разработки для Jira: производительность, безопасность, UX — Gymterview",
+        "ogDescription": "Рекомендации для Jira-разработки: пагинация, кэширование, параметризованные запросы, экранирование вывода, upgrade tasks.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть best practices при разработке для Jira?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Производительность: пагинация (никогда не загружать все данные), CacheManager для DC. Безопасность: параметризованные запросы AO (WHERE = ?), htmlEncode для Velocity, XSRF-токены. UX: AUI для DC, Atlaskit для Cloud, Atlassian Design System. Обратная совместимость: upgrade tasks, SAL PluginSettings. Feature flags для безопасного rollout."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Best practices", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ScriptRunner и когда его использовать?",
+      "questionSlug": "chto-takoe-scriptrunner-i-kogda-ego-ispolzovat",
+      "grade": "junior",
+      "tags": ["jira", "scriptrunner", "groovy", "jira-plugin"],
+      "seo": {
+        "title": "Что такое ScriptRunner и когда его использовать — Gymterview",
+        "description": "ScriptRunner для Jira DC: Script Listeners, Fields, Behaviours, Post-Functions, REST Endpoints на Groovy. Когда ScriptRunner vs кастомный плагин.",
+        "keywords": ["ScriptRunner", "Groovy", "Script Listener", "Script Field", "Behaviours", "Jira DC", "кастомизация Jira", "Adaptavist"],
+        "ogTitle": "ScriptRunner для Jira: Groovy-скриптинг vs кастомный плагин — Gymterview",
+        "ogDescription": "ScriptRunner: №1 плагин Jira Marketplace. Listeners, Fields, Behaviours, REST на Groovy. Когда достаточно ScriptRunner, когда нужен Java-плагин.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ScriptRunner и когда его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ScriptRunner — №1 плагин Jira Marketplace для кастомизации DC через Groovy-скрипты: Script Listeners (события), Script Fields (вычисляемые поля), Behaviours (динамические формы), Post-Functions/Conditions/Validators (workflow), REST Endpoints, Script Console. Покрывает 70-80% задач без Java-плагина. Cloud-версия ограничена (JavaScript, нет Behaviours, нет Console). Если задача решается за 20 минут — не пишите плагин."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "ScriptRunner", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

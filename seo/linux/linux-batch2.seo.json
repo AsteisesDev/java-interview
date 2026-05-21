@@ -1,0 +1,548 @@
+{
+  "topic": "Linux",
+  "topicSlug": "linux",
+  "batch": 2,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как работают переменные окружения в Linux?",
+      "questionSlug": "kak-rabotayut-peremennye-okruzheniya-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работают переменные окружения в Linux? — Gymterview",
+        "description": "Переменные окружения (environment variables) — именованные значения, доступные процессам. Используются для передачи конфигурации приложениям без изменения кода.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как работают переменные окружения в Linux? — Gymterview",
+        "ogDescription": "Переменные окружения (environment variables) — именованные значения, доступные процессам. Используются для передачи конф",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают переменные окружения в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Переменные окружения (environment variables) — именованные значения, доступные процессам. Используются для передачи конфигурации приложениям без изменения кода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работают переменные окружения в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как установить Java (JDK) на Ubuntu?",
+      "questionSlug": "kak-ustanovit-java-jdk-na-ubuntu",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как установить Java (JDK) на Ubuntu? — Gymterview",
+        "description": "Существует несколько способов установки JDK на Ubuntu 24.04.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как установить Java (JDK) на Ubuntu? — Gymterview",
+        "ogDescription": "Существует несколько способов установки JDK на Ubuntu 24.04.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как установить Java (JDK) на Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существует несколько способов установки JDK на Ubuntu 24.04."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как установить Java (JDK) на Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как запустить Java-приложение как systemd-сервис?",
+      "questionSlug": "kak-zapustit-java-prilozhenie-kak-systemd-servis",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как запустить Java-приложение как systemd-сервис? — Gymterview",
+        "description": "Создание systemd-сервиса позволяет Java-приложению запускаться автоматически при загрузке, перезапускаться при сбоях и управляться стандартными инструментами.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как запустить Java-приложение как systemd-сервис? — Gymterview",
+        "ogDescription": "Создание systemd-сервиса позволяет Java-приложению запускаться автоматически при загрузке, перезапускаться при сбоях и у",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как запустить Java-приложение как systemd-сервис?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Создание systemd-сервиса позволяет Java-приложению запускаться автоматически при загрузке, перезапускаться при сбоях и управляться стандартными инструментами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как запустить Java-приложение как systemd-сервис?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с Docker на Ubuntu?",
+      "questionSlug": "kak-rabotat-s-docker-na-ubuntu",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работать с Docker на Ubuntu? — Gymterview",
+        "description": "<details>",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как работать с Docker на Ubuntu? — Gymterview",
+        "ogDescription": "<details>",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с Docker на Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<details>"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работать с Docker на Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие инструменты мониторинга есть в Linux?",
+      "questionSlug": "kakie-instrumenty-monitoringa-est-v-linux",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какие инструменты мониторинга есть в Linux? — Gymterview",
+        "description": "Основные инструменты для мониторинга производительности системы.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Какие инструменты мониторинга есть в Linux? — Gymterview",
+        "ogDescription": "Основные инструменты для мониторинга производительности системы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие инструменты мониторинга есть в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные инструменты для мониторинга производительности системы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какие инструменты мониторинга есть в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить SSH-сервер в Ubuntu?",
+      "questionSlug": "kak-nastroit-ssh-server-v-ubuntu",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как настроить SSH-сервер в Ubuntu? — Gymterview",
+        "description": "SSH (Secure Shell) — протокол для безопасного удалённого доступа к серверу. В Ubuntu 24.04 используется OpenSSH.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как настроить SSH-сервер в Ubuntu? — Gymterview",
+        "ogDescription": "SSH (Secure Shell) — протокол для безопасного удалённого доступа к серверу. В Ubuntu 24.04 используется OpenSSH.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить SSH-сервер в Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSH (Secure Shell) — протокол для безопасного удалённого доступа к серверу. В Ubuntu 24.04 используется OpenSSH."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как настроить SSH-сервер в Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять часовым поясом и синхронизацией времени?",
+      "questionSlug": "kak-upravlyat-chasovym-poyasom-i-sinkhronizatsiej-vremeni",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как управлять часовым поясом и синхронизацией времени? — Gymterview",
+        "description": "Корректное время на сервере критически важно для логирования, TLS/SSL-сертификатов, распределённых систем, cron и токенов аутентификации.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как управлять часовым поясом и синхронизацией времени? — Gymterview",
+        "ogDescription": "Корректное время на сервере критически важно для логирования, TLS/SSL-сертификатов, распределённых систем, cron и токено",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять часовым поясом и синхронизацией времени?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Корректное время на сервере критически важно для логирования, TLS/SSL-сертификатов, распределённых систем, cron и токенов аутентификации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как управлять часовым поясом и синхронизацией времени?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое локали (locale) в Linux?",
+      "questionSlug": "chto-takoe-lokali-locale-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое локали (locale) в Linux? — Gymterview",
+        "description": "Локаль (locale) — набор параметров, определяющих региональные настройки: язык, кодировку, формат даты, чисел, валюты, сортировку строк.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое локали (locale) в Linux? — Gymterview",
+        "ogDescription": "Локаль (locale) — набор параметров, определяющих региональные настройки: язык, кодировку, формат даты, чисел, валюты, со",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое локали (locale) в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Локаль (locale) — набор параметров, определяющих региональные настройки: язык, кодировку, формат даты, чисел, валюты, сортировку строк."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое локали (locale) в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с архивами и сжатием в Linux?",
+      "questionSlug": "kak-rabotat-s-arkhivami-i-szhatiem-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работать с архивами и сжатием в Linux? — Gymterview",
+        "description": "Работа с архивами — повседневная задача при развёртывании приложений и резервном копировании.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как работать с архивами и сжатием в Linux? — Gymterview",
+        "ogDescription": "Работа с архивами — повседневная задача при развёртывании приложений и резервном копировании.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с архивами и сжатием в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Работа с архивами — повседневная задача при развёртывании приложений и резервном копировании."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работать с архивами и сжатием в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие команды для поиска файлов и текста существуют в Linux?",
+      "questionSlug": "kakie-komandy-dlya-poiska-fajlov-i-teksta-sushchestvuyut-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какие команды для поиска файлов и текста существуют в Linux? — Gymterview",
+        "description": "Поиск файлов и текста — одна из самых частых операций при работе на сервере.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Какие команды для поиска файлов и текста существуют в Linux? — Gymterview",
+        "ogDescription": "Поиск файлов и текста — одна из самых частых операций при работе на сервере.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие команды для поиска файлов и текста существуют в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поиск файлов и текста — одна из самых частых операций при работе на сервере."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какие команды для поиска файлов и текста существуют в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое перенаправление ввода-вывода и конвейеры (pipes)?",
+      "questionSlug": "chto-takoe-perenapravlenie-vvoda-vyvoda-i-konvejery-pipes",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое перенаправление ввода-вывода и конвейеры (pipes)? — Gymterview",
+        "description": "Каждый процесс в Linux имеет три стандартных потока ввода-вывода.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое перенаправление ввода-вывода и конвейеры (pipes)? — Gymterview",
+        "ogDescription": "Каждый процесс в Linux имеет три стандартных потока ввода-вывода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое перенаправление ввода-вывода и конвейеры (pipes)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Каждый процесс в Linux имеет три стандартных потока ввода-вывода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое перенаправление ввода-вывода и конвейеры (pipes)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает cron и планирование задач?",
+      "questionSlug": "kak-rabotaet-cron-i-planirovanie-zadach",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работает cron и планирование задач? — Gymterview",
+        "description": "cron — демон планирования периодических задач в Linux. Задачи описываются в файлах crontab.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как работает cron и планирование задач? — Gymterview",
+        "ogDescription": "cron — демон планирования периодических задач в Linux. Задачи описываются в файлах crontab.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает cron и планирование задач?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cron — демон планирования периодических задач в Linux. Задачи описываются в файлах crontab."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работает cron и планирование задач?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,908 @@
+{
+  "topic": "Servlets, JSP, JSTL",
+  "topicSlug": "servlets",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое сервлет",
+      "questionSlug": "chto-takoe-servlet",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое сервлет — Gymterview",
+        "description": "Сервлет — это Java-класс, реализующий интерфейс `javax.servlet.Servlet`, который расширяет возможности сервера для обработки клиентских запросов по модели «запр",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое сервлет — Gymterview",
+        "ogDescription": "Сервлет — это Java-класс, реализующий интерфейс `javax.servlet.Servlet`, который расширяет возможности сервера для обраб",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сервлет",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сервлет — это Java-класс, реализующий интерфейс `javax.servlet.Servlet`, который расширяет возможности сервера для обработки клиентских запросов по модели «запрос-ответ». Чаще всего сервлеты используются для обработки HTTP-запросов в веб-приложениях. Классы и интерфейсы для работы с сервлетами наход"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое сервлет",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем заключаются преимущества технологии сервлетов над CGI",
+      "questionSlug": "v-chem-zaklyuchayutsya-preimushchestva-tekhnologii-servletov-nad-cgi",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В чем заключаются преимущества технологии сервлетов над CGI — Gymterview",
+        "description": "Сервлеты превосходят CGI по производительности, масштабируемости и переносимости. Главное отличие — сервлеты работают в многопоточной модели внутри одного проце",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В чем заключаются преимущества технологии сервлетов над CGI — Gymterview",
+        "ogDescription": "Сервлеты превосходят CGI по производительности, масштабируемости и переносимости. Главное отличие — сервлеты работают в ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем заключаются преимущества технологии сервлетов над CGI",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сервлеты превосходят CGI по производительности, масштабируемости и переносимости. Главное отличие — сервлеты работают в многопоточной модели внутри одного процесса JVM, тогда как CGI порождает отдельный процесс операционной системы на каждый запрос."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В чем заключаются преимущества технологии сервлетов над CGI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова структура веб-проекта",
+      "questionSlug": "kakova-struktura-veb-proekta",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какова структура веб-проекта — Gymterview",
+        "description": "Стандартная структура Maven веб-проекта определяется спецификацией Servlet API и соглашениями Maven. Знание этой структуры необходимо для понимания того, где ко",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какова структура веб-проекта — Gymterview",
+        "ogDescription": "Стандартная структура Maven веб-проекта определяется спецификацией Servlet API и соглашениями Maven. Знание этой структу",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова структура веб-проекта",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стандартная структура Maven веб-проекта определяется спецификацией Servlet API и соглашениями Maven. Знание этой структуры необходимо для понимания того, где контейнер ищет классы, ресурсы и конфигурацию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какова структура веб-проекта",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое контейнер сервлетов",
+      "questionSlug": "chto-takoe-kontejner-servletov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое контейнер сервлетов — Gymterview",
+        "description": "Контейнер сервлетов (Servlet Container) — это серверное приложение, которое управляет жизненным циклом сервлетов, обеспечивает обмен данными между клиентом и се",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое контейнер сервлетов — Gymterview",
+        "ogDescription": "Контейнер сервлетов (Servlet Container) — это серверное приложение, которое управляет жизненным циклом сервлетов, обеспе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое контейнер сервлетов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнер сервлетов (Servlet Container) — это серверное приложение, которое управляет жизненным циклом сервлетов, обеспечивает обмен данными между клиентом и сервлетом, а также предоставляет среду выполнения: управление потоками, безопасностью и сессиями."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое контейнер сервлетов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужны сервера приложений, если есть контейнеры сервлетов",
+      "questionSlug": "zachem-nuzhny-servera-prilozhenij-esli-est-kontejnery-servletov",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Зачем нужны сервера приложений, если есть контейнеры сервлет — Gymterview",
+        "description": "Сервер приложений (Application Server) предоставляет полный стек Jakarta EE поверх Servlet API: распределённые транзакции (JTA), очереди сообщений (JMS), пулы с",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Зачем нужны сервера приложений, если есть контейнеры сервлет — Gymterview",
+        "ogDescription": "Сервер приложений (Application Server) предоставляет полный стек Jakarta EE поверх Servlet API: распределённые транзакци",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужны сервера приложений, если есть контейнеры сервлетов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сервер приложений (Application Server) предоставляет полный стек Jakarta EE поверх Servlet API: распределённые транзакции (JTA), очереди сообщений (JMS), пулы соединений с расширенным управлением, корпоративную безопасность (LDAP, SSO, SAML) и кластеризацию с миграцией сессий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Зачем нужны сервера приложений, если есть контейнеры сервлет",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как контейнер сервлетов управляет жизненным циклом сервлета",
+      "questionSlug": "kak-kontejner-servletov-upravlyaet-zhiznennym-tsiklom-servleta",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как контейнер сервлетов управляет жизненным циклом сервлета — Gymterview",
+        "description": "Контейнер управляет четырьмя фазами жизненного цикла сервлета: загрузка класса, инициализация, обработка запросов и уничтожение. Сервлет создаётся при первом об",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как контейнер сервлетов управляет жизненным циклом сервлета — Gymterview",
+        "ogDescription": "Контейнер управляет четырьмя фазами жизненного цикла сервлета: загрузка класса, инициализация, обработка запросов и унич",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как контейнер сервлетов управляет жизненным циклом сервлета",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнер управляет четырьмя фазами жизненного цикла сервлета: загрузка класса, инициализация, обработка запросов и уничтожение. Сервлет создаётся при первом обращении (или при старте приложения, если задан `load-on-startup`) и живёт до остановки приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как контейнер сервлетов управляет жизненным циклом сервлета",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое дескриптор развертывания",
+      "questionSlug": "chto-takoe-deskriptor-razvertyvaniya",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое дескриптор развертывания — Gymterview",
+        "description": "Дескриптор развертывания (Deployment Descriptor) — это XML-файл `web.xml`, расположенный в директории `WEB-INF`, который описывает конфигурацию веб-приложения: ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое дескриптор развертывания — Gymterview",
+        "ogDescription": "Дескриптор развертывания (Deployment Descriptor) — это XML-файл `web.xml`, расположенный в директории `WEB-INF`, который",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое дескриптор развертывания",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Дескриптор развертывания (Deployment Descriptor) — это XML-файл `web.xml`, расположенный в директории `WEB-INF`, который описывает конфигурацию веб-приложения: маппинг сервлетов на URL, параметры инициализации, фильтры, слушатели и настройки безопасности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое дескриптор развертывания",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие действия необходимо проделать при создании сервлетов",
+      "questionSlug": "kakie-dejstviya-neobkhodimo-prodelat-pri-sozdanii-servletov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие действия необходимо проделать при создании сервлетов — Gymterview",
+        "description": "Для создания сервлета нужно выполнить два шага: написать Java-класс, наследующий `HttpServlet`, и зарегистрировать его в контейнере (через `web.xml` или аннотац",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие действия необходимо проделать при создании сервлетов — Gymterview",
+        "ogDescription": "Для создания сервлета нужно выполнить два шага: написать Java-класс, наследующий `HttpServlet`, и зарегистрировать его в",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие действия необходимо проделать при создании сервлетов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для создания сервлета нужно выполнить два шага: написать Java-класс, наследующий `HttpServlet`, и зарегистрировать его в контейнере (через `web.xml` или аннотацию `@WebServlet`)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие действия необходимо проделать при создании сервлетов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В каком случае требуется переопределять метод service()",
+      "questionSlug": "v-kakom-sluchae-trebuetsya-pereopredelyat-metod-service",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В каком случае требуется переопределять метод service() — Gymterview",
+        "description": "Метод `service()` переопределяется, когда необходимо обрабатывать все типы HTTP-запросов (GET, POST, PUT, DELETE и т.д.) в одном методе, без разделения по типам",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В каком случае требуется переопределять метод service() — Gymterview",
+        "ogDescription": "Метод `service()` переопределяется, когда необходимо обрабатывать все типы HTTP-запросов (GET, POST, PUT, DELETE и т.д.)",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В каком случае требуется переопределять метод service()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод `service()` переопределяется, когда необходимо обрабатывать все типы HTTP-запросов (GET, POST, PUT, DELETE и т.д.) в одном методе, без разделения по типам. По умолчанию `HttpServlet.service()` определяет тип запроса и делегирует обработку соответствующему методу — `doGet()`, `doPost()` и т.д."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В каком случае требуется переопределять метод service()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Есть ли смысл определять для сервлета конструктор",
+      "questionSlug": "est-li-smysl-opredelyat-dlya-servleta-konstruktor",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Есть ли смысл определять для сервлета конструктор — Gymterview",
+        "description": "Определять конструктор для сервлета нет смысла, потому что на момент вызова конструктора объект `ServletConfig` ещё не создан и параметры инициализации недоступ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Есть ли смысл определять для сервлета конструктор — Gymterview",
+        "ogDescription": "Определять конструктор для сервлета нет смысла, потому что на момент вызова конструктора объект `ServletConfig` ещё не с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Есть ли смысл определять для сервлета конструктор",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Определять конструктор для сервлета нет смысла, потому что на момент вызова конструктора объект `ServletConfig` ещё не создан и параметры инициализации недоступны. Для инициализации данных следует переопределять метод `init()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Есть ли смысл определять для сервлета конструктор",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему необходимо переопределить только init() метод без аргументов",
+      "questionSlug": "pochemu-neobkhodimo-pereopredelit-tolko-init-metod-bez-argumentov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Почему необходимо переопределить только init() метод без арг — Gymterview",
+        "description": "Метод `init()` без аргументов следует переопределять вместо `init(ServletConfig config)`, чтобы избежать ошибки с пропущенным вызовом `super.init(config)`. Клас",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Почему необходимо переопределить только init() метод без арг — Gymterview",
+        "ogDescription": "Метод `init()` без аргументов следует переопределять вместо `init(ServletConfig config)`, чтобы избежать ошибки с пропущ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему необходимо переопределить только init() метод без аргументов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод `init()` без аргументов следует переопределять вместо `init(ServletConfig config)`, чтобы избежать ошибки с пропущенным вызовом `super.init(config)`. Класс `GenericServlet` вызывает `init()` без аргументов в конце метода `init(ServletConfig config)` — это паттерн Template Method."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Почему необходимо переопределить только init() метод без арг",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие наиболее распространенные задачи выполняются в контейнере сервлетов",
+      "questionSlug": "kakie-naibolee-rasprostranennye-zadachi-vypolnyayutsya-v-kontejnere-servletov",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие наиболее распространенные задачи выполняются в контейн — Gymterview",
+        "description": "Контейнер сервлетов берёт на себя всю инфраструктурную работу, позволяя разработчику сосредоточиться на бизнес-логике. Основные задачи контейнера:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие наиболее распространенные задачи выполняются в контейн — Gymterview",
+        "ogDescription": "Контейнер сервлетов берёт на себя всю инфраструктурную работу, позволяя разработчику сосредоточиться на бизнес-логике. О",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие наиболее распространенные задачи выполняются в контейнере сервлетов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнер сервлетов берёт на себя всю инфраструктурную работу, позволяя разработчику сосредоточиться на бизнес-логике. Основные задачи контейнера:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие наиболее распространенные задачи выполняются в контейн",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о сервлетных фильтрах",
+      "questionSlug": "chto-vy-znaete-o-servletnykh-filtrakh",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что вы знаете о сервлетных фильтрах — Gymterview",
+        "description": "Сервлетный фильтр — это Java-класс, реализующий интерфейс `javax.servlet.Filter`, который перехватывает HTTP-запросы и ответы для выполнения кросс-cutting логик",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Что вы знаете о сервлетных фильтрах — Gymterview",
+        "ogDescription": "Сервлетный фильтр — это Java-класс, реализующий интерфейс `javax.servlet.Filter`, который перехватывает HTTP-запросы и о",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о сервлетных фильтрах",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сервлетный фильтр — это Java-класс, реализующий интерфейс `javax.servlet.Filter`, который перехватывает HTTP-запросы и ответы для выполнения кросс-cutting логики: аутентификации, логирования, компрессии, CORS, модификации заголовков. Фильтры образуют цепочку (FilterChain), через которую последовател"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что вы знаете о сервлетных фильтрах",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем в сервлетах используются различные listener",
+      "questionSlug": "zachem-v-servletakh-ispolzuyutsya-razlichnye-listener",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Зачем в сервлетах используются различные listener — Gymterview",
+        "description": "Listener (слушатель) — это Java-класс, реализующий один из интерфейсов `javax.servlet.*Listener`, который работает как триггер и выполняет действия при наступле",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Зачем в сервлетах используются различные listener — Gymterview",
+        "ogDescription": "Listener (слушатель) — это Java-класс, реализующий один из интерфейсов `javax.servlet.*Listener`, который работает как т",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем в сервлетах используются различные listener",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Listener (слушатель) — это Java-класс, реализующий один из интерфейсов `javax.servlet.*Listener`, который работает как триггер и выполняет действия при наступлении событий жизненного цикла: создание/уничтожение запроса, сессии, контекста приложения, а также изменение их атрибутов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Зачем в сервлетах используются различные listener",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда стоит использовать фильтры сервлетов, а когда слушателей",
+      "questionSlug": "kogda-stoit-ispolzovat-filtry-servletov-a-kogda-slushatelej",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Когда стоит использовать фильтры сервлетов, а когда слушател — Gymterview",
+        "description": "Фильтры предназначены для обработки потока данных (запросов и ответов), а слушатели — для реакции на события жизненного цикла компонентов.",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Когда стоит использовать фильтры сервлетов, а когда слушател — Gymterview",
+        "ogDescription": "Фильтры предназначены для обработки потока данных (запросов и ответов), а слушатели — для реакции на события жизненного ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда стоит использовать фильтры сервлетов, а когда слушателей",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Фильтры предназначены для обработки потока данных (запросов и ответов), а слушатели — для реакции на события жизненного цикла компонентов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Когда стоит использовать фильтры сервлетов, а когда слушател",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать запуск сервлета одновременно с запуском приложения",
+      "questionSlug": "kak-realizovat-zapusk-servleta-odnovremenno-s-zapuskom-prilozheniya",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как реализовать запуск сервлета одновременно с запуском прил — Gymterview",
+        "description": "Для запуска сервлета при старте приложения (а не при первом запросе клиента) используется параметр `load-on-startup` в `web.xml` или атрибут `loadOnStartup` в а",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как реализовать запуск сервлета одновременно с запуском прил — Gymterview",
+        "ogDescription": "Для запуска сервлета при старте приложения (а не при первом запросе клиента) используется параметр `load-on-startup` в `",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать запуск сервлета одновременно с запуском приложения",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для запуска сервлета при старте приложения (а не при первом запросе клиента) используется параметр `load-on-startup` в `web.xml` или атрибут `loadOnStartup` в аннотации `@WebServlet`. Значение этого параметра определяет порядок загрузки: чем меньше число, тем раньше сервлет загружается."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как реализовать запуск сервлета одновременно с запуском прил",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обработать в приложении исключения, выброшенные другим сервлетом",
+      "questionSlug": "kak-obrabotat-v-prilozhenii-isklyucheniya-vybroshennye-drugim-servletom",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как обработать в приложении исключения, выброшенные другим с — Gymterview",
+        "description": "Обработка исключений в сервлетах выполняется через маппинг страниц ошибок в `web.xml`. Можно указать обработчик как для конкретных HTTP-кодов, так и для типов J",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как обработать в приложении исключения, выброшенные другим с — Gymterview",
+        "ogDescription": "Обработка исключений в сервлетах выполняется через маппинг страниц ошибок в `web.xml`. Можно указать обработчик как для ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обработать в приложении исключения, выброшенные другим сервлетом",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обработка исключений в сервлетах выполняется через маппинг страниц ошибок в `web.xml`. Можно указать обработчик как для конкретных HTTP-кодов, так и для типов Java-исключений. Контейнер перенаправит запрос на указанный ресурс (сервлет или JSP), который сформирует понятный ответ пользователю."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как обработать в приложении исключения, выброшенные другим с",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что представляет собой ServletConfig",
+      "questionSlug": "chto-predstavlyaet-soboj-servletconfig",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что представляет собой ServletConfig — Gymterview",
+        "description": "`ServletConfig` — это интерфейс `javax.servlet.ServletConfig`, экземпляр которого создаётся контейнером для каждого сервлета и предоставляет доступ к параметрам",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что представляет собой ServletConfig — Gymterview",
+        "ogDescription": "`ServletConfig` — это интерфейс `javax.servlet.ServletConfig`, экземпляр которого создаётся контейнером для каждого серв",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что представляет собой ServletConfig",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ServletConfig` — это интерфейс `javax.servlet.ServletConfig`, экземпляр которого создаётся контейнером для каждого сервлета и предоставляет доступ к параметрам инициализации конкретного сервлета. Каждый сервлет имеет свой собственный объект `ServletConfig`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что представляет собой ServletConfig",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что представляет собой ServletContext",
+      "questionSlug": "chto-predstavlyaet-soboj-servletcontext",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что представляет собой ServletContext — Gymterview",
+        "description": "`ServletContext` — это единственный на всё веб-приложение объект, реализующий интерфейс `javax.servlet.ServletContext`, который предоставляет всем сервлетам общ",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что представляет собой ServletContext — Gymterview",
+        "ogDescription": "`ServletContext` — это единственный на всё веб-приложение объект, реализующий интерфейс `javax.servlet.ServletContext`, ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что представляет собой ServletContext",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ServletContext` — это единственный на всё веб-приложение объект, реализующий интерфейс `javax.servlet.ServletContext`, который предоставляет всем сервлетам общий доступ к параметрам приложения, атрибутам и ресурсам. Это общее хранилище состояния на уровне приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что представляет собой ServletContext",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличия ServletContext и ServletConfig",
+      "questionSlug": "v-chem-otlichiya-servletcontext-i-servletconfig",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В чем отличия ServletContext и ServletConfig — Gymterview",
+        "description": "Это два разных объекта с разным scope и назначением.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В чем отличия ServletContext и ServletConfig — Gymterview",
+        "ogDescription": "Это два разных объекта с разным scope и назначением.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличия ServletContext и ServletConfig",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это два разных объекта с разным scope и назначением."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В чем отличия ServletContext и ServletConfig",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

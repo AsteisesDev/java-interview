@@ -1,0 +1,548 @@
+{
+  "topic": "Тестирование",
+  "topicSlug": "testing",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое модульное тестирование?",
+      "questionSlug": "chto-takoe-modulnoe-testirovanie",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое модульное тестирование? — Gymterview",
+        "description": "Модульное (unit) тестирование -- проверка корректности отдельных модулей (классов, методов) в изоляции от внешних зависимостей, которые заменяются моками или ст",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Что такое модульное тестирование? — Gymterview",
+        "ogDescription": "Модульное (unit) тестирование -- проверка корректности отдельных модулей (классов, методов) в изоляции от внешних зависи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое модульное тестирование?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модульное (unit) тестирование -- проверка корректности отдельных модулей (классов, методов) в изоляции от внешних зависимостей, которые заменяются моками или стабами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое модульное тестирование?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое интеграционное тестирование?",
+      "questionSlug": "chto-takoe-integratsionnoe-testirovanie",
+      "grade": "middle",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое интеграционное тестирование? — Gymterview",
+        "description": "Интеграционное тестирование -- проверка взаимодействия нескольких компонентов системы: приложение + БД, приложение + внешний API, несколько сервисов вместе.",
+        "keywords": [
+          "testing",
+          "middle"
+        ],
+        "ogTitle": "Что такое интеграционное тестирование? — Gymterview",
+        "ogDescription": "Интеграционное тестирование -- проверка взаимодействия нескольких компонентов системы: приложение + БД, приложение + вне",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое интеграционное тестирование?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интеграционное тестирование -- проверка взаимодействия нескольких компонентов системы: приложение + БД, приложение + внешний API, несколько сервисов вместе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое интеграционное тестирование?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое пирамида тестирования?",
+      "questionSlug": "chto-takoe-piramida-testirovaniya",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое пирамида тестирования? — Gymterview",
+        "description": "Пирамида тестирования -- модель, описывающая оптимальное соотношение типов тестов: много быстрых unit-тестов внизу, среднее количество интеграционных в середине",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Что такое пирамида тестирования? — Gymterview",
+        "ogDescription": "Пирамида тестирования -- модель, описывающая оптимальное соотношение типов тестов: много быстрых unit-тестов внизу, сред",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое пирамида тестирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пирамида тестирования -- модель, описывающая оптимальное соотношение типов тестов: много быстрых unit-тестов внизу, среднее количество интеграционных в середине, и мало медленных E2E-тестов наверху."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое пирамида тестирования?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют виды тестовых объектов?",
+      "questionSlug": "kakie-sushchestvuyut-vidy-testovykh-obektov",
+      "grade": "middle",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Какие существуют виды тестовых объектов? — Gymterview",
+        "description": "Тестовые объекты (test doubles) -- подменные объекты, которые заменяют реальные зависимости в тестах. Классификация по Gerard Meszaros: Dummy, Fake, Stub, Spy, ",
+        "keywords": [
+          "testing",
+          "middle"
+        ],
+        "ogTitle": "Какие существуют виды тестовых объектов? — Gymterview",
+        "ogDescription": "Тестовые объекты (test doubles) -- подменные объекты, которые заменяют реальные зависимости в тестах. Классификация по G",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют виды тестовых объектов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тестовые объекты (test doubles) -- подменные объекты, которые заменяют реальные зависимости в тестах. Классификация по Gerard Meszaros: Dummy, Fake, Stub, Spy, Mock."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Какие существуют виды тестовых объектов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем stub отличается от mock?",
+      "questionSlug": "chem-stub-otlichaetsya-ot-mock",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Чем stub отличается от mock? — Gymterview",
+        "description": "Stub подменяет данные и проверяет состояние результата, а Mock проверяет факт и порядок взаимодействия с зависимостью. Martin Fowler: \"Stubs provide canned answ",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Чем stub отличается от mock? — Gymterview",
+        "ogDescription": "Stub подменяет данные и проверяет состояние результата, а Mock проверяет факт и порядок взаимодействия с зависимостью. M",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем stub отличается от mock?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Stub подменяет данные и проверяет состояние результата, а Mock проверяет факт и порядок взаимодействия с зависимостью. Martin Fowler: \"Stubs provide canned answers, mocks verify expectations\"."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Чем stub отличается от mock?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные аннотации JUnit 5 вы знаете?",
+      "questionSlug": "kakie-osnovnye-annotatsii-junit-5-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Какие основные аннотации JUnit 5 вы знаете? — Gymterview",
+        "description": "JUnit 5 предоставляет аннотации для управления жизненным циклом тестов, параметризации, группировки и фильтрации. Ядро: `@Test`, `@BeforeEach`, `@AfterEach`, `@",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Какие основные аннотации JUnit 5 вы знаете? — Gymterview",
+        "ogDescription": "JUnit 5 предоставляет аннотации для управления жизненным циклом тестов, параметризации, группировки и фильтрации. Ядро: ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные аннотации JUnit 5 вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JUnit 5 предоставляет аннотации для управления жизненным циклом тестов, параметризации, группировки и фильтрации. Ядро: `@Test`, `@BeforeEach`, `@AfterEach`, `@BeforeAll`, `@AfterAll`, `@DisplayName`, `@Disabled`, `@Nested`, `@ParameterizedTest`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Какие основные аннотации JUnit 5 вы знаете?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Mockito и как его использовать?",
+      "questionSlug": "chto-takoe-mockito-i-kak-ego-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое Mockito и как его использовать? — Gymterview",
+        "description": "Mockito -- фреймворк для создания mock-объектов в unit-тестах. Позволяет подменить зависимости тестируемого класса и проверить взаимодействие с ними.",
+        "keywords": [
+          "testing",
+          "middle"
+        ],
+        "ogTitle": "Что такое Mockito и как его использовать? — Gymterview",
+        "ogDescription": "Mockito -- фреймворк для создания mock-объектов в unit-тестах. Позволяет подменить зависимости тестируемого класса и про",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Mockito и как его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mockito -- фреймворк для создания mock-объектов в unit-тестах. Позволяет подменить зависимости тестируемого класса и проверить взаимодействие с ними."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое Mockito и как его использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое AssertJ?",
+      "questionSlug": "chto-takoe-assertj",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое AssertJ? — Gymterview",
+        "description": "AssertJ -- библиотека fluent assertions для Java, предоставляющая читаемый chainable API вместо стандартных `assertEquals`/`assertTrue`. Входит в `spring-boot-s",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Что такое AssertJ? — Gymterview",
+        "ogDescription": "AssertJ -- библиотека fluent assertions для Java, предоставляющая читаемый chainable API вместо стандартных `assertEqual",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое AssertJ?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AssertJ -- библиотека fluent assertions для Java, предоставляющая читаемый chainable API вместо стандартных `assertEquals`/`assertTrue`. Входит в `spring-boot-starter-test`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое AssertJ?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое TDD и BDD?",
+      "questionSlug": "chto-takoe-tdd-i-bdd",
+      "grade": "middle",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое TDD и BDD? — Gymterview",
+        "description": "TDD (Test-Driven Development) -- методология разработки, при которой тесты пишутся до кода. BDD (Behavior-Driven Development) -- расширение TDD с фокусом на пов",
+        "keywords": [
+          "testing",
+          "middle"
+        ],
+        "ogTitle": "Что такое TDD и BDD? — Gymterview",
+        "ogDescription": "TDD (Test-Driven Development) -- методология разработки, при которой тесты пишутся до кода. BDD (Behavior-Driven Develop",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое TDD и BDD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TDD (Test-Driven Development) -- методология разработки, при которой тесты пишутся до кода. BDD (Behavior-Driven Development) -- расширение TDD с фокусом на поведение системы, описанное бизнес-языком в формате Given-When-Then."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое TDD и BDD?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Testcontainers и зачем они нужны?",
+      "questionSlug": "chto-takoe-testcontainers-i-zachem-oni-nuzhny",
+      "grade": "middle",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое Testcontainers и зачем они нужны? — Gymterview",
+        "description": "Testcontainers -- Java-библиотека для запуска Docker-контейнеров в тестах. Позволяет тестировать с реальными БД, брокерами сообщений, кэшами вместо in-memory за",
+        "keywords": [
+          "testing",
+          "middle"
+        ],
+        "ogTitle": "Что такое Testcontainers и зачем они нужны? — Gymterview",
+        "ogDescription": "Testcontainers -- Java-библиотека для запуска Docker-контейнеров в тестах. Позволяет тестировать с реальными БД, брокера",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Testcontainers и зачем они нужны?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Testcontainers -- Java-библиотека для запуска Docker-контейнеров в тестах. Позволяет тестировать с реальными БД, брокерами сообщений, кэшами вместо in-memory заглушек."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое Testcontainers и зачем они нужны?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать исключения в JUnit 5?",
+      "questionSlug": "kak-testirovat-isklyucheniya-v-junit-5",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Как тестировать исключения в JUnit 5? — Gymterview",
+        "description": "В JUnit 5 исключения тестируются через `assertThrows()`, который возвращает пойманное исключение для дополнительных проверок. В AssertJ используется `assertThat",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Как тестировать исключения в JUnit 5? — Gymterview",
+        "ogDescription": "В JUnit 5 исключения тестируются через `assertThrows()`, который возвращает пойманное исключение для дополнительных пров",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать исключения в JUnit 5?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В JUnit 5 исключения тестируются через `assertThrows()`, который возвращает пойманное исключение для дополнительных проверок. В AssertJ используется `assertThatThrownBy()` с fluent API."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Как тестировать исключения в JUnit 5?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Code Coverage?",
+      "questionSlug": "chto-takoe-code-coverage",
+      "grade": "junior",
+      "tags": [
+        "testing"
+      ],
+      "seo": {
+        "title": "Что такое Code Coverage? — Gymterview",
+        "description": "Code Coverage (покрытие кода) -- метрика, показывающая, какой процент кода выполняется при запуске тестов. Стандартный инструмент в Java-экосистеме -- JaCoCo.",
+        "keywords": [
+          "testing",
+          "junior"
+        ],
+        "ogTitle": "Что такое Code Coverage? — Gymterview",
+        "ogDescription": "Code Coverage (покрытие кода) -- метрика, показывающая, какой процент кода выполняется при запуске тестов. Стандартный и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Code Coverage?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Code Coverage (покрытие кода) -- метрика, показывающая, какой процент кода выполняется при запуске тестов. Стандартный инструмент в Java-экосистеме -- JaCoCo."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование",
+            "url": "/topics/testing"
+          },
+          {
+            "name": "Что такое Code Coverage?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "topic": "Журналирование",
+  "topicSlug": "logging",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие существуют типы логов?",
+      "questionSlug": "kakie-sushchestvuyut-tipy-logov",
+      "grade": "junior",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Какие существуют типы логов? — Gymterview",
+        "description": "Логи делятся на три основных типа по назначению: системные, безопасности и приложения.",
+        "keywords": [
+          "logging",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют типы логов? — Gymterview",
+        "ogDescription": "Логи делятся на три основных типа по назначению: системные, безопасности и приложения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют типы логов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Логи делятся на три основных типа по назначению: системные, безопасности и приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Какие существуют типы логов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие уровни логирования существуют?",
+      "questionSlug": "kakie-urovni-logirovaniya-sushchestvuyut",
+      "grade": "junior",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Какие уровни логирования существуют? — Gymterview",
+        "description": "Уровни логирования — это иерархия важности сообщений, позволяющая фильтровать вывод. Установка уровня INFO означает, что логируются INFO, WARN и ERROR, а TRACE ",
+        "keywords": [
+          "logging",
+          "junior"
+        ],
+        "ogTitle": "Какие уровни логирования существуют? — Gymterview",
+        "ogDescription": "Уровни логирования — это иерархия важности сообщений, позволяющая фильтровать вывод. Установка уровня INFO означает, что",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие уровни логирования существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Уровни логирования — это иерархия важности сообщений, позволяющая фильтровать вывод. Установка уровня INFO означает, что логируются INFO, WARN и ERROR, а TRACE и DEBUG отбрасываются."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Какие уровни логирования существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое SLF4J и зачем он нужен?",
+      "questionSlug": "chto-takoe-slf4j-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Что такое SLF4J и зачем он нужен? — Gymterview",
+        "description": "SLF4J (Simple Logging Facade for Java) — фасад (абстракция) над фреймворками логирования, предоставляющий единый API, а конкретная реализация (Logback, Log4j2, ",
+        "keywords": [
+          "logging",
+          "junior"
+        ],
+        "ogTitle": "Что такое SLF4J и зачем он нужен? — Gymterview",
+        "ogDescription": "SLF4J (Simple Logging Facade for Java) — фасад (абстракция) над фреймворками логирования, предоставляющий единый API, а ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SLF4J и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SLF4J (Simple Logging Facade for Java) — фасад (абстракция) над фреймворками логирования, предоставляющий единый API, а конкретная реализация (Logback, Log4j2, JUL) подключается через classpath."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Что такое SLF4J и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Logback и чем он лучше Log4j?",
+      "questionSlug": "chto-takoe-logback-i-chem-on-luchshe-log4j",
+      "grade": "middle",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Что такое Logback и чем он лучше Log4j? — Gymterview",
+        "description": "Logback — фреймворк логирования, созданный автором Log4j (Ceki Gulcu) как его преемник. Является нативной реализацией SLF4J и используется по умолчанию в Spring",
+        "keywords": [
+          "logging",
+          "middle"
+        ],
+        "ogTitle": "Что такое Logback и чем он лучше Log4j? — Gymterview",
+        "ogDescription": "Logback — фреймворк логирования, созданный автором Log4j (Ceki Gulcu) как его преемник. Является нативной реализацией SL",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Logback и чем он лучше Log4j?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Logback — фреймворк логирования, созданный автором Log4j (Ceki Gulcu) как его преемник. Является нативной реализацией SLF4J и используется по умолчанию в Spring Boot."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Что такое Logback и чем он лучше Log4j?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить логирование в Spring Boot?",
+      "questionSlug": "kak-nastroit-logirovanie-v-spring-boot",
+      "grade": "middle",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Как настроить логирование в Spring Boot? — Gymterview",
+        "description": "Spring Boot использует Logback по умолчанию и предоставляет два уровня конфигурации: простой через `application.yml` и расширенный через `logback-spring.xml`.",
+        "keywords": [
+          "logging",
+          "middle"
+        ],
+        "ogTitle": "Как настроить логирование в Spring Boot? — Gymterview",
+        "ogDescription": "Spring Boot использует Logback по умолчанию и предоставляет два уровня конфигурации: простой через `application.yml` и р",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить логирование в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot использует Logback по умолчанию и предоставляет два уровня конфигурации: простой через `application.yml` и расширенный через `logback-spring.xml`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Как настроить логирование в Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое MDC (Mapped Diagnostic Context)?",
+      "questionSlug": "chto-takoe-mdc-mapped-diagnostic-context",
+      "grade": "middle",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Что такое MDC (Mapped Diagnostic Context)? — Gymterview",
+        "description": "MDC (Mapped Diagnostic Context) — механизм SLF4J/Logback для привязки контекстных данных к текущему потоку. Все лог-записи в рамках потока автоматически обогаща",
+        "keywords": [
+          "logging",
+          "middle"
+        ],
+        "ogTitle": "Что такое MDC (Mapped Diagnostic Context)? — Gymterview",
+        "ogDescription": "MDC (Mapped Diagnostic Context) — механизм SLF4J/Logback для привязки контекстных данных к текущему потоку. Все лог-запи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое MDC (Mapped Diagnostic Context)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MDC (Mapped Diagnostic Context) — механизм SLF4J/Logback для привязки контекстных данных к текущему потоку. Все лог-записи в рамках потока автоматически обогащаются данными из MDC."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Что такое MDC (Mapped Diagnostic Context)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Structured Logging и зачем оно нужно?",
+      "questionSlug": "chto-takoe-structured-logging-i-zachem-ono-nuzhno",
+      "grade": "middle",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Что такое Structured Logging и зачем оно нужно? — Gymterview",
+        "description": "Structured Logging — логирование в машиночитаемом формате (обычно JSON) вместо plain text. Позволяет эффективно искать, фильтровать и анализировать логи в систе",
+        "keywords": [
+          "logging",
+          "middle"
+        ],
+        "ogTitle": "Что такое Structured Logging и зачем оно нужно? — Gymterview",
+        "ogDescription": "Structured Logging — логирование в машиночитаемом формате (обычно JSON) вместо plain text. Позволяет эффективно искать, ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Structured Logging и зачем оно нужно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Structured Logging — логирование в машиночитаемом формате (обычно JSON) вместо plain text. Позволяет эффективно искать, фильтровать и анализировать логи в системах агрегации по отдельным полям."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Что такое Structured Logging и зачем оно нужно?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть лучшие практики логирования?",
+      "questionSlug": "kakie-est-luchshie-praktiki-logirovaniya",
+      "grade": "middle",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Какие есть лучшие практики логирования? — Gymterview",
+        "description": "Хорошее логирование — это баланс между достаточностью информации для диагностики и отсутствием шума. Логи должны быть полезны через 3 месяца, когда контекст заб",
+        "keywords": [
+          "logging",
+          "middle"
+        ],
+        "ogTitle": "Какие есть лучшие практики логирования? — Gymterview",
+        "ogDescription": "Хорошее логирование — это баланс между достаточностью информации для диагностики и отсутствием шума. Логи должны быть по",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть лучшие практики логирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Хорошее логирование — это баланс между достаточностью информации для диагностики и отсутствием шума. Логи должны быть полезны через 3 месяца, когда контекст забыт."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Какие есть лучшие практики логирования?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют фреймворки логирования в Java?",
+      "questionSlug": "kakie-sushchestvuyut-frejmvorki-logirovaniya-v-java",
+      "grade": "junior",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Какие существуют фреймворки логирования в Java? — Gymterview",
+        "description": "В экосистеме Java исторически сложилось несколько фреймворков логирования, которые делятся на фасады (API) и реализации.",
+        "keywords": [
+          "logging",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют фреймворки логирования в Java? — Gymterview",
+        "ogDescription": "В экосистеме Java исторически сложилось несколько фреймворков логирования, которые делятся на фасады (API) и реализации.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют фреймворки логирования в Java?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В экосистеме Java исторически сложилось несколько фреймворков логирования, которые делятся на фасады (API) и реализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Какие существуют фреймворки логирования в Java?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как собирать и анализировать логи в production?",
+      "questionSlug": "kak-sobirat-i-analizirovat-logi-v-production",
+      "grade": "senior",
+      "tags": [
+        "logging"
+      ],
+      "seo": {
+        "title": "Как собирать и анализировать логи в production? — Gymterview",
+        "description": "Принцип production-логирования: приложение пишет логи в stdout (JSON), инфраструктура собирает и доставляет их в систему агрегации для поиска, визуализации и ал",
+        "keywords": [
+          "logging",
+          "senior"
+        ],
+        "ogTitle": "Как собирать и анализировать логи в production? — Gymterview",
+        "ogDescription": "Принцип production-логирования: приложение пишет логи в stdout (JSON), инфраструктура собирает и доставляет их в систему",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как собирать и анализировать логи в production?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Принцип production-логирования: приложение пишет логи в stdout (JSON), инфраструктура собирает и доставляет их в систему агрегации для поиска, визуализации и алертинга."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Журналирование",
+            "url": "/topics/logging"
+          },
+          {
+            "name": "Как собирать и анализировать логи в production?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

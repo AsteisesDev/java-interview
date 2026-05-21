@@ -1,0 +1,456 @@
+{
+  "topic": "Java Collections Framework",
+  "topicSlug": "jcf",
+  "batch": 4,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какое худшее время работы метода get(key) для ключа, которого нет в HashMap",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-getkey-dlya-klyucha-kotorogo-net-v-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Худшее время get() для отсутствующего ключа в HashMap — Gymterview",
+        "description": "O(N) до Java 8 (перебор всего списка), O(log N) с Java 8 (красно-чёрное дерево). Treeification ограничивает деградацию при плохой хэш-функции.",
+        "keywords": ["HashMap", "get()", "O(N)", "O(log N)", "treeification", "красно-чёрное дерево", "Java", "собеседование"],
+        "ogTitle": "Худшее время get() в HashMap — Gymterview",
+        "ogDescription": "O(N) до Java 8, O(log N) с Java 8. Treeification защищает от деградации.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода get(key) для ключа, которого нет в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N) до Java 8 — перебор всего списка в корзине. O(log N) с Java 8 — при 8+ элементах список преобразуется в красно-чёрное дерево. Для подтверждения отсутствия нужно проверить все элементы корзины." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "get() отсутствующий ключ", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое худшее время работы метода get(key) для ключа, который есть в HashMap",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-getkey-dlya-klyucha-kotoryy-est-v-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Худшее время get() для существующего ключа в HashMap — Gymterview",
+        "description": "O(N) до Java 8, O(log N) с Java 8. В худшем случае элемент — последний в цепочке. В среднем — O(1).",
+        "keywords": ["HashMap", "get()", "O(N)", "O(log N)", "O(1)", "treeification", "Java", "собеседование"],
+        "ogTitle": "Худшее время get() существующего ключа — Gymterview",
+        "ogDescription": "O(N) до Java 8, O(log N) с Java 8. В среднем O(1) при хорошей хэш-функции.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода get(key) для ключа, который есть в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N) до Java 8, O(log N) с Java 8. В худшем случае все элементы в одной корзине, искомый — последний. В среднем — O(1) при хорошей хэш-функции и разумном load factor." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "get() существующий ключ", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему двусвязный список в HashMap всегда удается преобразовать в красно-черное дерево, даже если ключ не реализует Comparable",
+      "questionSlug": "pochemu-dvusvyaznyy-spisok-v-hashmap-vsegda-udaetsya-preobrazovat-v-krasno-chernoe-derevo-dazhe-esli-klyuch-ne-realizuet-comparable",
+      "grade": "senior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Treeification без Comparable — tieBreakOrder в HashMap — Gymterview",
+        "description": "Алгоритм: 1) сравнение хэшей, 2) compareTo() если Comparable, 3) tieBreakOrder: имя класса → System.identityHashCode(). Comparable не обязателен.",
+        "keywords": ["HashMap", "treeification", "Comparable", "tieBreakOrder", "identityHashCode", "красно-чёрное дерево", "Java 8", "Java", "собеседование"],
+        "ogTitle": "Treeification HashMap без Comparable — Gymterview",
+        "ogDescription": "Три шага: хэши → compareTo → tieBreakOrder (имя класса + identityHashCode). Comparable не обязателен.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Почему двусвязный список в HashMap всегда удается преобразовать в красно-черное дерево, даже если ключ не реализует Comparable", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Многоступенчатый алгоритм сравнения: 1) хэш-коды ключей, 2) compareTo() если оба Comparable, 3) tieBreakOrder(): имя класса (getClass().getName()), затем System.identityHashCode(). identityHashCode обеспечивает детерминированный порядок без Comparable." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Treeification без Comparable", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сколько переходов происходит в момент вызова HashMap.get(key) по ключу, который есть в таблице",
+      "questionSlug": "skolko-perekhodov-proiskhodit-v-moment-vyzova-hashmapgetkey-po-klyuchu-kotoryy-est-v-tablitse",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Шаги HashMap.get(key) — 4 перехода — Gymterview",
+        "description": "Для null — 1 переход. Для не-null — 4 шага: вычисление hashCode, индекс корзины, поиск по цепочке с equals(), возврат значения.",
+        "keywords": ["HashMap", "get()", "hashCode", "equals", "корзина", "Node", "Java", "собеседование"],
+        "ogTitle": "Сколько переходов при HashMap.get(key) — Gymterview",
+        "ogDescription": "null: 1 переход. Не-null: hashCode → индекс → поиск → возврат = 4 шага.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сколько переходов происходит в момент вызова HashMap.get(key) по ключу, который есть в таблице", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Для null — 1 переход. Для не-null — 4 шага: вычисление hashCode, определение индекса корзины (hash & capacity-1), поиск в цепочке с equals(), возврат значения." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Шаги get(key)", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сколько создается новых объектов, когда вы добавляете новый элемент в HashMap",
+      "questionSlug": "skolko-sozdaetsya-novykh-obektov-kogda-vy-dobavlyaete-novyy-element-v-hashmap",
+      "grade": "junior",
+      "tags": ["jcf", "memory"],
+      "seo": {
+        "title": "Один новый Node при добавлении в HashMap — Gymterview",
+        "description": "Один объект Node<K,V> с полями hash, key, value, next. При рехешировании — новый массив, но Node не пересоздаются. При treeification — TreeNode вместо Node.",
+        "keywords": ["HashMap", "Node", "Entry", "put()", "объект", "hash", "key", "value", "next", "Java", "собеседование"],
+        "ogTitle": "Новые объекты при HashMap.put() — Gymterview",
+        "ogDescription": "Один Node<K,V>: hash, key, value, next. При resize — новый массив, Node перемещаются.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сколько создается новых объектов, когда вы добавляете новый элемент в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Один объект Node<K,V> с полями hash, key, value, next. При рехешировании создаётся новый массив корзин, но Node не пересоздаются. При treeification — TreeNode вместо Node." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Node при put()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как и когда происходит увеличение количества корзин в HashMap",
+      "questionSlug": "kak-i-kogda-proiskhodit-uvelichenie-kolichestva-korzin-v-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Resize HashMap — threshold = capacity * loadFactor — Gymterview",
+        "description": "Resize при size > threshold (capacity * loadFactor). Capacity удваивается, элементы перераспределяются. По умолчанию loadFactor=0.75. Задайте initialCapacity для избежания resize.",
+        "keywords": ["HashMap", "resize", "rehash", "threshold", "loadFactor", "capacity", "0.75", "initialCapacity", "Java", "собеседование"],
+        "ogTitle": "Увеличение корзин HashMap — resize — Gymterview",
+        "ogDescription": "При size > capacity*0.75 — удвоение capacity и перераспределение элементов. O(N) операция.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как и когда происходит увеличение количества корзин в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Когда size > threshold (capacity * loadFactor, по умолчанию 0.75). Capacity удваивается, все элементы перераспределяются по новым корзинам — O(N). Для избежания resize задайте initialCapacity: new HashMap<>(expectedSize / 0.75 + 1)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Resize HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Объясните смысл параметров в конструкторе HashMap(int initialCapacity, float loadFactor)",
+      "questionSlug": "obyasnite-smysl-parametrov-v-konstruktore-hashmapint-initialcapacity-float-loadfactor",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "HashMap initialCapacity и loadFactor — Gymterview",
+        "description": "initialCapacity — начальное количество корзин (округляется до 2^n). loadFactor — порог заполнения для resize (по умолчанию 0.75). Формула: threshold = capacity * loadFactor.",
+        "keywords": ["HashMap", "initialCapacity", "loadFactor", "конструктор", "threshold", "resize", "0.75", "Java", "собеседование"],
+        "ogTitle": "HashMap: initialCapacity и loadFactor — Gymterview",
+        "ogDescription": "initialCapacity — корзины (2^n). loadFactor — порог resize (0.75). threshold = capacity * loadFactor.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Объясните смысл параметров в конструкторе HashMap(int initialCapacity, float loadFactor)", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "initialCapacity — начальное число корзин (округляется до 2^n). loadFactor — коэффициент загрузки, при превышении capacity*loadFactor — resize. По умолчанию 0.75: компромисс между памятью и коллизиями. Низкий (0.5) — меньше коллизий, больше памяти." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "initialCapacity и loadFactor", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Будет ли работать HashMap, если все добавляемые ключи будут иметь одинаковый hashCode()",
+      "questionSlug": "budet-li-rabotat-hashmap-esli-vse-dobavlyaemye-klyuchi-budut-imet-odinakovyy-hashcode",
+      "grade": "middle",
+      "tags": ["jcf", "performance", "security"],
+      "seo": {
+        "title": "HashMap с одинаковым hashCode — вырождение и hash collision attack — Gymterview",
+        "description": "Да, но вырождается: O(N) до Java 8, O(log N) с Java 8. equals() различает ключи. Сценарий DoS-атаки — treeification как защита.",
+        "keywords": ["HashMap", "hashCode", "коллизия", "вырождение", "DoS", "hash collision attack", "treeification", "Java", "собеседование"],
+        "ogTitle": "HashMap с одинаковым hashCode — Gymterview",
+        "ogDescription": "Работает, но деградирует. O(N)/O(log N). Hash collision attack — treeification защищает.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Будет ли работать HashMap, если все добавляемые ключи будут иметь одинаковый hashCode()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Да, корректно, но деградирует: все элементы в одной корзине. O(N) до Java 8, O(log N) с Java 8 (treeification). equals() различает ключи. Сценарий hash collision attack — treeification добавлена как защита." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Одинаковый hashCode", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как перебрать все ключи Map",
+      "questionSlug": "kak-perebrat-vse-klyuchi-map",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Перебор ключей Map — keySet() — Gymterview",
+        "description": "map.keySet() возвращает Set<K> — view-представление ключей. Изменения в Map отражаются в keySet и наоборот. Добавление через keySet невозможно.",
+        "keywords": ["Map", "keySet()", "Set", "view", "итерация", "ключи", "Java", "собеседование"],
+        "ogTitle": "Перебрать ключи Map — keySet() — Gymterview",
+        "ogDescription": "keySet() — Set<K> view. Изменения в Map видны в keySet. Удаление из keySet удаляет из Map.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как перебрать все ключи Map", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "map.keySet() возвращает Set<K> — view-представление ключей. Итерация: for(K key : map.keySet()). View связан с картой: удаление из keySet удаляет из Map. Добавление через keySet — UnsupportedOperationException." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "keySet()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как перебрать все значения Map",
+      "questionSlug": "kak-perebrat-vse-znacheniya-map",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Перебор значений Map — values() — Gymterview",
+        "description": "map.values() возвращает Collection<V> — view значений. Может содержать дубликаты. Удаление из values удаляет запись из Map.",
+        "keywords": ["Map", "values()", "Collection", "view", "дубликаты", "итерация", "Java", "собеседование"],
+        "ogTitle": "Перебрать значения Map — values() — Gymterview",
+        "ogDescription": "values() — Collection<V> view. Допускает дубликаты. Удаление из values удаляет из Map.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как перебрать все значения Map", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "map.values() возвращает Collection<V> — view значений карты. В отличие от keySet(), может содержать дубликаты. View связан: удаление из values() удаляет запись из Map." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "values()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как перебрать все пары ключ-значение в Map",
+      "questionSlug": "kak-perebrat-vse-pary-klyuch-znachenie-v-map",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Перебор пар Map — entrySet() и forEach — Gymterview",
+        "description": "entrySet() возвращает Set<Map.Entry<K,V>>. Эффективнее keySet()+get(): не повторяет поиск. Java 8+: map.forEach((k,v) -> ...).",
+        "keywords": ["Map", "entrySet()", "Map.Entry", "forEach", "getKey", "getValue", "итерация", "Java", "собеседование"],
+        "ogTitle": "Перебрать пары Map — entrySet() — Gymterview",
+        "ogDescription": "entrySet(): Set<Map.Entry<K,V>>. Эффективнее keySet()+get(). Java 8: forEach(BiConsumer).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как перебрать все пары ключ-значение в Map", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "entrySet() — Set<Map.Entry<K,V>>. Эффективнее keySet()+get(), т.к. не повторяет вычисление хэша. Java 8+: map.forEach((key, value) -> ...). entry.getKey() и entry.getValue() для доступа к паре." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "entrySet()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличия TreeSet и HashSet",
+      "questionSlug": "v-chem-otlichiya-treeset-i-hashset",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "TreeSet vs HashSet — сортированность vs скорость — Gymterview",
+        "description": "HashSet: O(1), без порядка, допускает null. TreeSet: O(log N), отсортированный, не допускает null. TreeSet нужен для диапазонов (headSet, tailSet, subSet).",
+        "keywords": ["TreeSet", "HashSet", "O(1)", "O(log N)", "красно-чёрное дерево", "HashMap", "TreeMap", "Java", "собеседование"],
+        "ogTitle": "TreeSet vs HashSet — Gymterview",
+        "ogDescription": "HashSet: O(1), без порядка. TreeSet: O(log N), отсортированный, headSet/tailSet/subSet.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "В чем отличия TreeSet и HashSet", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "HashSet: O(1), нет порядка, допускает null, основан на HashMap. TreeSet: O(log N), отсортированный, не допускает null, основан на TreeMap (красно-чёрное дерево). TreeSet — для диапазонов и сортировки (first, last, headSet, tailSet)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "TreeSet vs HashSet", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что будет, если добавлять элементы в TreeSet по возрастанию",
+      "questionSlug": "chto-budet-esli-dobavlyat-elementy-v-treeset-po-vozrastaniyu",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "TreeSet при последовательной вставке — самобалансировка — Gymterview",
+        "description": "TreeSet работает корректно: красно-чёрное дерево самобалансируется. Ротации и перекрашивание поддерживают высоту <= 2*log2(N+1). Все операции O(log N).",
+        "keywords": ["TreeSet", "красно-чёрное дерево", "самобалансировка", "ротация", "O(log N)", "BST", "Java", "собеседование"],
+        "ogTitle": "TreeSet: самобалансировка при упорядоченной вставке — Gymterview",
+        "ogDescription": "Красно-чёрное дерево самобалансируется. Все операции O(log N) независимо от порядка вставки.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Что будет, если добавлять элементы в TreeSet по возрастанию", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "TreeSet работает корректно и эффективно. Красно-чёрное дерево автоматически балансируется через ротации и перекрашивание, высота <= 2*log2(N+1). Все операции O(log N) независимо от порядка вставки." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "TreeSet упорядоченная вставка", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем LinkedHashSet отличается от HashSet",
+      "questionSlug": "chem-linkedhashset-otlichaetsya-ot-hashset",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "LinkedHashSet vs HashSet — порядок вставки — Gymterview",
+        "description": "LinkedHashSet сохраняет insertion-order (порядок добавления), HashSet — нет. Внутри LinkedHashMap с двусвязным списком. Производительность незначительно ниже.",
+        "keywords": ["LinkedHashSet", "HashSet", "insertion-order", "LinkedHashMap", "порядок вставки", "Java", "собеседование"],
+        "ogTitle": "LinkedHashSet vs HashSet — Gymterview",
+        "ogDescription": "LinkedHashSet: insertion-order через LinkedHashMap. HashSet: без порядка. Обе O(1).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Чем LinkedHashSet отличается от HashSet", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "LinkedHashSet сохраняет insertion-order — порядок итерации совпадает с порядком добавления. Внутри LinkedHashMap вместо HashMap. Повторное добавление не меняет позицию. Производительность незначительно ниже HashSet." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "LinkedHashSet vs HashSet", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для Enum есть специальный класс java.util.EnumSet — зачем он нужен",
+      "questionSlug": "dlya-enum-est-spetsialnyy-klass-javautilenumset-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "EnumSet — битовый вектор для Enum — Gymterview",
+        "description": "EnumSet: O(1) все операции через битовые операции. RegularEnumSet — один long для <=64 элементов. Пакетные операции за O(1). Фабричные методы: of, allOf, range.",
+        "keywords": ["EnumSet", "Enum", "bit vector", "RegularEnumSet", "JumboEnumSet", "O(1)", "побитовые операции", "Java", "собеседование"],
+        "ogTitle": "EnumSet — высокоэффективный Set для Enum — Gymterview",
+        "ogDescription": "Битовый вектор: O(1) все операции. RegularEnumSet = один long. Фабрики: of(), allOf(), range().",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Для Enum есть специальный класс java.util.EnumSet — зачем он нужен", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "EnumSet — специализированный Set для Enum на основе битового вектора. Все операции O(1) (побитовые AND/OR). RegularEnumSet — один long (<=64 enum). Пакетные containsAll/retainAll — O(1). Фабрики: EnumSet.of(), allOf(), range(), complementOf()." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "EnumSet", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют способы перебирать элементы списка",
+      "questionSlug": "kakie-sushchestvuyut-sposoby-perebirat-elementy-spiska",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "4 способа перебора элементов List в Java — Gymterview",
+        "description": "for-each, Iterator, индексный for, forEach с лямбдой. Индексный for опасен для LinkedList — O(N^2). Для LinkedList — итератор или for-each.",
+        "keywords": ["List", "итерация", "for-each", "Iterator", "forEach", "лямбда", "RandomAccess", "Java", "собеседование"],
+        "ogTitle": "Способы перебора List — Gymterview",
+        "ogDescription": "for-each, Iterator, индексный for, forEach(lambda). Индексный for + LinkedList = O(N^2).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какие существуют способы перебирать элементы списка", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "4 способа: for-each (рекомендуемый), Iterator (для удаления), индексный for (только RandomAccess-списки), forEach с лямбдой (Java 8+). Индексный for для LinkedList — O(N^2), т.к. каждый get(i) обходит список." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Перебор List", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом можно получить синхронизированные объекты стандартных коллекций",
+      "questionSlug": "kakim-obrazom-mozhno-poluchit-sinkhronizirovannye-obekty-standartnykh-kollektsiy",
+      "grade": "middle",
+      "tags": ["jcf", "concurrency"],
+      "seo": {
+        "title": "Синхронизированные коллекции — Collections.synchronizedXxx — Gymterview",
+        "description": "Collections.synchronizedList/Set/Map — обёртки с synchronized. Итерация требует ручной синхронизации. Лучше: ConcurrentHashMap, CopyOnWriteArrayList.",
+        "keywords": ["synchronizedList", "synchronizedMap", "synchronizedSet", "Collections", "ConcurrentHashMap", "CopyOnWriteArrayList", "Java", "собеседование"],
+        "ogTitle": "Синхронизированные коллекции — Gymterview",
+        "ogDescription": "Collections.synchronizedXxx() — обёртки. Итерация — synchronized вручную. Лучше: ConcurrentHashMap.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Каким образом можно получить синхронизированные объекты стандартных коллекций", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Collections.synchronizedList/Set/Map — синхронизированные обёртки. Итерация требует ручного synchronized-блока. Лучше: ConcurrentHashMap, CopyOnWriteArrayList, ConcurrentLinkedQueue — гранулярная блокировка или lock-free." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Синхронизированные коллекции", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить коллекцию только для чтения",
+      "questionSlug": "kak-poluchit-kollektsiyu-tolko-dlya-chteniya",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Неизменяемые коллекции — unmodifiable и List.of — Gymterview",
+        "description": "Collections.unmodifiableXxx — view (связана с оригиналом). List.of/Set.of/Map.of (Java 9+) — полностью immutable. UnsupportedOperationException при модификации.",
+        "keywords": ["unmodifiableList", "unmodifiableMap", "List.of", "Set.of", "Map.of", "immutable", "UnsupportedOperationException", "Java", "собеседование"],
+        "ogTitle": "Неизменяемые коллекции в Java — Gymterview",
+        "ogDescription": "unmodifiableXxx — view. List.of()/Set.of() (Java 9+) — полный immutable, без null.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как получить коллекцию только для чтения", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Collections.unmodifiableList/Set/Map — view-обёртка, связана с оригиналом. List.of/Set.of/Map.of (Java 9+) — полностью immutable: не допускают null, не связаны с оригиналом. UnsupportedOperationException при попытке модификации." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Неизменяемые коллекции", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите однопоточную программу, которая заставляет коллекцию выбросить ConcurrentModificationException",
+      "questionSlug": "napishite-odnopotochnuyu-programmu-kotoraya-zastavlyaet-kollektsiyu-vybrosit-concurrentmodificationexception",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "ConcurrentModificationException в однопоточном коде — Gymterview",
+        "description": "for-each + list.remove() вызывает CME: for-each использует Iterator, list.remove() изменяет modCount. Правильно: iterator.remove() или removeIf().",
+        "keywords": ["ConcurrentModificationException", "for-each", "list.remove()", "iterator.remove()", "removeIf", "modCount", "Java", "собеседование"],
+        "ogTitle": "CME в однопоточной программе — Gymterview",
+        "ogDescription": "for-each + list.remove() → ConcurrentModificationException. Решение: iterator.remove() или removeIf().",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Напишите однопоточную программу, которая заставляет коллекцию выбросить ConcurrentModificationException", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "for (Integer n : list) { list.remove(n); } — for-each использует Iterator, list.remove() изменяет modCount напрямую → CME. Правильно: iterator.remove() или list.removeIf(predicate)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "CME однопоточная", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Приведите пример, когда коллекция выбрасывает UnsupportedOperationException",
+      "questionSlug": "priveditye-primer-kogda-kollektsiya-vybrasyvaet-unsupportedoperationexception",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "UnsupportedOperationException — Collections.emptyList, Arrays.asList, List.of — Gymterview",
+        "description": "Collections.emptyList().add(), Arrays.asList().add(), List.of().set() — UnsupportedOperationException. Arrays.asList — фиксированный размер (set OK, add нет).",
+        "keywords": ["UnsupportedOperationException", "emptyList", "Arrays.asList", "List.of", "immutable", "фиксированный размер", "Java", "собеседование"],
+        "ogTitle": "UnsupportedOperationException в коллекциях — Gymterview",
+        "ogDescription": "emptyList().add(), List.of().set() → UnsupportedOperationException. Arrays.asList — set OK, add нет.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Приведите пример, когда коллекция выбрасывает UnsupportedOperationException", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Collections.emptyList().add(1), List.of(\"a\").add(\"b\") — UnsupportedOperationException. Arrays.asList — фиксированный размер: set() разрешён, add()/remove() — UnsupportedOperationException." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "UnsupportedOperationException", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Реализуйте симметрическую разность двух коллекций используя методы Collection",
+      "questionSlug": "realizuyte-simmetricheskuyu-raznost-dvukh-kollektsiy-ispolzuya-metody-collection",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Симметрическая разность коллекций — addAll, retainAll, removeAll — Gymterview",
+        "description": "Формула: (A ∪ B) \\ (A ∩ B). Реализация: addAll (объединение), retainAll (пересечение), removeAll (вычитание). Альтернатива: два removeAll.",
+        "keywords": ["симметрическая разность", "addAll", "retainAll", "removeAll", "Collection", "множества", "Java", "собеседование"],
+        "ogTitle": "Симметрическая разность коллекций — Gymterview",
+        "ogDescription": "(A∪B)\\(A∩B): addAll + retainAll + removeAll. Или два removeAll + addAll.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Реализуйте симметрическую разность двух коллекций используя методы Collection", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Формула: (A∪B)\\(A∩B). union = new ArrayList(a); union.addAll(b); intersection = new ArrayList(a); intersection.retainAll(b); union.removeAll(intersection). Альтернатива: два removeAll (A\\B + B\\A) + addAll." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Симметрическая разность", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как, используя LinkedHashMap, сделать кэш с invalidation policy",
+      "questionSlug": "kak-ispolzuya-linkedhashmap-sdelat-kesh-s-invalidation-policy",
+      "grade": "middle",
+      "tags": ["jcf", "caching", "performance"],
+      "seo": {
+        "title": "LRU-кэш на LinkedHashMap — removeEldestEntry — Gymterview",
+        "description": "LinkedHashMap с accessOrder=true + переопределение removeEldestEntry(). Наименее используемый элемент удаляется автоматически. Для production — Caffeine/Guava.",
+        "keywords": ["LinkedHashMap", "LRU", "кэш", "accessOrder", "removeEldestEntry", "Caffeine", "Guava Cache", "invalidation", "Java", "собеседование"],
+        "ogTitle": "LRU-кэш на LinkedHashMap — Gymterview",
+        "ogDescription": "accessOrder=true + removeEldestEntry(). LRU: обращение перемещает в конец. Для production — Caffeine.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как, используя LinkedHashMap, сделать кэш с invalidation policy", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "LinkedHashMap с accessOrder=true: get()/put() перемещают элемент в конец. Переопределить removeEldestEntry() для удаления при size > maxSize. Ограничение: нет TTL, нет метрик. Для production — Caffeine Cache." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "LRU-кэш LinkedHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как одной строчкой скопировать элементы любой collection в массив",
+      "questionSlug": "kak-odnoy-strochkoy-skopirovat-elementy-lyuboy-collection-v-massiv",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "collection.toArray() — копирование в массив — Gymterview",
+        "description": "collection.toArray() → Object[]. Типизированный: toArray(new String[0]) или toArray(String[]::new). new T[0] эффективнее new T[size] благодаря JIT.",
+        "keywords": ["toArray()", "Collection", "массив", "Object[]", "типизированный массив", "Java", "собеседование"],
+        "ogTitle": "toArray() — коллекция в массив — Gymterview",
+        "ogDescription": "toArray() → Object[]. Типизированный: toArray(new T[0]). new T[0] эффективнее new T[size].",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как одной строчкой скопировать элементы любой collection в массив", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Object[] array = collection.toArray(). Типизированный: String[] array = collection.toArray(new String[0]). Java 11+: toArray(String[]::new). new T[0] эффективнее new T[size] благодаря JIT-оптимизации." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "toArray()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как одним вызовом из List получить List со всеми элементами, кроме первых и последних 3-х",
+      "questionSlug": "kak-odnim-vyzovom-iz-list-poluchit-list-so-vsemi-elementami-krome-pervykh-i-poslednikh-3-kh",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "subList() — подсписок без первых и последних элементов — Gymterview",
+        "description": "list.subList(3, list.size()-3) — view [3, size-3). View связан с оригиналом. Для копии: new ArrayList<>(subList). Граничный случай: size < 6.",
+        "keywords": ["subList", "List", "view", "подсписок", "fromIndex", "toIndex", "Java", "собеседование"],
+        "ogTitle": "subList() — подсписок — Gymterview",
+        "ogDescription": "subList(3, size-3) — view. Для копии: new ArrayList<>(subList). Проверить size >= 6.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как одним вызовом из List получить List со всеми элементами, кроме первых и последних 3-х", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "list.subList(3, list.size() - 3). Возвращает view [fromIndex, toIndex), связанный с оригиналом. Для независимой копии: new ArrayList<>(list.subList(3, list.size() - 3)). При size < 6 — IllegalArgumentException." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "subList()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как одной строчкой преобразовать HashSet в ArrayList",
+      "questionSlug": "kak-odnoy-strochkoy-preobrazovat-hashset-v-arraylist",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "HashSet → ArrayList — конструктор с Collection — Gymterview",
+        "description": "new ArrayList<>(hashSet) — конструктор вызывает toArray(). Порядок элементов зависит от итератора HashSet (не гарантирован). Для порядка — LinkedHashSet.",
+        "keywords": ["HashSet", "ArrayList", "преобразование", "конструктор", "Collection", "Java", "собеседование"],
+        "ogTitle": "HashSet → ArrayList — Gymterview",
+        "ogDescription": "new ArrayList<>(hashSet). Порядок не гарантирован. Для порядка — LinkedHashSet.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как одной строчкой преобразовать HashSet в ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "new ArrayList<>(hashSet). Конструктор ArrayList(Collection) копирует элементы. Порядок определяется итератором HashSet (не гарантирован). Для предсказуемого порядка — LinkedHashSet." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashSet → ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как одной строчкой преобразовать ArrayList в HashSet",
+      "questionSlug": "kak-odnoy-strochkoy-preobrazovat-arraylist-v-hashset",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "ArrayList → HashSet — удаление дубликатов — Gymterview",
+        "description": "new HashSet<>(arrayList) — дубликаты удаляются автоматически. Конструктор вычисляет оптимальную capacity. Простейший способ получить уникальные элементы.",
+        "keywords": ["ArrayList", "HashSet", "преобразование", "дубликаты", "уникальные элементы", "Java", "собеседование"],
+        "ogTitle": "ArrayList → HashSet — Gymterview",
+        "ogDescription": "new HashSet<>(arrayList). Дубликаты удаляются. Оптимальная capacity автоматически.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как одной строчкой преобразовать ArrayList в HashSet", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "new HashSet<>(arrayList). Дубликаты удаляются автоматически. Конструктор вычисляет оптимальную capacity. Простейший способ получить уникальные элементы из списка." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "ArrayList → HashSet", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сделайте HashSet из ключей HashMap",
+      "questionSlug": "sdelayte-hashset-iz-klyuchey-hashmap",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "HashSet из ключей HashMap — keySet() — Gymterview",
+        "description": "new HashSet<>(map.keySet()) — независимая копия. map.keySet() — view, изменения отражаются на Map. Для итерации без модификации — keySet() напрямую.",
+        "keywords": ["HashMap", "HashSet", "keySet()", "view", "копия", "ключи", "Java", "собеседование"],
+        "ogTitle": "HashSet из ключей HashMap — Gymterview",
+        "ogDescription": "new HashSet<>(map.keySet()) — копия. keySet() — view. Удаление из keySet удаляет из Map.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сделайте HashSet из ключей HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "new HashSet<>(map.keySet()). keySet() — view (изменения в Map видны). new HashSet<>() создаёт независимую копию. Для итерации без модификации — map.keySet() напрямую." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashSet из keySet", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сделайте HashMap из HashSet Map.Entry",
+      "questionSlug": "sdelayte-hashmap-iz-hashset-mapentry",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "HashMap из HashSet Map.Entry — цикл или Stream — Gymterview",
+        "description": "Цикл с put(entry.getKey(), entry.getValue()). Stream: Collectors.toMap(). При дубликатах ключей — merge-функция или IllegalStateException.",
+        "keywords": ["HashMap", "HashSet", "Map.Entry", "put", "Collectors.toMap", "Stream", "Java", "собеседование"],
+        "ogTitle": "HashMap из HashSet<Map.Entry> — Gymterview",
+        "ogDescription": "Цикл с put(getKey, getValue). Stream: Collectors.toMap(). Обработка дубликатов ключей.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сделайте HashMap из HashSet Map.Entry", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "HashMap<K,V> map = new HashMap<>(set.size()); for(Map.Entry<K,V> e : set) map.put(e.getKey(), e.getValue()). Stream: set.stream().collect(Collectors.toMap(Entry::getKey, Entry::getValue)). При дубликатах ключей — merge-функция." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashMap из Entry Set", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

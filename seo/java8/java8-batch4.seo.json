@@ -1,0 +1,98 @@
+{
+  "topic": "Java 8",
+  "topicSlug": "java8",
+  "batch": 4,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какой класс появился в Java 8 для кодирования и декодирования данных?",
+      "questionSlug": "kakoj-klass-poyavilsya-v-java-8-dlya-kodirovaniya-i-dekodirovaniya-dannykh",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какой класс появился в Java 8 для кодирования и декодировани — Gymterview",
+        "description": "`java.util.Base64` — потокобезопасный класс для кодирования и декодирования данных в формате Base64. Он пришёл на замену нестандартным решениям (`sun.misc.BASE6",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какой класс появился в Java 8 для кодирования и декодировани — Gymterview",
+        "ogDescription": "`java.util.Base64` — потокобезопасный класс для кодирования и декодирования данных в формате Base64. Он пришёл на замену",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой класс появился в Java 8 для кодирования и декодирования данных?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`java.util.Base64` — потокобезопасный класс для кодирования и декодирования данных в формате Base64. Он пришёл на замену нестандартным решениям (`sun.misc.BASE64Encoder`, Apache Commons Codec) и реализует схемы кодирования согласно RFC 4648 и RFC 2045."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какой класс появился в Java 8 для кодирования и декодировани",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать Base64 кодировщик и декодировщик?",
+      "questionSlug": "kak-sozdat-base64-kodirovshchik-i-dekodirovshchik",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как создать Base64 кодировщик и декодировщик? — Gymterview",
+        "description": "Кодирование и декодирование выполняется через статические методы класса `Base64`:",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как создать Base64 кодировщик и декодировщик? — Gymterview",
+        "ogDescription": "Кодирование и декодирование выполняется через статические методы класса `Base64`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать Base64 кодировщик и декодировщик?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кодирование и декодирование выполняется через статические методы класса `Base64`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как создать Base64 кодировщик и декодировщик?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

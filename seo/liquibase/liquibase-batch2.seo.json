@@ -1,0 +1,98 @@
+{
+  "topic": "Liquibase",
+  "topicSlug": "liquibase",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что делать, если changeset уже применён, но в нём обнаружена ошибка?",
+      "questionSlug": "chto-delat-esli-changeset-uzhe-primenyon-no-v-nyom-obnaruzhena-oshibka",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Что делать, если changeset уже применён, но в нём обнаружена — Gymterview",
+        "description": "Правильный подход зависит от того, на каком окружении changeset уже применён. Главное правило: на production никогда не изменять уже применённые changeset-ы.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Что делать, если changeset уже применён, но в нём обнаружена — Gymterview",
+        "ogDescription": "Правильный подход зависит от того, на каком окружении changeset уже применён. Главное правило: на production никогда не ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что делать, если changeset уже применён, но в нём обнаружена ошибка?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Правильный подход зависит от того, на каком окружении changeset уже применён. Главное правило: на production никогда не изменять уже применённые changeset-ы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Что делать, если changeset уже применён, но в нём обнаружена",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать Liquibase для генерации changelog из существующей БД?",
+      "questionSlug": "kak-ispolzovat-liquibase-dlya-generatsii-changelog-iz-sushchestvuyushchej-bd",
+      "grade": "middle",
+      "tags": [
+        "liquibase"
+      ],
+      "seo": {
+        "title": "Как использовать Liquibase для генерации changelog из сущест — Gymterview",
+        "description": "Команда generateChangeLog создаёт changelog на основе текущей структуры БД. Это основной способ внедрения Liquibase в уже существующий проект.",
+        "keywords": [
+          "liquibase",
+          "middle"
+        ],
+        "ogTitle": "Как использовать Liquibase для генерации changelog из сущест — Gymterview",
+        "ogDescription": "Команда generateChangeLog создаёт changelog на основе текущей структуры БД. Это основной способ внедрения Liquibase в уж",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать Liquibase для генерации changelog из существующей БД?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Команда generateChangeLog создаёт changelog на основе текущей структуры БД. Это основной способ внедрения Liquibase в уже существующий проект."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Liquibase",
+            "url": "/topics/liquibase"
+          },
+          {
+            "name": "Как использовать Liquibase для генерации changelog из сущест",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

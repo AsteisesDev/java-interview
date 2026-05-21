@@ -1,0 +1,312 @@
+{
+  "topic": "Java Collections Framework",
+  "topicSlug": "jcf",
+  "batch": 3,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что позволяет сделать PriorityQueue",
+      "questionSlug": "chto-pozvolyaet-sdelat-priorityqueue",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "PriorityQueue — очередь с приоритетами — Gymterview",
+        "description": "PriorityQueue — min-heap: элементы извлекаются по приоритету (Comparable или Comparator). offer/poll — O(log N), peek — O(1). Применение: Дейкстра, top-K задачи.",
+        "keywords": ["PriorityQueue", "приоритетная очередь", "min-heap", "Comparator", "Comparable", "O(log N)", "Дейкстра", "Java", "собеседование"],
+        "ogTitle": "PriorityQueue в Java — Gymterview",
+        "ogDescription": "Min-heap очередь: offer/poll — O(log N), peek — O(1). Элементы по приоритету через Comparable/Comparator.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Что позволяет сделать PriorityQueue", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "PriorityQueue — очередь с приоритетами на основе бинарной кучи (min-heap). Элементы извлекаются по приоритету (Comparable или Comparator). offer/poll — O(log N), peek — O(1). Не допускает null. Применение: алгоритм Дейкстры, top-K задачи." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "PriorityQueue", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Stack считается устаревшим — чем его рекомендуют заменять и почему",
+      "questionSlug": "stack-schitaetsya-ustarevshim-chem-ego-rekomenduyut-zamenyat-i-pochemu",
+      "grade": "junior",
+      "tags": ["jcf", "основы", "performance"],
+      "seo": {
+        "title": "Stack устарел — ArrayDeque как замена — Gymterview",
+        "description": "Stack устарел: синхронизация от Vector, нарушение абстракции (доступ по индексу), push() не синхронизирован. Замена — ArrayDeque: push/pop/peek без накладных расходов.",
+        "keywords": ["Stack", "ArrayDeque", "Deque", "push", "pop", "Vector", "synchronized", "устаревший", "Java", "собеседование"],
+        "ogTitle": "Stack устарел — используйте ArrayDeque — Gymterview",
+        "ogDescription": "Stack наследует Vector (синхронизация, доступ по индексу). ArrayDeque — быстрая современная замена.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Stack считается устаревшим — чем его рекомендуют заменять и почему", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Заменять на ArrayDeque. Stack устарел: наследует Vector (синхронизация, произвольный доступ по индексу нарушает абстракцию стека), push() не синхронизирован. ArrayDeque: без синхронизации, без индексного доступа, кольцевой массив." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Stack → ArrayDeque", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужен HashMap, если есть Hashtable",
+      "questionSlug": "zachem-nuzhen-hashmap-esli-est-hashtable",
+      "grade": "junior",
+      "tags": ["jcf", "performance", "concurrency"],
+      "seo": {
+        "title": "HashMap vs Hashtable — зачем нужен HashMap — Gymterview",
+        "description": "HashMap vs Hashtable: синхронизация, null-ключи/значения, fail-fast. Hashtable устарел, для потокобезопасности — ConcurrentHashMap.",
+        "keywords": ["HashMap", "Hashtable", "synchronized", "null", "fail-fast", "ConcurrentHashMap", "Java", "собеседование"],
+        "ogTitle": "HashMap vs Hashtable — Gymterview",
+        "ogDescription": "HashMap: без синхронизации, допускает null, fail-fast Iterator. Hashtable устарел → ConcurrentHashMap.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Зачем нужен HashMap, если есть Hashtable", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "HashMap не синхронизирован (быстрее), допускает null-ключ и null-значения, использует fail-fast Iterator. Hashtable синхронизирован, не допускает null. Hashtable устарел; для потокобезопасности — ConcurrentHashMap." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashMap vs Hashtable", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между HashMap и IdentityHashMap",
+      "questionSlug": "v-chem-raznitsa-mezhdu-hashmap-i-identityhashmap",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "HashMap vs IdentityHashMap — сравнение по ссылке вместо equals — Gymterview",
+        "description": "IdentityHashMap сравнивает ключи через == вместо equals(), использует System.identityHashCode(). Применение: сериализация, клонирование, обход графов объектов.",
+        "keywords": ["HashMap", "IdentityHashMap", "equals", "==", "identityHashCode", "сериализация", "клонирование", "Java", "собеседование"],
+        "ogTitle": "HashMap vs IdentityHashMap — Gymterview",
+        "ogDescription": "IdentityHashMap: сравнение ключей через == вместо equals(). Для сериализации и обхода графов.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "В чем разница между HashMap и IdentityHashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "IdentityHashMap сравнивает ключи через == (ссылочное равенство) вместо equals(), использует System.identityHashCode() вместо hashCode(). Применение: сериализация, клонирование, обход графов объектов — когда важна идентичность, а не логическое равенство." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashMap vs IdentityHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между HashMap и WeakHashMap",
+      "questionSlug": "v-chem-raznitsa-mezhdu-hashmap-i-weakhashmap",
+      "grade": "middle",
+      "tags": ["jcf", "memory", "gc"],
+      "seo": {
+        "title": "HashMap vs WeakHashMap — слабые ссылки и GC — Gymterview",
+        "description": "WeakHashMap хранит ключи как WeakReference: запись удаляется GC, когда на ключ нет strong/soft ссылок. Применение: хранение метаданных объектов без утечки памяти.",
+        "keywords": ["HashMap", "WeakHashMap", "WeakReference", "GC", "strong reference", "SoftReference", "ReferenceQueue", "Java", "собеседование"],
+        "ogTitle": "HashMap vs WeakHashMap — Gymterview",
+        "ogDescription": "Ключи WeakHashMap — WeakReference. GC удаляет запись при отсутствии strong-ссылок на ключ.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "В чем разница между HashMap и WeakHashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "WeakHashMap хранит ключи как WeakReference. Когда на ключ нет strong/soft ссылок, GC удаляет ключ, и запись автоматически удаляется из карты. Применение: хранение метаданных объектов без утечки памяти." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashMap vs WeakHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему бы не создать SoftHashMap на SoftReferences",
+      "questionSlug": "pochemu-by-ne-sozdat-softhashmap-na-softreferences",
+      "grade": "senior",
+      "tags": ["jcf", "memory", "gc"],
+      "seo": {
+        "title": "Почему нет SoftHashMap в JDK — Gymterview",
+        "description": "SoftHashMap есть в Apache Commons. Не в JDK из-за непредсказуемого поведения SoftReference (зависит от давления на heap). Для кэширования лучше Caffeine/Guava.",
+        "keywords": ["SoftHashMap", "SoftReference", "WeakHashMap", "Apache Commons", "Caffeine", "Guava Cache", "кэширование", "Java", "собеседование"],
+        "ogTitle": "SoftHashMap — почему нет в стандартной библиотеке — Gymterview",
+        "ogDescription": "SoftReference непредсказуем (зависит от heap). Для кэширования — Caffeine/Guava с контролируемыми политиками.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Почему бы не создать SoftHashMap на SoftReferences", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "SoftHashMap реализован в Apache Commons (ReferenceMap). Не в JDK: SoftReference удаляется только при нехватке памяти, поведение зависит от GC — непредсказуемо. Для кэширования лучше Caffeine/Guava Cache с контролируемыми политиками (LRU, LFU, TTL)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "SoftHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему бы не создать PhantomHashMap на PhantomReferences",
+      "questionSlug": "pochemu-by-ne-sozdat-phantomhashmap-na-phantomreferences",
+      "grade": "senior",
+      "tags": ["jcf", "memory", "gc"],
+      "seo": {
+        "title": "Почему нельзя создать PhantomHashMap — Gymterview",
+        "description": "PhantomReference.get() всегда возвращает null — невозможно получить ключ. PhantomReference предназначен для отслеживания финализации через ReferenceQueue.",
+        "keywords": ["PhantomHashMap", "PhantomReference", "get()", "null", "ReferenceQueue", "finalize", "Java", "собеседование"],
+        "ogTitle": "PhantomHashMap невозможен — Gymterview",
+        "ogDescription": "PhantomReference.get() всегда null. Предназначен для финализации, не для ассоциативного массива.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Почему бы не создать PhantomHashMap на PhantomReferences", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "PhantomReference.get() всегда возвращает null — невозможно найти запись или получить ключ. PhantomReference предназначен для отслеживания финализации через ReferenceQueue, не для ассоциативного массива." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "PhantomHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "LinkedHashMap — что в нем от LinkedList, а что от HashMap",
+      "questionSlug": "linkedhashmap-chto-v-nem-ot-linkedlist-a-chto-ot-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "LinkedHashMap — HashMap + двусвязный список — Gymterview",
+        "description": "От HashMap — хэш-таблица O(1). От LinkedList — двусвязный список для порядка итерации. Два режима: insertion-order и access-order. Основа для LRU-кэша.",
+        "keywords": ["LinkedHashMap", "HashMap", "LinkedList", "insertion-order", "access-order", "LRU", "removeEldestEntry", "Java", "собеседование"],
+        "ogTitle": "LinkedHashMap: HashMap + LinkedList — Gymterview",
+        "ogDescription": "HashMap для O(1) доступа + двусвязный список для порядка. insertion-order или access-order.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "LinkedHashMap — что в нем от LinkedList, а что от HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "От HashMap — хэш-таблица для O(1) доступа. От LinkedList (концептуально) — двусвязный список (before/after ссылки в Entry) для гарантированного порядка итерации. Два режима: insertion-order (по умолчанию) и access-order (для LRU-кэша)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "LinkedHashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем проявляется сортированность SortedMap кроме того, что toString() выводит элементы по порядку",
+      "questionSlug": "v-chem-proyavlyaetsya-sortirovannost-sortedmap-krome-togo-chto-tostring-vyvodit-elementy-po-poryadku",
+      "grade": "middle",
+      "tags": ["jcf", "interface"],
+      "seo": {
+        "title": "Сортированность SortedMap — headMap, tailMap, subMap — Gymterview",
+        "description": "Сортированность SortedMap: итерация по порядку, firstKey/lastKey, headMap/tailMap/subMap. NavigableMap добавляет floorKey, ceilingKey, descendingMap.",
+        "keywords": ["SortedMap", "NavigableMap", "TreeMap", "headMap", "tailMap", "subMap", "firstKey", "lastKey", "Java", "собеседование"],
+        "ogTitle": "Сортированность SortedMap — больше чем toString() — Gymterview",
+        "ogDescription": "Итерация, firstKey/lastKey, headMap/tailMap/subMap. NavigableMap: floorKey, ceilingKey, descendingMap.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "В чем проявляется сортированность SortedMap кроме того, что toString() выводит элементы по порядку", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Итерация по keySet/values/entrySet в отсортированном порядке. Методы firstKey/lastKey (O(log N)), headMap(toKey), tailMap(fromKey), subMap(from, to). NavigableMap добавляет floorKey, ceilingKey, descendingMap, pollFirstEntry." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Сортированность SortedMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроен HashMap",
+      "questionSlug": "kak-ustroen-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Как устроен HashMap внутри — корзины, цепочки, деревья — Gymterview",
+        "description": "HashMap: массив корзин + Node (список/дерево). put: hashCode → перемешивание → индекс → обход цепочки → equals. При 8+ элементах — treeification в красно-чёрное дерево.",
+        "keywords": ["HashMap", "bucket", "корзина", "Node", "hashCode", "equals", "treeification", "красно-чёрное дерево", "TREEIFY_THRESHOLD", "Java", "собеседование"],
+        "ogTitle": "Устройство HashMap — Gymterview",
+        "ogDescription": "Массив корзин + цепочки Node. hashCode → индекс → equals. Java 8: treeification при 8+ элементах.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как устроен HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Массив корзин (buckets), каждая хранит связный список/дерево Node<K,V>. put: hashCode() → перемешивание (hash ^ hash>>>16) → индекс (hash & capacity-1) → обход цепочки с equals(). При 8+ элементах в корзине — treeification в красно-чёрное дерево." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Устройство HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализована HashMap — на основе открытой адресации или метода цепочек",
+      "questionSlug": "kak-realizovana-hashmap-na-osnove-otkrytoy-adresatsii-ili-metoda-tsepochek",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "HashMap — метод цепочек vs открытая адресация — Gymterview",
+        "description": "HashMap — метод цепочек (chaining): каждая корзина — связный список/дерево. Открытая адресация — IdentityHashMap. Сравнение плюсов и минусов обоих подходов.",
+        "keywords": ["HashMap", "chaining", "метод цепочек", "открытая адресация", "линейное пробирование", "IdentityHashMap", "хэш-таблица", "Java", "собеседование"],
+        "ogTitle": "HashMap: метод цепочек — Gymterview",
+        "ogDescription": "HashMap — chaining: load factor > 1, простое удаление. IdentityHashMap — открытая адресация.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как реализована HashMap — на основе открытой адресации или метода цепочек", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "HashMap — метод цепочек (chaining): каждой корзине соответствует список/дерево. Выбрано потому что: load factor может быть > 1, деградация линейная, удаление простое. Открытая адресация используется в IdentityHashMap (линейное пробирование)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "HashMap: метод цепочек", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает HashMap при попытке сохранить два элемента с одинаковым hashCode(), но разными equals()",
+      "questionSlug": "kak-rabotaet-hashmap-pri-popytke-sokhranit-dva-elementa-s-odinakovym-hashcode-no-raznymi-equals",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Коллизия hashCode в HashMap — два элемента в одной корзине — Gymterview",
+        "description": "Оба элемента сохраняются в одной корзине. HashMap обходит цепочку, вызывает equals(). Если equals() false — добавляет в конец списка/дерева. Это коллизия.",
+        "keywords": ["HashMap", "коллизия", "hashCode", "equals", "корзина", "цепочка", "chaining", "Java", "собеседование"],
+        "ogTitle": "Коллизия hashCode в HashMap — Gymterview",
+        "ogDescription": "Оба элемента в одной корзине. equals() false → оба сохраняются в цепочке. Это коллизия хэш-функции.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как работает HashMap при попытке сохранить два элемента с одинаковым hashCode(), но разными equals()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Оба попадают в одну корзину (одинаковый hashCode → одинаковый индекс). HashMap обходит цепочку, вызывая equals() для каждого ключа. Поскольку equals() false — ключи разные, оба элемента сохраняются в цепочке. Это коллизия." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Коллизия hashCode", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое начальное количество корзин в HashMap",
+      "questionSlug": "kakoe-nachalnoe-kolichestvo-korzin-v-hashmap",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Начальная capacity HashMap — 16 — Gymterview",
+        "description": "По умолчанию 16 корзин (DEFAULT_INITIAL_CAPACITY). Всегда степень двойки для битовой операции hash & (capacity-1). Через конструктор — округление вверх до 2^n.",
+        "keywords": ["HashMap", "capacity", "16", "степень двойки", "DEFAULT_INITIAL_CAPACITY", "initialCapacity", "Java", "собеседование"],
+        "ogTitle": "Начальное количество корзин HashMap — 16 — Gymterview",
+        "ogDescription": "16 по умолчанию. Всегда степень двойки: hash & (capacity-1) вместо hash % capacity.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое начальное количество корзин в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "По умолчанию 16 (DEFAULT_INITIAL_CAPACITY). Всегда степень двойки для использования hash & (capacity-1) вместо дорогого hash % capacity. Через конструктор HashMap(initialCapacity) — округление вверх до ближайшей степени двойки." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Capacity HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова оценка временной сложности операций над элементами из HashMap",
+      "questionSlug": "kakova-otsenka-vremennoy-slozhnosti-operatsiy-nad-elementami-iz-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Сложность операций HashMap — O(1) среднее, O(log N) худшее — Gymterview",
+        "description": "put/get/remove: O(1) средний, O(N) худший до Java 8, O(log N) с Java 8 (treeification). TREEIFY_THRESHOLD=8, UNTREEIFY_THRESHOLD=6.",
+        "keywords": ["HashMap", "сложность", "O(1)", "O(log N)", "O(N)", "treeification", "TREEIFY_THRESHOLD", "красно-чёрное дерево", "Java", "собеседование"],
+        "ogTitle": "Сложность операций HashMap — Gymterview",
+        "ogDescription": "O(1) среднее, O(log N) худшее (Java 8+). Treeification при 8+ элементах в корзине.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какова оценка временной сложности операций над элементами из HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Среднее: O(1). Худшее до Java 8: O(N) — все элементы в одной корзине (список). С Java 8: O(log N) — при 8+ элементах список преобразуется в красно-чёрное дерево (TREEIFY_THRESHOLD=8, обратно при 6)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Сложность HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Возможна ли ситуация, когда HashMap выродится в список даже с ключами, имеющими разные hashCode()",
+      "questionSlug": "vozmozhna-li-situatsiya-kogda-hashmap-vyroditsya-v-spisok-dazhe-s-klyuchami-imeyushchimi-raznye-hashcode",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Может ли HashMap вырожиться с разными hashCode — Gymterview",
+        "description": "Да: разные hashCode могут давать одинаковый индекс корзины (hash & capacity-1). Пример: hashCode 1, 17, 33 при capacity=16. Защита: перемешивание + treeification.",
+        "keywords": ["HashMap", "коллизия", "hashCode", "вырождение", "capacity", "перемешивание", "treeification", "Java", "собеседование"],
+        "ogTitle": "HashMap: вырождение с разными hashCode — Gymterview",
+        "ogDescription": "Да: разные hashCode → одинаковый индекс корзины. Перемешивание хэша и treeification как защита.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Возможна ли ситуация, когда HashMap выродится в список даже с ключами, имеющими разные hashCode()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Да. Разные hashCode могут давать одинаковый индекс корзины: hash & (capacity-1). При capacity=16 hashCode 1, 17, 33 попадут в одну корзину. Защита: перемешивание (hash ^ hash>>>16) и treeification (Java 8+)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Вырождение HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В каком случае может быть потерян элемент в HashMap",
+      "questionSlug": "v-kakom-sluchae-mozhet-byt-poteryan-element-v-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "основы", "best-practices"],
+      "seo": {
+        "title": "Потеря элемента в HashMap — мутабельный ключ — Gymterview",
+        "description": "Элемент теряется при изменении мутабельного ключа после put(): новый hashCode → другая корзина → элемент не найден. Ключи должны быть immutable.",
+        "keywords": ["HashMap", "потеря элемента", "мутабельный ключ", "hashCode", "equals", "immutable", "Java", "собеседование"],
+        "ogTitle": "Потеря элемента в HashMap — Gymterview",
+        "ogDescription": "Мутабельный ключ: изменение после put() → другой hashCode → элемент потерян. Ключи = immutable.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "В каком случае может быть потерян элемент в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "При изменении мутабельного ключа после добавления: hashCode меняется, get() ищет в другой корзине. При рехешировании элемент попадёт в корзину по новому hashCode — потерян окончательно. Правило: ключи HashMap должны быть immutable." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Потеря элемента HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему нельзя использовать byte[] в качестве ключа в HashMap",
+      "questionSlug": "pochemu-nelzya-ispolzovat-byte-v-kachestve-klyucha-v-hashmap",
+      "grade": "middle",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "byte[] как ключ HashMap — почему нельзя — Gymterview",
+        "description": "Массив не переопределяет hashCode/equals — работают по ссылке (Object). Два массива с одинаковым содержимым → разные hashCode и equals=false. Альтернатива: ByteBuffer или String.",
+        "keywords": ["HashMap", "byte[]", "массив", "hashCode", "equals", "Object", "ByteBuffer", "ключ", "Java", "собеседование"],
+        "ogTitle": "byte[] как ключ HashMap — нельзя — Gymterview",
+        "ogDescription": "hashCode/equals массива — по ссылке. Два массива {1,2,3} — разные ключи. Используйте ByteBuffer.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Почему нельзя использовать byte[] в качестве ключа в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Массив byte[] не переопределяет hashCode() и equals() — используются методы Object, основанные на ссылке. Два массива с одинаковым содержимым имеют разные hashCode и equals=false. Альтернативы: ByteBuffer.wrap(bytes) или String." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "byte[] как ключ HashMap", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль equals() и hashCode() в HashMap",
+      "questionSlug": "kakova-rol-equals-i-hashcode-v-hashmap",
+      "grade": "junior",
+      "tags": ["jcf", "основы", "core"],
+      "seo": {
+        "title": "Роль equals() и hashCode() в HashMap — Gymterview",
+        "description": "hashCode() определяет корзину, equals() находит элемент в корзине. Контракт: equals=true → hashCode одинаковый. Нарушение = потеря элементов.",
+        "keywords": ["HashMap", "equals", "hashCode", "корзина", "контракт", "коллизия", "Java", "собеседование"],
+        "ogTitle": "equals() и hashCode() в HashMap — Gymterview",
+        "ogDescription": "hashCode → корзина. equals → элемент в корзине. Контракт: equals=true → hashCode одинаковый.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какова роль equals() и hashCode() в HashMap", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "hashCode() определяет индекс корзины (hash & capacity-1). equals() сравнивает ключи в корзине для нахождения элемента. Контракт: если a.equals(b) == true, то a.hashCode() == b.hashCode(). Нарушение → элемент не найдётся." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "equals() и hashCode()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каково максимальное число значений hashCode()",
+      "questionSlug": "kakovo-maksimalnoe-chislo-znacheniy-hashcode",
+      "grade": "junior",
+      "tags": ["jcf", "основы", "core"],
+      "seo": {
+        "title": "Максимальное число значений hashCode() — 2^32 — Gymterview",
+        "description": "2^32 (4 294 967 296) — диапазон int. Реальное количество корзин HashMap всегда меньше. Хорошая хэш-функция должна равномерно распределять значения.",
+        "keywords": ["hashCode", "int", "2^32", "диапазон", "хэш-функция", "HashMap", "Java", "собеседование"],
+        "ogTitle": "Максимум значений hashCode() — 2^32 — Gymterview",
+        "ogDescription": "2^32 = 4 294 967 296 — диапазон int. Корзин в HashMap всегда меньше.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Каково максимальное число значений hashCode()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "2^32 (4 294 967 296) — следует из сигнатуры int hashCode(). Тип int: -2^31..2^31-1. Реальное количество корзин HashMap значительно меньше (16..миллионы), поэтому разные hashCode отображаются на один индекс." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Максимум hashCode()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

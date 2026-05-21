@@ -1,0 +1,349 @@
+{
+  "topic": "Hibernate",
+  "topicSlug": "hibernate",
+  "batch": 2,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Query Cache?",
+      "questionSlug": "chto-takoe-query-cache",
+      "grade": "senior",
+      "tags": ["hibernate", "jpa", "caching", "query-cache", "performance"],
+      "seo": {
+        "title": "Что такое Query Cache в Hibernate — Gymterview",
+        "description": "Query Cache хранит список ID результатов JPQL/HQL-запросов. Работает в связке с L2 Cache. Инвалидируется при любом изменении таблицы. Настройка.",
+        "keywords": ["Query Cache", "кэш запросов", "JPQL", "HQL", "L2 Cache", "cacheable", "Hibernate", "инвалидация", "JPA"],
+        "ogTitle": "Query Cache: кэширование результатов JPQL-запросов в Hibernate — Gymterview",
+        "ogDescription": "Query Cache хранит список ID, работает в связке с L2 Cache. Без L2 Cache бесполезен. Инвалидируется при любом UPDATE таблицы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Query Cache?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Query Cache — кэш результатов JPQL/HQL-запросов в Hibernate. Хранит не данные, а список ID сущностей. Ключ: запрос + параметры. Работает в связке с L2 Cache: получает ID из Query Cache, затем данные из L2 Cache. Без L2 Cache бесполезен. Инвалидируется при любом изменении таблицы, участвующей в запросе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Query Cache", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "HQL и JPQL — что это и чем отличаются от SQL?",
+      "questionSlug": "hql-i-jpql-chto-eto-i-chem-otlichayutsya-ot-sql",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "jpql", "hql", "sql"],
+      "seo": {
+        "title": "HQL и JPQL — что это и чем отличаются от SQL — Gymterview",
+        "description": "JPQL — объектно-ориентированный язык запросов JPA (работает с сущностями). HQL — расширение от Hibernate. SELECT, JOIN, агрегация, bulk UPDATE/DELETE.",
+        "keywords": ["JPQL", "HQL", "SQL", "объектные запросы", "JOIN FETCH", "bulk UPDATE", "setParameter", "Hibernate", "JPA"],
+        "ogTitle": "JPQL vs HQL vs SQL: объектные запросы в Hibernate — Gymterview",
+        "ogDescription": "JPQL работает с сущностями, SQL — с таблицами. HQL расширяет JPQL. Навигация через точку, bulk-операции, защита от SQL Injection.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "HQL и JPQL — что это и чем отличаются от SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPQL (Jakarta Persistence Query Language) — объектно-ориентированный язык запросов JPA, работающий с сущностями и их полями (FROM User u, не FROM users). HQL — расширение JPQL от Hibernate. Отличия от SQL: навигация через точку (u.department.name), работа с Java-типами, автоматическая генерация JOIN. Bulk UPDATE/DELETE обходят Persistence Context — нужен clear()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "HQL и JPQL", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Criteria API — что это и когда использовать?",
+      "questionSlug": "criteria-api-chto-eto-i-kogda-ispolzovat",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "criteria-api", "specification", "dynamic-query"],
+      "seo": {
+        "title": "Criteria API — что это и когда использовать — Gymterview",
+        "description": "Criteria API — type-safe построение запросов через Java-объекты. Для динамических фильтров. Spring Data Specification как обёртка. Metamodel Generator.",
+        "keywords": ["Criteria API", "CriteriaBuilder", "Specification", "динамические запросы", "Metamodel", "JPA", "Hibernate", "QueryDSL"],
+        "ogTitle": "Criteria API и Spring Data Specification: динамические запросы — Gymterview",
+        "ogDescription": "Criteria API для динамических фильтров, Spring Data Specification как обёртка. Type-safety через Metamodel Generator. Сравнение с JPQL и QueryDSL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Criteria API — что это и когда использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Criteria API — программный type-safe способ построения запросов в JPA через Java-объекты (CriteriaBuilder, CriteriaQuery, Predicate). Основное преимущество — динамические запросы с переменным набором условий. Для статических запросов JPQL проще. Spring Data Specification — удобная обёртка. JPA Static Metamodel Generator (User_) обеспечивает проверку на этапе компиляции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Criteria API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Оптимистичная и пессимистичная блокировки",
+      "questionSlug": "optimistichnaya-i-pessimistichnaya-blokirovki",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "locking", "concurrency", "performance"],
+      "seo": {
+        "title": "Оптимистичная и пессимистичная блокировки в Hibernate — Gymterview",
+        "description": "Оптимистичная блокировка через @Version (проверка при UPDATE), пессимистичная через FOR UPDATE. Сравнение, LockModeType, обработка конфликтов.",
+        "keywords": ["оптимистичная блокировка", "пессимистичная блокировка", "@Version", "OptimisticLockException", "FOR UPDATE", "LockModeType", "Hibernate", "JPA"],
+        "ogTitle": "Оптимистичная vs пессимистичная блокировка в JPA/Hibernate — Gymterview",
+        "ogDescription": "@Version для оптимистичной, FOR UPDATE для пессимистичной. Сравнение: когда какую использовать, deadlock, таймаут.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Оптимистичная и пессимистичная блокировки",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оптимистичная блокировка (@Version): проверяет версию при UPDATE, бросает OptimisticLockException при конфликте. Подходит для 90% случаев. Пессимистичная (LockModeType.PESSIMISTIC_WRITE → FOR UPDATE): блокирует строку в БД, предотвращая конкурентный доступ. Для финансовых операций. Оптимистичная — при редких конфликтах, пессимистичная — при частых. Deadlock возможен только при пессимистичной."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Блокировки", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Стратегии наследования в Hibernate",
+      "questionSlug": "strategii-nasledovaniya-v-hibernate",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "inheritance", "mapping"],
+      "seo": {
+        "title": "Стратегии наследования в Hibernate — Gymterview",
+        "description": "Три стратегии JPA: SINGLE_TABLE (одна таблица), JOINED (таблица на класс), TABLE_PER_CLASS (таблица на конкретный класс). Сравнение и примеры кода.",
+        "keywords": ["наследование Hibernate", "SINGLE_TABLE", "JOINED", "TABLE_PER_CLASS", "InheritanceType", "DiscriminatorColumn", "JPA", "Hibernate"],
+        "ogTitle": "Стратегии наследования: SINGLE_TABLE vs JOINED vs TABLE_PER_CLASS — Gymterview",
+        "ogDescription": "Три стратегии маппинга наследования в JPA. SINGLE_TABLE — быстро, но NULL-столбцы. JOINED — нормализовано. TABLE_PER_CLASS — редко используется.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Стратегии наследования в Hibernate",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPA определяет 3 стратегии: SINGLE_TABLE — все подклассы в одной таблице с дискриминатором (быстрые полиморфные запросы, но NULL-столбцы). JOINED — таблица на каждый класс, связь по PK/FK (нормализовано, но JOIN при запросах). TABLE_PER_CLASS — отдельная таблица для каждого конкретного класса (UNION ALL при полиморфных запросах). SINGLE_TABLE — стандартный выбор."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Наследование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Dirty Checking и Flush?",
+      "questionSlug": "chto-takoe-dirty-checking-i-flush",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "dirty-checking", "flush", "persistence-context"],
+      "seo": {
+        "title": "Dirty Checking и Flush в Hibernate — Gymterview",
+        "description": "Dirty Checking автоматически отслеживает изменения Persistent-сущностей. Flush синхронизирует Persistence Context с БД. FlushMode, @DynamicUpdate.",
+        "keywords": ["Dirty Checking", "Flush", "FlushMode", "snapshot", "@DynamicUpdate", "readOnly", "Persistence Context", "Hibernate", "JPA"],
+        "ogTitle": "Dirty Checking и Flush: автоматическое отслеживание изменений в Hibernate — Gymterview",
+        "ogDescription": "Hibernate сравнивает snapshot при загрузке с текущим состоянием и генерирует UPDATE. Flush: commit, перед запросом, явный вызов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Dirty Checking и Flush?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dirty Checking — механизм автоматического отслеживания изменений Persistent-сущностей. При flush Hibernate сравнивает текущее состояние с snapshot (снимком при загрузке) и генерирует UPDATE. Flush — синхронизация Persistence Context с БД. Происходит при commit, перед JPQL-запросом (AUTO), при явном вызове flush(). Flush не равен commit: flush отправляет SQL, commit фиксирует транзакцию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Dirty Checking и Flush", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое EntityManager и чем он отличается от Session?",
+      "questionSlug": "chto-takoe-entitymanager-i-chem-on-otlichaetsya-ot-session",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "entity-manager", "session"],
+      "seo": {
+        "title": "EntityManager vs Session в Hibernate — Gymterview",
+        "description": "EntityManager — стандартный JPA API. Session — расширение Hibernate с Natural ID, multi-load, фильтрами. Переход через unwrap(). Сравнительная таблица.",
+        "keywords": ["EntityManager", "Session", "JPA", "Hibernate", "unwrap", "NaturalId", "multiLoad", "enableFilter", "PersistenceContext"],
+        "ogTitle": "EntityManager vs Session: стандартный JPA и расширения Hibernate — Gymterview",
+        "ogDescription": "EntityManager — стандарт JPA, Session — расширение Hibernate. Natural ID, multi-load, фильтры доступны только через Session.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое EntityManager и чем он отличается от Session?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EntityManager — JPA-интерфейс для управления сущностями (persist, find, merge, remove). Session — Hibernate-интерфейс, расширяющий EntityManager: Natural ID (byNaturalId), multi-load (byMultipleIds), фильтры (enableFilter), read-only mode. Доступ через entityManager.unwrap(Session.class). По умолчанию используйте EntityManager, переключайтесь на Session для специфичных оптимизаций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "EntityManager vs Session", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает каскадирование (CascadeType)?",
+      "questionSlug": "kak-rabotaet-kaskadirovanie-cascadetype",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "cascade", "orphan-removal", "relationships"],
+      "seo": {
+        "title": "Каскадирование (CascadeType) в Hibernate — Gymterview",
+        "description": "CascadeType: PERSIST, MERGE, REMOVE, ALL. orphanRemoval для удаления «сирот». Каскад только для parent-child, не для ссылочных связей.",
+        "keywords": ["CascadeType", "PERSIST", "MERGE", "REMOVE", "ALL", "orphanRemoval", "каскадирование", "Hibernate", "JPA"],
+        "ogTitle": "CascadeType и orphanRemoval: каскадные операции в Hibernate — Gymterview",
+        "ogDescription": "Каскадирование распространяет операции от родителя к ребёнку. CascadeType.ALL + orphanRemoval для parent-child. Опасность каскада на @ManyToOne.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает каскадирование (CascadeType)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Каскадирование распространяет операции с родительской сущности на дочерние. Типы: PERSIST, MERGE, REMOVE, REFRESH, DETACH, ALL. orphanRemoval=true удаляет дочернюю сущность при удалении из коллекции родителя. Каскад только от родителя к ребёнку. Используйте ALL+orphanRemoval для parent-child (Order→OrderItem). Никогда CascadeType.ALL для @ManyToOne."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Каскадирование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое LazyInitializationException и как его избежать?",
+      "questionSlug": "chto-takoe-lazyinitializationexception-i-kak-ego-izbezhat",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "lazy-loading", "fetch", "osiv"],
+      "seo": {
+        "title": "LazyInitializationException в Hibernate и как его избежать — Gymterview",
+        "description": "LazyInitializationException возникает при обращении к LAZY-прокси после закрытия Session. Решения: JOIN FETCH, @EntityGraph, DTO, OSIV (антипаттерн).",
+        "keywords": ["LazyInitializationException", "LAZY", "JOIN FETCH", "EntityGraph", "OSIV", "Open Session in View", "DTO", "Hibernate", "JPA"],
+        "ogTitle": "LazyInitializationException: причина и 5 способов избежать — Gymterview",
+        "ogDescription": "Причина — обращение к LAZY-прокси после закрытия Session. Решения: JOIN FETCH, @EntityGraph, DTO, Hibernate.initialize(), OSIV (антипаттерн).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое LazyInitializationException и как его избежать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LazyInitializationException — исключение при обращении к LAZY-связи после закрытия Session. Решения: JOIN FETCH (загрузка в запросе), @EntityGraph (декларативно), DTO-проекция (только нужные данные), Hibernate.initialize() (внутри транзакции). OSIV (open-in-view=true) решает, но создаёт новые проблемы — антипаттерн. Рекомендация: open-in-view=false + DTO."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "LazyInitializationException", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое проекции и DTO-маппинг?",
+      "questionSlug": "chto-takoe-proektsii-i-dto-mapping",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "dto", "projection", "performance"],
+      "seo": {
+        "title": "Проекции и DTO-маппинг в Hibernate/Spring Data — Gymterview",
+        "description": "Проекции загружают только нужные поля: JPQL-конструктор, interface-based, class-based (record), Tuple. Оптимизация производительности для REST API.",
+        "keywords": ["DTO", "проекция", "interface projection", "record", "Tuple", "Spring Data", "JPQL конструктор", "Hibernate", "JPA"],
+        "ogTitle": "DTO-проекции в Spring Data JPA: 4 способа загружать только нужные поля — Gymterview",
+        "ogDescription": "JPQL-конструктор, interface-based, class-based (record), Tuple. Проекции — стандарт для REST API: нет Dirty Checking, нет LAZY-проблем.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое проекции и DTO-маппинг?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проекции загружают только нужные поля из БД вместо полных сущностей. 4 вида: JPQL-конструктор (SELECT new UserDto(...)), interface-based (Spring Data создаёт прокси), class-based (record DTO — оптимальный), Tuple (ad-hoc). Проекции не отслеживаются Persistence Context, нет Dirty Checking overhead, нет LAZY-проблем. Стандарт для REST API (CQRS-lite)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Проекции и DTO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Batch-операции в Hibernate",
+      "questionSlug": "batch-operatsii-v-hibernate",
+      "grade": "senior",
+      "tags": ["hibernate", "jpa", "batch", "performance", "optimization"],
+      "seo": {
+        "title": "Batch-операции в Hibernate — Gymterview",
+        "description": "Batch INSERT/UPDATE: batch_size, order_inserts, SEQUENCE (не IDENTITY!), flush+clear паттерн. Bulk JPQL через @Modifying. Spring Batch для миллионов.",
+        "keywords": ["batch insert", "batch_size", "order_inserts", "SEQUENCE", "IDENTITY", "flush clear", "bulk UPDATE", "@Modifying", "Hibernate"],
+        "ogTitle": "Batch-операции в Hibernate: настройка, IDENTITY vs SEQUENCE, flush+clear — Gymterview",
+        "ogDescription": "Как настроить batch insert в Hibernate: batch_size, order_inserts, SEQUENCE. Почему IDENTITY не поддерживает batch. flush+clear для OOM.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Batch-операции в Hibernate",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Batch-операции группируют SQL в пакеты: batch_size=50, order_inserts=true, order_updates=true. SEQUENCE обязательна (IDENTITY не поддерживает batch — Hibernate выполняет INSERT сразу для получения ID). Паттерн flush()+clear() каждые N записей предотвращает OOM. Bulk UPDATE/DELETE через JPQL @Modifying обходит Persistence Context — нужен clearAutomatically=true. Для миллионов — JDBC/Spring Batch."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Batch-операции", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

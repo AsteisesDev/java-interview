@@ -1,0 +1,683 @@
+{
+  "topic": "Шаблоны проектирования",
+  "topicSlug": "patterns",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое шаблон проектирования?",
+      "questionSlug": "chto-takoe-shablon-proektirovaniya",
+      "grade": "junior",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое шаблон проектирования? — Gymterview",
+        "description": "Шаблон (паттерн) проектирования -- проверенное, типовое решение часто встречающейся проблемы проектирования. Не конкретный код, а концептуальный подход, адаптир",
+        "keywords": [
+          "patterns",
+          "junior"
+        ],
+        "ogTitle": "Что такое шаблон проектирования? — Gymterview",
+        "ogDescription": "Шаблон (паттерн) проектирования -- проверенное, типовое решение часто встречающейся проблемы проектирования. Не конкретн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое шаблон проектирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Шаблон (паттерн) проектирования -- проверенное, типовое решение часто встречающейся проблемы проектирования. Не конкретный код, а концептуальный подход, адаптируемый под конкретную ситуацию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое шаблон проектирования?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Типы шаблонов проектирования",
+      "questionSlug": "tipy-shablonov-proektirovaniya",
+      "grade": "junior",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Типы шаблонов проектирования — Gymterview",
+        "description": "Шаблоны проектирования делятся на три группы по назначению: порождающие, структурные и поведенческие.",
+        "keywords": [
+          "patterns",
+          "junior"
+        ],
+        "ogTitle": "Типы шаблонов проектирования — Gymterview",
+        "ogDescription": "Шаблоны проектирования делятся на три группы по назначению: порождающие, структурные и поведенческие.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Типы шаблонов проектирования",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Шаблоны проектирования делятся на три группы по назначению: порождающие, структурные и поведенческие."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Типы шаблонов проектирования",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое принципы SOLID?",
+      "questionSlug": "chto-takoe-printsipy-solid",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое принципы SOLID? — Gymterview",
+        "description": "SOLID -- пять принципов объектно-ориентированного проектирования, сформулированных Робертом Мартином. Они помогают создавать код, который легко поддерживать, ра",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое принципы SOLID? — Gymterview",
+        "ogDescription": "SOLID -- пять принципов объектно-ориентированного проектирования, сформулированных Робертом Мартином. Они помогают созда",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое принципы SOLID?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SOLID -- пять принципов объектно-ориентированного проектирования, сформулированных Робертом Мартином. Они помогают создавать код, который легко поддерживать, расширять и тестировать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое принципы SOLID?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Singleton?",
+      "questionSlug": "chto-takoe-pattern-singleton",
+      "grade": "junior",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Singleton? — Gymterview",
+        "description": "Singleton -- паттерн, гарантирующий, что у класса есть только один экземпляр, и предоставляющий глобальную точку доступа к нему.",
+        "keywords": [
+          "patterns",
+          "junior"
+        ],
+        "ogTitle": "Что такое паттерн Singleton? — Gymterview",
+        "ogDescription": "Singleton -- паттерн, гарантирующий, что у класса есть только один экземпляр, и предоставляющий глобальную точку доступа",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Singleton?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Singleton -- паттерн, гарантирующий, что у класса есть только один экземпляр, и предоставляющий глобальную точку доступа к нему."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Singleton?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Builder?",
+      "questionSlug": "chto-takoe-pattern-builder",
+      "grade": "junior",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Builder? — Gymterview",
+        "description": "Builder -- паттерн, отделяющий конструирование сложного объекта от его представления, позволяя создавать объекты пошагово.",
+        "keywords": [
+          "patterns",
+          "junior"
+        ],
+        "ogTitle": "Что такое паттерн Builder? — Gymterview",
+        "ogDescription": "Builder -- паттерн, отделяющий конструирование сложного объекта от его представления, позволяя создавать объекты пошагов",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Builder?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Builder -- паттерн, отделяющий конструирование сложного объекта от его представления, позволяя создавать объекты пошагово."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Builder?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Factory Method и Abstract Factory?",
+      "questionSlug": "chto-takoe-pattern-factory-method-i-abstract-factory",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Factory Method и Abstract Factory? — Gymterview",
+        "description": "Factory Method -- паттерн, определяющий интерфейс для создания объекта, но позволяющий подклассам решать, какой класс создавать. Abstract Factory -- интерфейс д",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Factory Method и Abstract Factory? — Gymterview",
+        "ogDescription": "Factory Method -- паттерн, определяющий интерфейс для создания объекта, но позволяющий подклассам решать, какой класс со",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Factory Method и Abstract Factory?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Factory Method -- паттерн, определяющий интерфейс для создания объекта, но позволяющий подклассам решать, какой класс создавать. Abstract Factory -- интерфейс для создания семейств связанных объектов без указания конкретных классов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Factory Method и Abstract Factory?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Strategy?",
+      "questionSlug": "chto-takoe-pattern-strategy",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Strategy? — Gymterview",
+        "description": "Strategy -- паттерн, определяющий семейство алгоритмов, инкапсулирующий каждый и делающий их взаимозаменяемыми. Клиент выбирает алгоритм в runtime.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Strategy? — Gymterview",
+        "ogDescription": "Strategy -- паттерн, определяющий семейство алгоритмов, инкапсулирующий каждый и делающий их взаимозаменяемыми. Клиент в",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Strategy?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Strategy -- паттерн, определяющий семейство алгоритмов, инкапсулирующий каждый и делающий их взаимозаменяемыми. Клиент выбирает алгоритм в runtime."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Strategy?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Observer?",
+      "questionSlug": "chto-takoe-pattern-observer",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Observer? — Gymterview",
+        "description": "Observer -- паттерн, определяющий зависимость \"один ко многим\" между объектами: при изменении состояния одного все зависимые уведомляются автоматически.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Observer? — Gymterview",
+        "ogDescription": "Observer -- паттерн, определяющий зависимость \"один ко многим\" между объектами: при изменении состояния одного все завис",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Observer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Observer -- паттерн, определяющий зависимость \"один ко многим\" между объектами: при изменении состояния одного все зависимые уведомляются автоматически."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Observer?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Decorator?",
+      "questionSlug": "chto-takoe-pattern-decorator",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Decorator? — Gymterview",
+        "description": "Decorator -- паттерн, динамически добавляющий объекту новую функциональность, оборачивая его. Альтернатива наследованию через композицию.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Decorator? — Gymterview",
+        "ogDescription": "Decorator -- паттерн, динамически добавляющий объекту новую функциональность, оборачивая его. Альтернатива наследованию ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Decorator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Decorator -- паттерн, динамически добавляющий объекту новую функциональность, оборачивая его. Альтернатива наследованию через композицию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Decorator?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Adapter?",
+      "questionSlug": "chto-takoe-pattern-adapter",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Adapter? — Gymterview",
+        "description": "Adapter -- паттерн, преобразующий интерфейс класса в другой интерфейс, ожидаемый клиентом. Позволяет работать вместе классам с несовместимыми интерфейсами.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Adapter? — Gymterview",
+        "ogDescription": "Adapter -- паттерн, преобразующий интерфейс класса в другой интерфейс, ожидаемый клиентом. Позволяет работать вместе кла",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Adapter?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adapter -- паттерн, преобразующий интерфейс класса в другой интерфейс, ожидаемый клиентом. Позволяет работать вместе классам с несовместимыми интерфейсами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Adapter?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Proxy?",
+      "questionSlug": "chto-takoe-pattern-proxy",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Proxy? — Gymterview",
+        "description": "Proxy -- паттерн, предоставляющий объект-заместитель, который контролирует доступ к другому объекту.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Proxy? — Gymterview",
+        "ogDescription": "Proxy -- паттерн, предоставляющий объект-заместитель, который контролирует доступ к другому объекту.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Proxy?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Proxy -- паттерн, предоставляющий объект-заместитель, который контролирует доступ к другому объекту."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Proxy?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Template Method?",
+      "questionSlug": "chto-takoe-pattern-template-method",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Template Method? — Gymterview",
+        "description": "Template Method -- паттерн, определяющий скелет алгоритма в базовом классе, позволяя подклассам переопределять отдельные шаги без изменения общей структуры.",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Template Method? — Gymterview",
+        "ogDescription": "Template Method -- паттерн, определяющий скелет алгоритма в базовом классе, позволяя подклассам переопределять отдельные",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Template Method?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Template Method -- паттерн, определяющий скелет алгоритма в базовом классе, позволяя подклассам переопределять отдельные шаги без изменения общей структуры."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Template Method?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Chain of Responsibility?",
+      "questionSlug": "chto-takoe-pattern-chain-of-responsibility",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Chain of Responsibility? — Gymterview",
+        "description": "Chain of Responsibility -- паттерн, передающий запрос по цепочке обработчиков. Каждый обработчик решает, обработать запрос самостоятельно или передать следующем",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Chain of Responsibility? — Gymterview",
+        "ogDescription": "Chain of Responsibility -- паттерн, передающий запрос по цепочке обработчиков. Каждый обработчик решает, обработать запр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Chain of Responsibility?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chain of Responsibility -- паттерн, передающий запрос по цепочке обработчиков. Каждый обработчик решает, обработать запрос самостоятельно или передать следующему."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое паттерн Chain of Responsibility?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое антипаттерн? Какие антипаттерны вы знаете?",
+      "questionSlug": "chto-takoe-antipattern-kakie-antipatterny-vy-znaete",
+      "grade": "middle",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое антипаттерн? Какие антипаттерны вы знаете? — Gymterview",
+        "description": "Антипаттерн -- распространённый подход к решению проблемы, который является неэффективным или контрпродуктивным. В отличие от паттерна, антипаттерн описывает, к",
+        "keywords": [
+          "patterns",
+          "middle"
+        ],
+        "ogTitle": "Что такое антипаттерн? Какие антипаттерны вы знаете? — Gymterview",
+        "ogDescription": "Антипаттерн -- распространённый подход к решению проблемы, который является неэффективным или контрпродуктивным. В отлич",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое антипаттерн? Какие антипаттерны вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Антипаттерн -- распространённый подход к решению проблемы, который является неэффективным или контрпродуктивным. В отличие от паттерна, антипаттерн описывает, как делать не надо."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое антипаттерн? Какие антипаттерны вы знаете?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Dependency Injection?",
+      "questionSlug": "chto-takoe-dependency-injection",
+      "grade": "junior",
+      "tags": [
+        "patterns"
+      ],
+      "seo": {
+        "title": "Что такое Dependency Injection? — Gymterview",
+        "description": "Dependency Injection (DI) -- паттерн, при котором объект получает свои зависимости извне, а не создаёт их сам. Реализует принцип Dependency Inversion (D из SOLI",
+        "keywords": [
+          "patterns",
+          "junior"
+        ],
+        "ogTitle": "Что такое Dependency Injection? — Gymterview",
+        "ogDescription": "Dependency Injection (DI) -- паттерн, при котором объект получает свои зависимости извне, а не создаёт их сам. Реализует",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Dependency Injection?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dependency Injection (DI) -- паттерн, при котором объект получает свои зависимости извне, а не создаёт их сам. Реализует принцип Dependency Inversion (D из SOLID)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Шаблоны проектирования",
+            "url": "/topics/patterns"
+          },
+          {
+            "name": "Что такое Dependency Injection?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

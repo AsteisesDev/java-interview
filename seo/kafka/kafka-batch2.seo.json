@@ -1,0 +1,863 @@
+{
+  "topic": "Apache Kafka",
+  "topicSlug": "kafka",
+  "batch": 2,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Для чего нужен координатор группы?",
+      "questionSlug": "dlya-chego-nuzhen-koordinator-gruppy",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен координатор группы? — Gymterview",
+        "description": "Координатор группы (Group Coordinator) — это компонент Kafka, который управляет жизненным циклом Consumer Group: членством, назначением партиций и фиксацией сме",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен координатор группы? — Gymterview",
+        "ogDescription": "Координатор группы (Group Coordinator) — это компонент Kafka, который управляет жизненным циклом Consumer Group: членств",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен координатор группы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Координатор группы (Group Coordinator) — это компонент Kafka, который управляет жизненным циклом Consumer Group: членством, назначением партиций и фиксацией смещений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен координатор группы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен Consumer heartbeat thread?",
+      "questionSlug": "dlya-chego-nuzhen-consumer-heartbeat-thread",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен Consumer heartbeat thread? — Gymterview",
+        "description": "Consumer Heartbeat Thread — это фоновый поток, который периодически отправляет сигналы (heartbeats) координатору группы, подтверждая, что потребитель жив и явля",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен Consumer heartbeat thread? — Gymterview",
+        "ogDescription": "Consumer Heartbeat Thread — это фоновый поток, который периодически отправляет сигналы (heartbeats) координатору группы,",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен Consumer heartbeat thread?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consumer Heartbeat Thread — это фоновый поток, который периодически отправляет сигналы (heartbeats) координатору группы, подтверждая, что потребитель жив и является частью группы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен Consumer heartbeat thread?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Kafka обрабатывает сообщения?",
+      "questionSlug": "kak-kafka-obrabatyvaet-soobshcheniya",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как Kafka обрабатывает сообщения? — Gymterview",
+        "description": "Kafka поддерживает два основных способа обработки сообщений, определяемых конфигурацией Consumer Groups.",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Как Kafka обрабатывает сообщения? — Gymterview",
+        "ogDescription": "Kafka поддерживает два основных способа обработки сообщений, определяемых конфигурацией Consumer Groups.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Kafka обрабатывает сообщения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka поддерживает два основных способа обработки сообщений, определяемых конфигурацией Consumer Groups."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как Kafka обрабатывает сообщения?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Kafka обрабатывает задержку консюмера?",
+      "questionSlug": "kak-kafka-obrabatyvaet-zaderzhku-konsyumera",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как Kafka обрабатывает задержку консюмера? — Gymterview",
+        "description": "Задержка (лаг) консюмера — это разница между offset последнего созданного сообщения и offset последнего прочитанного сообщения. Лаг показывает, насколько потреб",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как Kafka обрабатывает задержку консюмера? — Gymterview",
+        "ogDescription": "Задержка (лаг) консюмера — это разница между offset последнего созданного сообщения и offset последнего прочитанного соо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Kafka обрабатывает задержку консюмера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Задержка (лаг) консюмера — это разница между offset последнего созданного сообщения и offset последнего прочитанного сообщения. Лаг показывает, насколько потребитель отстаёт от потока данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как Kafka обрабатывает задержку консюмера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны методы subscribe() и poll()?",
+      "questionSlug": "dlya-chego-nuzhny-metody-subscribe-i-poll",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужны методы subscribe() и poll()? — Gymterview",
+        "description": "`subscribe()` — подписка потребителя на один или несколько топиков. Этот метод не извлекает данные, а только регистрирует интерес.",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны методы subscribe() и poll()? — Gymterview",
+        "ogDescription": "`subscribe()` — подписка потребителя на один или несколько топиков. Этот метод не извлекает данные, а только регистрируе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны методы subscribe() и poll()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`subscribe()` — подписка потребителя на один или несколько топиков. Этот метод не извлекает данные, а только регистрирует интерес."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужны методы subscribe() и poll()?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен метод position()?",
+      "questionSlug": "dlya-chego-nuzhen-metod-position",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен метод position()? — Gymterview",
+        "description": "Метод `position()` возвращает offset следующей записи, которая будет извлечена для данной партиции. Это полезно для отслеживания прогресса чтения.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен метод position()? — Gymterview",
+        "ogDescription": "Метод `position()` возвращает offset следующей записи, которая будет извлечена для данной партиции. Это полезно для отсл",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен метод position()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод `position()` возвращает offset следующей записи, которая будет извлечена для данной партиции. Это полезно для отслеживания прогресса чтения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен метод position()?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны методы commitSync() и commitAsync()?",
+      "questionSlug": "dlya-chego-nuzhny-metody-commitsync-i-commitasync",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужны методы commitSync() и commitAsync()? — Gymterview",
+        "description": "Эти методы используются для фиксации (commit) смещений потребителя.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужны методы commitSync() и commitAsync()? — Gymterview",
+        "ogDescription": "Эти методы используются для фиксации (commit) смещений потребителя.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны методы commitSync() и commitAsync()?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти методы используются для фиксации (commit) смещений потребителя."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужны методы commitSync() и commitAsync()?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен идемпотентный продюсер?",
+      "questionSlug": "dlya-chego-nuzhen-idempotentnyj-prodyuser",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен идемпотентный продюсер? — Gymterview",
+        "description": "Идемпотентный продюсер гарантирует exactly-once доставку на уровне одной партиции, предотвращая дублирование записей при повторных попытках отправки. Включается",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен идемпотентный продюсер? — Gymterview",
+        "ogDescription": "Идемпотентный продюсер гарантирует exactly-once доставку на уровне одной партиции, предотвращая дублирование записей при",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен идемпотентный продюсер?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Идемпотентный продюсер гарантирует exactly-once доставку на уровне одной партиции, предотвращая дублирование записей при повторных попытках отправки. Включается через `enable.idempotence=true`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен идемпотентный продюсер?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен интерфейс Partitioner?",
+      "questionSlug": "dlya-chego-nuzhen-interfejs-partitioner",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен интерфейс Partitioner? — Gymterview",
+        "description": "Интерфейс `Partitioner` в Producer API определяет, в какую партицию топика будет отправлено сообщение.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен интерфейс Partitioner? — Gymterview",
+        "ogDescription": "Интерфейс `Partitioner` в Producer API определяет, в какую партицию топика будет отправлено сообщение.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен интерфейс Partitioner?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интерфейс `Partitioner` в Producer API определяет, в какую партицию топика будет отправлено сообщение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен интерфейс Partitioner?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен Broker log cleaner thread?",
+      "questionSlug": "dlya-chego-nuzhen-broker-log-cleaner-thread",
+      "grade": "senior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен Broker log cleaner thread? — Gymterview",
+        "description": "Log Cleaner Thread — это фоновый поток в брокере, выполняющий сжатие журнала (log compaction). При сжатии Kafka удаляет устаревшие записи, сохраняя только после",
+        "keywords": [
+          "kafka",
+          "senior"
+        ],
+        "ogTitle": "Для чего нужен Broker log cleaner thread? — Gymterview",
+        "ogDescription": "Log Cleaner Thread — это фоновый поток в брокере, выполняющий сжатие журнала (log compaction). При сжатии Kafka удаляет ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен Broker log cleaner thread?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Log Cleaner Thread — это фоновый поток в брокере, выполняющий сжатие журнала (log compaction). При сжатии Kafka удаляет устаревшие записи, сохраняя только последнее значение для каждого ключа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен Broker log cleaner thread?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен Kafka Mirror Maker?",
+      "questionSlug": "dlya-chego-nuzhen-kafka-mirror-maker",
+      "grade": "senior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен Kafka Mirror Maker? — Gymterview",
+        "description": "Kafka Mirror Maker — это инструмент для репликации данных между кластерами Kafka, потенциально расположенными в разных дата-центрах. Он работает как консюмер в ",
+        "keywords": [
+          "kafka",
+          "senior"
+        ],
+        "ogTitle": "Для чего нужен Kafka Mirror Maker? — Gymterview",
+        "ogDescription": "Kafka Mirror Maker — это инструмент для репликации данных между кластерами Kafka, потенциально расположенными в разных д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен Kafka Mirror Maker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka Mirror Maker — это инструмент для репликации данных между кластерами Kafka, потенциально расположенными в разных дата-центрах. Он работает как консюмер в исходном кластере и продюсер в целевом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен Kafka Mirror Maker?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужна Schema Registry?",
+      "questionSlug": "dlya-chego-nuzhna-schema-registry",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужна Schema Registry? — Gymterview",
+        "description": "Schema Registry — это сервис (часть экосистемы Confluent), который предоставляет RESTful интерфейс для хранения и извлечения схем данных (Avro, Protobuf, JSON S",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужна Schema Registry? — Gymterview",
+        "ogDescription": "Schema Registry — это сервис (часть экосистемы Confluent), который предоставляет RESTful интерфейс для хранения и извлеч",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужна Schema Registry?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Schema Registry — это сервис (часть экосистемы Confluent), который предоставляет RESTful интерфейс для хранения и извлечения схем данных (Avro, Protobuf, JSON Schema). Он обеспечивает совместимость схем между производителями и потребителями."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужна Schema Registry?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен Streams DSL?",
+      "questionSlug": "dlya-chego-nuzhen-streams-dsl",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Для чего нужен Streams DSL? — Gymterview",
+        "description": "Kafka Streams DSL — это высокоуровневый API для операций потоковой обработки данных. Он позволяет описывать логику фильтрации, преобразования, агрегации и объед",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Для чего нужен Streams DSL? — Gymterview",
+        "ogDescription": "Kafka Streams DSL — это высокоуровневый API для операций потоковой обработки данных. Он позволяет описывать логику фильт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен Streams DSL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka Streams DSL — это высокоуровневый API для операций потоковой обработки данных. Он позволяет описывать логику фильтрации, преобразования, агрегации и объединения потоков данных, абстрагируя низкоуровневые детали обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Для чего нужен Streams DSL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как Kafka обеспечивает версионирование сообщений?",
+      "questionSlug": "kak-kafka-obespechivaet-versionirovanie-soobshchenij",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как Kafka обеспечивает версионирование сообщений? — Gymterview",
+        "description": "Kafka не обеспечивает версионирование сообщений напрямую, но предоставляет механизмы для его реализации.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "Как Kafka обеспечивает версионирование сообщений? — Gymterview",
+        "ogDescription": "Kafka не обеспечивает версионирование сообщений напрямую, но предоставляет механизмы для его реализации.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как Kafka обеспечивает версионирование сообщений?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka не обеспечивает версионирование сообщений напрямую, но предоставляет механизмы для его реализации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как Kafka обеспечивает версионирование сообщений?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как потребители получают сообщения от брокера?",
+      "questionSlug": "kak-potrebiteli-poluchayut-soobshcheniya-ot-brokera",
+      "grade": "junior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "Как потребители получают сообщения от брокера? — Gymterview",
+        "description": "Kafka использует pull-модель для доставки сообщений. Потребители сами запрашивают данные у брокеров через `poll()`, а не получают push от брокера.",
+        "keywords": [
+          "kafka",
+          "junior"
+        ],
+        "ogTitle": "Как потребители получают сообщения от брокера? — Gymterview",
+        "ogDescription": "Kafka использует pull-модель для доставки сообщений. Потребители сами запрашивают данные у брокеров через `poll()`, а не",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как потребители получают сообщения от брокера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka использует pull-модель для доставки сообщений. Потребители сами запрашивают данные у брокеров через `poll()`, а не получают push от брокера."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "Как потребители получают сообщения от брокера?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между Kafka Consumer и Kafka Stream?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-kafka-consumer-i-kafka-stream",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "В чем разница между Kafka Consumer и Kafka Stream? — Gymterview",
+        "description": "Kafka Consumer и Kafka Streams — это два способа обработки данных из Kafka с разным уровнем абстракции.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "В чем разница между Kafka Consumer и Kafka Stream? — Gymterview",
+        "ogDescription": "Kafka Consumer и Kafka Streams — это два способа обработки данных из Kafka с разным уровнем абстракции.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между Kafka Consumer и Kafka Stream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka Consumer и Kafka Streams — это два способа обработки данных из Kafka с разным уровнем абстракции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "В чем разница между Kafka Consumer и Kafka Stream?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между Kafka Streams и Apache Flink?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-kafka-streams-i-apache-flink",
+      "grade": "senior",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "В чем разница между Kafka Streams и Apache Flink? — Gymterview",
+        "description": "Kafka Streams и Apache Flink — это инструменты потоковой обработки данных с принципиально разной архитектурой.",
+        "keywords": [
+          "kafka",
+          "senior"
+        ],
+        "ogTitle": "В чем разница между Kafka Streams и Apache Flink? — Gymterview",
+        "ogDescription": "Kafka Streams и Apache Flink — это инструменты потоковой обработки данных с принципиально разной архитектурой.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между Kafka Streams и Apache Flink?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka Streams и Apache Flink — это инструменты потоковой обработки данных с принципиально разной архитектурой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "В чем разница между Kafka Streams и Apache Flink?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между Kafka и Flume?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-kafka-i-flume",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "В чем разница между Kafka и Flume? — Gymterview",
+        "description": "Apache Kafka и Apache Flume — это инструменты для передачи данных с разными целями и архитектурами.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "В чем разница между Kafka и Flume? — Gymterview",
+        "ogDescription": "Apache Kafka и Apache Flume — это инструменты для передачи данных с разными целями и архитектурами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между Kafka и Flume?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apache Kafka и Apache Flume — это инструменты для передачи данных с разными целями и архитектурами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "В чем разница между Kafka и Flume?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между Kafka и RabbitMQ?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-kafka-i-rabbitmq",
+      "grade": "middle",
+      "tags": [
+        "kafka"
+      ],
+      "seo": {
+        "title": "В чем разница между Kafka и RabbitMQ? — Gymterview",
+        "description": "Kafka и RabbitMQ — это две фундаментально разные системы обмена сообщениями с разными моделями доставки.",
+        "keywords": [
+          "kafka",
+          "middle"
+        ],
+        "ogTitle": "В чем разница между Kafka и RabbitMQ? — Gymterview",
+        "ogDescription": "Kafka и RabbitMQ — это две фундаментально разные системы обмена сообщениями с разными моделями доставки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между Kafka и RabbitMQ?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kafka и RabbitMQ — это две фундаментально разные системы обмена сообщениями с разными моделями доставки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "/topics/kafka"
+          },
+          {
+            "name": "В чем разница между Kafka и RabbitMQ?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

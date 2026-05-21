@@ -1,0 +1,908 @@
+{
+  "topic": "Linux",
+  "topicSlug": "linux",
+  "batch": 1,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Linux? В чём разница между ядром и дистрибутивом?",
+      "questionSlug": "chto-takoe-linux-v-chyom-raznitsa-mezhdu-yadrom-i-distributivom",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое Linux? В чём разница между ядром и дистрибутивом? — Gymterview",
+        "description": "Linux — семейство Unix-подобных операционных систем, основанных на ядре Linux, которое создал Линус Торвальдс в 1991 году. Распространяется под лицензией GPL (G",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое Linux? В чём разница между ядром и дистрибутивом? — Gymterview",
+        "ogDescription": "Linux — семейство Unix-подобных операционных систем, основанных на ядре Linux, которое создал Линус Торвальдс в 1991 год",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Linux? В чём разница между ядром и дистрибутивом?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linux — семейство Unix-подобных операционных систем, основанных на ядре Linux, которое создал Линус Торвальдс в 1991 году. Распространяется под лицензией GPL (GNU General Public License)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое Linux? В чём разница между ядром и дистрибутивом?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют популярные дистрибутивы Linux и чем они отличаются?",
+      "questionSlug": "kakie-sushchestvuyut-populyarnye-distributivy-linux-i-chem-oni-otlichayutsya",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какие существуют популярные дистрибутивы Linux и чем они отл — Gymterview",
+        "description": "Дистрибутивы Linux группируются в семейства, отличающиеся пакетным менеджером, политикой обновлений и целевой аудиторией.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют популярные дистрибутивы Linux и чем они отл — Gymterview",
+        "ogDescription": "Дистрибутивы Linux группируются в семейства, отличающиеся пакетным менеджером, политикой обновлений и целевой аудиторией",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют популярные дистрибутивы Linux и чем они отличаются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Дистрибутивы Linux группируются в семейства, отличающиеся пакетным менеджером, политикой обновлений и целевой аудиторией."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какие существуют популярные дистрибутивы Linux и чем они отл",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова структура файловой системы Linux?",
+      "questionSlug": "kakova-struktura-fajlovoj-sistemy-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какова структура файловой системы Linux? — Gymterview",
+        "description": "Файловая система Linux организована в виде единого дерева каталогов с корнем `/`. Стандарт FHS (Filesystem Hierarchy Standard) определяет назначение основных ка",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Какова структура файловой системы Linux? — Gymterview",
+        "ogDescription": "Файловая система Linux организована в виде единого дерева каталогов с корнем `/`. Стандарт FHS (Filesystem Hierarchy Sta",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова структура файловой системы Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Файловая система Linux организована в виде единого дерева каталогов с корнем `/`. Стандарт FHS (Filesystem Hierarchy Standard) определяет назначение основных каталогов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какова структура файловой системы Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы файлов существуют в Linux?",
+      "questionSlug": "kakie-tipy-fajlov-sushchestvuyut-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какие типы файлов существуют в Linux? — Gymterview",
+        "description": "В Linux существует 7 типов файлов. Тип файла определяется командой `ls -l` по первому символу в строке прав доступа.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Какие типы файлов существуют в Linux? — Gymterview",
+        "ogDescription": "В Linux существует 7 типов файлов. Тип файла определяется командой `ls -l` по первому символу в строке прав доступа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы файлов существуют в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Linux существует 7 типов файлов. Тип файла определяется командой `ls -l` по первому символу в строке прав доступа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какие типы файлов существуют в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое менеджеры пакетов в Linux? Чем apt отличается от yum/dnf?",
+      "questionSlug": "chto-takoe-menedzhery-paketov-v-linux-chem-apt-otlichaetsya-ot-yum-dnf",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое менеджеры пакетов в Linux? Чем apt отличается от y — Gymterview",
+        "description": "Менеджер пакетов — инструмент для автоматизации установки, обновления, настройки и удаления программного обеспечения. Пакет — архив с файлами программы, метадан",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое менеджеры пакетов в Linux? Чем apt отличается от y — Gymterview",
+        "ogDescription": "Менеджер пакетов — инструмент для автоматизации установки, обновления, настройки и удаления программного обеспечения. Па",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое менеджеры пакетов в Linux? Чем apt отличается от yum/dnf?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Менеджер пакетов — инструмент для автоматизации установки, обновления, настройки и удаления программного обеспечения. Пакет — архив с файлами программы, метаданными и информацией о зависимостях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое менеджеры пакетов в Linux? Чем apt отличается от y",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устанавливать, обновлять и удалять пакеты в Ubuntu?",
+      "questionSlug": "kak-ustanavlivat-obnovlyat-i-udalyat-pakety-v-ubuntu",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как устанавливать, обновлять и удалять пакеты в Ubuntu? — Gymterview",
+        "description": "Основные операции с пакетами в Ubuntu 24.04 выполняются через утилиту `apt`.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как устанавливать, обновлять и удалять пакеты в Ubuntu? — Gymterview",
+        "ogDescription": "Основные операции с пакетами в Ubuntu 24.04 выполняются через утилиту `apt`.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устанавливать, обновлять и удалять пакеты в Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные операции с пакетами в Ubuntu 24.04 выполняются через утилиту `apt`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как устанавливать, обновлять и удалять пакеты в Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроено управление пользователями и группами в Linux?",
+      "questionSlug": "kak-ustroeno-upravlenie-polzovatelyami-i-gruppami-v-linux",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как устроено управление пользователями и группами в Linux? — Gymterview",
+        "description": "Linux — многопользовательская система. Каждый пользователь имеет уникальный идентификатор (UID), каждая группа — GID.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как устроено управление пользователями и группами в Linux? — Gymterview",
+        "ogDescription": "Linux — многопользовательская система. Каждый пользователь имеет уникальный идентификатор (UID), каждая группа — GID.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроено управление пользователями и группами в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linux — многопользовательская система. Каждый пользователь имеет уникальный идентификатор (UID), каждая группа — GID."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как устроено управление пользователями и группами в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает sudo? Что такое /etc/sudoers и visudo?",
+      "questionSlug": "kak-rabotaet-sudo-chto-takoe-etc-sudoers-i-visudo",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работает sudo? Что такое /etc/sudoers и visudo? — Gymterview",
+        "description": "`sudo` (Substitute User and DO) — утилита, позволяющая выполнять команды от имени другого пользователя (по умолчанию — root) без необходимости знать пароль root",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как работает sudo? Что такое /etc/sudoers и visudo? — Gymterview",
+        "ogDescription": "`sudo` (Substitute User and DO) — утилита, позволяющая выполнять команды от имени другого пользователя (по умолчанию — r",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает sudo? Что такое /etc/sudoers и visudo?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`sudo` (Substitute User and DO) — утилита, позволяющая выполнять команды от имени другого пользователя (по умолчанию — root) без необходимости знать пароль root."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работает sudo? Что такое /etc/sudoers и visudo?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять правами доступа к файлам и каталогам?",
+      "questionSlug": "kak-upravlyat-pravami-dostupa-k-fajlam-i-katalogam",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как управлять правами доступа к файлам и каталогам? — Gymterview",
+        "description": "Каждый файл и каталог в Linux имеет три набора прав доступа для трёх категорий: владелец (user), группа (group), остальные (others).",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как управлять правами доступа к файлам и каталогам? — Gymterview",
+        "ogDescription": "Каждый файл и каталог в Linux имеет три набора прав доступа для трёх категорий: владелец (user), группа (group), остальн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять правами доступа к файлам и каталогам?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Каждый файл и каталог в Linux имеет три набора прав доступа для трёх категорий: владелец (user), группа (group), остальные (others)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как управлять правами доступа к файлам и каталогам?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с дисками и файловыми системами?",
+      "questionSlug": "kak-rabotat-s-diskami-i-fajlovymi-sistemami",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работать с дисками и файловыми системами? — Gymterview",
+        "description": "Основные команды для работы с дисками и файловыми системами в Linux.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как работать с дисками и файловыми системами? — Gymterview",
+        "ogDescription": "Основные команды для работы с дисками и файловыми системами в Linux.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с дисками и файловыми системами?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные команды для работы с дисками и файловыми системами в Linux."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работать с дисками и файловыми системами?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое процессы в Linux? Что такое init/systemd, PID, PPID, демоны?",
+      "questionSlug": "chto-takoe-protsessy-v-linux-chto-takoe-init-systemd-pid-ppid-demony",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое процессы в Linux? Что такое init/systemd, PID, PPI — Gymterview",
+        "description": "Процесс — экземпляр работающей программы. Каждый процесс имеет PID (Process ID), PPID (Parent Process ID), собственное адресное пространство, набор файловых дес",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое процессы в Linux? Что такое init/systemd, PID, PPI — Gymterview",
+        "ogDescription": "Процесс — экземпляр работающей программы. Каждый процесс имеет PID (Process ID), PPID (Parent Process ID), собственное а",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое процессы в Linux? Что такое init/systemd, PID, PPID, демоны?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Процесс — экземпляр работающей программы. Каждый процесс имеет PID (Process ID), PPID (Parent Process ID), собственное адресное пространство, набор файловых дескрипторов, владельца (UID) и группу (GID)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое процессы в Linux? Что такое init/systemd, PID, PPI",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает systemd? Основные команды systemctl и unit-файлы.",
+      "questionSlug": "kak-rabotaet-systemd-osnovnye-komandy-systemctl-i-unit-fajly",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работает systemd? Основные команды systemctl и unit-файл — Gymterview",
+        "description": "systemd — система инициализации и управления сервисами в Ubuntu 24.04. Основной инструмент управления — `systemctl`.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как работает systemd? Основные команды systemctl и unit-файл — Gymterview",
+        "ogDescription": "systemd — система инициализации и управления сервисами в Ubuntu 24.04. Основной инструмент управления — `systemctl`.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает systemd? Основные команды systemctl и unit-файлы.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "systemd — система инициализации и управления сервисами в Ubuntu 24.04. Основной инструмент управления — `systemctl`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работает systemd? Основные команды systemctl и unit-файл",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроено логирование в Linux?",
+      "questionSlug": "kak-ustroeno-logirovanie-v-linux",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как устроено логирование в Linux? — Gymterview",
+        "description": "В Linux несколько подсистем логирования дополняют друг друга: systemd-journald собирает структурированные логи в бинарном формате, а rsyslog пишет текстовые фай",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как устроено логирование в Linux? — Gymterview",
+        "ogDescription": "В Linux несколько подсистем логирования дополняют друг друга: systemd-journald собирает структурированные логи в бинарно",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроено логирование в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Linux несколько подсистем логирования дополняют друг друга: systemd-journald собирает структурированные логи в бинарном формате, а rsyslog пишет текстовые файлы в `/var/log/`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как устроено логирование в Linux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие сетевые утилиты есть в Linux и как ими пользоваться?",
+      "questionSlug": "kakie-setevye-utility-est-v-linux-i-kak-imi-polzovatsya",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Какие сетевые утилиты есть в Linux и как ими пользоваться? — Gymterview",
+        "description": "Набор сетевых утилит, которые Java-разработчик использует для диагностики сетевых проблем.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Какие сетевые утилиты есть в Linux и как ими пользоваться? — Gymterview",
+        "ogDescription": "Набор сетевых утилит, которые Java-разработчик использует для диагностики сетевых проблем.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие сетевые утилиты есть в Linux и как ими пользоваться?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Набор сетевых утилит, которые Java-разработчик использует для диагностики сетевых проблем."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Какие сетевые утилиты есть в Linux и как ими пользоваться?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить сеть в Ubuntu?",
+      "questionSlug": "kak-nastroit-set-v-ubuntu",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как настроить сеть в Ubuntu? — Gymterview",
+        "description": "В Ubuntu 24.04 для настройки сети используется Netplan — декларативная система конфигурации, генерирующая конфигурацию для бэкенда (`systemd-networkd` на сервер",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как настроить сеть в Ubuntu? — Gymterview",
+        "ogDescription": "В Ubuntu 24.04 для настройки сети используется Netplan — декларативная система конфигурации, генерирующая конфигурацию д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить сеть в Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Ubuntu 24.04 для настройки сети используется Netplan — декларативная система конфигурации, генерирующая конфигурацию для бэкенда (`systemd-networkd` на серверах или `NetworkManager` на десктопах)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как настроить сеть в Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает firewall в Linux? Что такое ufw и iptables?",
+      "questionSlug": "kak-rabotaet-firewall-v-linux-chto-takoe-ufw-i-iptables",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как работает firewall в Linux? Что такое ufw и iptables? — Gymterview",
+        "description": "Firewall (межсетевой экран) фильтрует сетевой трафик на основе правил. В Linux фильтрация выполняется на уровне ядра с помощью netfilter. Утилиты `iptables`, `n",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Как работает firewall в Linux? Что такое ufw и iptables? — Gymterview",
+        "ogDescription": "Firewall (межсетевой экран) фильтрует сетевой трафик на основе правил. В Linux фильтрация выполняется на уровне ядра с п",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает firewall в Linux? Что такое ufw и iptables?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Firewall (межсетевой экран) фильтрует сетевой трафик на основе правил. В Linux фильтрация выполняется на уровне ядра с помощью netfilter. Утилиты `iptables`, `nftables` и `ufw` — различные интерфейсы управления netfilter."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как работает firewall в Linux? Что такое ufw и iptables?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое SELinux и AppArmor?",
+      "questionSlug": "chto-takoe-selinux-i-apparmor",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое SELinux и AppArmor? — Gymterview",
+        "description": "SELinux и AppArmor — системы мандатного контроля доступа (MAC — Mandatory Access Control), обеспечивающие дополнительный уровень безопасности поверх стандартных",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Что такое SELinux и AppArmor? — Gymterview",
+        "ogDescription": "SELinux и AppArmor — системы мандатного контроля доступа (MAC — Mandatory Access Control), обеспечивающие дополнительный",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SELinux и AppArmor?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SELinux и AppArmor — системы мандатного контроля доступа (MAC — Mandatory Access Control), обеспечивающие дополнительный уровень безопасности поверх стандартных прав доступа Linux (DAC)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое SELinux и AppArmor?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое LVM и RAID?",
+      "questionSlug": "chto-takoe-lvm-i-raid",
+      "grade": "middle",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое LVM и RAID? — Gymterview",
+        "description": "LVM (Logical Volume Manager) и RAID (Redundant Array of Independent Disks) — технологии управления дисковым пространством.",
+        "keywords": [
+          "linux",
+          "middle"
+        ],
+        "ogTitle": "Что такое LVM и RAID? — Gymterview",
+        "ogDescription": "LVM (Logical Volume Manager) и RAID (Redundant Array of Independent Disks) — технологии управления дисковым пространство",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое LVM и RAID?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LVM (Logical Volume Manager) и RAID (Redundant Array of Independent Disks) — технологии управления дисковым пространством."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое LVM и RAID?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое swap и как его настроить?",
+      "questionSlug": "chto-takoe-swap-i-kak-ego-nastroit",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Что такое swap и как его настроить? — Gymterview",
+        "description": "Swap (область подкачки) — область на диске, используемая как расширение оперативной памяти. Когда RAM заполняется, ядро переносит редко используемые страницы па",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Что такое swap и как его настроить? — Gymterview",
+        "ogDescription": "Swap (область подкачки) — область на диске, используемая как расширение оперативной памяти. Когда RAM заполняется, ядро ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое swap и как его настроить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Swap (область подкачки) — область на диске, используемая как расширение оперативной памяти. Когда RAM заполняется, ядро переносит редко используемые страницы памяти на диск, освобождая RAM для активных процессов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Что такое swap и как его настроить?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать swap-файл в Ubuntu?",
+      "questionSlug": "kak-sozdat-swap-fajl-v-ubuntu",
+      "grade": "junior",
+      "tags": [
+        "linux"
+      ],
+      "seo": {
+        "title": "Как создать swap-файл в Ubuntu? — Gymterview",
+        "description": "Пошаговая инструкция создания swap-файла в Ubuntu 24.04.",
+        "keywords": [
+          "linux",
+          "junior"
+        ],
+        "ogTitle": "Как создать swap-файл в Ubuntu? — Gymterview",
+        "ogDescription": "Пошаговая инструкция создания swap-файла в Ubuntu 24.04.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать swap-файл в Ubuntu?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пошаговая инструкция создания swap-файла в Ubuntu 24.04."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Linux",
+            "url": "/topics/linux"
+          },
+          {
+            "name": "Как создать swap-файл в Ubuntu?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

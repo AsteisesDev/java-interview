@@ -1,0 +1,908 @@
+{
+  "topic": "Spring Framework",
+  "topicSlug": "spring",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Spring Boot Starter-ы?",
+      "questionSlug": "chto-takoe-spring-boot-starter-y",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Boot Starter-ы? — Gymterview",
+        "description": "Starter -- специальная Maven/Gradle-зависимость, которая подтягивает набор связанных библиотек для определённой функциональности. Устраняет необходимость вручну",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Boot Starter-ы? — Gymterview",
+        "ogDescription": "Starter -- специальная Maven/Gradle-зависимость, которая подтягивает набор связанных библиотек для определённой функцион",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Boot Starter-ы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Starter -- специальная Maven/Gradle-зависимость, которая подтягивает набор связанных библиотек для определённой функциональности. Устраняет необходимость вручную подбирать совместимые версии зависимостей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Boot Starter-ы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена конфигурация в application.properties / application.yml?",
+      "questionSlug": "kak-ustroena-konfiguratsiya-v-applicationproperties-applicationyml",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как устроена конфигурация в application.properties / applica — Gymterview",
+        "description": "Spring Boot автоматически загружает файл `application.properties` (или `application.yml`) из каталога `src/main/resources`.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как устроена конфигурация в application.properties / applica — Gymterview",
+        "ogDescription": "Spring Boot автоматически загружает файл `application.properties` (или `application.yml`) из каталога `src/main/resource",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена конфигурация в application.properties / application.yml?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot автоматически загружает файл `application.properties` (или `application.yml`) из каталога `src/main/resources`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как устроена конфигурация в application.properties / applica",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Boot Actuator?",
+      "questionSlug": "chto-takoe-spring-boot-actuator",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Boot Actuator? — Gymterview",
+        "description": "Spring Boot Actuator -- модуль, предоставляющий набор HTTP-эндпоинтов для мониторинга и управления приложением в production.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Boot Actuator? — Gymterview",
+        "ogDescription": "Spring Boot Actuator -- модуль, предоставляющий набор HTTP-эндпоинтов для мониторинга и управления приложением в product",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Boot Actuator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot Actuator -- модуль, предоставляющий набор HTTP-эндпоинтов для мониторинга и управления приложением в production."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Boot Actuator?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает встроенный сервер в Spring Boot?",
+      "questionSlug": "kak-rabotaet-vstroennyj-server-v-spring-boot",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает встроенный сервер в Spring Boot? — Gymterview",
+        "description": "Spring Boot включает встроенный (embedded) сервер приложений, позволяющий запускать приложение как обычный JAR-файл без развёртывания на внешнем сервере.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как работает встроенный сервер в Spring Boot? — Gymterview",
+        "ogDescription": "Spring Boot включает встроенный (embedded) сервер приложений, позволяющий запускать приложение как обычный JAR-файл без ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает встроенный сервер в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot включает встроенный (embedded) сервер приложений, позволяющий запускать приложение как обычный JAR-файл без развёртывания на внешнем сервере."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает встроенный сервер в Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Boot DevTools?",
+      "questionSlug": "chto-takoe-spring-boot-devtools",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Boot DevTools? — Gymterview",
+        "description": "Spring Boot DevTools -- модуль для ускорения разработки за счёт автоматической перезагрузки приложения, отключения кэширования и удобных настроек по умолчанию.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Boot DevTools? — Gymterview",
+        "ogDescription": "Spring Boot DevTools -- модуль для ускорения разработки за счёт автоматической перезагрузки приложения, отключения кэшир",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Boot DevTools?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot DevTools -- модуль для ускорения разработки за счёт автоматической перезагрузки приложения, отключения кэширования и удобных настроек по умолчанию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Boot DevTools?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Data JPA?",
+      "questionSlug": "chto-takoe-spring-data-jpa",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Data JPA? — Gymterview",
+        "description": "Spring Data JPA -- часть проекта Spring Data, которая значительно упрощает работу с JPA, устраняя необходимость в шаблонном коде для стандартных операций с базо",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Data JPA? — Gymterview",
+        "ogDescription": "Spring Data JPA -- часть проекта Spring Data, которая значительно упрощает работу с JPA, устраняя необходимость в шаблон",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Data JPA?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Data JPA -- часть проекта Spring Data, которая значительно упрощает работу с JPA, устраняя необходимость в шаблонном коде для стандартных операций с базой данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Data JPA?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между Repository, CrudRepository и JpaRepository?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-repository-crudrepository-i-jparepository",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "В чём разница между Repository, CrudRepository и JpaReposito — Gymterview",
+        "description": "Эти интерфейсы образуют иерархию наследования, каждый следующий добавляет функциональность.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "В чём разница между Repository, CrudRepository и JpaReposito — Gymterview",
+        "ogDescription": "Эти интерфейсы образуют иерархию наследования, каждый следующий добавляет функциональность.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между Repository, CrudRepository и JpaRepository?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти интерфейсы образуют иерархию наследования, каждый следующий добавляет функциональность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "В чём разница между Repository, CrudRepository и JpaReposito",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое query methods в Spring Data?",
+      "questionSlug": "chto-takoe-query-methods-v-spring-data",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое query methods в Spring Data? — Gymterview",
+        "description": "Query methods (derived queries) -- механизм автоматической генерации SQL-запросов на основе имени метода в интерфейсе репозитория. Spring Data анализирует имя м",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое query methods в Spring Data? — Gymterview",
+        "ogDescription": "Query methods (derived queries) -- механизм автоматической генерации SQL-запросов на основе имени метода в интерфейсе ре",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое query methods в Spring Data?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Query methods (derived queries) -- механизм автоматической генерации SQL-запросов на основе имени метода в интерфейсе репозитория. Spring Data анализирует имя метода и создаёт соответствующий JPQL-запрос."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое query methods в Spring Data?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать @Query, JPQL и native queries?",
+      "questionSlug": "kak-ispolzovat-query-jpql-i-native-queries",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как использовать @Query, JPQL и native queries? — Gymterview",
+        "description": "Когда query methods недостаточно, Spring Data предоставляет аннотацию `@Query` для написания собственных запросов.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как использовать @Query, JPQL и native queries? — Gymterview",
+        "ogDescription": "Когда query methods недостаточно, Spring Data предоставляет аннотацию `@Query` для написания собственных запросов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать @Query, JPQL и native queries?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Когда query methods недостаточно, Spring Data предоставляет аннотацию `@Query` для написания собственных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как использовать @Query, JPQL и native queries?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать пагинацию и сортировку в Spring Data JPA?",
+      "questionSlug": "kak-realizovat-paginatsiyu-i-sortirovku-v-spring-data-jpa",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как реализовать пагинацию и сортировку в Spring Data JPA? — Gymterview",
+        "description": "Spring Data предоставляет абстракции для пагинации и сортировки через интерфейсы `Pageable`, `Sort`, `Page` и `Slice`.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как реализовать пагинацию и сортировку в Spring Data JPA? — Gymterview",
+        "ogDescription": "Spring Data предоставляет абстракции для пагинации и сортировки через интерфейсы `Pageable`, `Sort`, `Page` и `Slice`.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать пагинацию и сортировку в Spring Data JPA?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Data предоставляет абстракции для пагинации и сортировки через интерфейсы `Pageable`, `Sort`, `Page` и `Slice`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как реализовать пагинацию и сортировку в Spring Data JPA?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные аннотации JPA для маппинга сущностей вы знаете?",
+      "questionSlug": "kakie-osnovnye-annotatsii-jpa-dlya-mappinga-sushchnostej-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие основные аннотации JPA для маппинга сущностей вы знает — Gymterview",
+        "description": "JPA использует аннотации для маппинга Java-классов на таблицы БД. Минимальный набор: `@Entity`, `@Id`, `@GeneratedValue`.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Какие основные аннотации JPA для маппинга сущностей вы знает — Gymterview",
+        "ogDescription": "JPA использует аннотации для маппинга Java-классов на таблицы БД. Минимальный набор: `@Entity`, `@Id`, `@GeneratedValue`",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные аннотации JPA для маппинга сущностей вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPA использует аннотации для маппинга Java-классов на таблицы БД. Минимальный набор: `@Entity`, `@Id`, `@GeneratedValue`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие основные аннотации JPA для маппинга сущностей вы знает",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как маппить связи между сущностями? В чём разница между LAZY и EAGER загрузкой?",
+      "questionSlug": "kak-mappit-svyazi-mezhdu-sushchnostyami-v-chyom-raznitsa-mezhdu-lazy-i-eager-zag",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как маппить связи между сущностями? В чём разница между LAZY — Gymterview",
+        "description": "JPA поддерживает четыре типа связей: `@ManyToOne`, `@OneToMany`, `@ManyToMany`, `@OneToOne`.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как маппить связи между сущностями? В чём разница между LAZY — Gymterview",
+        "ogDescription": "JPA поддерживает четыре типа связей: `@ManyToOne`, `@OneToMany`, `@ManyToMany`, `@OneToOne`.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как маппить связи между сущностями? В чём разница между LAZY и EAGER загрузкой?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPA поддерживает четыре типа связей: `@ManyToOne`, `@OneToMany`, `@ManyToMany`, `@OneToOne`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как маппить связи между сущностями? В чём разница между LAZY",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое проблема N+1 и как её решить?",
+      "questionSlug": "chto-takoe-problema-n1-i-kak-eyo-reshit",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое проблема N+1 и как её решить? — Gymterview",
+        "description": "Проблема N+1 -- ситуация, когда для получения данных выполняется 1 запрос для основной коллекции и N дополнительных запросов для загрузки связанных сущностей ка",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое проблема N+1 и как её решить? — Gymterview",
+        "ogDescription": "Проблема N+1 -- ситуация, когда для получения данных выполняется 1 запрос для основной коллекции и N дополнительных запр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое проблема N+1 и как её решить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проблема N+1 -- ситуация, когда для получения данных выполняется 1 запрос для основной коллекции и N дополнительных запросов для загрузки связанных сущностей каждого элемента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое проблема N+1 и как её решить?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает @Transactional в контексте JPA?",
+      "questionSlug": "kak-rabotaet-transactional-v-kontekste-jpa",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает @Transactional в контексте JPA? — Gymterview",
+        "description": "`@Transactional` в контексте JPA управляет не только транзакциями БД, но и жизненным циклом Persistence Context -- «рабочей области» JPA, которая хранит загруже",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как работает @Transactional в контексте JPA? — Gymterview",
+        "ogDescription": "`@Transactional` в контексте JPA управляет не только транзакциями БД, но и жизненным циклом Persistence Context -- «рабо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает @Transactional в контексте JPA?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Transactional` в контексте JPA управляет не только транзакциями БД, но и жизненным циклом Persistence Context -- «рабочей области» JPA, которая хранит загруженные сущности и отслеживает их изменения (кэш первого уровня)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает @Transactional в контексте JPA?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроена архитектура Spring MVC? Что такое DispatcherServlet?",
+      "questionSlug": "kak-ustroena-arkhitektura-spring-mvc-chto-takoe-dispatcherservlet",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как устроена архитектура Spring MVC? Что такое DispatcherSer — Gymterview",
+        "description": "Spring MVC -- веб-фреймворк, построенный по паттерну Front Controller. Все HTTP-запросы проходят через единую точку входа -- DispatcherServlet.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как устроена архитектура Spring MVC? Что такое DispatcherSer — Gymterview",
+        "ogDescription": "Spring MVC -- веб-фреймворк, построенный по паттерну Front Controller. Все HTTP-запросы проходят через единую точку вход",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроена архитектура Spring MVC? Что такое DispatcherServlet?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring MVC -- веб-фреймворк, построенный по паттерну Front Controller. Все HTTP-запросы проходят через единую точку входа -- DispatcherServlet."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как устроена архитектура Spring MVC? Что такое DispatcherSer",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между @Controller и @RestController?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-controller-i-restcontroller",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "В чём разница между @Controller и @RestController? — Gymterview",
+        "description": "`@Controller` -- аннотация для контроллеров, возвращающих представления (HTML через шаблонизаторы). `@RestController` -- комбинация `@Controller` + `@ResponseBo",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "В чём разница между @Controller и @RestController? — Gymterview",
+        "ogDescription": "`@Controller` -- аннотация для контроллеров, возвращающих представления (HTML через шаблонизаторы). `@RestController` --",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между @Controller и @RestController?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Controller` -- аннотация для контроллеров, возвращающих представления (HTML через шаблонизаторы). `@RestController` -- комбинация `@Controller` + `@ResponseBody`, где каждый метод автоматически сериализует объект в тело HTTP-ответа (JSON по умолчанию)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "В чём разница между @Controller и @RestController?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают аннотации маппинга запросов: @RequestMapping, @GetMapping, @PostMapping?",
+      "questionSlug": "kak-rabotayut-annotatsii-mappinga-zaprosov-requestmapping-getmapping-postmapping",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работают аннотации маппинга запросов: @RequestMapping, @ — Gymterview",
+        "description": "Эти аннотации связывают HTTP-запросы с методами контроллера. `@GetMapping`, `@PostMapping` и другие -- сокращения для `@RequestMapping` с конкретным HTTP-методо",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как работают аннотации маппинга запросов: @RequestMapping, @ — Gymterview",
+        "ogDescription": "Эти аннотации связывают HTTP-запросы с методами контроллера. `@GetMapping`, `@PostMapping` и другие -- сокращения для `@",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают аннотации маппинга запросов: @RequestMapping, @GetMapping, @PostMapping?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти аннотации связывают HTTP-запросы с методами контроллера. `@GetMapping`, `@PostMapping` и другие -- сокращения для `@RequestMapping` с конкретным HTTP-методом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работают аннотации маппинга запросов: @RequestMapping, @",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны @RequestParam, @PathVariable, @RequestBody и @ResponseBody?",
+      "questionSlug": "dlya-chego-nuzhny-requestparam-pathvariable-requestbody-i-responsebody",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Для чего нужны @RequestParam, @PathVariable, @RequestBody и  — Gymterview",
+        "description": "Эти аннотации определяют, откуда Spring извлекает данные запроса и куда помещает данные ответа.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны @RequestParam, @PathVariable, @RequestBody и  — Gymterview",
+        "ogDescription": "Эти аннотации определяют, откуда Spring извлекает данные запроса и куда помещает данные ответа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны @RequestParam, @PathVariable, @RequestBody и @ResponseBody?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти аннотации определяют, откуда Spring извлекает данные запроса и куда помещает данные ответа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Для чего нужны @RequestParam, @PathVariable, @RequestBody и ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ResponseEntity и когда его использовать?",
+      "questionSlug": "chto-takoe-responseentity-i-kogda-ego-ispolzovat",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое ResponseEntity и когда его использовать? — Gymterview",
+        "description": "ResponseEntity -- класс-обёртка для полного контроля HTTP-ответа: статус-код, заголовки и тело.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое ResponseEntity и когда его использовать? — Gymterview",
+        "ogDescription": "ResponseEntity -- класс-обёртка для полного контроля HTTP-ответа: статус-код, заголовки и тело.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ResponseEntity и когда его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ResponseEntity -- класс-обёртка для полного контроля HTTP-ответа: статус-код, заголовки и тело."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое ResponseEntity и когда его использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обрабатывать исключения в Spring MVC? Что такое @ExceptionHandler и @ControllerAdvice?",
+      "questionSlug": "kak-obrabatyvat-isklyucheniya-v-spring-mvc-chto-takoe-exceptionhandler-i-control",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как обрабатывать исключения в Spring MVC? Что такое @Excepti — Gymterview",
+        "description": "Spring MVC предоставляет механизм обработки исключений на разных уровнях. `@ExceptionHandler` обрабатывает исключения в одном контроллере. `@ControllerAdvice` -",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как обрабатывать исключения в Spring MVC? Что такое @Excepti — Gymterview",
+        "ogDescription": "Spring MVC предоставляет механизм обработки исключений на разных уровнях. `@ExceptionHandler` обрабатывает исключения в ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обрабатывать исключения в Spring MVC? Что такое @ExceptionHandler и @ControllerAdvice?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring MVC предоставляет механизм обработки исключений на разных уровнях. `@ExceptionHandler` обрабатывает исключения в одном контроллере. `@ControllerAdvice` -- глобально для всех контроллеров."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как обрабатывать исключения в Spring MVC? Что такое @Excepti",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

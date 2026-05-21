@@ -1,0 +1,458 @@
+{
+  "topic": "Spring Framework",
+  "topicSlug": "spring",
+  "batch": 3,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как работает валидация в Spring? Что такое @Valid и @Validated?",
+      "questionSlug": "kak-rabotaet-validatsiya-v-spring-chto-takoe-valid-i-validated",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает валидация в Spring? Что такое @Valid и @Validat — Gymterview",
+        "description": "Spring интегрирует Bean Validation API (JSR 380) через Hibernate Validator для декларативной валидации данных. Аннотация `@Valid` перед `@RequestBody` активируе",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как работает валидация в Spring? Что такое @Valid и @Validat — Gymterview",
+        "ogDescription": "Spring интегрирует Bean Validation API (JSR 380) через Hibernate Validator для декларативной валидации данных. Аннотация",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает валидация в Spring? Что такое @Valid и @Validated?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring интегрирует Bean Validation API (JSR 380) через Hibernate Validator для декларативной валидации данных. Аннотация `@Valid` перед `@RequestBody` активирует проверку."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает валидация в Spring? Что такое @Valid и @Validat",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Security?",
+      "questionSlug": "chto-takoe-spring-security",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Security? — Gymterview",
+        "description": "Spring Security -- фреймворк для обеспечения безопасности Java-приложений, отвечающий за аутентификацию (кто ты?), авторизацию (что тебе разрешено?) и защиту от",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое Spring Security? — Gymterview",
+        "ogDescription": "Spring Security -- фреймворк для обеспечения безопасности Java-приложений, отвечающий за аутентификацию (кто ты?), автор",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Security?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Security -- фреймворк для обеспечения безопасности Java-приложений, отвечающий за аутентификацию (кто ты?), авторизацию (что тебе разрешено?) и защиту от распространённых атак (CSRF, Session Fixation)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Security?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между аутентификацией и авторизацией?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-autentifikatsiej-i-avtorizatsiej",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "В чём разница между аутентификацией и авторизацией? — Gymterview",
+        "description": "Аутентификация (Authentication) -- проверка личности пользователя, ответ на вопрос «Кто ты?». Авторизация (Authorization) -- проверка прав доступа, ответ на воп",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "В чём разница между аутентификацией и авторизацией? — Gymterview",
+        "ogDescription": "Аутентификация (Authentication) -- проверка личности пользователя, ответ на вопрос «Кто ты?». Авторизация (Authorization",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между аутентификацией и авторизацией?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Аутентификация (Authentication) -- проверка личности пользователя, ответ на вопрос «Кто ты?». Авторизация (Authorization) -- проверка прав доступа, ответ на вопрос «Что тебе разрешено?»."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "В чём разница между аутентификацией и авторизацией?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое SecurityFilterChain и как он работает?",
+      "questionSlug": "chto-takoe-securityfilterchain-i-kak-on-rabotaet",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое SecurityFilterChain и как он работает? — Gymterview",
+        "description": "SecurityFilterChain -- цепочка сервлетных фильтров, через которую проходит каждый HTTP-запрос в Spring Security. Каждый фильтр выполняет определённую задачу без",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое SecurityFilterChain и как он работает? — Gymterview",
+        "ogDescription": "SecurityFilterChain -- цепочка сервлетных фильтров, через которую проходит каждый HTTP-запрос в Spring Security. Каждый ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SecurityFilterChain и как он работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SecurityFilterChain -- цепочка сервлетных фильтров, через которую проходит каждый HTTP-запрос в Spring Security. Каждый фильтр выполняет определённую задачу безопасности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое SecurityFilterChain и как он работает?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают аннотации @PreAuthorize и @Secured?",
+      "questionSlug": "kak-rabotayut-annotatsii-preauthorize-i-secured",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работают аннотации @PreAuthorize и @Secured? — Gymterview",
+        "description": "`@PreAuthorize` и `@Secured` обеспечивают авторизацию на уровне методов (method-level security). Требуют `@EnableMethodSecurity` для активации.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как работают аннотации @PreAuthorize и @Secured? — Gymterview",
+        "ogDescription": "`@PreAuthorize` и `@Secured` обеспечивают авторизацию на уровне методов (method-level security). Требуют `@EnableMethodS",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают аннотации @PreAuthorize и @Secured?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@PreAuthorize` и `@Secured` обеспечивают авторизацию на уровне методов (method-level security). Требуют `@EnableMethodSecurity` для активации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работают аннотации @PreAuthorize и @Secured?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить аутентификацию на основе JWT в Spring Security?",
+      "questionSlug": "kak-nastroit-autentifikatsiyu-na-osnove-jwt-v-spring-security",
+      "grade": "senior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как настроить аутентификацию на основе JWT в Spring Security — Gymterview",
+        "description": "JWT (JSON Web Token) -- компактный самодостаточный формат токена для аутентификации в REST API. Структура: `HEADER.PAYLOAD.SIGNATURE`.",
+        "keywords": [
+          "spring",
+          "senior"
+        ],
+        "ogTitle": "Как настроить аутентификацию на основе JWT в Spring Security — Gymterview",
+        "ogDescription": "JWT (JSON Web Token) -- компактный самодостаточный формат токена для аутентификации в REST API. Структура: `HEADER.PAYLO",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить аутентификацию на основе JWT в Spring Security?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JWT (JSON Web Token) -- компактный самодостаточный формат токена для аутентификации в REST API. Структура: `HEADER.PAYLOAD.SIGNATURE`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как настроить аутентификацию на основе JWT в Spring Security",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Event? Как создать и обработать событие?",
+      "questionSlug": "chto-takoe-spring-event-kak-sozdat-i-obrabotat-sobytie",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Event? Как создать и обработать событие? — Gymterview",
+        "description": "Spring Events -- механизм публикации и обработки событий, реализующий паттерн Observer (Наблюдатель). Позволяет ослабить связность между компонентами.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое Spring Event? Как создать и обработать событие? — Gymterview",
+        "ogDescription": "Spring Events -- механизм публикации и обработки событий, реализующий паттерн Observer (Наблюдатель). Позволяет ослабить",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Event? Как создать и обработать событие?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Events -- механизм публикации и обработки событий, реализующий паттерн Observer (Наблюдатель). Позволяет ослабить связность между компонентами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Event? Как создать и обработать событие?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое @Conditional и условная конфигурация в Spring Boot?",
+      "questionSlug": "chto-takoe-conditional-i-uslovnaya-konfiguratsiya-v-spring-boot",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое @Conditional и условная конфигурация в Spring Boot — Gymterview",
+        "description": "`@Conditional` -- базовая аннотация Spring для создания бинов только при выполнении определённых условий. Spring Boot расширяет её множеством специализированных",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое @Conditional и условная конфигурация в Spring Boot — Gymterview",
+        "ogDescription": "`@Conditional` -- базовая аннотация Spring для создания бинов только при выполнении определённых условий. Spring Boot ра",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое @Conditional и условная конфигурация в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Conditional` -- базовая аннотация Spring для создания бинов только при выполнении определённых условий. Spring Boot расширяет её множеством специализированных аннотаций, которые лежат в основе механизма автоконфигурации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое @Conditional и условная конфигурация в Spring Boot",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать Spring-приложения? Какие основные аннотации для тестирования?",
+      "questionSlug": "kak-testirovat-spring-prilozheniya-kakie-osnovnye-annotatsii-dlya-testirovaniya",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как тестировать Spring-приложения? Какие основные аннотации  — Gymterview",
+        "description": "Spring Boot предоставляет инструментарий для тестирования на всех уровнях: от unit-тестов без контекста до полноценных интеграционных тестов.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать Spring-приложения? Какие основные аннотации  — Gymterview",
+        "ogDescription": "Spring Boot предоставляет инструментарий для тестирования на всех уровнях: от unit-тестов без контекста до полноценных и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать Spring-приложения? Какие основные аннотации для тестирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot предоставляет инструментарий для тестирования на всех уровнях: от unit-тестов без контекста до полноценных интеграционных тестов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как тестировать Spring-приложения? Какие основные аннотации ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Cache и как его использовать?",
+      "questionSlug": "chto-takoe-spring-cache-i-kak-ego-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Cache и как его использовать? — Gymterview",
+        "description": "Spring Cache -- абстракция кэширования, позволяющая декларативно (через аннотации) кэшировать результаты методов без привязки к конкретной реализации кэша.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое Spring Cache и как его использовать? — Gymterview",
+        "ogDescription": "Spring Cache -- абстракция кэширования, позволяющая декларативно (через аннотации) кэшировать результаты методов без при",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Cache и как его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Cache -- абстракция кэширования, позволяющая декларативно (через аннотации) кэшировать результаты методов без привязки к конкретной реализации кэша."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Cache и как его использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

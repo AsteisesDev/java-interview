@@ -6,7 +6,20 @@
       "Bash(for file:*)",
       "Bash(do echo:*)",
       "Read(//d/projects/DEV/interview-preparing/**)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(python -c \"import json; f=open\\(''seo/core/core-batch5.seo.json'',''r'',encoding=''utf-8''\\); data=json.load\\(f\\); print\\(f''Valid JSON. Questions: {len\\(data[\"\"questions\"\"]\\)}, Batch: {data[\"\"batch\"\"]}''\\)\")",
+      "Bash(python -c \"import json; data=json.load\\(open\\(''seo/core/core-batch3.seo.json'',''r'',encoding=''utf-8''\\)\\); print\\(f''Valid JSON. {len\\(data[\"\"questions\"\"]\\)} questions. Batch: {data[\"\"batch\"\"]}''\\)\")",
+      "Bash(python -c \"import json; f=open\\(''seo/architecture/architecture-batch1.seo.json'',''r'',encoding=''utf-8''\\); data=json.load\\(f\\); print\\(f''Valid JSON. Questions: {len\\(data[\"\"questions\"\"]\\)}''\\); [print\\(f''  {i+1}. {q[\"\"question\"\"][:60]}... grade={q[\"\"grade\"\"]}''\\) for i,q in enumerate\\(data[''questions'']\\)]\")",
+      "Bash(python -m json.tool)",
+      "Bash(python -c \"import json; data=json.load\\(open\\(''seo/bash/bash-batch2.seo.json'',''r'',encoding=''utf-8''\\)\\); print\\(f''Valid JSON: {len\\(data[\"\"questions\"\"]\\)} questions''\\); [print\\(f''  {i+1}. {q[\"\"question\"\"][:60]}...''\\) for i,q in enumerate\\(data[''questions'']\\)]\")",
+      "Bash(python -c \"import json; data=json.load\\(open\\(''seo/caching/caching.seo.json'',''r'',encoding=''utf-8''\\)\\); print\\(f''Questions: {len\\(data[\"\"questions\"\"]\\)}''\\); [print\\(f''  {i+1}. {q[\"\"question\"\"]}''\\) for i,q in enumerate\\(data[''questions'']\\)]\")",
+      "Bash(python -c \"import json; f=open\\(''seo/cicd/cicd-batch1.seo.json'',''r'',encoding=''utf-8''\\); d=json.load\\(f\\); print\\(f''Valid JSON. Questions: {len\\(d[\"\"questions\"\"]\\)}''\\); [print\\(f''  {i+1}. {q[\"\"question\"\"][:60]}...''\\) for i,q in enumerate\\(d[''questions'']\\)]\")",
+      "Bash(python -c \"import json; data=json.load\\(open\\(''seo/cicd/cicd-batch2.seo.json'',''r'',encoding=''utf-8''\\)\\); print\\(f''Valid JSON. Questions: {len\\(data[\"\"questions\"\"]\\)}''\\); [print\\(f''  {i+1}. {q[\"\"question\"\"]}''\\) for i,q in enumerate\\(data[''questions'']\\)]\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Questions: {len\\(d[\"\"questions\"\"]\\)}''''\\); [print\\(f''''  {i+1}. {q[\"\"question\"\"]}''''\\) for i,q in enumerate\\(d[''''questions'''']\\)]\")",
+      "Bash(python -m json.tool \"E:/EDU_AND_PROJECTS/Projects/java-interview/seo/computer-fundamentals/cf-batch1.seo.json\")",
+      "Bash(python:*)",
+      "Bash(python3 -c \":*)",
+      "Bash(grep -c \"^---$\" git-v2.md)"
     ]
   }
 }

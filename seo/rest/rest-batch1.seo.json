@@ -1,0 +1,908 @@
+{
+  "topic": "REST API",
+  "topicSlug": "rest",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое REST?",
+      "questionSlug": "chto-takoe-rest",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое REST? — Gymterview",
+        "description": "REST (Representational State Transfer) — архитектурный стиль взаимодействия компонентов распределённой системы, предложенный Роем Филдингом (Roy Fielding) в 200",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Что такое REST? — Gymterview",
+        "ogDescription": "REST (Representational State Transfer) — архитектурный стиль взаимодействия компонентов распределённой системы, предложе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REST (Representational State Transfer) — архитектурный стиль взаимодействия компонентов распределённой системы, предложенный Роем Филдингом (Roy Fielding) в 2000 году в его докторской диссертации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое REST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое RESTful?",
+      "questionSlug": "chto-takoe-restful",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое RESTful? — Gymterview",
+        "description": "RESTful — прилагательное, описывающее систему (обычно веб-сервис или API), которая полностью соответствует принципам и ограничениям архитектурного стиля REST.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Что такое RESTful? — Gymterview",
+        "ogDescription": "RESTful — прилагательное, описывающее систему (обычно веб-сервис или API), которая полностью соответствует принципам и о",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое RESTful?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RESTful — прилагательное, описывающее систему (обычно веб-сервис или API), которая полностью соответствует принципам и ограничениям архитектурного стиля REST."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое RESTful?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие ограничения (constraints) определяет REST?",
+      "questionSlug": "kakie-ogranicheniya-constraints-opredelyaet-rest",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Какие ограничения (constraints) определяет REST? — Gymterview",
+        "description": "REST определяет шесть архитектурных ограничений, пять из которых обязательны и одно опциональное:",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Какие ограничения (constraints) определяет REST? — Gymterview",
+        "ogDescription": "REST определяет шесть архитектурных ограничений, пять из которых обязательны и одно опциональное:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ограничения (constraints) определяет REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REST определяет шесть архитектурных ограничений, пять из которых обязательны и одно опциональное:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Какие ограничения (constraints) определяет REST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ресурс в REST?",
+      "questionSlug": "chto-takoe-resurs-v-rest",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое ресурс в REST? — Gymterview",
+        "description": "Ресурс — ключевая абстракция в REST. Ресурсом может быть любая именованная информация: документ, изображение, коллекция других ресурсов, временная сущность (нап",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Что такое ресурс в REST? — Gymterview",
+        "ogDescription": "Ресурс — ключевая абстракция в REST. Ресурсом может быть любая именованная информация: документ, изображение, коллекция ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ресурс в REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ресурс — ключевая абстракция в REST. Ресурсом может быть любая именованная информация: документ, изображение, коллекция других ресурсов, временная сущность (например, текущая погода) и т.д."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое ресурс в REST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие HTTP-методы используются в REST и какова их семантика?",
+      "questionSlug": "kakie-http-metody-ispolzuyutsya-v-rest-i-kakova-ikh-semantika",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Какие HTTP-методы используются в REST и какова их семантика? — Gymterview",
+        "description": "В REST используются стандартные HTTP-методы для операций над ресурсами:",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Какие HTTP-методы используются в REST и какова их семантика? — Gymterview",
+        "ogDescription": "В REST используются стандартные HTTP-методы для операций над ресурсами:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие HTTP-методы используются в REST и какова их семантика?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В REST используются стандартные HTTP-методы для операций над ресурсами:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Какие HTTP-методы используются в REST и какова их семантика?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое идемпотентность и безопасность HTTP-методов?",
+      "questionSlug": "chto-takoe-idempotentnost-i-bezopasnost-http-metodov",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое идемпотентность и безопасность HTTP-методов? — Gymterview",
+        "description": "Безопасный метод (Safe method) — метод, который не изменяет состояние ресурса на сервере. Вызов безопасного метода не создаёт побочных эффектов. Безопасные мето",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Что такое идемпотентность и безопасность HTTP-методов? — Gymterview",
+        "ogDescription": "Безопасный метод (Safe method) — метод, который не изменяет состояние ресурса на сервере. Вызов безопасного метода не со",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое идемпотентность и безопасность HTTP-методов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Безопасный метод (Safe method) — метод, который не изменяет состояние ресурса на сервере. Вызов безопасного метода не создаёт побочных эффектов. Безопасные методы: `GET`, `HEAD`, `OPTIONS`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое идемпотентность и безопасность HTTP-методов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между PUT и POST?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-put-i-post",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "В чём разница между PUT и POST? — Gymterview",
+        "description": "PUT и POST — два HTTP-метода для создания и обновления ресурсов, различающиеся семантикой, идемпотентностью и тем, кто определяет URI нового ресурса.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "В чём разница между PUT и POST? — Gymterview",
+        "ogDescription": "PUT и POST — два HTTP-метода для создания и обновления ресурсов, различающиеся семантикой, идемпотентностью и тем, кто о",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между PUT и POST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PUT и POST — два HTTP-метода для создания и обновления ресурсов, различающиеся семантикой, идемпотентностью и тем, кто определяет URI нового ресурса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "В чём разница между PUT и POST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между PUT и PATCH?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-put-i-patch",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "В чём разница между PUT и PATCH? — Gymterview",
+        "description": "PUT выполняет полную замену ресурса, а PATCH — частичное обновление. При PUT все не переданные поля будут сброшены, при PATCH — останутся без изменений.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "В чём разница между PUT и PATCH? — Gymterview",
+        "ogDescription": "PUT выполняет полную замену ресурса, а PATCH — частичное обновление. При PUT все не переданные поля будут сброшены, при ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между PUT и PATCH?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PUT выполняет полную замену ресурса, а PATCH — частичное обновление. При PUT все не переданные поля будут сброшены, при PATCH — останутся без изменений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "В чём разница между PUT и PATCH?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют коды HTTP-ответов и когда их использовать?",
+      "questionSlug": "kakie-sushchestvuyut-kody-http-otvetov-i-kogda-ikh-ispolzovat",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Какие существуют коды HTTP-ответов и когда их использовать? — Gymterview",
+        "description": "HTTP-коды ответов делятся на 5 классов по первой цифре, определяющей категорию результата обработки запроса.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют коды HTTP-ответов и когда их использовать? — Gymterview",
+        "ogDescription": "HTTP-коды ответов делятся на 5 классов по первой цифре, определяющей категорию результата обработки запроса.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют коды HTTP-ответов и когда их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP-коды ответов делятся на 5 классов по первой цифре, определяющей категорию результата обработки запроса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Какие существуют коды HTTP-ответов и когда их использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каковы лучшие практики проектирования URI?",
+      "questionSlug": "kakovy-luchshie-praktiki-proektirovaniya-uri",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Каковы лучшие практики проектирования URI? — Gymterview",
+        "description": "URI в REST API должны быть предсказуемыми, читаемыми и отражать структуру ресурсов, а не операции над ними.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Каковы лучшие практики проектирования URI? — Gymterview",
+        "ogDescription": "URI в REST API должны быть предсказуемыми, читаемыми и отражать структуру ресурсов, а не операции над ними.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каковы лучшие практики проектирования URI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "URI в REST API должны быть предсказуемыми, читаемыми и отражать структуру ресурсов, а не операции над ними."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Каковы лучшие практики проектирования URI?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как версионировать REST API?",
+      "questionSlug": "kak-versionirovat-rest-api",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как версионировать REST API? — Gymterview",
+        "description": "Версионирование позволяет развивать API без нарушения обратной совместимости для существующих клиентов.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как версионировать REST API? — Gymterview",
+        "ogDescription": "Версионирование позволяет развивать API без нарушения обратной совместимости для существующих клиентов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как версионировать REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Версионирование позволяет развивать API без нарушения обратной совместимости для существующих клиентов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как версионировать REST API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Content Negotiation?",
+      "questionSlug": "chto-takoe-content-negotiation",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое Content Negotiation? — Gymterview",
+        "description": "Content Negotiation (согласование содержимого) — механизм HTTP, позволяющий клиенту и серверу договориться о формате представления ресурса.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое Content Negotiation? — Gymterview",
+        "ogDescription": "Content Negotiation (согласование содержимого) — механизм HTTP, позволяющий клиенту и серверу договориться о формате пре",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Content Negotiation?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Content Negotiation (согласование содержимого) — механизм HTTP, позволяющий клиенту и серверу договориться о формате представления ресурса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое Content Negotiation?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое HATEOAS?",
+      "questionSlug": "chto-takoe-hateoas",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое HATEOAS? — Gymterview",
+        "description": "HATEOAS (Hypermedia as the Engine of Application State) — принцип REST, согласно которому сервер в ответе предоставляет клиенту ссылки на доступные действия и с",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое HATEOAS? — Gymterview",
+        "ogDescription": "HATEOAS (Hypermedia as the Engine of Application State) — принцип REST, согласно которому сервер в ответе предоставляет ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое HATEOAS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HATEOAS (Hypermedia as the Engine of Application State) — принцип REST, согласно которому сервер в ответе предоставляет клиенту ссылки на доступные действия и связанные ресурсы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое HATEOAS?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём отличия REST от SOAP?",
+      "questionSlug": "v-chyom-otlichiya-rest-ot-soap",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "В чём отличия REST от SOAP? — Gymterview",
+        "description": "REST — архитектурный стиль, работающий преимущественно через HTTP с любым форматом данных. SOAP — строгий протокол, использующий исключительно XML и поддерживаю",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "В чём отличия REST от SOAP? — Gymterview",
+        "ogDescription": "REST — архитектурный стиль, работающий преимущественно через HTTP с любым форматом данных. SOAP — строгий протокол, испо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём отличия REST от SOAP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REST — архитектурный стиль, работающий преимущественно через HTTP с любым форматом данных. SOAP — строгий протокол, использующий исключительно XML и поддерживающий множество транспортов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "В чём отличия REST от SOAP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Richardson Maturity Model?",
+      "questionSlug": "chto-takoe-richardson-maturity-model",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое Richardson Maturity Model? — Gymterview",
+        "description": "Richardson Maturity Model (Модель зрелости Ричардсона) — модель, описывающая четыре уровня зрелости REST API, предложенная Леонардом Ричардсоном.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое Richardson Maturity Model? — Gymterview",
+        "ogDescription": "Richardson Maturity Model (Модель зрелости Ричардсона) — модель, описывающая четыре уровня зрелости REST API, предложенн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Richardson Maturity Model?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Richardson Maturity Model (Модель зрелости Ричардсона) — модель, описывающая четыре уровня зрелости REST API, предложенная Леонардом Ричардсоном."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое Richardson Maturity Model?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать пагинацию, фильтрацию и сортировку в REST API?",
+      "questionSlug": "kak-realizovat-paginatsiyu-filtratsiyu-i-sortirovku-v-rest-api",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как реализовать пагинацию, фильтрацию и сортировку в REST AP — Gymterview",
+        "description": "Пагинация, фильтрация и сортировка — обязательные механизмы для работы с большими коллекциями ресурсов, реализуемые через query-параметры HTTP-запросов.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как реализовать пагинацию, фильтрацию и сортировку в REST AP — Gymterview",
+        "ogDescription": "Пагинация, фильтрация и сортировка — обязательные механизмы для работы с большими коллекциями ресурсов, реализуемые чере",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать пагинацию, фильтрацию и сортировку в REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пагинация, фильтрация и сортировка — обязательные механизмы для работы с большими коллекциями ресурсов, реализуемые через query-параметры HTTP-запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как реализовать пагинацию, фильтрацию и сортировку в REST AP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обрабатывать ошибки в REST API?",
+      "questionSlug": "kak-obrabatyvat-oshibki-v-rest-api",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как обрабатывать ошибки в REST API? — Gymterview",
+        "description": "Правильная обработка ошибок строится на двух принципах: использование корректных HTTP-кодов (4xx/5xx) и возврат структурированного тела ответа с описанием ошибк",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как обрабатывать ошибки в REST API? — Gymterview",
+        "ogDescription": "Правильная обработка ошибок строится на двух принципах: использование корректных HTTP-кодов (4xx/5xx) и возврат структур",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обрабатывать ошибки в REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Правильная обработка ошибок строится на двух принципах: использование корректных HTTP-кодов (4xx/5xx) и возврат структурированного тела ответа с описанием ошибки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как обрабатывать ошибки в REST API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие способы аутентификации используются в REST API?",
+      "questionSlug": "kakie-sposoby-autentifikatsii-ispolzuyutsya-v-rest-api",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Какие способы аутентификации используются в REST API? — Gymterview",
+        "description": "Аутентификация в REST API — процесс проверки личности клиента, выполняемый при каждом запросе в силу stateless-природы REST.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Какие способы аутентификации используются в REST API? — Gymterview",
+        "ogDescription": "Аутентификация в REST API — процесс проверки личности клиента, выполняемый при каждом запросе в силу stateless-природы R",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие способы аутентификации используются в REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Аутентификация в REST API — процесс проверки личности клиента, выполняемый при каждом запросе в силу stateless-природы REST."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Какие способы аутентификации используются в REST API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое OAuth 2.0 и как он работает?",
+      "questionSlug": "chto-takoe-oauth-20-i-kak-on-rabotaet",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое OAuth 2.0 и как он работает? — Gymterview",
+        "description": "OAuth 2.0 — протокол (фреймворк) авторизации, который позволяет стороннему приложению получить ограниченный доступ к HTTP-сервису от имени владельца ресурса, не",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое OAuth 2.0 и как он работает? — Gymterview",
+        "ogDescription": "OAuth 2.0 — протокол (фреймворк) авторизации, который позволяет стороннему приложению получить ограниченный доступ к HTT",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое OAuth 2.0 и как он работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OAuth 2.0 — протокол (фреймворк) авторизации, который позволяет стороннему приложению получить ограниченный доступ к HTTP-сервису от имени владельца ресурса, не раскрывая его учётные данные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое OAuth 2.0 и как он работает?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает кэширование в REST?",
+      "questionSlug": "kak-rabotaet-keshirovanie-v-rest",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как работает кэширование в REST? — Gymterview",
+        "description": "Кэширование — одно из шести ограничений REST, реализуемое через HTTP-заголовки Cache-Control, ETag и Last-Modified для снижения нагрузки на сервер и ускорения о",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как работает кэширование в REST? — Gymterview",
+        "ogDescription": "Кэширование — одно из шести ограничений REST, реализуемое через HTTP-заголовки Cache-Control, ETag и Last-Modified для с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает кэширование в REST?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кэширование — одно из шести ограничений REST, реализуемое через HTTP-заголовки Cache-Control, ETag и Last-Modified для снижения нагрузки на сервер и ускорения ответов клиенту."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как работает кэширование в REST?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

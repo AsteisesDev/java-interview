@@ -1,0 +1,683 @@
+{
+  "topic": "Микросервисы",
+  "topicSlug": "microservices",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как организовать распределённую трассировку в микросервисах?",
+      "questionSlug": "kak-organizovat-raspredelyonnuyu-trassirovku-v-mikroservisakh",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать распределённую трассировку в микросервисах? — Gymterview",
+        "description": "Distributed Tracing (распределённая трассировка) — это метод отслеживания прохождения запроса через цепочку микросервисов, позволяющий понять, какие сервисы был",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать распределённую трассировку в микросервисах? — Gymterview",
+        "ogDescription": "Distributed Tracing (распределённая трассировка) — это метод отслеживания прохождения запроса через цепочку микросервисо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать распределённую трассировку в микросервисах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distributed Tracing (распределённая трассировка) — это метод отслеживания прохождения запроса через цепочку микросервисов, позволяющий понять, какие сервисы были вызваны, сколько времени занял каждый вызов и где произошла ошибка."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать распределённую трассировку в микросервисах?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать централизованное логирование?",
+      "questionSlug": "kak-organizovat-tsentralizovannoe-logirovanie",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать централизованное логирование? — Gymterview",
+        "description": "Централизованное логирование — это сбор логов со всех микросервисов в одном месте для удобного поиска и анализа. Основные стеки: ELK (Elasticsearch + Logstash +",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать централизованное логирование? — Gymterview",
+        "ogDescription": "Централизованное логирование — это сбор логов со всех микросервисов в одном месте для удобного поиска и анализа. Основны",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать централизованное логирование?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Централизованное логирование — это сбор логов со всех микросервисов в одном месте для удобного поиска и анализа. Основные стеки: ELK (Elasticsearch + Logstash + Kibana) и Grafana Loki."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать централизованное логирование?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать health checks и мониторинг микросервисов?",
+      "questionSlug": "kak-realizovat-health-checks-i-monitoring-mikroservisov",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как реализовать health checks и мониторинг микросервисов? — Gymterview",
+        "description": "Health checks и мониторинг — критические аспекты production-ready микросервисов. Spring Boot Actuator предоставляет готовые эндпоинты для проверки здоровья, а P",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как реализовать health checks и мониторинг микросервисов? — Gymterview",
+        "ogDescription": "Health checks и мониторинг — критические аспекты production-ready микросервисов. Spring Boot Actuator предоставляет гото",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать health checks и мониторинг микросервисов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Health checks и мониторинг — критические аспекты production-ready микросервисов. Spring Boot Actuator предоставляет готовые эндпоинты для проверки здоровья, а Prometheus + Grafana — для сбора и визуализации метрик."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как реализовать health checks и мониторинг микросервисов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое идемпотентность и почему она важна в микросервисах?",
+      "questionSlug": "chto-takoe-idempotentnost-i-pochemu-ona-vazhna-v-mikroservisakh",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое идемпотентность и почему она важна в микросервисах — Gymterview",
+        "description": "Идемпотентность — это свойство операции, при котором многократное выполнение даёт тот же результат, что и однократное. В микросервисах это гарантирует, что повт",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое идемпотентность и почему она важна в микросервисах — Gymterview",
+        "ogDescription": "Идемпотентность — это свойство операции, при котором многократное выполнение даёт тот же результат, что и однократное. В",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое идемпотентность и почему она важна в микросервисах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Идемпотентность — это свойство операции, при котором многократное выполнение даёт тот же результат, что и однократное. В микросервисах это гарантирует, что повторная отправка запроса не приводит к дублированию побочных эффектов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое идемпотентность и почему она важна в микросервисах",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как версионировать API микросервисов?",
+      "questionSlug": "kak-versionirovat-api-mikroservisov",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как версионировать API микросервисов? — Gymterview",
+        "description": "Версионирование API необходимо для обратной совместимости — чтобы обновление одного сервиса не ломало потребителей его API. Три основных подхода: версия в URL, ",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как версионировать API микросервисов? — Gymterview",
+        "ogDescription": "Версионирование API необходимо для обратной совместимости — чтобы обновление одного сервиса не ломало потребителей его A",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как версионировать API микросервисов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Версионирование API необходимо для обратной совместимости — чтобы обновление одного сервиса не ломало потребителей его API. Три основных подхода: версия в URL, в заголовке и через Content-Type."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как версионировать API микросервисов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать микросервисы?",
+      "questionSlug": "kak-testirovat-mikroservisy",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как тестировать микросервисы? — Gymterview",
+        "description": "Тестирование микросервисов строится на основе пирамиды тестирования, адаптированной для распределённой архитектуры: unit-тесты (много), component-тесты, contrac",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать микросервисы? — Gymterview",
+        "ogDescription": "Тестирование микросервисов строится на основе пирамиды тестирования, адаптированной для распределённой архитектуры: unit",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать микросервисы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тестирование микросервисов строится на основе пирамиды тестирования, адаптированной для распределённой архитектуры: unit-тесты (много), component-тесты, contract-тесты (между сервисами), integration-тесты и E2E-тесты (мало)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как тестировать микросервисы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое 12-Factor App?",
+      "questionSlug": "chto-takoe-12-factor-app",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое 12-Factor App? — Gymterview",
+        "description": "12-Factor App — это методология разработки SaaS-приложений, описанная инженерами Heroku, определяющая 12 принципов создания облачных приложений. Особенно актуал",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое 12-Factor App? — Gymterview",
+        "ogDescription": "12-Factor App — это методология разработки SaaS-приложений, описанная инженерами Heroku, определяющая 12 принципов созда",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое 12-Factor App?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "12-Factor App — это методология разработки SaaS-приложений, описанная инженерами Heroku, определяющая 12 принципов создания облачных приложений. Особенно актуальна для микросервисов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое 12-Factor App?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Sidecar?",
+      "questionSlug": "chto-takoe-pattern-sidecar",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Sidecar? — Gymterview",
+        "description": "Sidecar — это паттерн развёртывания, при котором вспомогательный контейнер работает рядом с основным сервисом в одном pod'е (в Kubernetes) и берёт на себя сквоз",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн Sidecar? — Gymterview",
+        "ogDescription": "Sidecar — это паттерн развёртывания, при котором вспомогательный контейнер работает рядом с основным сервисом в одном po",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Sidecar?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sidecar — это паттерн развёртывания, при котором вспомогательный контейнер работает рядом с основным сервисом в одном pod'е (в Kubernetes) и берёт на себя сквозные задачи: проксирование трафика, логирование, мониторинг, безопасность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Sidecar?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн BFF (Backend for Frontend)?",
+      "questionSlug": "chto-takoe-pattern-bff-backend-for-frontend",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн BFF (Backend for Frontend)? — Gymterview",
+        "description": "BFF (Backend for Frontend) — это паттерн, при котором для каждого типа клиента (мобильное приложение, веб-приложение, партнёрское API) создаётся отдельный backe",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерн BFF (Backend for Frontend)? — Gymterview",
+        "ogDescription": "BFF (Backend for Frontend) — это паттерн, при котором для каждого типа клиента (мобильное приложение, веб-приложение, па",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн BFF (Backend for Frontend)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BFF (Backend for Frontend) — это паттерн, при котором для каждого типа клиента (мобильное приложение, веб-приложение, партнёрское API) создаётся отдельный backend-сервис, оптимизированный под потребности этого клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн BFF (Backend for Frontend)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Database per Service или Shared Database -- какой подход выбрать?",
+      "questionSlug": "database-per-service-ili-shared-database-kakoj-podkhod-vybrat",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Database per Service или Shared Database -- какой подход выб — Gymterview",
+        "description": "Database per Service — это принцип, при котором каждый микросервис владеет собственным хранилищем данных. Shared Database — общая БД для нескольких сервисов. Пр",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Database per Service или Shared Database -- какой подход выб — Gymterview",
+        "ogDescription": "Database per Service — это принцип, при котором каждый микросервис владеет собственным хранилищем данных. Shared Databas",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Database per Service или Shared Database -- какой подход выбрать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Database per Service — это принцип, при котором каждый микросервис владеет собственным хранилищем данных. Shared Database — общая БД для нескольких сервисов. Правильный подход для микросервисов — Database per Service, Shared Database допустим только как временное решение при миграции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Database per Service или Shared Database -- какой подход выб",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерны Retry и Timeout?",
+      "questionSlug": "chto-takoe-patterny-retry-i-timeout",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерны Retry и Timeout? — Gymterview",
+        "description": "Retry и Timeout — базовые паттерны отказоустойчивости при межсервисном взаимодействии. Timeout ограничивает время ожидания ответа, Retry автоматически повторяет",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Что такое паттерны Retry и Timeout? — Gymterview",
+        "ogDescription": "Retry и Timeout — базовые паттерны отказоустойчивости при межсервисном взаимодействии. Timeout ограничивает время ожидан",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерны Retry и Timeout?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Retry и Timeout — базовые паттерны отказоустойчивости при межсервисном взаимодействии. Timeout ограничивает время ожидания ответа, Retry автоматически повторяет запрос при transient-ошибках."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерны Retry и Timeout?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Bulkhead?",
+      "questionSlug": "chto-takoe-pattern-bulkhead",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Bulkhead? — Gymterview",
+        "description": "Bulkhead (переборка) — это паттерн отказоустойчивости, изолирующий ресурсы для разных внешних вызовов, чтобы сбой одного компонента не исчерпал ресурсы для друг",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое паттерн Bulkhead? — Gymterview",
+        "ogDescription": "Bulkhead (переборка) — это паттерн отказоустойчивости, изолирующий ресурсы для разных внешних вызовов, чтобы сбой одного",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Bulkhead?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bulkhead (переборка) — это паттерн отказоустойчивости, изолирующий ресурсы для разных внешних вызовов, чтобы сбой одного компонента не исчерпал ресурсы для других."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое паттерн Bulkhead?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить безопасность межсервисного взаимодействия?",
+      "questionSlug": "kak-obespechit-bezopasnost-mezhservisnogo-vzaimodejstviya",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как обеспечить безопасность межсервисного взаимодействия? — Gymterview",
+        "description": "Безопасность в микросервисной архитектуре — комплексная задача, включающая аутентификацию (OAuth2/JWT), шифрование (mTLS), управление секретами (Vault) и сетевы",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Как обеспечить безопасность межсервисного взаимодействия? — Gymterview",
+        "ogDescription": "Безопасность в микросервисной архитектуре — комплексная задача, включающая аутентификацию (OAuth2/JWT), шифрование (mTLS",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить безопасность межсервисного взаимодействия?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Безопасность в микросервисной архитектуре — комплексная задача, включающая аутентификацию (OAuth2/JWT), шифрование (mTLS), управление секретами (Vault) и сетевые политики (Network Policies)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как обеспечить безопасность межсервисного взаимодействия?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Service Mesh?",
+      "questionSlug": "chto-takoe-service-mesh",
+      "grade": "senior",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Что такое Service Mesh? — Gymterview",
+        "description": "Service Mesh — это инфраструктурный слой, управляющий межсервисным взаимодействием через sidecar-прокси, развёрнутые рядом с каждым сервисом. Он берёт на себя с",
+        "keywords": [
+          "microservices",
+          "senior"
+        ],
+        "ogTitle": "Что такое Service Mesh? — Gymterview",
+        "ogDescription": "Service Mesh — это инфраструктурный слой, управляющий межсервисным взаимодействием через sidecar-прокси, развёрнутые ряд",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Service Mesh?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Service Mesh — это инфраструктурный слой, управляющий межсервисным взаимодействием через sidecar-прокси, развёрнутые рядом с каждым сервисом. Он берёт на себя сетевые задачи (mTLS, retry, трассировка) без изменения кода приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Что такое Service Mesh?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать деплой микросервисов?",
+      "questionSlug": "kak-organizovat-deploj-mikroservisov",
+      "grade": "middle",
+      "tags": [
+        "microservices"
+      ],
+      "seo": {
+        "title": "Как организовать деплой микросервисов? — Gymterview",
+        "description": "Развёртывание микросервисов требует зрелых CI/CD практик и стратегий, минимизирующих риски. Основные стратегии: Blue-Green, Canary и Rolling Update.",
+        "keywords": [
+          "microservices",
+          "middle"
+        ],
+        "ogTitle": "Как организовать деплой микросервисов? — Gymterview",
+        "ogDescription": "Развёртывание микросервисов требует зрелых CI/CD практик и стратегий, минимизирующих риски. Основные стратегии: Blue-Gre",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать деплой микросервисов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Развёртывание микросервисов требует зрелых CI/CD практик и стратегий, минимизирующих риски. Основные стратегии: Blue-Green, Canary и Rolling Update."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Микросервисы",
+            "url": "/topics/microservices"
+          },
+          {
+            "name": "Как организовать деплой микросервисов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

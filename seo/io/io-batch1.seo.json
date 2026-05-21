@@ -1,0 +1,535 @@
+{
+  "topic": "Потоки ввода/вывода в Java",
+  "topicSlug": "io",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "В чём заключается разница между IO и NIO?",
+      "questionSlug": "v-chyom-zaklyuchaetsya-raznitsa-mezhdu-io-i-nio",
+      "grade": "junior",
+      "tags": ["io", "nio", "основы", "core"],
+      "seo": {
+        "title": "В чём разница между IO и NIO в Java — Gymterview",
+        "description": "Разбираем отличия Java IO и NIO: потоковая vs буферная модель, блокирующий vs неблокирующий режим, селекторы. Подготовка к собеседованию Java Developer.",
+        "keywords": ["Java IO", "Java NIO", "InputStream", "ByteBuffer", "Channel", "Selector", "блокирующий ввод-вывод", "неблокирующий", "собеседование"],
+        "ogTitle": "Разница между IO и NIO в Java — Gymterview",
+        "ogDescription": "Потоковая vs буферная модель, блокирующий vs неблокирующий ввод/вывод, селекторы NIO. Сравнительная таблица и рекомендации.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём заключается разница между IO и NIO?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java IO — потокоориентированный и блокирующий ввод/вывод (InputStream/OutputStream). Java NIO — буфер-ориентированный с возможностью неблокирующего режима (Channel, ByteBuffer, Selector). IO читает/пишет побайтно, NIO работает с буферами. NIO поддерживает селекторы для мониторинга нескольких каналов одним потоком."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Разница IO и NIO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие особенности NIO вы знаете?",
+      "questionSlug": "kakie-osobennosti-nio-vy-znaete",
+      "grade": "junior",
+      "tags": ["nio", "io", "основы", "core"],
+      "seo": {
+        "title": "Какие особенности NIO вы знаете — Gymterview",
+        "description": "Особенности Java NIO: каналы, буферы, селекторы, кодировки, файловые блокировки, memory-mapped файлы. Подготовка к Java-собеседованию.",
+        "keywords": ["Java NIO", "каналы", "буферы", "селекторы", "ByteBuffer", "CharsetEncoder", "FileLock", "MappedByteBuffer", "собеседование"],
+        "ogTitle": "Особенности Java NIO: каналы, буферы, селекторы — Gymterview",
+        "ogDescription": "Три кита NIO — каналы, буферы и селекторы. Кодировки, файловые блокировки, scatter/gather операции.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие особенности NIO вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NIO построен на трёх концепциях: каналы (Channel) для ввода/вывода, буферы (ByteBuffer и подклассы) для хранения данных, селекторы (Selector) для мониторинга нескольких каналов одним потоком. Также NIO предоставляет кодеры/декодеры (java.nio.charset), файловые блокировки (FileLock), memory-mapped файлы и scatter/gather операции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Особенности NIO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое каналы?",
+      "questionSlug": "chto-takoe-kanaly",
+      "grade": "junior",
+      "tags": ["nio", "io", "channel", "core"],
+      "seo": {
+        "title": "Что такое каналы (channels) в Java NIO — Gymterview",
+        "description": "Каналы в Java NIO: FileChannel, SocketChannel, ServerSocketChannel. Двунаправленность, неблокирующий режим, работа через буферы.",
+        "keywords": ["каналы Java", "Channel", "FileChannel", "SocketChannel", "NIO", "ByteBuffer", "двунаправленный", "неблокирующий", "собеседование"],
+        "ogTitle": "Каналы (channels) в Java NIO — Gymterview",
+        "ogDescription": "Что такое каналы NIO, основные реализации (FileChannel, SocketChannel), отличия от потоков IO.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое каналы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Каналы (channels) — логические порталы для ввода/вывода данных в NIO, абстракция над низкоуровневыми механизмами ОС. Данные передаются через буферы: при вводе из канала в буфер, при выводе из буфера в канал. Основные реализации: FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel. Каналы могут быть двунаправленными и работать в неблокирующем режиме."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Каналы NIO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют виды потоков ввода/вывода?",
+      "questionSlug": "kakie-sushchestvuyut-vidy-potokov-vvoda-vyvoda",
+      "grade": "junior",
+      "tags": ["io", "основы", "core"],
+      "seo": {
+        "title": "Виды потоков ввода/вывода в Java — Gymterview",
+        "description": "Два вида потоков ввода/вывода Java: байтовые (InputStream/OutputStream) и символьные (Reader/Writer). Узловые потоки и обёртки, паттерн Декоратор.",
+        "keywords": ["потоки ввода-вывода", "InputStream", "OutputStream", "Reader", "Writer", "байтовые потоки", "символьные потоки", "Декоратор", "собеседование"],
+        "ogTitle": "Виды потоков ввода/вывода в Java — Gymterview",
+        "ogDescription": "Байтовые и символьные потоки Java IO. Узловые потоки vs обёртки. Паттерн Декоратор в потоках ввода/вывода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют виды потоков ввода/вывода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java два вида потоков ввода/вывода: байтовые (InputStream/OutputStream, работают с byte) и символьные (Reader/Writer, работают с char Unicode). Также потоки делятся на узловые (работают с источником: FileInputStream, FileReader) и обрабатывающие обёртки (добавляют функциональность: BufferedInputStream, DataInputStream) — паттерн Декоратор."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Виды потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Назовите основные классы потоков ввода/вывода",
+      "questionSlug": "nazovite-osnovnye-klassy-potokov-vvoda-vyvoda",
+      "grade": "junior",
+      "tags": ["io", "основы", "core"],
+      "seo": {
+        "title": "Основные классы потоков ввода/вывода Java — Gymterview",
+        "description": "Четыре корневых класса потоков Java IO: InputStream, OutputStream, Reader, Writer. Иерархия, контракты, паттерн Декоратор и AutoCloseable.",
+        "keywords": ["InputStream", "OutputStream", "Reader", "Writer", "потоки Java", "абстрактный класс", "AutoCloseable", "Декоратор", "собеседование"],
+        "ogTitle": "Основные классы потоков ввода/вывода Java — Gymterview",
+        "ogDescription": "InputStream, OutputStream, Reader, Writer — корневые абстрактные классы потоков Java. Контракты и иерархия.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Назовите основные классы потоков ввода/вывода",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Четыре корневых абстрактных класса: InputStream (байтовое чтение), OutputStream (байтовая запись), Reader (символьное чтение), Writer (символьная запись). Все реализуют Closeable (AutoCloseable). Конкретные реализации делятся на узловые (FileInputStream) и обрабатывающие (BufferedInputStream), используя паттерн Декоратор."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Основные классы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В каких пакетах расположены классы потоков ввода/вывода?",
+      "questionSlug": "v-kakikh-paketakh-raspolozheny-klassy-potokov-vvoda-vyvoda",
+      "grade": "junior",
+      "tags": ["io", "nio", "основы", "core"],
+      "seo": {
+        "title": "Пакеты классов ввода/вывода Java — Gymterview",
+        "description": "Пакеты Java для ввода/вывода: java.io, java.nio, java.nio.file, java.nio.channels, java.nio.charset, java.util.zip. Обзор содержимого каждого пакета.",
+        "keywords": ["java.io", "java.nio", "java.nio.file", "NIO.2", "пакеты Java", "потоки ввода-вывода", "Path", "Files", "собеседование"],
+        "ogTitle": "Пакеты классов ввода/вывода в Java — Gymterview",
+        "ogDescription": "Обзор пакетов: java.io для классических потоков, java.nio для буферов и каналов, java.nio.file для NIO.2.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В каких пакетах расположены классы потоков ввода/вывода?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные пакеты: java.io (классический IO — InputStream, OutputStream, Reader, Writer, File), java.nio (буферы — ByteBuffer, CharBuffer), java.nio.file (NIO.2 — Path, Files, Java 7+), java.nio.channels (каналы — FileChannel, SocketChannel, Selector), java.nio.charset (кодировки), java.util.zip (сжатие — ZipInputStream, GZIPOutputStream)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Пакеты ввода/вывода", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие подклассы класса InputStream вы знаете, для чего они предназначены?",
+      "questionSlug": "kakie-podklassy-klassa-inputstream-vy-znaete",
+      "grade": "junior",
+      "tags": ["io", "inputstream", "core", "основы"],
+      "seo": {
+        "title": "Подклассы InputStream в Java — Gymterview",
+        "description": "Подклассы InputStream: FileInputStream, BufferedInputStream, ByteArrayInputStream, DataInputStream, ObjectInputStream и другие. Узловые и обрабатывающие потоки.",
+        "keywords": ["InputStream", "FileInputStream", "BufferedInputStream", "DataInputStream", "ObjectInputStream", "ByteArrayInputStream", "подклассы", "Java IO", "собеседование"],
+        "ogTitle": "Подклассы класса InputStream в Java — Gymterview",
+        "ogDescription": "Обзор подклассов InputStream: узловые (File, ByteArray, Piped) и обрабатывающие (Buffered, Data, Object, Pushback, Sequence).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие подклассы класса InputStream вы знаете, для чего они предназначены?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Узловые: FileInputStream (чтение из файла), ByteArrayInputStream (из массива байт), PipedInputStream (межпоточный канал). Обрабатывающие: BufferedInputStream (буферизация), DataInputStream (чтение примитивных типов), ObjectInputStream (десериализация), PushbackInputStream (возврат байт в поток), SequenceInputStream (объединение потоков)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Подклассы InputStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется PushbackInputStream?",
+      "questionSlug": "dlya-chego-ispolzuetsya-pushbackinputstream",
+      "grade": "middle",
+      "tags": ["io", "inputstream", "core"],
+      "seo": {
+        "title": "PushbackInputStream в Java — Gymterview",
+        "description": "PushbackInputStream: возврат прочитанных байт в поток через unread(). Look-ahead при парсинге, размер буфера, пример использования.",
+        "keywords": ["PushbackInputStream", "unread", "look-ahead", "парсинг", "Java IO", "InputStream", "буфер", "собеседование"],
+        "ogTitle": "PushbackInputStream — возврат байт в поток — Gymterview",
+        "ogDescription": "Как PushbackInputStream позволяет «заглянуть» вперёд в потоке и вернуть прочитанные байты через unread().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется PushbackInputStream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PushbackInputStream — обёртка над InputStream, позволяющая вернуть прочитанные байты обратно в поток через метод unread(). Используется для look-ahead при парсинге, когда нужно прочитать байты вперёд для принятия решения, а затем вернуть их. Размер буфера для возврата настраивается в конструкторе (по умолчанию — 1 байт)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "PushbackInputStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется SequenceInputStream?",
+      "questionSlug": "dlya-chego-ispolzuetsya-sequenceinputstream",
+      "grade": "middle",
+      "tags": ["io", "inputstream", "core"],
+      "seo": {
+        "title": "SequenceInputStream в Java — Gymterview",
+        "description": "SequenceInputStream: объединение нескольких InputStream в один последовательный поток. Конструкторы, автоматическое закрытие, примеры использования.",
+        "keywords": ["SequenceInputStream", "объединение потоков", "InputStream", "Enumeration", "Java IO", "слияние файлов", "собеседование"],
+        "ogTitle": "SequenceInputStream — объединение потоков — Gymterview",
+        "ogDescription": "Как SequenceInputStream сливает несколько InputStream в один последовательный поток с автоматическим переключением и закрытием.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется SequenceInputStream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SequenceInputStream объединяет несколько InputStream в один последовательный поток. Принимает пару потоков или Enumeration. Читает из первого потока до конца, затем переключается на второй и т.д. Каждый поток автоматически закрывается по достижении конца. Используется для слияния фрагментированных файлов и объединения логов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "SequenceInputStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой класс позволяет читать данные из входного байтового потока в формате примитивных типов данных?",
+      "questionSlug": "kakoy-klass-pozvolyaet-chitat-dannye-iz-vkhodnogo-baytovogo-potoka-v-formate-primitivnykh-tipov",
+      "grade": "junior",
+      "tags": ["io", "inputstream", "типы-данных", "core"],
+      "seo": {
+        "title": "DataInputStream — чтение примитивных типов Java — Gymterview",
+        "description": "DataInputStream: чтение int, double, long, UTF-строк из байтового потока. Методы readInt(), readUTF(), формат big-endian, парность с DataOutputStream.",
+        "keywords": ["DataInputStream", "readInt", "readUTF", "readDouble", "примитивные типы", "big-endian", "Java IO", "бинарный формат", "собеседование"],
+        "ogTitle": "DataInputStream — чтение примитивных типов — Gymterview",
+        "ogDescription": "Как DataInputStream читает примитивные типы Java из байтового потока. Методы, формат big-endian, пример кода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой класс позволяет читать данные из входного байтового потока в формате примитивных типов данных?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DataInputStream — обрабатывающий поток для чтения примитивных типов Java (int, long, double, boolean, char, UTF-строк) из байтового потока в формате big-endian. Методы: readInt(), readLong(), readDouble(), readUTF() и др. Используется в паре с DataOutputStream для записи/чтения бинарных данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "DataInputStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие подклассы класса OutputStream вы знаете, для чего они предназначены?",
+      "questionSlug": "kakie-podklassy-klassa-outputstream-vy-znaete",
+      "grade": "junior",
+      "tags": ["io", "outputstream", "core", "основы"],
+      "seo": {
+        "title": "Подклассы OutputStream в Java — Gymterview",
+        "description": "Подклассы OutputStream: FileOutputStream, BufferedOutputStream, ByteArrayOutputStream, DataOutputStream, ObjectOutputStream, PrintStream. Назначение каждого.",
+        "keywords": ["OutputStream", "FileOutputStream", "BufferedOutputStream", "PrintStream", "DataOutputStream", "ObjectOutputStream", "System.out", "Java IO", "собеседование"],
+        "ogTitle": "Подклассы класса OutputStream в Java — Gymterview",
+        "ogDescription": "Обзор подклассов OutputStream: узловые (File, ByteArray, Piped) и обрабатывающие (Buffered, Data, Object, Print).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие подклассы класса OutputStream вы знаете, для чего они предназначены?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Узловые: FileOutputStream (запись в файл), ByteArrayOutputStream (в массив байт), PipedOutputStream (межпоточный канал). Обрабатывающие: BufferedOutputStream (буферизация), DataOutputStream (запись примитивных типов), ObjectOutputStream (сериализация), PrintStream (print/println, System.out — его экземпляр)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Подклассы OutputStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие подклассы класса Reader вы знаете, для чего они предназначены?",
+      "questionSlug": "kakie-podklassy-klassa-reader-vy-znaete",
+      "grade": "junior",
+      "tags": ["io", "reader", "core", "основы"],
+      "seo": {
+        "title": "Подклассы Reader в Java — Gymterview",
+        "description": "Подклассы Reader: FileReader, BufferedReader, InputStreamReader, CharArrayReader, StringReader, PushbackReader. Назначение и практическое использование.",
+        "keywords": ["Reader", "FileReader", "BufferedReader", "InputStreamReader", "readLine", "lines", "Stream API", "Java IO", "собеседование"],
+        "ogTitle": "Подклассы класса Reader в Java — Gymterview",
+        "ogDescription": "Обзор подклассов Reader: узловые (FileReader, StringReader) и обрабатывающие (BufferedReader, InputStreamReader).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие подклассы класса Reader вы знаете, для чего они предназначены?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Узловые: FileReader (чтение из файла), CharArrayReader (из символьного массива), StringReader (из строки), PipedReader (из канала). Обрабатывающие: BufferedReader (буферизация, readLine(), lines()), InputStreamReader (мост байты→символы), LineNumberReader (подсчёт строк), PushbackReader (возврат символов)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Подклассы Reader", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие подклассы класса Writer вы знаете, для чего они предназначены?",
+      "questionSlug": "kakie-podklassy-klassa-writer-vy-znaete",
+      "grade": "junior",
+      "tags": ["io", "writer", "core", "основы"],
+      "seo": {
+        "title": "Подклассы Writer в Java — Gymterview",
+        "description": "Подклассы Writer: FileWriter, BufferedWriter, OutputStreamWriter, PrintWriter, CharArrayWriter, StringWriter. Назначение и практическое использование.",
+        "keywords": ["Writer", "FileWriter", "BufferedWriter", "OutputStreamWriter", "PrintWriter", "StringWriter", "Java IO", "собеседование"],
+        "ogTitle": "Подклассы класса Writer в Java — Gymterview",
+        "ogDescription": "Обзор подклассов Writer: узловые (FileWriter, StringWriter) и обрабатывающие (BufferedWriter, OutputStreamWriter, PrintWriter).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие подклассы класса Writer вы знаете, для чего они предназначены?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Узловые: FileWriter (запись в файл), CharArrayWriter (в символьный массив), StringWriter (в строку), PipedWriter (в канал). Обрабатывающие: BufferedWriter (буферизация, newLine()), OutputStreamWriter (мост символы→байты), PrintWriter (print/println/printf с управляемым flush)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Подклассы Writer", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличие класса PrintWriter от PrintStream?",
+      "questionSlug": "v-chem-otlichie-klassa-printwriter-ot-printstream",
+      "grade": "middle",
+      "tags": ["io", "writer", "outputstream", "core"],
+      "seo": {
+        "title": "PrintWriter vs PrintStream в Java — Gymterview",
+        "description": "Отличия PrintWriter от PrintStream: символьный vs байтовый, управление flush, поддержка Unicode, checkError(). Сравнительная таблица.",
+        "keywords": ["PrintWriter", "PrintStream", "System.out", "flush", "autoFlush", "Unicode", "checkError", "Java IO", "собеседование"],
+        "ogTitle": "PrintWriter vs PrintStream — отличия — Gymterview",
+        "ogDescription": "Сравнение PrintWriter и PrintStream: тип данных, автоматический flush, Unicode, управление буфером.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличие класса PrintWriter от PrintStream?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PrintWriter работает с символами (Writer) и поддерживает полный Unicode, PrintStream — с байтами (OutputStream). PrintStream автоматически сбрасывает буфер при println(), PrintWriter позволяет управлять flush (через конструктор autoFlush или явный вызов flush()). Оба не бросают исключений при записи — ошибки проверяются через checkError(). System.out — PrintStream по историческим причинам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "PrintWriter vs PrintStream", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются и что общего у InputStream, OutputStream, Reader, Writer?",
+      "questionSlug": "chem-otlichayutsya-i-chto-obshchego-u-inputstream-outputstream-reader-writer",
+      "grade": "junior",
+      "tags": ["io", "основы", "core"],
+      "seo": {
+        "title": "InputStream, OutputStream, Reader, Writer — сравнение — Gymterview",
+        "description": "Сравнение четырёх корневых классов Java IO: байтовые vs символьные, чтение vs запись. Общее: AutoCloseable, паттерн Декоратор, мосты между потоками.",
+        "keywords": ["InputStream", "OutputStream", "Reader", "Writer", "байтовые потоки", "символьные потоки", "AutoCloseable", "Декоратор", "InputStreamReader", "собеседование"],
+        "ogTitle": "InputStream, OutputStream, Reader, Writer — что общего и чем отличаются — Gymterview",
+        "ogDescription": "Два измерения: тип данных (byte vs char) и направление (чтение vs запись). Общие черты и мосты между потоками.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются и что общего у InputStream, OutputStream, Reader, Writer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Общее: все абстрактные, реализуют Closeable (AutoCloseable), используют паттерн Декоратор. Отличия: InputStream/OutputStream работают с byte (8 бит), Reader/Writer — с char (16 бит Unicode). OutputStream/Writer реализуют Flushable. Мосты: InputStreamReader (байты→символы) и OutputStreamWriter (символы→байты)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Сравнение потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие классы позволяют преобразовать байтовые потоки в символьные и обратно?",
+      "questionSlug": "kakie-klassy-pozvolyayut-preobrazovat-baytovye-potoki-v-simvolnye-i-obratno",
+      "grade": "junior",
+      "tags": ["io", "core", "основы"],
+      "seo": {
+        "title": "Преобразование байтовых потоков в символьные — Gymterview",
+        "description": "InputStreamReader и OutputStreamWriter — мосты между байтовыми и символьными потоками Java. Явное указание кодировки, примеры, частые ошибки.",
+        "keywords": ["InputStreamReader", "OutputStreamWriter", "кодировка", "UTF-8", "Charset", "байтовые потоки", "символьные потоки", "мост", "Java IO", "собеседование"],
+        "ogTitle": "InputStreamReader и OutputStreamWriter — мосты потоков Java — Gymterview",
+        "ogDescription": "Как преобразовать байтовый поток в символьный и обратно. InputStreamReader, OutputStreamWriter, явное указание кодировки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие классы позволяют преобразовать байтовые потоки в символьные и обратно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "InputStreamReader — мост от байтового потока (InputStream) к символьному (Reader), преобразует байты в символы при чтении. OutputStreamWriter — мост от символьного (Writer) к байтовому (OutputStream), преобразует символы в байты при записи. Оба принимают Charset для явного указания кодировки. Без указания используется системная кодировка."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Мосты потоков", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие классы позволяют ускорить чтение/запись за счет использования буфера?",
+      "questionSlug": "kakie-klassy-pozvolyayut-uskorit-chtenie-zapis-za-schyot-ispolzovaniya-bufera",
+      "grade": "junior",
+      "tags": ["io", "performance", "core", "основы"],
+      "seo": {
+        "title": "Буферизованные потоки Java — Gymterview",
+        "description": "BufferedInputStream, BufferedOutputStream, BufferedReader, BufferedWriter: буферизация ввода/вывода, размер буфера по умолчанию, readLine(), flush().",
+        "keywords": ["BufferedInputStream", "BufferedOutputStream", "BufferedReader", "BufferedWriter", "буферизация", "flush", "readLine", "производительность", "Java IO", "собеседование"],
+        "ogTitle": "Буферизованные потоки в Java — Gymterview",
+        "ogDescription": "Четыре буферизованных класса Java IO. Размер буфера, readLine(), flush() и принцип снижения системных вызовов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие классы позволяют ускорить чтение/запись за счет использования буфера?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BufferedInputStream, BufferedOutputStream, BufferedReader, BufferedWriter. Накапливают данные во внутреннем буфере (по умолчанию 8 КБ) и выполняют операции блоками, сокращая количество системных вызовов. BufferedReader добавляет readLine() и lines() (Stream API). Размер буфера настраивается в конструкторе. Для гарантии записи нужен flush() или close()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Потоки ввода/вывода", "url": "/topics/io" },
+          { "name": "Буферизация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "topic": "Современная разработка WEB-приложений",
+  "topicSlug": "modern-web-dev",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какую архитектуру выбрать для нового Java-проекта?",
+      "questionSlug": "kakuyu-arkhitekturu-vybrat-dlya-novogo-java-proekta",
+      "grade": "middle",
+      "tags": ["architecture", "spring-boot", "microservices", "modular-monolith", "cloud-native"],
+      "seo": {
+        "title": "Какую архитектуру выбрать для нового Java-проекта — Gymterview",
+        "description": "Сравнение модульного монолита, микросервисов и cloud-native подхода для Java-проекта. Типичный стек 2026: Spring Boot 3.x, Java 21, Kafka, Kubernetes.",
+        "keywords": ["архитектура Java", "модульный монолит", "микросервисы", "cloud-native", "Spring Modulith", "12-Factor App", "Spring Boot 3", "Java 21", "собеседование"],
+        "ogTitle": "Какую архитектуру выбрать для нового Java-проекта — Gymterview",
+        "ogDescription": "Модульный монолит vs микросервисы vs cloud-native: обоснованный выбор архитектуры для Java-проекта в 2026 году.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какую архитектуру выбрать для нового Java-проекта?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Выбор сводится к трём вариантам: модульный монолит (до 15-20 разработчиков, домен не до конца понят), микросервисы (несколько автономных команд, чёткие доменные границы) и cloud-native подход (12-Factor App, stateless, health checks). В 2026 тренд на модульный монолит как стартовую архитектуру — Spring Modulith помогает enforce границы модулей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Выбор архитектуры", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как инициализировать современный Java-проект?",
+      "questionSlug": "kak-initsiializirovat-sovremennyy-java-proekt",
+      "grade": "junior",
+      "tags": ["spring-boot", "gradle", "java-21", "hexagonal-architecture", "spring-initializr"],
+      "seo": {
+        "title": "Как инициализировать современный Java-проект — Gymterview",
+        "description": "Инициализация Java-проекта в 2026: Java 21, Spring Boot 3.x, Gradle Kotlin DSL, гексагональная архитектура. Spring Initializr, структура проекта, частые ошибки.",
+        "keywords": ["инициализация Java-проекта", "Spring Initializr", "Gradle Kotlin DSL", "Java 21", "гексагональная архитектура", "Spring Boot 3", "структура проекта", "собеседование"],
+        "ogTitle": "Как инициализировать современный Java-проект — Gymterview",
+        "ogDescription": "Java 21 + Spring Boot 3.x + Gradle: инициализация проекта, гексагональная архитектура, частые ошибки при старте.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как инициализировать современный Java-проект?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Инициализация начинается с Java 21 LTS, Spring Boot 3.x и Gradle с Kotlin DSL. Используйте Spring Initializr для генерации проекта. Структура: гексагональная архитектура (порты и адаптеры) для изоляции бизнес-логики от инфраструктуры. Ключевые возможности Java 21: Virtual Threads, Pattern Matching for switch, Record Patterns, Sequenced Collections."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Инициализация проекта", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проектировать REST API в Spring Boot?",
+      "questionSlug": "kak-proektirovat-rest-api-v-spring-boot",
+      "grade": "middle",
+      "tags": ["rest-api", "spring-boot", "openapi", "grpc", "graphql", "http"],
+      "seo": {
+        "title": "Как проектировать REST API в Spring Boot — Gymterview",
+        "description": "Проектирование REST API: API-first подход, OpenAPI 3.1, версионирование, Problem Detail (RFC 9457), сравнение REST vs gRPC vs GraphQL. Примеры на Spring Boot.",
+        "keywords": ["REST API", "Spring Boot", "OpenAPI 3.1", "API-first", "Problem Detail", "RFC 9457", "версионирование API", "gRPC", "GraphQL", "собеседование"],
+        "ogTitle": "Как проектировать REST API в Spring Boot — Gymterview",
+        "ogDescription": "API-first подход, OpenAPI 3.1, Problem Detail для ошибок, версионирование и сравнение REST vs gRPC vs GraphQL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проектировать REST API в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проектирование REST API строится по принципу API-first: сначала контракт (OpenAPI 3.1), потом реализация. Версионирование через URL-путь (/api/v1/orders). Ошибки обрабатываются через Problem Detail (RFC 9457) — Spring Boot 3.x поддерживает нативно. REST подходит для public API, gRPC для inter-service с высокой нагрузкой, GraphQL для гибких клиентских запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "REST API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие HTTP-клиенты используются в Spring в 2026 году?",
+      "questionSlug": "kakie-http-klienty-ispolzuyutsya-v-spring-v-2026-godu",
+      "grade": "middle",
+      "tags": ["http-client", "spring-boot", "rest-client", "webclient", "http-interface"],
+      "seo": {
+        "title": "Какие HTTP-клиенты используются в Spring в 2026 году — Gymterview",
+        "description": "Эволюция HTTP-клиентов в Spring: RestTemplate, WebClient, RestClient, HTTP Interface. RestClient — рекомендованный выбор для синхронных приложений в 2026 году.",
+        "keywords": ["HTTP-клиент Spring", "RestClient", "WebClient", "RestTemplate", "HTTP Interface", "Feign", "Spring 6.1", "fluent API", "собеседование"],
+        "ogTitle": "HTTP-клиенты в Spring 2026: RestClient, WebClient, HTTP Interface — Gymterview",
+        "ogDescription": "RestClient vs WebClient vs RestTemplate: какой HTTP-клиент выбрать в Spring в 2026 году. Примеры и декларативный HTTP Interface.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие HTTP-клиенты используются в Spring в 2026 году?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RestClient — рекомендованный HTTP-клиент для синхронных Spring-приложений (Spring 6.1+), заменяющий RestTemplate (maintenance). WebClient остаётся для реактивных приложений. HTTP Interface — декларативная альтернатива Feign на базе RestClient. С Virtual Threads RestClient даёт масштабируемость WebClient, но с простым синхронным кодом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "HTTP-клиенты", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать работу с данными в Spring Boot?",
+      "questionSlug": "kak-organizovat-rabotu-s-dannymi-v-spring-boot",
+      "grade": "middle",
+      "tags": ["spring-data", "jpa", "hibernate", "postgresql", "spring-boot"],
+      "seo": {
+        "title": "Как организовать работу с данными в Spring Boot — Gymterview",
+        "description": "Spring Data JPA с Hibernate 6: JPA-сущности, репозитории, optimistic locking, настройка для production. N+1 проблема, open-in-view, Redis-кэширование.",
+        "keywords": ["Spring Data JPA", "Hibernate 6", "PostgreSQL", "N+1 проблема", "open-in-view", "optimistic locking", "HikariCP", "Redis кэш", "Spring Boot", "собеседование"],
+        "ogTitle": "Работа с данными в Spring Boot: JPA, Hibernate 6, PostgreSQL — Gymterview",
+        "ogDescription": "Spring Data JPA + Hibernate 6 + PostgreSQL: сущности, репозитории, N+1 проблема, production-настройки и Redis-кэширование.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать работу с данными в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Data JPA с Hibernate 6 — основной способ работы с реляционными данными. PostgreSQL — дефолтная БД. Обязательные настройки для production: open-in-view=false, ddl-auto=validate, default_batch_fetch_size для борьбы с N+1. Оптимистичная блокировка через @Version. Redis для кэширования через @Cacheable. Virtual Threads снизили необходимость в R2DBC."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Работа с данными", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как управлять миграциями базы данных?",
+      "questionSlug": "kak-upravlyat-migratsiyami-bazy-dannykh",
+      "grade": "junior",
+      "tags": ["flyway", "liquibase", "migration", "postgresql", "databases"],
+      "seo": {
+        "title": "Как управлять миграциями базы данных — Gymterview",
+        "description": "Миграции БД через Flyway и Liquibase: версионированные SQL-файлы, конфигурация Spring Boot, сравнение инструментов. PostgreSQL как стандарт де-факто для Java.",
+        "keywords": ["миграции базы данных", "Flyway", "Liquibase", "PostgreSQL", "ddl-auto", "SQL миграции", "Spring Boot", "версионирование схемы", "собеседование"],
+        "ogTitle": "Миграции базы данных: Flyway vs Liquibase — Gymterview",
+        "ogDescription": "Flyway и Liquibase для версионирования схемы БД. Конфигурация Spring Boot, сравнение, типичные ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как управлять миграциями базы данных?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Миграции — версионированные изменения схемы БД, применяемые автоматически при старте через Flyway или Liquibase. Flyway проще (SQL-файлы), Liquibase даёт автоматический rollback и XML-формат. Правило: только Flyway/Liquibase в production, никогда ddl-auto=update. PostgreSQL — стандарт де-факто благодаря ACID, JSONB, managed-сервисам."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Миграции БД", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить безопасность REST API с помощью Spring Security?",
+      "questionSlug": "kak-nastroit-bezopasnost-rest-api-s-pomoshchyu-spring-security",
+      "grade": "middle",
+      "tags": ["spring-security", "security", "rest-api", "jwt", "rate-limiting"],
+      "seo": {
+        "title": "Как настроить безопасность REST API с помощью Spring Security — Gymterview",
+        "description": "Spring Security 6: SecurityFilterChain, stateless JWT, CORS, Method Security, Rate Limiting с Bucket4j. Переход с WebSecurityConfigurerAdapter, частые ошибки.",
+        "keywords": ["Spring Security 6", "SecurityFilterChain", "JWT", "CORS", "Rate Limiting", "Bucket4j", "stateless API", "OAuth2 Resource Server", "собеседование"],
+        "ogTitle": "Безопасность REST API: Spring Security 6, JWT, Rate Limiting — Gymterview",
+        "ogDescription": "Spring Security 6: SecurityFilterChain, stateless JWT, CORS, Rate Limiting. Новый API вместо WebSecurityConfigurerAdapter.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить безопасность REST API с помощью Spring Security?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Security 6 использует SecurityFilterChain вместо устаревшего WebSecurityConfigurerAdapter. Для REST API: SessionCreationPolicy.STATELESS, CSRF отключён, JWT через oauth2ResourceServer. Method Security (@PreAuthorize) для fine-grained авторизации. Rate Limiting через Bucket4j + Redis. JWT хранить в HttpOnly cookie, не в localStorage."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Spring Security", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает OAuth 2.1 и JWT в микросервисной архитектуре?",
+      "questionSlug": "kak-rabotaet-oauth-2-1-i-jwt-v-mikroservisnoy-arkhitekture",
+      "grade": "senior",
+      "tags": ["oauth", "jwt", "security", "keycloak", "microservices"],
+      "seo": {
+        "title": "Как работает OAuth 2.1 и JWT в микросервисной архитектуре — Gymterview",
+        "description": "OAuth 2.1 и JWT для микросервисов: PKCE, JWT vs Opaque Tokens, Keycloak как Identity Provider, отзыв токенов, Resource Server. Senior-уровень собеседования.",
+        "keywords": ["OAuth 2.1", "JWT", "PKCE", "Keycloak", "Opaque Token", "refresh token", "Resource Server", "микросервисы", "Spring Authorization Server", "собеседование"],
+        "ogTitle": "OAuth 2.1 и JWT в микросервисной архитектуре — Gymterview",
+        "ogDescription": "OAuth 2.1: PKCE, JWT vs Opaque Tokens, Keycloak, отзыв токенов через короткий TTL + refresh token. Senior-вопросы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает OAuth 2.1 и JWT в микросервисной архитектуре?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OAuth 2.1 — упрощённая версия OAuth 2.0: PKCE обязателен, implicit flow и password grant запрещены. JWT для межсервисного взаимодействия (валидация по подписи без запроса к auth-серверу), короткий TTL 5-15 минут + refresh token. Keycloak — лидер open-source Identity Provider. JWT не отзываемый по природе — используют blacklist в Redis для критичных систем."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "OAuth 2.1 и JWT", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать асинхронное взаимодействие через Kafka?",
+      "questionSlug": "kak-organizovat-asinkhronnoe-vzaimodeystvie-cherez-kafka",
+      "grade": "middle",
+      "tags": ["kafka", "event-driven", "spring-boot", "outbox-pattern", "messaging"],
+      "seo": {
+        "title": "Как организовать асинхронное взаимодействие через Kafka — Gymterview",
+        "description": "Apache Kafka в Spring Boot: Producer, Consumer, Transactional Outbox Pattern, идемпотентность. Сравнение Kafka vs RabbitMQ, Spring Events для модульного монолита.",
+        "keywords": ["Apache Kafka", "Spring Kafka", "Transactional Outbox", "KafkaTemplate", "KafkaListener", "RabbitMQ", "event-driven", "идемпотентность", "собеседование"],
+        "ogTitle": "Асинхронное взаимодействие через Kafka в Spring Boot — Gymterview",
+        "ogDescription": "Kafka Producer/Consumer, Transactional Outbox Pattern, идемпотентность. Kafka vs RabbitMQ и Spring Events.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать асинхронное взаимодействие через Kafka?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apache Kafka — стандарт для event-driven взаимодействия между сервисами. Гарантия порядка в пределах partition. Kafka vs RabbitMQ: лог (append-only) vs очередь (удаляется). Transactional Outbox Pattern — единственный надёжный способ атомарности бизнес-операции и публикации события. Consumer должен быть идемпотентным (at-least-once семантика). Spring Events для внутренней коммуникации в модульном монолите."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Kafka", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Virtual Threads и как они меняют разработку?",
+      "questionSlug": "chto-takoe-virtual-threads-i-kak-oni-menyayut-razrabotku",
+      "grade": "middle",
+      "tags": ["virtual-threads", "concurrency", "spring-boot", "java-21", "project-loom"],
+      "seo": {
+        "title": "Что такое Virtual Threads и как они меняют разработку — Gymterview",
+        "description": "Virtual Threads (Project Loom, Java 21): легковесные потоки JVM, включение в Spring Boot, Structured Concurrency. Pinning, ReentrantLock, сравнение с WebFlux.",
+        "keywords": ["Virtual Threads", "Project Loom", "Java 21", "виртуальные потоки", "platform threads", "pinning", "Structured Concurrency", "Spring Boot", "WebFlux", "собеседование"],
+        "ogTitle": "Virtual Threads (Project Loom): как виртуальные потоки меняют Java — Gymterview",
+        "ogDescription": "Virtual Threads в Java 21: включение в Spring Boot одной строкой, pinning проблема, Structured Concurrency и сравнение с реактивным стеком.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Virtual Threads и как они меняют разработку?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Virtual Threads (Java 21) — легковесные потоки JVM, позволяющие использовать синхронный код с масштабируемостью реактивного стека. Platform thread — обёртка над OS thread (тысячи), virtual thread — управляется JVM (миллионы). В Spring Boot включаются одной строкой spring.threads.virtual.enabled=true. Главная проблема: pinning при synchronized — используйте ReentrantLock. Не ускоряют CPU-bound задачи."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Virtual Threads", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить наблюдаемость приложения?",
+      "questionSlug": "kak-obespechit-nablyudaemost-prilozheniya",
+      "grade": "middle",
+      "tags": ["observability", "monitoring", "opentelemetry", "actuator", "logging"],
+      "seo": {
+        "title": "Как обеспечить наблюдаемость приложения — Gymterview",
+        "description": "Наблюдаемость (observability): три столпа — метрики, логи, трейсы. OpenTelemetry, Prometheus, Grafana, structured logging, Spring Boot Actuator, probes в K8s.",
+        "keywords": ["observability", "наблюдаемость", "OpenTelemetry", "Prometheus", "Grafana", "Micrometer", "structured logging", "tracing", "Spring Boot Actuator", "собеседование"],
+        "ogTitle": "Наблюдаемость приложения: метрики, логи, трейсы — Gymterview",
+        "ogDescription": "Три столпа observability: метрики (Prometheus), логи (Loki), трейсы (Tempo). OpenTelemetry, Actuator probes, structured logging.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить наблюдаемость приложения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Наблюдаемость строится на трёх столпах: метрики (Prometheus + Micrometer), логи (Loki + Logback в JSON), трейсы (Tempo + OpenTelemetry), связанных через trace ID. Spring Boot Actuator предоставляет health, prometheus, liveness/readiness probes для Kubernetes. Sampling в production: 10-50%. OpenTelemetry — вендор-нейтральный стандарт сбора телеметрии."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Наблюдаемость", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать тестирование в современном Java-проекте?",
+      "questionSlug": "kak-organizovat-testirovanie-v-sovremennom-java-proekte",
+      "grade": "middle",
+      "tags": ["testing", "junit", "testcontainers", "spring-boot", "archunit"],
+      "seo": {
+        "title": "Как организовать тестирование в современном Java-проекте — Gymterview",
+        "description": "Пирамида тестирования: unit (JUnit 5 + Mockito), slice (@WebMvcTest), интеграционные (Testcontainers), E2E и архитектурные (ArchUnit). Примеры на Spring Boot.",
+        "keywords": ["тестирование Java", "JUnit 5", "Testcontainers", "Mockito", "ArchUnit", "WebMvcTest", "DataJpaTest", "SpringBootTest", "пирамида тестирования", "собеседование"],
+        "ogTitle": "Тестирование в Java-проекте: JUnit 5, Testcontainers, ArchUnit — Gymterview",
+        "ogDescription": "Пирамида тестирования: unit, slice, интеграционные (Testcontainers), архитектурные (ArchUnit). Testcontainers заменил H2.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать тестирование в современном Java-проекте?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пирамида тестирования: unit-тесты (JUnit 5 + Mockito, много и быстрые), slice-тесты (@WebMvcTest, @DataJpaTest — загружают часть контекста), интеграционные (Testcontainers с реальным PostgreSQL/Kafka/Redis), E2E и contract-тесты, архитектурные (ArchUnit — автоматическая проверка зависимостей). Testcontainers заменил H2 — тестируем на реальной БД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Тестирование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как устроен CI/CD pipeline для Java-приложения?",
+      "questionSlug": "kak-ustroen-ci-cd-pipeline-dlya-java-prilozheniya",
+      "grade": "middle",
+      "tags": ["ci-cd", "devops", "docker", "spring-boot", "github-actions"],
+      "seo": {
+        "title": "Как устроен CI/CD pipeline для Java-приложения — Gymterview",
+        "description": "CI/CD pipeline для Java: GitHub Actions, этапы test-build-push-deploy, Docker Compose для dev, GitOps, кэширование Gradle. Пример полного pipeline с Kubernetes.",
+        "keywords": ["CI/CD Java", "GitHub Actions", "GitLab CI", "Docker Compose", "GitOps", "ArgoCD", "Gradle cache", "pipeline", "Kubernetes deploy", "собеседование"],
+        "ogTitle": "CI/CD pipeline для Java-приложения: GitHub Actions и Kubernetes — Gymterview",
+        "ogDescription": "CI/CD: test, build JAR, Docker image, push to registry, deploy to K8s. GitHub Actions, Docker Compose для dev, GitOps.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как устроен CI/CD pipeline для Java-приложения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CI/CD pipeline включает этапы: checkout, test (JUnit + Testcontainers), build JAR (Gradle), build Docker image, push to registry, deploy to Kubernetes. Pipeline должен быть быстрым (<10 минут): кэширование Gradle, параллельные джобы. Docker Compose для локальной разработки. GitOps: изменение манифестов в git автоматически приводит к деплою через ArgoCD."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "CI/CD pipeline", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как контейнеризировать и деплоить Java-приложение?",
+      "questionSlug": "kak-konteynerizirovat-i-deploit-java-prilozhenie",
+      "grade": "middle",
+      "tags": ["docker", "kubernetes", "multi-stage-build", "layered-jar", "spring-boot"],
+      "seo": {
+        "title": "Как контейнеризировать и деплоить Java-приложение — Gymterview",
+        "description": "Контейнеризация Java: multi-stage Dockerfile, layered JAR, Kubernetes Deployment с probes, Graceful shutdown, GraalVM Native Image. Non-root, ZGC, MaxRAMPercentage.",
+        "keywords": ["Docker Java", "multi-stage build", "layered JAR", "Kubernetes", "liveness probe", "readiness probe", "GraalVM Native Image", "Graceful shutdown", "ZGC", "собеседование"],
+        "ogTitle": "Контейнеризация и деплой Java-приложения: Docker + Kubernetes — Gymterview",
+        "ogDescription": "Multi-stage Dockerfile, layered JAR, Kubernetes probes, Graceful shutdown, GraalVM Native Image. Production best practices.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как контейнеризировать и деплоить Java-приложение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Multi-stage Docker build: build (JDK), extract layers, runtime (JRE). Layered JAR для кэширования Docker-слоёв. Non-root user обязателен. Kubernetes: три типа probe (startup, liveness, readiness), resource limits, Graceful shutdown (SIGTERM -> preStop sleep -> завершение запросов). ZGC + MaxRAMPercentage=75%. GraalVM Native Image для serverless (<100ms старт)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Контейнеризация и деплой", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как документировать API и архитектурные решения?",
+      "questionSlug": "kak-dokumentirovat-api-i-arkhitekturnye-resheniya",
+      "grade": "junior",
+      "tags": ["documentation", "openapi", "adr", "spring-boot", "best-practices"],
+      "seo": {
+        "title": "Как документировать API и архитектурные решения — Gymterview",
+        "description": "Документация API через springdoc-openapi: автогенерация из кода. ADR (Architecture Decision Records) для фиксации архитектурных решений. Docs-as-code подход.",
+        "keywords": ["springdoc-openapi", "API документация", "ADR", "Architecture Decision Records", "OpenAPI", "Swagger UI", "docs-as-code", "Spring Boot", "собеседование"],
+        "ogTitle": "Документация API и архитектурных решений: springdoc-openapi и ADR — Gymterview",
+        "ogDescription": "API-документация из кода (springdoc-openapi) + ADR для архитектурных решений. Docs-as-code подход.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как документировать API и архитектурные решения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "API-документация генерируется из кода через springdoc-openapi с аннотациями @Operation, @ApiResponse, @Tag. Архитектурные решения фиксируются в ADR (Architecture Decision Records) — минимальная документация, объясняющая 'почему', а не 'что'. Docs-as-code: документация в git рядом с кодом. README — точка входа, проект должен подниматься за 10 минут."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Современная разработка WEB-приложений", "url": "/topics/modern-web-dev" },
+          { "name": "Документация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

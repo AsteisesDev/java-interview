@@ -1,0 +1,908 @@
+{
+  "topic": "Servlets, JSP, JSTL",
+  "topicSlug": "servlets",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Для чего нужен интерфейс ServletResponse",
+      "questionSlug": "dlya-chego-nuzhen-interfejs-servletresponse",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Для чего нужен интерфейс ServletResponse — Gymterview",
+        "description": "`ServletResponse` — это интерфейс для отправки данных клиенту в ответ на запрос. Он предоставляет методы для управления содержимым ответа, кодировкой, типом кон",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен интерфейс ServletResponse — Gymterview",
+        "ogDescription": "`ServletResponse` — это интерфейс для отправки данных клиенту в ответ на запрос. Он предоставляет методы для управления ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен интерфейс ServletResponse",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ServletResponse` — это интерфейс для отправки данных клиенту в ответ на запрос. Он предоставляет методы для управления содержимым ответа, кодировкой, типом контента и потоками вывода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Для чего нужен интерфейс ServletResponse",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен интерфейс ServletRequest",
+      "questionSlug": "dlya-chego-nuzhen-interfejs-servletrequest",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Для чего нужен интерфейс ServletRequest — Gymterview",
+        "description": "`ServletRequest` — это интерфейс для получения данных из клиентского запроса: параметров, заголовков, входного потока, информации о соединении и атрибутов запро",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен интерфейс ServletRequest — Gymterview",
+        "ogDescription": "`ServletRequest` — это интерфейс для получения данных из клиентского запроса: параметров, заголовков, входного потока, и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен интерфейс ServletRequest",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`ServletRequest` — это интерфейс для получения данных из клиентского запроса: параметров, заголовков, входного потока, информации о соединении и атрибутов запроса. Контейнер создаёт объект `ServletRequest` для каждого входящего запроса и передаёт его в метод `service()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Для чего нужен интерфейс ServletRequest",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Request Dispatcher",
+      "questionSlug": "chto-takoe-request-dispatcher",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое Request Dispatcher — Gymterview",
+        "description": "`RequestDispatcher` — это интерфейс для передачи запроса другому ресурсу (сервлету, JSP или HTML-файлу) на стороне сервера. Он позволяет организовать внутреннюю",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое Request Dispatcher — Gymterview",
+        "ogDescription": "`RequestDispatcher` — это интерфейс для передачи запроса другому ресурсу (сервлету, JSP или HTML-файлу) на стороне серве",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Request Dispatcher",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`RequestDispatcher` — это интерфейс для передачи запроса другому ресурсу (сервлету, JSP или HTML-файлу) на стороне сервера. Он позволяет организовать внутреннюю маршрутизацию запросов между компонентами веб-приложения без участия клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое Request Dispatcher",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как из одного сервлета вызвать другой сервлет",
+      "questionSlug": "kak-iz-odnogo-servleta-vyzvat-drugoj-servlet",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как из одного сервлета вызвать другой сервлет — Gymterview",
+        "description": "Для вызова сервлета в рамках одного приложения используется `RequestDispatcher` с методами `forward()` (делегирование) или `include()` (включение контента). Для",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как из одного сервлета вызвать другой сервлет — Gymterview",
+        "ogDescription": "Для вызова сервлета в рамках одного приложения используется `RequestDispatcher` с методами `forward()` (делегирование) и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как из одного сервлета вызвать другой сервлет",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для вызова сервлета в рамках одного приложения используется `RequestDispatcher` с методами `forward()` (делегирование) или `include()` (включение контента). Для вызова сервлета в другом приложении или на другом сервере используется `sendRedirect()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как из одного сервлета вызвать другой сервлет",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается sendRedirect() от forward()",
+      "questionSlug": "chem-otlichaetsya-sendredirect-ot-forward",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Чем отличается sendRedirect() от forward() — Gymterview",
+        "description": "Это два принципиально разных механизма перенаправления: `forward()` работает на стороне сервера, а `sendRedirect()` — на стороне клиента.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Чем отличается sendRedirect() от forward() — Gymterview",
+        "ogDescription": "Это два принципиально разных механизма перенаправления: `forward()` работает на стороне сервера, а `sendRedirect()` — на",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается sendRedirect() от forward()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это два принципиально разных механизма перенаправления: `forward()` работает на стороне сервера, а `sendRedirect()` — на стороне клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Чем отличается sendRedirect() от forward()",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используются атрибуты сервлетов и как происходит работа с ними",
+      "questionSlug": "dlya-chego-ispolzuyutsya-atributy-servletov-i-kak-proiskhodit-rabota-s-nimi",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Для чего используются атрибуты сервлетов и как происходит ра — Gymterview",
+        "description": "Атрибуты сервлетов — это пары ключ-значение, используемые для передачи данных между компонентами веб-приложения (сервлетами, фильтрами, JSP). В отличие от парам",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Для чего используются атрибуты сервлетов и как происходит ра — Gymterview",
+        "ogDescription": "Атрибуты сервлетов — это пары ключ-значение, используемые для передачи данных между компонентами веб-приложения (сервлет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используются атрибуты сервлетов и как происходит работа с ними",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Атрибуты сервлетов — это пары ключ-значение, используемые для передачи данных между компонентами веб-приложения (сервлетами, фильтрами, JSP). В отличие от параметров (read-only, задаются в конфигурации), атрибуты можно устанавливать и изменять программно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Для чего используются атрибуты сервлетов и как происходит ра",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом можно допустить в сервлете deadlock",
+      "questionSlug": "kakim-obrazom-mozhno-dopustit-v-servlete-deadlock",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Каким образом можно допустить в сервлете deadlock — Gymterview",
+        "description": "Deadlock в сервлете можно получить при циклических синхронных вызовах между методами. Классический пример: метод `doGet()` вызывает `doPost()`, а `doPost()` выз",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Каким образом можно допустить в сервлете deadlock — Gymterview",
+        "ogDescription": "Deadlock в сервлете можно получить при циклических синхронных вызовах между методами. Классический пример: метод `doGet(",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каким образом можно допустить в сервлете deadlock",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deadlock в сервлете можно получить при циклических синхронных вызовах между методами. Классический пример: метод `doGet()` вызывает `doPost()`, а `doPost()` вызывает `doGet()` — каждый ожидает завершения другого, что приводит к взаимной блокировке."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Каким образом можно допустить в сервлете deadlock",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить реальное расположение сервлета на сервере",
+      "questionSlug": "kak-poluchit-realnoe-raspolozhenie-servleta-na-servere",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как получить реальное расположение сервлета на сервере — Gymterview",
+        "description": "Реальный путь к файлам сервлета в файловой системе сервера можно получить через метод `getRealPath()` объекта `ServletContext`:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как получить реальное расположение сервлета на сервере — Gymterview",
+        "ogDescription": "Реальный путь к файлам сервлета в файловой системе сервера можно получить через метод `getRealPath()` объекта `ServletCo",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить реальное расположение сервлета на сервере",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реальный путь к файлам сервлета в файловой системе сервера можно получить через метод `getRealPath()` объекта `ServletContext`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как получить реальное расположение сервлета на сервере",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить информацию о сервере из сервлета",
+      "questionSlug": "kak-poluchit-informatsiyu-o-servere-iz-servleta",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как получить информацию о сервере из сервлета — Gymterview",
+        "description": "Информацию о сервере можно получить через метод `getServerInfo()` объекта `ServletContext`:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как получить информацию о сервере из сервлета — Gymterview",
+        "ogDescription": "Информацию о сервере можно получить через метод `getServerInfo()` объекта `ServletContext`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить информацию о сервере из сервлета",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Информацию о сервере можно получить через метод `getServerInfo()` объекта `ServletContext`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как получить информацию о сервере из сервлета",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как получить IP адрес клиента на сервере",
+      "questionSlug": "kak-poluchit-ip-adres-klienta-na-servere",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как получить IP адрес клиента на сервере — Gymterview",
+        "description": "IP-адрес клиента можно получить через метод `getRemoteAddr()` объекта `HttpServletRequest`:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как получить IP адрес клиента на сервере — Gymterview",
+        "ogDescription": "IP-адрес клиента можно получить через метод `getRemoteAddr()` объекта `HttpServletRequest`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как получить IP адрес клиента на сервере",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IP-адрес клиента можно получить через метод `getRemoteAddr()` объекта `HttpServletRequest`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как получить IP адрес клиента на сервере",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие классы-обертки для сервлетов вы знаете",
+      "questionSlug": "kakie-klassy-obertki-dlya-servletov-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие классы-обертки для сервлетов вы знаете — Gymterview",
+        "description": "Servlet API предоставляет четыре класса-обёртки (Wrapper/Decorator pattern), которые позволяют модифицировать поведение запроса или ответа без изменения оригина",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие классы-обертки для сервлетов вы знаете — Gymterview",
+        "ogDescription": "Servlet API предоставляет четыре класса-обёртки (Wrapper/Decorator pattern), которые позволяют модифицировать поведение ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие классы-обертки для сервлетов вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Servlet API предоставляет четыре класса-обёртки (Wrapper/Decorator pattern), которые позволяют модифицировать поведение запроса или ответа без изменения оригинальных объектов:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие классы-обертки для сервлетов вы знаете",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличия GenericServlet и HttpServlet",
+      "questionSlug": "v-chem-otlichiya-genericservlet-i-httpservlet",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В чем отличия GenericServlet и HttpServlet — Gymterview",
+        "description": "`GenericServlet` — абстрактный класс, реализующий интерфейс `Servlet` и предоставляющий протоколонезависимую базовую реализацию сервлета. `HttpServlet` — абстра",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В чем отличия GenericServlet и HttpServlet — Gymterview",
+        "ogDescription": "`GenericServlet` — абстрактный класс, реализующий интерфейс `Servlet` и предоставляющий протоколонезависимую базовую реа",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличия GenericServlet и HttpServlet",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`GenericServlet` — абстрактный класс, реализующий интерфейс `Servlet` и предоставляющий протоколонезависимую базовую реализацию сервлета. `HttpServlet` — абстрактный класс, наследующий `GenericServlet` и добавляющий поддержку HTTP-протокола."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В чем отличия GenericServlet и HttpServlet",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему HttpServlet класс объявлен как абстрактный",
+      "questionSlug": "pochemu-httpservlet-klass-obyavlen-kak-abstraktnyj",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Почему HttpServlet класс объявлен как абстрактный — Gymterview",
+        "description": "`HttpServlet` объявлен абстрактным, потому что его методы `doGet()`, `doPost()` и другие по умолчанию возвращают HTTP 405 (Method Not Allowed). Класс предоставл",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Почему HttpServlet класс объявлен как абстрактный — Gymterview",
+        "ogDescription": "`HttpServlet` объявлен абстрактным, потому что его методы `doGet()`, `doPost()` и другие по умолчанию возвращают HTTP 40",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему HttpServlet класс объявлен как абстрактный",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`HttpServlet` объявлен абстрактным, потому что его методы `doGet()`, `doPost()` и другие по умолчанию возвращают HTTP 405 (Method Not Allowed). Класс предоставляет только каркас обработки HTTP-запросов, а конкретная бизнес-логика должна быть реализована в подклассе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Почему HttpServlet класс объявлен как абстрактный",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные методы присутствуют в классе HttpServlet",
+      "questionSlug": "kakie-osnovnye-metody-prisutstvuyut-v-klasse-httpservlet",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие основные методы присутствуют в классе HttpServlet — Gymterview",
+        "description": "Класс `HttpServlet` предоставляет методы-обработчики для каждого HTTP-метода. Метод `service()` автоматически маршрутизирует запрос к соответствующему обработчи",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие основные методы присутствуют в классе HttpServlet — Gymterview",
+        "ogDescription": "Класс `HttpServlet` предоставляет методы-обработчики для каждого HTTP-метода. Метод `service()` автоматически маршрутизи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные методы присутствуют в классе HttpServlet",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Класс `HttpServlet` предоставляет методы-обработчики для каждого HTTP-метода. Метод `service()` автоматически маршрутизирует запрос к соответствующему обработчику."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие основные методы присутствуют в классе HttpServlet",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Стоит ли волноваться о многопоточной безопасности работая с сервлетами",
+      "questionSlug": "stoit-li-volnovatsya-o-mnogopotochnoj-bezopasnosti-rabotaya-s-servletami",
+      "grade": "middle",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Стоит ли волноваться о многопоточной безопасности работая с  — Gymterview",
+        "description": "Да, потокобезопасность — критический аспект работы с сервлетами. Контейнер создаёт один экземпляр сервлета и вызывает его методы `doGet()`, `doPost()`, `service",
+        "keywords": [
+          "servlets",
+          "middle"
+        ],
+        "ogTitle": "Стоит ли волноваться о многопоточной безопасности работая с  — Gymterview",
+        "ogDescription": "Да, потокобезопасность — критический аспект работы с сервлетами. Контейнер создаёт один экземпляр сервлета и вызывает ег",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Стоит ли волноваться о многопоточной безопасности работая с сервлетами",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, потокобезопасность — критический аспект работы с сервлетами. Контейнер создаёт один экземпляр сервлета и вызывает его методы `doGet()`, `doPost()`, `service()` одновременно из разных потоков для обработки параллельных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Стоит ли волноваться о многопоточной безопасности работая с ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какой метод HTTP не является идемпотентным",
+      "questionSlug": "kakoj-metod-http-ne-yavlyaetsya-idempotentnym",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какой метод HTTP не является идемпотентным — Gymterview",
+        "description": "Метод POST не является идемпотентным — повторный вызов с теми же данными может привести к разным результатам (например, создать несколько одинаковых записей). М",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какой метод HTTP не является идемпотентным — Gymterview",
+        "ogDescription": "Метод POST не является идемпотентным — повторный вызов с теми же данными может привести к разным результатам (например, ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какой метод HTTP не является идемпотентным",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метод POST не является идемпотентным — повторный вызов с теми же данными может привести к разным результатам (например, создать несколько одинаковых записей). Методы GET, PUT, DELETE, HEAD и OPTIONS являются идемпотентными: повторный вызов возвращает тот же результат."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какой метод HTTP не является идемпотентным",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть методы отправки данных с клиента на сервер",
+      "questionSlug": "kakie-est-metody-otpravki-dannykh-s-klienta-na-server",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие есть методы отправки данных с клиента на сервер — Gymterview",
+        "description": "Основные HTTP-методы для отправки данных — GET и POST. Они отличаются способом передачи данных и областью применения.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие есть методы отправки данных с клиента на сервер — Gymterview",
+        "ogDescription": "Основные HTTP-методы для отправки данных — GET и POST. Они отличаются способом передачи данных и областью применения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть методы отправки данных с клиента на сервер",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные HTTP-методы для отправки данных — GET и POST. Они отличаются способом передачи данных и областью применения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие есть методы отправки данных с клиента на сервер",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между методами GET и POST",
+      "questionSlug": "v-chem-raznitsa-mezhdu-metodami-get-i-post",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В чем разница между методами GET и POST — Gymterview",
+        "description": "GET и POST — два основных HTTP-метода, принципиально различающихся по семантике, способу передачи данных и безопасности.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В чем разница между методами GET и POST — Gymterview",
+        "ogDescription": "GET и POST — два основных HTTP-метода, принципиально различающихся по семантике, способу передачи данных и безопасности.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между методами GET и POST",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GET и POST — два основных HTTP-метода, принципиально различающихся по семантике, способу передачи данных и безопасности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В чем разница между методами GET и POST",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между PrintWriter и ServletOutputStream",
+      "questionSlug": "v-chem-raznitsa-mezhdu-printwriter-i-servletoutputstream",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "В чем разница между PrintWriter и ServletOutputStream — Gymterview",
+        "description": "`PrintWriter` — класс для работы с символьным потоком (text), а `ServletOutputStream` — для работы с байтовым потоком (binary). Выбор зависит от типа данных, ко",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "В чем разница между PrintWriter и ServletOutputStream — Gymterview",
+        "ogDescription": "`PrintWriter` — класс для работы с символьным потоком (text), а `ServletOutputStream` — для работы с байтовым потоком (b",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между PrintWriter и ServletOutputStream",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`PrintWriter` — класс для работы с символьным потоком (text), а `ServletOutputStream` — для работы с байтовым потоком (binary). Выбор зависит от типа данных, которые отправляются клиенту."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "В чем разница между PrintWriter и ServletOutputStream",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли одновременно использовать в сервлете PrintWriter и ServletOutputStream",
+      "questionSlug": "mozhno-li-odnovremenno-ispolzovat-v-servlete-printwriter-i-servletoutputstream",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Можно ли одновременно использовать в сервлете PrintWriter и  — Gymterview",
+        "description": "Нет, нельзя. При попытке вызвать `response.getWriter()` после `response.getOutputStream()` (или наоборот) будет выброшено `java.lang.IllegalStateException` с со",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Можно ли одновременно использовать в сервлете PrintWriter и  — Gymterview",
+        "ogDescription": "Нет, нельзя. При попытке вызвать `response.getWriter()` после `response.getOutputStream()` (или наоборот) будет выброшен",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли одновременно использовать в сервлете PrintWriter и ServletOutputStream",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нет, нельзя. При попытке вызвать `response.getWriter()` после `response.getOutputStream()` (или наоборот) будет выброшено `java.lang.IllegalStateException` с сообщением о том, что другой метод вывода уже был вызван."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Можно ли одновременно использовать в сервлете PrintWriter и ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

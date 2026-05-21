@@ -1,0 +1,188 @@
+{
+  "topic": "Тестирование в Spring Boot",
+  "topicSlug": "spring-test",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое ParameterizedTest и как он используется?",
+      "questionSlug": "chto-takoe-parameterizedtest-i-kak-on-ispolzuetsya",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое ParameterizedTest и как он используется? — Gymterview",
+        "description": "`@ParameterizedTest` — аннотация JUnit 5, позволяющая запускать один и тот же тест с разными входными данными. Это избавляет от дублирования кода при тестирован",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Что такое ParameterizedTest и как он используется? — Gymterview",
+        "ogDescription": "`@ParameterizedTest` — аннотация JUnit 5, позволяющая запускать один и тот же тест с разными входными данными. Это избав",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ParameterizedTest и как он используется?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@ParameterizedTest` — аннотация JUnit 5, позволяющая запускать один и тот же тест с разными входными данными. Это избавляет от дублирования кода при тестировании одной и той же логики с различными параметрами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое ParameterizedTest и как он используется?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Nested тесты в JUnit 5?",
+      "questionSlug": "chto-takoe-nested-testy-v-junit-5",
+      "grade": "junior",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое Nested тесты в JUnit 5? — Gymterview",
+        "description": "`@Nested` — аннотация JUnit 5, позволяющая создавать вложенные тестовые классы для логической группировки тестов. Это улучшает структуру и читаемость, особенно ",
+        "keywords": [
+          "spring-test",
+          "junior"
+        ],
+        "ogTitle": "Что такое Nested тесты в JUnit 5? — Gymterview",
+        "ogDescription": "`@Nested` — аннотация JUnit 5, позволяющая создавать вложенные тестовые классы для логической группировки тестов. Это ул",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Nested тесты в JUnit 5?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Nested` — аннотация JUnit 5, позволяющая создавать вложенные тестовые классы для логической группировки тестов. Это улучшает структуру и читаемость, особенно когда один класс содержит много тестов для разных сценариев."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое Nested тесты в JUnit 5?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое TDD и BDD? Чем они отличаются?",
+      "questionSlug": "chto-takoe-tdd-i-bdd-chem-oni-otlichayutsya",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Что такое TDD и BDD? Чем они отличаются? — Gymterview",
+        "description": "TDD (Test-Driven Development) — разработка через тестирование, методология, в которой тесты пишутся до реализации кода. BDD (Behavior-Driven Development) — расш",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Что такое TDD и BDD? Чем они отличаются? — Gymterview",
+        "ogDescription": "TDD (Test-Driven Development) — разработка через тестирование, методология, в которой тесты пишутся до реализации кода. ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое TDD и BDD? Чем они отличаются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TDD (Test-Driven Development) — разработка через тестирование, методология, в которой тесты пишутся до реализации кода. BDD (Behavior-Driven Development) — расширение TDD, фокусирующееся на описании поведения системы с точки зрения бизнеса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Что такое TDD и BDD? Чем они отличаются?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать Spring Security?",
+      "questionSlug": "kak-testirovat-spring-security",
+      "grade": "middle",
+      "tags": [
+        "spring-test"
+      ],
+      "seo": {
+        "title": "Как тестировать Spring Security? — Gymterview",
+        "description": "Spring Security предоставляет модуль `spring-security-test` с инструментами для тестирования аутентификации и авторизации.",
+        "keywords": [
+          "spring-test",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать Spring Security? — Gymterview",
+        "ogDescription": "Spring Security предоставляет модуль `spring-security-test` с инструментами для тестирования аутентификации и авторизаци",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать Spring Security?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Security предоставляет модуль `spring-security-test` с инструментами для тестирования аутентификации и авторизации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Тестирование в Spring Boot",
+            "url": "/topics/spring-test"
+          },
+          {
+            "name": "Как тестировать Spring Security?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

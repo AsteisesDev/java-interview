@@ -1,0 +1,503 @@
+{
+  "topic": "XML",
+  "topicSlug": "xml",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое XML?",
+      "questionSlug": "chto-takoe-xml",
+      "grade": "junior",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое XML? — Gymterview",
+        "description": "XML (eXtensible Markup Language) — расширяемый язык разметки с простым формальным синтаксисом, предназначенный для создания и обработки структурированных докуме",
+        "keywords": [
+          "xml",
+          "junior"
+        ],
+        "ogTitle": "Что такое XML? — Gymterview",
+        "ogDescription": "XML (eXtensible Markup Language) — расширяемый язык разметки с простым формальным синтаксисом, предназначенный для созда",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое XML?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XML (eXtensible Markup Language) — расширяемый язык разметки с простым формальным синтаксисом, предназначенный для создания и обработки структурированных документов как программами, так и человеком. В отличие от HTML, XML не имеет фиксированного набора тегов — разработчик создает собственную разметк"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое XML?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое DTD?",
+      "questionSlug": "chto-takoe-dtd",
+      "grade": "junior",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое DTD? — Gymterview",
+        "description": "DTD (Document Type Definition) — это заранее определенный свод правил, задающий допустимые элементы, атрибуты и их взаимосвязи в XML-документе. DTD описывает гр",
+        "keywords": [
+          "xml",
+          "junior"
+        ],
+        "ogTitle": "Что такое DTD? — Gymterview",
+        "ogDescription": "DTD (Document Type Definition) — это заранее определенный свод правил, задающий допустимые элементы, атрибуты и их взаим",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое DTD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DTD (Document Type Definition) — это заранее определенный свод правил, задающий допустимые элементы, атрибуты и их взаимосвязи в XML-документе. DTD описывает грамматику документа: какие теги допустимы, в каком порядке они могут появляться, какие атрибуты обязательны, а какие — нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое DTD?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем well-formed XML отличается от valid XML?",
+      "questionSlug": "chem-well-formed-xml-otlichaetsya-ot-valid-xml",
+      "grade": "junior",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Чем well-formed XML отличается от valid XML? — Gymterview",
+        "description": "Well-formed XML — это документ, который соответствует базовым синтаксическим правилам XML и может быть разобран любым XML-парсером. Valid XML — это well-formed ",
+        "keywords": [
+          "xml",
+          "junior"
+        ],
+        "ogTitle": "Чем well-formed XML отличается от valid XML? — Gymterview",
+        "ogDescription": "Well-formed XML — это документ, который соответствует базовым синтаксическим правилам XML и может быть разобран любым XM",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем well-formed XML отличается от valid XML?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Well-formed XML — это документ, который соответствует базовым синтаксическим правилам XML и может быть разобран любым XML-парсером. Valid XML — это well-formed документ, который дополнительно соответствует правилам конкретной схемы (DTD или XSD), то есть корректен и синтаксически, и семантически."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Чем well-formed XML отличается от valid XML?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое пространство имен в XML?",
+      "questionSlug": "chto-takoe-prostranstvo-imen-v-xml",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое пространство имен в XML? — Gymterview",
+        "description": "Пространство имен XML (XML namespace) — это механизм, позволяющий уникально идентифицировать элементы и атрибуты в XML-документе с помощью URI, чтобы избежать к",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Что такое пространство имен в XML? — Gymterview",
+        "ogDescription": "Пространство имен XML (XML namespace) — это механизм, позволяющий уникально идентифицировать элементы и атрибуты в XML-д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое пространство имен в XML?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пространство имен XML (XML namespace) — это механизм, позволяющий уникально идентифицировать элементы и атрибуты в XML-документе с помощью URI, чтобы избежать конфликтов имен при объединении нескольких словарей XML в одном документе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое пространство имен в XML?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое XSD? В чем его преимущества перед DTD?",
+      "questionSlug": "chto-takoe-xsd-v-chem-ego-preimushchestva-pered-dtd",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое XSD? В чем его преимущества перед DTD? — Gymterview",
+        "description": "XSD (XML Schema Definition) — язык описания структуры XML-документа, написанный на самом XML. XSD описывает словарь (допустимые элементы и атрибуты), модель сод",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Что такое XSD? В чем его преимущества перед DTD? — Gymterview",
+        "ogDescription": "XSD (XML Schema Definition) — язык описания структуры XML-документа, написанный на самом XML. XSD описывает словарь (доп",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое XSD? В чем его преимущества перед DTD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XSD (XML Schema Definition) — язык описания структуры XML-документа, написанный на самом XML. XSD описывает словарь (допустимые элементы и атрибуты), модель содержания (связи между элементами), структуру документа и используемые типы данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое XSD? В чем его преимущества перед DTD?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы существуют в XSD?",
+      "questionSlug": "kakie-tipy-sushchestvuyut-v-xsd",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Какие типы существуют в XSD? — Gymterview",
+        "description": "В XSD существуют два основных вида типов: простые (simpleType) и сложные (complexType). Простые типы описывают значения, которые могут быть содержимым элемента ",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Какие типы существуют в XSD? — Gymterview",
+        "ogDescription": "В XSD существуют два основных вида типов: простые (simpleType) и сложные (complexType). Простые типы описывают значения,",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы существуют в XSD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В XSD существуют два основных вида типов: простые (simpleType) и сложные (complexType). Простые типы описывают значения, которые могут быть содержимым элемента или атрибута, но не могут содержать вложенные элементы или иметь атрибуты. Сложные типы описывают элементы, которые могут содержать другие э"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Какие типы существуют в XSD?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие вы знаете методы чтения XML? Опишите сильные и слабые стороны каждого метода.",
+      "questionSlug": "kakie-vy-znaete-metody-chteniya-xml-opishite-silnye-i-slabye-storony-kazhdogo-me",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Какие вы знаете методы чтения XML? Опишите сильные и слабые  — Gymterview",
+        "description": "В Java существуют три основных метода чтения XML-документов: DOM (объектный), SAX (событийный) и StAX (потоковый). Каждый из них предлагает разный баланс между ",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Какие вы знаете методы чтения XML? Опишите сильные и слабые  — Gymterview",
+        "ogDescription": "В Java существуют три основных метода чтения XML-документов: DOM (объектный), SAX (событийный) и StAX (потоковый). Кажды",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие вы знаете методы чтения XML? Опишите сильные и слабые стороны каждого метода.",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java существуют три основных метода чтения XML-документов: DOM (объектный), SAX (событийный) и StAX (потоковый). Каждый из них предлагает разный баланс между удобством использования, потреблением памяти и скоростью работы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Какие вы знаете методы чтения XML? Опишите сильные и слабые ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда следует использовать DOM, а когда SAX, StAX анализаторы?",
+      "questionSlug": "kogda-sleduet-ispolzovat-dom-a-kogda-sax-stax-analizatory",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Когда следует использовать DOM, а когда SAX, StAX анализатор — Gymterview",
+        "description": "Выбор парсера зависит от размера документа, необходимости модификации и паттерна доступа к данным. DOM подходит для работы со структурой, SAX и StAX — для поток",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Когда следует использовать DOM, а когда SAX, StAX анализатор — Gymterview",
+        "ogDescription": "Выбор парсера зависит от размера документа, необходимости модификации и паттерна доступа к данным. DOM подходит для рабо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда следует использовать DOM, а когда SAX, StAX анализаторы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Выбор парсера зависит от размера документа, необходимости модификации и паттерна доступа к данным. DOM подходит для работы со структурой, SAX и StAX — для потоковой обработки больших файлов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Когда следует использовать DOM, а когда SAX, StAX анализатор",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие вы знаете способы записи XML?",
+      "questionSlug": "kakie-vy-znaete-sposoby-zapisi-xml",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Какие вы знаете способы записи XML? — Gymterview",
+        "description": "Существуют два основных способа записи XML-документов в Java: прямая (потоковая) запись и запись через DOM-дерево. Выбор зависит от того, нужно ли формировать с",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Какие вы знаете способы записи XML? — Gymterview",
+        "ogDescription": "Существуют два основных способа записи XML-документов в Java: прямая (потоковая) запись и запись через DOM-дерево. Выбор",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие вы знаете способы записи XML?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существуют два основных способа записи XML-документов в Java: прямая (потоковая) запись и запись через DOM-дерево. Выбор зависит от того, нужно ли формировать структуру документа заранее или можно писать последовательно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Какие вы знаете способы записи XML?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JAXP?",
+      "questionSlug": "chto-takoe-jaxp",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое JAXP? — Gymterview",
+        "description": "JAXP (Java API for XML Processing) — стандартный набор API в составе JDK, предоставляющий единый интерфейс для обработки XML-документов в Java. JAXP абстрагируе",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Что такое JAXP? — Gymterview",
+        "ogDescription": "JAXP (Java API for XML Processing) — стандартный набор API в составе JDK, предоставляющий единый интерфейс для обработки",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JAXP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JAXP (Java API for XML Processing) — стандартный набор API в составе JDK, предоставляющий единый интерфейс для обработки XML-документов в Java. JAXP абстрагирует конкретную реализацию парсера, позволяя переключаться между разными парсерами (Xerces, Crimson и др.) без изменения кода приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое JAXP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое XSLT?",
+      "questionSlug": "chto-takoe-xslt",
+      "grade": "middle",
+      "tags": [
+        "xml"
+      ],
+      "seo": {
+        "title": "Что такое XSLT? — Gymterview",
+        "description": "XSLT (eXtensible Stylesheet Language Transformations) — декларативный язык преобразования XML-документов в другие XML-документы, HTML, текст или иные форматы. X",
+        "keywords": [
+          "xml",
+          "middle"
+        ],
+        "ogTitle": "Что такое XSLT? — Gymterview",
+        "ogDescription": "XSLT (eXtensible Stylesheet Language Transformations) — декларативный язык преобразования XML-документов в другие XML-до",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое XSLT?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XSLT (eXtensible Stylesheet Language Transformations) — декларативный язык преобразования XML-документов в другие XML-документы, HTML, текст или иные форматы. XSLT-процессор принимает на вход исходный XML и таблицу стилей (шаблон преобразования), а на выходе генерирует новый документ."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "XML",
+            "url": "/topics/xml"
+          },
+          {
+            "name": "Что такое XSLT?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

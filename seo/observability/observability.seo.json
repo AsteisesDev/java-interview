@@ -1,0 +1,548 @@
+{
+  "topic": "Мониторинг и Observability",
+  "topicSlug": "observability",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Observability и чем она отличается от мониторинга?",
+      "questionSlug": "chto-takoe-observability-i-chem-ona-otlichaetsya-ot-monitoringa",
+      "grade": "junior",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое Observability и чем она отличается от мониторинга? — Gymterview",
+        "description": "Observability (наблюдаемость) — свойство системы, позволяющее понять её внутреннее состояние по внешним выходным данным. В отличие от мониторинга, который отвеч",
+        "keywords": [
+          "observability",
+          "junior"
+        ],
+        "ogTitle": "Что такое Observability и чем она отличается от мониторинга? — Gymterview",
+        "ogDescription": "Observability (наблюдаемость) — свойство системы, позволяющее понять её внутреннее состояние по внешним выходным данным.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Observability и чем она отличается от мониторинга?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Observability (наблюдаемость) — свойство системы, позволяющее понять её внутреннее состояние по внешним выходным данным. В отличие от мониторинга, который отвечает на заранее известные вопросы (\"работает ли сервис?\", \"какова загрузка CPU?\"), Observability позволяет исследовать неизвестные заранее пр"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое Observability и чем она отличается от мониторинга?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое метрики и какие типы метрик существуют?",
+      "questionSlug": "chto-takoe-metriki-i-kakie-tipy-metrik-sushchestvuyut",
+      "grade": "junior",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое метрики и какие типы метрик существуют? — Gymterview",
+        "description": "Метрика — числовое значение, измеряемое в определённый момент времени, которое агрегируется и хранится как временной ряд (time series). Каждый временной ряд иде",
+        "keywords": [
+          "observability",
+          "junior"
+        ],
+        "ogTitle": "Что такое метрики и какие типы метрик существуют? — Gymterview",
+        "ogDescription": "Метрика — числовое значение, измеряемое в определённый момент времени, которое агрегируется и хранится как временной ряд",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое метрики и какие типы метрик существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Метрика — числовое значение, измеряемое в определённый момент времени, которое агрегируется и хранится как временной ряд (time series). Каждый временной ряд идентифицируется именем и набором лейблов (меток)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое метрики и какие типы метрик существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Micrometer и как его использовать в Spring Boot?",
+      "questionSlug": "chto-takoe-micrometer-i-kak-ego-ispolzovat-v-spring-boot",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое Micrometer и как его использовать в Spring Boot? — Gymterview",
+        "description": "Micrometer — библиотека-фасад для сбора метрик в JVM-приложениях. По аналогии с SLF4J для логирования, Micrometer предоставляет единый API для работы с метрикам",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Что такое Micrometer и как его использовать в Spring Boot? — Gymterview",
+        "ogDescription": "Micrometer — библиотека-фасад для сбора метрик в JVM-приложениях. По аналогии с SLF4J для логирования, Micrometer предос",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Micrometer и как его использовать в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Micrometer — библиотека-фасад для сбора метрик в JVM-приложениях. По аналогии с SLF4J для логирования, Micrometer предоставляет единый API для работы с метриками, а конкретная реализация (backend) подключается отдельно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое Micrometer и как его использовать в Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Prometheus и как он собирает метрики?",
+      "questionSlug": "chto-takoe-prometheus-i-kak-on-sobiraet-metriki",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое Prometheus и как он собирает метрики? — Gymterview",
+        "description": "Prometheus — open-source система мониторинга и алертинга (CNCF), основанная на модели временных рядов (time series database). Главная особенность — pull-модель:",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Что такое Prometheus и как он собирает метрики? — Gymterview",
+        "ogDescription": "Prometheus — open-source система мониторинга и алертинга (CNCF), основанная на модели временных рядов (time series datab",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Prometheus и как он собирает метрики?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prometheus — open-source система мониторинга и алертинга (CNCF), основанная на модели временных рядов (time series database). Главная особенность — pull-модель: Prometheus сам периодически опрашивает (scrape) endpoints приложений по HTTP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое Prometheus и как он собирает метрики?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Grafana и как визуализировать метрики?",
+      "questionSlug": "chto-takoe-grafana-i-kak-vizualizirovat-metriki",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое Grafana и как визуализировать метрики? — Gymterview",
+        "description": "Grafana — open-source платформа для визуализации, мониторинга и анализа данных из множества источников. Grafana не хранит данные — только визуализирует их из по",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Что такое Grafana и как визуализировать метрики? — Gymterview",
+        "ogDescription": "Grafana — open-source платформа для визуализации, мониторинга и анализа данных из множества источников. Grafana не храни",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Grafana и как визуализировать метрики?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Grafana — open-source платформа для визуализации, мониторинга и анализа данных из множества источников. Grafana не хранит данные — только визуализирует их из подключённых data sources."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое Grafana и как визуализировать метрики?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое distributed tracing?",
+      "questionSlug": "chto-takoe-distributed-tracing",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое distributed tracing? — Gymterview",
+        "description": "Distributed tracing (распределённая трассировка) — метод отслеживания прохождения запроса через множество сервисов в распределённой системе. Каждый запрос получ",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Что такое distributed tracing? — Gymterview",
+        "ogDescription": "Distributed tracing (распределённая трассировка) — метод отслеживания прохождения запроса через множество сервисов в рас",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое distributed tracing?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distributed tracing (распределённая трассировка) — метод отслеживания прохождения запроса через множество сервисов в распределённой системе. Каждый запрос получает уникальный идентификатор (traceId), который передаётся между сервисами, позволяя восстановить полную картину обработки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое distributed tracing?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое OpenTelemetry?",
+      "questionSlug": "chto-takoe-opentelemetry",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое OpenTelemetry? — Gymterview",
+        "description": "OpenTelemetry (OTel) — vendor-neutral open-source стандарт и набор инструментов для генерации, сбора и экспорта телеметрии (traces, metrics, logs). Проект CNCF,",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Что такое OpenTelemetry? — Gymterview",
+        "ogDescription": "OpenTelemetry (OTel) — vendor-neutral open-source стандарт и набор инструментов для генерации, сбора и экспорта телеметр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое OpenTelemetry?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OpenTelemetry (OTel) — vendor-neutral open-source стандарт и набор инструментов для генерации, сбора и экспорта телеметрии (traces, metrics, logs). Проект CNCF, объединивший OpenTracing и OpenCensus."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое OpenTelemetry?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить distributed tracing в Spring Boot?",
+      "questionSlug": "kak-nastroit-distributed-tracing-v-spring-boot",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Как настроить distributed tracing в Spring Boot? — Gymterview",
+        "description": "Начиная с Spring Boot 3.x, для distributed tracing используется Micrometer Tracing (замена Spring Cloud Sleuth). Micrometer Tracing предоставляет фасад, а конкр",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Как настроить distributed tracing в Spring Boot? — Gymterview",
+        "ogDescription": "Начиная с Spring Boot 3.x, для distributed tracing используется Micrometer Tracing (замена Spring Cloud Sleuth). Microme",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить distributed tracing в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Начиная с Spring Boot 3.x, для distributed tracing используется Micrometer Tracing (замена Spring Cloud Sleuth). Micrometer Tracing предоставляет фасад, а конкретная реализация (OTel или Brave/Zipkin) подключается как bridge."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Как настроить distributed tracing в Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Boot Actuator?",
+      "questionSlug": "chto-takoe-spring-boot-actuator",
+      "grade": "junior",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое Spring Boot Actuator? — Gymterview",
+        "description": "Spring Boot Actuator — модуль Spring Boot, предоставляющий production-ready функции для мониторинга и управления приложением через HTTP-эндпоинты или JMX.",
+        "keywords": [
+          "observability",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Boot Actuator? — Gymterview",
+        "ogDescription": "Spring Boot Actuator — модуль Spring Boot, предоставляющий production-ready функции для мониторинга и управления приложе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Boot Actuator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot Actuator — модуль Spring Boot, предоставляющий production-ready функции для мониторинга и управления приложением через HTTP-эндпоинты или JMX."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое Spring Boot Actuator?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое алертинг и как его правильно настроить?",
+      "questionSlug": "chto-takoe-alerting-i-kak-ego-pravilno-nastroit",
+      "grade": "senior",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое алертинг и как его правильно настроить? — Gymterview",
+        "description": "Алертинг — процесс автоматического оповещения команды о проблемах в системе на основании заданных правил. Правильно настроенный алертинг позволяет быстро реагир",
+        "keywords": [
+          "observability",
+          "senior"
+        ],
+        "ogTitle": "Что такое алертинг и как его правильно настроить? — Gymterview",
+        "ogDescription": "Алертинг — процесс автоматического оповещения команды о проблемах в системе на основании заданных правил. Правильно наст",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое алертинг и как его правильно настроить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Алертинг — процесс автоматического оповещения команды о проблемах в системе на основании заданных правил. Правильно настроенный алертинг позволяет быстро реагировать на инциденты, неправильный — приводит к alert fatigue (усталости от алертов), когда все уведомления игнорируются."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое алертинг и как его правильно настроить?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое SLO, SLI и SLA?",
+      "questionSlug": "chto-takoe-slo-sli-i-sla",
+      "grade": "senior",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Что такое SLO, SLI и SLA? — Gymterview",
+        "description": "SLA, SLO, SLI — три уровня определения и измерения надёжности сервиса, введённые Google в рамках практик Site Reliability Engineering (SRE).",
+        "keywords": [
+          "observability",
+          "senior"
+        ],
+        "ogTitle": "Что такое SLO, SLI и SLA? — Gymterview",
+        "ogDescription": "SLA, SLO, SLI — три уровня определения и измерения надёжности сервиса, введённые Google в рамках практик Site Reliabilit",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое SLO, SLI и SLA?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SLA, SLO, SLI — три уровня определения и измерения надёжности сервиса, введённые Google в рамках практик Site Reliability Engineering (SRE)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Что такое SLO, SLI и SLA?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать centralized logging в микросервисах?",
+      "questionSlug": "kak-organizovat-centralized-logging-v-mikroservisakh",
+      "grade": "middle",
+      "tags": [
+        "observability"
+      ],
+      "seo": {
+        "title": "Как организовать centralized logging в микросервисах? — Gymterview",
+        "description": "Centralized logging — подход, при котором логи всех сервисов собираются в единое хранилище для поиска, анализа и корреляции. В микросервисной архитектуре без це",
+        "keywords": [
+          "observability",
+          "middle"
+        ],
+        "ogTitle": "Как организовать centralized logging в микросервисах? — Gymterview",
+        "ogDescription": "Centralized logging — подход, при котором логи всех сервисов собираются в единое хранилище для поиска, анализа и корреля",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать centralized logging в микросервисах?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Centralized logging — подход, при котором логи всех сервисов собираются в единое хранилище для поиска, анализа и корреляции. В микросервисной архитектуре без централизованного логирования невозможно расследовать проблемы, затрагивающие несколько сервисов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Мониторинг и Observability",
+            "url": "/topics/observability"
+          },
+          {
+            "name": "Как организовать centralized logging в микросервисах?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

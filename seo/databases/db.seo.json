@@ -1,0 +1,597 @@
+{
+  "topic": "Базы данных",
+  "topicSlug": "databases",
+  "batch": 1,
+  "generatedAt": "2026-05-12T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое база данных",
+      "questionSlug": "chto-takoe-baza-dannykh",
+      "grade": "junior",
+      "tags": ["databases", "основы", "architecture"],
+      "seo": {
+        "title": "Что такое база данных — Gymterview",
+        "description": "Что такое база данных: определение, ключевые характеристики, виды (реляционные, документные, графовые, ключ-значение, колоночные). Подготовка к Java-собеседованию.",
+        "keywords": ["база данных", "БД", "реляционная база данных", "NoSQL", "PostgreSQL", "MongoDB", "Redis", "виды баз данных", "Java собеседование"],
+        "ogTitle": "Что такое база данных — Gymterview",
+        "ogDescription": "Определение базы данных, виды БД (реляционные, документные, графовые), ключевые характеристики. Подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое база данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "База данных (БД) — организованный набор структурированной информации, адаптированный для хранения, поиска и обработки вычислительной системой. Данные организованы по определённой модели (реляционная, документная, графовая и др.), доступ обеспечивается через СУБД, поддерживается целостность и параллельный доступ."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Что такое база данных", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое система управления базами данных",
+      "questionSlug": "chto-takoe-sistema-upravleniya-bazami-dannykh",
+      "grade": "junior",
+      "tags": ["databases", "основы", "architecture"],
+      "seo": {
+        "title": "Что такое СУБД (система управления базами данных) — Gymterview",
+        "description": "Что такое СУБД: основные функции, популярные СУБД в Java-экосистеме (PostgreSQL, MySQL, Oracle, H2, MongoDB, Redis). Отличие СУБД от базы данных.",
+        "keywords": ["СУБД", "система управления базами данных", "PostgreSQL", "MySQL", "Oracle", "H2", "MongoDB", "DBMS", "Java"],
+        "ogTitle": "Что такое СУБД — система управления базами данных — Gymterview",
+        "ogDescription": "Определение СУБД, основные функции, популярные СУБД в Java-экосистеме. Разница между БД и СУБД.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое система управления базами данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "СУБД — программное обеспечение, которое обеспечивает создание, доступ, управление и администрирование баз данных. Основные функции: управление данными на диске и в памяти, журнализация и восстановление, поддержка DDL/DML, обеспечение целостности и управление параллельным доступом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Что такое СУБД", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое реляционная модель данных",
+      "questionSlug": "chto-takoe-relyatsionnaya-model-dannykh",
+      "grade": "junior",
+      "tags": ["databases", "основы", "типы-данных"],
+      "seo": {
+        "title": "Что такое реляционная модель данных — Gymterview",
+        "description": "Реляционная модель данных: три аспекта (структурный, целостности, манипулирования), терминология (отношение, кортеж, атрибут, домен), нормальные формы.",
+        "keywords": ["реляционная модель", "реляционная алгебра", "отношение", "кортеж", "атрибут", "нормальная форма", "SQL", "Эдгар Кодд", "Java собеседование"],
+        "ogTitle": "Реляционная модель данных: структура, целостность, манипулирование — Gymterview",
+        "ogDescription": "Три аспекта реляционной модели данных, терминология и связь с SQL. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое реляционная модель данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реляционная модель данных — логическая модель, в которой данные представлены в виде набора связанных таблиц (отношений), а операции выполняются средствами реляционной алгебры. Включает три аспекта: структурный (таблицы, строки, столбцы), целостности (ограничения PK, FK, домены) и манипулирования (SQL, реляционная алгебра)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Реляционная модель данных", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Дайте определение терминам простой, составной, потенциальный и альтернативный ключ",
+      "questionSlug": "dajte-opredelenie-terminam-prostoj-sostavnoj-potentsialnyj-i-alternativnyj-klyuch",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Простой, составной, потенциальный и альтернативный ключ — Gymterview",
+        "description": "Виды ключей в БД: простой, составной, потенциальный (candidate) и альтернативный (alternate). Свойства потенциального ключа: уникальность и неизбыточность.",
+        "keywords": ["простой ключ", "составной ключ", "потенциальный ключ", "альтернативный ключ", "candidate key", "composite key", "база данных", "SQL", "собеседование"],
+        "ogTitle": "Виды ключей в базе данных: простой, составной, потенциальный, альтернативный — Gymterview",
+        "ogDescription": "Определения и различия: простой, составной, потенциальный и альтернативный ключи в реляционных БД.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Дайте определение терминам простой, составной, потенциальный и альтернативный ключ",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Простой ключ состоит из одного атрибута, составной — из двух и более. Потенциальный (candidate) ключ — минимальный набор атрибутов, уникально идентифицирующий каждую запись. Альтернативный ключ — потенциальный ключ, не выбранный в качестве первичного. Потенциальный ключ обладает уникальностью и неизбыточностью."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Виды ключей", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое первичный ключ и каковы критерии его выбора",
+      "questionSlug": "chto-takoe-pervichnyj-klyuch-i-kakovy-kriterii-ego-vybora",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Что такое первичный ключ и критерии его выбора — Gymterview",
+        "description": "Первичный ключ (primary key): определение, критерии выбора (минимальный размер, стабильность, уникальность). Естественный vs суррогатный ключ, UUID vs BIGINT.",
+        "keywords": ["первичный ключ", "primary key", "суррогатный ключ", "естественный ключ", "UUID", "BIGINT", "AUTO_INCREMENT", "SQL", "Java собеседование"],
+        "ogTitle": "Первичный ключ: определение и критерии выбора — Gymterview",
+        "ogDescription": "Что такое первичный ключ, критерии выбора, естественный vs суррогатный ключ, UUID vs BIGINT.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое первичный ключ и каковы критерии его выбора",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Первичный ключ (primary key) — один из потенциальных ключей, выбранный как основной идентификатор записей. Критерии выбора: минимальный размер, минимальное число атрибутов, стабильность во времени, гарантия уникальности. На практике чаще используется суррогатный ключ (BIGINT с автоинкрементом или UUID)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Первичный ключ", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое внешний ключ",
+      "questionSlug": "chto-takoe-vneshnij-klyuch",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Что такое внешний ключ (foreign key) — Gymterview",
+        "description": "Внешний ключ (foreign key): определение, назначение, ссылочная целостность, стратегии CASCADE, SET NULL, RESTRICT. Пример создания FK в SQL.",
+        "keywords": ["внешний ключ", "foreign key", "ссылочная целостность", "CASCADE", "RESTRICT", "SET NULL", "referential integrity", "SQL", "Java"],
+        "ogTitle": "Внешний ключ (foreign key): определение и стратегии — Gymterview",
+        "ogDescription": "Что такое внешний ключ, ссылочная целостность, стратегии ON DELETE/UPDATE: CASCADE, SET NULL, RESTRICT.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое внешний ключ",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Внешний ключ (foreign key) — атрибут или набор атрибутов таблицы, значения которых ссылаются на потенциальный ключ другой таблицы, устанавливая связь между записями. Обеспечивает ссылочную целостность на уровне СУБД. Стратегии при удалении/обновлении: CASCADE, SET NULL, SET DEFAULT, RESTRICT, NO ACTION."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Внешний ключ", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое нормализация",
+      "questionSlug": "chto-takoe-normalizatsiya",
+      "grade": "middle",
+      "tags": ["databases", "architecture"],
+      "seo": {
+        "title": "Что такое нормализация базы данных — Gymterview",
+        "description": "Нормализация БД: определение, цели (устранение избыточности, аномалий вставки, обновления и удаления). Процесс приведения к нормальным формам с примерами.",
+        "keywords": ["нормализация", "нормальная форма", "аномалии", "избыточность", "1NF", "2NF", "3NF", "база данных", "SQL", "собеседование"],
+        "ogTitle": "Нормализация базы данных: устранение избыточности и аномалий — Gymterview",
+        "ogDescription": "Зачем нужна нормализация, какие аномалии устраняет, процесс приведения к нормальным формам.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое нормализация",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нормализация — процесс пошагового преобразования структуры базы данных к виду, отвечающему нормальным формам, с целью устранения избыточности и аномалий вставки, обновления и удаления. На практике обычно достаточно привести базу к третьей нормальной форме (3NF)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Нормализация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют нормальные формы",
+      "questionSlug": "kakie-sushchestvuyut-normalnye-formy",
+      "grade": "middle",
+      "tags": ["databases", "architecture"],
+      "seo": {
+        "title": "Какие существуют нормальные формы (1NF-6NF, BCNF) — Gymterview",
+        "description": "Нормальные формы БД: 1NF (атомарность), 2NF (нет частичных зависимостей), 3NF (нет транзитивных зависимостей), BCNF, 4NF-6NF. Примеры нарушений каждой формы.",
+        "keywords": ["нормальные формы", "1NF", "2NF", "3NF", "BCNF", "4NF", "5NF", "нормализация", "функциональная зависимость", "SQL"],
+        "ogTitle": "Нормальные формы: 1NF, 2NF, 3NF, BCNF и высшие формы — Gymterview",
+        "ogDescription": "Обзор нормальных форм от 1NF до 6NF с примерами нарушений. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют нормальные формы",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные нормальные формы: 1NF (атомарные атрибуты, нет повторяющихся групп), 2NF (нет частичных зависимостей от составного ключа), 3NF (нет транзитивных зависимостей между неключевыми атрибутами), BCNF (каждый детерминант — потенциальный ключ). Высшие формы (4NF-6NF, DKNF) применяются редко. На практике достаточно 3NF или BCNF."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Нормальные формы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое денормализация и для чего она применяется",
+      "questionSlug": "chto-takoe-denormalizatsiya-i-dlya-chego-ona-primenyaetsya",
+      "grade": "middle",
+      "tags": ["databases", "architecture", "performance"],
+      "seo": {
+        "title": "Что такое денормализация и для чего она применяется — Gymterview",
+        "description": "Денормализация БД: определение, когда применять, приёмы (дублирование атрибутов, предвычисленные агрегаты, materialized views). Компромиссы нормализации vs денормализации.",
+        "keywords": ["денормализация", "избыточность", "materialized view", "OLAP", "OLTP", "производительность", "JOIN", "SQL", "Java собеседование"],
+        "ogTitle": "Денормализация базы данных: зачем и когда применять — Gymterview",
+        "ogDescription": "Денормализация: осознанное внесение избыточности для ускорения чтения. Приёмы и компромиссы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое денормализация и для чего она применяется",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Денормализация — осознанное внесение избыточности в структуру БД для повышения производительности чтения за счёт сокращения JOIN. Применяется при read-heavy нагрузке, сложных аналитических запросах (OLAP), построении материализованных представлений. Это компромисс: быстрое чтение ценой медленной записи и ответственности за целостность на уровне приложения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Денормализация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют типы связей в базе данных",
+      "questionSlug": "kakie-sushchestvuyut-tipy-svyazej-v-baze-dannykh",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Типы связей в базе данных (1:1, 1:N, M:N) — Gymterview",
+        "description": "Типы связей в реляционной БД: один к одному (1:1), один ко многим (1:N), многие ко многим (M:N). Реализация через FK и промежуточную таблицу с примерами SQL.",
+        "keywords": ["типы связей", "один к одному", "один ко многим", "многие ко многим", "foreign key", "промежуточная таблица", "relationship", "SQL", "Java"],
+        "ogTitle": "Типы связей в базе данных: 1:1, 1:N, M:N — Gymterview",
+        "ogDescription": "Три типа связей в реляционных БД: один к одному, один ко многим, многие ко многим. Примеры SQL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют типы связей в базе данных",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три основных типа связей: один к одному (1:1) — реализуется через FK + UNIQUE, применяется для разделения данных; один ко многим (1:N) — самый распространённый тип, реализуется через FK в дочерней таблице; многие ко многим (M:N) — реализуется через промежуточную (связующую) таблицу с двумя FK."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Типы связей", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое индексы и для чего их используют",
+      "questionSlug": "chto-takoe-indeksy-i-dlya-chego-ikh-ispolzuyut",
+      "grade": "junior",
+      "tags": ["databases", "performance", "основы"],
+      "seo": {
+        "title": "Что такое индексы в базе данных и зачем они нужны — Gymterview",
+        "description": "Индексы в БД: определение, принцип работы (B-tree, O(log N)), преимущества (ускорение WHERE, JOIN, ORDER BY), недостатки (замедление INSERT/UPDATE). Когда создавать.",
+        "keywords": ["индекс", "index", "B-tree", "база данных", "производительность", "full table scan", "SQL", "PostgreSQL", "Java собеседование"],
+        "ogTitle": "Индексы в базе данных: что это и когда использовать — Gymterview",
+        "ogDescription": "Что такое индекс, как работает B-tree, преимущества и недостатки индексов. Когда индексы полезны и вредны.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое индексы и для чего их используют",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Индекс — вспомогательная структура данных, которая ускоряет поиск записей по значениям столбцов за счёт дополнительного дискового пространства и замедления записи. Без индекса СУБД выполняет полное сканирование таблицы, с индексом (обычно B-tree) поиск выполняется за O(log N). Индексы ускоряют WHERE, JOIN, ORDER BY, но замедляют INSERT/UPDATE/DELETE."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Индексы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы индексов существуют",
+      "questionSlug": "kakie-tipy-indeksov-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["databases", "performance"],
+      "seo": {
+        "title": "Какие типы индексов существуют в базе данных — Gymterview",
+        "description": "Типы индексов: B-tree, Hash, GiST, GIN, BRIN. Кластерный vs некластерный, простой vs составной, уникальный, частичный, покрывающий. Примеры на PostgreSQL.",
+        "keywords": ["типы индексов", "B-tree", "Hash index", "GIN", "GiST", "BRIN", "составной индекс", "покрывающий индекс", "partial index", "PostgreSQL"],
+        "ogTitle": "Типы индексов в базе данных: B-tree, Hash, GIN, GiST — Gymterview",
+        "ogDescription": "Классификация индексов по структуре, покрытию и содержимому. B-tree, Hash, GIN, составной, покрывающий, частичный.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы индексов существуют",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Индексы классифицируются по структуре (B-tree, Hash, GiST, GIN, BRIN), по расположению данных (кластерный, некластерный), по количеству столбцов (простой, составной, покрывающий), по содержимому (уникальный, частичный, функциональный, полнотекстовый, пространственный, битовый). B-tree — самый распространённый, подходит для равенства, диапазонов и сортировки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Типы индексов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличие между кластерными и некластерными индексами",
+      "questionSlug": "v-chem-otlichie-mezhdu-klasternymi-i-neklasternymi-indeksami",
+      "grade": "middle",
+      "tags": ["databases", "performance"],
+      "seo": {
+        "title": "Кластерный vs некластерный индекс — отличия — Gymterview",
+        "description": "Отличия кластерного и некластерного индексов: физический порядок данных, количество на таблицу, скорость чтения и вставки. Особенности в MySQL InnoDB и PostgreSQL.",
+        "keywords": ["кластерный индекс", "некластерный индекс", "clustered index", "nonclustered index", "InnoDB", "PostgreSQL", "MySQL", "SQL Server", "фактор кластеризации"],
+        "ogTitle": "Кластерный vs некластерный индекс: ключевые отличия — Gymterview",
+        "ogDescription": "Сравнение кластерного и некластерного индексов: физический порядок, скорость, количество. InnoDB, PostgreSQL, SQL Server.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличие между кластерными и некластерными индексами",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кластерный индекс определяет физический порядок хранения данных в таблице (один на таблицу, листовые узлы содержат сами данные). Некластерный — отдельная структура со ссылками на строки (может быть много). В MySQL InnoDB таблица всегда кластеризована по PK. Эффективность некластерного индекса зависит от фактора кластеризации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Кластерный vs некластерный индекс", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Имеет ли смысл индексировать данные с небольшим количеством возможных значений",
+      "questionSlug": "imeet-li-smysl-indeksirovat-dannye-s-nebolshim-kolichestvom-vozmozhnykh-znachenij",
+      "grade": "middle",
+      "tags": ["databases", "performance"],
+      "seo": {
+        "title": "Индексирование данных с низкой кардинальностью — Gymterview",
+        "description": "Стоит ли индексировать столбцы с малым числом уникальных значений: кардинальность, селективность, исключения (перекошенное распределение, частичные индексы, bitmap).",
+        "keywords": ["кардинальность", "селективность", "низкая кардинальность", "partial index", "bitmap index", "индексирование", "PostgreSQL", "SQL", "собеседование"],
+        "ogTitle": "Индексирование при низкой кардинальности: когда имеет смысл — Gymterview",
+        "ogDescription": "Почему индекс неэффективен при низкой кардинальности и когда всё-таки стоит его создавать.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Имеет ли смысл индексировать данные с небольшим количеством возможных значений",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В общем случае нет: при низкой кардинальности индекс не сужает выборку достаточно сильно, и полное сканирование быстрее. Исключения: сильно перекошенное распределение (99% true, 1% false — индекс полезен для поиска false), частичные индексы (индексируют только подмножество строк), bitmap-индексы в OLAP, и составной индекс с высококардинальным столбцом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Индексирование при низкой кардинальности", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда полное сканирование набора данных выгоднее доступа по индексу",
+      "questionSlug": "kogda-polnoe-skanirovanie-nabora-dannykh-vygodnee-dostupa-po-indeksu",
+      "grade": "senior",
+      "tags": ["databases", "performance"],
+      "seo": {
+        "title": "Когда полное сканирование таблицы выгоднее индекса — Gymterview",
+        "description": "Sequential Scan vs Index Scan: когда полное сканирование быстрее. Механика random I/O vs sequential I/O, селективность, фактор кластеризации, EXPLAIN ANALYZE.",
+        "keywords": ["Sequential Scan", "Index Scan", "full table scan", "random I/O", "sequential I/O", "оптимизатор", "EXPLAIN ANALYZE", "PostgreSQL", "селективность"],
+        "ogTitle": "Sequential Scan vs Index Scan: когда полное сканирование выгоднее — Gymterview",
+        "ogDescription": "Когда полное сканирование таблицы быстрее индекса: низкая селективность, слабая кластеризация, маленькие таблицы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда полное сканирование набора данных выгоднее доступа по индексу",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Полное сканирование выгоднее, когда стоимость одноблочных random I/O через индекс превышает стоимость многоблочного sequential I/O всей таблицы. Это происходит при: низкой селективности (более 5-15% строк), слабой кластеризации данных, маленьких таблицах, отсутствии покрывающего индекса. Оптимизатор СУБД принимает решение на основе статистики и фактора кластеризации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Полное сканирование vs индекс", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое транзакция",
+      "questionSlug": "chto-takoe-tranzaktsiya",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Что такое транзакция в базе данных — Gymterview",
+        "description": "Транзакция в БД: определение, жизненный цикл (BEGIN, COMMIT, ROLLBACK), пример банковского перевода. Транзакции в Java с @Transactional в Spring.",
+        "keywords": ["транзакция", "transaction", "COMMIT", "ROLLBACK", "BEGIN", "Transactional", "Spring", "ACID", "SQL", "Java"],
+        "ogTitle": "Что такое транзакция в базе данных — Gymterview",
+        "ogDescription": "Транзакция: определение, жизненный цикл, пример на SQL и Spring @Transactional. Подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое транзакция",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Транзакция — логически неделимая последовательность операций над базой данных, которая переводит БД из одного согласованного состояния в другое. Гарантирует либо полное выполнение всех операций (COMMIT), либо полный откат (ROLLBACK). В Spring управляется аннотацией @Transactional."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Транзакция", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Назовите основные свойства транзакции",
+      "questionSlug": "nazovite-osnovnye-svojstva-tranzaktsii",
+      "grade": "junior",
+      "tags": ["databases", "основы"],
+      "seo": {
+        "title": "Свойства транзакции ACID — Gymterview",
+        "description": "ACID-свойства транзакций: Atomicity, Consistency, Isolation, Durability. Механизмы реализации (WAL, MVCC, undo log). Сравнение ACID vs BASE в NoSQL.",
+        "keywords": ["ACID", "атомарность", "согласованность", "изолированность", "долговечность", "WAL", "MVCC", "undo log", "BASE", "транзакция"],
+        "ogTitle": "ACID: основные свойства транзакции — Gymterview",
+        "ogDescription": "Расшифровка ACID: Atomicity, Consistency, Isolation, Durability. Механизмы реализации и сравнение с BASE.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Назовите основные свойства транзакции",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Свойства транзакции описываются акронимом ACID: Atomicity (выполняется полностью или не выполняется), Consistency (переводит БД в корректное состояние), Isolation (параллельные транзакции не влияют друг на друга), Durability (результат сохраняется при сбое). Реализуются через undo log (A), ограничения целостности (C), MVCC/блокировки (I), WAL (D)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Свойства ACID", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют уровни изолированности транзакций",
+      "questionSlug": "kakie-sushchestvuyut-urovni-izolirovannosti-tranzaktsij",
+      "grade": "middle",
+      "tags": ["databases", "performance"],
+      "seo": {
+        "title": "Уровни изолированности транзакций (SQL-стандарт) — Gymterview",
+        "description": "Уровни изоляции транзакций: Read Uncommitted, Read Committed, Repeatable Read, Serializable. Допустимые аномалии, уровни по умолчанию в PostgreSQL и MySQL.",
+        "keywords": ["уровни изоляции", "isolation level", "Read Committed", "Repeatable Read", "Serializable", "Read Uncommitted", "MVCC", "PostgreSQL", "MySQL"],
+        "ogTitle": "Уровни изолированности транзакций: от Read Uncommitted до Serializable — Gymterview",
+        "ogDescription": "Четыре уровня изоляции транзакций: допустимые аномалии, уровни по умолчанию в PostgreSQL, MySQL, Oracle.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют уровни изолированности транзакций",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SQL-стандарт определяет 4 уровня: Read Uncommitted (допускает грязное чтение), Read Committed (видит только зафиксированные данные, по умолчанию в PostgreSQL), Repeatable Read (снимок на начало транзакции, по умолчанию в MySQL InnoDB), Serializable (эквивалент последовательного выполнения). Чем выше уровень, тем сильнее изоляция, но ниже пропускная способность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Уровни изоляции транзакций", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие проблемы могут возникать при параллельном доступе с использованием транзакций",
+      "questionSlug": "kakie-problemy-mogut-voznikat-pri-parallelnom-dostupe-s-ispolzovaniem-tranzaktsij",
+      "grade": "middle",
+      "tags": ["databases", "concurrency"],
+      "seo": {
+        "title": "Проблемы параллельного доступа в транзакциях — Gymterview",
+        "description": "Аномалии параллельного доступа: потерянное обновление (Lost Update), грязное чтение (Dirty Read), неповторяемое чтение, фантомное чтение. Уровни защиты от каждой.",
+        "keywords": ["dirty read", "phantom read", "non-repeatable read", "lost update", "грязное чтение", "фантомное чтение", "неповторяемое чтение", "потерянное обновление", "транзакции"],
+        "ogTitle": "Аномалии параллельного доступа: Dirty Read, Phantom Read, Lost Update — Gymterview",
+        "ogDescription": "Четыре аномалии параллельных транзакций: потерянное обновление, грязное, неповторяемое и фантомное чтение.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие проблемы могут возникать при параллельном доступе с использованием транзакций",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Четыре основных аномалии: потерянное обновление (две транзакции перезатирают изменения друг друга), грязное чтение (чтение незафиксированных данных), неповторяемое чтение (значение строки меняется между двумя чтениями), фантомное чтение (появление/исчезновение строк между запросами). Каждая аномалия предотвращается соответствующим уровнем изоляции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Базы данных", "url": "/topics/databases" },
+          { "name": "Проблемы параллельного доступа", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

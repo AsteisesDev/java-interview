@@ -1,0 +1,188 @@
+{
+  "topic": "Kubernetes",
+  "topicSlug": "kubernetes",
+  "batch": 2,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Helm?",
+      "questionSlug": "chto-takoe-helm",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Что такое Helm? — Gymterview",
+        "description": "Helm — пакетный менеджер для Kubernetes, аналог apt/yum для Linux или Maven для Java. Позволяет описывать, устанавливать и обновлять приложения в Kubernetes как",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Что такое Helm? — Gymterview",
+        "ogDescription": "Helm — пакетный менеджер для Kubernetes, аналог apt/yum для Linux или Maven для Java. Позволяет описывать, устанавливать",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Helm?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Helm — пакетный менеджер для Kubernetes, аналог apt/yum для Linux или Maven для Java. Позволяет описывать, устанавливать и обновлять приложения в Kubernetes как единый пакет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Что такое Helm?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как задеплоить Java-приложение в Kubernetes?",
+      "questionSlug": "kak-zadeploit-java-prilozhenie-v-kubernetes",
+      "grade": "middle",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Как задеплоить Java-приложение в Kubernetes? — Gymterview",
+        "description": "Процесс деплоя Java-приложения в Kubernetes состоит из четырёх этапов: создание Docker-образа, написание манифестов, применение манифестов, настройка CI/CD.",
+        "keywords": [
+          "kubernetes",
+          "middle"
+        ],
+        "ogTitle": "Как задеплоить Java-приложение в Kubernetes? — Gymterview",
+        "ogDescription": "Процесс деплоя Java-приложения в Kubernetes состоит из четырёх этапов: создание Docker-образа, написание манифестов, при",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как задеплоить Java-приложение в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Процесс деплоя Java-приложения в Kubernetes состоит из четырёх этапов: создание Docker-образа, написание манифестов, применение манифестов, настройка CI/CD."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Как задеплоить Java-приложение в Kubernetes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как организовать мониторинг и логирование в Kubernetes?",
+      "questionSlug": "kak-organizovat-monitoring-i-logirovanie-v-kubernetes",
+      "grade": "senior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Как организовать мониторинг и логирование в Kubernetes? — Gymterview",
+        "description": "Мониторинг и логирование в Kubernetes строятся на стеке Prometheus + Grafana (метрики) и ELK/EFK (логи). Для Spring Boot приложений интеграция осуществляется че",
+        "keywords": [
+          "kubernetes",
+          "senior"
+        ],
+        "ogTitle": "Как организовать мониторинг и логирование в Kubernetes? — Gymterview",
+        "ogDescription": "Мониторинг и логирование в Kubernetes строятся на стеке Prometheus + Grafana (метрики) и ELK/EFK (логи). Для Spring Boot",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как организовать мониторинг и логирование в Kubernetes?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мониторинг и логирование в Kubernetes строятся на стеке Prometheus + Grafana (метрики) и ELK/EFK (логи). Для Spring Boot приложений интеграция осуществляется через Actuator и Micrometer."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Как организовать мониторинг и логирование в Kubernetes?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие особенности запуска JVM-приложений в Kubernetes нужно учитывать?",
+      "questionSlug": "kakie-osobennosti-zapuska-jvm-prilozhenij-v-kubernetes-nuzhno-uchityvat",
+      "grade": "senior",
+      "tags": [
+        "kubernetes"
+      ],
+      "seo": {
+        "title": "Какие особенности запуска JVM-приложений в Kubernetes нужно  — Gymterview",
+        "description": "Запуск Java-приложений в Kubernetes имеет ряд нюансов, связанных с особенностями JVM и контейнерной среды. Незнание этих нюансов приводит к OOMKilled, медленном",
+        "keywords": [
+          "kubernetes",
+          "senior"
+        ],
+        "ogTitle": "Какие особенности запуска JVM-приложений в Kubernetes нужно  — Gymterview",
+        "ogDescription": "Запуск Java-приложений в Kubernetes имеет ряд нюансов, связанных с особенностями JVM и контейнерной среды. Незнание этих",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие особенности запуска JVM-приложений в Kubernetes нужно учитывать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Запуск Java-приложений в Kubernetes имеет ряд нюансов, связанных с особенностями JVM и контейнерной среды. Незнание этих нюансов приводит к OOMKilled, медленному старту и неэффективному использованию ресурсов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Kubernetes",
+            "url": "/topics/kubernetes"
+          },
+          {
+            "name": "Какие особенности запуска JVM-приложений в Kubernetes нужно ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "topic": "Настройка и безопасность сети",
+  "topicSlug": "network-security",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Service Mesh и как он обеспечивает безопасность?",
+      "questionSlug": "chto-takoe-service-mesh-i-kak-on-obespechivaet-bezopasnost",
+      "grade": "senior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое Service Mesh и как он обеспечивает безопасность? — Gymterview",
+        "description": "Service Mesh — инфраструктурный слой, управляющий межсервисным взаимодействием в микросервисной архитектуре через sidecar-прокси (Envoy), которые внедряются в к",
+        "keywords": [
+          "network-security",
+          "senior"
+        ],
+        "ogTitle": "Что такое Service Mesh и как он обеспечивает безопасность? — Gymterview",
+        "ogDescription": "Service Mesh — инфраструктурный слой, управляющий межсервисным взаимодействием в микросервисной архитектуре через sideca",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Service Mesh и как он обеспечивает безопасность?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Service Mesh — инфраструктурный слой, управляющий межсервисным взаимодействием в микросервисной архитектуре через sidecar-прокси (Envoy), которые внедряются в каждый под и перехватывают весь сетевой трафик."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое Service Mesh и как он обеспечивает безопасность?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как безопасно хранить секреты в приложении?",
+      "questionSlug": "kak-bezopasno-khranit-sekrety-v-prilozhenii",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Как безопасно хранить секреты в приложении? — Gymterview",
+        "description": "Секреты (пароли, ключи API, сертификаты, токены) — одна из самых уязвимых частей любого приложения. Правильное хранение секретов — это использование специализир",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Как безопасно хранить секреты в приложении? — Gymterview",
+        "ogDescription": "Секреты (пароли, ключи API, сертификаты, токены) — одна из самых уязвимых частей любого приложения. Правильное хранение ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как безопасно хранить секреты в приложении?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Секреты (пароли, ключи API, сертификаты, токены) — одна из самых уязвимых частей любого приложения. Правильное хранение секретов — это использование специализированных хранилищ с контролем доступа и аудитом, а не размещение их в коде или конфигурационных файлах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Как безопасно хранить секреты в приложении?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается шифрование данных at rest и in transit?",
+      "questionSlug": "chem-otlichaetsya-shifrovanie-dannykh-at-rest-i-in-transit",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Чем отличается шифрование данных at rest и in transit? — Gymterview",
+        "description": "Шифрование at rest — защита данных, хранящихся на диске (БД, файлы, бэкапы). Шифрование in transit — защита данных во время передачи по сети от отправителя к по",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Чем отличается шифрование данных at rest и in transit? — Gymterview",
+        "ogDescription": "Шифрование at rest — защита данных, хранящихся на диске (БД, файлы, бэкапы). Шифрование in transit — защита данных во вр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается шифрование данных at rest и in transit?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Шифрование at rest — защита данных, хранящихся на диске (БД, файлы, бэкапы). Шифрование in transit — защита данных во время передачи по сети от отправителя к получателю. Оба вида шифрования обязательны в production-средах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Чем отличается шифрование данных at rest и in transit?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что и как логировать с точки зрения безопасности?",
+      "questionSlug": "chto-i-kak-logirovat-s-tochki-zreniya-bezopasnosti",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что и как логировать с точки зрения безопасности? — Gymterview",
+        "description": "Security-логирование — фиксация событий безопасности (аутентификация, авторизация, критичные операции) в структурированном формате для обнаружения инцидентов, а",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что и как логировать с точки зрения безопасности? — Gymterview",
+        "ogDescription": "Security-логирование — фиксация событий безопасности (аутентификация, авторизация, критичные операции) в структурированн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что и как логировать с точки зрения безопасности?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Security-логирование — фиксация событий безопасности (аутентификация, авторизация, критичные операции) в структурированном формате для обнаружения инцидентов, аудита и соответствия требованиям регуляторов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что и как логировать с точки зрения безопасности?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Zero Trust Architecture?",
+      "questionSlug": "chto-takoe-zero-trust-architecture",
+      "grade": "senior",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое Zero Trust Architecture? — Gymterview",
+        "description": "Zero Trust — архитектурный подход к безопасности, основанный на принципе «никогда не доверяй, всегда проверяй». В отличие от традиционной модели (доверяем всему",
+        "keywords": [
+          "network-security",
+          "senior"
+        ],
+        "ogTitle": "Что такое Zero Trust Architecture? — Gymterview",
+        "ogDescription": "Zero Trust — архитектурный подход к безопасности, основанный на принципе «никогда не доверяй, всегда проверяй». В отличи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Zero Trust Architecture?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zero Trust — архитектурный подход к безопасности, основанный на принципе «никогда не доверяй, всегда проверяй». В отличие от традиционной модели (доверяем всему внутри периметра), Zero Trust предполагает, что угроза может исходить откуда угодно, в том числе из внутренней сети."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое Zero Trust Architecture?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое VPN и как настроить базовое VPN-соединение?",
+      "questionSlug": "chto-takoe-vpn-i-kak-nastroit-bazovoe-vpn-soedinenie",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое VPN и как настроить базовое VPN-соединение? — Gymterview",
+        "description": "VPN (Virtual Private Network) — технология создания защищённого сетевого соединения поверх публичной сети (интернет), при которой весь трафик между участниками ",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое VPN и как настроить базовое VPN-соединение? — Gymterview",
+        "ogDescription": "VPN (Virtual Private Network) — технология создания защищённого сетевого соединения поверх публичной сети (интернет), пр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое VPN и как настроить базовое VPN-соединение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VPN (Virtual Private Network) — технология создания защищённого сетевого соединения поверх публичной сети (интернет), при которой весь трафик между участниками шифруется."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое VPN и как настроить базовое VPN-соединение?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое сетевая сегментация и зачем она нужна?",
+      "questionSlug": "chto-takoe-setevaya-segmentatsiya-i-zachem-ona-nuzhna",
+      "grade": "middle",
+      "tags": [
+        "network-security"
+      ],
+      "seo": {
+        "title": "Что такое сетевая сегментация и зачем она нужна? — Gymterview",
+        "description": "Сетевая сегментация — разделение сети на изолированные сегменты (подсети), между которыми трафик контролируется файрволами и маршрутизаторами. Это фундаментальн",
+        "keywords": [
+          "network-security",
+          "middle"
+        ],
+        "ogTitle": "Что такое сетевая сегментация и зачем она нужна? — Gymterview",
+        "ogDescription": "Сетевая сегментация — разделение сети на изолированные сегменты (подсети), между которыми трафик контролируется файрвола",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сетевая сегментация и зачем она нужна?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сетевая сегментация — разделение сети на изолированные сегменты (подсети), между которыми трафик контролируется файрволами и маршрутизаторами. Это фундаментальный принцип безопасности, ограничивающий распространение атаки при компрометации одного сегмента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Настройка и безопасность сети",
+            "url": "/topics/network-security"
+          },
+          {
+            "name": "Что такое сетевая сегментация и зачем она нужна?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

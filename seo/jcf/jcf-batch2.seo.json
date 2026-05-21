@@ -1,0 +1,328 @@
+{
+  "topic": "Java Collections Framework",
+  "topicSlug": "jcf",
+  "batch": 2,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Чем отличается ArrayList от LinkedList",
+      "questionSlug": "chem-otlichaetsya-arraylist-ot-linkedlist",
+      "grade": "junior",
+      "tags": ["jcf", "performance", "основы"],
+      "seo": {
+        "title": "ArrayList vs LinkedList — отличия и когда использовать — Gymterview",
+        "description": "ArrayList — динамический массив с O(1) доступом по индексу. LinkedList — двусвязный список с O(1) вставкой в начало/конец. Сравнение сложности и cache locality.",
+        "keywords": ["ArrayList", "LinkedList", "сложность", "O(1)", "O(N)", "cache locality", "System.arraycopy", "Java", "собеседование"],
+        "ogTitle": "ArrayList vs LinkedList — сравнение — Gymterview",
+        "ogDescription": "ArrayList: O(1) по индексу, cache-friendly. LinkedList: O(1) вставка в начало/конец. На практике ArrayList быстрее.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Чем отличается ArrayList от LinkedList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "ArrayList — динамический массив: O(1) доступ по индексу, cache-friendly. LinkedList — двусвязный список: O(1) вставка в начало/конец, O(N) доступ по индексу. На практике ArrayList предпочтительнее из-за cache locality." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "ArrayList vs LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что работает быстрее — ArrayList или LinkedList",
+      "questionSlug": "chto-rabotaet-bystree-arraylist-ili-linkedlist",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Что быстрее — ArrayList или LinkedList — Gymterview",
+        "description": "Зависит от операции: get по индексу — ArrayList O(1), вставка в начало — LinkedList O(1). На практике ArrayList быстрее в большинстве сценариев из-за cache locality.",
+        "keywords": ["ArrayList", "LinkedList", "производительность", "cache locality", "бенчмарк", "Java", "собеседование"],
+        "ogTitle": "ArrayList vs LinkedList — что быстрее — Gymterview",
+        "ogDescription": "Зависит от операции. ArrayList быстрее на практике из-за cache locality и System.arraycopy().",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Что работает быстрее — ArrayList или LinkedList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Зависит от операции: get(index) — ArrayList O(1), add/remove в начало — LinkedList O(1). На практике ArrayList быстрее в большинстве сценариев из-за cache locality (данные в массиве лежат последовательно в памяти)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Скорость ArrayList vs LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое худшее время работы метода contains() для элемента, который есть в LinkedList",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-contains-dlya-elementa-kotoryy-est-v-linkedlist",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "contains() в LinkedList — O(N) — Gymterview",
+        "description": "Худшее время contains() в LinkedList — O(N): линейный обход узлов с вызовом equals() для каждого. Искомый элемент может быть последним в списке.",
+        "keywords": ["LinkedList", "contains()", "O(N)", "линейный поиск", "equals", "Java", "собеседование"],
+        "ogTitle": "Сложность contains() в LinkedList — Gymterview",
+        "ogDescription": "O(N) — линейный обход с equals(). LinkedList не поддерживает произвольный доступ и не отсортирован.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода contains() для элемента, который есть в LinkedList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N). contains() выполняет линейный поиск: обходит узлы от начала, вызывая equals() для каждого. В худшем случае элемент в последней позиции." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "contains() в LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое худшее время работы метода contains() для элемента, который есть в ArrayList",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-contains-dlya-elementa-kotoryy-est-v-arraylist",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "contains() в ArrayList — O(N) — Gymterview",
+        "description": "Худшее время contains() в ArrayList — O(N): линейный перебор массива через equals(). Произвольный доступ по индексу O(1), но поиск по значению — всегда линейный.",
+        "keywords": ["ArrayList", "contains()", "O(N)", "линейный поиск", "equals", "Java", "собеседование"],
+        "ogTitle": "Сложность contains() в ArrayList — Gymterview",
+        "ogDescription": "O(N) — линейный перебор массива. Доступ по индексу O(1), но поиск по значению — линейный.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода contains() для элемента, который есть в ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N). contains() выполняет линейный поиск по массиву через equals(). Произвольный доступ по индексу O(1), но поиск по значению — всегда линейный, массив не отсортирован." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "contains() в ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое худшее время работы метода add() для LinkedList",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-add-dlya-linkedlist",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "add() в LinkedList — O(N) с индексом, O(1) без — Gymterview",
+        "description": "add(index, e) — O(N): поиск позиции. add(e) без индекса — O(1): прямая ссылка на последний узел. addFirst()/addLast() — O(1).",
+        "keywords": ["LinkedList", "add()", "O(N)", "O(1)", "addFirst", "addLast", "Java", "собеседование"],
+        "ogTitle": "Сложность add() в LinkedList — Gymterview",
+        "ogDescription": "add(e) в конец — O(1), add(index, e) — O(N) на поиск позиции.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода add() для LinkedList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N) для add(index, e) — нужен поиск узла на позиции index. add(e) без индекса — O(1), т.к. LinkedList хранит ссылку на последний узел. addFirst()/addLast() — O(1)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "add() в LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое худшее время работы метода add() для ArrayList",
+      "questionSlug": "kakoe-khudshee-vremya-raboty-metoda-add-dlya-arraylist",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "add() в ArrayList — O(N) при расширении — Gymterview",
+        "description": "O(N): при вставке в начало/середину (сдвиг элементов) и при расширении массива (копирование). Добавление в конец — амортизированно O(1).",
+        "keywords": ["ArrayList", "add()", "O(N)", "O(1)", "расширение массива", "capacity", "System.arraycopy", "Java", "собеседование"],
+        "ogTitle": "Сложность add() в ArrayList — Gymterview",
+        "ogDescription": "O(N) при расширении или вставке не в конец. add(e) в конец — амортизированно O(1).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Какое худшее время работы метода add() для ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "O(N) — при исчерпании ёмкости (создание массива 1.5x и копирование) или при вставке в начало/середину (сдвиг элементов). Добавление в конец — амортизированно O(1)." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "add() в ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Необходимо добавить 1 млн элементов — какую структуру вы используете",
+      "questionSlug": "neobkhodimo-dobavit-1-mln-elementov-kakuyu-strukturu-vy-ispolzuete",
+      "grade": "middle",
+      "tags": ["jcf", "performance", "best-practices"],
+      "seo": {
+        "title": "Какую коллекцию выбрать для 1 млн элементов — Gymterview",
+        "description": "ArrayList с initialCapacity — для вставки в конец. LinkedList — для вставки в начало. HashSet — для уникальности. Задайте уточняющие вопросы перед ответом.",
+        "keywords": ["ArrayList", "LinkedList", "initialCapacity", "1 миллион", "производительность", "Java", "собеседование"],
+        "ogTitle": "Коллекция для 1 млн элементов — Gymterview",
+        "ogDescription": "ArrayList с предзаданной ёмкостью — универсальный выбор. Уточните куда вставляем и что делаем дальше.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Необходимо добавить 1 млн элементов — какую структуру вы используете", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Зависит от сценария. Вставка в конец + доступ по индексу — ArrayList с new ArrayList<>(1_000_000). Вставка в начало — LinkedList или ArrayDeque. Уникальность — HashSet с запасом capacity. На практике ArrayList с предзаданной ёмкостью — универсальный выбор." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Коллекция для 1 млн элементов", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как происходит удаление элементов из ArrayList",
+      "questionSlug": "kak-proiskhodit-udalenie-elementov-iz-arraylist",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Удаление элементов из ArrayList — System.arraycopy и trimToSize — Gymterview",
+        "description": "При удалении элементы правее сдвигаются влево через System.arraycopy(). Capacity не уменьшается. Для сжатия — trimToSize(). Удаление последнего — O(1).",
+        "keywords": ["ArrayList", "remove()", "System.arraycopy", "trimToSize", "capacity", "size", "Java", "собеседование"],
+        "ogTitle": "Удаление элементов из ArrayList — Gymterview",
+        "ogDescription": "Сдвиг элементов влево, capacity не меняется. trimToSize() для сжатия. O(N) общий случай, O(1) для последнего.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как происходит удаление элементов из ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Элементы правее сдвигаются на одну позицию влево через System.arraycopy(). Capacity не уменьшается. Для освобождения памяти — trimToSize(). Сложность: O(N) в общем случае, O(1) для последнего элемента." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Удаление из ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Предложите эффективный алгоритм удаления нескольких рядом стоящих элементов из середины ArrayList",
+      "questionSlug": "predlozhite-effektivnyy-algoritm-udaleniya-neskolkikh-ryadom-stoyashchikh-elementov-iz-serediny-arraylist",
+      "grade": "middle",
+      "tags": ["jcf", "performance", "best-practices"],
+      "seo": {
+        "title": "Эффективное удаление диапазона элементов из ArrayList — subList().clear() — Gymterview",
+        "description": "subList(from, to).clear() — один System.arraycopy() вместо N. Наивный remove() в цикле — O(N*M). Пример с замером производительности.",
+        "keywords": ["ArrayList", "subList", "clear()", "System.arraycopy", "удаление диапазона", "оптимизация", "Java", "собеседование"],
+        "ogTitle": "Эффективное удаление из ArrayList — subList().clear() — Gymterview",
+        "ogDescription": "subList(from, to).clear() — один arraycopy вместо N. Многократно быстрее remove() в цикле.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Предложите эффективный алгоритм удаления нескольких рядом стоящих элементов из середины ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "subList(fromIndex, toIndex).clear() — один вызов System.arraycopy() вместо N. Наивный remove() в цикле выполняет N сдвигов (O(N*M)). subList().clear() — O(M), где M — количество элементов правее диапазона." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Удаление диапазона из ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сколько необходимо дополнительной памяти при вызове ArrayList.add()",
+      "questionSlug": "skolko-neobkhodimo-dopolnitelnoy-pamyati-pri-vyzove-arraylistadd",
+      "grade": "junior",
+      "tags": ["jcf", "memory"],
+      "seo": {
+        "title": "Дополнительная память при ArrayList.add() — Gymterview",
+        "description": "Если есть место — 0 дополнительной памяти. Если массив заполнен — создаётся массив в 1.5 раза больше (oldCapacity + oldCapacity >> 1) в JDK 8+.",
+        "keywords": ["ArrayList", "add()", "память", "capacity", "расширение массива", "1.5x", "Java", "собеседование"],
+        "ogTitle": "Память при ArrayList.add() — Gymterview",
+        "ogDescription": "0 при наличии места. При заполнении — массив в 1.5 раза больше. Формула: oldCapacity + (oldCapacity >> 1).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сколько необходимо дополнительной памяти при вызове ArrayList.add()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Если место есть — 0. Если массив заполнен — создаётся новый массив в 1.5 раза больше (oldCapacity + oldCapacity >> 1 в JDK 8+). Кратковременно в памяти оба массива, затем старый собирается GC." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Память при ArrayList.add()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сколько выделяется дополнительно памяти при вызове LinkedList.add()",
+      "questionSlug": "skolko-vydelyaetsya-dopolnitelno-pamyati-pri-vyzove-linkedlistadd",
+      "grade": "junior",
+      "tags": ["jcf", "memory"],
+      "seo": {
+        "title": "Память при LinkedList.add() — один объект Node — Gymterview",
+        "description": "При каждом add() создаётся один объект Node: item, next, prev. Размер ~32 байта с CompressedOops. Нет понятия capacity и расширения массива.",
+        "keywords": ["LinkedList", "add()", "Node", "память", "32 байта", "item", "next", "prev", "Java", "собеседование"],
+        "ogTitle": "Память при LinkedList.add() — Gymterview",
+        "ogDescription": "Один новый объект Node (~32 байта). Нет capacity, нет расширения массива.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сколько выделяется дополнительно памяти при вызове LinkedList.add()", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Один новый объект Node с полями item, next, prev. Размер ~32 байта (x64 JVM с CompressedOops). LinkedList не имеет понятия capacity и не выполняет расширение массива." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Память при LinkedList.add()", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Оцените количество памяти на хранение одного примитива типа byte в LinkedList",
+      "questionSlug": "otsenite-kolichestvo-pamyati-na-khranenie-odnogo-primitiva-tipa-byte-v-linkedlist",
+      "grade": "middle",
+      "tags": ["jcf", "memory"],
+      "seo": {
+        "title": "Память на byte в LinkedList — 40-64 байта — Gymterview",
+        "description": "x32: Node 24 + Byte 16 = 40 байт. x64: Node 40 + Byte 24 = 64 байта. Autoboxing, кэш Byte -128..127, заголовок объекта, padding.",
+        "keywords": ["LinkedList", "byte", "память", "autoboxing", "Byte", "Node", "padding", "заголовок объекта", "Java", "собеседование"],
+        "ogTitle": "Расход памяти на byte в LinkedList — Gymterview",
+        "ogDescription": "40 байт (x32) или 64 байта (x64) на один byte: Node + Byte wrapper. Autoboxing и кэш Byte.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Оцените количество памяти на хранение одного примитива типа byte в LinkedList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "x32: Node (24 байта) + Byte (16 байт) = 40 байт. x64: Node (40 байт) + Byte (24 байта) = 64 байта. Примитив byte упаковывается в Byte (autoboxing). Значения -128..127 кэшируются." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Память byte в LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Оцените количество памяти на хранение одного примитива типа byte в ArrayList",
+      "questionSlug": "otsenite-kolichestvo-pamyati-na-khranenie-odnogo-primitiva-tipa-byte-v-arraylist",
+      "grade": "middle",
+      "tags": ["jcf", "memory"],
+      "seo": {
+        "title": "Память на byte в ArrayList — 20-32 байта — Gymterview",
+        "description": "x32: ссылка 4 + Byte 16 = 20 байт. x64: ссылка 8 + Byte 24 = 32 байта. В 2 раза меньше, чем в LinkedList.",
+        "keywords": ["ArrayList", "byte", "память", "autoboxing", "Byte", "ссылка", "Java", "собеседование"],
+        "ogTitle": "Расход памяти на byte в ArrayList — Gymterview",
+        "ogDescription": "20 байт (x32) или 32 байта (x64): ссылка + Byte wrapper. В 2 раза экономнее LinkedList.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Оцените количество памяти на хранение одного примитива типа byte в ArrayList", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "x32: ссылка 4 байта + Byte 16 байт = 20 байт. x64: ссылка 8 байт + Byte 24 байта = 32 байта. ArrayList вдвое экономнее LinkedList, т.к. нет объектов Node." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Память byte в ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для ArrayList или для LinkedList операция добавления элемента в середину медленнее",
+      "questionSlug": "dlya-arraylist-ili-dlya-linkedlist-operatsiya-dobavleniya-elementa-v-seredinu-medlennee",
+      "grade": "middle",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Вставка в середину — ArrayList vs LinkedList — Gymterview",
+        "description": "Оба O(N), но по разным причинам. ArrayList: сдвиг через System.arraycopy(). LinkedList: поиск позиции. На практике ArrayList обычно быстрее (cache locality).",
+        "keywords": ["ArrayList", "LinkedList", "вставка в середину", "System.arraycopy", "cache locality", "O(N)", "Java", "собеседование"],
+        "ogTitle": "Вставка в середину: ArrayList vs LinkedList — Gymterview",
+        "ogDescription": "Оба O(N). ArrayList обычно быстрее на практике: System.arraycopy() + cache locality.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Для ArrayList или для LinkedList операция добавления элемента в середину медленнее", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Оба O(N): ArrayList тратит на сдвиг элементов (System.arraycopy), LinkedList — на поиск позиции. На практике ArrayList обычно быстрее из-за cache locality и оптимизированного arraycopy." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Вставка в середину", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем в ArrayList хранить отдельно size, если всегда можно взять elementData.length",
+      "questionSlug": "zachem-v-arraylist-khranit-otdelno-size-esli-vsegda-mozhno-vzyat-elementdatalength",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Зачем ArrayList хранит size отдельно от elementData.length — Gymterview",
+        "description": "size — фактическое количество элементов, elementData.length — ёмкость массива (capacity). Массив выделяется с запасом, null-ячейки — не элементы списка.",
+        "keywords": ["ArrayList", "size", "capacity", "elementData", "length", "Java", "собеседование"],
+        "ogTitle": "size vs elementData.length в ArrayList — Gymterview",
+        "ogDescription": "size — количество элементов, length — ёмкость массива. Массив всегда больше или равен size.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Зачем в ArrayList хранить отдельно size, если всегда можно взять elementData.length", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "size — фактическое количество элементов, elementData.length — ёмкость (capacity) массива, которая всегда >= size. Массив выделяется с запасом. Без size список считал бы null-ячейки элементами, нарушая корректность get(), contains(), iterator()." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "size vs capacity в ArrayList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сравните интерфейсы Queue и Deque",
+      "questionSlug": "sravnite-interfeysy-queue-i-deque",
+      "grade": "junior",
+      "tags": ["jcf", "interface"],
+      "seo": {
+        "title": "Queue vs Deque — сравнение интерфейсов — Gymterview",
+        "description": "Queue — односторонняя очередь FIFO. Deque — двусторонняя очередь: операции с обоих концов, может работать как FIFO и LIFO. ArrayDeque — основная реализация.",
+        "keywords": ["Queue", "Deque", "FIFO", "LIFO", "ArrayDeque", "offer", "poll", "push", "pop", "Java", "собеседование"],
+        "ogTitle": "Queue vs Deque в Java — Gymterview",
+        "ogDescription": "Queue — FIFO очередь. Deque расширяет Queue: операции с обоих концов, может быть стеком.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Сравните интерфейсы Queue и Deque", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Queue — односторонняя очередь FIFO (offer/poll/peek). Deque расширяет Queue: операции с обоих концов (offerFirst/offerLast, pollFirst/pollLast), может работать как FIFO или LIFO (push/pop). Основная реализация — ArrayDeque." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Queue vs Deque", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Кто кого расширяет — Queue расширяет Deque или Deque расширяет Queue",
+      "questionSlug": "kto-kogo-rasshiryaet-queue-rasshiryaet-deque-ili-deque-rasshiryaet-queue",
+      "grade": "junior",
+      "tags": ["jcf", "interface", "наследование"],
+      "seo": {
+        "title": "Deque extends Queue — кто кого расширяет — Gymterview",
+        "description": "Deque расширяет Queue: двусторонняя очередь — частный случай очереди с дополнительными операциями. Принцип подстановки Лисков: ArrayDeque можно передать как Queue.",
+        "keywords": ["Deque", "Queue", "extends", "наследование", "ArrayDeque", "Java", "собеседование"],
+        "ogTitle": "Deque extends Queue — Gymterview",
+        "ogDescription": "Deque расширяет Queue. Двусторонняя очередь — Queue с дополнительными операциями addFirst/addLast.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Кто кого расширяет — Queue расширяет Deque или Deque расширяет Queue", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Deque extends Queue. Двусторонняя очередь — это очередь с дополнительными операциями addFirst/addLast, removeFirst/removeLast. Любую реализацию Deque (ArrayDeque) можно использовать как Queue." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Deque extends Queue", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему LinkedList реализует и List, и Deque",
+      "questionSlug": "pochemu-linkedlist-realizuet-i-list-i-deque",
+      "grade": "junior",
+      "tags": ["jcf", "interface"],
+      "seo": {
+        "title": "Почему LinkedList реализует List и Deque — Gymterview",
+        "description": "Двусвязный список эффективно поддерживает обе абстракции: доступ по индексу (List) и операции с обоих концов за O(1) (Deque). Для чистой очереди лучше ArrayDeque.",
+        "keywords": ["LinkedList", "List", "Deque", "двусвязный список", "O(1)", "ArrayDeque", "Java", "собеседование"],
+        "ogTitle": "LinkedList: List + Deque — Gymterview",
+        "ogDescription": "Двусвязный список естественно поддерживает List (индексы) и Deque (O(1) с обоих концов).",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Почему LinkedList реализует и List, и Deque", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Двусвязный список естественно поддерживает обе абстракции: упорядоченное хранение с доступом по индексу (List) и O(1) операции с обоих концов (Deque). Для чистой очереди/стека предпочтительнее ArrayDeque." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "LinkedList: List + Deque", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "LinkedList — это односвязный, двусвязный или четырехсвязный список",
+      "questionSlug": "linkedlist-eto-odnosvyaznyy-dvusvyaznyy-ili-chetyrekhsvyaznyy-spisok",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "LinkedList — двусвязный список — Gymterview",
+        "description": "LinkedList — двусвязный: каждый Node хранит item, next, prev. LinkedList хранит ссылки first и last. Двусвязность позволяет обход в обоих направлениях и реализацию Deque.",
+        "keywords": ["LinkedList", "двусвязный список", "Node", "next", "prev", "first", "last", "Java", "собеседование"],
+        "ogTitle": "LinkedList — двусвязный список — Gymterview",
+        "ogDescription": "Каждый Node: item + next + prev. LinkedList хранит first и last. Обход в обоих направлениях.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "LinkedList — это односвязный, двусвязный или четырехсвязный список", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "Двусвязный (doubly linked list). Каждый Node хранит item, next и prev. LinkedList хранит ссылки first и last. Двусвязность позволяет обход в обоих направлениях и реализацию интерфейса Deque." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "LinkedList — двусвязный", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как перебрать элементы LinkedList в обратном порядке без медленного get(index)",
+      "questionSlug": "kak-perebrat-elementy-linkedlist-v-obratnom-poryadke-bez-medlennogo-getindex",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Обратный обход LinkedList — descendingIterator — Gymterview",
+        "description": "descendingIterator() — итератор от последнего к первому элементу через ссылки prev, O(N). Альтернатива — listIterator(size) + previous(). get(index) в цикле — O(N^2).",
+        "keywords": ["LinkedList", "descendingIterator", "ListIterator", "previous", "обратный обход", "O(N)", "Java", "собеседование"],
+        "ogTitle": "Обратный обход LinkedList — Gymterview",
+        "ogDescription": "descendingIterator() или listIterator(size) + previous(). get(index) — O(N^2), не использовать.",
+        "schemaOrg": { "@type": "QAPage", "mainEntity": { "@type": "Question", "name": "Как перебрать элементы LinkedList в обратном порядке без медленного get(index)", "answerCount": 1, "acceptedAnswer": { "@type": "Answer", "text": "descendingIterator() — итератор от последнего к первому через ссылки prev, O(N). Альтернатива: listIterator(size) + previous(). get(index) в обратном цикле — O(N^2), каждый get(i) обходит список." } } },
+        "breadcrumbs": [ { "name": "Главная", "url": "/" }, { "name": "Java Collections Framework", "url": "/topics/jcf" }, { "name": "Обратный обход LinkedList", "url": null } ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

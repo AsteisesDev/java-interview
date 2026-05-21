@@ -1,0 +1,380 @@
+{
+  "topic": "Кэширование",
+  "topicSlug": "caching",
+  "batch": 1,
+  "generatedAt": "2026-05-09T16:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое кэширование и зачем оно нужно?",
+      "questionSlug": "chto-takoe-keshirovanie-i-zachem-ono-nuzhno",
+      "grade": "junior",
+      "tags": ["caching", "performance", "latency", "architecture"],
+      "seo": {
+        "title": "Что такое кэширование и зачем оно нужно — Gymterview",
+        "description": "Узнайте, что такое кэширование, какие уровни кэширования существуют (браузер, CDN, приложение, Redis), что кэшировать и какие ошибки избегать на собеседовании.",
+        "keywords": ["кэширование", "cache", "latency", "производительность", "Redis", "Caffeine", "in-memory", "Java", "собеседование"],
+        "ogTitle": "Что такое кэширование и зачем оно нужно — Gymterview",
+        "ogDescription": "Разбираем уровни кэширования, что стоит и не стоит кэшировать, типичные ошибки. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое кэширование и зачем оно нужно?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Кэширование — хранение результатов дорогих операций (запросы к БД, вычисления, внешние API) в быстром хранилище для повторного использования. Снижает latency (чтение из памяти ~1 мкс вместо БД ~1-10 мс), уменьшает нагрузку на БД и повышает throughput. Уровни: браузер, CDN, API Gateway, приложение (Caffeine), распределённый кэш (Redis), БД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Что такое кэширование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие паттерны кэширования существуют?",
+      "questionSlug": "kakie-patterny-keshirovaniya-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["caching", "patterns", "cache-aside", "read-through", "write-through", "write-behind"],
+      "seo": {
+        "title": "Какие паттерны кэширования существуют — Gymterview",
+        "description": "Обзор паттернов кэширования: Cache-Aside, Read-Through, Write-Through, Write-Behind, Refresh-Ahead. Сравнение, примеры кода на Java и Spring Cache.",
+        "keywords": ["паттерны кэширования", "Cache-Aside", "Read-Through", "Write-Through", "Write-Behind", "Refresh-Ahead", "Spring Cache", "Cacheable", "Java"],
+        "ogTitle": "Паттерны кэширования: Cache-Aside, Read-Through, Write-Through и другие — Gymterview",
+        "ogDescription": "Разбираем 5 паттернов кэширования с примерами на Java и Spring. Сравнение consistency, latency и применимости.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие паттерны кэширования существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные паттерны: Cache-Aside (приложение явно управляет кэшем, самый распространённый), Read-Through (кэш сам загружает при промахе), Write-Through (запись одновременно в кэш и БД), Write-Behind (запись в кэш, асинхронная синхронизация с БД), Refresh-Ahead (проактивное обновление до истечения TTL). Cache-Aside используется в 80%+ Spring-приложений через @Cacheable."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Паттерны кэширования", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Redis и когда его использовать?",
+      "questionSlug": "chto-takoe-redis-i-kogda-ego-ispolzovat",
+      "grade": "junior",
+      "tags": ["caching", "redis", "key-value", "distributed-cache", "spring-boot"],
+      "seo": {
+        "title": "Что такое Redis и когда его использовать — Gymterview",
+        "description": "Что такое Redis, когда его применять: кэш, сессии, rate limiting, очереди. Сравнение Redis vs Memcached. Примеры работы с RedisTemplate в Spring Boot.",
+        "keywords": ["Redis", "кэш", "key-value", "Memcached", "RedisTemplate", "Spring Boot", "distributed cache", "распределённый кэш", "Java"],
+        "ogTitle": "Что такое Redis и когда его использовать — Gymterview",
+        "ogDescription": "Redis: in-memory хранилище для кэша, сессий, очередей и блокировок. Сравнение с Memcached, примеры на Spring Boot.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Redis и когда его использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Redis (Remote Dictionary Server) — in-memory key-value хранилище с latency <1 мс. Используется для распределённого кэша, сессий, rate limiting, distributed locks, очередей (Streams), Pub/Sub и счётчиков. В отличие от Memcached, поддерживает богатые структуры данных, персистентность (RDB/AOF), репликацию и кластеризацию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Redis", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие структуры данных поддерживает Redis?",
+      "questionSlug": "kakie-struktury-dannykh-podderzhivaet-redis",
+      "grade": "middle",
+      "tags": ["caching", "redis", "data-structures", "sorted-set", "stream", "hash"],
+      "seo": {
+        "title": "Какие структуры данных поддерживает Redis — Gymterview",
+        "description": "Структуры данных Redis: String, Hash, List, Set, Sorted Set, Stream, HyperLogLog, Bitmap. Практические примеры команд и применение каждой структуры.",
+        "keywords": ["Redis структуры данных", "String", "Hash", "List", "Set", "Sorted Set", "Stream", "HyperLogLog", "Bitmap", "Redis команды"],
+        "ogTitle": "Структуры данных Redis: String, Hash, List, Set, Sorted Set и другие — Gymterview",
+        "ogDescription": "Полный обзор структур данных Redis с командами и примерами: кэш, рейтинги, очереди, уникальные посетители.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие структуры данных поддерживает Redis?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Redis поддерживает 8 основных структур: String (кэш, счётчики), Hash (объекты с полями), List (очереди, последние N элементов), Set (уникальные значения, пересечения), Sorted Set (рейтинги, O(log N)), Stream (event streaming, consumer groups), HyperLogLog (приблизительный подсчёт уникальных, погрешность <1%), Bitmap (флаги, онлайн-статус)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Структуры данных Redis", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить Redis в Spring Boot?",
+      "questionSlug": "kak-nastroit-redis-v-spring-boot",
+      "grade": "middle",
+      "tags": ["caching", "redis", "spring-boot", "spring-cache", "configuration"],
+      "seo": {
+        "title": "Как настроить Redis в Spring Boot — Gymterview",
+        "description": "Пошаговая настройка Redis в Spring Boot: зависимости, application.yml, RedisCacheManager с разным TTL, аннотации @Cacheable, @CachePut, @CacheEvict.",
+        "keywords": ["Redis Spring Boot", "настройка Redis", "RedisCacheManager", "Cacheable", "CachePut", "CacheEvict", "Lettuce", "spring-boot-starter-data-redis"],
+        "ogTitle": "Настройка Redis в Spring Boot: конфигурация и аннотации — Gymterview",
+        "ogDescription": "Полное руководство по настройке Redis в Spring Boot: зависимости, YAML-конфиг, RedisCacheManager, JSON-сериализация и аннотации кэширования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить Redis в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Добавить spring-boot-starter-data-redis и spring-boot-starter-cache. Настроить host/port/password в application.yml. Создать RedisCacheManager с GenericJackson2JsonRedisSerializer для JSON-сериализации и разным TTL для разных кэшей. Использовать @EnableCaching и аннотации @Cacheable, @CachePut, @CacheEvict. Spring Boot автоматически настраивает LettuceConnectionFactory."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Redis в Spring Boot", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие стратегии инвалидации кэша существуют?",
+      "questionSlug": "kakie-strategii-invalidatsii-kesha-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["caching", "invalidation", "ttl", "event-driven", "etag", "pub-sub"],
+      "seo": {
+        "title": "Какие стратегии инвалидации кэша существуют — Gymterview",
+        "description": "Стратегии инвалидации кэша: TTL, явная инвалидация, Event-Driven (Kafka), Write-Through, Version-based (ETag), Pub/Sub. Сравнение и типичные ошибки.",
+        "keywords": ["инвалидация кэша", "cache invalidation", "TTL", "CacheEvict", "Kafka", "Pub/Sub", "ETag", "Write-Through", "Spring Cache"],
+        "ogTitle": "Стратегии инвалидации кэша: TTL, Event-Driven, Pub/Sub — Gymterview",
+        "ogDescription": "Обзор стратегий инвалидации кэша с примерами на Spring и Kafka. TTL + явная инвалидация покрывают 90% сценариев.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие стратегии инвалидации кэша существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные стратегии: TTL (автоматическое удаление по времени), явная инвалидация (@CacheEvict при обновлении), Event-driven через Kafka (для микросервисов), Write-Through (кэш обновляется синхронно с БД), Version-based/ETag (проверка версии), Pub/Sub (Redis уведомления всех экземпляров). Комбинация TTL + явная инвалидация — наиболее распространённый подход."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Стратегии инвалидации", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое многоуровневое кэширование (L1 + L2)?",
+      "questionSlug": "chto-takoe-mnogourovnevoe-keshirovanie-l1-l2",
+      "grade": "senior",
+      "tags": ["caching", "multi-level", "caffeine", "redis", "l1-cache", "l2-cache"],
+      "seo": {
+        "title": "Что такое многоуровневое кэширование (L1 + L2) — Gymterview",
+        "description": "Многоуровневое кэширование L1 (Caffeine) + L2 (Redis) в Spring Boot. Реализация CompositeCacheManager, инвалидация между экземплярами, типичные ошибки.",
+        "keywords": ["многоуровневое кэширование", "L1 L2 кэш", "Caffeine Redis", "multi-level cache", "CompositeCacheManager", "Spring Cache", "Java"],
+        "ogTitle": "Многоуровневое кэширование L1 + L2: Caffeine и Redis — Gymterview",
+        "ogDescription": "Как реализовать L1 (Caffeine, <1мс) + L2 (Redis, ~1мс) кэширование в Spring Boot. Конфигурация и инвалидация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое многоуровневое кэширование (L1 + L2)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Многоуровневое кэширование — использование нескольких уровней кэша: L1 (in-process, Caffeine, <1мс) + L2 (distributed, Redis, ~1мс). Запрос проходит L1 → L2 → БД. L1 TTL должен быть короче L2 TTL. Инвалидация L1 между экземплярами реализуется через Redis Pub/Sub. В Spring реализуется через CompositeCacheManager или кастомный сервис."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Многоуровневое кэширование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Cache Stampede и как его предотвратить?",
+      "questionSlug": "chto-takoe-cache-stampede-i-kak-ego-predotvratit",
+      "grade": "senior",
+      "tags": ["caching", "cache-stampede", "thundering-herd", "locking", "refresh-ahead"],
+      "seo": {
+        "title": "Что такое Cache Stampede и как его предотвратить — Gymterview",
+        "description": "Cache Stampede (Thundering Herd): проблема массовых запросов к БД при истечении TTL горячего ключа. Решения: locking, Refresh-Ahead, XFetch, stale-while-revalidate.",
+        "keywords": ["Cache Stampede", "Thundering Herd", "кэш", "locking", "Refresh-Ahead", "refreshAfterWrite", "Caffeine", "Redis SETNX", "Java"],
+        "ogTitle": "Cache Stampede: что это и как предотвратить — Gymterview",
+        "ogDescription": "Разбираем проблему Cache Stampede и 4 решения: locking, probabilistic early expiration, Refresh-Ahead, stale-while-revalidate.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Cache Stampede и как его предотвратить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cache Stampede (Thundering Herd) — ситуация, когда TTL горячего ключа истекает и множество одновременных запросов обращаются к БД, вызывая перегрузку. Решения: locking (только один поток обновляет кэш через SETNX), Probabilistic Early Expiration (обновление с вероятностью до истечения TTL), Refresh-Ahead (Caffeine refreshAfterWrite — фоновое обновление), Stale-While-Revalidate (возврат устаревшего значения во время обновления)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Cache Stampede", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает HTTP-кэширование?",
+      "questionSlug": "kak-rabotaet-http-keshirovanie",
+      "grade": "middle",
+      "tags": ["caching", "http", "cache-control", "etag", "cdn", "browser"],
+      "seo": {
+        "title": "Как работает HTTP-кэширование — Gymterview",
+        "description": "HTTP-кэширование: заголовки Cache-Control, ETag, Last-Modified. Директивы public, private, no-cache, no-store. Условные запросы и 304 Not Modified в Spring.",
+        "keywords": ["HTTP кэширование", "Cache-Control", "ETag", "Last-Modified", "304 Not Modified", "no-cache", "no-store", "CDN", "Spring"],
+        "ogTitle": "HTTP-кэширование: Cache-Control, ETag и условные запросы — Gymterview",
+        "ogDescription": "Как работает HTTP-кэширование: заголовки, директивы Cache-Control, условные запросы (ETag/304). Реализация в Spring.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает HTTP-кэширование?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTTP-кэширование позволяет браузеру и CDN хранить ответы без обращения к серверу. Управляется заголовками: Cache-Control (max-age, public/private, no-cache, no-store), ETag (хэш содержимого) и Last-Modified. При повторном запросе с If-None-Match сервер возвращает 304 Not Modified без тела, экономя трафик. В Spring реализуется через CacheControl builder и ShallowEtagHeaderFilter."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "HTTP-кэширование", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Caffeine Cache?",
+      "questionSlug": "chto-takoe-caffeine-cache",
+      "grade": "middle",
+      "tags": ["caching", "caffeine", "in-memory", "w-tinylfu", "spring-cache"],
+      "seo": {
+        "title": "Что такое Caffeine Cache — Gymterview",
+        "description": "Caffeine Cache — высокопроизводительный in-process кэш для Java. Алгоритм W-TinyLFU, LoadingCache, refreshAfterWrite, мониторинг метрик, интеграция со Spring.",
+        "keywords": ["Caffeine Cache", "in-process кэш", "W-TinyLFU", "LoadingCache", "refreshAfterWrite", "Spring CacheManager", "Guava Cache замена", "Java"],
+        "ogTitle": "Caffeine Cache: высокопроизводительный in-process кэш для Java — Gymterview",
+        "ogDescription": "Caffeine — лучший in-process кэш для Java с алгоритмом W-TinyLFU. Примеры, LoadingCache, мониторинг и Spring-интеграция.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Caffeine Cache?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Caffeine — высокопроизводительная in-process кэш-библиотека для Java, замена Guava Cache. Использует алгоритм Window TinyLFU с лучшим hit rate среди in-process кэшей. Поддерживает maximumSize, expireAfterWrite/Access, refreshAfterWrite (фоновое обновление), recordStats (метрики). Интегрируется со Spring через CaffeineCacheManager. Стандарт для L1-кэша в Spring-приложениях."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Caffeine Cache", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить согласованность кэша в распределённой системе?",
+      "questionSlug": "kak-obespechit-soglasovannost-kesha-v-raspredelyonnoy-sisteme",
+      "grade": "senior",
+      "tags": ["caching", "distributed-systems", "consistency", "pub-sub", "kafka", "invalidation"],
+      "seo": {
+        "title": "Как обеспечить согласованность кэша в распределённой системе — Gymterview",
+        "description": "Согласованность кэша в распределённой системе: Redis Pub/Sub, Kafka-инвалидация, короткий L1 TTL. Стратегии для микросервисов и multi-instance приложений.",
+        "keywords": ["согласованность кэша", "cache consistency", "распределённая система", "Redis Pub/Sub", "Kafka инвалидация", "L1 кэш", "микросервисы", "Java"],
+        "ogTitle": "Согласованность кэша в распределённой системе — Gymterview",
+        "ogDescription": "Стратегии обеспечения согласованности кэша: только Redis, Pub/Sub, Kafka-events, короткий L1 TTL. Примеры на Spring.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить согласованность кэша в распределённой системе?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стратегии: 1) Только Redis без L1 — все читают из одного источника; 2) Redis Pub/Sub — при обновлении публикуется сообщение, все экземпляры инвалидируют L1; 3) Event-driven через Kafka — для межсервисной инвалидации; 4) Короткий L1 TTL (30с-2мин) — простой компромисс. Строгая согласованность с кэшем невозможна — кэш по определению eventual consistent. Критичные данные (баланс) не кэшировать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Согласованность кэша", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие политики вытеснения (eviction) существуют?",
+      "questionSlug": "kakie-politiki-vytesneniya-eviction-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["caching", "eviction", "lru", "lfu", "w-tinylfu", "redis"],
+      "seo": {
+        "title": "Какие политики вытеснения (eviction) существуют — Gymterview",
+        "description": "Политики вытеснения кэша: LRU, LFU, FIFO, Random, W-TinyLFU. Eviction policies в Redis (allkeys-lru, allkeys-lfu, volatile). Caffeine и LinkedHashMap примеры.",
+        "keywords": ["eviction policy", "политика вытеснения", "LRU", "LFU", "FIFO", "W-TinyLFU", "Redis maxmemory-policy", "Caffeine", "allkeys-lru"],
+        "ogTitle": "Политики вытеснения кэша: LRU, LFU, W-TinyLFU и Redis eviction — Gymterview",
+        "ogDescription": "Обзор политик вытеснения: LRU, LFU, FIFO, W-TinyLFU. Конфигурация Redis maxmemory-policy и Caffeine maximumSize.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие политики вытеснения (eviction) существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные политики: LRU (удаляет давно не использованный, используется в Redis), LFU (удаляет редко используемый), FIFO (удаляет самый старый), Random (случайный, O(1)), W-TinyLFU (гибрид LRU+LFU с Bloom-фильтром, используется в Caffeine, лучший hit rate). Redis поддерживает: noeviction, allkeys-lru, volatile-lru, allkeys-lfu, volatile-lfu, allkeys-random, volatile-ttl. Рекомендуется allkeys-lru для кэша."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Кэширование", "url": "/topics/caching" },
+          { "name": "Политики вытеснения", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

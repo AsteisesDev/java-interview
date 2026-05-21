@@ -1,0 +1,638 @@
+{
+  "topic": "PostgreSQL",
+  "topicSlug": "postgresql",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Advisory Locks и когда их использовать?",
+      "questionSlug": "chto-takoe-advisory-locks-i-kogda-ikh-ispolzovat",
+      "grade": "senior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое Advisory Locks и когда их использовать? — Gymterview",
+        "description": "Advisory Locks (рекомендательные блокировки) — это механизм блокировок на уровне приложения. PostgreSQL предоставляет инфраструктуру, а семантику определяет при",
+        "keywords": [
+          "postgresql",
+          "senior"
+        ],
+        "ogTitle": "Что такое Advisory Locks и когда их использовать? — Gymterview",
+        "ogDescription": "Advisory Locks (рекомендательные блокировки) — это механизм блокировок на уровне приложения. PostgreSQL предоставляет ин",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Advisory Locks и когда их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Advisory Locks (рекомендательные блокировки) — это механизм блокировок на уровне приложения. PostgreSQL предоставляет инфраструктуру, а семантику определяет приложение. Они не связаны ни с какими объектами базы данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое Advisory Locks и когда их использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое deadlock и как его избежать?",
+      "questionSlug": "chto-takoe-deadlock-i-kak-ego-izbezhat",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое deadlock и как его избежать? — Gymterview",
+        "description": "Deadlock (взаимная блокировка) — ситуация, когда две или более транзакции блокируют друг друга, каждая ожидая ресурс, удерживаемый другой. PostgreSQL автоматиче",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое deadlock и как его избежать? — Gymterview",
+        "ogDescription": "Deadlock (взаимная блокировка) — ситуация, когда две или более транзакции блокируют друг друга, каждая ожидая ресурс, уд",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое deadlock и как его избежать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deadlock (взаимная блокировка) — ситуация, когда две или более транзакции блокируют друг друга, каждая ожидая ресурс, удерживаемый другой. PostgreSQL автоматически обнаруживает deadlock и откатывает одну из транзакций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое deadlock и как его избежать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое представления (views) и материализованные представления?",
+      "questionSlug": "chto-takoe-predstavleniya-views-i-materializovannye-predstavleniya",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое представления (views) и материализованные представ — Gymterview",
+        "description": "Представление (view) — именованный сохранённый запрос, выполняемый каждый раз при обращении. Материализованное представление (materialized view) — представление",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое представления (views) и материализованные представ — Gymterview",
+        "ogDescription": "Представление (view) — именованный сохранённый запрос, выполняемый каждый раз при обращении. Материализованное представл",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое представления (views) и материализованные представления?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Представление (view) — именованный сохранённый запрос, выполняемый каждый раз при обращении. Материализованное представление (materialized view) — представление, результат которого физически сохраняется на диск. Выбор между ними — компромисс между актуальностью данных и скоростью чтения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое представления (views) и материализованные представ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CTE (Common Table Expressions)?",
+      "questionSlug": "chto-takoe-cte-common-table-expressions",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое CTE (Common Table Expressions)? — Gymterview",
+        "description": "CTE (Common Table Expressions) — именованные подзапросы, определяемые в блоке `WITH`, которые улучшают читаемость сложных запросов и позволяют ссылаться на один",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое CTE (Common Table Expressions)? — Gymterview",
+        "ogDescription": "CTE (Common Table Expressions) — именованные подзапросы, определяемые в блоке `WITH`, которые улучшают читаемость сложны",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CTE (Common Table Expressions)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CTE (Common Table Expressions) — именованные подзапросы, определяемые в блоке `WITH`, которые улучшают читаемость сложных запросов и позволяют ссылаться на один и тот же подзапрос несколько раз."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое CTE (Common Table Expressions)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают оконные функции (window functions)?",
+      "questionSlug": "kak-rabotayut-okonnye-funktsii-window-functions",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как работают оконные функции (window functions)? — Gymterview",
+        "description": "Оконные функции выполняют вычисления над набором строк, связанных с текущей строкой, без группировки — в отличие от GROUP BY строки не схлопываются. Это мощный ",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как работают оконные функции (window functions)? — Gymterview",
+        "ogDescription": "Оконные функции выполняют вычисления над набором строк, связанных с текущей строкой, без группировки — в отличие от GROU",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают оконные функции (window functions)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оконные функции выполняют вычисления над набором строк, связанных с текущей строкой, без группировки — в отличие от GROUP BY строки не схлопываются. Это мощный инструмент для аналитических запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как работают оконные функции (window functions)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные оконные функции существуют в PostgreSQL?",
+      "questionSlug": "kakie-osnovnye-okonnye-funktsii-sushchestvuyut-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие основные оконные функции существуют в PostgreSQL? — Gymterview",
+        "description": "PostgreSQL предоставляет ранжирующие функции (ROW_NUMBER, RANK, DENSE_RANK, NTILE) и функции смещения (LAG, LEAD, FIRST_VALUE, LAST_VALUE). Вместе с агрегатными",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие основные оконные функции существуют в PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL предоставляет ранжирующие функции (ROW_NUMBER, RANK, DENSE_RANK, NTILE) и функции смещения (LAG, LEAD, FIRST_",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные оконные функции существуют в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL предоставляет ранжирующие функции (ROW_NUMBER, RANK, DENSE_RANK, NTILE) и функции смещения (LAG, LEAD, FIRST_VALUE, LAST_VALUE). Вместе с агрегатными функциями (SUM, AVG, COUNT) в оконном контексте они покрывают большинство аналитических задач."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие основные оконные функции существуют в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое триггеры в PostgreSQL?",
+      "questionSlug": "chto-takoe-triggery-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое триггеры в PostgreSQL? — Gymterview",
+        "description": "Триггер (trigger) — именованный объект базы данных, который автоматически выполняет функцию при наступлении определённого события (INSERT, UPDATE, DELETE, TRUNC",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое триггеры в PostgreSQL? — Gymterview",
+        "ogDescription": "Триггер (trigger) — именованный объект базы данных, который автоматически выполняет функцию при наступлении определённог",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое триггеры в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Триггер (trigger) — именованный объект базы данных, который автоматически выполняет функцию при наступлении определённого события (INSERT, UPDATE, DELETE, TRUNCATE) на таблице. Триггеры позволяют реализовать бизнес-логику на уровне БД."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое триггеры в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются функции от процедур в PostgreSQL?",
+      "questionSlug": "chem-otlichayutsya-funktsii-ot-protsedur-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Чем отличаются функции от процедур в PostgreSQL? — Gymterview",
+        "description": "Начиная с PostgreSQL 11 поддерживаются как функции (FUNCTION), так и процедуры (PROCEDURE). Ключевое различие: процедуры могут управлять транзакциями (COMMIT/RO",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Чем отличаются функции от процедур в PostgreSQL? — Gymterview",
+        "ogDescription": "Начиная с PostgreSQL 11 поддерживаются как функции (FUNCTION), так и процедуры (PROCEDURE). Ключевое различие: процедуры",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются функции от процедур в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Начиная с PostgreSQL 11 поддерживаются как функции (FUNCTION), так и процедуры (PROCEDURE). Ключевое различие: процедуры могут управлять транзакциями (COMMIT/ROLLBACK внутри тела), а функции — нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Чем отличаются функции от процедур в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое партиционирование (partitioning) таблиц?",
+      "questionSlug": "chto-takoe-partitsionirovanie-partitioning-tablits",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое партиционирование (partitioning) таблиц? — Gymterview",
+        "description": "Партиционирование — это разбиение большой таблицы на несколько физических частей (партиций), при этом логически они остаются единой таблицей. Повышает производи",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое партиционирование (partitioning) таблиц? — Gymterview",
+        "ogDescription": "Партиционирование — это разбиение большой таблицы на несколько физических частей (партиций), при этом логически они оста",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое партиционирование (partitioning) таблиц?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Партиционирование — это разбиение большой таблицы на несколько физических частей (партиций), при этом логически они остаются единой таблицей. Повышает производительность запросов (partition pruning) и упрощает обслуживание. С PostgreSQL 10 поддерживается декларативное партиционирование."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое партиционирование (partitioning) таблиц?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие виды репликации поддерживает PostgreSQL?",
+      "questionSlug": "kakie-vidy-replikatsii-podderzhivaet-postgresql",
+      "grade": "senior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие виды репликации поддерживает PostgreSQL? — Gymterview",
+        "description": "PostgreSQL поддерживает два основных вида репликации: потоковую (streaming/физическую) и логическую (logical). Потоковая реплицирует всю БД побайтово через WAL-",
+        "keywords": [
+          "postgresql",
+          "senior"
+        ],
+        "ogTitle": "Какие виды репликации поддерживает PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL поддерживает два основных вида репликации: потоковую (streaming/физическую) и логическую (logical). Потоковая",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие виды репликации поддерживает PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL поддерживает два основных вида репликации: потоковую (streaming/физическую) и логическую (logical). Потоковая реплицирует всю БД побайтово через WAL-поток, логическая — отдельные таблицы на уровне SQL-операций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие виды репликации поддерживает PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем нужны VACUUM и AUTOVACUUM?",
+      "questionSlug": "zachem-nuzhny-vacuum-i-autovacuum",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Зачем нужны VACUUM и AUTOVACUUM? — Gymterview",
+        "description": "Из-за MVCC при UPDATE и DELETE старые версии строк не удаляются физически — они помечаются как «мёртвые» (dead tuples). VACUUM — это процесс очистки мёртвых вер",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Зачем нужны VACUUM и AUTOVACUUM? — Gymterview",
+        "ogDescription": "Из-за MVCC при UPDATE и DELETE старые версии строк не удаляются физически — они помечаются как «мёртвые» (dead tuples). ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем нужны VACUUM и AUTOVACUUM?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Из-за MVCC при UPDATE и DELETE старые версии строк не удаляются физически — они помечаются как «мёртвые» (dead tuples). VACUUM — это процесс очистки мёртвых версий строк и возврата освобождённого пространства для повторного использования."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Зачем нужны VACUUM и AUTOVACUUM?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как мониторить производительность PostgreSQL?",
+      "questionSlug": "kak-monitorit-proizvoditelnost-postgresql",
+      "grade": "senior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как мониторить производительность PostgreSQL? — Gymterview",
+        "description": "PostgreSQL предоставляет богатый набор системных представлений (pg_stat_*) и расширений для мониторинга. Шесть ключевых источников покрывают большинство задач д",
+        "keywords": [
+          "postgresql",
+          "senior"
+        ],
+        "ogTitle": "Как мониторить производительность PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL предоставляет богатый набор системных представлений (pg_stat_*) и расширений для мониторинга. Шесть ключевых ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как мониторить производительность PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL предоставляет богатый набор системных представлений (pg_stat_*) и расширений для мониторинга. Шесть ключевых источников покрывают большинство задач диагностики."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как мониторить производительность PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как подключить PostgreSQL к Java/Spring приложению?",
+      "questionSlug": "kak-podklyuchit-postgresql-k-java-spring-prilozheniyu",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как подключить PostgreSQL к Java/Spring приложению? — Gymterview",
+        "description": "Подключение PostgreSQL к Java-приложению выполняется через JDBC-драйвер. Spring Boot автоматизирует конфигурацию, достаточно указать URL, пользователя и пароль ",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Как подключить PostgreSQL к Java/Spring приложению? — Gymterview",
+        "ogDescription": "Подключение PostgreSQL к Java-приложению выполняется через JDBC-драйвер. Spring Boot автоматизирует конфигурацию, достат",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как подключить PostgreSQL к Java/Spring приложению?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Подключение PostgreSQL к Java-приложению выполняется через JDBC-драйвер. Spring Boot автоматизирует конфигурацию, достаточно указать URL, пользователя и пароль в application.yml."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как подключить PostgreSQL к Java/Spring приложению?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как настроить пул соединений HikariCP для PostgreSQL?",
+      "questionSlug": "kak-nastroit-pul-soedinenij-hikaricp-dlya-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как настроить пул соединений HikariCP для PostgreSQL? — Gymterview",
+        "description": "HikariCP — высокопроизводительный пул соединений для JDBC, используемый по умолчанию в Spring Boot. Пул переиспользует готовые соединения, снижая задержки (созд",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как настроить пул соединений HikariCP для PostgreSQL? — Gymterview",
+        "ogDescription": "HikariCP — высокопроизводительный пул соединений для JDBC, используемый по умолчанию в Spring Boot. Пул переиспользует г",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как настроить пул соединений HikariCP для PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HikariCP — высокопроизводительный пул соединений для JDBC, используемый по умолчанию в Spring Boot. Пул переиспользует готовые соединения, снижая задержки (создание TCP-соединения ~5-10 мс) и нагрузку на PostgreSQL (~10 МБ RAM на каждое соединение)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как настроить пул соединений HikariCP для PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

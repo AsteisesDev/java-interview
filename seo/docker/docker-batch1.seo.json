@@ -1,0 +1,442 @@
+{
+  "topic": "Docker",
+  "topicSlug": "docker",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Docker?",
+      "questionSlug": "chto-takoe-docker",
+      "grade": "junior",
+      "tags": ["docker", "containerization", "devops", "основы"],
+      "seo": {
+        "title": "Что такое Docker — Gymterview",
+        "description": "Узнайте, что такое Docker, зачем он нужен и какие преимущества даёт: единообразие окружения, изоляция, быстрое развёртывание. Подготовка к Java-собеседованию.",
+        "keywords": ["Docker", "контейнеризация", "контейнер", "DevOps", "развёртывание", "изоляция", "Java", "собеседование"],
+        "ogTitle": "Что такое Docker — Gymterview",
+        "ogDescription": "Docker — платформа для автоматизации разработки и запуска приложений в контейнерах. Преимущества, базовые концепции и подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker — платформа с открытым исходным кодом для автоматизации разработки, доставки и запуска приложений в изолированных средах (контейнерах). Упаковывает приложение вместе с окружением и зависимостями, решая проблему «works on my machine». Преимущества: единообразие окружения, изоляция, быстрый запуск за секунды, масштабирование, воспроизводимость через Dockerfile, упрощение CI/CD."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Что такое Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое контейнеризация и чем она отличается от виртуализации?",
+      "questionSlug": "chto-takoe-konteynerizatsiya-i-chem-ona-otlichaetsya-ot-virtualizatsii",
+      "grade": "junior",
+      "tags": ["docker", "containerization", "virtualization", "основы"],
+      "seo": {
+        "title": "Контейнеризация vs виртуализация — Gymterview",
+        "description": "Чем контейнеризация отличается от виртуализации: общее ядро ОС, размер, скорость запуска, namespaces и cgroups. Сравнительная таблица VM и контейнеров.",
+        "keywords": ["контейнеризация", "виртуализация", "Docker", "VM", "namespaces", "cgroups", "контейнер vs виртуальная машина", "собеседование"],
+        "ogTitle": "Контейнеризация vs виртуализация: ключевые отличия — Gymterview",
+        "ogDescription": "Сравнение контейнеризации и виртуализации: изоляция, ресурсы, скорость. Namespaces и cgroups как внутренние механизмы Docker.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое контейнеризация и чем она отличается от виртуализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контейнеризация — виртуализация на уровне ОС, где контейнеры разделяют ядро хостовой ОС, а VM содержат полноценную гостевую ОС. Контейнеры легче (МБ vs ГБ), стартуют за секунды (vs минуты), потребляют меньше ресурсов. Изоляция обеспечивается механизмами Linux: namespaces (изоляция процессов, сети, FS) и cgroups (ограничение CPU, памяти)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Контейнеризация vs виртуализация", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные понятия существуют в Docker?",
+      "questionSlug": "kakie-osnovnye-ponyatiya-sushchestvuyut-v-docker",
+      "grade": "junior",
+      "tags": ["docker", "image", "container", "volume", "registry", "основы"],
+      "seo": {
+        "title": "Основные понятия Docker: образ, контейнер, реестр, том — Gymterview",
+        "description": "Ключевые абстракции Docker: образ (Image), контейнер (Container), реестр (Registry), Docker Hub, тег (Tag), том (Volume). Связь между понятиями.",
+        "keywords": ["Docker образ", "Docker контейнер", "Docker Registry", "Docker Hub", "Docker Volume", "тег Docker", "Image", "Container", "собеседование"],
+        "ogTitle": "Основные понятия Docker — Gymterview",
+        "ogDescription": "Разбираем ключевые абстракции Docker: образ, контейнер, реестр, том. Связь между ними и примеры использования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные понятия существуют в Docker?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные понятия Docker: Образ (Image) — неизменяемый шаблон из слоёв для создания контейнера. Контейнер (Container) — запущенный экземпляр образа с writable layer. Реестр (Registry) — хранилище образов (Docker Hub, GitHub CR, Amazon ECR). Тег (Tag) — метка версии образа (например, eclipse-temurin:17-jre-alpine). Том (Volume) — механизм сохранения данных вне жизненного цикла контейнера."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Основные понятия Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите архитектуру Docker",
+      "questionSlug": "opishite-arkhitekturu-docker",
+      "grade": "middle",
+      "tags": ["docker", "architecture", "docker-daemon", "containerd"],
+      "seo": {
+        "title": "Архитектура Docker: Daemon, Client, Containerd — Gymterview",
+        "description": "Архитектура Docker: клиент-серверная модель, Docker Daemon (dockerd), Docker Client (CLI), Containerd, runc. Схема взаимодействия компонентов.",
+        "keywords": ["архитектура Docker", "Docker Daemon", "dockerd", "Docker Client", "Containerd", "runc", "Docker Engine", "REST API", "собеседование"],
+        "ogTitle": "Архитектура Docker: Daemon, Client, Containerd — Gymterview",
+        "ogDescription": "Клиент-серверная архитектура Docker: CLI общается с Daemon через REST API, Daemon делегирует запуск контейнеров Containerd/runc.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите архитектуру Docker",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker использует клиент-серверную архитектуру. Docker Client (CLI) отправляет команды через REST API к Docker Daemon (dockerd), который управляет образами, контейнерами, сетями и томами. Daemon делегирует запуск контейнеров Containerd (container runtime), а Containerd использует runc для непосредственного создания контейнеров. Docker Engine — общее название для Daemon + REST API + CLI."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Архитектура Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Dockerfile?",
+      "questionSlug": "chto-takoe-dockerfile",
+      "grade": "junior",
+      "tags": ["docker", "dockerfile", "image-build", "основы"],
+      "seo": {
+        "title": "Что такое Dockerfile — Gymterview",
+        "description": "Dockerfile — текстовый файл с инструкциями для сборки Docker-образа. Пример для Java-приложения, команда docker build, правила именования и кэширование слоёв.",
+        "keywords": ["Dockerfile", "docker build", "сборка образа", "инструкции Dockerfile", "FROM", "COPY", "ENTRYPOINT", "Java Docker", "собеседование"],
+        "ogTitle": "Что такое Dockerfile — Gymterview",
+        "ogDescription": "Dockerfile — декларативное описание Docker-образа. Пример для Java, команда сборки и влияние порядка инструкций на кэширование.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Dockerfile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dockerfile — текстовый файл с набором инструкций для автоматической сборки Docker-образа. Каждая инструкция создаёт новый слой в образе. Минимальный Dockerfile для Java: FROM (базовый образ), WORKDIR, COPY (JAR-файл), EXPOSE (порт), ENTRYPOINT (команда запуска). Сборка выполняется командой docker build -t name:tag. Порядок инструкций влияет на кэширование при пересборке."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Что такое Dockerfile", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные инструкции используются в Dockerfile?",
+      "questionSlug": "kakie-osnovnye-instruktsii-ispolzuyutsya-v-dockerfile",
+      "grade": "junior",
+      "tags": ["docker", "dockerfile", "instructions", "основы"],
+      "seo": {
+        "title": "Основные инструкции Dockerfile: FROM, RUN, COPY, CMD — Gymterview",
+        "description": "Инструкции Dockerfile: FROM, RUN, COPY, ADD, CMD, ENTRYPOINT, EXPOSE, ENV, ARG, WORKDIR, VOLUME, USER, LABEL, HEALTHCHECK. Таблица с описаниями и примерами.",
+        "keywords": ["инструкции Dockerfile", "FROM", "RUN", "COPY", "CMD", "ENTRYPOINT", "EXPOSE", "ENV", "ARG", "WORKDIR", "VOLUME", "USER", "собеседование"],
+        "ogTitle": "Инструкции Dockerfile: полная таблица с описаниями — Gymterview",
+        "ogDescription": "Все инструкции Dockerfile: FROM, RUN, COPY, ADD, CMD, ENTRYPOINT, EXPOSE, ENV, ARG, WORKDIR, VOLUME, USER, LABEL, HEALTHCHECK.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные инструкции используются в Dockerfile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ключевые инструкции Dockerfile: FROM (базовый образ), RUN (выполнение команд при сборке), COPY (копирование файлов), ADD (расширенное копирование с распаковкой), CMD (команда по умолчанию), ENTRYPOINT (основная команда), EXPOSE (документирование порта), ENV (переменные окружения), ARG (переменные сборки), WORKDIR (рабочая директория), VOLUME (точка монтирования), USER (пользователь), HEALTHCHECK (проверка состояния)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Инструкции Dockerfile", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между CMD и ENTRYPOINT?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-cmd-i-entrypoint",
+      "grade": "middle",
+      "tags": ["docker", "dockerfile", "cmd", "entrypoint"],
+      "seo": {
+        "title": "Разница между CMD и ENTRYPOINT в Docker — Gymterview",
+        "description": "CMD vs ENTRYPOINT в Dockerfile: CMD переопределяется целиком, к ENTRYPOINT аргументы добавляются. Комбинация, exec-форма, проблема PID 1 и shell-форма.",
+        "keywords": ["CMD vs ENTRYPOINT", "Dockerfile CMD", "Dockerfile ENTRYPOINT", "exec-форма", "shell-форма", "PID 1", "Docker", "собеседование"],
+        "ogTitle": "CMD vs ENTRYPOINT в Docker: ключевые различия — Gymterview",
+        "ogDescription": "Разница CMD и ENTRYPOINT: переопределение, комбинация, exec vs shell форма, проблема PID 1 при shell-форме.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между CMD и ENTRYPOINT?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CMD задаёт команду по умолчанию, которая полностью заменяется аргументами docker run. ENTRYPOINT задаёт основную команду, а аргументы docker run добавляются к ней. Идиоматический подход — комбинация: ENTRYPOINT задаёт исполняемый файл, CMD — аргументы по умолчанию. Рекомендуется exec-форма (JSON-массив), так как shell-форма оборачивает команду в /bin/sh -c и SIGTERM не доходит до Java-процесса (проблема PID 1)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "CMD vs ENTRYPOINT", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между COPY и ADD?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-copy-i-add",
+      "grade": "junior",
+      "tags": ["docker", "dockerfile", "copy", "add", "best-practices"],
+      "seo": {
+        "title": "Разница между COPY и ADD в Dockerfile — Gymterview",
+        "description": "COPY vs ADD в Dockerfile: COPY для простого копирования, ADD для распаковки tar-архивов. ADD с URL — анти-паттерн. Best practices написания Dockerfile.",
+        "keywords": ["COPY vs ADD", "Dockerfile COPY", "Dockerfile ADD", "Docker best practices", "копирование файлов", "собеседование"],
+        "ogTitle": "COPY vs ADD в Dockerfile — Gymterview",
+        "ogDescription": "Различие COPY и ADD: используйте COPY всегда, кроме автоматической распаковки tar-архива. ADD с URL — анти-паттерн.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между COPY и ADD?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "COPY выполняет простое копирование файлов из контекста сборки в образ. ADD делает то же, но дополнительно поддерживает автоматическую распаковку tar-архивов и загрузку файлов по URL. Рекомендация: всегда используйте COPY, если не нужна распаковка архива. ADD с URL — анти-паттерн, лучше использовать RUN curl/wget для контроля процесса и возможности удалить файл в том же слое."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "COPY vs ADD", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое multi-stage build и зачем он нужен?",
+      "questionSlug": "chto-takoe-multi-stage-build-i-zachem-on-nuzhen",
+      "grade": "middle",
+      "tags": ["docker", "dockerfile", "multi-stage-build", "optimization", "spring-boot"],
+      "seo": {
+        "title": "Multi-stage build в Docker — Gymterview",
+        "description": "Multi-stage build: несколько FROM в одном Dockerfile для разделения среды сборки и запуска. Пример для Spring Boot с Maven/Gradle, уменьшение размера образа.",
+        "keywords": ["multi-stage build", "многоступенчатая сборка", "Dockerfile", "COPY --from", "Docker оптимизация", "Spring Boot Docker", "Maven Docker", "собеседование"],
+        "ogTitle": "Multi-stage build в Docker: зачем и как использовать — Gymterview",
+        "ogDescription": "Multi-stage build разделяет сборку и запуск в одном Dockerfile. Уменьшает размер образа с 800 МБ до 200 МБ для Spring Boot.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое multi-stage build и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Multi-stage build — подход с несколькими FROM в одном Dockerfile, где каждый начинает новую стадию, а в финальный образ попадает только результат последней. Позволяет собирать приложение в одном контейнере (JDK + Maven), а запускать в другом (только JRE). Уменьшает размер образа (с ~800 МБ до ~200 МБ) и поверхность атаки. Синтаксис: COPY --from=build копирует артефакт из стадии сборки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Multi-stage build", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое слои образа (image layers)?",
+      "questionSlug": "chto-takoe-sloi-obraza-image-layers",
+      "grade": "middle",
+      "tags": ["docker", "image-layers", "caching", "optimization"],
+      "seo": {
+        "title": "Слои образа Docker (image layers) и кэширование — Gymterview",
+        "description": "Слои Docker-образа: immutable read-only блоки файловой системы. Кэширование слоёв, каскадная инвалидация, оптимальный порядок инструкций в Dockerfile.",
+        "keywords": ["Docker слои", "image layers", "кэширование слоёв", "Docker кэш", "writable layer", "инвалидация кэша", "оптимизация Dockerfile", "собеседование"],
+        "ogTitle": "Слои образа Docker: устройство и кэширование — Gymterview",
+        "ogDescription": "Как устроены слои Docker-образа: неизменяемые read-only блоки, кэширование при сборке и правило оптимального порядка инструкций.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое слои образа (image layers)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Слои образа — неизменяемые (immutable) read-only блоки файловой системы. Каждая инструкция FROM, RUN, COPY, ADD создаёт новый слой. При повторной сборке Docker использует кэшированные слои, если инструкция не изменилась. Инвалидация одного слоя каскадно пересобирает все последующие. Правило: инструкции, которые меняются реже (зависимости), должны идти перед часто меняющимися (исходный код). Слои разделяются между образами с одной базой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Слои образа", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как оптимизировать Dockerfile?",
+      "questionSlug": "kak-optimizirovat-dockerfile",
+      "grade": "middle",
+      "tags": ["docker", "dockerfile", "optimization", "best-practices", "performance"],
+      "seo": {
+        "title": "Оптимизация Dockerfile: лучшие практики — Gymterview",
+        "description": "Оптимизация Dockerfile: порядок инструкций для кэширования, объединение RUN-команд, минимальные базовые образы (alpine), multi-stage build, конкретные теги.",
+        "keywords": ["оптимизация Dockerfile", "Docker best practices", "alpine образ", "минимизация слоёв", "Docker кэширование", "dockerignore", "собеседование"],
+        "ogTitle": "Оптимизация Dockerfile: 5+ best practices — Gymterview",
+        "ogDescription": "Как оптимизировать Dockerfile: кэширование слоёв, минимальные образы, multi-stage build, объединение RUN, конкретные теги.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как оптимизировать Dockerfile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ключевые практики: 1) Порядок инструкций — редко меняющиеся (зависимости) перед часто меняющимися (код) для кэширования. 2) Объединение RUN-команд в одну инструкцию. 3) Минимальные базовые образы (alpine, JRE вместо JDK). 4) Удаление временных файлов в том же слое. 5) Multi-stage build. 6) .dockerignore для исключения ненужных файлов. 7) Конкретные теги вместо latest."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Оптимизация Dockerfile", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое .dockerignore?",
+      "questionSlug": "chto-takoe-dockerignore",
+      "grade": "junior",
+      "tags": ["docker", "dockerfile", "dockerignore", "best-practices"],
+      "seo": {
+        "title": "Что такое .dockerignore — Gymterview",
+        "description": "Файл .dockerignore исключает файлы из контекста сборки Docker: ускоряет сборку, предотвращает утечку секретов. Пример для Java-проекта с IDE, Git, логами.",
+        "keywords": [".dockerignore", "Docker контекст сборки", "исключение файлов", "Docker безопасность", "gitignore Docker", "Java Docker", "собеседование"],
+        "ogTitle": "Что такое .dockerignore — Gymterview",
+        "ogDescription": ".dockerignore исключает файлы из контекста сборки Docker. Ускоряет сборку и предотвращает попадание секретов в образ.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое .dockerignore?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": ".dockerignore — файл, определяющий, какие файлы исключить из контекста сборки Docker (аналог .gitignore). Исключает файлы до отправки демону, а не из образа напрямую. Зачем нужен: ускоряет сборку (меньше данных передаётся демону), предотвращает попадание секретов (.env, ключи), исключает файлы, инвалидирующие кэш. Типичный контент: target/, .idea/, .git, .env, *.log, docs/."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": ".dockerignore", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите основные команды Docker",
+      "questionSlug": "perechislite-osnovnye-komandy-docker",
+      "grade": "junior",
+      "tags": ["docker", "cli", "commands", "основы"],
+      "seo": {
+        "title": "Основные команды Docker: build, run, logs, exec — Gymterview",
+        "description": "Основные команды Docker: работа с образами (build, pull, push, images), контейнерами (run, ps, stop, rm, logs, exec, inspect). Примеры для Java-разработчика.",
+        "keywords": ["команды Docker", "docker run", "docker build", "docker logs", "docker exec", "docker ps", "docker stop", "Docker CLI", "собеседование"],
+        "ogTitle": "Основные команды Docker — Gymterview",
+        "ogDescription": "Рабочий цикл Docker: build (сборка), run (запуск), logs (отладка), stop/rm (остановка/удаление). Таблица команд с описанием.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите основные команды Docker",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Работа с образами: docker build (сборка), docker images (список), docker pull/push (скачать/отправить), docker rmi (удалить). Работа с контейнерами: docker run (создать и запустить), docker ps (список запущенных), docker stop/start/restart (управление), docker rm (удалить), docker logs (логи), docker exec -it (войти в контейнер), docker inspect (информация в JSON). Рабочий цикл: build → run → logs → stop/rm."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Основные команды Docker", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Docker Compose?",
+      "questionSlug": "chto-takoe-docker-compose",
+      "grade": "junior",
+      "tags": ["docker", "docker-compose", "multi-container", "основы"],
+      "seo": {
+        "title": "Что такое Docker Compose — Gymterview",
+        "description": "Docker Compose — инструмент для определения и запуска многоконтейнерных приложений. YAML-конфигурация, основные команды, пример Spring Boot + PostgreSQL.",
+        "keywords": ["Docker Compose", "docker-compose.yml", "многоконтейнерное приложение", "docker compose up", "depends_on", "services", "собеседование"],
+        "ogTitle": "Docker Compose: определение и запуск многоконтейнерных приложений — Gymterview",
+        "ogDescription": "Docker Compose описывает многоконтейнерное приложение в YAML. Одна команда поднимает приложение, БД, кэш и другие сервисы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Docker Compose?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Docker Compose — инструмент для определения и запуска многоконтейнерных Docker-приложений. Конфигурация описывается в docker-compose.yml (YAML). Команды: docker compose up (запуск), docker compose down (остановка), docker compose logs (логи). Используется для локальной разработки: приложение + БД + кэш одной командой. depends_on гарантирует порядок запуска контейнеров, но не готовность сервиса внутри."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Docker", "url": "/topics/docker" },
+          { "name": "Docker Compose", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

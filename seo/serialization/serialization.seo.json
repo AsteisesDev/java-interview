@@ -1,0 +1,773 @@
+{
+  "topic": "Сериализация",
+  "topicSlug": "serialization",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое сериализация?",
+      "questionSlug": "chto-takoe-serializatsiya",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Что такое сериализация? — Gymterview",
+        "description": "Сериализация — это процесс преобразования структуры данных (объекта) в линейную последовательность байтов для передачи по сети, сохранения в файл или хранения в",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Что такое сериализация? — Gymterview",
+        "ogDescription": "Сериализация — это процесс преобразования структуры данных (объекта) в линейную последовательность байтов для передачи п",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сериализация?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сериализация — это процесс преобразования структуры данных (объекта) в линейную последовательность байтов для передачи по сети, сохранения в файл или хранения в базе данных. Обратный процесс — десериализация — восстанавливает объект из этой последовательности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Что такое сериализация?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите процесс сериализации/десериализации с использованием Serializable",
+      "questionSlug": "opishite-protsess-serializatsii-deserializatsii-s-ispolzovaniem-serializable",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Опишите процесс сериализации/десериализации с использованием — Gymterview",
+        "description": "При использовании `Serializable` JVM применяет алгоритм сериализации, который через Reflection API автоматически записывает состояние объекта в поток байтов.",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Опишите процесс сериализации/десериализации с использованием — Gymterview",
+        "ogDescription": "При использовании `Serializable` JVM применяет алгоритм сериализации, который через Reflection API автоматически записыв",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите процесс сериализации/десериализации с использованием Serializable",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При использовании `Serializable` JVM применяет алгоритм сериализации, который через Reflection API автоматически записывает состояние объекта в поток байтов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Опишите процесс сериализации/десериализации с использованием",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как изменить стандартное поведение сериализации/десериализации?",
+      "questionSlug": "kak-izmenit-standartnoe-povedenie-serializatsii-deserializatsii",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как изменить стандартное поведение сериализации/десериализац — Gymterview",
+        "description": "Существует два подхода: реализация `Externalizable` для полного контроля или определение специальных методов в `Serializable`-классе для точечной кастомизации.",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Как изменить стандартное поведение сериализации/десериализац — Gymterview",
+        "ogDescription": "Существует два подхода: реализация `Externalizable` для полного контроля или определение специальных методов в `Serializ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как изменить стандартное поведение сериализации/десериализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существует два подхода: реализация `Externalizable` для полного контроля или определение специальных методов в `Serializable`-классе для точечной кастомизации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как изменить стандартное поведение сериализации/десериализац",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как исключить поля из сериализации?",
+      "questionSlug": "kak-isklyuchit-polya-iz-serializatsii",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как исключить поля из сериализации? — Gymterview",
+        "description": "Для исключения полей из сериализации используется ключевое слово `transient`. Поле, помеченное `transient`, пропускается при стандартной сериализации и при десе",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Как исключить поля из сериализации? — Gymterview",
+        "ogDescription": "Для исключения полей из сериализации используется ключевое слово `transient`. Поле, помеченное `transient`, пропускается",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как исключить поля из сериализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для исключения полей из сериализации используется ключевое слово `transient`. Поле, помеченное `transient`, пропускается при стандартной сериализации и при десериализации получает значение по умолчанию для своего типа (`null`, `0`, `false`)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как исключить поля из сериализации?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что обозначает ключевое слово transient?",
+      "questionSlug": "chto-oboznachaet-klyuchevoe-slovo-transient",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Что обозначает ключевое слово transient? — Gymterview",
+        "description": "Модификатор `transient` указывает JVM, что помеченное поле не является частью персистентного состояния объекта и не должно сериализоваться.",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Что обозначает ключевое слово transient? — Gymterview",
+        "ogDescription": "Модификатор `transient` указывает JVM, что помеченное поле не является частью персистентного состояния объекта и не долж",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что обозначает ключевое слово transient?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификатор `transient` указывает JVM, что помеченное поле не является частью персистентного состояния объекта и не должно сериализоваться."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Что обозначает ключевое слово transient?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое влияние оказывают на сериализуемость модификаторы полей static и final?",
+      "questionSlug": "kakoe-vliyanie-okazyvayut-na-serializuemost-modifikatory-polej-static-i-final",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Какое влияние оказывают на сериализуемость модификаторы поле — Gymterview",
+        "description": "Модификаторы `static` и `final` ведут себя по-разному при стандартной сериализации (`Serializable`) и расширенной (`Externalizable`).",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Какое влияние оказывают на сериализуемость модификаторы поле — Gymterview",
+        "ogDescription": "Модификаторы `static` и `final` ведут себя по-разному при стандартной сериализации (`Serializable`) и расширенной (`Exte",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какое влияние оказывают на сериализуемость модификаторы полей static и final?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Модификаторы `static` и `final` ведут себя по-разному при стандартной сериализации (`Serializable`) и расширенной (`Externalizable`)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Какое влияние оказывают на сериализуемость модификаторы поле",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как не допустить сериализацию?",
+      "questionSlug": "kak-ne-dopustit-serializatsiyu",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как не допустить сериализацию? — Gymterview",
+        "description": "Чтобы запретить сериализацию объекта, нужно переопределить методы `writeObject` и `readObject`, выбрасывающие `NotSerializableException`.",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Как не допустить сериализацию? — Gymterview",
+        "ogDescription": "Чтобы запретить сериализацию объекта, нужно переопределить методы `writeObject` и `readObject`, выбрасывающие `NotSerial",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как не допустить сериализацию?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Чтобы запретить сериализацию объекта, нужно переопределить методы `writeObject` и `readObject`, выбрасывающие `NotSerializableException`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как не допустить сериализацию?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать собственный протокол сериализации?",
+      "questionSlug": "kak-sozdat-sobstvennyj-protokol-serializatsii",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как создать собственный протокол сериализации? — Gymterview",
+        "description": "Для создания собственного протокола сериализации нужно реализовать интерфейс `Externalizable`, который содержит два метода — `writeExternal` для записи и `readE",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Как создать собственный протокол сериализации? — Gymterview",
+        "ogDescription": "Для создания собственного протокола сериализации нужно реализовать интерфейс `Externalizable`, который содержит два мето",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать собственный протокол сериализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для создания собственного протокола сериализации нужно реализовать интерфейс `Externalizable`, который содержит два метода — `writeExternal` для записи и `readExternal` для чтения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как создать собственный протокол сериализации?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая роль поля serialVersionUID в сериализации?",
+      "questionSlug": "kakaya-rol-polya-serialversionuid-v-serializatsii",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Какая роль поля serialVersionUID в сериализации? — Gymterview",
+        "description": "`serialVersionUID` — это уникальный идентификатор версии класса, который используется при десериализации для проверки совместимости сериализованных данных с тек",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Какая роль поля serialVersionUID в сериализации? — Gymterview",
+        "ogDescription": "`serialVersionUID` — это уникальный идентификатор версии класса, который используется при десериализации для проверки со",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая роль поля serialVersionUID в сериализации?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`serialVersionUID` — это уникальный идентификатор версии класса, который используется при десериализации для проверки совместимости сериализованных данных с текущей версией класса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Какая роль поля serialVersionUID в сериализации?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда стоит изменять значение поля serialVersionUID?",
+      "questionSlug": "kogda-stoit-izmenyat-znachenie-polya-serialversionuid",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Когда стоит изменять значение поля serialVersionUID? — Gymterview",
+        "description": "`serialVersionUID` следует изменять только при внесении **несовместимых** изменений в класс — таких, после которых старые сериализованные данные не могут коррек",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Когда стоит изменять значение поля serialVersionUID? — Gymterview",
+        "ogDescription": "`serialVersionUID` следует изменять только при внесении **несовместимых** изменений в класс — таких, после которых стары",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда стоит изменять значение поля serialVersionUID?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`serialVersionUID` следует изменять только при внесении **несовместимых** изменений в класс — таких, после которых старые сериализованные данные не могут корректно восстановиться."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Когда стоит изменять значение поля serialVersionUID?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем проблема сериализации Singleton?",
+      "questionSlug": "v-chem-problema-serializatsii-singleton",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "В чем проблема сериализации Singleton? — Gymterview",
+        "description": "При десериализации JVM создаёт **новый** экземпляр объекта, минуя приватный конструктор, что нарушает контракт Singleton — в системе оказывается два экземпляра ",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "В чем проблема сериализации Singleton? — Gymterview",
+        "ogDescription": "При десериализации JVM создаёт **новый** экземпляр объекта, минуя приватный конструктор, что нарушает контракт Singleton",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем проблема сериализации Singleton?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При десериализации JVM создаёт **новый** экземпляр объекта, минуя приватный конструктор, что нарушает контракт Singleton — в системе оказывается два экземпляра вместо одного."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "В чем проблема сериализации Singleton?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют способы контроля за значениями десериализованного объекта?",
+      "questionSlug": "kakie-sushchestvuyut-sposoby-kontrolya-za-znacheniyami-deserializovannogo-obekta",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Какие существуют способы контроля за значениями десериализов — Gymterview",
+        "description": "Контроль за значениями десериализованного объекта нужен для проверки инвариантов, валидации данных и защиты от подмены сериализованного потока.",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Какие существуют способы контроля за значениями десериализов — Gymterview",
+        "ogDescription": "Контроль за значениями десериализованного объекта нужен для проверки инвариантов, валидации данных и защиты от подмены с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют способы контроля за значениями десериализованного объекта?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Контроль за значениями десериализованного объекта нужен для проверки инвариантов, валидации данных и защиты от подмены сериализованного потока."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Какие существуют способы контроля за значениями десериализов",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Jackson и как он работает?",
+      "questionSlug": "chto-takoe-jackson-i-kak-on-rabotaet",
+      "grade": "junior",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Что такое Jackson и как он работает? — Gymterview",
+        "description": "Jackson — самая популярная библиотека для работы с JSON в Java-экосистеме. Центральный класс — `ObjectMapper`, который выполняет сериализацию (Java-объект -> JS",
+        "keywords": [
+          "serialization",
+          "junior"
+        ],
+        "ogTitle": "Что такое Jackson и как он работает? — Gymterview",
+        "ogDescription": "Jackson — самая популярная библиотека для работы с JSON в Java-экосистеме. Центральный класс — `ObjectMapper`, который в",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Jackson и как он работает?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jackson — самая популярная библиотека для работы с JSON в Java-экосистеме. Центральный класс — `ObjectMapper`, который выполняет сериализацию (Java-объект -> JSON) и десериализацию (JSON -> Java-объект). Jackson используется по умолчанию в Spring Boot, Quarkus и Micronaut."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Что такое Jackson и как он работает?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как кастомизировать сериализацию в Jackson?",
+      "questionSlug": "kak-kastomizirovat-serializatsiyu-v-jackson",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как кастомизировать сериализацию в Jackson? — Gymterview",
+        "description": "Jackson предоставляет несколько механизмов кастомизации: пользовательские сериализаторы/десериализаторы, аннотации для управления созданием объектов и mix-ins д",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Как кастомизировать сериализацию в Jackson? — Gymterview",
+        "ogDescription": "Jackson предоставляет несколько механизмов кастомизации: пользовательские сериализаторы/десериализаторы, аннотации для у",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как кастомизировать сериализацию в Jackson?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jackson предоставляет несколько механизмов кастомизации: пользовательские сериализаторы/десериализаторы, аннотации для управления созданием объектов и mix-ins для работы с классами, которые нельзя модифицировать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как кастомизировать сериализацию в Jackson?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается Jackson от Gson?",
+      "questionSlug": "chem-otlichaetsya-jackson-ot-gson",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Чем отличается Jackson от Gson? — Gymterview",
+        "description": "Jackson и Gson — две основные библиотеки для JSON-сериализации в Java. Обе решают одну задачу, но различаются производительностью, экосистемой и областью примен",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Чем отличается Jackson от Gson? — Gymterview",
+        "ogDescription": "Jackson и Gson — две основные библиотеки для JSON-сериализации в Java. Обе решают одну задачу, но различаются производит",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается Jackson от Gson?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jackson и Gson — две основные библиотеки для JSON-сериализации в Java. Обе решают одну задачу, но различаются производительностью, экосистемой и областью применения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Чем отличается Jackson от Gson?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с JSON в Java без библиотек и с Jakarta JSON-P/JSON-B?",
+      "questionSlug": "kak-rabotat-s-json-v-java-bez-bibliotek-i-s-jakarta-json-p-json-b",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Как работать с JSON в Java без библиотек и с Jakarta JSON-P/ — Gymterview",
+        "description": "В Jakarta EE существуют два стандартных API: JSON-P (JSON Processing) для низкоуровневого парсинга и JSON-B (JSON Binding) для привязки к объектам. Оба входят в",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Как работать с JSON в Java без библиотек и с Jakarta JSON-P/ — Gymterview",
+        "ogDescription": "В Jakarta EE существуют два стандартных API: JSON-P (JSON Processing) для низкоуровневого парсинга и JSON-B (JSON Bindin",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с JSON в Java без библиотек и с Jakarta JSON-P/JSON-B?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Jakarta EE существуют два стандартных API: JSON-P (JSON Processing) для низкоуровневого парсинга и JSON-B (JSON Binding) для привязки к объектам. Оба входят в спецификацию Jakarta EE, но на практике Jackson используется значительно чаще."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Как работать с JSON в Java без библиотек и с Jakarta JSON-P/",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Java Serialization vs JSON: когда что использовать?",
+      "questionSlug": "java-serialization-vs-json-kogda-chto-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "serialization"
+      ],
+      "seo": {
+        "title": "Java Serialization vs JSON: когда что использовать? — Gymterview",
+        "description": "Стандартная Java-сериализация (`Serializable`) и JSON-сериализация (Jackson, Gson) решают схожую задачу — преобразование объектов в переносимый формат, — но кар",
+        "keywords": [
+          "serialization",
+          "middle"
+        ],
+        "ogTitle": "Java Serialization vs JSON: когда что использовать? — Gymterview",
+        "ogDescription": "Стандартная Java-сериализация (`Serializable`) и JSON-сериализация (Jackson, Gson) решают схожую задачу — преобразование",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Java Serialization vs JSON: когда что использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стандартная Java-сериализация (`Serializable`) и JSON-сериализация (Jackson, Gson) решают схожую задачу — преобразование объектов в переносимый формат, — но кардинально различаются по безопасности, совместимости и области применения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Сериализация",
+            "url": "/topics/serialization"
+          },
+          {
+            "name": "Java Serialization vs JSON: когда что использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

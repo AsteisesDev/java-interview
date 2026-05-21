@@ -1,0 +1,442 @@
+{
+  "topic": "Разработка для Jira",
+  "topicSlug": "jira",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие платформы разработки для Jira существуют?",
+      "questionSlug": "kakie-platformy-razrabotki-dlya-jira-sushchestvuyut",
+      "grade": "junior",
+      "tags": ["jira", "основы", "jira-platform", "jira-data-center", "jira-cloud"],
+      "seo": {
+        "title": "Какие платформы разработки для Jira существуют — Gymterview",
+        "description": "Обзор платформ Jira: Data Center (P2-плагины, кластеризация) и Cloud (Forge, Connect). Сравнение, миграция Server → DC/Cloud. Подготовка к собеседованию.",
+        "keywords": ["Jira платформы", "Jira Data Center", "Jira Cloud", "Jira Server EOL", "P2 плагины", "Forge", "Connect", "собеседование Java"],
+        "ogTitle": "Платформы разработки для Jira: Data Center vs Cloud — Gymterview",
+        "ogDescription": "Обзор платформ Jira в 2026: Data Center и Cloud. Сравнительная таблица, пути миграции с Server. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие платформы разработки для Jira существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В 2026 актуальны две платформы: Jira Data Center (кластерная on-premise установка с P2/OSGi-плагинами на Java) и Jira Cloud (SaaS с фреймворками Forge и Connect). Jira Server прекращён (EOL февраль 2024). DC даёт полный контроль над данными и инфраструктурой, Cloud — автоматические обновления и мультитенантность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Платформы Jira", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют способы расширения Jira?",
+      "questionSlug": "kakie-sushchestvuyut-sposoby-rasshireniya-jira",
+      "grade": "junior",
+      "tags": ["jira", "основы", "jira-plugin", "jira-forge", "jira-connect", "rest-api"],
+      "seo": {
+        "title": "Какие существуют способы расширения Jira — Gymterview",
+        "description": "Пять способов расширения Jira: P2-плагины (DC), Forge и Connect (Cloud), REST API, ScriptRunner. Сравнительная таблица, когда какой выбирать.",
+        "keywords": ["расширение Jira", "P2 плагины", "Forge", "Connect", "REST API", "ScriptRunner", "Jira Data Center", "Jira Cloud", "Java"],
+        "ogTitle": "Способы расширения Jira: P2, Forge, Connect, REST API, ScriptRunner — Gymterview",
+        "ogDescription": "Сравнение пяти способов расширения Jira: P2-плагины, Forge, Connect, REST API, ScriptRunner. Выбор зависит от платформы и задачи.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют способы расширения Jira?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Пять основных способов: P2 Plugin (Java, Atlassian SDK, DC — максимальная гибкость), Forge (TypeScript, serverless Atlassian, Cloud), Connect (любой язык, свой сервер, Cloud), REST API Integration (внешнее приложение, DC+Cloud), ScriptRunner (Groovy, быстрая кастомизация DC). Выбор определяется платформой и сложностью задачи."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Способы расширения", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Jira REST API и как с ним работать?",
+      "questionSlug": "chto-takoe-jira-rest-api-i-kak-s-nim-rabotat",
+      "grade": "junior",
+      "tags": ["jira", "rest-api", "http", "jira-authentication", "spring-boot"],
+      "seo": {
+        "title": "Что такое Jira REST API и как с ним работать — Gymterview",
+        "description": "Jira REST API v2/v3: аутентификация (PAT, OAuth 2.0, API Token), CRUD задач, пагинация, rate limiting. Примеры на Java Spring RestClient.",
+        "keywords": ["Jira REST API", "REST API v2", "REST API v3", "PAT", "OAuth 2.0", "API Token", "Spring RestClient", "Java", "пагинация"],
+        "ogTitle": "Jira REST API: аутентификация, эндпоинты, примеры на Java — Gymterview",
+        "ogDescription": "Полный обзор Jira REST API: v2 vs v3, методы аутентификации, основные эндпоинты, пагинация и rate limiting с примерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Jira REST API и как с ним работать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jira REST API — основной программный интерфейс для взаимодействия с Jira. API v2 доступен в DC и Cloud, v3 — Cloud-only (поддерживает ADF). Аутентификация: PAT для DC, API Token и OAuth 2.0 для Cloud. Поддерживает CRUD задач, поиск через JQL, transitions. Пагинация через startAt/maxResults (Cloud лимит 100), rate limiting — HTTP 429 с Retry-After."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Jira REST API", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JQL (Jira Query Language)?",
+      "questionSlug": "chto-takoe-jql-jira-query-language",
+      "grade": "junior",
+      "tags": ["jira", "jql", "основы", "sql"],
+      "seo": {
+        "title": "Что такое JQL (Jira Query Language) — Gymterview",
+        "description": "JQL: операторы, функции (currentUser, membersOf, startOfWeek), custom fields, производительность. Примеры сложных запросов и использования в Java.",
+        "keywords": ["JQL", "Jira Query Language", "JQL операторы", "JQL функции", "currentUser", "membersOf", "поиск задач Jira", "Java"],
+        "ogTitle": "JQL (Jira Query Language): операторы, функции, примеры — Gymterview",
+        "ogDescription": "Полное руководство по JQL: синтаксис, операторы, встроенные функции, custom fields, оптимизация производительности запросов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JQL (Jira Query Language)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JQL — структурированный язык запросов для поиска задач в Jira. Синтаксис: field operator value [AND|OR]. Операторы: =, !=, ~, IN, WAS, CHANGED. Функции: currentUser(), membersOf(), startOfWeek(). Custom fields по ID (cf[10100]) надёжнее, чем по имени. WAS/CHANGED — дорогие операции, сканируют историю."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "JQL", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Webhooks в Jira и как их использовать?",
+      "questionSlug": "chto-takoe-webhooks-v-jira-i-kak-ikh-ispolzovat",
+      "grade": "middle",
+      "tags": ["jira", "webhooks", "event-driven", "spring-boot", "rest-api"],
+      "seo": {
+        "title": "Что такое Webhooks в Jira и как их использовать — Gymterview",
+        "description": "Webhooks в Jira: события, регистрация через REST API, структура payload, Spring Boot listener, безопасность (HMAC, идемпотентность). Примеры кода.",
+        "keywords": ["Jira Webhooks", "webhook listener", "jira:issue_created", "jira:issue_updated", "Spring Boot", "HMAC", "идемпотентность", "Java"],
+        "ogTitle": "Webhooks в Jira: события, payload, Spring Boot обработчик — Gymterview",
+        "ogDescription": "Как использовать Jira Webhooks: push-модель уведомлений, доступные события, безопасность (HMAC-SHA256), асинхронная обработка.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Webhooks в Jira и как их использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Webhook — push-механизм уведомления внешних систем о событиях в Jira через HTTP POST. Доступные события: issue_created, issue_updated, sprint_started и другие. Безопасность: Shared Secret (HMAC-SHA256), HTTPS, IP Whitelisting. Webhook должен ответить за 10 секунд (DC) / 30 секунд (Cloud). Обработчик должен быть идемпотентным."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Webhooks", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как интегрировать внешнее Spring-приложение с Jira?",
+      "questionSlug": "kak-integrirovat-vneshnee-spring-prilozhenie-s-jira",
+      "grade": "middle",
+      "tags": ["jira", "spring-boot", "rest-api", "integration", "webhooks"],
+      "seo": {
+        "title": "Как интегрировать внешнее Spring-приложение с Jira — Gymterview",
+        "description": "Интеграция Spring Boot с Jira: RestClient с retry, синхронизация через JQL, webhook-обработчики, конфигурация. Примеры production-кода на Java.",
+        "keywords": ["Spring Boot Jira", "Jira интеграция", "RestClient", "JQL sync", "webhook обработчик", "retry", "Java", "Spring"],
+        "ogTitle": "Интеграция Spring Boot с Jira: REST API, webhooks, синхронизация — Gymterview",
+        "ogDescription": "Как интегрировать Spring Boot приложение с Jira: Jira Client с retry, пагинация, scheduled sync, webhook listener.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как интегрировать внешнее Spring-приложение с Jira?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Интеграция через две модели: polling (scheduled sync через JQL с пагинацией) и push (webhooks для real-time). Spring Boot 3.x + RestClient с retry (exponential backoff). Конфигурация через application.yml с переменными окружения для токенов. Комбинируйте оба подхода: webhooks для real-time, polling для catch-up."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Интеграция Spring с Jira", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Atlassian SDK и как создать плагин?",
+      "questionSlug": "chto-takoe-atlassian-sdk-i-kak-sozdat-plagin",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "atlassian-sdk", "osgi", "maven"],
+      "seo": {
+        "title": "Что такое Atlassian SDK и как создать плагин — Gymterview",
+        "description": "Atlassian SDK: создание P2-плагина, команды atlas-run/atlas-debug, структура проекта, OSGi-бандлы, Maven конфигурация. QuickReload для ускорения разработки.",
+        "keywords": ["Atlassian SDK", "atlas-run", "atlas-debug", "P2 плагин", "OSGi", "Maven", "Jira DC", "QuickReload", "Java"],
+        "ogTitle": "Atlassian SDK: создание плагинов Jira Data Center — Gymterview",
+        "ogDescription": "Как создать P2-плагин для Jira DC: Atlassian SDK, команды, структура проекта, OSGi-модель, Maven конфигурация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Atlassian SDK и как создать плагин?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atlassian SDK — набор инструментов для разработки P2-плагинов Jira DC, основанный на Maven. Команды: atlas-create-jira-plugin (создание), atlas-run (запуск Jira с плагином), atlas-debug (с debug-портом 5005), atlas-package (сборка JAR). Плагины — OSGi-бандлы с изолированным ClassLoader. Зависимости Jira API имеют scope provided."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Atlassian SDK", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое atlassian-plugin.xml и какие модули плагина существуют?",
+      "questionSlug": "chto-takoe-atlassian-plugin-xml-i-kakie-moduli-plagina-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "atlassian-sdk", "configuration"],
+      "seo": {
+        "title": "Что такое atlassian-plugin.xml и какие модули плагина существуют — Gymterview",
+        "description": "Дескриптор atlassian-plugin.xml: REST, Servlet, Web Item/Panel/Resource, Workflow Function, Custom Field Type, Component, Listener. Примеры XML.",
+        "keywords": ["atlassian-plugin.xml", "P2 модули", "web-item", "web-panel", "servlet", "REST module", "workflow-function", "custom-field-type", "Jira DC"],
+        "ogTitle": "atlassian-plugin.xml: модули P2-плагина Jira — Gymterview",
+        "ogDescription": "Центральный дескриптор P2-плагина: 12 типов модулей, примеры XML-объявлений, Spring Scanner 2.x vs XML.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое atlassian-plugin.xml и какие модули плагина существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "atlassian-plugin.xml — центральный дескриптор P2-плагина с plugins-version=\"2\" (формат OSGi). Основные модули: REST (JAX-RS эндпоинты), Servlet (веб-страницы), Web Item/Section/Panel/Resource (UI-элементы), Component/Component Import (Spring-компоненты), Workflow Function (post-function, condition, validator), Custom Field Type, Listener, Report. Spring Scanner 2.x позволяет заменить часть XML аннотациями."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "atlassian-plugin.xml", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает Spring в плагинах Jira Data Center?",
+      "questionSlug": "kak-rabotaet-spring-v-plaginakh-jira-data-center",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "spring-boot", "osgi", "dependency-injection"],
+      "seo": {
+        "title": "Как работает Spring в плагинах Jira Data Center — Gymterview",
+        "description": "Atlassian Spring Scanner: @Named, @Inject, @ComponentImport, @ExportAsService. Отличия от Spring Boot, Scanner 2.x vs 1.x. Типичные ошибки.",
+        "keywords": ["Spring Scanner", "@Named", "@Inject", "@ComponentImport", "@ExportAsService", "OSGi", "Jira DC plugin", "Spring Boot отличия"],
+        "ogTitle": "Spring в Jira DC плагинах: Scanner, @Named, @ComponentImport — Gymterview",
+        "ogDescription": "Как работает Atlassian Spring Scanner в OSGi-плагинах: аннотации, отличия от Spring Boot, экспорт/импорт сервисов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает Spring в плагинах Jira Data Center?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Плагины Jira DC используют Atlassian Spring Scanner — обёртку над Spring для OSGi. Аннотации: @Named (вместо @Service/@Component), @Inject (вместо @Autowired), @ComponentImport (импорт Jira-сервисов), @ExportAsService (публикация для других плагинов). Scanner 2.x использует compile-time сканирование (быстрый старт), 1.x — runtime (устарел). Spring Boot стартеры несовместимы с OSGi."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Spring в Jira DC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Active Objects и как с ними работать?",
+      "questionSlug": "chto-takoe-active-objects-i-kak-s-nimi-rabotat",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "orm", "active-objects", "databases"],
+      "seo": {
+        "title": "Что такое Active Objects и как с ними работать — Gymterview",
+        "description": "Active Objects в Jira DC: определение сущностей через интерфейсы, CRUD-операции, @Preload, Upgrade Tasks, миграции. Примеры кода на Java.",
+        "keywords": ["Active Objects", "AO", "Jira ORM", "@Preload", "Upgrade Task", "CRUD", "executeInTransaction", "Jira DC", "Java"],
+        "ogTitle": "Active Objects: ORM для плагинов Jira Data Center — Gymterview",
+        "ogDescription": "Как работать с Active Objects: entity-интерфейсы, CRUD, @Preload для производительности, upgrade tasks для миграций.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Active Objects и как с ними работать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Active Objects — ORM-фреймворк для хранения данных плагинов в БД Jira DC. Сущности определяются как Java-интерфейсы с геттерами/сеттерами. Таблицы создаются автоматически с уникальным префиксом. @Preload обязателен (без него — N+1). Имена колонок в Query — UPPERCASE (PROJECT_KEY). Запись — через executeInTransaction(). Upgrade Tasks — для миграций схемы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Active Objects", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать REST-эндпоинт в плагине Jira DC?",
+      "questionSlug": "kak-sozdat-rest-endpoynt-v-plagine-jira-dc",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "rest-api", "jax-rs"],
+      "seo": {
+        "title": "Как создать REST-эндпоинт в плагине Jira DC — Gymterview",
+        "description": "REST-модуль Jira DC плагина: JAX-RS (Jersey), @Path, аутентификация, авторизация, DTO, @AnonymousAllowed. Полный пример CRUD ресурса.",
+        "keywords": ["REST эндпоинт Jira", "JAX-RS", "Jersey", "@Path", "@GET", "@POST", "Jira DC plugin", "REST API", "Java"],
+        "ogTitle": "REST-эндпоинт в плагине Jira DC: JAX-RS, аутентификация, DTO — Gymterview",
+        "ogDescription": "Как создать REST API в Jira DC плагине: JAX-RS аннотации, проверка прав, DTO вместо AO entity, CORS.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать REST-эндпоинт в плагине Jira DC?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REST-модуль объявляется в atlassian-plugin.xml как <rest path=\"/myapi\" version=\"1.0\">. Ресурсы используют JAX-RS аннотации (@Path, @GET, @POST, @Consumes, @Produces). По умолчанию требуется аутентификация, @AnonymousAllowed — для открытых эндпоинтов. Всегда возвращайте DTO вместо AO entity. URL: /rest/myapi/1.0/..."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "REST-эндпоинт в DC", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать Servlet Module в плагине?",
+      "questionSlug": "kak-sozdat-servlet-module-v-plagine",
+      "grade": "middle",
+      "tags": ["jira", "jira-plugin", "servlet", "velocity"],
+      "seo": {
+        "title": "Как создать Servlet Module в плагине Jira DC — Gymterview",
+        "description": "Servlet Module для Jira DC: HttpServlet, Velocity-шаблоны, декоратор atl.admin, AUI, webResourceManager. Создание административных страниц плагина.",
+        "keywords": ["Servlet Module", "Jira плагин", "Velocity", "atl.admin", "AUI", "HttpServlet", "административная страница", "Jira DC"],
+        "ogTitle": "Servlet Module: веб-страницы в Jira DC плагине — Gymterview",
+        "ogDescription": "Создание веб-страниц плагина: HttpServlet, Velocity-шаблоны, декоратор atl.admin, AUI-компоненты, защита от XSS.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать Servlet Module в плагине?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Servlet Module объявляется в atlassian-plugin.xml с url-pattern. Реализация наследует HttpServlet с @Named и DI через @Inject. Velocity — стандартный шаблонизатор, декоратор atl.admin оборачивает страницу в layout Jira. $webResourceManager.requireResource подключает CSS/JS. Обязательна проверка прав и экранирование вывода (htmlEncode)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Servlet Module", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать Custom Field Type?",
+      "questionSlug": "kak-sozdat-custom-field-type",
+      "grade": "senior",
+      "tags": ["jira", "jira-plugin", "custom-field", "velocity"],
+      "seo": {
+        "title": "Как создать Custom Field Type в Jira DC — Gymterview",
+        "description": "Custom Field Type для Jira DC: AbstractSingleFieldType, валидация, Velocity-шаблоны (view/edit), Searcher для JQL. Полный пример PriorityScoreField.",
+        "keywords": ["Custom Field Type", "Jira кастомное поле", "AbstractSingleFieldType", "Velocity", "Searcher", "JQL", "Jira DC plugin", "Java"],
+        "ogTitle": "Custom Field Type: кастомные поля в Jira DC — Gymterview",
+        "ogDescription": "Как создать кастомное поле Jira: наследование от AbstractSingleFieldType, валидация, view/edit шаблоны, Searcher для JQL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать Custom Field Type?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Custom Field Type создаётся через наследование от AbstractSingleFieldType (одиночное значение) или AbstractMultiCFType (множественное). Методы: getDatabaseType (тип хранения), getSingularObjectFromString (валидация), getVelocityParameters (данные для шаблонов). Шаблоны: view, edit, xml — обязательные. Searcher обязателен для доступа в JQL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Custom Field Type", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать Workflow Post-Function, Condition, Validator?",
+      "questionSlug": "kak-sozdat-workflow-post-function-condition-validator",
+      "grade": "senior",
+      "tags": ["jira", "jira-plugin", "workflow", "jira-workflow"],
+      "seo": {
+        "title": "Как создать Workflow Post-Function, Condition, Validator — Gymterview",
+        "description": "Расширения workflow Jira DC: Post-Function (действие после перехода), Condition (видимость перехода), Validator (проверка перед). Factory-классы и Velocity.",
+        "keywords": ["Workflow Post-Function", "Workflow Condition", "Workflow Validator", "FunctionProvider", "Jira workflow", "Factory", "Jira DC plugin"],
+        "ogTitle": "Workflow расширения: Post-Function, Condition, Validator — Gymterview",
+        "ogDescription": "Три типа расширений workflow Jira DC: Post-Function, Condition, Validator. Реализация, Factory-классы, типичные ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать Workflow Post-Function, Condition, Validator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три типа расширений workflow: Post-Function (FunctionProvider, действие после перехода — назначить, обновить поле), Condition (AbstractJiraCondition, видимость кнопки перехода — возвращает boolean), Validator (проверка перед переходом — бросает InvalidInputException). Factory-класс обязателен для UI конфигурации. В Condition нельзя бросать исключения. ScriptRunner покрывает ~80% сценариев без Java."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Разработка для Jira", "url": "/topics/jira" },
+          { "name": "Workflow расширения", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

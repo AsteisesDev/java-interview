@@ -1,0 +1,473 @@
+{
+  "topic": "Работа в CLI (Bash)",
+  "topicSlug": "bash",
+  "batch": 2,
+  "generatedAt": "2026-05-09T15:00:00Z",
+  "questions": [
+    {
+      "question": "Как работают права доступа к файлам в Linux?",
+      "questionSlug": "kak-rabotayut-prava-dostupa-k-failam-v-linux",
+      "grade": "junior",
+      "tags": ["bash", "linux", "permissions", "chmod"],
+      "seo": {
+        "title": "Права доступа к файлам в Linux: chmod, chown, umask -- Gymterview",
+        "description": "Как работают права доступа к файлам в Linux? Категории пользователей (owner, group, others), типы прав rwx, числовое представление, команды chmod, chown, chgrp и umask с примерами.",
+        "keywords": ["права доступа Linux", "chmod", "chown", "chgrp", "umask", "rwx", "файловые права", "числовое представление прав"],
+        "ogTitle": "Права доступа к файлам в Linux: chmod, chown, umask -- Gymterview",
+        "ogDescription": "Разбор системы прав доступа к файлам в Linux: категории пользователей, типы прав rwx, числовой формат и команды chmod, chown, umask.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают права доступа к файлам в Linux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Каждый файл в Linux имеет три категории пользователей: Owner (u), Group (g), Others (o) и три типа прав: r (read, 4) -- чтение, w (write, 2) -- запись, x (execute, 1) -- выполнение. Права записываются символьно (rwxr-xr--) или в восьмеричном формате (754). Команда chmod изменяет права (символьный или числовой формат), chown -- владельца и группу, chgrp -- группу. Маска umask определяет права по умолчанию для новых файлов: базовые права минус umask (например, 666 - 022 = 644 для файлов)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Права доступа к файлам", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое специальные биты: sticky bit, SUID, SGID?",
+      "questionSlug": "chto-takoe-specialnye-bity-sticky-bit-suid-sgid",
+      "grade": "middle",
+      "tags": ["bash", "linux", "permissions", "security"],
+      "seo": {
+        "title": "Специальные биты: sticky bit, SUID, SGID в Linux -- Gymterview",
+        "description": "Что такое специальные биты SUID, SGID и sticky bit в Linux? Назначение, числовые значения, практические примеры установки и поиска файлов со специальными битами.",
+        "keywords": ["sticky bit", "SUID", "SGID", "специальные биты Linux", "set user id", "set group id", "безопасность Linux"],
+        "ogTitle": "Специальные биты: sticky bit, SUID, SGID в Linux -- Gymterview",
+        "ogDescription": "Подробный разбор специальных битов SUID, SGID и sticky bit: назначение, установка и поиск файлов со специальными битами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое специальные биты: sticky bit, SUID, SGID?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Помимо стандартных прав rwx, существуют три специальных бита. SUID (4000) -- при установке на исполняемый файл программа запускается с правами владельца файла (например, passwd запускается от root). SGID (2000) -- для файлов запуск с правами группы-владельца, для директорий новые файлы наследуют группу директории. Sticky bit (1000) -- для директорий позволяет удалять файлы только их владельцу (классический пример -- /tmp). Устанавливаются через chmod (например, chmod 4755 program, chmod +t directory)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Специальные биты: sticky bit, SUID, SGID", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое символические и жёсткие ссылки?",
+      "questionSlug": "chto-takoe-simvolicheskie-i-zhyostkie-ssylki",
+      "grade": "junior",
+      "tags": ["bash", "linux", "filesystem"],
+      "seo": {
+        "title": "Символические и жёсткие ссылки в Linux: hard link vs symlink -- Gymterview",
+        "description": "Что такое символические и жёсткие ссылки в Linux? Различия hard link и symlink, создание командой ln, inode, практические примеры переключения версий Java.",
+        "keywords": ["символическая ссылка", "жёсткая ссылка", "hard link", "symlink", "soft link", "ln", "inode", "ссылки Linux"],
+        "ogTitle": "Символические и жёсткие ссылки в Linux: hard link vs symlink -- Gymterview",
+        "ogDescription": "Сравнение жёстких и символических ссылок в Linux: inode, поведение при удалении оригинала, ограничения и практические примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое символические и жёсткие ссылки?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Жёсткая ссылка (hard link) -- дополнительное имя для того же файла (того же inode), все жёсткие ссылки равноправны, данные сохраняются, пока есть хоть одна ссылка. Символическая ссылка (symlink) -- отдельный файл, содержащий путь к целевому файлу, аналог ярлыка. Ключевые различия: жёсткие ссылки не могут указывать на директории и пересекать файловые системы, при удалении оригинала symlink становится битой. Создаются командой ln (без флагов -- жёсткая, с -s -- символическая). Практический пример: переключение версии Java через ln -sf."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Символические и жёсткие ссылки", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как архивировать и сжимать файлы?",
+      "questionSlug": "kak-arkhivirovat-i-szhimat-faily",
+      "grade": "junior",
+      "tags": ["bash", "linux", "архивация"],
+      "seo": {
+        "title": "Архивация и сжатие файлов: tar, gzip, zip в Linux -- Gymterview",
+        "description": "Как архивировать и сжимать файлы в Linux? Команды tar, gzip, zip/unzip. Форматы tar.gz, tar.bz2, tar.xz. Практические примеры бэкапа проектов и ротации логов.",
+        "keywords": ["tar", "gzip", "zip", "unzip", "архивация Linux", "сжатие файлов", "tar.gz", "bzip2", "xz"],
+        "ogTitle": "Архивация и сжатие файлов: tar, gzip, zip в Linux -- Gymterview",
+        "ogDescription": "Подробный разбор архивации и сжатия файлов в Linux: tar, gzip, zip с мнемоникой флагов и практическими примерами.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как архивировать и сжимать файлы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "tar -- основной инструмент архивации: -c создаёт архив, -x распаковывает, -t показывает содержимое, -f указывает файл. Сжатие: -z (gzip, .tar.gz), -j (bzip2, .tar.bz2), -J (xz, .tar.xz). gzip/gunzip сжимают отдельные файлы, с флагом -k сохраняют оригинал. zip/unzip -- кроссплатформенный формат, -r для рекурсивной архивации директорий. Практические примеры: бэкап проекта с исключением target и .git (tar -czf backup.tar.gz --exclude='target' project/), архивация старых логов через find с gzip."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Архивация и сжатие файлов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с SSH?",
+      "questionSlug": "kak-rabotat-s-ssh",
+      "grade": "junior",
+      "tags": ["bash", "linux", "ssh", "security", "networking"],
+      "seo": {
+        "title": "SSH: подключение, ключи, туннели и конфигурация -- Gymterview",
+        "description": "Как работать с SSH? Подключение к серверу, генерация ключей Ed25519/RSA, ssh-agent, конфигурация ~/.ssh/config, SSH-туннелирование и проброс портов.",
+        "keywords": ["SSH", "ssh-keygen", "ssh-agent", "SSH-туннель", "проброс портов", "ssh config", "Ed25519", "RSA ключи"],
+        "ogTitle": "SSH: подключение, ключи, туннели и конфигурация -- Gymterview",
+        "ogDescription": "Полное руководство по SSH: генерация ключей, конфигурация, ssh-agent, туннелирование и проброс портов для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с SSH?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSH (Secure Shell) -- протокол безопасного удалённого подключения. Подключение: ssh user@hostname, с нестандартным портом -- ssh -p 2222. Генерация ключей: ssh-keygen -t ed25519 (рекомендуется) или ssh-keygen -t rsa -b 4096. Копирование ключа на сервер: ssh-copy-id user@hostname. ssh-agent хранит ключи в памяти, избавляя от ввода passphrase. Файл ~/.ssh/config позволяет задать алиасы серверов. SSH-туннелирование: локальный проброс (-L), удалённый (-R) и динамический SOCKS-прокси (-D). Критически важны права: 700 на ~/.ssh, 600 на приватный ключ."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Работа с SSH", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как передавать файлы между машинами с помощью scp и rsync?",
+      "questionSlug": "kak-peredavat-faily-mezhdu-mashinami-s-pomoshchyu-scp-i-rsync",
+      "grade": "junior",
+      "tags": ["bash", "linux", "ssh", "networking", "devops"],
+      "seo": {
+        "title": "scp и rsync: передача файлов между серверами -- Gymterview",
+        "description": "Как передавать файлы между машинами с помощью scp и rsync? Сравнение, дельта-копирование, синхронизация, исключения, практический пример деплоя Java-приложения.",
+        "keywords": ["scp", "rsync", "передача файлов", "синхронизация файлов", "дельта-копирование", "деплой Java", "копирование через SSH"],
+        "ogTitle": "scp и rsync: передача файлов между серверами -- Gymterview",
+        "ogDescription": "Сравнение scp и rsync для передачи файлов: дельта-копирование, сжатие, исключения и практический пример деплоя Java-приложения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как передавать файлы между машинами с помощью scp и rsync?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "scp (Secure Copy) -- простое копирование файлов через SSH: scp file.txt user@server:/tmp/, с -r для рекурсивного копирования директорий. rsync -- продвинутая синхронизация с дельта-копированием (передаёт только изменения), поддержкой сжатия (-z), возобновления (--partial), исключений (--exclude) и удаления лишних файлов (--delete). Типичный вызов: rsync -avz --progress source/ user@server:/dest/. rsync превосходит scp по эффективности, но scp проще в использовании. Практический пример деплоя: mvn clean package, rsync jar на сервер, ssh restart."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "scp и rsync", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как писать bash-скрипты?",
+      "questionSlug": "kak-pisat-bash-skripty",
+      "grade": "junior",
+      "tags": ["bash", "linux", "scripting", "автоматизация"],
+      "seo": {
+        "title": "Bash-скрипты: переменные, циклы, функции, примеры -- Gymterview",
+        "description": "Как писать bash-скрипты? Shebang, переменные, аргументы, условия if/elif/else, циклы for/while, функции, set -euo pipefail. Полный пример скрипта деплоя.",
+        "keywords": ["bash скрипт", "shebang", "переменные bash", "циклы bash", "функции bash", "set -euo pipefail", "автоматизация", "shell scripting"],
+        "ogTitle": "Bash-скрипты: переменные, циклы, функции, примеры -- Gymterview",
+        "ogDescription": "Полное руководство по написанию bash-скриптов: переменные, циклы, функции, строгий режим и пример скрипта деплоя Java-приложения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как писать bash-скрипты?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bash-скрипт -- текстовый файл с командами, начинающийся с shebang (#!/bin/bash или #!/usr/bin/env bash). Переменные задаются без пробелов вокруг = (name=\"World\"), результат команды -- через $(command). Аргументы доступны через $0 (имя скрипта), $1-$N (аргументы), $@ (все), $# (количество). Условия: if/elif/else/fi. Циклы: for (по списку, с диапазоном, C-style) и while. Функции поддерживают локальные переменные (local) и значения по умолчанию (${2:-default}). Рекомендуемый шаблон: set -euo pipefail для строгого режима обработки ошибок."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Bash-скрипты", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают условные выражения в bash?",
+      "questionSlug": "kak-rabotayut-uslovnye-vyrazheniya-v-bash",
+      "grade": "junior",
+      "tags": ["bash", "linux", "scripting"],
+      "seo": {
+        "title": "Условные выражения в bash: test, [ ] и [[ ]] -- Gymterview",
+        "description": "Как работают условные выражения в bash? Конструкции test, [ ] и [[ ]]. Проверки файлов, сравнение строк и чисел, логические операции, glob-паттерны и регулярные выражения.",
+        "keywords": ["условные выражения bash", "test bash", "двойные скобки bash", "проверка файлов bash", "сравнение строк bash", "регулярные выражения bash", "[[ ]]"],
+        "ogTitle": "Условные выражения в bash: test, [ ] и [[ ]] -- Gymterview",
+        "ogDescription": "Разбор условных выражений bash: test, [ ] и [[ ]], проверки файлов, сравнение строк и чисел, логические операции и regex.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают условные выражения в bash?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bash предоставляет три способа проверки условий: test и [ ] (POSIX-совместимые, эквивалентны) и [[ ]] (расширенная конструкция bash, рекомендуется). Проверки файлов: -f (файл), -d (директория), -e (существует), -r/-w/-x (доступ), -s (не пуст). Сравнение строк: ==, !=, -z (пуста), -n (не пуста). Числа: -eq, -ne, -lt, -le, -gt, -ge или арифметика (( )). Преимущества [[ ]]: поддержка glob-паттернов (== *.java), регулярных выражений (=~), логических операторов && и || внутри выражения, безопасная работа с пустыми переменными."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Условные выражения в bash", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое exit codes и как с ними работать?",
+      "questionSlug": "chto-takoe-exit-codes-i-kak-s-nimi-rabotat",
+      "grade": "junior",
+      "tags": ["bash", "linux", "scripting"],
+      "seo": {
+        "title": "Exit codes в bash: коды возврата, set -euo pipefail -- Gymterview",
+        "description": "Что такое exit codes и как с ними работать? Коды возврата 0-255, $?, логические операторы &&/||, set -e, set -u, set -o pipefail и строгий режим скриптов.",
+        "keywords": ["exit code", "код возврата", "set -e", "set -u", "pipefail", "$?", "bash ошибки", "строгий режим bash"],
+        "ogTitle": "Exit codes в bash: коды возврата, set -euo pipefail -- Gymterview",
+        "ogDescription": "Полный разбор exit codes: соглашения о кодах возврата, проверка через $?, set -euo pipefail для строгого режима скриптов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое exit codes и как с ними работать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Exit code -- целое число 0-255, возвращаемое процессом при завершении. 0 означает успех, 1 -- общую ошибку, 2 -- неправильное использование, 126 -- файл не исполняемый, 127 -- команда не найдена, 128+N -- завершение сигналом (137 = SIGKILL, 130 = SIGINT). Код последней команды доступен через $?. Операторы && и || позволяют строить цепочки по результату. Рекомендуемый шаблон для скриптов: set -euo pipefail -- set -e останавливает при ошибке, set -u -- при неопределённой переменной, set -o pipefail -- учитывает ошибки в пайпах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Exit codes", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать xargs?",
+      "questionSlug": "kak-ispolzovat-xargs",
+      "grade": "middle",
+      "tags": ["bash", "linux", "scripting", "автоматизация"],
+      "seo": {
+        "title": "xargs: преобразование stdin в аргументы команд -- Gymterview",
+        "description": "Как использовать xargs? Преобразование stdin в аргументы, флаги -I, -n, -0, -P для параллельного выполнения. Практические примеры: удаление файлов, grep, подсчёт строк кода.",
+        "keywords": ["xargs", "xargs примеры", "xargs -I", "xargs -0", "параллельное выполнение xargs", "find xargs", "stdin аргументы"],
+        "ogTitle": "xargs: преобразование stdin в аргументы команд -- Gymterview",
+        "ogDescription": "Подробный разбор xargs: преобразование stdin в аргументы, подстановка, параллельное выполнение и практические примеры для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать xargs?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "xargs читает данные из stdin и передаёт их как аргументы другой команде, являясь мостом между пайпами и командами, не читающими stdin (rm, chmod, mv). Основные флаги: -I {} -- подстановка плейсхолдера, -n N -- передавать по N аргументов, -0 -- разделитель NUL для файлов с пробелами (вместе с find -print0), -d -- указать разделитель, -P N -- параллельное выполнение в N процессов, -p -- подтверждение. Примеры: find . -name '*.class' | xargs rm -f, find src -name '*.java' | xargs wc -l. Для надёжности с именами файлов используйте -print0 | xargs -0."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Использование xargs", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как выполнять HTTP-запросы из командной строки с помощью curl и wget?",
+      "questionSlug": "kak-vypolnyat-http-zaprosy-iz-komandnoy-stroki-s-pomoshchyu-curl-i-wget",
+      "grade": "junior",
+      "tags": ["bash", "linux", "networking", "http", "curl"],
+      "seo": {
+        "title": "curl и wget: HTTP-запросы из командной строки -- Gymterview",
+        "description": "Как выполнять HTTP-запросы из командной строки? curl: GET, POST, PUT, DELETE, заголовки, аутентификация. wget: скачивание файлов. Практические примеры тестирования REST API и Spring Boot Actuator.",
+        "keywords": ["curl", "wget", "HTTP-запросы CLI", "curl POST JSON", "curl заголовки", "REST API тестирование", "curl примеры"],
+        "ogTitle": "curl и wget: HTTP-запросы из командной строки -- Gymterview",
+        "ogDescription": "Полное руководство по curl и wget: HTTP-методы, заголовки, аутентификация, скачивание файлов и тестирование REST API.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как выполнять HTTP-запросы из командной строки с помощью curl и wget?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "curl -- универсальный инструмент для HTTP-запросов: GET (по умолчанию), POST/PUT/DELETE/PATCH через -X, заголовки через -H, тело через -d, файлы через -F. Полезные флаги: -s (тихий режим), -i/-I (заголовки), -v (отладка), -L (следовать редиректам), -o (сохранить в файл), -w '%{http_code}' (код ответа). wget предназначен для скачивания: -O (имя файла), -c (продолжить загрузку), -r (рекурсивно). Практические примеры: проверка Spring Boot health endpoint (curl -s localhost:8080/actuator/health | jq .), тестирование REST API с JSON-телом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "curl и wget", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с JSON в командной строке с помощью jq?",
+      "questionSlug": "kak-rabotat-s-json-v-komandnoy-stroke-s-pomoshchyu-jq",
+      "grade": "middle",
+      "tags": ["bash", "linux", "json", "jq"],
+      "seo": {
+        "title": "jq: обработка JSON в командной строке -- Gymterview",
+        "description": "Как работать с JSON в командной строке с помощью jq? Извлечение полей, работа с массивами, фильтрация select, трансформация, map, sort_by. Примеры с curl, Docker, Kubernetes.",
+        "keywords": ["jq", "JSON командная строка", "jq select", "jq map", "jq фильтрация", "парсинг JSON", "jq примеры"],
+        "ogTitle": "jq: обработка JSON в командной строке -- Gymterview",
+        "ogDescription": "Полный разбор jq: извлечение полей, массивы, фильтрация, трансформация и практические примеры с curl, Docker и Kubernetes.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с JSON в командной строке с помощью jq?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "jq -- мощный инструмент для обработки JSON в CLI. Базовое использование: jq . для pretty print, jq '.field' для извлечения поля, jq -r для вывода без кавычек. Массивы: .[0] (элемент), .[] (итерация), length (размер), .[2:4] (срез). Фильтрация: select(.age > 28) выбирает по условию. Трансформация: создание новых объектов {fullName: (.first + \" \" + .last)}, map(. * 2) для преобразования массива, sort_by(.name) для сортировки. Преобразование в CSV: @csv. Практические примеры: парсинг Spring Boot Actuator, docker inspect, kubectl get pods."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Работа с JSON через jq", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое cron и crontab?",
+      "questionSlug": "chto-takoe-cron-i-crontab",
+      "grade": "junior",
+      "tags": ["bash", "linux", "cron", "автоматизация", "devops"],
+      "seo": {
+        "title": "cron и crontab: планирование задач в Linux -- Gymterview",
+        "description": "Что такое cron и crontab? Формат записи cron, специальные символы, @reboot/@daily/@weekly, примеры расписаний для бэкапов, health check и ротации логов Java-приложений.",
+        "keywords": ["cron", "crontab", "планировщик задач Linux", "формат cron", "cron выражение", "расписание задач", "crontab примеры"],
+        "ogTitle": "cron и crontab: планирование задач в Linux -- Gymterview",
+        "ogDescription": "Полный разбор cron и crontab: формат расписания, специальные символы и строки, практические примеры для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое cron и crontab?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cron -- системный демон-планировщик задач в Linux, crontab -- таблица расписаний для пользователя. Формат: минуты (0-59) часы (0-23) день_месяца (1-31) месяц (1-12) день_недели (0-7). Спецсимволы: * (любое), , (перечисление), - (диапазон), / (шаг, например */5 -- каждые 5 минут). Специальные строки: @reboot, @hourly, @daily, @weekly, @monthly. Управление: crontab -e (редактировать), -l (показать), -r (удалить). Важно: cron запускается с минимальным окружением, поэтому нужно задавать PATH и JAVA_HOME явно, а вывод перенаправлять в лог."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "cron и crontab", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое мультиплексоры терминала screen и tmux?",
+      "questionSlug": "chto-takoe-multipleksory-terminala-screen-i-tmux",
+      "grade": "middle",
+      "tags": ["bash", "linux", "tmux", "devops"],
+      "seo": {
+        "title": "screen и tmux: мультиплексоры терминала -- Gymterview",
+        "description": "Что такое мультиплексоры терминала screen и tmux? Сессии, окна, панели. Горячие клавиши, конфигурация ~/.tmux.conf, workflow Java-разработчика с tmux.",
+        "keywords": ["tmux", "screen", "мультиплексор терминала", "tmux горячие клавиши", "tmux сессии", "tmux конфигурация", "терминал Linux"],
+        "ogTitle": "screen и tmux: мультиплексоры терминала -- Gymterview",
+        "ogDescription": "Разбор мультиплексоров screen и tmux: управление сессиями, окнами и панелями, конфигурация и workflow для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое мультиплексоры терминала screen и tmux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мультиплексоры терминала позволяют создавать несколько виртуальных сессий в одном терминале, отсоединяться и возвращаться позже -- процессы продолжат работать даже при обрыве SSH. screen -- классический мультиплексор (префикс Ctrl+a). tmux -- современная альтернатива (рекомендуется), использует иерархию сессия-окна-панели с префиксом Ctrl+b. Основные команды tmux: new -s name (создать сессию), attach -t name (подключиться), ls (список). Панели: Ctrl+b % (вертикальное разделение), Ctrl+b \" (горизонтальное), Ctrl+b z (zoom). Конфигурация через ~/.tmux.conf."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "screen и tmux", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие полезные однострочники должен знать Java-разработчик?",
+      "questionSlug": "kakie-poleznye-odnostrochniki-dolzhen-znat-java-razrabotchik",
+      "grade": "middle",
+      "tags": ["bash", "linux", "scripting", "автоматизация", "devops"],
+      "seo": {
+        "title": "Полезные bash-однострочники для Java-разработчика -- Gymterview",
+        "description": "Какие однострочники должен знать Java-разработчик? Поиск в логах, подсчёт строк кода, Git-команды, анализ портов и сети, работа с процессами и обработка данных.",
+        "keywords": ["bash однострочники", "bash one-liners", "grep логи", "подсчёт строк кода", "lsof порт", "Git однострочники", "Linux для Java"],
+        "ogTitle": "Полезные bash-однострочники для Java-разработчика -- Gymterview",
+        "ogDescription": "Подборка практических bash-однострочников: поиск в логах, анализ кода, Git, мониторинг портов и процессов для Java-разработчиков.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие полезные однострочники должен знать Java-разработчик?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поиск в логах: grep -oE '[A-Za-z]+Exception' app.log | sort | uniq -c | sort -rn (уникальные исключения с количеством), tail -f app.log | grep --line-buffered 'ERROR' (мониторинг ошибок). Подсчёт кода: find src -name '*.java' | xargs wc -l. Git: git shortlog -sn --all (кто больше коммитил), git log -S 'password' --oneline (поиск по истории). Сеть: lsof -i :8080 (кто слушает порт), ss -tlnp (все порты). Процессы: ps aux | grep '[j]ava' (Java-процессы), du -sh /var/* | sort -rh | head -10 (использование диска). Данные: column -t -s ',' (форматирование CSV)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Работа в CLI (Bash)", "url": "/topics/bash" },
+          { "name": "Полезные однострочники", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

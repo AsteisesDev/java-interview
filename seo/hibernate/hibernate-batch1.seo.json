@@ -1,0 +1,380 @@
+{
+  "topic": "Hibernate",
+  "topicSlug": "hibernate",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Hibernate и зачем он нужен?",
+      "questionSlug": "chto-takoe-hibernate-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": ["hibernate", "jpa", "orm", "spring-data", "databases"],
+      "seo": {
+        "title": "Что такое Hibernate и зачем он нужен — Gymterview",
+        "description": "Узнайте, что такое Hibernate, какую проблему impedance mismatch он решает, основные возможности: маппинг, Dirty Checking, кэширование, ленивая загрузка.",
+        "keywords": ["Hibernate", "ORM", "JPA", "impedance mismatch", "JDBC", "маппинг", "Dirty Checking", "кэширование", "Java", "собеседование"],
+        "ogTitle": "Что такое Hibernate и зачем он нужен — Gymterview",
+        "ogDescription": "Hibernate — фреймворк ORM для Java. Разбираем проблему impedance mismatch, основные возможности и типичные ошибки использования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Hibernate и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hibernate — фреймворк объектно-реляционного маппинга (ORM) для Java, автоматизирующий преобразование данных между объектной моделью и реляционными таблицами. Решает проблему impedance mismatch: Java оперирует объектами, а БД — таблицами. Основные возможности: маппинг, генерация SQL, Dirty Checking, кэширование (L1/L2), ленивая загрузка, HQL/JPQL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Что такое Hibernate", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ORM? Как Hibernate реализует ORM?",
+      "questionSlug": "chto-takoe-orm-kak-hibernate-realizuet-orm",
+      "grade": "junior",
+      "tags": ["hibernate", "orm", "jpa", "databases", "mapping"],
+      "seo": {
+        "title": "Что такое ORM? Как Hibernate реализует ORM — Gymterview",
+        "description": "ORM — технология связывания объектной и реляционной моделей. Разбираем маппинг понятий (класс→таблица, поле→столбец) и реализацию в Hibernate.",
+        "keywords": ["ORM", "Object-Relational Mapping", "Hibernate", "маппинг", "класс таблица", "JPA", "аннотации", "Entity", "Java"],
+        "ogTitle": "ORM и Hibernate: маппинг объектов на таблицы — Gymterview",
+        "ogDescription": "Что такое ORM, как Hibernate маппит классы на таблицы, поля на столбцы, ссылки на FK. Примеры аннотаций и типичные ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ORM? Как Hibernate реализует ORM?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ORM (Object-Relational Mapping) — технология, связывающая объектную модель приложения с реляционной моделью БД. Маппинг: класс → таблица, объект → строка, поле → столбец, ссылка → FK, коллекция → join-таблица. Hibernate реализует ORM через аннотации (@Entity, @Table, @Column), автоматически выполняя SELECT, INSERT, UPDATE, DELETE."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "ORM", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JPA и как Hibernate связан с JPA?",
+      "questionSlug": "chto-takoe-jpa-i-kak-hibernate-svyazan-s-jpa",
+      "grade": "junior",
+      "tags": ["hibernate", "jpa", "spring-data", "orm"],
+      "seo": {
+        "title": "Что такое JPA и как Hibernate связан с JPA — Gymterview",
+        "description": "JPA — спецификация Java для ORM, Hibernate — её реализация. Разбираем соотношение EntityManager/Session, JPQL/HQL и миграцию на Jakarta.",
+        "keywords": ["JPA", "Jakarta Persistence API", "Hibernate", "EntityManager", "Session", "JPQL", "HQL", "Spring Data JPA", "Java"],
+        "ogTitle": "JPA vs Hibernate: спецификация и реализация — Gymterview",
+        "ogDescription": "Чем JPA отличается от Hibernate, как соотносятся EntityManager и Session, JPQL и HQL. Миграция javax → jakarta.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JPA и как Hibernate связан с JPA?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPA (Jakarta Persistence API) — спецификация Java для ORM, определяющая интерфейсы и аннотации. Hibernate — наиболее популярная реализация JPA. EntityManager (JPA) → Session (Hibernate), EntityManagerFactory → SessionFactory, JPQL → HQL. Используя JPA API, можно заменить реализацию без изменения кода. Hibernate расширяет JPA: @NaturalId, @BatchSize, @Formula."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "JPA", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Архитектура Hibernate: SessionFactory, Session, Transaction",
+      "questionSlug": "arkhitektura-hibernate-sessionfactory-session-transaction",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "architecture", "session", "transaction"],
+      "seo": {
+        "title": "Архитектура Hibernate: SessionFactory, Session, Transaction — Gymterview",
+        "description": "Три ключевых компонента Hibernate: SessionFactory (один на приложение), Session (один на транзакцию, Persistence Context), Transaction. Примеры кода.",
+        "keywords": ["SessionFactory", "Session", "Transaction", "Persistence Context", "EntityManager", "Hibernate архитектура", "потокобезопасность", "Java"],
+        "ogTitle": "Архитектура Hibernate: SessionFactory, Session, Transaction — Gymterview",
+        "ogDescription": "SessionFactory — один на приложение, Session — один на транзакцию, Transaction — атомарная единица работы. Разбираем взаимосвязь компонентов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Архитектура Hibernate: SessionFactory, Session, Transaction",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SessionFactory — тяжёлый потокобезопасный объект, один на приложение, содержит метаданные маппинга. Session — лёгкий, не потокобезопасный, один на единицу работы, представляет Persistence Context (L1 Cache). Transaction — атомарная единица работы с БД. В Spring Session привязана к @Transactional, SessionFactory управляется автоматически."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Архитектура", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Жизненный цикл Entity в Hibernate",
+      "questionSlug": "zhiznennyy-tsikl-entity-v-hibernate",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "entity-lifecycle", "persistence-context"],
+      "seo": {
+        "title": "Жизненный цикл Entity в Hibernate — Gymterview",
+        "description": "Четыре состояния Entity: Transient, Persistent, Detached, Removed. Диаграмма переходов, методы persist/merge/remove и типичные ошибки.",
+        "keywords": ["Entity lifecycle", "Transient", "Persistent", "Detached", "Removed", "persist", "merge", "Dirty Checking", "Hibernate", "JPA"],
+        "ogTitle": "Жизненный цикл Entity: Transient → Persistent → Detached → Removed — Gymterview",
+        "ogDescription": "Разбираем 4 состояния Entity в Hibernate, переходы между ними (persist, merge, detach, remove) и частые ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Жизненный цикл Entity в Hibernate",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entity проходит 4 состояния: Transient (создан через new, Hibernate не знает), Persistent (связан с Persistence Context, изменения отслеживаются), Detached (был persistent, Session закрыта), Removed (помечен на удаление). Переходы: persist() → Persistent, merge() → Persistent (копия), detach()/close() → Detached, remove() → Removed."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Жизненный цикл Entity", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Основные аннотации маппинга сущностей",
+      "questionSlug": "osnovnye-annotatsii-mappinga-sushchnostey",
+      "grade": "junior",
+      "tags": ["hibernate", "jpa", "mapping", "annotations"],
+      "seo": {
+        "title": "Основные аннотации маппинга сущностей в JPA — Gymterview",
+        "description": "Аннотации JPA: @Entity, @Table, @Id, @GeneratedValue, @Column, @Enumerated, @Lob, @Transient, @Embedded, @Version. Примеры и типичные ошибки.",
+        "keywords": ["JPA аннотации", "@Entity", "@Table", "@Column", "@Id", "@GeneratedValue", "@Enumerated", "@Embedded", "@Version", "Hibernate"],
+        "ogTitle": "JPA-аннотации маппинга: @Entity, @Table, @Column, @Id и другие — Gymterview",
+        "ogDescription": "Полный обзор аннотаций JPA для маппинга сущностей с примерами кода. @Enumerated STRING vs ORDINAL, @Embedded, @Version.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Основные аннотации маппинга сущностей",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные аннотации JPA: @Entity (маркер сущности), @Table (настройка таблицы), @Id (PK), @GeneratedValue (генерация ID), @Column (настройка столбца), @Enumerated(STRING) (enum как строка), @Lob (BLOB/CLOB), @Transient (не маппится), @Embedded/@Embeddable (встраиваемый объект), @Version (оптимистичная блокировка). Всегда STRING для enum, не ORDINAL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Аннотации маппинга", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Стратегии генерации идентификаторов",
+      "questionSlug": "strategii-generatsii-identifikatorov",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "primary-key", "sequence", "uuid"],
+      "seo": {
+        "title": "Стратегии генерации идентификаторов в JPA/Hibernate — Gymterview",
+        "description": "IDENTITY, SEQUENCE, TABLE, AUTO, UUID — сравнение стратегий генерации ID. Почему SEQUENCE лучше для batch insert, allocationSize и UUID v7.",
+        "keywords": ["GenerationType", "IDENTITY", "SEQUENCE", "TABLE", "AUTO", "UUID", "batch insert", "allocationSize", "Hibernate", "JPA"],
+        "ogTitle": "Стратегии генерации ID: IDENTITY vs SEQUENCE vs UUID — Gymterview",
+        "ogDescription": "Сравнение стратегий генерации первичного ключа в Hibernate. SEQUENCE + allocationSize для batch insert. UUID v7 для распределённых систем.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Стратегии генерации идентификаторов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JPA поддерживает 5 стратегий: IDENTITY (автоинкремент, не поддерживает batch), SEQUENCE (рекомендуемая, поддерживает batch, allocationSize=50), TABLE (медленная, редко используется), AUTO (Hibernate выбирает сам), UUID (для распределённых систем). SEQUENCE — стандарт для PostgreSQL/Oracle. IDENTITY блокирует batch insert, так как Hibernate должен выполнить INSERT для получения ID."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Генерация ID", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Маппинг связей между сущностями",
+      "questionSlug": "mapping-svyazey-mezhdu-sushchnostyami",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "mapping", "relationships", "fetch"],
+      "seo": {
+        "title": "Маппинг связей между сущностями в Hibernate — Gymterview",
+        "description": "Связи JPA: @ManyToOne, @OneToMany, @OneToOne, @ManyToMany. mappedBy, FetchType.LAZY, синхронизация сторон, Set vs List для ManyToMany.",
+        "keywords": ["ManyToOne", "OneToMany", "OneToOne", "ManyToMany", "mappedBy", "JoinColumn", "FetchType", "LAZY", "Hibernate", "JPA"],
+        "ogTitle": "Маппинг связей: @ManyToOne, @OneToMany, @OneToOne, @ManyToMany — Gymterview",
+        "ogDescription": "Четыре типа связей в JPA/Hibernate. mappedBy, владелец связи, LAZY загрузка, Set vs List. Примеры кода и частые ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Маппинг связей между сущностями",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hibernate поддерживает 4 типа связей: @ManyToOne/@OneToMany (самая частая, FK на стороне Many), @OneToOne (общий PK через @MapsId), @ManyToMany (join-таблица, предпочитайте Set). mappedBy указывает обратную сторону. Правила: всегда LAZY, Set для ManyToMany, синхронизация обеих сторон helper-методами. Золотой стандарт: @ManyToOne(fetch = LAZY) + JOIN FETCH."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Маппинг связей", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое FetchType.LAZY и FetchType.EAGER?",
+      "questionSlug": "chto-takoe-fetchtype-lazy-i-fetchtype-eager",
+      "grade": "junior",
+      "tags": ["hibernate", "jpa", "fetch", "lazy-loading", "performance"],
+      "seo": {
+        "title": "FetchType.LAZY и FetchType.EAGER в Hibernate — Gymterview",
+        "description": "LAZY загружает связь по требованию через прокси, EAGER — сразу. Дефолты: @ManyToOne EAGER, @OneToMany LAZY. Правило: всегда LAZY + JOIN FETCH.",
+        "keywords": ["FetchType", "LAZY", "EAGER", "прокси", "Byte Buddy", "LazyInitializationException", "JOIN FETCH", "Hibernate", "JPA"],
+        "ogTitle": "LAZY vs EAGER загрузка в Hibernate: прокси, дефолты и подводные камни — Gymterview",
+        "ogDescription": "Как работает LAZY через прокси-объекты, почему @ManyToOne по умолчанию EAGER и почему это проблема. Правило: всё LAZY + JOIN FETCH.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое FetchType.LAZY и FetchType.EAGER?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FetchType определяет момент загрузки связанных сущностей. EAGER — сразу с основной сущностью. LAZY — при первом обращении через прокси-объект. Дефолты: @ManyToOne и @OneToOne — EAGER, @OneToMany и @ManyToMany — LAZY. Правило: всегда явно указывать LAZY, загружать нужные данные через JOIN FETCH или @EntityGraph. LAZY требует открытой Session."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "LAZY и EAGER", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Проблема N+1 запросов и способы решения",
+      "questionSlug": "problema-n-plus-1-zaprosov-i-sposoby-resheniya",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "n-plus-1", "performance", "fetch"],
+      "seo": {
+        "title": "Проблема N+1 запросов в Hibernate и способы решения — Gymterview",
+        "description": "N+1 — загрузка N сущностей порождает 1+N SQL-запросов. Решения: JOIN FETCH, @EntityGraph, @BatchSize, DTO-проекция. Сравнение подходов с примерами.",
+        "keywords": ["N+1", "N plus 1", "JOIN FETCH", "EntityGraph", "BatchSize", "DTO-проекция", "Hibernate", "производительность", "JPA"],
+        "ogTitle": "Проблема N+1 в Hibernate: причина и 4 способа решения — Gymterview",
+        "ogDescription": "Разбираем проблему N+1 запросов и решения: JOIN FETCH, @EntityGraph, @BatchSize, DTO-проекция. Сравнительная таблица подходов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Проблема N+1 запросов и способы решения",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "N+1 — самая частая проблема производительности Hibernate: загрузка N сущностей генерирует 1 основной + N дополнительных запросов для связей. Решения: JOIN FETCH (один SQL с JOIN), @EntityGraph (декларативный), @BatchSize (IN-запросы по N ID), DTO-проекция (максимальная эффективность). Стандартный подход: default_batch_fetch_size=25 глобально + JOIN FETCH для критичных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "Проблема N+1", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое кэш первого уровня (L1 Cache)?",
+      "questionSlug": "chto-takoe-kesh-pervogo-urovnya-l1-cache",
+      "grade": "junior",
+      "tags": ["hibernate", "jpa", "caching", "persistence-context", "l1-cache"],
+      "seo": {
+        "title": "Кэш первого уровня (L1 Cache) в Hibernate — Gymterview",
+        "description": "L1 Cache = Persistence Context = Session. Обязательный кэш в рамках транзакции: identity guarantee, Dirty Checking, write-behind. Очистка через clear().",
+        "keywords": ["L1 Cache", "кэш первого уровня", "Persistence Context", "Session", "Dirty Checking", "identity", "Hibernate", "JPA"],
+        "ogTitle": "L1 Cache в Hibernate: Persistence Context и identity guarantee — Gymterview",
+        "ogDescription": "L1 Cache — обязательный кэш Hibernate, привязанный к Session. Гарантия identity, Dirty Checking, write-behind. Проблема OOM при batch.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое кэш первого уровня (L1 Cache)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L1 Cache (кэш первого уровня) — Persistence Context, привязанный к Session/EntityManager. Обязательный кэш, нельзя отключить. Живёт в рамках одной транзакции. Гарантирует identity (один ID → один объект), обеспечивает Dirty Checking и write-behind (SQL откладывается до flush). При batch-обработке нужен clear() для предотвращения OutOfMemoryError."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "L1 Cache", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое кэш второго уровня (L2 Cache)?",
+      "questionSlug": "chto-takoe-kesh-vtorogo-urovnya-l2-cache",
+      "grade": "middle",
+      "tags": ["hibernate", "jpa", "caching", "l2-cache", "performance"],
+      "seo": {
+        "title": "Кэш второго уровня (L2 Cache) в Hibernate — Gymterview",
+        "description": "L2 Cache — опциональный межсессионный кэш Hibernate. Настройка с Ehcache, стратегии конкурентного доступа: READ_ONLY, READ_WRITE, TRANSACTIONAL.",
+        "keywords": ["L2 Cache", "кэш второго уровня", "Ehcache", "JCache", "CacheConcurrencyStrategy", "READ_ONLY", "READ_WRITE", "Hibernate"],
+        "ogTitle": "L2 Cache в Hibernate: настройка Ehcache и стратегии конкурентного доступа — Gymterview",
+        "ogDescription": "L2 Cache — опциональный кэш между всеми Session. Настройка с Ehcache, 4 стратегии доступа, инвалидация при native SQL.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое кэш второго уровня (L2 Cache)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L2 Cache — опциональный кэш, разделяемый между всеми Session в рамках SessionFactory. Хранит данные (не объекты) между транзакциями. Стратегии: READ_ONLY (справочники), NONSTRICT_READ_WRITE, READ_WRITE (часто читаемые, редко обновляемые), TRANSACTIONAL. Провайдеры: Ehcache, Caffeine, Hazelcast. Native SQL обходит L2 Cache — инвалидация не автоматическая."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Hibernate", "url": "/topics/hibernate" },
+          { "name": "L2 Cache", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

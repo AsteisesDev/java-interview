@@ -1,0 +1,53 @@
+{
+  "topic": "Реактивное программирование",
+  "topicSlug": "reactive",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как работает WebClient и чем он отличается от RestTemplate?",
+      "questionSlug": "kak-rabotaet-webclient-i-chem-on-otlichaetsya-ot-resttemplate",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Как работает WebClient и чем он отличается от RestTemplate? — Gymterview",
+        "description": "WebClient — неблокирующий, реактивный HTTP-клиент из Spring WebFlux, пришедший на замену блокирующему RestTemplate. Начиная со Spring 6.1, появился также RestCl",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Как работает WebClient и чем он отличается от RestTemplate? — Gymterview",
+        "ogDescription": "WebClient — неблокирующий, реактивный HTTP-клиент из Spring WebFlux, пришедший на замену блокирующему RestTemplate. Начи",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает WebClient и чем он отличается от RestTemplate?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WebClient — неблокирующий, реактивный HTTP-клиент из Spring WebFlux, пришедший на замену блокирующему RestTemplate. Начиная со Spring 6.1, появился также RestClient — блокирующий клиент с fluent API."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Как работает WebClient и чем он отличается от RestTemplate?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

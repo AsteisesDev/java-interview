@@ -1,0 +1,659 @@
+{
+  "topic": "Java Collections Framework",
+  "topicSlug": "jcf",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое коллекция",
+      "questionSlug": "chto-takoe-kollektsiya",
+      "grade": "junior",
+      "tags": ["jcf", "основы", "core"],
+      "seo": {
+        "title": "Что такое коллекция в Java — Gymterview",
+        "description": "Узнайте, что такое коллекция в Java, как устроен Java Collections Framework (JCF), какие структуры данных входят в пакет java.util и зачем нужен autoboxing.",
+        "keywords": ["коллекция", "Java Collections Framework", "JCF", "java.util", "структура данных", "Collection", "autoboxing", "Java", "собеседование"],
+        "ogTitle": "Что такое коллекция в Java — Gymterview",
+        "ogDescription": "Определение коллекции, обзор JCF и основных интерфейсов. Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое коллекция",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Коллекция — это структура данных, представляющая набор объектов для совместного хранения и обработки. В Java все коллекции входят в Java Collections Framework (JCF) — набор интерфейсов и классов в пакете java.util: списки, множества, очереди и ассоциативные массивы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Что такое коллекция", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Назовите основные интерфейсы JCF и их реализации",
+      "questionSlug": "nazovite-osnovnye-interfeysy-jcf-i-ikh-realizatsii",
+      "grade": "junior",
+      "tags": ["jcf", "interface", "основы"],
+      "seo": {
+        "title": "Основные интерфейсы JCF и их реализации — Gymterview",
+        "description": "Обзор интерфейсов Java Collections Framework: List, Set, Queue, Map и их реализации — ArrayList, HashSet, HashMap, TreeMap и другие. Полная иерархия JCF.",
+        "keywords": ["JCF", "интерфейсы", "List", "Set", "Queue", "Map", "ArrayList", "HashMap", "HashSet", "TreeMap", "Java", "собеседование"],
+        "ogTitle": "Основные интерфейсы JCF и их реализации — Gymterview",
+        "ogDescription": "Полный обзор интерфейсов и реализаций Java Collections Framework: List, Set, Queue, Map.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Назовите основные интерфейсы JCF и их реализации",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Корневые интерфейсы JCF: Collection (List, Set, Queue) и Map. Реализации List: ArrayList, LinkedList, Vector, Stack. Set: HashSet, LinkedHashSet, TreeSet. Queue: PriorityQueue, ArrayDeque. Map: HashMap, LinkedHashMap, TreeMap, Hashtable, WeakHashMap."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Интерфейсы JCF", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расположите в виде иерархии интерфейсы List, Set, Map, SortedSet, SortedMap, Collection, Iterable, Iterator, NavigableSet, NavigableMap",
+      "questionSlug": "raspolozhite-v-vide-ierarkhii-interfeysy-list-set-map-sortedset-sortedmap-collection-iterable-iterator-navigableset-navigablemap",
+      "grade": "junior",
+      "tags": ["jcf", "interface", "наследование"],
+      "seo": {
+        "title": "Иерархия интерфейсов JCF: List, Set, Map, Collection, Iterable — Gymterview",
+        "description": "Иерархия интерфейсов Java Collections Framework: Iterable → Collection → List/Set/Queue, Map → SortedMap → NavigableMap, Iterator отдельно.",
+        "keywords": ["иерархия JCF", "Iterable", "Collection", "List", "Set", "Map", "SortedSet", "NavigableSet", "SortedMap", "NavigableMap", "Iterator", "Java"],
+        "ogTitle": "Иерархия интерфейсов JCF — Gymterview",
+        "ogDescription": "Дерево наследования интерфейсов Java Collections Framework: Iterable, Collection, List, Set, Queue, Map.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расположите в виде иерархии интерфейсы List, Set, Map, SortedSet, SortedMap, Collection, Iterable, Iterator, NavigableSet, NavigableMap",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Iterable → Collection → List, Set (→ SortedSet → NavigableSet), Queue (→ Deque). Map → SortedMap → NavigableMap. Iterator — отдельный интерфейс, не наследует Iterable."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Иерархия интерфейсов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему Map — это не Collection, в то время как List и Set являются Collection",
+      "questionSlug": "pochemu-map-eto-ne-collection-v-to-vremya-kak-list-i-set-yavlyayutsya-collection",
+      "grade": "junior",
+      "tags": ["jcf", "interface", "основы"],
+      "seo": {
+        "title": "Почему Map — это не Collection — Gymterview",
+        "description": "Почему Map не наследует Collection в Java: Collection хранит отдельные элементы, Map — пары ключ-значение. Разбор view-представлений keySet, values, entrySet.",
+        "keywords": ["Map", "Collection", "keySet", "values", "entrySet", "JCF", "Java", "собеседование"],
+        "ogTitle": "Почему Map не наследует Collection в Java — Gymterview",
+        "ogDescription": "Collection хранит элементы, Map хранит пары ключ-значение — разные абстракции. View-представления: keySet(), values(), entrySet().",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему Map — это не Collection, в то время как List и Set являются Collection",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collection хранит отдельные элементы, Map — пары ключ-значение. Если бы Map расширял Collection, возникла бы двусмысленность: что считать элементом. Map предоставляет view-представления keySet(), values(), entrySet() как мост к Collection."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Map и Collection", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между классами java.util.Collection и java.util.Collections",
+      "questionSlug": "v-chem-raznitsa-mezhdu-klassami-javautilcollection-i-javautilcollections",
+      "grade": "junior",
+      "tags": ["jcf", "основы", "core"],
+      "seo": {
+        "title": "Разница между Collection и Collections в Java — Gymterview",
+        "description": "Collection — корневой интерфейс коллекций. Collections — утилитный класс со статическими методами: sort, binarySearch, unmodifiableList, synchronizedMap.",
+        "keywords": ["Collection", "Collections", "java.util", "sort", "unmodifiableList", "synchronizedMap", "Java", "собеседование"],
+        "ogTitle": "Collection vs Collections в Java — Gymterview",
+        "ogDescription": "Collection — интерфейс, Collections — утилитный класс. Разбор основных статических методов Collections.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между классами java.util.Collection и java.util.Collections",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "java.util.Collection — корневой интерфейс иерархии коллекций (add, remove, contains). java.util.Collections — утилитный класс со статическими методами: sort(), binarySearch(), unmodifiableList(), synchronizedMap(), emptyList()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Collection vs Collections", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое fail-fast поведение",
+      "questionSlug": "chto-takoe-fail-fast-povedenie",
+      "grade": "junior",
+      "tags": ["jcf", "concurrency", "основы"],
+      "seo": {
+        "title": "Что такое fail-fast поведение в Java Collections — Gymterview",
+        "description": "Fail-fast поведение в Java: ConcurrentModificationException при модификации коллекции во время итерации. Механизм modCount и expectedModCount.",
+        "keywords": ["fail-fast", "ConcurrentModificationException", "modCount", "Iterator", "JCF", "Java", "собеседование"],
+        "ogTitle": "Fail-fast поведение в Java Collections — Gymterview",
+        "ogDescription": "Fail-fast итераторы выбрасывают ConcurrentModificationException при модификации коллекции. Механизм через modCount.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое fail-fast поведение",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fail-fast — стратегия немедленного выброса ConcurrentModificationException при обнаружении модификации коллекции во время итерации. Реализован через счётчик modCount: при каждом изменении коллекции modCount увеличивается, итератор сравнивает его с expectedModCount."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Fail-fast поведение", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая разница между fail-fast и fail-safe",
+      "questionSlug": "kakaya-raznitsa-mezhdu-fail-fast-i-fail-safe",
+      "grade": "junior",
+      "tags": ["jcf", "concurrency", "основы"],
+      "seo": {
+        "title": "Разница между fail-fast и fail-safe итераторами — Gymterview",
+        "description": "Сравнение fail-fast и fail-safe итераторов: ConcurrentModificationException, работа с оригиналом vs копией, примеры CopyOnWriteArrayList и ConcurrentHashMap.",
+        "keywords": ["fail-fast", "fail-safe", "weakly consistent", "CopyOnWriteArrayList", "ConcurrentHashMap", "Iterator", "Java", "собеседование"],
+        "ogTitle": "Fail-fast vs fail-safe итераторы в Java — Gymterview",
+        "ogDescription": "Fail-fast выбрасывает исключение при модификации, fail-safe работает с копией. Сравнение и примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая разница между fail-fast и fail-safe",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fail-fast итераторы выбрасывают ConcurrentModificationException при модификации коллекции, fail-safe работают с копией/снимком данных. Примеры fail-safe: CopyOnWriteArrayList, ConcurrentHashMap (weakly consistent)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Fail-fast vs fail-safe", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Приведите примеры итераторов, реализующих поведение fail-safe",
+      "questionSlug": "priveditye-primery-iteratorov-realizuyushchikh-povedenie-fail-safe",
+      "grade": "junior",
+      "tags": ["jcf", "concurrency"],
+      "seo": {
+        "title": "Примеры fail-safe итераторов в Java — Gymterview",
+        "description": "Примеры fail-safe (weakly consistent) итераторов: CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentHashMap. Разница между snapshot и weakly consistent.",
+        "keywords": ["fail-safe", "CopyOnWriteArrayList", "CopyOnWriteArraySet", "ConcurrentHashMap", "weakly consistent", "Iterator", "Java"],
+        "ogTitle": "Примеры fail-safe итераторов в Java — Gymterview",
+        "ogDescription": "CopyOnWriteArrayList и ConcurrentHashMap — примеры fail-safe итераторов. Snapshot vs weakly consistent.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Приведите примеры итераторов, реализующих поведение fail-safe",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CopyOnWriteArrayList — работает со снимком массива. CopyOnWriteArraySet — основан на CopyOnWriteArrayList. ConcurrentHashMap keySet() — weakly consistent: может отражать часть изменений после создания итератора."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Fail-safe итераторы", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем различаются Enumeration и Iterator",
+      "questionSlug": "chem-razlichayutsya-enumeration-i-iterator",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Различия между Enumeration и Iterator в Java — Gymterview",
+        "description": "Сравнение Enumeration и Iterator: имена методов, возможность удаления, fail-fast поведение, привязка к legacy-классам Vector, Stack, Hashtable.",
+        "keywords": ["Enumeration", "Iterator", "hasMoreElements", "hasNext", "remove", "Vector", "Java", "собеседование"],
+        "ogTitle": "Enumeration vs Iterator в Java — Gymterview",
+        "ogDescription": "Iterator — современная замена Enumeration с remove(), fail-fast и читаемыми именами методов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем различаются Enumeration и Iterator",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enumeration (Java 1.0) — устаревший, без remove(), не fail-fast, привязан к Vector/Hashtable. Iterator (Java 1.2) — поддерживает remove(), fail-fast, используется во всех современных коллекциях. Имена методов: hasMoreElements/nextElement vs hasNext/next."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Enumeration vs Iterator", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как между собой связаны Iterable и Iterator",
+      "questionSlug": "kak-mezhdu-soboy-svyazany-iterable-i-iterator",
+      "grade": "junior",
+      "tags": ["jcf", "interface", "основы"],
+      "seo": {
+        "title": "Связь Iterable и Iterator в Java — Gymterview",
+        "description": "Iterable — интерфейс с методом iterator(), возвращающим Iterator. Iterable — фабрика для Iterator. Каждый вызов iterator() создаёт новый экземпляр итератора.",
+        "keywords": ["Iterable", "Iterator", "iterator()", "for-each", "Java", "собеседование"],
+        "ogTitle": "Связь Iterable и Iterator в Java — Gymterview",
+        "ogDescription": "Iterable — фабрика для Iterator через метод iterator(). Все коллекции JCF реализуют Iterable.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как между собой связаны Iterable и Iterator",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Iterable — интерфейс с методом iterator(), который возвращает Iterator. Iterable — фабрика для Iterator. Все коллекции JCF реализуют Iterable через Collection. Каждый вызов iterator() создаёт новый независимый экземпляр итератора."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Iterable и Iterator", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как между собой связаны Iterable, Iterator и for-each",
+      "questionSlug": "kak-mezhdu-soboy-svyazany-iterable-iterator-i-for-each",
+      "grade": "junior",
+      "tags": ["jcf", "core", "основы"],
+      "seo": {
+        "title": "Связь Iterable, Iterator и for-each в Java — Gymterview",
+        "description": "For-each — синтаксический сахар: компилятор преобразует его в код с Iterator. Объект должен реализовывать Iterable. Для массивов — через индексный доступ.",
+        "keywords": ["Iterable", "Iterator", "for-each", "enhanced for", "синтаксический сахар", "Java", "собеседование"],
+        "ogTitle": "Iterable, Iterator и for-each в Java — Gymterview",
+        "ogDescription": "For-each — сахар над Iterator. Iterable → iterator() → for-each. Массивы — через индексный цикл.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как между собой связаны Iterable, Iterator и for-each",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For-each (enhanced for loop) — синтаксический сахар: компилятор преобразует его в код с Iterator. Любой объект, реализующий Iterable, может использоваться в for-each. Для массивов for-each работает через индексный доступ, без Iterator."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Iterable, Iterator и for-each", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сравните Iterator и ListIterator",
+      "questionSlug": "sravnite-iterator-i-listiterator",
+      "grade": "junior",
+      "tags": ["jcf", "interface"],
+      "seo": {
+        "title": "Сравнение Iterator и ListIterator в Java — Gymterview",
+        "description": "ListIterator расширяет Iterator: двунаправленный обход, add(), set(), индексы. Работает только с List. Позиция курсора — между элементами.",
+        "keywords": ["Iterator", "ListIterator", "previous", "next", "add", "set", "List", "Java", "собеседование"],
+        "ogTitle": "Iterator vs ListIterator в Java — Gymterview",
+        "ogDescription": "ListIterator: двунаправленный обход, add(), set(), nextIndex(), previousIndex(). Только для List.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Сравните Iterator и ListIterator",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ListIterator расширяет Iterator. Добавляет: двунаправленный обход (previous()), add(), set(), nextIndex(), previousIndex(). Работает только с List. Позиция курсора — между элементами, а не на элементе."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Iterator vs ListIterator", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что произойдет при вызове Iterator.next() без предварительного вызова Iterator.hasNext()",
+      "questionSlug": "chto-proizoydet-pri-vyzove-iteratornext-bez-predvaritelnogo-vyzova-iteratorhasnext",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Iterator.next() без hasNext() — что произойдет — Gymterview",
+        "description": "Вызов next() без hasNext() корректен: вернёт элемент или выбросит NoSuchElementException. hasNext() — чистая проверка без побочных эффектов.",
+        "keywords": ["Iterator", "next()", "hasNext()", "NoSuchElementException", "Java", "собеседование"],
+        "ogTitle": "Iterator.next() без предварительного hasNext() — Gymterview",
+        "ogDescription": "next() без hasNext() вернёт элемент или NoSuchElementException. hasNext() не двигает курсор.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что произойдет при вызове Iterator.next() без предварительного вызова Iterator.hasNext()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Если итератор указывает на допустимый элемент — next() вернёт его. Если элементов нет — NoSuchElementException. hasNext() не обязателен, это чистая проверка без побочных эффектов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "next() без hasNext()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Сколько элементов будет пропущено, если Iterator.next() будет вызван после 10 вызовов Iterator.hasNext()",
+      "questionSlug": "skolko-elementov-budet-propushcheno-esli-iteratornext-budet-vyzvan-posle-10-vyzovov-iteratorhasnext",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "hasNext() не двигает курсор Iterator — Gymterview",
+        "description": "Нисколько: hasNext() только проверяет наличие следующего элемента и не продвигает курсор итератора. Вызов идемпотентен — многократный вызов не меняет состояние.",
+        "keywords": ["Iterator", "hasNext()", "next()", "идемпотентность", "курсор", "Java", "собеседование"],
+        "ogTitle": "Сколько элементов пропустит Iterator после 10 вызовов hasNext() — Gymterview",
+        "ogDescription": "Нисколько — hasNext() только проверяет наличие элемента, не двигает курсор. Вызов идемпотентен.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Сколько элементов будет пропущено, если Iterator.next() будет вызван после 10 вызовов Iterator.hasNext()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нисколько. hasNext() только проверяет наличие следующего элемента, не продвигая курсор. Операция идемпотентна: многократный вызов не меняет состояние итератора."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "hasNext() не двигает курсор", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как поведёт себя коллекция, если вызвать iterator.remove()",
+      "questionSlug": "kak-povedyot-sebya-kollektsiya-esli-vyzvat-iteratorremove",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "iterator.remove() — безопасное удаление при итерации — Gymterview",
+        "description": "iterator.remove() удаляет последний элемент, возвращённый next(). Без предварительного next() — IllegalStateException. Единственный безопасный способ удаления при итерации.",
+        "keywords": ["Iterator", "remove()", "IllegalStateException", "ConcurrentModificationException", "Java", "собеседование"],
+        "ogTitle": "Поведение iterator.remove() — Gymterview",
+        "ogDescription": "remove() удаляет элемент из next(). Без next() — IllegalStateException. Безопасное удаление при итерации.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как поведёт себя коллекция, если вызвать iterator.remove()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iterator.remove() удаляет из коллекции последний элемент, возвращённый next(). Если remove() вызван до next() или повторно без промежуточного next() — IllegalStateException. Это единственный безопасный способ удаления при итерации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "iterator.remove()", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как поведёт себя уже инстанциированный итератор для collection, если вызвать collection.remove()",
+      "questionSlug": "kak-povedyot-sebya-uzhe-instantsiirovannyy-iterator-dlya-collection-esli-vyzvat-collectionremove",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "collection.remove() при активном итераторе — ConcurrentModificationException — Gymterview",
+        "description": "При вызове collection.remove() во время итерации следующий вызов метода итератора выбросит ConcurrentModificationException. Fail-fast через modCount.",
+        "keywords": ["ConcurrentModificationException", "Iterator", "modCount", "fail-fast", "Java", "собеседование"],
+        "ogTitle": "collection.remove() при активном итераторе — Gymterview",
+        "ogDescription": "Прямая модификация коллекции при активном итераторе вызывает ConcurrentModificationException.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как поведёт себя уже инстанциированный итератор для collection, если вызвать collection.remove()",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При следующем вызове любого метода итератора будет выброшено ConcurrentModificationException. Прямая модификация коллекции изменяет modCount, который перестаёт совпадать с expectedModCount итератора."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Модификация коллекции при итерации", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как избежать ConcurrentModificationException во время перебора коллекции",
+      "questionSlug": "kak-izbezhat-concurrentmodificationexception-vo-vremya-perebora-kollektsii",
+      "grade": "middle",
+      "tags": ["jcf", "concurrency", "best-practices"],
+      "seo": {
+        "title": "Как избежать ConcurrentModificationException — Gymterview",
+        "description": "Способы: iterator.remove(), removeIf(), CopyOnWriteArrayList, ConcurrentHashMap, synchronized-блок. Для однопоточного и многопоточного кода.",
+        "keywords": ["ConcurrentModificationException", "iterator.remove()", "removeIf", "CopyOnWriteArrayList", "ConcurrentHashMap", "Java", "собеседование"],
+        "ogTitle": "Как избежать ConcurrentModificationException в Java — Gymterview",
+        "ogDescription": "iterator.remove(), removeIf(), concurrent-коллекции, synchronized — способы избежать CME.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как избежать ConcurrentModificationException во время перебора коллекции",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Однопоточно: iterator.remove(), removeIf() (Java 8+), toArray() + перебор массива. Многопоточно: CopyOnWriteArrayList, ConcurrentHashMap, synchronized-блок на время итерации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "Избежать CME", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая коллекция реализует дисциплину обслуживания FIFO",
+      "questionSlug": "kakaya-kollektsiya-realizuet-distsiplinu-obsluzhivaniya-fifo",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Коллекция FIFO в Java — Queue — Gymterview",
+        "description": "FIFO реализует интерфейс Queue: LinkedList, ArrayDeque, LinkedBlockingQueue. ArrayDeque — рекомендуемая реализация. PriorityQueue нарушает строгий FIFO.",
+        "keywords": ["FIFO", "Queue", "ArrayDeque", "LinkedList", "PriorityQueue", "Java", "собеседование"],
+        "ogTitle": "FIFO-коллекция в Java — Queue — Gymterview",
+        "ogDescription": "Queue реализует FIFO. ArrayDeque — рекомендуемая реализация. PriorityQueue — не строгий FIFO.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая коллекция реализует дисциплину обслуживания FIFO",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FIFO (First-In-First-Out) реализует интерфейс Queue. Основные реализации: ArrayDeque (рекомендуемая), LinkedList. PriorityQueue формально Queue, но извлекает по приоритету, нарушая строгий FIFO."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "FIFO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая коллекция реализует дисциплину обслуживания FILO",
+      "questionSlug": "kakaya-kollektsiya-realizuet-distsiplinu-obsluzhivaniya-filo",
+      "grade": "junior",
+      "tags": ["jcf", "основы"],
+      "seo": {
+        "title": "Коллекция FILO/LIFO в Java — Stack и ArrayDeque — Gymterview",
+        "description": "FILO/LIFO реализует Stack (устаревший) и ArrayDeque (рекомендуемый). ArrayDeque быстрее Stack из-за отсутствия синхронизации и правильной абстракции стека.",
+        "keywords": ["FILO", "LIFO", "Stack", "ArrayDeque", "Deque", "push", "pop", "Java", "собеседование"],
+        "ogTitle": "FILO/LIFO-коллекция в Java — ArrayDeque вместо Stack — Gymterview",
+        "ogDescription": "FILO/LIFO: Stack устарел, ArrayDeque — рекомендуемая замена. push()/pop() без синхронизации.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая коллекция реализует дисциплину обслуживания FILO",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FILO/LIFO реализует Stack (устаревший) и ArrayDeque (рекомендуемый). ArrayDeque работает быстрее: нет синхронизации, нет произвольного доступа по индексу, методы push()/pop()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "FILO/LIFO", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается ArrayList от Vector",
+      "questionSlug": "chem-otlichaetsya-arraylist-ot-vector",
+      "grade": "junior",
+      "tags": ["jcf", "concurrency", "performance"],
+      "seo": {
+        "title": "ArrayList vs Vector — отличия и почему Vector устарел — Gymterview",
+        "description": "ArrayList vs Vector: синхронизация, стратегия роста (1.5x vs 2x), производительность. Vector устарел, замена — ArrayList или CopyOnWriteArrayList.",
+        "keywords": ["ArrayList", "Vector", "synchronized", "стратегия роста", "capacity", "Java", "собеседование"],
+        "ogTitle": "Отличия ArrayList и Vector в Java — Gymterview",
+        "ogDescription": "Vector синхронизирован и удваивает размер, ArrayList — нет и растёт в 1.5 раза. Vector устарел.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается ArrayList от Vector",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Методы Vector синхронизированы (медленнее), ArrayList — нет. Vector удваивает размер при заполнении, ArrayList увеличивает в 1.5 раза. Vector устарел; для потокобезопасности используйте Collections.synchronizedList() или CopyOnWriteArrayList."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "ArrayList vs Vector", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Зачем добавили ArrayList, если уже был Vector",
+      "questionSlug": "zachem-dobavili-arraylist-esli-uzhe-byl-vector",
+      "grade": "junior",
+      "tags": ["jcf", "performance"],
+      "seo": {
+        "title": "Зачем добавили ArrayList если был Vector — Gymterview",
+        "description": "ArrayList добавили, т.к. синхронизация Vector неэффективна в 95% случаев. Принцип: не платите за то, что не используете. Рост 1.5x экономнее 2x.",
+        "keywords": ["ArrayList", "Vector", "синхронизация", "производительность", "JCF", "Java 1.2", "Java", "собеседование"],
+        "ogTitle": "Зачем добавили ArrayList при наличии Vector — Gymterview",
+        "ogDescription": "Синхронизация Vector не нужна в 95% случаев, а когда нужна — недостаточна для составных операций.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Зачем добавили ArrayList, если уже был Vector",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Синхронизация Vector не нужна в 95% случаев (однопоточный код), а когда нужна — недостаточна (составные операции требуют внешней синхронизации). ArrayList убрал ненужную синхронизацию и оптимизировал рост (1.5x вместо 2x)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Java Collections Framework", "url": "/topics/jcf" },
+          { "name": "ArrayList вместо Vector", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

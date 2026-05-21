@@ -1,0 +1,908 @@
+{
+  "topic": "Java 8",
+  "topicSlug": "java8",
+  "batch": 1,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие нововведения появились в Java 8 и JDK 8?",
+      "questionSlug": "kakie-novovvedeniya-poyavilis-v-java-8-i-jdk-8",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие нововведения появились в Java 8 и JDK 8? — Gymterview",
+        "description": "Java 8 — крупнейший релиз платформы, который привнёс элементы функционального программирования и модернизировал стандартную библиотеку. Ниже перечислены основны",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие нововведения появились в Java 8 и JDK 8? — Gymterview",
+        "ogDescription": "Java 8 — крупнейший релиз платформы, который привнёс элементы функционального программирования и модернизировал стандарт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие нововведения появились в Java 8 и JDK 8?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 8 — крупнейший релиз платформы, который привнёс элементы функционального программирования и модернизировал стандартную библиотеку. Ниже перечислены основные нововведения, разбитые по категориям."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие нововведения появились в Java 8 и JDK 8?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое лямбда-выражение?",
+      "questionSlug": "chto-takoe-lyambda-vyrazhenie",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое лямбда-выражение? — Gymterview",
+        "description": "Лямбда-выражение — это компактная запись анонимной функции, которую можно присвоить переменной, передать в метод или вернуть как результат. Лямбда реализует еди",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое лямбда-выражение? — Gymterview",
+        "ogDescription": "Лямбда-выражение — это компактная запись анонимной функции, которую можно присвоить переменной, передать в метод или вер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое лямбда-выражение?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Лямбда-выражение — это компактная запись анонимной функции, которую можно присвоить переменной, передать в метод или вернуть как результат. Лямбда реализует единственный абстрактный метод функционального интерфейса, и по сути является краткой формой анонимного класса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое лямбда-выражение?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "К каким переменным есть доступ у лямбда-выражений?",
+      "questionSlug": "k-kakim-peremennym-est-dostup-u-lyambda-vyrazhenij",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "К каким переменным есть доступ у лямбда-выражений? — Gymterview",
+        "description": "Лямбда-выражение может обращаться к переменным из внешней области видимости, но с ограничениями. Доступны три категории переменных: effectively final локальные ",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "К каким переменным есть доступ у лямбда-выражений? — Gymterview",
+        "ogDescription": "Лямбда-выражение может обращаться к переменным из внешней области видимости, но с ограничениями. Доступны три категории ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "К каким переменным есть доступ у лямбда-выражений?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Лямбда-выражение может обращаться к переменным из внешней области видимости, но с ограничениями. Доступны три категории переменных: effectively final локальные переменные, поля экземпляра класса и статические переменные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "К каким переменным есть доступ у лямбда-выражений?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как отсортировать список строк с помощью лямбда-выражения?",
+      "questionSlug": "kak-otsortirovat-spisok-strok-s-pomoshchyu-lyambda-vyrazheniya",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Как отсортировать список строк с помощью лямбда-выражения? — Gymterview",
+        "description": "Для сортировки списка строк достаточно передать лямбду-компаратор в метод `Collections.sort()` или использовать метод `sort()` у самого списка. Лямбда заменяет ",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Как отсортировать список строк с помощью лямбда-выражения? — Gymterview",
+        "ogDescription": "Для сортировки списка строк достаточно передать лямбду-компаратор в метод `Collections.sort()` или использовать метод `s",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как отсортировать список строк с помощью лямбда-выражения?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для сортировки списка строк достаточно передать лямбду-компаратор в метод `Collections.sort()` или использовать метод `sort()` у самого списка. Лямбда заменяет громоздкий анонимный класс `Comparator` одной строкой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Как отсортировать список строк с помощью лямбда-выражения?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ссылка на метод?",
+      "questionSlug": "chto-takoe-ssylka-na-metod",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое ссылка на метод? — Gymterview",
+        "description": "Ссылка на метод (method reference) — это сокращённая запись лямбда-выражения, которое только вызывает уже существующий метод. Вместо `x -> obj.method(x)` записы",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое ссылка на метод? — Gymterview",
+        "ogDescription": "Ссылка на метод (method reference) — это сокращённая запись лямбда-выражения, которое только вызывает уже существующий м",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ссылка на метод?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ссылка на метод (method reference) — это сокращённая запись лямбда-выражения, которое только вызывает уже существующий метод. Вместо `x -> obj.method(x)` записывается `obj::method`. Компилятор самостоятельно подставляет аргументы в вызов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое ссылка на метод?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие виды ссылок на методы вы знаете?",
+      "questionSlug": "kakie-vidy-ssylok-na-metody-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Какие виды ссылок на методы вы знаете? — Gymterview",
+        "description": "Существует четыре вида ссылок на методы в Java 8. Каждый вид соответствует определённому способу вызова метода и имеет свой синтаксис.",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Какие виды ссылок на методы вы знаете? — Gymterview",
+        "ogDescription": "Существует четыре вида ссылок на методы в Java 8. Каждый вид соответствует определённому способу вызова метода и имеет с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие виды ссылок на методы вы знаете?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Существует четыре вида ссылок на методы в Java 8. Каждый вид соответствует определённому способу вызова метода и имеет свой синтаксис."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Какие виды ссылок на методы вы знаете?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Объясните выражение System.out::println",
+      "questionSlug": "obyasnite-vyrazhenie-systemoutprintln",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Объясните выражение System.out::println — Gymterview",
+        "description": "Выражение `System.out::println` является ссылкой на метод экземпляра (instance method reference). Здесь `System.out` — это конкретный объект типа `PrintStream`,",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Объясните выражение System.out::println — Gymterview",
+        "ogDescription": "Выражение `System.out::println` является ссылкой на метод экземпляра (instance method reference). Здесь `System.out` — э",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Объясните выражение System.out::println",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Выражение `System.out::println` является ссылкой на метод экземпляра (instance method reference). Здесь `System.out` — это конкретный объект типа `PrintStream`, хранящийся в статическом поле `out` класса `System`, а `println` — вызываемый метод этого объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Объясните выражение System.out::println",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое функциональные интерфейсы?",
+      "questionSlug": "chto-takoe-funktsionalnye-interfejsy",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Что такое функциональные интерфейсы? — Gymterview",
+        "description": "Функциональный интерфейс — это интерфейс, содержащий ровно один абстрактный метод. Именно такой интерфейс может служить целевым типом для лямбда-выражения или с",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Что такое функциональные интерфейсы? — Gymterview",
+        "ogDescription": "Функциональный интерфейс — это интерфейс, содержащий ровно один абстрактный метод. Именно такой интерфейс может служить ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое функциональные интерфейсы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Функциональный интерфейс — это интерфейс, содержащий ровно один абстрактный метод. Именно такой интерфейс может служить целевым типом для лямбда-выражения или ссылки на метод."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Что такое функциональные интерфейсы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы Function, DoubleFunction, IntFunction и LongFunction?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-function-doublefunction-intfunction-",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы Function, DoubleFun — Gymterview",
+        "description": "`Function<T, R>` — функциональный интерфейс, представляющий функцию, которая принимает аргумент типа `T` и возвращает результат типа `R`. Основной метод — `appl",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы Function, DoubleFun — Gymterview",
+        "ogDescription": "`Function<T, R>` — функциональный интерфейс, представляющий функцию, которая принимает аргумент типа `T` и возвращает ре",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы Function, DoubleFunction, IntFunction и LongFunction?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Function<T, R>` — функциональный интерфейс, представляющий функцию, которая принимает аргумент типа `T` и возвращает результат типа `R`. Основной метод — `apply(T t)`. Интерфейс предоставляет `default`-методы `compose()` и `andThen()` для построения цепочек преобразований."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы Function, DoubleFun",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы UnaryOperator, DoubleUnaryOperator, IntUnaryOperator и LongUnaryOperator?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-unaryoperator-doubleunaryoperator-in",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы UnaryOperator, Doub — Gymterview",
+        "description": "`UnaryOperator<T>` — специализация `Function<T, T>`, у которой тип аргумента и тип результата совпадают. Используется, когда нужно преобразовать значение, сохра",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы UnaryOperator, Doub — Gymterview",
+        "ogDescription": "`UnaryOperator<T>` — специализация `Function<T, T>`, у которой тип аргумента и тип результата совпадают. Используется, к",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы UnaryOperator, DoubleUnaryOperator, IntUnaryOperator и LongUnaryOperator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`UnaryOperator<T>` — специализация `Function<T, T>`, у которой тип аргумента и тип результата совпадают. Используется, когда нужно преобразовать значение, сохранив его тип: например, увеличить число, привести строку к верхнему регистру или нормализовать объект."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы UnaryOperator, Doub",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы BinaryOperator, DoubleBinaryOperator, IntBinaryOperator и LongBinaryOperator?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-binaryoperator-doublebinaryoperator-",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы BinaryOperator, Dou — Gymterview",
+        "description": "`BinaryOperator<T>` — специализация `BiFunction<T, T, T>`, принимающая два аргумента одного типа и возвращающая результат того же типа. Типичное применение — аг",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы BinaryOperator, Dou — Gymterview",
+        "ogDescription": "`BinaryOperator<T>` — специализация `BiFunction<T, T, T>`, принимающая два аргумента одного типа и возвращающая результа",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы BinaryOperator, DoubleBinaryOperator, IntBinaryOperator и LongBinaryOperator?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`BinaryOperator<T>` — специализация `BiFunction<T, T, T>`, принимающая два аргумента одного типа и возвращающая результат того же типа. Типичное применение — агрегация: сложение, конкатенация, выбор максимума."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы BinaryOperator, Dou",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы Predicate, DoublePredicate, IntPredicate и LongPredicate?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-predicate-doublepredicate-intpredica",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы Predicate, DoublePr — Gymterview",
+        "description": "`Predicate<T>` — функциональный интерфейс для проверки условия. Метод `test(T t)` принимает объект и возвращает `boolean`. Предикаты повсеместно используются в ",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы Predicate, DoublePr — Gymterview",
+        "ogDescription": "`Predicate<T>` — функциональный интерфейс для проверки условия. Метод `test(T t)` принимает объект и возвращает `boolean",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы Predicate, DoublePredicate, IntPredicate и LongPredicate?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Predicate<T>` — функциональный интерфейс для проверки условия. Метод `test(T t)` принимает объект и возвращает `boolean`. Предикаты повсеместно используются в Stream API для фильтрации, а также в `Collection.removeIf()`, `Optional.filter()` и других методах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы Predicate, DoublePr",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы Consumer, DoubleConsumer, IntConsumer и LongConsumer?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-consumer-doubleconsumer-intconsumer-",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы Consumer, DoubleCon — Gymterview",
+        "description": "`Consumer<T>` — функциональный интерфейс, представляющий операцию, которая принимает аргумент типа `T`, производит побочный эффект и ничего не возвращает (`void",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы Consumer, DoubleCon — Gymterview",
+        "ogDescription": "`Consumer<T>` — функциональный интерфейс, представляющий операцию, которая принимает аргумент типа `T`, производит побоч",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы Consumer, DoubleConsumer, IntConsumer и LongConsumer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Consumer<T>` — функциональный интерфейс, представляющий операцию, которая принимает аргумент типа `T`, производит побочный эффект и ничего не возвращает (`void`). Основной метод — `accept(T t)`. Типичное применение — логирование, вывод, модификация объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы Consumer, DoubleCon",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы Supplier, BooleanSupplier, DoubleSupplier, IntSupplier и LongSupplier?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-supplier-booleansupplier-doublesuppl",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы Supplier, BooleanSu — Gymterview",
+        "description": "`Supplier<T>` — функциональный интерфейс, представляющий поставщика данных. Метод `get()` не принимает аргументов, но возвращает объект типа `T`. Supplier испол",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы Supplier, BooleanSu — Gymterview",
+        "ogDescription": "`Supplier<T>` — функциональный интерфейс, представляющий поставщика данных. Метод `get()` не принимает аргументов, но во",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы Supplier, BooleanSupplier, DoubleSupplier, IntSupplier и LongSupplier?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`Supplier<T>` — функциональный интерфейс, представляющий поставщика данных. Метод `get()` не принимает аргументов, но возвращает объект типа `T`. Supplier используется для отложенного (lazy) создания объектов, фабрик и генерации значений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы Supplier, BooleanSu",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен функциональный интерфейс BiConsumer?",
+      "questionSlug": "dlya-chego-nuzhen-funktsionalnyj-interfejs-biconsumer",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужен функциональный интерфейс BiConsumer? — Gymterview",
+        "description": "`BiConsumer<T, U>` — функциональный интерфейс, который принимает два аргумента типов `T` и `U`, выполняет над ними побочный эффект и ничего не возвращает. Основ",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен функциональный интерфейс BiConsumer? — Gymterview",
+        "ogDescription": "`BiConsumer<T, U>` — функциональный интерфейс, который принимает два аргумента типов `T` и `U`, выполняет над ними побоч",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен функциональный интерфейс BiConsumer?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`BiConsumer<T, U>` — функциональный интерфейс, который принимает два аргумента типов `T` и `U`, выполняет над ними побочный эффект и ничего не возвращает. Основной метод — `accept(T t, U u)`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужен функциональный интерфейс BiConsumer?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен функциональный интерфейс BiFunction?",
+      "questionSlug": "dlya-chego-nuzhen-funktsionalnyj-interfejs-bifunction",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужен функциональный интерфейс BiFunction? — Gymterview",
+        "description": "`BiFunction<T, U, R>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий результат типа `R`. Основной метод — `apply(T t, U u)",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен функциональный интерфейс BiFunction? — Gymterview",
+        "ogDescription": "`BiFunction<T, U, R>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий результат тип",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен функциональный интерфейс BiFunction?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`BiFunction<T, U, R>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий результат типа `R`. Основной метод — `apply(T t, U u)`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужен функциональный интерфейс BiFunction?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен функциональный интерфейс BiPredicate?",
+      "questionSlug": "dlya-chego-nuzhen-funktsionalnyj-interfejs-bipredicate",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужен функциональный интерфейс BiPredicate? — Gymterview",
+        "description": "`BiPredicate<T, U>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий `boolean`. Основной метод — `test(T t, U u)`.",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужен функциональный интерфейс BiPredicate? — Gymterview",
+        "ogDescription": "`BiPredicate<T, U>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий `boolean`. Осно",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен функциональный интерфейс BiPredicate?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`BiPredicate<T, U>` — функциональный интерфейс, принимающий два аргумента типов `T` и `U` и возвращающий `boolean`. Основной метод — `test(T t, U u)`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужен функциональный интерфейс BiPredicate?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы вида ToFunction?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-vida-tofunction",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы вида ToFunction? — Gymterview",
+        "description": "Функциональные интерфейсы вида `_To_Function` предназначены для преобразования одного примитивного типа в другой без автобоксинга. Они позволяют эффективно конв",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы вида ToFunction? — Gymterview",
+        "ogDescription": "Функциональные интерфейсы вида `_To_Function` предназначены для преобразования одного примитивного типа в другой без авт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы вида ToFunction?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Функциональные интерфейсы вида `_To_Function` предназначены для преобразования одного примитивного типа в другой без автобоксинга. Они позволяют эффективно конвертировать значения между примитивными типами `double`, `int` и `long`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы вида ToFunction?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы ToDoubleBiFunction, ToIntBiFunction и ToLongBiFunction?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-todoublebifunction-tointbifunction-i",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы ToDoubleBiFunction, — Gymterview",
+        "description": "Эти интерфейсы принимают два аргумента обобщённых типов `T` и `U` и возвращают примитивный результат. Они являются специализациями `BiFunction`, оптимизированны",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы ToDoubleBiFunction, — Gymterview",
+        "ogDescription": "Эти интерфейсы принимают два аргумента обобщённых типов `T` и `U` и возвращают примитивный результат. Они являются специ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы ToDoubleBiFunction, ToIntBiFunction и ToLongBiFunction?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти интерфейсы принимают два аргумента обобщённых типов `T` и `U` и возвращают примитивный результат. Они являются специализациями `BiFunction`, оптимизированными для возврата примитива без автобоксинга."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы ToDoubleBiFunction,",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны функциональные интерфейсы ToDoubleFunction, ToIntFunction и ToLongFunction?",
+      "questionSlug": "dlya-chego-nuzhny-funktsionalnye-interfejsy-todoublefunction-tointfunction-i-tol",
+      "grade": "junior",
+      "tags": [
+        "java8"
+      ],
+      "seo": {
+        "title": "Для чего нужны функциональные интерфейсы ToDoubleFunction, T — Gymterview",
+        "description": "Эти интерфейсы принимают один аргумент обобщённого типа `T` и возвращают примитивный результат. Они являются специализациями `Function`, оптимизированными для в",
+        "keywords": [
+          "java8",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны функциональные интерфейсы ToDoubleFunction, T — Gymterview",
+        "ogDescription": "Эти интерфейсы принимают один аргумент обобщённого типа `T` и возвращают примитивный результат. Они являются специализац",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны функциональные интерфейсы ToDoubleFunction, ToIntFunction и ToLongFunction?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Эти интерфейсы принимают один аргумент обобщённого типа `T` и возвращают примитивный результат. Они являются специализациями `Function`, оптимизированными для возврата примитива."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Java 8",
+            "url": "/topics/java8"
+          },
+          {
+            "name": "Для чего нужны функциональные интерфейсы ToDoubleFunction, T",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

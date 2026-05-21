@@ -1,0 +1,98 @@
+{
+  "topic": "Основы Web",
+  "topicSlug": "web",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое сессия?",
+      "questionSlug": "chto-takoe-sessiya",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое сессия? — Gymterview",
+        "description": "Сессия (session) — механизм сохранения состояния взаимодействия пользователя с сервером на протяжении нескольких HTTP-запросов, компенсирующий stateless-природу",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое сессия? — Gymterview",
+        "ogDescription": "Сессия (session) — механизм сохранения состояния взаимодействия пользователя с сервером на протяжении нескольких HTTP-за",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое сессия?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Сессия (session) — механизм сохранения состояния взаимодействия пользователя с сервером на протяжении нескольких HTTP-запросов, компенсирующий stateless-природу протокола HTTP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое сессия?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое авторизация и аутентификация? Чем они отличаются?",
+      "questionSlug": "chto-takoe-avtorizatsiya-i-autentifikatsiya-chem-oni-otlichayutsya",
+      "grade": "junior",
+      "tags": [
+        "web"
+      ],
+      "seo": {
+        "title": "Что такое авторизация и аутентификация? Чем они отличаются? — Gymterview",
+        "description": "Аутентификация — это проверка личности пользователя (кто вы?). Авторизация — это проверка прав доступа (что вам разрешено делать?).",
+        "keywords": [
+          "web",
+          "junior"
+        ],
+        "ogTitle": "Что такое авторизация и аутентификация? Чем они отличаются? — Gymterview",
+        "ogDescription": "Аутентификация — это проверка личности пользователя (кто вы?). Авторизация — это проверка прав доступа (что вам разрешен",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое авторизация и аутентификация? Чем они отличаются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Аутентификация — это проверка личности пользователя (кто вы?). Авторизация — это проверка прав доступа (что вам разрешено делать?)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Основы Web",
+            "url": "/topics/web"
+          },
+          {
+            "name": "Что такое авторизация и аутентификация? Чем они отличаются?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

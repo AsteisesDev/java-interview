@@ -1,0 +1,442 @@
+{
+  "topic": "JVM",
+  "topicSlug": "jvm",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "За что отвечает JVM",
+      "questionSlug": "za-chto-otvechaet-jvm",
+      "grade": "junior",
+      "tags": ["jvm", "основы", "core"],
+      "seo": {
+        "title": "За что отвечает JVM — Gymterview",
+        "description": "Узнайте, за что отвечает Java Virtual Machine: загрузка и исполнение байт-кода, управление памятью, сборка мусора, кроссплатформенность. Подготовка к собеседованию.",
+        "keywords": ["JVM", "Java Virtual Machine", "байт-код", "виртуальная машина", "garbage collection", "кроссплатформенность", "Java", "собеседование"],
+        "ogTitle": "За что отвечает JVM — Gymterview",
+        "ogDescription": "Что делает JVM: загрузка байт-кода, управление памятью, GC. Типы данных JVM: примитивы и ссылочные типы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "За что отвечает JVM",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JVM (Java Virtual Machine) — виртуальная машина, предоставляющая среду выполнения для Java-кода. Загружает, проверяет и исполняет байт-код, управляет памятью и выполняет сборку мусора. Обеспечивает кроссплатформенность: один .class файл работает на любой ОС. JVM работает с примитивными и ссылочными типами данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "За что отвечает JVM", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Classloader и как он работает",
+      "questionSlug": "chto-takoe-classloader-i-kak-on-rabotaet",
+      "grade": "junior",
+      "tags": ["jvm", "classloader", "основы"],
+      "seo": {
+        "title": "Что такое Classloader и как он работает — Gymterview",
+        "description": "Classloader в JVM: иерархия загрузчиков (Bootstrap, Platform, System), три этапа загрузки класса, принцип делегирования. Пользовательские загрузчики классов.",
+        "keywords": ["Classloader", "загрузчик классов", "Bootstrap", "Platform class loader", "JVM", "делегирование", "загрузка классов", "Java", "собеседование"],
+        "ogTitle": "Что такое Classloader и как он работает — Gymterview",
+        "ogDescription": "Иерархия загрузчиков классов JVM: Bootstrap, Platform, System. Три этапа: загрузка, связывание, инициализация.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Classloader и как он работает",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Classloader — компонент JRE, динамически загружающий Java-классы в JVM по требованию. Использует принцип делегирования: дочерний загрузчик сначала просит родителя. Три загрузчика: Bootstrap (ядро Java), Platform (модули платформы, с Java 9), System (CLASSPATH). Три этапа загрузки: Loading, Linking (Verification, Preparation, Resolution), Initialization."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Classloader", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие области данных времени выполнения существуют в JVM",
+      "questionSlug": "kakie-oblasti-dannykh-vremeni-vypolneniya-sushchestvuyut-v-jvm",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "concurrency"],
+      "seo": {
+        "title": "Какие области данных времени выполнения существуют в JVM — Gymterview",
+        "description": "Run-Time Data Areas JVM: PC Register, JVM Stack, Heap, Method Area, Native Method Stack, Run-Time Constant Pool. Какие области общие, а какие per-thread.",
+        "keywords": ["Run-Time Data Areas", "JVM Stack", "Heap", "Method Area", "PC Register", "Constant Pool", "память JVM", "Java", "собеседование"],
+        "ogTitle": "Области данных времени выполнения JVM — Gymterview",
+        "ogDescription": "PC Register, JVM Stack, Heap, Method Area, Constant Pool — разбираем все области памяти JVM с делением на per-thread и общие.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие области данных времени выполнения существуют в JVM",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JVM выделяет области памяти двух типов: per-thread (PC Register — адрес текущей инструкции, JVM Stack — фреймы вызовов, Native Method Stack — стек для native-методов) и общие (Heap — объекты и массивы, Method Area — метаданные классов, Run-Time Constant Pool — константы и ссылки). Heap управляется GC, Stack имеет фиксированный или динамический размер."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Области данных", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Frame в JVM",
+      "questionSlug": "chto-takoe-frame-v-jvm",
+      "grade": "middle",
+      "tags": ["jvm", "memory"],
+      "seo": {
+        "title": "Что такое Frame в JVM — Gymterview",
+        "description": "Frame в JVM: структура данных для вызова метода. Локальные переменные, стек операндов, динамическое связывание. Нормальное и резкое завершение метода.",
+        "keywords": ["Frame", "фрейм", "JVM Stack", "локальные переменные", "стек операндов", "dynamic linking", "Java", "собеседование"],
+        "ogTitle": "Что такое Frame в JVM — Gymterview",
+        "ogDescription": "Фрейм JVM: локальные переменные, стек операндов, ссылка на Constant Pool. Создаётся при вызове метода, уничтожается при завершении.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Frame в JVM",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Frame (фрейм) — структура данных, создаваемая при каждом вызове метода. Содержит массив локальных переменных, стек операндов (LIFO для промежуточных вычислений) и ссылку на Run-Time Constant Pool для динамического связывания. В любой момент активен только один текущий фрейм. При вызове метода создаётся новый фрейм, при возврате — текущий отбрасывается."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Frame", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Execution Engine",
+      "questionSlug": "chto-takoe-execution-engine",
+      "grade": "middle",
+      "tags": ["jvm", "performance"],
+      "seo": {
+        "title": "Что такое Execution Engine в JVM — Gymterview",
+        "description": "Execution Engine JVM: интерпретатор, JIT-компилятор и Garbage Collector. Как байт-код превращается в нативный код. Роль профилировщика в JIT-компиляции.",
+        "keywords": ["Execution Engine", "интерпретатор", "JIT", "Garbage Collector", "байт-код", "нативный код", "JVM", "Java", "собеседование"],
+        "ogTitle": "Execution Engine в JVM — Gymterview",
+        "ogDescription": "Механизм выполнения JVM: интерпретатор для быстрого старта, JIT для горячего кода, GC для управления памятью.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Execution Engine",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Execution Engine — компонент JVM, считывающий и исполняющий байт-код. Состоит из трёх частей: Interpreter (быстрый старт, медленное повторное выполнение), JIT Compiler (компилирует горячий код в нативный для ускорения) и Garbage Collector (автоматическое управление памятью). JIT включает генератор промежуточного кода, оптимизатор, генератор целевого кода и профилировщик."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Execution Engine", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Metaspace и чем он отличается от PermGen",
+      "questionSlug": "chto-takoe-metaspace-i-chem-on-otlichaetsya-ot-permgen",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "performance"],
+      "seo": {
+        "title": "Что такое Metaspace и чем он отличается от PermGen — Gymterview",
+        "description": "Metaspace vs PermGen: расположение в native memory, динамический размер, настройка MaxMetaspaceSize. Что хранится в Metaspace, мониторинг и частые ошибки.",
+        "keywords": ["Metaspace", "PermGen", "native memory", "MaxMetaspaceSize", "метаданные классов", "Java 8", "JVM", "память", "собеседование"],
+        "ogTitle": "Metaspace vs PermGen в JVM — Gymterview",
+        "ogDescription": "Сравнение Metaspace и PermGen: расположение, размер, GC. Metaspace в native memory с Java 8, PermGen удалён.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Metaspace и чем он отличается от PermGen",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Metaspace — область памяти JVM (с Java 8, JEP 122) в native memory для хранения метаданных классов. Заменил PermGen, который имел фиксированный размер в heap и часто вызывал OutOfMemoryError: PermGen space. Ключевые отличия: Metaspace в native memory (вне heap), динамически расширяется, ограничен только памятью ОС. Настраивается через -XX:MaxMetaspaceSize."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Metaspace vs PermGen", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие сборщики мусора существуют в JVM",
+      "questionSlug": "kakie-sborshchiki-musora-sushchestvuyut-v-jvm",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "performance", "gc"],
+      "seo": {
+        "title": "Какие сборщики мусора существуют в JVM — Gymterview",
+        "description": "Обзор GC в JVM: Serial, Parallel, CMS, G1, ZGC, Shenandoah, Epsilon. Эволюция от Java 8 до Java 23. Как выбрать сборщик мусора для вашего приложения.",
+        "keywords": ["Garbage Collector", "GC", "Serial GC", "Parallel GC", "G1", "ZGC", "Shenandoah", "Epsilon", "JVM", "сборщик мусора", "собеседование"],
+        "ogTitle": "Сборщики мусора JVM: Serial, Parallel, G1, ZGC, Shenandoah — Gymterview",
+        "ogDescription": "Все GC в JVM: от Serial до Generational ZGC. Сравнение, выбор по сценарию, эволюция от Java 8 до Java 23.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие сборщики мусора существуют в JVM",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JVM предоставляет 7 сборщиков мусора: Serial (однопоточный, маленькие приложения), Parallel (максимальная пропускная способность), CMS (удалён в Java 14), G1 (по умолчанию с Java 9, баланс паузы/throughput), ZGC (паузы <1 мс, heap до 16 TB), Shenandoah (аналог ZGC, OpenJDK), Epsilon (no-op, тестирование). Generational ZGC стал стандартом для high-performance приложений с Java 23+."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Сборщики мусора", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает G1 Garbage Collector",
+      "questionSlug": "kak-rabotaet-g1-garbage-collector",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "performance", "gc"],
+      "seo": {
+        "title": "Как работает G1 Garbage Collector — Gymterview",
+        "description": "G1 GC: регионы (Eden, Survivor, Old, Humongous), фазы работы (Young, Concurrent Marking, Mixed), ключевые параметры MaxGCPauseMillis, String Deduplication.",
+        "keywords": ["G1 GC", "Garbage-First", "регионы", "Humongous", "MaxGCPauseMillis", "Mixed Collection", "Concurrent Marking", "JVM", "собеседование"],
+        "ogTitle": "Как работает G1 Garbage Collector — Gymterview",
+        "ogDescription": "G1 GC: деление heap на регионы, фазы сборки (Young, Concurrent Marking, Mixed), настройка MaxGCPauseMillis, Humongous-объекты.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает G1 Garbage Collector",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "G1 (Garbage-First) — GC по умолчанию с Java 9. Делит heap на регионы (Eden, Survivor, Old, Humongous) по 1-32 MB. Три фазы: Young Collection (собирает Young регионы), Concurrent Marking (разметка живых объектов параллельно с приложением), Mixed Collection (Young + выбранные Old с максимумом мусора). MaxGCPauseMillis (200 мс) — целевое, не гарантированное время паузы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "G1 Garbage Collector", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ZGC и Shenandoah",
+      "questionSlug": "chto-takoe-zgc-i-shenandoah",
+      "grade": "senior",
+      "tags": ["jvm", "memory", "performance", "gc"],
+      "seo": {
+        "title": "Что такое ZGC и Shenandoah — Gymterview",
+        "description": "ZGC и Shenandoah: сборщики мусора с паузами менее 1 мс. Colored pointers vs Brooks pointers, Generational ZGC, сравнение и сценарии использования.",
+        "keywords": ["ZGC", "Shenandoah", "colored pointers", "Brooks pointers", "Generational ZGC", "low-latency", "concurrent compaction", "JVM", "собеседование"],
+        "ogTitle": "ZGC и Shenandoah: low-latency GC в JVM — Gymterview",
+        "ogDescription": "Сравнение ZGC и Shenandoah: colored pointers vs Brooks pointers, паузы <1 мс, Generational ZGC с Java 21.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ZGC и Shenandoah",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ZGC (Oracle) и Shenandoah (Red Hat) — GC нового поколения с паузами <1 мс на heap любого размера. ZGC использует colored pointers и load barriers, поддерживает heap до 16 TB. Shenandoah использует Brooks pointers и load+store barriers. Generational ZGC (Java 21+) добавил поколения для снижения overhead. Shenandoah доступен только в OpenJDK. Оба production-ready с Java 15."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "ZGC и Shenandoah", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Поколения объектов: Young Generation, Old Generation",
+      "questionSlug": "pokoleniya-obektov-young-generation-old-generation",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "gc"],
+      "seo": {
+        "title": "Поколения объектов: Young Generation, Old Generation — Gymterview",
+        "description": "Поколения объектов в JVM: Eden, Survivor, Old Generation. Жизненный цикл объекта, типы GC (Minor, Major, Full), premature promotion и настройка параметров.",
+        "keywords": ["Young Generation", "Old Generation", "Eden", "Survivor", "Minor GC", "Full GC", "поколения", "MaxTenuringThreshold", "JVM", "собеседование"],
+        "ogTitle": "Поколения объектов в JVM: Young и Old Generation — Gymterview",
+        "ogDescription": "Как объекты проходят путь Eden -> Survivor -> Old. Типы GC: Minor, Major, Full. Гипотеза о поколениях и premature promotion.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Поколения объектов: Young Generation, Old Generation",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JVM разделяет heap на поколения по гипотезе: большинство объектов умирают молодыми. Young Generation: Eden (новые объекты), Survivor S0/S1 (выжившие). Old Generation: объекты, пережившие 15 циклов Minor GC (MaxTenuringThreshold). Minor GC собирает только Young (быстрая), Major GC — Old, Full GC — весь heap + Metaspace (самая дорогая). Premature promotion снижает производительность."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Поколения объектов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Основные параметры JVM для настройки памяти",
+      "questionSlug": "osnovnye-parametry-jvm-dlya-nastroiki-pamyati",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "performance", "configuration", "kubernetes"],
+      "seo": {
+        "title": "Основные параметры JVM для настройки памяти — Gymterview",
+        "description": "Параметры JVM: -Xms, -Xmx, -Xss, MaxMetaspaceSize, MaxRAMPercentage. Конфигурация для production и Docker/Kubernetes. HeapDumpOnOutOfMemoryError и GC-логи.",
+        "keywords": ["параметры JVM", "Xms", "Xmx", "MaxRAMPercentage", "HeapDumpOnOutOfMemoryError", "Docker", "Kubernetes", "память", "JVM", "собеседование"],
+        "ogTitle": "Параметры JVM для настройки памяти — Gymterview",
+        "ogDescription": "Полный обзор JVM-параметров: размеры памяти, GC, диагностика. Типичные конфигурации для production и контейнеров.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Основные параметры JVM для настройки памяти",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ключевые параметры: -Xms/-Xmx (начальный/максимальный heap, в production делать равными), -Xss (стек потока), -XX:MaxMetaspaceSize. Для контейнеров: -XX:MaxRAMPercentage=75.0 вместо фиксированного -Xmx. Обязательно в production: -XX:+HeapDumpOnOutOfMemoryError и GC-логи (-Xlog:gc*). Нельзя ставить MaxRAMPercentage=100 — нужна память для Metaspace и native memory."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Параметры JVM", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JIT-компиляция и какие уровни компиляции существуют",
+      "questionSlug": "chto-takoe-jit-kompilyatsiya-i-kakie-urovni-kompilyatsii-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["jvm", "performance", "jit"],
+      "seo": {
+        "title": "Что такое JIT-компиляция и какие уровни компиляции существуют — Gymterview",
+        "description": "JIT-компиляция в JVM: Tiered Compilation (уровни 0-4), компиляторы C1 и C2. Inlining, Escape Analysis, On-Stack Replacement. GraalVM JIT и диагностика.",
+        "keywords": ["JIT", "Just-In-Time", "Tiered Compilation", "C1", "C2", "inlining", "escape analysis", "OSR", "GraalVM", "JVM", "собеседование"],
+        "ogTitle": "JIT-компиляция в JVM: уровни, оптимизации, GraalVM — Gymterview",
+        "ogDescription": "Tiered Compilation: путь 0→3→4, компиляторы C1/C2, ключевые оптимизации (inlining, escape analysis, OSR).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JIT-компиляция и какие уровни компиляции существуют",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JIT — механизм JVM, компилирующий байт-код в нативный машинный код во время выполнения. Tiered Compilation (5 уровней): 0 — интерпретатор, 1-3 — C1 (быстрая компиляция), 4 — C2 (агрессивная оптимизация). Типичный путь: 0→3→4. Ключевые оптимизации: inlining (встраивание методов), escape analysis (устранение аллокаций), OSR (замена кода в цикле). GraalVM JIT — альтернатива C2, написанная на Java."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "JIT-компиляция", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие инструменты для мониторинга и диагностики JVM вы знаете",
+      "questionSlug": "kakie-instrumenty-dlya-monitoringa-i-diagnostiki-jvm-vy-znaete",
+      "grade": "middle",
+      "tags": ["jvm", "monitoring", "performance", "observability"],
+      "seo": {
+        "title": "Какие инструменты для мониторинга и диагностики JVM вы знаете — Gymterview",
+        "description": "Инструменты JVM: jcmd, jstack, jmap, jstat, JFR, async-profiler, VisualVM. Практические сценарии: deadlock, OOM, высокий CPU, утечка памяти, медленный GC.",
+        "keywords": ["jcmd", "jstack", "jmap", "jstat", "JFR", "Java Flight Recorder", "async-profiler", "VisualVM", "heap dump", "thread dump", "JVM", "собеседование"],
+        "ogTitle": "Инструменты мониторинга и диагностики JVM — Gymterview",
+        "ogDescription": "Полный обзор: jcmd, JFR, async-profiler. Какой инструмент для какой проблемы: deadlock, OOM, CPU, GC.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие инструменты для мониторинга и диагностики JVM вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CLI: jcmd (универсальная замена jmap/jstack/jstat), jps (список процессов), jstack (thread dump), jmap (heap dump), jstat (GC-статистика). GUI: jconsole (JMX), VisualVM (профилирование). JFR (Java Flight Recorder) — low-overhead запись событий для production. async-profiler — flame graphs для CPU/allocation/lock профилирования. Обязательно: -XX:+HeapDumpOnOutOfMemoryError."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Инструменты диагностики", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Strong, Weak, Soft и Phantom ссылки в Java",
+      "questionSlug": "chto-takoe-strong-weak-soft-i-phantom-ssylki-v-java",
+      "grade": "middle",
+      "tags": ["jvm", "memory", "gc", "core"],
+      "seo": {
+        "title": "Что такое Strong, Weak, Soft и Phantom ссылки в Java — Gymterview",
+        "description": "Типы ссылок в Java: Strong, Soft (кэши), Weak (WeakHashMap), Phantom (Cleaner). Порядок сборки GC, ReferenceQueue, замена finalize. Сравнительная таблица.",
+        "keywords": ["Strong reference", "Soft reference", "Weak reference", "Phantom reference", "WeakHashMap", "Cleaner", "ReferenceQueue", "GC", "Java", "собеседование"],
+        "ogTitle": "Strong, Weak, Soft и Phantom ссылки в Java — Gymterview",
+        "ogDescription": "Четыре типа ссылок: Strong (обычная), Soft (кэши), Weak (WeakHashMap), Phantom (замена finalize). Порядок сборки GC.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Strong, Weak, Soft и Phantom ссылки в Java",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Четыре типа ссылок из java.lang.ref: Strong (обычная, объект не собирается), Soft (собирается при нехватке памяти — для кэшей), Weak (собирается при ближайшем GC — WeakHashMap, listeners), Phantom (get() всегда null, уведомляет через ReferenceQueue о финализации — Cleaner). Порядок силы: Strong > Soft > Weak > Phantom. Cleaner (Java 9+) заменил deprecated finalize()."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "JVM", "url": "/topics/jvm" },
+          { "name": "Типы ссылок", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

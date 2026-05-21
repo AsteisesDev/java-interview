@@ -1,0 +1,628 @@
+{
+  "topic": "Основы HTML",
+  "topicSlug": "html",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое HTML",
+      "questionSlug": "chto-takoe-html",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Что такое HTML — Gymterview",
+        "description": "Узнайте, что такое HTML, какова его структура, текущая версия HTML5 и зачем Java-разработчику знать язык гипертекстовой разметки. Подготовка к собеседованию.",
+        "keywords": ["HTML", "HyperText Markup Language", "HTML5", "язык разметки", "веб-страница", "Java", "собеседование"],
+        "ogTitle": "Что такое HTML — Gymterview",
+        "ogDescription": "HTML — стандартизированный язык разметки документов в WWW. Структура HTML-документа, связь с CSS и JavaScript, роль для Java-бэкенда.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое HTML",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTML (HyperText Markup Language) — стандартизированный язык разметки документов в World Wide Web, определяющий структуру и содержимое веб-страницы с помощью тегов. Актуальная версия — HTML5, добавившая семантические теги, мультимедиа-элементы и API для работы с графикой и хранилищем."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Что такое HTML", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое XHTML",
+      "questionSlug": "chto-takoe-xhtml",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "синтаксис"],
+      "seo": {
+        "title": "Что такое XHTML — Gymterview",
+        "description": "Что такое XHTML, чем отличается от HTML: строгий синтаксис, обязательное закрытие тегов, нижний регистр. Актуальность XHTML в 2026 году для Java-разработчика.",
+        "keywords": ["XHTML", "eXtensible HyperText Markup Language", "HTML vs XHTML", "XML", "строгий синтаксис", "собеседование"],
+        "ogTitle": "Что такое XHTML — Gymterview",
+        "ogDescription": "XHTML — строгий вариант HTML на основе XML. Сравнение с HTML: закрытие тегов, регистр, атрибуты. Актуальность и legacy-проекты.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое XHTML",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "XHTML (eXtensible HyperText Markup Language) — более строгий вариант HTML, основанный на правилах XML. Требует обязательного закрытия всех тегов, нижнего регистра, кавычек вокруг атрибутов. Практически вытеснен HTML5, но встречается в legacy-проектах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Что такое XHTML", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое DOCTYPE и зачем он нужен",
+      "questionSlug": "chto-takoe-doctype-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "синтаксис"],
+      "seo": {
+        "title": "Что такое DOCTYPE и зачем он нужен — Gymterview",
+        "description": "Что такое DOCTYPE, зачем он нужен: стандартный режим, quirks mode, виды DOCTYPE для HTML5, HTML 4.01, XHTML. Какой DOCTYPE использовать в современных проектах.",
+        "keywords": ["DOCTYPE", "Document Type Declaration", "quirks mode", "standards mode", "HTML5", "DOCTYPE html", "собеседование"],
+        "ogTitle": "Что такое DOCTYPE и зачем он нужен — Gymterview",
+        "ogDescription": "DOCTYPE указывает браузеру стандарт разметки. Без него включается quirks mode. Для HTML5: <!DOCTYPE html>.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое DOCTYPE и зачем он нужен",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DOCTYPE (Document Type Declaration) — инструкция для браузера, указывающая стандарт разметки HTML-документа. Без DOCTYPE браузер переключается в quirks mode с непредсказуемым рендерингом. Для HTML5 используется <!DOCTYPE html> — самый короткий DOCTYPE, включающий стандартный режим."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "DOCTYPE", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего предназначен тег head",
+      "questionSlug": "dlya-chego-prednaznachen-teg-head",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Для чего предназначен тег head — Gymterview",
+        "description": "Тег head в HTML: контейнер метаданных документа. Допустимые элементы: title, meta, link, style, script, base. Порядок размещения и практические примеры.",
+        "keywords": ["head", "тег head", "метаданные HTML", "title", "meta", "link", "script", "style", "собеседование"],
+        "ogTitle": "Для чего предназначен тег head — Gymterview",
+        "ogDescription": "Тег head — контейнер для метаданных HTML-документа: кодировка, заголовок, стили, скрипты. Что можно размещать внутри head.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего предназначен тег head",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тег <head> — контейнер для метаданных HTML-документа, которые не отображаются на странице, но управляют поведением браузера, поисковых систем и внешних сервисов. Внутри размещают: <title>, <meta>, <link>, <style>, <script>, <base>. Единственный видимый элемент — <title> (заголовок вкладки)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Тег head", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличается div от span",
+      "questionSlug": "chem-otlichaetsya-div-ot-span",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Чем отличается div от span — Gymterview",
+        "description": "Отличия div от span в HTML: блочный vs строчный элемент, поведение, вложенность, применение. Когда использовать div, а когда span. Семантические замены в HTML5.",
+        "keywords": ["div", "span", "блочный элемент", "строчный элемент", "block", "inline", "HTML", "собеседование"],
+        "ogTitle": "Чем отличается div от span — Gymterview",
+        "ogDescription": "div — блочный элемент (новая строка, вся ширина), span — строчный (внутри текста). Сравнение, примеры, семантические замены.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличается div от span",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<div> — блочный элемент, занимает всю ширину и начинается с новой строки. <span> — строчный, остаётся в потоке текста. div используется для обёртки секций, span — для выделения части текста. Строчный элемент не может содержать блочные. В HTML5 рекомендуются семантические теги вместо div."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "div vs span", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обозначаются комментарии в HTML",
+      "questionSlug": "kak-oboznachayutsya-kommentarii-v-html",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "синтаксис"],
+      "seo": {
+        "title": "Как обозначаются комментарии в HTML — Gymterview",
+        "description": "Синтаксис HTML-комментариев: <!-- комментарий -->. Где работают и не работают комментарии, практическое применение, нюансы безопасности при использовании.",
+        "keywords": ["HTML комментарии", "<!-- -->", "комментарий HTML", "синтаксис", "безопасность", "собеседование"],
+        "ogTitle": "Как обозначаются комментарии в HTML — Gymterview",
+        "ogDescription": "HTML-комментарии: синтаксис <!-- ... -->, где работают, где нет (title, style). Нюансы безопасности — видны в исходном коде.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обозначаются комментарии в HTML",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Комментарий в HTML задаётся конструкцией <!-- текст комментария -->. Комментарии игнорируются браузером при рендеринге, но остаются видимыми в исходном коде. Не работают внутри <title> и <style> (там свой синтаксис). Нельзя размещать в них конфиденциальные данные."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Комментарии в HTML", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каким образом задаётся адрес документа, на который следует перейти",
+      "questionSlug": "kakim-obrazom-zadayotsya-adres-dokumenta-na-kotoryy-sleduet-pereyti",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "атрибуты"],
+      "seo": {
+        "title": "Каким образом задаётся адрес документа, на который следует перейти — Gymterview",
+        "description": "Гиперссылки в HTML: тег <a> с атрибутом href. Абсолютные, относительные, якорные ссылки. Атрибуты target, rel, download. Безопасность target=_blank.",
+        "keywords": ["тег a", "href", "гиперссылка", "HTML ссылка", "target", "rel noopener", "абсолютная ссылка", "относительная ссылка", "собеседование"],
+        "ogTitle": "Гиперссылки в HTML: тег a и атрибут href — Gymterview",
+        "ogDescription": "Тег <a href='URL'> для навигации между страницами. Типы адресов, атрибуты target/rel/download, безопасность при target=_blank.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каким образом задаётся адрес документа, на который следует перейти",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для создания ссылок используется тег <a> с атрибутом href, содержащим URL целевого документа. Адрес может быть абсолютным (https://...), относительным (/page) или якорным (#section). При target='_blank' необходимо добавлять rel='noopener noreferrer' для безопасности."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Гиперссылки", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как сделать ссылку на адрес электронной почты",
+      "questionSlug": "kak-sdelat-ssylku-na-adres-elektronnoy-pochty",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Как сделать ссылку на адрес электронной почты — Gymterview",
+        "description": "Ссылка на email в HTML: тег <a href='mailto:email'>. Параметры subject, body, cc, bcc. Проблема спама и альтернативы с HTML-формами на практике.",
+        "keywords": ["mailto", "email ссылка", "HTML почта", "subject", "body", "cc", "bcc", "спам", "собеседование"],
+        "ogTitle": "Ссылка на email в HTML: mailto — Gymterview",
+        "ogDescription": "Создание ссылки на email через <a href='mailto:...'> с параметрами subject, body, cc. Проблема спама и альтернативы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как сделать ссылку на адрес электронной почты",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ссылка на email создаётся тегом <a> с протоколом mailto: в атрибуте href. Можно добавить параметры: subject (тема), body (текст), cc (копия), bcc (скрытая копия). Открытая публикация email привлекает спам — в production лучше использовать HTML-формы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Ссылка на email", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего предназначен тег em",
+      "questionSlug": "dlya-chego-prednaznachen-teg-em",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "текст"],
+      "seo": {
+        "title": "Для чего предназначен тег em — Gymterview",
+        "description": "Тег em в HTML: семантическое акцентирование текста. Отличие em от i, strong от b. Влияние на экранные читалки и доступность. Примеры использования.",
+        "keywords": ["тег em", "emphasis", "курсив HTML", "em vs i", "strong vs b", "семантика", "доступность", "собеседование"],
+        "ogTitle": "Тег em: семантическое акцентирование текста — Gymterview",
+        "ogDescription": "em — семантическое выделение (акцент), отображается курсивом. Отличия от i (визуальный курсив). Влияние на screen readers.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего предназначен тег em",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тег <em> — семантический элемент для смыслового акцентирования текста. Отображается курсивом, но в отличие от <i> (визуальный курсив) несёт семантическую нагрузку. Экранные читалки изменяют интонацию при встрече <em>, а <i> игнорируют. Аналогично <strong> (семантический жирный) отличается от <b> (визуальный жирный)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Тег em", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего предназначены теги ol, ul, li",
+      "questionSlug": "dlya-chego-prednaznacheny-tegi-ol-ul-li",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Для чего предназначены теги ol, ul, li — Gymterview",
+        "description": "Теги ol, ul, li в HTML: нумерованный и маркированный списки. Атрибуты ol (type, start, reversed), вложенные списки. Примеры использования на собеседовании.",
+        "keywords": ["ol", "ul", "li", "нумерованный список", "маркированный список", "HTML списки", "вложенные списки", "собеседование"],
+        "ogTitle": "Теги ol, ul, li: списки в HTML — Gymterview",
+        "ogDescription": "ol — нумерованный список, ul — маркированный, li — элемент списка. Атрибуты, вложенность, примеры.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего предназначены теги ol, ul, li",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Теги ol, ul и li предназначены для создания списков. <ol> — нумерованный (упорядоченный) список, <ul> — маркированный (неупорядоченный), <li> — элемент списка. ol поддерживает атрибуты type (вид нумерации), start (начальное значение), reversed (обратный порядок). Списки можно вкладывать друг в друга."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Списки ol, ul, li", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего предназначены теги dl, dt, dd",
+      "questionSlug": "dlya-chego-prednaznacheny-tegi-dl-dt-dd",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Для чего предназначены теги dl, dt, dd — Gymterview",
+        "description": "Теги dl, dt, dd в HTML: список определений. Структура, примеры с глоссарием и FAQ. Отличие от ol/ul. Когда использовать description list на практике.",
+        "keywords": ["dl", "dt", "dd", "список определений", "description list", "глоссарий", "HTML", "собеседование"],
+        "ogTitle": "Теги dl, dt, dd: список определений в HTML — Gymterview",
+        "ogDescription": "dl — список определений, dt — термин, dd — определение. Используется для глоссариев, FAQ, пар ключ-значение.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего предназначены теги dl, dt, dd",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Теги dl, dt и dd предназначены для создания списка определений (description list). <dl> — контейнер, <dt> — термин, <dd> — определение термина. Используется для глоссариев, FAQ-блоков и пар ключ-значение. Один термин может иметь несколько определений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Список определений dl, dt, dd", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего предназначены теги tr, th, td",
+      "questionSlug": "dlya-chego-prednaznacheny-tegi-tr-th-td",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы"],
+      "seo": {
+        "title": "Для чего предназначены теги tr, th, td — Gymterview",
+        "description": "Теги tr, th, td в HTML: строки и ячейки таблицы. Атрибуты colspan, rowspan, scope. Секции thead, tbody, tfoot. Примеры HTML-таблиц для собеседования.",
+        "keywords": ["tr", "th", "td", "HTML таблица", "colspan", "rowspan", "thead", "tbody", "tfoot", "собеседование"],
+        "ogTitle": "Теги tr, th, td: таблицы в HTML — Gymterview",
+        "ogDescription": "tr — строка, th — ячейка заголовка, td — ячейка данных. Атрибуты colspan/rowspan, секции thead/tbody/tfoot.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего предназначены теги tr, th, td",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "tr — строка таблицы, th — ячейка заголовка (жирный, по центру), td — ячейка данных (обычный, по левому краю). Ячейки объединяются атрибутами colspan (по горизонтали) и rowspan (по вертикали). Таблица делится на секции: thead (заголовок), tbody (тело), tfoot (подвал)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Таблицы tr, th, td", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Обязательно ли писать атрибут alt в теге img",
+      "questionSlug": "obyazatelno-li-pisat-atribut-alt-v-tege-img",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "атрибуты"],
+      "seo": {
+        "title": "Обязательно ли писать атрибут alt в теге img — Gymterview",
+        "description": "Атрибут alt в теге img: обязательность по спецификации, правила написания. Доступность, SEO, декоративные изображения. Валидация W3C и Lighthouse.",
+        "keywords": ["alt", "img", "атрибут alt", "accessibility", "доступность", "SEO", "декоративное изображение", "alt пустой", "собеседование"],
+        "ogTitle": "Атрибут alt в теге img: обязательность и правила — Gymterview",
+        "ogDescription": "Атрибут alt обязателен по спецификации HTML. Нужен для доступности, SEO и отображения при ошибке загрузки. Для декоративных — alt=''.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Обязательно ли писать атрибут alt в теге img",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, атрибут alt обязателен по спецификации HTML. Он задаёт альтернативный текст для доступности (screen readers), SEO (индексация изображений) и отображения при ошибке загрузки. Для информативных изображений — описание содержимого, для декоративных — пустая строка alt=''."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Атрибут alt", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В каком регистре лучше писать HTML-код",
+      "questionSlug": "v-kakom-registre-luchshe-pisat-html-kod",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "синтаксис"],
+      "seo": {
+        "title": "В каком регистре лучше писать HTML-код — Gymterview",
+        "description": "Рекомендации по регистру HTML-кода: нижний регистр для тегов, атрибутов и значений. Почему нижний регистр, исключения, совместимость с XHTML и style guide.",
+        "keywords": ["регистр HTML", "нижний регистр", "верхний регистр", "HTML style guide", "XHTML", "рекомендации W3C", "собеседование"],
+        "ogTitle": "В каком регистре писать HTML-код — Gymterview",
+        "ogDescription": "HTML-код пишется в нижнем регистре: теги, атрибуты, значения. Рекомендация W3C, совместимость с XHTML, исключения.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В каком регистре лучше писать HTML-код",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Весь HTML-код рекомендуется писать в нижнем регистре: имена тегов, атрибутов и значений (кроме текстового содержимого). Это обеспечивает единообразие, совместимость с XHTML (где нижний регистр обязателен) и соответствует рекомендациям W3C и Google HTML/CSS Style Guide."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Регистр HTML-кода", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое мнемоника (entity)",
+      "questionSlug": "chto-takoe-mnemonika-entity",
+      "grade": "junior",
+      "tags": ["html", "frontend", "основы", "синтаксис"],
+      "seo": {
+        "title": "Что такое мнемоника (entity) — Gymterview",
+        "description": "HTML-мнемоники (entities): специальные последовательности для отображения зарезервированных символов. Таблица основных мнемоник: &lt; &gt; &amp; &nbsp; &copy;.",
+        "keywords": ["мнемоника", "entity", "HTML entity", "&lt;", "&gt;", "&amp;", "&nbsp;", "спецсимволы", "экранирование", "собеседование"],
+        "ogTitle": "Мнемоники (entities) в HTML — Gymterview",
+        "ogDescription": "Мнемоника — способ отобразить зарезервированные символы (<, >, &) как текст. Форматы: &имя; и &#код;. Таблица основных мнемоник.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое мнемоника (entity)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мнемоника (HTML entity) — специальная последовательность символов (&имя; или &#код;), используемая для отображения зарезервированных и специальных символов в HTML. Обязательно экранировать <, > и & в текстовом контенте, иначе браузер интерпретирует их как разметку."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Мнемоники (entities)", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие семантические теги появились в HTML5",
+      "questionSlug": "kakie-semanticheskie-tegi-poyavilis-v-html5",
+      "grade": "middle",
+      "tags": ["html", "frontend", "html5", "семантика", "accessibility"],
+      "seo": {
+        "title": "Какие семантические теги появились в HTML5 — Gymterview",
+        "description": "Семантические теги HTML5: header, footer, nav, main, article, section, aside, figure. Зачем нужны: доступность, SEO, читаемость. Частые ошибки использования.",
+        "keywords": ["семантические теги", "HTML5", "header", "footer", "nav", "main", "article", "section", "aside", "figure", "accessibility", "SEO"],
+        "ogTitle": "Семантические теги HTML5: header, nav, main, article, section — Gymterview",
+        "ogDescription": "Обзор семантических тегов HTML5: header, footer, nav, main, article, section, aside, figure. Доступность, SEO, частые ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие семантические теги появились в HTML5",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В HTML5 появились теги с семантической нагрузкой: <header> (шапка), <footer> (подвал), <nav> (навигация), <main> (основной контент, один на страницу), <article> (самостоятельный контент), <section> (логический раздел), <aside> (боковое содержимое), <figure>/<figcaption> (иллюстрация с подписью). Улучшают доступность (screen readers), SEO и читаемость кода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Семантические теги HTML5", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужен тег form и какие у него основные атрибуты",
+      "questionSlug": "dlya-chego-nuzhen-teg-form-i-kakie-u-nego-osnovnye-atributy",
+      "grade": "middle",
+      "tags": ["html", "frontend", "http", "spring-boot"],
+      "seo": {
+        "title": "Для чего нужен тег form и какие у него основные атрибуты — Gymterview",
+        "description": "Тег form в HTML: атрибуты action, method, enctype. Типы кодирования данных, загрузка файлов, CSRF-защита в Spring. Частые ошибки при работе с формами.",
+        "keywords": ["form", "HTML форма", "action", "method", "enctype", "multipart/form-data", "CSRF", "Spring MVC", "собеседование"],
+        "ogTitle": "Тег form: атрибуты action, method, enctype — Gymterview",
+        "ogDescription": "form отправляет данные на сервер. Ключевые атрибуты: action (куда), method (GET/POST), enctype. CSRF-защита в Spring Security.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужен тег form и какие у него основные атрибуты",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тег <form> создаёт HTML-форму для отправки данных на сервер по HTTP. Основные атрибуты: action (URL обработчика), method (GET/POST), enctype (тип кодирования: application/x-www-form-urlencoded по умолчанию, multipart/form-data для файлов), novalidate, target, autocomplete. Поля без name не отправляются. Spring Security добавляет CSRF-токен автоматически."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Тег form", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы элементов ввода input существуют в HTML5",
+      "questionSlug": "kakie-tipy-elementov-vvoda-input-sushchestvuyut-v-html5",
+      "grade": "middle",
+      "tags": ["html", "frontend", "html5", "атрибуты"],
+      "seo": {
+        "title": "Какие типы элементов ввода input существуют в HTML5 — Gymterview",
+        "description": "Типы input в HTML5: text, password, email, number, date, checkbox, radio, file, hidden, range, color, url, tel, search. Атрибуты валидации и связь с Bean Validation.",
+        "keywords": ["input", "типы input", "HTML5 input", "text", "email", "number", "date", "checkbox", "radio", "file", "валидация", "Bean Validation"],
+        "ogTitle": "Типы input в HTML5: text, email, number, date и другие — Gymterview",
+        "ogDescription": "Полный список типов <input> в HTML5 с атрибутами валидации. Связь HTML5-валидации с Bean Validation в Spring Boot.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы элементов ввода input существуют в HTML5",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HTML5 расширил типы <input>: text, password, email (валидация формата), number (кнопки +/-), date (календарь), time, checkbox, radio, file, hidden, submit, range (ползунок), color (палитра), url, tel, search. Атрибуты валидации: required, pattern, min/max, minlength/maxlength, step, disabled, readonly. HTML5-валидация не заменяет серверную (Bean Validation в Spring)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Типы input в HTML5", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое мета-теги и для чего они нужны",
+      "questionSlug": "chto-takoe-meta-tegi-i-dlya-chego-oni-nuzhny",
+      "grade": "middle",
+      "tags": ["html", "frontend", "seo", "security"],
+      "seo": {
+        "title": "Что такое мета-теги и для чего они нужны — Gymterview",
+        "description": "Мета-теги в HTML: charset, viewport, description, Open Graph, Content-Security-Policy. Обязательные мета-теги, частые ошибки и генерация через Thymeleaf.",
+        "keywords": ["мета-теги", "meta", "charset", "viewport", "description", "Open Graph", "og:title", "Content-Security-Policy", "SEO", "собеседование"],
+        "ogTitle": "Мета-теги в HTML: charset, viewport, description, Open Graph — Gymterview",
+        "ogDescription": "Обзор мета-тегов: charset (кодировка), viewport (мобильные), description (SEO), Open Graph (соцсети), CSP (безопасность).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое мета-теги и для чего они нужны",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мета-теги — элементы <meta> внутри <head>, содержащие метаданные о документе. Основные: charset (кодировка, UTF-8), viewport (масштабирование на мобильных), description (SEO-сниппет). Также существуют http-equiv мета-теги (Content-Security-Policy), Open Graph (превью в соцсетях). charset должен быть в первых 1024 байтах документа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "Мета-теги", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между GET и POST при отправке формы",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-get-i-post-pri-otpravke-formy",
+      "grade": "middle",
+      "tags": ["html", "frontend", "http", "spring-boot", "security"],
+      "seo": {
+        "title": "В чём разница между GET и POST при отправке формы — Gymterview",
+        "description": "Разница GET и POST в HTML-формах: передача данных, идемпотентность, кэширование, безопасность. Паттерн PRG, обработка в Spring MVC, CSRF-защита, REST-семантика.",
+        "keywords": ["GET vs POST", "HTML форма", "HTTP метод", "идемпотентность", "PRG паттерн", "CSRF", "Spring MVC", "REST", "собеседование"],
+        "ogTitle": "GET vs POST при отправке формы: разница и когда использовать — Gymterview",
+        "ogDescription": "GET — данные в URL, идемпотентный, для чтения. POST — данные в теле, для изменений. PRG-паттерн, CSRF, REST-семантика.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между GET и POST при отправке формы",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GET передаёт данные в URL (query-параметры), идемпотентный, кэшируемый, для получения данных. POST передаёт данные в теле запроса, не идемпотентный, для изменения данных. GET нельзя использовать для паролей и конфиденциальных данных. После POST применяется PRG-паттерн (Post/Redirect/Get) для предотвращения повторной отправки. Spring Security требует CSRF-токен для POST."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы HTML", "url": "/topics/html" },
+          { "name": "GET vs POST", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

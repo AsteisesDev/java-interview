@@ -1,0 +1,908 @@
+{
+  "topic": "SQL",
+  "topicSlug": "sql",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие ограничения на целостность данных существуют в SQL?",
+      "questionSlug": "kakie-ogranicheniya-na-tselostnost-dannykh-sushchestvuyut-v-sql",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какие ограничения на целостность данных существуют в SQL? — Gymterview",
+        "description": "Ограничения целостности (constraints) — правила, которые СУБД автоматически проверяет при вставке, обновлении и удалении данных, не позволяя привести базу в нек",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Какие ограничения на целостность данных существуют в SQL? — Gymterview",
+        "ogDescription": "Ограничения целостности (constraints) — правила, которые СУБД автоматически проверяет при вставке, обновлении и удалении",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ограничения на целостность данных существуют в SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ограничения целостности (constraints) — правила, которые СУБД автоматически проверяет при вставке, обновлении и удалении данных, не позволяя привести базу в некорректное состояние."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какие ограничения на целостность данных существуют в SQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие отличия между ограничениями PRIMARY и UNIQUE?",
+      "questionSlug": "kakie-otlichiya-mezhdu-ogranicheniyami-primary-i-unique",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какие отличия между ограничениями PRIMARY и UNIQUE? — Gymterview",
+        "description": "Оба ограничения гарантируют уникальность значений, но различаются в нескольких ключевых аспектах.",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Какие отличия между ограничениями PRIMARY и UNIQUE? — Gymterview",
+        "ogDescription": "Оба ограничения гарантируют уникальность значений, но различаются в нескольких ключевых аспектах.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие отличия между ограничениями PRIMARY и UNIQUE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оба ограничения гарантируют уникальность значений, но различаются в нескольких ключевых аспектах."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какие отличия между ограничениями PRIMARY и UNIQUE?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Может ли значение в столбце с ограничением FOREIGN KEY равняться NULL?",
+      "questionSlug": "mozhet-li-znachenie-v-stolbtse-s-ogranicheniem-foreign-key-ravnyatsya-null",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Может ли значение в столбце с ограничением FOREIGN KEY равня — Gymterview",
+        "description": "Да, значение в столбце с ограничением `FOREIGN KEY` может быть `NULL`, если на данный столбец не наложено дополнительное ограничение `NOT NULL`. `FOREIGN KEY` п",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Может ли значение в столбце с ограничением FOREIGN KEY равня — Gymterview",
+        "ogDescription": "Да, значение в столбце с ограничением `FOREIGN KEY` может быть `NULL`, если на данный столбец не наложено дополнительное",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Может ли значение в столбце с ограничением FOREIGN KEY равняться NULL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, значение в столбце с ограничением `FOREIGN KEY` может быть `NULL`, если на данный столбец не наложено дополнительное ограничение `NOT NULL`. `FOREIGN KEY` проверяет ссылочную целостность только для не-`NULL` значений — если значение равно `NULL`, проверка соответствия в родительской таблице не в"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Может ли значение в столбце с ограничением FOREIGN KEY равня",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как создать индекс?",
+      "questionSlug": "kak-sozdat-indeks",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Как создать индекс? — Gymterview",
+        "description": "Индекс создаётся с помощью оператора `CREATE INDEX` или неявно — при определении ограничений `PRIMARY KEY` и `UNIQUE` в операторе `CREATE TABLE`.",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Как создать индекс? — Gymterview",
+        "ogDescription": "Индекс создаётся с помощью оператора `CREATE INDEX` или неявно — при определении ограничений `PRIMARY KEY` и `UNIQUE` в ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как создать индекс?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Индекс создаётся с помощью оператора `CREATE INDEX` или неявно — при определении ограничений `PRIMARY KEY` и `UNIQUE` в операторе `CREATE TABLE`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Как создать индекс?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что делает оператор MERGE?",
+      "questionSlug": "chto-delaet-operator-merge",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что делает оператор MERGE? — Gymterview",
+        "description": "`MERGE` (также известный как UPSERT) — оператор, который выполняет слияние данных одной таблицы с данными другой на основе условия. Если условие истинно (строка",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что делает оператор MERGE? — Gymterview",
+        "ogDescription": "`MERGE` (также известный как UPSERT) — оператор, который выполняет слияние данных одной таблицы с данными другой на осно",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что делает оператор MERGE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`MERGE` (также известный как UPSERT) — оператор, который выполняет слияние данных одной таблицы с данными другой на основе условия. Если условие истинно (строка найдена) — выполняется `UPDATE`, если нет — `INSERT`. Это атомарная операция, заменяющая комбинацию `SELECT` + `IF EXISTS` + `UPDATE`/`INSE"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что делает оператор MERGE?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем отличие между операторами DELETE и TRUNCATE?",
+      "questionSlug": "v-chem-otlichie-mezhdu-operatorami-delete-i-truncate",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "В чем отличие между операторами DELETE и TRUNCATE? — Gymterview",
+        "description": "`DELETE` — оператор DML, который удаляет строки поштучно с возможностью фильтрации через `WHERE`, задействует триггеры и может быть откачен в транзакции. `TRUNC",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "В чем отличие между операторами DELETE и TRUNCATE? — Gymterview",
+        "ogDescription": "`DELETE` — оператор DML, который удаляет строки поштучно с возможностью фильтрации через `WHERE`, задействует триггеры и",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем отличие между операторами DELETE и TRUNCATE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`DELETE` — оператор DML, который удаляет строки поштучно с возможностью фильтрации через `WHERE`, задействует триггеры и может быть откачен в транзакции. `TRUNCATE` — оператор DDL, который мгновенно очищает всю таблицу, удаляя и пересоздавая её структуру."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "В чем отличие между операторами DELETE и TRUNCATE?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое хранимая процедура?",
+      "questionSlug": "chto-takoe-khranimaya-protsedura",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое хранимая процедура? — Gymterview",
+        "description": "Хранимая процедура — именованный набор SQL-инструкций, который хранится и выполняется на сервере БД. Процедуры поддерживают входные и выходные параметры, локаль",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что такое хранимая процедура? — Gymterview",
+        "ogDescription": "Хранимая процедура — именованный набор SQL-инструкций, который хранится и выполняется на сервере БД. Процедуры поддержив",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое хранимая процедура?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Хранимая процедура — именованный набор SQL-инструкций, который хранится и выполняется на сервере БД. Процедуры поддерживают входные и выходные параметры, локальные переменные, условные конструкции, циклы и могут выполнять как DDL, так и DML операции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое хранимая процедура?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое триггер?",
+      "questionSlug": "chto-takoe-trigger",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое триггер? — Gymterview",
+        "description": "Триггер (trigger) — хранимая процедура особого типа, которая автоматически выполняется сервером БД при определённом событии модификации данных (INSERT, UPDATE, ",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что такое триггер? — Gymterview",
+        "ogDescription": "Триггер (trigger) — хранимая процедура особого типа, которая автоматически выполняется сервером БД при определённом собы",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое триггер?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Триггер (trigger) — хранимая процедура особого типа, которая автоматически выполняется сервером БД при определённом событии модификации данных (INSERT, UPDATE, DELETE) в заданной таблице. Пользователь не вызывает триггер явно — он срабатывает как реакция на событие."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое триггер?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое курсор?",
+      "questionSlug": "chto-takoe-kursor",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое курсор? — Gymterview",
+        "description": "Курсор — объект базы данных, который позволяет обрабатывать строки результирующего набора по одной, а не весь набор сразу, как это делают обычные SQL-команды. К",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что такое курсор? — Gymterview",
+        "ogDescription": "Курсор — объект базы данных, который позволяет обрабатывать строки результирующего набора по одной, а не весь набор сраз",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое курсор?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Курсор — объект базы данных, который позволяет обрабатывать строки результирующего набора по одной, а не весь набор сразу, как это делают обычные SQL-команды. Курсор действует как указатель (pointer) на текущую строку в результате запроса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое курсор?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите разницу типов данных DATETIME и TIMESTAMP",
+      "questionSlug": "opishite-raznitsu-tipov-dannykh-datetime-i-timestamp",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Опишите разницу типов данных DATETIME и TIMESTAMP — Gymterview",
+        "description": "`DATETIME` и `TIMESTAMP` оба хранят дату и время, но различаются в способе хранения, диапазоне значений и обработке часовых поясов.",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Опишите разницу типов данных DATETIME и TIMESTAMP — Gymterview",
+        "ogDescription": "`DATETIME` и `TIMESTAMP` оба хранят дату и время, но различаются в способе хранения, диапазоне значений и обработке часо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите разницу типов данных DATETIME и TIMESTAMP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`DATETIME` и `TIMESTAMP` оба хранят дату и время, но различаются в способе хранения, диапазоне значений и обработке часовых поясов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Опишите разницу типов данных DATETIME и TIMESTAMP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для каких числовых типов недопустимо использовать операции сложения и вычитания?",
+      "questionSlug": "dlya-kakikh-chislovykh-tipov-nedopustimo-ispolzovat-operatsii-slozheniya-i-vychi",
+      "grade": "junior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для каких числовых типов недопустимо использовать операции с — Gymterview",
+        "description": "В качестве операндов операций сложения и вычитания нельзя использовать числовой тип `BIT`. Тип `BIT` предназначен для хранения битовых значений (0 и 1) и поддер",
+        "keywords": [
+          "sql",
+          "junior"
+        ],
+        "ogTitle": "Для каких числовых типов недопустимо использовать операции с — Gymterview",
+        "ogDescription": "В качестве операндов операций сложения и вычитания нельзя использовать числовой тип `BIT`. Тип `BIT` предназначен для хр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для каких числовых типов недопустимо использовать операции сложения и вычитания?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В качестве операндов операций сложения и вычитания нельзя использовать числовой тип `BIT`. Тип `BIT` предназначен для хранения битовых значений (0 и 1) и поддерживает только побитовые операции (`&`, `|`, `^`, `~`), а не арифметические. Попытка применить арифметическое сложение или вычитание к значен"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для каких числовых типов недопустимо использовать операции с",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое назначение у операторов PIVOT и UNPIVOT в Transact-SQL?",
+      "questionSlug": "kakoe-naznachenie-u-operatorov-pivot-i-unpivot-v-transact-sql",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какое назначение у операторов PIVOT и UNPIVOT в Transact-SQL — Gymterview",
+        "description": "`PIVOT` и `UNPIVOT` — нестандартные операторы Transact-SQL, выполняющие преобразование таблицы из строкового представления в столбцовое и обратно.",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Какое назначение у операторов PIVOT и UNPIVOT в Transact-SQL — Gymterview",
+        "ogDescription": "`PIVOT` и `UNPIVOT` — нестандартные операторы Transact-SQL, выполняющие преобразование таблицы из строкового представлен",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какое назначение у операторов PIVOT и UNPIVOT в Transact-SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`PIVOT` и `UNPIVOT` — нестандартные операторы Transact-SQL, выполняющие преобразование таблицы из строкового представления в столбцовое и обратно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какое назначение у операторов PIVOT и UNPIVOT в Transact-SQL",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Расскажите об основных функциях ранжирования в Transact-SQL",
+      "questionSlug": "rasskazhite-ob-osnovnykh-funktsiyakh-ranzhirovaniya-v-transact-sql",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Расскажите об основных функциях ранжирования в Transact-SQL — Gymterview",
+        "description": "Ранжирующие функции возвращают порядковый номер или ранг для каждой записи внутри определённого раздела результирующего набора. Они работают через конструкцию `",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Расскажите об основных функциях ранжирования в Transact-SQL — Gymterview",
+        "ogDescription": "Ранжирующие функции возвращают порядковый номер или ранг для каждой записи внутри определённого раздела результирующего ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Расскажите об основных функциях ранжирования в Transact-SQL",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ранжирующие функции возвращают порядковый номер или ранг для каждой записи внутри определённого раздела результирующего набора. Они работают через конструкцию `OVER(ORDER BY ...)` и не сворачивают строки, в отличие от `GROUP BY`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Расскажите об основных функциях ранжирования в Transact-SQL",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используются операторы INTERSECT и EXCEPT в Transact-SQL?",
+      "questionSlug": "dlya-chego-ispolzuyutsya-operatory-intersect-i-except-v-transact-sql",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Для чего используются операторы INTERSECT и EXCEPT в Transac — Gymterview",
+        "description": "`INTERSECT` и `EXCEPT` — операторы множественной алгебры, работающие с результатами двух `SELECT`-запросов. Оба оператора возвращают только уникальные записи (а",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Для чего используются операторы INTERSECT и EXCEPT в Transac — Gymterview",
+        "ogDescription": "`INTERSECT` и `EXCEPT` — операторы множественной алгебры, работающие с результатами двух `SELECT`-запросов. Оба оператор",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используются операторы INTERSECT и EXCEPT в Transact-SQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`INTERSECT` и `EXCEPT` — операторы множественной алгебры, работающие с результатами двух `SELECT`-запросов. Оба оператора возвращают только уникальные записи (аналогично `UNION`)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Для чего используются операторы INTERSECT и EXCEPT в Transac",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Напишите запрос",
+      "questionSlug": "napishite-zapros",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Напишите запрос — Gymterview",
+        "description": "```sql",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Напишите запрос — Gymterview",
+        "ogDescription": "```sql",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Напишите запрос",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "```sql"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Напишите запрос",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое оконные функции (Window Functions)?",
+      "questionSlug": "chto-takoe-okonnye-funktsii-window-functions",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое оконные функции (Window Functions)? — Gymterview",
+        "description": "Оконные функции (Window Functions) — функции, которые выполняют вычисления над набором строк, связанных с текущей строкой, без сворачивания результата в одну ст",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что такое оконные функции (Window Functions)? — Gymterview",
+        "ogDescription": "Оконные функции (Window Functions) — функции, которые выполняют вычисления над набором строк, связанных с текущей строко",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое оконные функции (Window Functions)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оконные функции (Window Functions) — функции, которые выполняют вычисления над набором строк, связанных с текущей строкой, без сворачивания результата в одну строку. В отличие от агрегатных функций с `GROUP BY`, каждая строка сохраняется в результате, а к ней добавляется вычисленное значение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое оконные функции (Window Functions)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое CTE (Common Table Expression)?",
+      "questionSlug": "chto-takoe-cte-common-table-expression",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Что такое CTE (Common Table Expression)? — Gymterview",
+        "description": "CTE (Common Table Expression) — именованное временное результирующее множество, определяемое с помощью ключевого слова `WITH`. CTE существует только в рамках од",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Что такое CTE (Common Table Expression)? — Gymterview",
+        "ogDescription": "CTE (Common Table Expression) — именованное временное результирующее множество, определяемое с помощью ключевого слова `",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CTE (Common Table Expression)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CTE (Common Table Expression) — именованное временное результирующее множество, определяемое с помощью ключевого слова `WITH`. CTE существует только в рамках одного запроса и делает сложные запросы более читаемыми, позволяя разбить их на логические блоки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Что такое CTE (Common Table Expression)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как анализировать производительность запросов? Что такое EXPLAIN ANALYZE?",
+      "questionSlug": "kak-analizirovat-proizvoditelnost-zaprosov-chto-takoe-explain-analyze",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Как анализировать производительность запросов? Что такое EXP — Gymterview",
+        "description": "`EXPLAIN` — команда, которая показывает план выполнения запроса — последовательность операций, которые СУБД планирует выполнить для получения результата. `EXPLA",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Как анализировать производительность запросов? Что такое EXP — Gymterview",
+        "ogDescription": "`EXPLAIN` — команда, которая показывает план выполнения запроса — последовательность операций, которые СУБД планирует вы",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как анализировать производительность запросов? Что такое EXPLAIN ANALYZE?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`EXPLAIN` — команда, которая показывает план выполнения запроса — последовательность операций, которые СУБД планирует выполнить для получения результата. `EXPLAIN ANALYZE` дополнительно выполняет запрос и показывает фактическое время и количество обработанных строк."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Как анализировать производительность запросов? Что такое EXP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы индексов существуют и когда какой использовать?",
+      "questionSlug": "kakie-tipy-indeksov-sushchestvuyut-i-kogda-kakoj-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Какие типы индексов существуют и когда какой использовать? — Gymterview",
+        "description": "Индекс — структура данных, ускоряющая поиск строк в таблице за счёт дополнительного расхода на запись и хранение. В PostgreSQL поддерживается несколько типов ин",
+        "keywords": [
+          "sql",
+          "middle"
+        ],
+        "ogTitle": "Какие типы индексов существуют и когда какой использовать? — Gymterview",
+        "ogDescription": "Индекс — структура данных, ускоряющая поиск строк в таблице за счёт дополнительного расхода на запись и хранение. В Post",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы индексов существуют и когда какой использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Индекс — структура данных, ускоряющая поиск строк в таблице за счёт дополнительного расхода на запись и хранение. В PostgreSQL поддерживается несколько типов индексов, каждый из которых оптимален для определённых сценариев."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Какие типы индексов существуют и когда какой использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как оптимизировать SQL-запросы?",
+      "questionSlug": "kak-optimizirovat-sql-zaprosy",
+      "grade": "senior",
+      "tags": [
+        "sql"
+      ],
+      "seo": {
+        "title": "Как оптимизировать SQL-запросы? — Gymterview",
+        "description": "Оптимизация SQL-запросов — процесс улучшения производительности запросов, основанный на измерениях (`EXPLAIN ANALYZE`), а не на догадках. Ниже приведён практиче",
+        "keywords": [
+          "sql",
+          "senior"
+        ],
+        "ogTitle": "Как оптимизировать SQL-запросы? — Gymterview",
+        "ogDescription": "Оптимизация SQL-запросов — процесс улучшения производительности запросов, основанный на измерениях (`EXPLAIN ANALYZE`), ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как оптимизировать SQL-запросы?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оптимизация SQL-запросов — процесс улучшения производительности запросов, основанный на измерениях (`EXPLAIN ANALYZE`), а не на догадках. Ниже приведён практический чеклист."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "SQL",
+            "url": "/topics/sql"
+          },
+          {
+            "name": "Как оптимизировать SQL-запросы?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

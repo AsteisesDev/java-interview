@@ -1,0 +1,908 @@
+{
+  "topic": "Новое в Java: от 11 до 25",
+  "topicSlug": "java-modern",
+  "batch": 1,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Какие ключевые нововведения появились в Java 11?",
+      "questionSlug": "kakie-klyuchevye-novovvedeniya-poyavilis-v-java-11",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Какие ключевые нововведения появились в Java 11? — Gymterview",
+        "description": "Java 11 — первый LTS-релиз после Java 8 в новой модели релизов (каждые 6 месяцев). Многие проекты мигрировали напрямую с Java 8 на Java 11.",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Какие ключевые нововведения появились в Java 11? — Gymterview",
+        "ogDescription": "Java 11 — первый LTS-релиз после Java 8 в новой модели релизов (каждые 6 месяцев). Многие проекты мигрировали напрямую с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ключевые нововведения появились в Java 11?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 11 — первый LTS-релиз после Java 8 в новой модели релизов (каждые 6 месяцев). Многие проекты мигрировали напрямую с Java 8 на Java 11."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Какие ключевые нововведения появились в Java 11?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое HttpClient API в Java 11?",
+      "questionSlug": "chto-takoe-httpclient-api-v-java-11",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Что такое HttpClient API в Java 11? — Gymterview",
+        "description": "HttpClient — стандартный HTTP-клиент в JDK, поддерживающий HTTP/1.1 и HTTP/2, синхронные и асинхронные запросы. Заменяет устаревший `HttpURLConnection`.",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Что такое HttpClient API в Java 11? — Gymterview",
+        "ogDescription": "HttpClient — стандартный HTTP-клиент в JDK, поддерживающий HTTP/1.1 и HTTP/2, синхронные и асинхронные запросы. Заменяет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое HttpClient API в Java 11?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HttpClient — стандартный HTTP-клиент в JDK, поддерживающий HTTP/1.1 и HTTP/2, синхронные и асинхронные запросы. Заменяет устаревший `HttpURLConnection`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Что такое HttpClient API в Java 11?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Новые методы String в Java 11",
+      "questionSlug": "novye-metody-string-v-java-11",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Новые методы String в Java 11 — Gymterview",
+        "description": "Java 11 добавила к классу `String` методы `isBlank()`, `strip()`, `lines()` и `repeat()`, покрывающие частые операции, для которых ранее требовались внешние биб",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Новые методы String в Java 11 — Gymterview",
+        "ogDescription": "Java 11 добавила к классу `String` методы `isBlank()`, `strip()`, `lines()` и `repeat()`, покрывающие частые операции, д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Новые методы String в Java 11",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 11 добавила к классу `String` методы `isBlank()`, `strip()`, `lines()` и `repeat()`, покрывающие частые операции, для которых ранее требовались внешние библиотеки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Новые методы String в Java 11",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Var в лямбда-выражениях (Java 11)",
+      "questionSlug": "var-v-lyambda-vyrazheniyakh-java-11",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Var в лямбда-выражениях (Java 11) — Gymterview",
+        "description": "В Java 11 `var` разрешён в параметрах лямбда-выражений. Основная цель — возможность добавлять аннотации к лямбда-параметрам, что без `var` невозможно.",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Var в лямбда-выражениях (Java 11) — Gymterview",
+        "ogDescription": "В Java 11 `var` разрешён в параметрах лямбда-выражений. Основная цель — возможность добавлять аннотации к лямбда-парамет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Var в лямбда-выражениях (Java 11)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Java 11 `var` разрешён в параметрах лямбда-выражений. Основная цель — возможность добавлять аннотации к лямбда-параметрам, что без `var` невозможно."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Var в лямбда-выражениях (Java 11)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Запуск .java файлов без компиляции",
+      "questionSlug": "zapusk-java-fajlov-bez-kompilyatsii",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Запуск .java файлов без компиляции — Gymterview",
+        "description": "Java 11 позволяет запускать single-file Java-программы напрямую без явного вызова `javac` — файл компилируется в памяти и сразу выполняется.",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Запуск .java файлов без компиляции — Gymterview",
+        "ogDescription": "Java 11 позволяет запускать single-file Java-программы напрямую без явного вызова `javac` — файл компилируется в памяти ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Запуск .java файлов без компиляции",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 11 позволяет запускать single-file Java-программы напрямую без явного вызова `javac` — файл компилируется в памяти и сразу выполняется."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Запуск .java файлов без компиляции",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие ключевые нововведения появились в Java 17?",
+      "questionSlug": "kakie-klyuchevye-novovvedeniya-poyavilis-v-java-17",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Какие ключевые нововведения появились в Java 17? — Gymterview",
+        "description": "Java 17 — второй LTS после Java 11, ставший минимальной версией для Spring Boot 3.x и Spring Framework 6.x. В этом релизе финализированы Records, Sealed Classes",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Какие ключевые нововведения появились в Java 17? — Gymterview",
+        "ogDescription": "Java 17 — второй LTS после Java 11, ставший минимальной версией для Spring Boot 3.x и Spring Framework 6.x. В этом релиз",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ключевые нововведения появились в Java 17?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 17 — второй LTS после Java 11, ставший минимальной версией для Spring Boot 3.x и Spring Framework 6.x. В этом релизе финализированы Records, Sealed Classes, Pattern Matching и Text Blocks."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Какие ключевые нововведения появились в Java 17?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Sealed Classes и Sealed Interfaces?",
+      "questionSlug": "chto-takoe-sealed-classes-i-sealed-interfaces",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Что такое Sealed Classes и Sealed Interfaces? — Gymterview",
+        "description": "Sealed Classes (запечатанные классы) — механизм ограничения набора классов, которые могут наследоваться от данного класса или реализовывать интерфейс. Это позво",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Что такое Sealed Classes и Sealed Interfaces? — Gymterview",
+        "ogDescription": "Sealed Classes (запечатанные классы) — механизм ограничения набора классов, которые могут наследоваться от данного класс",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Sealed Classes и Sealed Interfaces?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sealed Classes (запечатанные классы) — механизм ограничения набора классов, которые могут наследоваться от данного класса или реализовывать интерфейс. Это позволяет компилятору знать все возможные подтипы и проверять полноту switch-выражений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Что такое Sealed Classes и Sealed Interfaces?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Pattern Matching для instanceof",
+      "questionSlug": "pattern-matching-dlya-instanceof",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Pattern Matching для instanceof — Gymterview",
+        "description": "Pattern Matching для instanceof (финализирован в Java 16) устраняет необходимость явного приведения типа после проверки `instanceof` — переменная привязывается ",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Pattern Matching для instanceof — Gymterview",
+        "ogDescription": "Pattern Matching для instanceof (финализирован в Java 16) устраняет необходимость явного приведения типа после проверки ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Pattern Matching для instanceof",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pattern Matching для instanceof (финализирован в Java 16) устраняет необходимость явного приведения типа после проверки `instanceof` — переменная привязывается к типу прямо в условии."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Pattern Matching для instanceof",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Records — что это и зачем?",
+      "questionSlug": "records-chto-eto-i-zachem",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Records — что это и зачем? — Gymterview",
+        "description": "Record — компактный способ объявления классов-носителей неизменяемых данных (data carriers). Компилятор автоматически генерирует конструктор, accessor-методы, `",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Records — что это и зачем? — Gymterview",
+        "ogDescription": "Record — компактный способ объявления классов-носителей неизменяемых данных (data carriers). Компилятор автоматически ге",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Records — что это и зачем?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Record — компактный способ объявления классов-носителей неизменяемых данных (data carriers). Компилятор автоматически генерирует конструктор, accessor-методы, `equals()`, `hashCode()` и `toString()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Records — что это и зачем?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Text Blocks (многострочные строки)",
+      "questionSlug": "text-blocks-mnogostrochnye-stroki",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Text Blocks (многострочные строки) — Gymterview",
+        "description": "Text Blocks (финализированы в Java 15) — многострочные строковые литералы, сохраняющие форматирование. Начинаются с `\"\"\"` и переноса строки, отступ определяется",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Text Blocks (многострочные строки) — Gymterview",
+        "ogDescription": "Text Blocks (финализированы в Java 15) — многострочные строковые литералы, сохраняющие форматирование. Начинаются с `\"\"\"",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Text Blocks (многострочные строки)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Text Blocks (финализированы в Java 15) — многострочные строковые литералы, сохраняющие форматирование. Начинаются с `\"\"\"` и переноса строки, отступ определяется позицией закрывающих `\"\"\"`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Text Blocks (многострочные строки)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Switch Expressions",
+      "questionSlug": "switch-expressions",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Switch Expressions — Gymterview",
+        "description": "Switch Expressions (финализированы в Java 14) превращают `switch` из statement в expression, возвращающее значение. Стрелочный синтаксис `->` исключает fall-thr",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Switch Expressions — Gymterview",
+        "ogDescription": "Switch Expressions (финализированы в Java 14) превращают `switch` из statement в expression, возвращающее значение. Стре",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Switch Expressions",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Switch Expressions (финализированы в Java 14) превращают `switch` из statement в expression, возвращающее значение. Стрелочный синтаксис `->` исключает fall-through, `yield` возвращает значение из блока."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Switch Expressions",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Удалённые и устаревшие API в Java 17",
+      "questionSlug": "udalyonnye-i-ustarevshie-api-v-java-17",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Удалённые и устаревшие API в Java 17 — Gymterview",
+        "description": "При миграции на Java 17 критически важно знать, какие API удалены и чем их заменить. Главное изменение для enterprise — переход с `javax.*` на `jakarta.*`.",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Удалённые и устаревшие API в Java 17 — Gymterview",
+        "ogDescription": "При миграции на Java 17 критически важно знать, какие API удалены и чем их заменить. Главное изменение для enterprise — ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Удалённые и устаревшие API в Java 17",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При миграции на Java 17 критически важно знать, какие API удалены и чем их заменить. Главное изменение для enterprise — переход с `javax.*` на `jakarta.*`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Удалённые и устаревшие API в Java 17",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие ключевые нововведения появились в Java 21?",
+      "questionSlug": "kakie-klyuchevye-novovvedeniya-poyavilis-v-java-21",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Какие ключевые нововведения появились в Java 21? — Gymterview",
+        "description": "Java 21 — третий LTS, самый значимый релиз со времён Java 8. Ключевые финализированные фичи: Virtual Threads, Pattern Matching для switch, Record Patterns, Sequ",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Какие ключевые нововведения появились в Java 21? — Gymterview",
+        "ogDescription": "Java 21 — третий LTS, самый значимый релиз со времён Java 8. Ключевые финализированные фичи: Virtual Threads, Pattern Ma",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ключевые нововведения появились в Java 21?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 21 — третий LTS, самый значимый релиз со времён Java 8. Ключевые финализированные фичи: Virtual Threads, Pattern Matching для switch, Record Patterns, Sequenced Collections."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Какие ключевые нововведения появились в Java 21?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Virtual Threads (Project Loom)?",
+      "questionSlug": "chto-takoe-virtual-threads-project-loom",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Что такое Virtual Threads (Project Loom)? — Gymterview",
+        "description": "Virtual Threads — лёгкие потоки, управляемые JVM, а не операционной системой. Позволяют создавать миллионы потоков без значительных затрат памяти, решая проблем",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Что такое Virtual Threads (Project Loom)? — Gymterview",
+        "ogDescription": "Virtual Threads — лёгкие потоки, управляемые JVM, а не операционной системой. Позволяют создавать миллионы потоков без з",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Virtual Threads (Project Loom)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Virtual Threads — лёгкие потоки, управляемые JVM, а не операционной системой. Позволяют создавать миллионы потоков без значительных затрат памяти, решая проблему масштабирования блокирующего I/O."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Что такое Virtual Threads (Project Loom)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Structured Concurrency — что это и зачем?",
+      "questionSlug": "structured-concurrency-chto-eto-i-zachem",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Structured Concurrency — что это и зачем? — Gymterview",
+        "description": "Structured Concurrency — API для управления группами связанных задач как единым целым. Гарантирует, что подзадачи завершатся (или будут отменены) до завершения ",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Structured Concurrency — что это и зачем? — Gymterview",
+        "ogDescription": "Structured Concurrency — API для управления группами связанных задач как единым целым. Гарантирует, что подзадачи заверш",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Structured Concurrency — что это и зачем?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Structured Concurrency — API для управления группами связанных задач как единым целым. Гарантирует, что подзадачи завершатся (или будут отменены) до завершения родительской задачи, предотвращая утечки потоков."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Structured Concurrency — что это и зачем?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Scoped Values — замена ThreadLocal?",
+      "questionSlug": "scoped-values-zamena-threadlocal",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Scoped Values — замена ThreadLocal? — Gymterview",
+        "description": "Scoped Values — механизм для передачи иммутабельных данных через стек вызовов без явной передачи параметров. Альтернатива `ThreadLocal`, разработанная специальн",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Scoped Values — замена ThreadLocal? — Gymterview",
+        "ogDescription": "Scoped Values — механизм для передачи иммутабельных данных через стек вызовов без явной передачи параметров. Альтернатив",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Scoped Values — замена ThreadLocal?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scoped Values — механизм для передачи иммутабельных данных через стек вызовов без явной передачи параметров. Альтернатива `ThreadLocal`, разработанная специально для Virtual Threads — не создаёт копию на каждый поток и автоматически ограничивает время жизни."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Scoped Values — замена ThreadLocal?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Pattern Matching для switch",
+      "questionSlug": "pattern-matching-dlya-switch",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Pattern Matching для switch — Gymterview",
+        "description": "Pattern Matching для switch (финализирован в Java 21) позволяет использовать type patterns, guarded patterns и null-обработку в switch. В сочетании с sealed typ",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Pattern Matching для switch — Gymterview",
+        "ogDescription": "Pattern Matching для switch (финализирован в Java 21) позволяет использовать type patterns, guarded patterns и null-обра",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Pattern Matching для switch",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pattern Matching для switch (финализирован в Java 21) позволяет использовать type patterns, guarded patterns и null-обработку в switch. В сочетании с sealed types обеспечивает exhaustive check без default."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Pattern Matching для switch",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Record Patterns (деконструкция записей)",
+      "questionSlug": "record-patterns-dekonstruktsiya-zapisej",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Record Patterns (деконструкция записей) — Gymterview",
+        "description": "Record Patterns (финализированы в Java 21) позволяют деконструировать (разложить) Record на компоненты прямо в pattern matching, включая вложенную деконструкцию",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Record Patterns (деконструкция записей) — Gymterview",
+        "ogDescription": "Record Patterns (финализированы в Java 21) позволяют деконструировать (разложить) Record на компоненты прямо в pattern m",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Record Patterns (деконструкция записей)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Record Patterns (финализированы в Java 21) позволяют деконструировать (разложить) Record на компоненты прямо в pattern matching, включая вложенную деконструкцию."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Record Patterns (деконструкция записей)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Sequenced Collections",
+      "questionSlug": "sequenced-collections",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Sequenced Collections — Gymterview",
+        "description": "Sequenced Collections (Java 21) — новые интерфейсы, добавляющие единообразный доступ к первому/последнему элементу и реверсу для всех упорядоченных коллекций че",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Sequenced Collections — Gymterview",
+        "ogDescription": "Sequenced Collections (Java 21) — новые интерфейсы, добавляющие единообразный доступ к первому/последнему элементу и рев",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Sequenced Collections",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sequenced Collections (Java 21) — новые интерфейсы, добавляющие единообразный доступ к первому/последнему элементу и реверсу для всех упорядоченных коллекций через методы `getFirst()`, `getLast()`, `reversed()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Sequenced Collections",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие ключевые нововведения в Java 25?",
+      "questionSlug": "kakie-klyuchevye-novovvedeniya-v-java-25",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Какие ключевые нововведения в Java 25? — Gymterview",
+        "description": "Java 25 — четвёртый LTS, в котором финализированы многие preview-фичи из Java 22-24: Flexible Constructor Bodies, Module Import Declarations, Primitive Patterns",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Какие ключевые нововведения в Java 25? — Gymterview",
+        "ogDescription": "Java 25 — четвёртый LTS, в котором финализированы многие preview-фичи из Java 22-24: Flexible Constructor Bodies, Module",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие ключевые нововведения в Java 25?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java 25 — четвёртый LTS, в котором финализированы многие preview-фичи из Java 22-24: Flexible Constructor Bodies, Module Import Declarations, Primitive Patterns, Scoped Values, Structured Concurrency, Stream Gatherers."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Какие ключевые нововведения в Java 25?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

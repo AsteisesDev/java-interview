@@ -1,0 +1,908 @@
+{
+  "topic": "Реактивное программирование",
+  "topicSlug": "reactive",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое реактивное программирование и чем оно отличается от процедурного программирования?",
+      "questionSlug": "chto-takoe-reaktivnoe-programmirovanie-i-chem-ono-otlichaetsya-ot-protsedurnogo-",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое реактивное программирование и чем оно отличается о — Gymterview",
+        "description": "Реактивное программирование — это парадигма, в которой программа реагирует на изменения в потоках данных и событиях, автоматически распространяя эти изменения ч",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Что такое реактивное программирование и чем оно отличается о — Gymterview",
+        "ogDescription": "Реактивное программирование — это парадигма, в которой программа реагирует на изменения в потоках данных и событиях, авт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое реактивное программирование и чем оно отличается от процедурного программирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реактивное программирование — это парадигма, в которой программа реагирует на изменения в потоках данных и событиях, автоматически распространяя эти изменения через систему."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое реактивное программирование и чем оно отличается о",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Объясните концепцию потоков данных в реактивном программировании",
+      "questionSlug": "obyasnite-kontseptsiyu-potokov-dannykh-v-reaktivnom-programmirovanii",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Объясните концепцию потоков данных в реактивном программиров — Gymterview",
+        "description": "Поток данных (data stream) — это последовательность событий, каждое из которых может содержать новое значение или изменение состояния, автоматически распростран",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Объясните концепцию потоков данных в реактивном программиров — Gymterview",
+        "ogDescription": "Поток данных (data stream) — это последовательность событий, каждое из которых может содержать новое значение или измене",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Объясните концепцию потоков данных в реактивном программировании",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Поток данных (data stream) — это последовательность событий, каждое из которых может содержать новое значение или изменение состояния, автоматически распространяющееся через систему."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Объясните концепцию потоков данных в реактивном программиров",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое паттерн Observer и как он лежит в основе реактивного программирования?",
+      "questionSlug": "chto-takoe-pattern-observer-i-kak-on-lezhit-v-osnove-reaktivnogo-programmirovani",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое паттерн Observer и как он лежит в основе реактивно — Gymterview",
+        "description": "Паттерн Observer (Наблюдатель) — поведенческий шаблон проектирования, позволяющий объектам следить за изменениями в других объектах и автоматически реагировать ",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Что такое паттерн Observer и как он лежит в основе реактивно — Gymterview",
+        "ogDescription": "Паттерн Observer (Наблюдатель) — поведенческий шаблон проектирования, позволяющий объектам следить за изменениями в друг",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое паттерн Observer и как он лежит в основе реактивного программирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Паттерн Observer (Наблюдатель) — поведенческий шаблон проектирования, позволяющий объектам следить за изменениями в других объектах и автоматически реагировать на них."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое паттерн Observer и как он лежит в основе реактивно",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Опишите роль Observable и Observer в реактивном программировании",
+      "questionSlug": "opishite-rol-observable-i-observer-v-reaktivnom-programmirovanii",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Опишите роль Observable и Observer в реактивном программиров — Gymterview",
+        "description": "Observable — источник (производитель) данных, Observer — потребитель данных. Их взаимодействие через подписку формирует основу реактивного потока.",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Опишите роль Observable и Observer в реактивном программиров — Gymterview",
+        "ogDescription": "Observable — источник (производитель) данных, Observer — потребитель данных. Их взаимодействие через подписку формирует ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Опишите роль Observable и Observer в реактивном программировании",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Observable — источник (производитель) данных, Observer — потребитель данных. Их взаимодействие через подписку формирует основу реактивного потока."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Опишите роль Observable и Observer в реактивном программиров",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое backpressure в контексте реактивного программирования?",
+      "questionSlug": "chto-takoe-backpressure-v-kontekste-reaktivnogo-programmirovaniya",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое backpressure в контексте реактивного программирова — Gymterview",
+        "description": "Backpressure — механизм управления потоком данных, когда производитель (Publisher) генерирует данные быстрее, чем потребитель (Subscriber) может их обработать.",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое backpressure в контексте реактивного программирова — Gymterview",
+        "ogDescription": "Backpressure — механизм управления потоком данных, когда производитель (Publisher) генерирует данные быстрее, чем потреб",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое backpressure в контексте реактивного программирования?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Backpressure — механизм управления потоком данных, когда производитель (Publisher) генерирует данные быстрее, чем потребитель (Subscriber) может их обработать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое backpressure в контексте реактивного программирова",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Объясните разницу между Hot и Cold Observable",
+      "questionSlug": "obyasnite-raznitsu-mezhdu-hot-i-cold-observable",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Объясните разницу между Hot и Cold Observable — Gymterview",
+        "description": "Cold Observable начинает эмитировать данные только после подписки; каждый подписчик получает полную последовательность с начала. Hot Observable эмитирует данные",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Объясните разницу между Hot и Cold Observable — Gymterview",
+        "ogDescription": "Cold Observable начинает эмитировать данные только после подписки; каждый подписчик получает полную последовательность с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Объясните разницу между Hot и Cold Observable",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cold Observable начинает эмитировать данные только после подписки; каждый подписчик получает полную последовательность с начала. Hot Observable эмитирует данные независимо от наличия подписчиков; новый подписчик получает только данные, отправленные после его подписки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Объясните разницу между Hot и Cold Observable",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какова роль Подписки в реактивном программировании?",
+      "questionSlug": "kakova-rol-podpiski-v-reaktivnom-programmirovanii",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Какова роль Подписки в реактивном программировании? — Gymterview",
+        "description": "Subscription (Подписка) — интерфейс, действующий как контракт между источником данных (Publisher) и потребителем (Subscriber), обеспечивающий управление потоком",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Какова роль Подписки в реактивном программировании? — Gymterview",
+        "ogDescription": "Subscription (Подписка) — интерфейс, действующий как контракт между источником данных (Publisher) и потребителем (Subscr",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какова роль Подписки в реактивном программировании?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subscription (Подписка) — интерфейс, действующий как контракт между источником данных (Publisher) и потребителем (Subscriber), обеспечивающий управление потоком, backpressure и ресурсами."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Какова роль Подписки в реактивном программировании?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как отписаться от потока для предотвращения утечки памяти?",
+      "questionSlug": "kak-otpisatsya-ot-potoka-dlya-predotvrashcheniya-utechki-pamyati",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Как отписаться от потока для предотвращения утечки памяти? — Gymterview",
+        "description": "Отписка от реактивного потока выполняется через вызов `dispose()` на объекте Disposable, полученном из подписки, или через автоматические операторы ограничения ",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Как отписаться от потока для предотвращения утечки памяти? — Gymterview",
+        "ogDescription": "Отписка от реактивного потока выполняется через вызов `dispose()` на объекте Disposable, полученном из подписки, или чер",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как отписаться от потока для предотвращения утечки памяти?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Отписка от реактивного потока выполняется через вызов `dispose()` на объекте Disposable, полученном из подписки, или через автоматические операторы ограничения потока."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Как отписаться от потока для предотвращения утечки памяти?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие есть операторы в Project Reactor и для чего они используются?",
+      "questionSlug": "kakie-est-operatory-v-project-reactor-i-dlya-chego-oni-ispolzuyutsya",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Какие есть операторы в Project Reactor и для чего они исполь — Gymterview",
+        "description": "Операторы в Project Reactor — функции для создания, преобразования, фильтрации и объединения реактивных потоков данных.",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Какие есть операторы в Project Reactor и для чего они исполь — Gymterview",
+        "ogDescription": "Операторы в Project Reactor — функции для создания, преобразования, фильтрации и объединения реактивных потоков данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие есть операторы в Project Reactor и для чего они используются?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Операторы в Project Reactor — функции для создания, преобразования, фильтрации и объединения реактивных потоков данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Какие есть операторы в Project Reactor и для чего они исполь",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Reactive Streams Specification?",
+      "questionSlug": "chto-takoe-reactive-streams-specification",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое Reactive Streams Specification? — Gymterview",
+        "description": "Reactive Streams — спецификация, определяющая стандарт для асинхронной потоковой обработки данных с поддержкой неблокирующего backpressure. Разработана совместн",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое Reactive Streams Specification? — Gymterview",
+        "ogDescription": "Reactive Streams — спецификация, определяющая стандарт для асинхронной потоковой обработки данных с поддержкой неблокиру",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Reactive Streams Specification?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reactive Streams — спецификация, определяющая стандарт для асинхронной потоковой обработки данных с поддержкой неблокирующего backpressure. Разработана совместно инженерами Netflix, Pivotal, Lightbend и Oracle; с Java 9 включена в JDK как `java.util.concurrent.Flow`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое Reactive Streams Specification?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются Mono и Flux в Project Reactor?",
+      "questionSlug": "chem-otlichayutsya-mono-i-flux-v-project-reactor",
+      "grade": "junior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Чем отличаются Mono и Flux в Project Reactor? — Gymterview",
+        "description": "Mono — реактивный поток, эмитирующий 0 или 1 элемент. Flux — реактивный поток, эмитирующий от 0 до N элементов. Оба реализуют интерфейс Publisher и являются лен",
+        "keywords": [
+          "reactive",
+          "junior"
+        ],
+        "ogTitle": "Чем отличаются Mono и Flux в Project Reactor? — Gymterview",
+        "ogDescription": "Mono — реактивный поток, эмитирующий 0 или 1 элемент. Flux — реактивный поток, эмитирующий от 0 до N элементов. Оба реал",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются Mono и Flux в Project Reactor?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mono — реактивный поток, эмитирующий 0 или 1 элемент. Flux — реактивный поток, эмитирующий от 0 до N элементов. Оба реализуют интерфейс Publisher и являются ленивыми — ничего не происходит до подписки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Чем отличаются Mono и Flux в Project Reactor?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Scheduler в Project Reactor? Какие типы существуют?",
+      "questionSlug": "chto-takoe-scheduler-v-project-reactor-kakie-tipy-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое Scheduler в Project Reactor? Какие типы существуют — Gymterview",
+        "description": "Scheduler — абстракция в Project Reactor, определяющая, в каком потоке (или пуле потоков) будет выполняться реактивный конвейер. По умолчанию цепочка выполняетс",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое Scheduler в Project Reactor? Какие типы существуют — Gymterview",
+        "ogDescription": "Scheduler — абстракция в Project Reactor, определяющая, в каком потоке (или пуле потоков) будет выполняться реактивный к",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Scheduler в Project Reactor? Какие типы существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scheduler — абстракция в Project Reactor, определяющая, в каком потоке (или пуле потоков) будет выполняться реактивный конвейер. По умолчанию цепочка выполняется в потоке, который вызвал `subscribe()`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое Scheduler в Project Reactor? Какие типы существуют",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обрабатывать ошибки в реактивных потоках?",
+      "questionSlug": "kak-obrabatyvat-oshibki-v-reaktivnykh-potokakh",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Как обрабатывать ошибки в реактивных потоках? — Gymterview",
+        "description": "В реактивном программировании ошибка — терминальный сигнал, после которого поток прекращает работу. Project Reactor предоставляет набор операторов для перехвата",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Как обрабатывать ошибки в реактивных потоках? — Gymterview",
+        "ogDescription": "В реактивном программировании ошибка — терминальный сигнал, после которого поток прекращает работу. Project Reactor пред",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обрабатывать ошибки в реактивных потоках?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В реактивном программировании ошибка — терминальный сигнал, после которого поток прекращает работу. Project Reactor предоставляет набор операторов для перехвата, замены и восстановления после ошибок."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Как обрабатывать ошибки в реактивных потоках?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring WebFlux и чем он отличается от Spring MVC?",
+      "questionSlug": "chto-takoe-spring-webflux-i-chem-on-otlichaetsya-ot-spring-mvc",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое Spring WebFlux и чем он отличается от Spring MVC? — Gymterview",
+        "description": "Spring WebFlux — реактивный веб-фреймворк в Spring, работающий на неблокирующем сервере (Netty по умолчанию). Является альтернативой Spring MVC для построения а",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое Spring WebFlux и чем он отличается от Spring MVC? — Gymterview",
+        "ogDescription": "Spring WebFlux — реактивный веб-фреймворк в Spring, работающий на неблокирующем сервере (Netty по умолчанию). Является а",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring WebFlux и чем он отличается от Spring MVC?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring WebFlux — реактивный веб-фреймворк в Spring, работающий на неблокирующем сервере (Netty по умолчанию). Является альтернативой Spring MVC для построения асинхронных, неблокирующих веб-приложений."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое Spring WebFlux и чем он отличается от Spring MVC?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как тестировать реактивный код?",
+      "questionSlug": "kak-testirovat-reaktivnyj-kod",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Как тестировать реактивный код? — Gymterview",
+        "description": "Реактивный код тестируется через StepVerifier — инструмент из reactor-test, который подписывается на Mono/Flux и пошагово проверяет сигналы. Нельзя просто вызва",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Как тестировать реактивный код? — Gymterview",
+        "ogDescription": "Реактивный код тестируется через StepVerifier — инструмент из reactor-test, который подписывается на Mono/Flux и пошагов",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как тестировать реактивный код?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Реактивный код тестируется через StepVerifier — инструмент из reactor-test, который подписывается на Mono/Flux и пошагово проверяет сигналы. Нельзя просто вызвать метод и проверить результат, потому что Mono и Flux ленивы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Как тестировать реактивный код?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Sinks в Project Reactor?",
+      "questionSlug": "chto-takoe-sinks-v-project-reactor",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое Sinks в Project Reactor? — Gymterview",
+        "description": "Sinks — программно управляемые издатели данных в Project Reactor, пришедшие на замену deprecated FluxProcessor и MonoProcessor (Reactor 3.4+). Sinks позволяют и",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое Sinks в Project Reactor? — Gymterview",
+        "ogDescription": "Sinks — программно управляемые издатели данных в Project Reactor, пришедшие на замену deprecated FluxProcessor и MonoPro",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Sinks в Project Reactor?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sinks — программно управляемые издатели данных в Project Reactor, пришедшие на замену deprecated FluxProcessor и MonoProcessor (Reactor 3.4+). Sinks позволяют императивно отправлять данные в реактивный поток."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое Sinks в Project Reactor?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать Server-Sent Events (SSE) с помощью WebFlux?",
+      "questionSlug": "kak-realizovat-server-sent-events-sse-s-pomoshchyu-webflux",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Как реализовать Server-Sent Events (SSE) с помощью WebFlux? — Gymterview",
+        "description": "Server-Sent Events (SSE) — стандарт HTML5 для однонаправленной потоковой передачи данных от сервера к клиенту через HTTP. В отличие от WebSocket, SSE работает п",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Как реализовать Server-Sent Events (SSE) с помощью WebFlux? — Gymterview",
+        "ogDescription": "Server-Sent Events (SSE) — стандарт HTML5 для однонаправленной потоковой передачи данных от сервера к клиенту через HTTP",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать Server-Sent Events (SSE) с помощью WebFlux?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Server-Sent Events (SSE) — стандарт HTML5 для однонаправленной потоковой передачи данных от сервера к клиенту через HTTP. В отличие от WebSocket, SSE работает поверх обычного HTTP и поддерживает автоматическое переподключение браузером."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Как реализовать Server-Sent Events (SSE) с помощью WebFlux?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое R2DBC и как он связан с реактивным программированием?",
+      "questionSlug": "chto-takoe-r2dbc-i-kak-on-svyazan-s-reaktivnym-programmirovaniem",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое R2DBC и как он связан с реактивным программировани — Gymterview",
+        "description": "R2DBC (Reactive Relational Database Connectivity) — спецификация для реактивного, неблокирующего доступа к реляционным базам данных, решающая проблему блокирующ",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое R2DBC и как он связан с реактивным программировани — Gymterview",
+        "ogDescription": "R2DBC (Reactive Relational Database Connectivity) — спецификация для реактивного, неблокирующего доступа к реляционным б",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое R2DBC и как он связан с реактивным программированием?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "R2DBC (Reactive Relational Database Connectivity) — спецификация для реактивного, неблокирующего доступа к реляционным базам данных, решающая проблему блокирующего JDBC в реактивном стеке."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое R2DBC и как он связан с реактивным программировани",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Реактивный vs императивный подход — когда что использовать?",
+      "questionSlug": "reaktivnyj-vs-imperativnyj-podkhod-kogda-chto-ispolzovat",
+      "grade": "senior",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Реактивный vs императивный подход — когда что использовать? — Gymterview",
+        "description": "Выбор между реактивным и императивным подходом — архитектурное решение, зависящее от требований к конкурентности, стека технологий и опыта команды.",
+        "keywords": [
+          "reactive",
+          "senior"
+        ],
+        "ogTitle": "Реактивный vs императивный подход — когда что использовать? — Gymterview",
+        "ogDescription": "Выбор между реактивным и императивным подходом — архитектурное решение, зависящее от требований к конкурентности, стека ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Реактивный vs императивный подход — когда что использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Выбор между реактивным и императивным подходом — архитектурное решение, зависящее от требований к конкурентности, стека технологий и опыта команды."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Реактивный vs императивный подход — когда что использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Context в Project Reactor?",
+      "questionSlug": "chto-takoe-context-v-project-reactor",
+      "grade": "middle",
+      "tags": [
+        "reactive"
+      ],
+      "seo": {
+        "title": "Что такое Context в Project Reactor? — Gymterview",
+        "description": "Context — неизменяемая (immutable) структура данных в Project Reactor, привязанная к конкретной подписке (Subscription). Замена ThreadLocal для реактивных цепоч",
+        "keywords": [
+          "reactive",
+          "middle"
+        ],
+        "ogTitle": "Что такое Context в Project Reactor? — Gymterview",
+        "ogDescription": "Context — неизменяемая (immutable) структура данных в Project Reactor, привязанная к конкретной подписке (Subscription).",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Context в Project Reactor?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Context — неизменяемая (immutable) структура данных в Project Reactor, привязанная к конкретной подписке (Subscription). Замена ThreadLocal для реактивных цепочек, где один запрос может исполняться в разных потоках."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Реактивное программирование",
+            "url": "/topics/reactive"
+          },
+          {
+            "name": "Что такое Context в Project Reactor?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

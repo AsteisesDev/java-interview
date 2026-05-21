@@ -1,0 +1,473 @@
+{
+  "topic": "Git",
+  "topicSlug": "git",
+  "batch": 1,
+  "generatedAt": "2026-05-13T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Git и чем он отличается от других систем контроля версий?",
+      "questionSlug": "chto-takoe-git-i-chem-on-otlichaetsya-ot-drugikh-sistem-kontrolya-versiy",
+      "grade": "junior",
+      "tags": ["git", "vcs", "основы", "devops"],
+      "seo": {
+        "title": "Что такое Git и чем он отличается от других систем контроля версий — Gymterview",
+        "description": "Узнайте, что такое Git, чем распределённая VCS отличается от централизованной (SVN), как Git хранит данные (snapshots) и обеспечивает целостность (SHA-1).",
+        "keywords": ["Git", "система контроля версий", "VCS", "DVCS", "SVN", "распределённая", "snapshot", "SHA-1", "собеседование", "Java"],
+        "ogTitle": "Что такое Git и чем он отличается от SVN — Gymterview",
+        "ogDescription": "Git — распределённая VCS: snapshots вместо дельт, локальные операции, легковесное ветвление. Сравнение с SVN для Java-собеседования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Git и чем он отличается от других систем контроля версий?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Git — распределённая система контроля версий (DVCS), где каждый разработчик имеет полную копию репозитория. Отличия от SVN: хранит snapshots (не дельты), почти все операции локальные, мгновенное ветвление (указатель на коммит, а не копия), целостность через SHA-1 хеши. Git — стандарт де-факто, SHA-256 постепенно заменяет SHA-1."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Что такое Git", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные команды Git нужно знать?",
+      "questionSlug": "kakie-osnovnye-komandy-git-nuzhno-znat",
+      "grade": "junior",
+      "tags": ["git", "cli", "commands", "основы"],
+      "seo": {
+        "title": "Какие основные команды Git нужно знать — Gymterview",
+        "description": "Обзор основных команд Git по категориям: создание (init, clone), отслеживание (add, commit, diff), ветки (branch, switch), синхронизация (fetch, pull, push).",
+        "keywords": ["команды Git", "git init", "git clone", "git add", "git commit", "git push", "git pull", "git fetch", "git switch", "собеседование"],
+        "ogTitle": "Основные команды Git: шпаргалка для собеседования — Gymterview",
+        "ogDescription": "Полный список команд Git по категориям: создание, отслеживание, ветки, синхронизация. Разница pull vs fetch, switch vs checkout.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные команды Git нужно знать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные команды: init/clone (создание), status/diff/add/commit/log (отслеживание), branch/switch/checkout (ветки), fetch/pull/push/remote (синхронизация), merge/rebase (слияние), stash (временное сохранение). Важно: pull = fetch + merge, switch (Git 2.23+) — безопасная замена checkout, git add . — текущая директория, git add -A — весь репозиторий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Основные команды Git", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ветвление (branching) в Git?",
+      "questionSlug": "chto-takoe-vetvlenie-branching-v-git",
+      "grade": "junior",
+      "tags": ["git", "branching", "основы", "commands"],
+      "seo": {
+        "title": "Что такое ветвление (branching) в Git — Gymterview",
+        "description": "Ветвление в Git: как работают ветки (указатель на коммит, 41 байт), HEAD, соглашения об именовании (feature/, bugfix/, hotfix/), визуализация ветвления.",
+        "keywords": ["ветвление Git", "branching", "git branch", "git switch", "HEAD", "feature branch", "именование веток", "собеседование"],
+        "ogTitle": "Ветвление в Git: ветки, HEAD, соглашения об именовании — Gymterview",
+        "ogDescription": "Как работают ветки в Git: лёгкий указатель (41 байт), HEAD, именование (feature/, bugfix/). Подготовка к Java-собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ветвление (branching) в Git?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ветвление — механизм Git для параллельной работы без затрагивания основной ветки. Ветка — лёгкий указатель на коммит (41 байт: SHA-1 + перенос строки), создание мгновенно. HEAD указывает на текущую ветку. Соглашения: feature/ (функциональность), bugfix/ (баги), hotfix/ (срочные фиксы), release/ (подготовка релиза). Short-lived branches (1-3 дня) — стандарт в Trunk-Based Development."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Ветвление в Git", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие стратегии ветвления существуют?",
+      "questionSlug": "kakie-strategii-vetvleniya-sushchestvuyut",
+      "grade": "middle",
+      "tags": ["git", "branching", "ci-cd", "best-practices"],
+      "seo": {
+        "title": "Какие стратегии ветвления существуют — Gymterview",
+        "description": "Стратегии ветвления Git: Git Flow, GitHub Flow, Trunk-Based Development. Сравнение по сложности, частоте релизов, требованиям CI/CD и размеру команды.",
+        "keywords": ["стратегии ветвления", "Git Flow", "GitHub Flow", "Trunk-Based Development", "feature branch", "feature flags", "CI/CD", "собеседование"],
+        "ogTitle": "Git Flow, GitHub Flow, Trunk-Based Development: сравнение стратегий — Gymterview",
+        "ogDescription": "Сравнение стратегий ветвления: Git Flow для плановых релизов, GitHub Flow для частого деплоя, Trunk-Based для зрелого CI/CD.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие стратегии ветвления существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Три основные стратегии: Git Flow (main + develop + feature/release/hotfix ветки, для плановых релизов), GitHub Flow (main + short-lived feature branches + PR, для частого деплоя), Trunk-Based Development (коммиты в main напрямую или через ветки на часы, требует CI/CD и feature flags). Выбор зависит от частоты релизов, размера команды и зрелости CI/CD."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Стратегии ветвления", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чём разница между merge и rebase?",
+      "questionSlug": "v-chyom-raznitsa-mezhdu-merge-i-rebase",
+      "grade": "middle",
+      "tags": ["git", "branching", "commands", "best-practices"],
+      "seo": {
+        "title": "В чём разница между merge и rebase — Gymterview",
+        "description": "Разница merge и rebase в Git: merge создаёт merge-коммит, rebase — линейную историю. Сравнение, золотое правило rebase, interactive rebase, squash merge.",
+        "keywords": ["merge vs rebase", "git merge", "git rebase", "interactive rebase", "squash merge", "fast-forward", "золотое правило", "собеседование"],
+        "ogTitle": "Merge vs Rebase в Git: разница, золотое правило, когда использовать — Gymterview",
+        "ogDescription": "Merge сохраняет историю ветвления, rebase создаёт линейную историю. Золотое правило: rebase только для локальных коммитов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чём разница между merge и rebase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "merge создаёт merge-коммит, сохраняя полную историю ветвления (безопасен для shared-веток). rebase переносит коммиты на вершину другой ветки, создавая линейную историю (изменяет SHA-1 хеши, опасен для shared-веток). Золотое правило: никогда не перебазируйте запушенные коммиты. Компромисс: merge --squash (один чистый коммит). Interactive rebase позволяет объединять, удалять и переименовывать коммиты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Merge vs Rebase", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как разрешить конфликт при merge/rebase?",
+      "questionSlug": "kak-razreshit-konflikt-pri-merge-rebase",
+      "grade": "middle",
+      "tags": ["git", "branching", "commands"],
+      "seo": {
+        "title": "Как разрешить конфликт при merge/rebase — Gymterview",
+        "description": "Пошаговое разрешение конфликтов Git: маркеры конфликта, процесс при merge и rebase, отмена через --abort, mergetool, стратегии --ours/--theirs.",
+        "keywords": ["конфликт Git", "merge conflict", "маркеры конфликта", "git merge --abort", "git rebase --continue", "mergetool", "ours", "theirs", "собеседование"],
+        "ogTitle": "Разрешение конфликтов в Git: merge и rebase — Gymterview",
+        "ogDescription": "Пошаговый процесс разрешения конфликтов при merge и rebase: маркеры, git add, commit/continue, abort. Инструменты и стратегии.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как разрешить конфликт при merge/rebase?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Конфликт возникает при изменении одних строк в разных ветках. Git помечает конфликтные участки маркерами (<<<<<<< HEAD, =======, >>>>>>>). При merge: редактируем файл, git add, git commit. При rebase: редактируем, git add, git rebase --continue (не commit!). Отмена: --abort. При rebase конфликт может возникать на каждом коммите. Стратегии: --ours/--theirs для полной замены."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Разрешение конфликтов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое cherry-pick?",
+      "questionSlug": "chto-takoe-cherry-pick",
+      "grade": "middle",
+      "tags": ["git", "commands", "branching"],
+      "seo": {
+        "title": "Что такое cherry-pick в Git — Gymterview",
+        "description": "git cherry-pick: точечный перенос коммита между ветками. Как работает, синтаксис диапазонов, типичные сценарии (hotfix), ограничения и частые ошибки.",
+        "keywords": ["cherry-pick", "git cherry-pick", "перенос коммита", "hotfix", "диапазон коммитов", "Git", "собеседование"],
+        "ogTitle": "Git cherry-pick: перенос отдельных коммитов между ветками — Gymterview",
+        "ogDescription": "cherry-pick создаёт копию коммита с новым SHA-1. Типичный сценарий — hotfix из develop в release. Ограничения и ошибки.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое cherry-pick?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "git cherry-pick применяет изменения конкретного коммита к текущей ветке, создавая новый коммит с новым SHA-1 (копия, не перемещение). Типичные сценарии: hotfix из develop в release, перенос одного коммита из чужой ветки. Поддерживает диапазоны (A^..B включает A, A..B — нет). Ограничения: зависимости от предыдущих коммитов, дублирование в истории при последующем merge."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Cherry-pick", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое git stash?",
+      "questionSlug": "chto-takoe-git-stash",
+      "grade": "junior",
+      "tags": ["git", "commands", "основы"],
+      "seo": {
+        "title": "Что такое git stash — Gymterview",
+        "description": "git stash: временное сохранение незакоммиченных изменений. Операции push/pop/apply/drop, флаг -u для untracked, создание ветки из stash, типичные сценарии.",
+        "keywords": ["git stash", "stash pop", "stash apply", "stash push", "временное сохранение", "untracked", "LIFO", "Git", "собеседование"],
+        "ogTitle": "Git stash: временное сохранение изменений — Gymterview",
+        "ogDescription": "Как использовать git stash: push, pop vs apply, флаг -u, создание ветки. Типичный сценарий — срочное переключение контекста.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое git stash?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "git stash — команда для временного сохранения незакоммиченных изменений в стековом хранилище (LIFO). pop = apply + drop (применяет и удаляет), apply — оставляет в списке. Флаг -u включает untracked-файлы. Stash привязан к репозиторию, не к ветке. git stash push --staged (Git 2.35+) сохраняет только проиндексированные. Можно создать ветку из stash: git stash branch <name>."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Git stash", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое git reset, git revert и git checkout? В чём разница?",
+      "questionSlug": "chto-takoe-git-reset-git-revert-i-git-checkout-v-chyom-raznitsa",
+      "grade": "middle",
+      "tags": ["git", "commands", "branching"],
+      "seo": {
+        "title": "Что такое git reset, git revert и git checkout? В чём разница — Gymterview",
+        "description": "Сравнение git reset, revert и checkout: reset перемещает HEAD (меняет историю), revert создаёт коммит-отмену (безопасен), restore восстанавливает файлы.",
+        "keywords": ["git reset", "git revert", "git checkout", "git restore", "soft", "mixed", "hard", "отмена коммита", "собеседование"],
+        "ogTitle": "Git reset vs revert vs checkout: когда что использовать — Gymterview",
+        "ogDescription": "reset меняет историю (локальные коммиты), revert создаёт коммит-отмену (shared ветки), restore восстанавливает файлы. Три режима reset.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое git reset, git revert и git checkout? В чём разница?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "reset перемещает HEAD и ветку (изменяет историю): --soft (сохраняет staging), --mixed (сбрасывает staging), --hard (сбрасывает всё). revert создаёт новый коммит-отмену (не изменяет историю, безопасен для shared-веток). checkout/restore восстанавливает файлы из коммита. Правило: reset — для локальных коммитов, revert — для запушенных. git reflog — страховочная сеть на 90 дней."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Reset, revert и checkout", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое .gitignore и как его правильно настроить?",
+      "questionSlug": "chto-takoe-gitignore-i-kak-ego-pravilno-nastroit",
+      "grade": "junior",
+      "tags": ["git", "configuration", "основы", "best-practices"],
+      "seo": {
+        "title": "Что такое .gitignore и как его правильно настроить — Gymterview",
+        "description": "Настройка .gitignore: синтаксис шаблонов (*, **, !), типичный файл для Java-проекта, глобальный .gitignore, удаление уже отслеживаемых файлов (git rm --cached).",
+        "keywords": [".gitignore", "шаблоны", "git rm --cached", "глобальный gitignore", "Java проект", "секреты", "Git", "собеседование"],
+        "ogTitle": ".gitignore: синтаксис, шаблоны и настройка для Java-проекта — Gymterview",
+        "ogDescription": "Синтаксис .gitignore, типичная конфигурация для Java, разница глобального и проектного, удаление уже отслеживаемых файлов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое .gitignore и как его правильно настроить?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": ".gitignore — файл с шаблонами файлов и директорий, которые Git должен игнорировать. Синтаксис: * (wildcard), ** (любая вложенность), ! (отрицание), / (только корень). Работает только для неотслеживаемых файлов — для уже добавленных нужен git rm --cached. Глобальный gitignore для IDE/OS, проектный — для build/secrets. Типичный Java: *.class, target/, .idea/, .env."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": ".gitignore", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое git tag и зачем нужны теги?",
+      "questionSlug": "chto-takoe-git-tag-i-zachem-nuzhny-tegi",
+      "grade": "junior",
+      "tags": ["git", "commands", "ci-cd"],
+      "seo": {
+        "title": "Что такое git tag и зачем нужны теги — Gymterview",
+        "description": "Git теги: lightweight vs annotated, Semantic Versioning (MAJOR.MINOR.PATCH), операции с тегами, автоматизация релизов через CI/CD и semantic-release.",
+        "keywords": ["git tag", "теги Git", "Semantic Versioning", "annotated tag", "lightweight tag", "версионирование", "релиз", "CI/CD", "собеседование"],
+        "ogTitle": "Git теги: Semantic Versioning и автоматизация релизов — Gymterview",
+        "ogDescription": "Annotated vs lightweight теги, Semantic Versioning (MAJOR.MINOR.PATCH), git push --tags, автоматизация через semantic-release.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое git tag и зачем нужны теги?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "git tag — механизм именованных меток на коммитах для обозначения релизов. Два вида: lightweight (указатель на коммит) и annotated (полноценный объект с автором, датой, сообщением, GPG-подписью). Для релизов всегда annotated (-a). Semantic Versioning: MAJOR (breaking), MINOR (новая функциональность), PATCH (баг-фиксы). git push не отправляет теги — нужен git push --tags."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Git tag", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое git bisect?",
+      "questionSlug": "chto-takoe-git-bisect",
+      "grade": "senior",
+      "tags": ["git", "commands", "testing"],
+      "seo": {
+        "title": "Что такое git bisect — Gymterview",
+        "description": "git bisect: бинарный поиск коммита с багом за O(log N) шагов. Ручной и автоматический режимы (bisect run), интеграция с тестами, типичные ошибки.",
+        "keywords": ["git bisect", "бинарный поиск", "регрессия", "bisect run", "bisect start", "bisect good", "bisect bad", "автоматизация", "собеседование"],
+        "ogTitle": "Git bisect: бинарный поиск бага за O(log N) шагов — Gymterview",
+        "ogDescription": "git bisect находит проблемный коммит бинарным поиском: 1000 коммитов = 10 шагов. Ручной и автоматический (bisect run) режимы.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое git bisect?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "git bisect — инструмент бинарного поиска коммита, внёсшего баг. За log2(N) шагов находит проблемный коммит (1000 коммитов = 10 проверок). Процесс: bisect start, bisect bad (текущий), bisect good (известный рабочий), затем Git делит историю пополам. bisect run автоматизирует поиск с помощью тестов (exit 0 = good, 1 = bad, 125 = skip). Завершение: bisect reset."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Git bisect", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое git hooks?",
+      "questionSlug": "chto-takoe-git-hooks",
+      "grade": "middle",
+      "tags": ["git", "ci-cd", "best-practices", "devops"],
+      "seo": {
+        "title": "Что такое git hooks — Gymterview",
+        "description": "Git hooks: client-side (pre-commit, commit-msg, pre-push) и server-side (pre-receive, post-receive). Примеры скриптов, Husky, lefthook, шаринг хуков в команде.",
+        "keywords": ["git hooks", "pre-commit", "commit-msg", "pre-push", "pre-receive", "Husky", "lefthook", "хуки Git", "автоматизация", "собеседование"],
+        "ogTitle": "Git hooks: client-side и server-side хуки — Gymterview",
+        "ogDescription": "Client-side хуки (pre-commit, commit-msg) можно обойти --no-verify, server-side — нельзя. Husky, lefthook для шаринга.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое git hooks?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Git hooks — скрипты, запускаемые автоматически при событиях Git. Client-side: pre-commit (линтинг), commit-msg (валидация формата), pre-push (тесты). Server-side: pre-receive (проверка прав), post-receive (деплой). Хуки из .git/hooks/ не коммитятся — для шаринга: .githooks/ + git config core.hooksPath. Client-side обходятся --no-verify, server-side — нет. Инструменты: Husky, lefthook, pre-commit."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Git hooks", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Conventional Commits?",
+      "questionSlug": "chto-takoe-conventional-commits",
+      "grade": "middle",
+      "tags": ["git", "best-practices", "ci-cd"],
+      "seo": {
+        "title": "Что такое Conventional Commits — Gymterview",
+        "description": "Conventional Commits: формат type(scope): description, типы (feat, fix, docs, refactor), связь с Semantic Versioning, Breaking Changes, автоматизация релизов.",
+        "keywords": ["Conventional Commits", "коммит-сообщения", "feat", "fix", "Semantic Versioning", "commitlint", "semantic-release", "changelog", "собеседование"],
+        "ogTitle": "Conventional Commits: формат, типы и автоматические релизы — Gymterview",
+        "ogDescription": "Формат type(scope): description. feat -> MINOR, fix -> PATCH, BREAKING CHANGE -> MAJOR. Автоматизация через semantic-release.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Conventional Commits?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conventional Commits — спецификация формата коммит-сообщений: type(scope): description. Типы: feat (MINOR), fix (PATCH), docs, style, refactor, test, chore, perf, ci, build, revert. Breaking Changes обозначаются ! после типа или футером BREAKING CHANGE (MAJOR). Связь с Semantic Versioning позволяет автоматически определять версию. Инструменты: commitlint (валидация), semantic-release (автоматические релизы), Husky (git hooks)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Conventional Commits", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как отменить последний коммит?",
+      "questionSlug": "kak-otmenit-posledniy-kommit",
+      "grade": "junior",
+      "tags": ["git", "commands", "основы"],
+      "seo": {
+        "title": "Как отменить последний коммит — Gymterview",
+        "description": "Способы отмены коммита в Git: reset --soft/--mixed/--hard (локальные), revert (запушенные), amend (модификация), reflog (восстановление). Таблица выбора.",
+        "keywords": ["отменить коммит", "git reset", "git revert", "git amend", "git reflog", "soft", "mixed", "hard", "отмена", "собеседование"],
+        "ogTitle": "Как отменить последний коммит в Git: reset, revert, amend — Gymterview",
+        "ogDescription": "Локальный коммит — reset (--soft, --mixed, --hard). Запушенный — revert. Модификация — amend. Восстановление — reflog.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как отменить последний коммит?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Локальный коммит: reset --soft HEAD~1 (сохранить в staging), reset HEAD~1 (сохранить в файлах), reset --hard HEAD~1 (удалить всё). Запушенный коммит: git revert HEAD (создаёт коммит-отмену, безопасен). Модификация: git commit --amend (изменяет хеш, только для локальных). Восстановление после ошибки: git reflog показывает историю HEAD за 90 дней. git push --force-with-lease — безопасная альтернатива --force."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Git", "url": "/topics/git" },
+          { "name": "Отмена коммита", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

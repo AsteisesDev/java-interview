@@ -1,0 +1,323 @@
+{
+  "topic": "Новое в Java: от 11 до 25",
+  "topicSlug": "java-modern",
+  "batch": 2,
+  "generatedAt": "2026-05-14T12:00:00Z",
+  "questions": [
+    {
+      "question": "Flexible Constructor Bodies",
+      "questionSlug": "flexible-constructor-bodies",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Flexible Constructor Bodies — Gymterview",
+        "description": "Flexible Constructor Bodies (финализировано в Java 25) позволяют выполнять код до вызова `super()` или `this()` в конструкторе — валидацию аргументов, подготовк",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Flexible Constructor Bodies — Gymterview",
+        "ogDescription": "Flexible Constructor Bodies (финализировано в Java 25) позволяют выполнять код до вызова `super()` или `this()` в констр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Flexible Constructor Bodies",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flexible Constructor Bodies (финализировано в Java 25) позволяют выполнять код до вызова `super()` или `this()` в конструкторе — валидацию аргументов, подготовку параметров, логирование. Ранее `super()`/`this()` обязательно были первым оператором."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Flexible Constructor Bodies",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Module Import Declarations и упрощённый импорт",
+      "questionSlug": "module-import-declarations-i-uproshchyonnyj-import",
+      "grade": "junior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Module Import Declarations и упрощённый импорт — Gymterview",
+        "description": "Module Import Declarations (финализировано в Java 25) позволяют импортировать все пакеты модуля одной строкой `import module`, вместо множества отдельных import",
+        "keywords": [
+          "java-modern",
+          "junior"
+        ],
+        "ogTitle": "Module Import Declarations и упрощённый импорт — Gymterview",
+        "ogDescription": "Module Import Declarations (финализировано в Java 25) позволяют импортировать все пакеты модуля одной строкой `import mo",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Module Import Declarations и упрощённый импорт",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Module Import Declarations (финализировано в Java 25) позволяют импортировать все пакеты модуля одной строкой `import module`, вместо множества отдельных import-ов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Module Import Declarations и упрощённый импорт",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Primitive Types in Patterns и instanceof",
+      "questionSlug": "primitive-types-in-patterns-i-instanceof",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Primitive Types in Patterns и instanceof — Gymterview",
+        "description": "Primitive Types in Patterns (финализировано в Java 25) расширяют pattern matching на примитивные типы, проверяя безопасность преобразования (narrowing) без поте",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Primitive Types in Patterns и instanceof — Gymterview",
+        "ogDescription": "Primitive Types in Patterns (финализировано в Java 25) расширяют pattern matching на примитивные типы, проверяя безопасн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Primitive Types in Patterns и instanceof",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Primitive Types in Patterns (финализировано в Java 25) расширяют pattern matching на примитивные типы, проверяя безопасность преобразования (narrowing) без потери данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Primitive Types in Patterns и instanceof",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что нового в Stream API от Java 11 до Java 25?",
+      "questionSlug": "chto-novogo-v-stream-api-ot-java-11-do-java-25",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Что нового в Stream API от Java 11 до Java 25? — Gymterview",
+        "description": "Stream API эволюционировал от добавления `toList()` (Java 16) и `mapMulti()` до полноценных расширяемых промежуточных операций через Stream Gatherers (Java 24/2",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Что нового в Stream API от Java 11 до Java 25? — Gymterview",
+        "ogDescription": "Stream API эволюционировал от добавления `toList()` (Java 16) и `mapMulti()` до полноценных расширяемых промежуточных оп",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что нового в Stream API от Java 11 до Java 25?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Stream API эволюционировал от добавления `toList()` (Java 16) и `mapMulti()` до полноценных расширяемых промежуточных операций через Stream Gatherers (Java 24/25)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Что нового в Stream API от Java 11 до Java 25?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какую версию Java выбрать для нового проекта в 2026 году?",
+      "questionSlug": "kakuyu-versiyu-java-vybrat-dlya-novogo-proekta-v-2026-godu",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Какую версию Java выбрать для нового проекта в 2026 году? — Gymterview",
+        "description": "Для нового проекта в 2026 году рекомендуется Java 25 (или Java 21 для консервативного подхода) — обе версии LTS с полной поддержкой Spring Boot 3.x и Virtual Th",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Какую версию Java выбрать для нового проекта в 2026 году? — Gymterview",
+        "ogDescription": "Для нового проекта в 2026 году рекомендуется Java 25 (или Java 21 для консервативного подхода) — обе версии LTS с полной",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какую версию Java выбрать для нового проекта в 2026 году?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для нового проекта в 2026 году рекомендуется Java 25 (или Java 21 для консервативного подхода) — обе версии LTS с полной поддержкой Spring Boot 3.x и Virtual Threads."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Какую версию Java выбрать для нового проекта в 2026 году?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как мигрировать проект с Java 8/11 на Java 21/25?",
+      "questionSlug": "kak-migrirovat-proekt-s-java-8-11-na-java-21-25",
+      "grade": "senior",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Как мигрировать проект с Java 8/11 на Java 21/25? — Gymterview",
+        "description": "Миграция с Java 8/11 на Java 21/25 выполняется поэтапно: сначала обновление JDK и зависимостей, затем переход javax -> jakarta (для Spring Boot 3.x), и наконец ",
+        "keywords": [
+          "java-modern",
+          "senior"
+        ],
+        "ogTitle": "Как мигрировать проект с Java 8/11 на Java 21/25? — Gymterview",
+        "ogDescription": "Миграция с Java 8/11 на Java 21/25 выполняется поэтапно: сначала обновление JDK и зависимостей, затем переход javax -> j",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как мигрировать проект с Java 8/11 на Java 21/25?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Миграция с Java 8/11 на Java 21/25 выполняется поэтапно: сначала обновление JDK и зависимостей, затем переход javax -> jakarta (для Spring Boot 3.x), и наконец включение новых возможностей. OpenRewrite автоматизирует до 80% работы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Как мигрировать проект с Java 8/11 на Java 21/25?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Эволюция null-safety в Java",
+      "questionSlug": "evolyutsiya-null-safety-v-java",
+      "grade": "middle",
+      "tags": [
+        "java-modern"
+      ],
+      "seo": {
+        "title": "Эволюция null-safety в Java — Gymterview",
+        "description": "Java не имеет встроенной null-safety на уровне типов (в отличие от Kotlin `?`), но постепенно добавляет инструменты: `Optional` (Java 8+), Helpful NPE (Java 14+",
+        "keywords": [
+          "java-modern",
+          "middle"
+        ],
+        "ogTitle": "Эволюция null-safety в Java — Gymterview",
+        "ogDescription": "Java не имеет встроенной null-safety на уровне типов (в отличие от Kotlin `?`), но постепенно добавляет инструменты: `Op",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Эволюция null-safety в Java",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Java не имеет встроенной null-safety на уровне типов (в отличие от Kotlin `?`), но постепенно добавляет инструменты: `Optional` (Java 8+), Helpful NPE (Java 14+), null в Pattern Matching (Java 21+), аннотации `@Nullable`/`@NonNull`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Новое в Java: от 11 до 25",
+            "url": "/topics/java-modern"
+          },
+          {
+            "name": "Эволюция null-safety в Java",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

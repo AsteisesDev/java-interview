@@ -1,0 +1,638 @@
+{
+  "topic": "REST API",
+  "topicSlug": "rest",
+  "batch": 2,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое CORS и как его настроить в Spring?",
+      "questionSlug": "chto-takoe-cors-i-kak-ego-nastroit-v-spring",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое CORS и как его настроить в Spring? — Gymterview",
+        "description": "CORS (Cross-Origin Resource Sharing) — механизм безопасности браузера, который контролирует, какие домены могут обращаться к ресурсам API. По умолчанию браузеры",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое CORS и как его настроить в Spring? — Gymterview",
+        "ogDescription": "CORS (Cross-Origin Resource Sharing) — механизм безопасности браузера, который контролирует, какие домены могут обращать",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CORS и как его настроить в Spring?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CORS (Cross-Origin Resource Sharing) — механизм безопасности браузера, который контролирует, какие домены могут обращаться к ресурсам API. По умолчанию браузеры запрещают JavaScript-коду делать запросы к другому домену (Same-Origin Policy)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое CORS и как его настроить в Spring?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как документировать REST API с помощью Swagger/OpenAPI?",
+      "questionSlug": "kak-dokumentirovat-rest-api-s-pomoshchyu-swagger-openapi",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как документировать REST API с помощью Swagger/OpenAPI? — Gymterview",
+        "description": "OpenAPI Specification (ранее Swagger Specification) — стандарт описания REST API в формате JSON или YAML. Swagger — набор инструментов для работы с OpenAPI (Swa",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как документировать REST API с помощью Swagger/OpenAPI? — Gymterview",
+        "ogDescription": "OpenAPI Specification (ранее Swagger Specification) — стандарт описания REST API в формате JSON или YAML. Swagger — набо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как документировать REST API с помощью Swagger/OpenAPI?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OpenAPI Specification (ранее Swagger Specification) — стандарт описания REST API в формате JSON или YAML. Swagger — набор инструментов для работы с OpenAPI (Swagger UI, Swagger Editor, Swagger Codegen)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как документировать REST API с помощью Swagger/OpenAPI?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как реализовать REST API в Spring?",
+      "questionSlug": "kak-realizovat-rest-api-v-spring",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как реализовать REST API в Spring? — Gymterview",
+        "description": "Spring предоставляет средства для создания REST API через Spring Web MVC и Spring WebFlux (реактивный подход). Ключевые аннотации: `@RestController` (= `@Contro",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Как реализовать REST API в Spring? — Gymterview",
+        "ogDescription": "Spring предоставляет средства для создания REST API через Spring Web MVC и Spring WebFlux (реактивный подход). Ключевые ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как реализовать REST API в Spring?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring предоставляет средства для создания REST API через Spring Web MVC и Spring WebFlux (реактивный подход). Ключевые аннотации: `@RestController` (= `@Controller` + `@ResponseBody`), `@RequestMapping`, `@GetMapping`, `@PostMapping`, `@PutMapping`, `@PatchMapping`, `@DeleteMapping`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как реализовать REST API в Spring?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое ResponseEntity и зачем он нужен?",
+      "questionSlug": "chto-takoe-responseentity-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое ResponseEntity и зачем он нужен? — Gymterview",
+        "description": "ResponseEntity — класс Spring, представляющий полный HTTP-ответ: тело, заголовки и код статуса. Позволяет гибко управлять всеми аспектами ответа контроллера.",
+        "keywords": [
+          "rest",
+          "junior"
+        ],
+        "ogTitle": "Что такое ResponseEntity и зачем он нужен? — Gymterview",
+        "ogDescription": "ResponseEntity — класс Spring, представляющий полный HTTP-ответ: тело, заголовки и код статуса. Позволяет гибко управлят",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое ResponseEntity и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ResponseEntity — класс Spring, представляющий полный HTTP-ответ: тело, заголовки и код статуса. Позволяет гибко управлять всеми аспектами ответа контроллера."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое ResponseEntity и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Rate Limiting и как его реализовать?",
+      "questionSlug": "chto-takoe-rate-limiting-i-kak-ego-realizovat",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое Rate Limiting и как его реализовать? — Gymterview",
+        "description": "Rate Limiting (ограничение частоты запросов) — механизм защиты API от злоупотреблений и перегрузки путём ограничения количества запросов от клиента за определён",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое Rate Limiting и как его реализовать? — Gymterview",
+        "ogDescription": "Rate Limiting (ограничение частоты запросов) — механизм защиты API от злоупотреблений и перегрузки путём ограничения кол",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Rate Limiting и как его реализовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rate Limiting (ограничение частоты запросов) — механизм защиты API от злоупотреблений и перегрузки путём ограничения количества запросов от клиента за определённый период времени."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое Rate Limiting и как его реализовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить безопасность REST API?",
+      "questionSlug": "kak-obespechit-bezopasnost-rest-api",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как обеспечить безопасность REST API? — Gymterview",
+        "description": "Безопасность REST API — комплексная задача, включающая несколько уровней защиты: от транспортного шифрования до аудита действий.",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как обеспечить безопасность REST API? — Gymterview",
+        "ogDescription": "Безопасность REST API — комплексная задача, включающая несколько уровней защиты: от транспортного шифрования до аудита д",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить безопасность REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Безопасность REST API — комплексная задача, включающая несколько уровней защиты: от транспортного шифрования до аудита действий."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как обеспечить безопасность REST API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое идемпотентный ключ (Idempotency Key)?",
+      "questionSlug": "chto-takoe-idempotentnyj-klyuch-idempotency-key",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое идемпотентный ключ (Idempotency Key)? — Gymterview",
+        "description": "Идемпотентный ключ (Idempotency Key) — уникальный идентификатор, передаваемый клиентом в запросе, позволяющий серверу распознавать повторные запросы и не выполн",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Что такое идемпотентный ключ (Idempotency Key)? — Gymterview",
+        "ogDescription": "Идемпотентный ключ (Idempotency Key) — уникальный идентификатор, передаваемый клиентом в запросе, позволяющий серверу ра",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое идемпотентный ключ (Idempotency Key)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Идемпотентный ключ (Idempotency Key) — уникальный идентификатор, передаваемый клиентом в запросе, позволяющий серверу распознавать повторные запросы и не выполнять операцию дважды."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое идемпотентный ключ (Idempotency Key)?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проектировать REST API для связанных ресурсов?",
+      "questionSlug": "kak-proektirovat-rest-api-dlya-svyazannykh-resursov",
+      "grade": "middle",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как проектировать REST API для связанных ресурсов? — Gymterview",
+        "description": "Проектирование API для связанных ресурсов строится на выборе между вложенными URI, ссылками через идентификаторы и развёрнутыми ресурсами в зависимости от типа ",
+        "keywords": [
+          "rest",
+          "middle"
+        ],
+        "ogTitle": "Как проектировать REST API для связанных ресурсов? — Gymterview",
+        "ogDescription": "Проектирование API для связанных ресурсов строится на выборе между вложенными URI, ссылками через идентификаторы и развё",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проектировать REST API для связанных ресурсов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проектирование API для связанных ресурсов строится на выборе между вложенными URI, ссылками через идентификаторы и развёрнутыми ресурсами в зависимости от типа связи и потребностей клиента."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как проектировать REST API для связанных ресурсов?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое подход API Design First?",
+      "questionSlug": "chto-takoe-podkhod-api-design-first",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое подход API Design First? — Gymterview",
+        "description": "API Design First (API-first) — подход к разработке, при котором спецификация API (контракт) создаётся до написания кода. Из спецификации автоматически генерирую",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Что такое подход API Design First? — Gymterview",
+        "ogDescription": "API Design First (API-first) — подход к разработке, при котором спецификация API (контракт) создаётся до написания кода.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое подход API Design First?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "API Design First (API-first) — подход к разработке, при котором спецификация API (контракт) создаётся до написания кода. Из спецификации автоматически генерируются серверные интерфейсы, клиентские SDK, документация и тесты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое подход API Design First?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются REST, GraphQL и gRPC? Когда что использовать?",
+      "questionSlug": "chem-otlichayutsya-rest-graphql-i-grpc-kogda-chto-ispolzovat",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Чем отличаются REST, GraphQL и gRPC? Когда что использовать? — Gymterview",
+        "description": "REST, GraphQL и gRPC — три подхода к проектированию API, решающие разные задачи: REST ориентирован на ресурсы, GraphQL — на гибкие запросы клиента, gRPC — на вы",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Чем отличаются REST, GraphQL и gRPC? Когда что использовать? — Gymterview",
+        "ogDescription": "REST, GraphQL и gRPC — три подхода к проектированию API, решающие разные задачи: REST ориентирован на ресурсы, GraphQL —",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются REST, GraphQL и gRPC? Когда что использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REST, GraphQL и gRPC — три подхода к проектированию API, решающие разные задачи: REST ориентирован на ресурсы, GraphQL — на гибкие запросы клиента, gRPC — на высокопроизводительный RPC."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Чем отличаются REST, GraphQL и gRPC? Когда что использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как обеспечить обратную совместимость REST API?",
+      "questionSlug": "kak-obespechit-obratnuyu-sovmestimost-rest-api",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как обеспечить обратную совместимость REST API? — Gymterview",
+        "description": "Обратная совместимость (backward compatibility) — свойство API, при котором обновлённая версия продолжает корректно работать с существующими клиентами без необх",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Как обеспечить обратную совместимость REST API? — Gymterview",
+        "ogDescription": "Обратная совместимость (backward compatibility) — свойство API, при котором обновлённая версия продолжает корректно рабо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как обеспечить обратную совместимость REST API?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обратная совместимость (backward compatibility) — свойство API, при котором обновлённая версия продолжает корректно работать с существующими клиентами без необходимости их изменения."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как обеспечить обратную совместимость REST API?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое асинхронные API и как их проектировать?",
+      "questionSlug": "chto-takoe-asinkhronnye-api-i-kak-ikh-proektirovat",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое асинхронные API и как их проектировать? — Gymterview",
+        "description": "Асинхронные API — подходы к взаимодействию клиента и сервера, при которых обработка запроса не блокирует клиента и результат доставляется позже (через callback,",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Что такое асинхронные API и как их проектировать? — Gymterview",
+        "ogDescription": "Асинхронные API — подходы к взаимодействию клиента и сервера, при которых обработка запроса не блокирует клиента и резул",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое асинхронные API и как их проектировать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Асинхронные API — подходы к взаимодействию клиента и сервера, при которых обработка запроса не блокирует клиента и результат доставляется позже (через callback, polling или push-уведомление)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое асинхронные API и как их проектировать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое BFF (Backend for Frontend) и API Gateway?",
+      "questionSlug": "chto-takoe-bff-backend-for-frontend-i-api-gateway",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Что такое BFF (Backend for Frontend) и API Gateway? — Gymterview",
+        "description": "BFF (Backend for Frontend) и API Gateway — архитектурные паттерны, определяющие, как клиенты взаимодействуют с backend-сервисами в микросервисной архитектуре.",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Что такое BFF (Backend for Frontend) и API Gateway? — Gymterview",
+        "ogDescription": "BFF (Backend for Frontend) и API Gateway — архитектурные паттерны, определяющие, как клиенты взаимодействуют с backend-с",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое BFF (Backend for Frontend) и API Gateway?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BFF (Backend for Frontend) и API Gateway — архитектурные паттерны, определяющие, как клиенты взаимодействуют с backend-сервисами в микросервисной архитектуре."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Что такое BFF (Backend for Frontend) и API Gateway?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как проектировать API для микросервисной архитектуры?",
+      "questionSlug": "kak-proektirovat-api-dlya-mikroservisnoj-arkhitektury",
+      "grade": "senior",
+      "tags": [
+        "rest"
+      ],
+      "seo": {
+        "title": "Как проектировать API для микросервисной архитектуры? — Gymterview",
+        "description": "Проектирование API для микросервисов учитывает распределённую природу системы: сетевую ненадёжность, независимое развёртывание, согласованность данных и отказоу",
+        "keywords": [
+          "rest",
+          "senior"
+        ],
+        "ogTitle": "Как проектировать API для микросервисной архитектуры? — Gymterview",
+        "ogDescription": "Проектирование API для микросервисов учитывает распределённую природу системы: сетевую ненадёжность, независимое развёрт",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как проектировать API для микросервисной архитектуры?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Проектирование API для микросервисов учитывает распределённую природу системы: сетевую ненадёжность, независимое развёртывание, согласованность данных и отказоустойчивость."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "REST API",
+            "url": "/topics/rest"
+          },
+          {
+            "name": "Как проектировать API для микросервисной архитектуры?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

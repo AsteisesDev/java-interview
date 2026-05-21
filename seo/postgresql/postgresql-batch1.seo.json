@@ -1,0 +1,908 @@
+{
+  "topic": "PostgreSQL",
+  "topicSlug": "postgresql",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое PostgreSQL и чем он отличается от других СУБД?",
+      "questionSlug": "chto-takoe-postgresql-i-chem-on-otlichaetsya-ot-drugikh-subd",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое PostgreSQL и чем он отличается от других СУБД? — Gymterview",
+        "description": "PostgreSQL — это объектно-реляционная система управления базами данных (ОРСУБД) с открытым исходным кодом, одна из наиболее зрелых и функциональных СУБД, активн",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Что такое PostgreSQL и чем он отличается от других СУБД? — Gymterview",
+        "ogDescription": "PostgreSQL — это объектно-реляционная система управления базами данных (ОРСУБД) с открытым исходным кодом, одна из наибо",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое PostgreSQL и чем он отличается от других СУБД?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL — это объектно-реляционная система управления базами данных (ОРСУБД) с открытым исходным кодом, одна из наиболее зрелых и функциональных СУБД, активно развивающаяся с 1986 года (проект POSTGRES в Калифорнийском университете Беркли)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое PostgreSQL и чем он отличается от других СУБД?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные типы данных поддерживает PostgreSQL?",
+      "questionSlug": "kakie-osnovnye-tipy-dannykh-podderzhivaet-postgresql",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие основные типы данных поддерживает PostgreSQL? — Gymterview",
+        "description": "PostgreSQL обладает одной из самых богатых систем типов данных среди всех СУБД, включая числовые, строковые, временные, а также специализированные типы вроде UU",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Какие основные типы данных поддерживает PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL обладает одной из самых богатых систем типов данных среди всех СУБД, включая числовые, строковые, временные, ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные типы данных поддерживает PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL обладает одной из самых богатых систем типов данных среди всех СУБД, включая числовые, строковые, временные, а также специализированные типы вроде UUID, JSONB и массивов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие основные типы данных поддерживает PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое схемы (schemas) в PostgreSQL?",
+      "questionSlug": "chto-takoe-skhemy-schemas-v-postgresql",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое схемы (schemas) в PostgreSQL? — Gymterview",
+        "description": "Схема (schema) — это логическое пространство имён внутри базы данных, позволяющее группировать и изолировать объекты (таблицы, представления, функции, типы).",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Что такое схемы (schemas) в PostgreSQL? — Gymterview",
+        "ogDescription": "Схема (schema) — это логическое пространство имён внутри базы данных, позволяющее группировать и изолировать объекты (та",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое схемы (schemas) в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Схема (schema) — это логическое пространство имён внутри базы данных, позволяющее группировать и изолировать объекты (таблицы, представления, функции, типы)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое схемы (schemas) в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое последовательности (sequences) и как они работают?",
+      "questionSlug": "chto-takoe-posledovatelnosti-sequences-i-kak-oni-rabotayut",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое последовательности (sequences) и как они работают? — Gymterview",
+        "description": "Последовательность (sequence) — это специальный объект базы данных, генерирующий уникальные числовые значения в возрастающем (или убывающем) порядке. Последоват",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Что такое последовательности (sequences) и как они работают? — Gymterview",
+        "ogDescription": "Последовательность (sequence) — это специальный объект базы данных, генерирующий уникальные числовые значения в возраста",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое последовательности (sequences) и как они работают?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Последовательность (sequence) — это специальный объект базы данных, генерирующий уникальные числовые значения в возрастающем (или убывающем) порядке. Последовательности часто используются для генерации первичных ключей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое последовательности (sequences) и как они работают?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются типы serial и bigserial от явного использования последовательностей?",
+      "questionSlug": "chem-otlichayutsya-tipy-serial-i-bigserial-ot-yavnogo-ispolzovaniya-posledovatel",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Чем отличаются типы serial и bigserial от явного использован — Gymterview",
+        "description": "`serial` и `bigserial` — это псевдотипы (не настоящие типы данных), которые являются сокращённой записью для создания столбца с автоинкрементом. За кулисами Pos",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Чем отличаются типы serial и bigserial от явного использован — Gymterview",
+        "ogDescription": "`serial` и `bigserial` — это псевдотипы (не настоящие типы данных), которые являются сокращённой записью для создания ст",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются типы serial и bigserial от явного использования последовательностей?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`serial` и `bigserial` — это псевдотипы (не настоящие типы данных), которые являются сокращённой записью для создания столбца с автоинкрементом. За кулисами PostgreSQL создаёт последовательность и привязывает её к столбцу."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Чем отличаются типы serial и bigserial от явного использован",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JSONB в PostgreSQL и чем он отличается от JSON?",
+      "questionSlug": "chto-takoe-jsonb-v-postgresql-i-chem-on-otlichaetsya-ot-json",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое JSONB в PostgreSQL и чем он отличается от JSON? — Gymterview",
+        "description": "PostgreSQL поддерживает два типа для хранения JSON-данных: `json` (текстовое хранение «как есть») и `jsonb` (бинарное декомпозированное хранение с индексировани",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое JSONB в PostgreSQL и чем он отличается от JSON? — Gymterview",
+        "ogDescription": "PostgreSQL поддерживает два типа для хранения JSON-данных: `json` (текстовое хранение «как есть») и `jsonb` (бинарное де",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JSONB в PostgreSQL и чем он отличается от JSON?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL поддерживает два типа для хранения JSON-данных: `json` (текстовое хранение «как есть») и `jsonb` (бинарное декомпозированное хранение с индексированием). В подавляющем большинстве случаев следует использовать `jsonb`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое JSONB в PostgreSQL и чем он отличается от JSON?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие операторы существуют для работы с JSONB?",
+      "questionSlug": "kakie-operatory-sushchestvuyut-dlya-raboty-s-jsonb",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие операторы существуют для работы с JSONB? — Gymterview",
+        "description": "PostgreSQL предоставляет три группы операторов для JSONB: извлечение данных, проверка вхождения и модификация. Это позволяет работать с JSON-данными без извлече",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие операторы существуют для работы с JSONB? — Gymterview",
+        "ogDescription": "PostgreSQL предоставляет три группы операторов для JSONB: извлечение данных, проверка вхождения и модификация. Это позво",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие операторы существуют для работы с JSONB?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL предоставляет три группы операторов для JSONB: извлечение данных, проверка вхождения и модификация. Это позволяет работать с JSON-данными без извлечения их в приложение."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие операторы существуют для работы с JSONB?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как индексировать JSONB-поля?",
+      "questionSlug": "kak-indeksirovat-jsonb-polya",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как индексировать JSONB-поля? — Gymterview",
+        "description": "Для эффективного поиска по JSONB существует три основных подхода: GIN-индекс на всё поле, GIN с классом `jsonb_path_ops` и B-tree на конкретное выражение. Выбор",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как индексировать JSONB-поля? — Gymterview",
+        "ogDescription": "Для эффективного поиска по JSONB существует три основных подхода: GIN-индекс на всё поле, GIN с классом `jsonb_path_ops`",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как индексировать JSONB-поля?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для эффективного поиска по JSONB существует три основных подхода: GIN-индекс на всё поле, GIN с классом `jsonb_path_ops` и B-tree на конкретное выражение. Выбор зависит от паттерна запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как индексировать JSONB-поля?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работать с массивами в PostgreSQL?",
+      "questionSlug": "kak-rabotat-s-massivami-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как работать с массивами в PostgreSQL? — Gymterview",
+        "description": "PostgreSQL позволяет хранить массивы значений любого типа в одном поле. Массивы удобны для небольших списков тегов и меток, которые читаются целиком, но для сло",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как работать с массивами в PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL позволяет хранить массивы значений любого типа в одном поле. Массивы удобны для небольших списков тегов и мет",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работать с массивами в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL позволяет хранить массивы значений любого типа в одном поле. Массивы удобны для небольших списков тегов и меток, которые читаются целиком, но для сложных связей лучше использовать отдельную таблицу."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как работать с массивами в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы индексов поддерживает PostgreSQL?",
+      "questionSlug": "kakie-tipy-indeksov-podderzhivaet-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие типы индексов поддерживает PostgreSQL? — Gymterview",
+        "description": "PostgreSQL поддерживает шесть типов индексов, каждый из которых оптимизирован для определённых сценариев. B-tree используется по умолчанию и покрывает большинст",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие типы индексов поддерживает PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL поддерживает шесть типов индексов, каждый из которых оптимизирован для определённых сценариев. B-tree использ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы индексов поддерживает PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL поддерживает шесть типов индексов, каждый из которых оптимизирован для определённых сценариев. B-tree используется по умолчанию и покрывает большинство задач, но для JSON, массивов, геоданных и временных рядов нужны специализированные типы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие типы индексов поддерживает PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Когда какой тип индекса использовать?",
+      "questionSlug": "kogda-kakoj-tip-indeksa-ispolzovat",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Когда какой тип индекса использовать? — Gymterview",
+        "description": "Выбор типа индекса зависит от паттерна запросов: какой оператор используется в WHERE и какова природа данных.",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Когда какой тип индекса использовать? — Gymterview",
+        "ogDescription": "Выбор типа индекса зависит от паттерна запросов: какой оператор используется в WHERE и какова природа данных.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Когда какой тип индекса использовать?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Выбор типа индекса зависит от паттерна запросов: какой оператор используется в WHERE и какова природа данных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Когда какой тип индекса использовать?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое составные индексы и как они работают?",
+      "questionSlug": "chto-takoe-sostavnye-indeksy-i-kak-oni-rabotayut",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое составные индексы и как они работают? — Gymterview",
+        "description": "Составной (композитный) индекс — индекс, построенный по нескольким столбцам. Он эффективен, когда запросы фильтруют по комбинации столбцов, но работает по прави",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое составные индексы и как они работают? — Gymterview",
+        "ogDescription": "Составной (композитный) индекс — индекс, построенный по нескольким столбцам. Он эффективен, когда запросы фильтруют по к",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое составные индексы и как они работают?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Составной (композитный) индекс — индекс, построенный по нескольким столбцам. Он эффективен, когда запросы фильтруют по комбинации столбцов, но работает по правилу левого префикса."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое составные индексы и как они работают?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое частичные индексы и индексы на выражениях?",
+      "questionSlug": "chto-takoe-chastichnye-indeksy-i-indeksy-na-vyrazheniyakh",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое частичные индексы и индексы на выражениях? — Gymterview",
+        "description": "Частичный индекс (partial index) строится только для части строк таблицы, а индекс на выражении — на результате функции. Оба подхода позволяют создавать компакт",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое частичные индексы и индексы на выражениях? — Gymterview",
+        "ogDescription": "Частичный индекс (partial index) строится только для части строк таблицы, а индекс на выражении — на результате функции.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое частичные индексы и индексы на выражениях?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Частичный индекс (partial index) строится только для части строк таблицы, а индекс на выражении — на результате функции. Оба подхода позволяют создавать компактные и целевые индексы вместо тяжёлых полных."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое частичные индексы и индексы на выражениях?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать EXPLAIN и EXPLAIN ANALYZE для анализа запросов?",
+      "questionSlug": "kak-ispolzovat-explain-i-explain-analyze-dlya-analiza-zaprosov",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как использовать EXPLAIN и EXPLAIN ANALYZE для анализа запро — Gymterview",
+        "description": "`EXPLAIN` показывает план выполнения запроса — как PostgreSQL собирается его выполнять. `EXPLAIN ANALYZE` фактически выполняет запрос и показывает реальное врем",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как использовать EXPLAIN и EXPLAIN ANALYZE для анализа запро — Gymterview",
+        "ogDescription": "`EXPLAIN` показывает план выполнения запроса — как PostgreSQL собирается его выполнять. `EXPLAIN ANALYZE` фактически вып",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать EXPLAIN и EXPLAIN ANALYZE для анализа запросов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`EXPLAIN` показывает план выполнения запроса — как PostgreSQL собирается его выполнять. `EXPLAIN ANALYZE` фактически выполняет запрос и показывает реальное время и количество строк. Это главный инструмент диагностики медленных запросов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как использовать EXPLAIN и EXPLAIN ANALYZE для анализа запро",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как читать план выполнения запроса?",
+      "questionSlug": "kak-chitat-plan-vypolneniya-zaprosa",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как читать план выполнения запроса? — Gymterview",
+        "description": "План выполнения — это дерево узлов (nodes). Выполнение идёт от внутренних узлов к внешним (снизу вверх). Чтение плана — ключевой навык для оптимизации SQL.",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Как читать план выполнения запроса? — Gymterview",
+        "ogDescription": "План выполнения — это дерево узлов (nodes). Выполнение идёт от внутренних узлов к внешним (снизу вверх). Чтение плана — ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как читать план выполнения запроса?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "План выполнения — это дерево узлов (nodes). Выполнение идёт от внутренних узлов к внешним (снизу вверх). Чтение плана — ключевой навык для оптимизации SQL."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как читать план выполнения запроса?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие основные приёмы оптимизации запросов в PostgreSQL?",
+      "questionSlug": "kakie-osnovnye-priyomy-optimizatsii-zaprosov-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие основные приёмы оптимизации запросов в PostgreSQL? — Gymterview",
+        "description": "Оптимизация запросов — это системный процесс: сначала EXPLAIN ANALYZE для диагностики, затем точечные изменения. Восемь основных приёмов покрывают подавляющее б",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие основные приёмы оптимизации запросов в PostgreSQL? — Gymterview",
+        "ogDescription": "Оптимизация запросов — это системный процесс: сначала EXPLAIN ANALYZE для диагностики, затем точечные изменения. Восемь ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие основные приёмы оптимизации запросов в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Оптимизация запросов — это системный процесс: сначала EXPLAIN ANALYZE для диагностики, затем точечные изменения. Восемь основных приёмов покрывают подавляющее большинство ситуаций."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие основные приёмы оптимизации запросов в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работают транзакции в PostgreSQL?",
+      "questionSlug": "kak-rabotayut-tranzaktsii-v-postgresql",
+      "grade": "junior",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Как работают транзакции в PostgreSQL? — Gymterview",
+        "description": "Транзакция — это последовательность операций, выполняемых как единое целое и удовлетворяющих свойствам ACID. В PostgreSQL каждый отдельный оператор — это неявна",
+        "keywords": [
+          "postgresql",
+          "junior"
+        ],
+        "ogTitle": "Как работают транзакции в PostgreSQL? — Gymterview",
+        "ogDescription": "Транзакция — это последовательность операций, выполняемых как единое целое и удовлетворяющих свойствам ACID. В PostgreSQ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работают транзакции в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Транзакция — это последовательность операций, выполняемых как единое целое и удовлетворяющих свойствам ACID. В PostgreSQL каждый отдельный оператор — это неявная транзакция (autocommit), а для объединения нескольких операций используется `BEGIN ... COMMIT/ROLLBACK`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Как работают транзакции в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие уровни изоляции транзакций поддерживает PostgreSQL?",
+      "questionSlug": "kakie-urovni-izolyatsii-tranzaktsij-podderzhivaet-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие уровни изоляции транзакций поддерживает PostgreSQL? — Gymterview",
+        "description": "PostgreSQL поддерживает четыре уровня изоляции в соответствии со стандартом SQL, но реализует их через MVCC — без блокировок для чтения. Фактически уникальных п",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие уровни изоляции транзакций поддерживает PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL поддерживает четыре уровня изоляции в соответствии со стандартом SQL, но реализует их через MVCC — без блокир",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие уровни изоляции транзакций поддерживает PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL поддерживает четыре уровня изоляции в соответствии со стандартом SQL, но реализует их через MVCC — без блокировок для чтения. Фактически уникальных поведений три, поскольку READ UNCOMMITTED работает идентично READ COMMITTED."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие уровни изоляции транзакций поддерживает PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое MVCC и как он реализован в PostgreSQL?",
+      "questionSlug": "chto-takoe-mvcc-i-kak-on-realizovan-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Что такое MVCC и как он реализован в PostgreSQL? — Gymterview",
+        "description": "MVCC (Multi-Version Concurrency Control) — механизм управления конкурентным доступом, при котором каждая транзакция видит свой «снимок» (snapshot) данных. Главн",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Что такое MVCC и как он реализован в PostgreSQL? — Gymterview",
+        "ogDescription": "MVCC (Multi-Version Concurrency Control) — механизм управления конкурентным доступом, при котором каждая транзакция види",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое MVCC и как он реализован в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MVCC (Multi-Version Concurrency Control) — механизм управления конкурентным доступом, при котором каждая транзакция видит свой «снимок» (snapshot) данных. Главный принцип: читатели не блокируют писателей, а писатели не блокируют читателей."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Что такое MVCC и как он реализован в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие виды блокировок существуют в PostgreSQL?",
+      "questionSlug": "kakie-vidy-blokirovok-sushchestvuyut-v-postgresql",
+      "grade": "middle",
+      "tags": [
+        "postgresql"
+      ],
+      "seo": {
+        "title": "Какие виды блокировок существуют в PostgreSQL? — Gymterview",
+        "description": "PostgreSQL использует многоуровневую систему блокировок: строковые (row-level) и табличные (table-level). Строковые блокировки не используют память менеджера бл",
+        "keywords": [
+          "postgresql",
+          "middle"
+        ],
+        "ogTitle": "Какие виды блокировок существуют в PostgreSQL? — Gymterview",
+        "ogDescription": "PostgreSQL использует многоуровневую систему блокировок: строковые (row-level) и табличные (table-level). Строковые блок",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие виды блокировок существуют в PostgreSQL?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PostgreSQL использует многоуровневую систему блокировок: строковые (row-level) и табличные (table-level). Строковые блокировки не используют память менеджера блокировок — информация хранится в самих строках через `xmax`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "PostgreSQL",
+            "url": "/topics/postgresql"
+          },
+          {
+            "name": "Какие виды блокировок существуют в PostgreSQL?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

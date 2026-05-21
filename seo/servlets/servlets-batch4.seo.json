@@ -1,0 +1,908 @@
+{
+  "topic": "Servlets, JSP, JSTL",
+  "topicSlug": "servlets",
+  "batch": 4,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Как можно предотвратить прямой доступ к JSP странице из браузера",
+      "questionSlug": "kak-mozhno-predotvratit-pryamoj-dostup-k-jsp-stranitse-iz-brauzera",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как можно предотвратить прямой доступ к JSP странице из брау — Gymterview",
+        "description": "Для предотвращения прямого доступа к JSP-странице из браузера достаточно разместить JSP-файлы в директории `WEB-INF`, которая защищена контейнером от прямого до",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как можно предотвратить прямой доступ к JSP странице из брау — Gymterview",
+        "ogDescription": "Для предотвращения прямого доступа к JSP-странице из браузера достаточно разместить JSP-файлы в директории `WEB-INF`, ко",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как можно предотвратить прямой доступ к JSP странице из браузера",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для предотвращения прямого доступа к JSP-странице из браузера достаточно разместить JSP-файлы в директории `WEB-INF`, которая защищена контейнером от прямого доступа по HTTP. Доступ к таким страницам возможен только через серверное перенаправление (`RequestDispatcher.forward()`)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как можно предотвратить прямой доступ к JSP странице из брау",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какая разница между динамическим и статическим содержимым JSP",
+      "questionSlug": "kakaya-raznitsa-mezhdu-dinamicheskim-i-staticheskim-soderzhimym-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какая разница между динамическим и статическим содержимым JS — Gymterview",
+        "description": "Статическое содержимое JSP — это HTML-разметка, CSS, JavaScript и изображения, которые отправляются клиенту без изменений при каждом запросе. Динамическое содер",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какая разница между динамическим и статическим содержимым JS — Gymterview",
+        "ogDescription": "Статическое содержимое JSP — это HTML-разметка, CSS, JavaScript и изображения, которые отправляются клиенту без изменени",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какая разница между динамическим и статическим содержимым JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Статическое содержимое JSP — это HTML-разметка, CSS, JavaScript и изображения, которые отправляются клиенту без изменений при каждом запросе. Динамическое содержимое генерируется сервером в момент обработки запроса и может меняться в зависимости от данных, пользователя или контекста."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какая разница между динамическим и статическим содержимым JS",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как закомментировать код в JSP",
+      "questionSlug": "kak-zakommentirovat-kod-v-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как закомментировать код в JSP — Gymterview",
+        "description": "В JSP существует два типа комментариев с принципиально разным поведением.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как закомментировать код в JSP — Gymterview",
+        "ogDescription": "В JSP существует два типа комментариев с принципиально разным поведением.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как закомментировать код в JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В JSP существует два типа комментариев с принципиально разным поведением."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как закомментировать код в JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют основные типы тегов JSP",
+      "questionSlug": "kakie-sushchestvuyut-osnovnye-tipy-tegov-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие существуют основные типы тегов JSP — Gymterview",
+        "description": "JSP предоставляет шесть основных типов тегов для встраивания логики и конфигурации в HTML-шаблон.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют основные типы тегов JSP — Gymterview",
+        "ogDescription": "JSP предоставляет шесть основных типов тегов для встраивания логики и конфигурации в HTML-шаблон.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют основные типы тегов JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSP предоставляет шесть основных типов тегов для встраивания логики и конфигурации в HTML-шаблон."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие существуют основные типы тегов JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о действиях JSP (Action tag)",
+      "questionSlug": "chto-vy-znaete-o-dejstviyakh-jsp-action-tag",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что вы знаете о действиях JSP (Action tag) — Gymterview",
+        "description": "JSP Action Elements — это XML-теги с префиксом `jsp:`, которые предоставляют стандартную функциональность: работу с JavaBeans, включение ресурсов, перенаправлен",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что вы знаете о действиях JSP (Action tag) — Gymterview",
+        "ogDescription": "JSP Action Elements — это XML-теги с префиксом `jsp:`, которые предоставляют стандартную функциональность: работу с Java",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о действиях JSP (Action tag)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSP Action Elements — это XML-теги с префиксом `jsp:`, которые предоставляют стандартную функциональность: работу с JavaBeans, включение ресурсов, перенаправление запросов и генерацию динамического контента. В отличие от скриплетов, action tags не требуют написания Java-кода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что вы знаете о действиях JSP (Action tag)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Взаимодействие JSP - сервлет - JSP",
+      "questionSlug": "vzaimodejstvie-jsp-servlet-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Взаимодействие JSP - сервлет - JSP — Gymterview",
+        "description": "Архитектура «JSP - сервлет - JSP» реализует паттерн MVC (Model-View-Controller), где каждый компонент имеет чётко определённую роль.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Взаимодействие JSP - сервлет - JSP — Gymterview",
+        "ogDescription": "Архитектура «JSP - сервлет - JSP» реализует паттерн MVC (Model-View-Controller), где каждый компонент имеет чётко опреде",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Взаимодействие JSP - сервлет - JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Архитектура «JSP - сервлет - JSP» реализует паттерн MVC (Model-View-Controller), где каждый компонент имеет чётко определённую роль."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Взаимодействие JSP - сервлет - JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие области видимости переменных существуют в JSP",
+      "questionSlug": "kakie-oblasti-vidimosti-peremennykh-sushchestvuyut-v-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие области видимости переменных существуют в JSP — Gymterview",
+        "description": "В JSP существуют четыре области видимости (scope), определяющие время жизни и доступность объектов. Область задаётся атрибутом `scope` при создании объекта.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие области видимости переменных существуют в JSP — Gymterview",
+        "ogDescription": "В JSP существуют четыре области видимости (scope), определяющие время жизни и доступность объектов. Область задаётся атр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие области видимости переменных существуют в JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В JSP существуют четыре области видимости (scope), определяющие время жизни и доступность объектов. Область задаётся атрибутом `scope` при создании объекта."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие области видимости переменных существуют в JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие неявные объекты есть на JSP странице",
+      "questionSlug": "kakie-neyavnye-obekty-est-na-jsp-stranitse",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие неявные объекты есть на JSP странице — Gymterview",
+        "description": "JSP предоставляет 9 неявных объектов (implicit objects), которые создаются контейнером и доступны напрямую в скриплетах и выражениях без явного объявления.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие неявные объекты есть на JSP странице — Gymterview",
+        "ogDescription": "JSP предоставляет 9 неявных объектов (implicit objects), которые создаются контейнером и доступны напрямую в скриплетах ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие неявные объекты есть на JSP странице",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSP предоставляет 9 неявных объектов (implicit objects), которые создаются контейнером и доступны напрямую в скриплетах и выражениях без явного объявления."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие неявные объекты есть на JSP странице",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие неявные объекты не доступны в обычной JSP странице",
+      "questionSlug": "kakie-neyavnye-obekty-ne-dostupny-v-obychnoj-jsp-stranitse",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие неявные объекты не доступны в обычной JSP странице — Gymterview",
+        "description": "Неявный объект `exception` (тип `Throwable`) недоступен на обычных JSP-страницах. Он доступен только на страницах ошибок, у которых установлена директива `<%@ p",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие неявные объекты не доступны в обычной JSP странице — Gymterview",
+        "ogDescription": "Неявный объект `exception` (тип `Throwable`) недоступен на обычных JSP-страницах. Он доступен только на страницах ошибок",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие неявные объекты не доступны в обычной JSP странице",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неявный объект `exception` (тип `Throwable`) недоступен на обычных JSP-страницах. Он доступен только на страницах ошибок, у которых установлена директива `<%@ page isErrorPage=\"true\" %>`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие неявные объекты не доступны в обычной JSP странице",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о PageContext и какие преимущества его использования",
+      "questionSlug": "chto-vy-znaete-o-pagecontext-i-kakie-preimushchestva-ego-ispolzovaniya",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что вы знаете о PageContext и какие преимущества его использ — Gymterview",
+        "description": "`PageContext` — абстрактный класс `javax.servlet.jsp.PageContext`, экземпляр которого предоставляет единую точку доступа ко всем неявным объектам, областям види",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что вы знаете о PageContext и какие преимущества его использ — Gymterview",
+        "ogDescription": "`PageContext` — абстрактный класс `javax.servlet.jsp.PageContext`, экземпляр которого предоставляет единую точку доступа",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о PageContext и какие преимущества его использования",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`PageContext` — абстрактный класс `javax.servlet.jsp.PageContext`, экземпляр которого предоставляет единую точку доступа ко всем неявным объектам, областям видимости и сервисным методам JSP-страницы. Это «универсальный пульт управления» для JSP."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что вы знаете о PageContext и какие преимущества его использ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как сконфигурировать параметры инициализации для JSP",
+      "questionSlug": "kak-skonfigurirovat-parametry-initsializatsii-dlya-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как сконфигурировать параметры инициализации для JSP — Gymterview",
+        "description": "Параметры инициализации для JSP настраиваются в `web.xml` аналогично сервлетам — через элементы `<servlet>` и `<servlet-mapping>`. Отличие лишь в том, что вмест",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как сконфигурировать параметры инициализации для JSP — Gymterview",
+        "ogDescription": "Параметры инициализации для JSP настраиваются в `web.xml` аналогично сервлетам — через элементы `<servlet>` и `<servlet-",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как сконфигурировать параметры инициализации для JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Параметры инициализации для JSP настраиваются в `web.xml` аналогично сервлетам — через элементы `<servlet>` и `<servlet-mapping>`. Отличие лишь в том, что вместо `<servlet-class>` указывается `<jsp-file>`."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как сконфигурировать параметры инициализации для JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Почему не рекомендуется использовать скриплеты в JSP",
+      "questionSlug": "pochemu-ne-rekomenduetsya-ispolzovat-skriplety-v-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Почему не рекомендуется использовать скриплеты в JSP — Gymterview",
+        "description": "Скриплеты (`<% java-код %>`) не рекомендуются, потому что они нарушают принцип разделения ответственности, смешивая бизнес-логику (Java) с представлением (HTML)",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Почему не рекомендуется использовать скриплеты в JSP — Gymterview",
+        "ogDescription": "Скриплеты (`<% java-код %>`) не рекомендуются, потому что они нарушают принцип разделения ответственности, смешивая бизн",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Почему не рекомендуется использовать скриплеты в JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Скриплеты (`<% java-код %>`) не рекомендуются, потому что они нарушают принцип разделения ответственности, смешивая бизнес-логику (Java) с представлением (HTML). Это делает код трудночитаемым, сложным для тестирования и опасным для поддержки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Почему не рекомендуется использовать скриплеты в JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Можно ли определить класс внутри JSP страницы",
+      "questionSlug": "mozhno-li-opredelit-klass-vnutri-jsp-stranitsy",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Можно ли определить класс внутри JSP страницы — Gymterview",
+        "description": "Технически — да, можно определить класс внутри JSP-декларации. Но это крайне плохая практика, которая противоречит назначению JSP как компонента представления.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Можно ли определить класс внутри JSP страницы — Gymterview",
+        "ogDescription": "Технически — да, можно определить класс внутри JSP-декларации. Но это крайне плохая практика, которая противоречит назна",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Можно ли определить класс внутри JSP страницы",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Технически — да, можно определить класс внутри JSP-декларации. Но это крайне плохая практика, которая противоречит назначению JSP как компонента представления."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Можно ли определить класс внутри JSP страницы",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что вы знаете о Языке выражений JSP (Expression Language)",
+      "questionSlug": "chto-vy-znaete-o-yazyke-vyrazhenij-jsp-expression-language",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что вы знаете о Языке выражений JSP (Expression Language) — Gymterview",
+        "description": "Expression Language (EL) — скриптовый язык в JSP, который предоставляет упрощённый доступ к данным из JavaBeans, коллекций, неявных объектов и контекстных парам",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что вы знаете о Языке выражений JSP (Expression Language) — Gymterview",
+        "ogDescription": "Expression Language (EL) — скриптовый язык в JSP, который предоставляет упрощённый доступ к данным из JavaBeans, коллекц",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что вы знаете о Языке выражений JSP (Expression Language)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Expression Language (EL) — скриптовый язык в JSP, который предоставляет упрощённый доступ к данным из JavaBeans, коллекций, неявных объектов и контекстных параметров без написания Java-кода. EL-выражения записываются в формате `${expression}` и вычисляются контейнером при генерации ответа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что вы знаете о Языке выражений JSP (Expression Language)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы EL операторов вы знаете",
+      "questionSlug": "kakie-tipy-el-operatorov-vy-znaete",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Какие типы EL операторов вы знаете — Gymterview",
+        "description": "EL поддерживает четыре типа операторов для работы с данными. Для каждого оператора существует альтернативная текстовая форма, что удобно при использовании EL вн",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Какие типы EL операторов вы знаете — Gymterview",
+        "ogDescription": "EL поддерживает четыре типа операторов для работы с данными. Для каждого оператора существует альтернативная текстовая ф",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы EL операторов вы знаете",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EL поддерживает четыре типа операторов для работы с данными. Для каждого оператора существует альтернативная текстовая форма, что удобно при использовании EL внутри XML-атрибутов, где символы `<`, `>` могут конфликтовать."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Какие типы EL операторов вы знаете",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Назовите неявные объекты JSP EL и их отличия от объектов JSP",
+      "questionSlug": "nazovite-neyavnye-obekty-jsp-el-i-ikh-otlichiya-ot-obektov-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Назовите неявные объекты JSP EL и их отличия от объектов JSP — Gymterview",
+        "description": "Неявные объекты JSP EL отличаются от неявных объектов JSP по составу и назначению. EL-объекты предоставляют доступ к атрибутам и параметрам через Map-подобный и",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Назовите неявные объекты JSP EL и их отличия от объектов JSP — Gymterview",
+        "ogDescription": "Неявные объекты JSP EL отличаются от неявных объектов JSP по составу и назначению. EL-объекты предоставляют доступ к атр",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Назовите неявные объекты JSP EL и их отличия от объектов JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Неявные объекты JSP EL отличаются от неявных объектов JSP по составу и назначению. EL-объекты предоставляют доступ к атрибутам и параметрам через Map-подобный интерфейс, тогда как JSP-объекты — это полноценные Java-объекты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Назовите неявные объекты JSP EL и их отличия от объектов JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как отключить возможность использования EL в JSP",
+      "questionSlug": "kak-otklyuchit-vozmozhnost-ispolzovaniya-el-v-jsp",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как отключить возможность использования EL в JSP — Gymterview",
+        "description": "Отключить EL можно на уровне отдельной страницы или на уровне всего приложения. При отключении выражения `${...}` обрабатываются как обычный текст и выводятся «",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как отключить возможность использования EL в JSP — Gymterview",
+        "ogDescription": "Отключить EL можно на уровне отдельной страницы или на уровне всего приложения. При отключении выражения `${...}` обраба",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как отключить возможность использования EL в JSP",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Отключить EL можно на уровне отдельной страницы или на уровне всего приложения. При отключении выражения `${...}` обрабатываются как обычный текст и выводятся «как есть»."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как отключить возможность использования EL в JSP",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как узнать тип HTTP метода используя JSP EL",
+      "questionSlug": "kak-uznat-tip-http-metoda-ispolzuya-jsp-el",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Как узнать тип HTTP метода используя JSP EL — Gymterview",
+        "description": "Тип HTTP-метода можно получить через цепочку вызовов от неявного объекта `pageContext`:",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Как узнать тип HTTP метода используя JSP EL — Gymterview",
+        "ogDescription": "Тип HTTP-метода можно получить через цепочку вызовов от неявного объекта `pageContext`:",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как узнать тип HTTP метода используя JSP EL",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Тип HTTP-метода можно получить через цепочку вызовов от неявного объекта `pageContext`:"
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Как узнать тип HTTP метода используя JSP EL",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое JSTL (JSP Standard Tag Library)",
+      "questionSlug": "chto-takoe-jstl-jsp-standard-tag-library",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Что такое JSTL (JSP Standard Tag Library) — Gymterview",
+        "description": "JSTL (JavaServer Pages Standard Tag Library) — стандартная библиотека тегов для JSP, предоставляющая готовые теги для типовых задач: циклы, условия, форматирова",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Что такое JSTL (JSP Standard Tag Library) — Gymterview",
+        "ogDescription": "JSTL (JavaServer Pages Standard Tag Library) — стандартная библиотека тегов для JSP, предоставляющая готовые теги для ти",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое JSTL (JSP Standard Tag Library)",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "JSTL (JavaServer Pages Standard Tag Library) — стандартная библиотека тегов для JSP, предоставляющая готовые теги для типовых задач: циклы, условия, форматирование, работа с XML, SQL и строками. JSTL является альтернативой скриплетам и обеспечивает декларативный подход к логике представления."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Что такое JSTL (JSP Standard Tag Library)",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Из каких групп тегов состоит библиотека JSTL",
+      "questionSlug": "iz-kakikh-grupp-tegov-sostoit-biblioteka-jstl",
+      "grade": "junior",
+      "tags": [
+        "servlets"
+      ],
+      "seo": {
+        "title": "Из каких групп тегов состоит библиотека JSTL — Gymterview",
+        "description": "Библиотека JSTL состоит из пяти групп тегов, каждая со своим URI и префиксом.",
+        "keywords": [
+          "servlets",
+          "junior"
+        ],
+        "ogTitle": "Из каких групп тегов состоит библиотека JSTL — Gymterview",
+        "ogDescription": "Библиотека JSTL состоит из пяти групп тегов, каждая со своим URI и префиксом.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Из каких групп тегов состоит библиотека JSTL",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Библиотека JSTL состоит из пяти групп тегов, каждая со своим URI и префиксом."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Servlets, JSP, JSTL",
+            "url": "/topics/servlets"
+          },
+          {
+            "name": "Из каких групп тегов состоит библиотека JSTL",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

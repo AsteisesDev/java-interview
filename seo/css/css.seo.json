@@ -1,0 +1,566 @@
+{
+  "topic": "Основы CSS",
+  "topicSlug": "css",
+  "batch": 1,
+  "generatedAt": "2026-05-12T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое CSS?",
+      "questionSlug": "chto-takoe-css",
+      "grade": "junior",
+      "tags": ["css", "основы", "frontend"],
+      "seo": {
+        "title": "Что такое CSS — Gymterview",
+        "description": "Что такое CSS (каскадные таблицы стилей), зачем нужен, способы подключения (внешний файл, style, inline), каскадность и наследование свойств.",
+        "keywords": ["CSS", "каскадные таблицы стилей", "Cascading Style Sheets", "подключение CSS", "каскадность", "наследование CSS", "собеседование"],
+        "ogTitle": "Что такое CSS — Gymterview",
+        "ogDescription": "Разбираем CSS: определение, способы подключения, каскадность и наследование свойств. Подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое CSS?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CSS (Cascading Style Sheets) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки. Разделяет структуру (HTML) от оформления. Подключается тремя способами: внешний файл (<link>), тег <style>, инлайн (style=\"\"). Каскадность определяет приоритет стилей: inline > style/external > браузерные стили."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Что такое CSS", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как в CSS обозначаются комментарии?",
+      "questionSlug": "kak-v-css-oboznachayutsya-kommentarii",
+      "grade": "junior",
+      "tags": ["css", "основы", "синтаксис"],
+      "seo": {
+        "title": "Как в CSS обозначаются комментарии — Gymterview",
+        "description": "Синтаксис комментариев в CSS: /* ... */. Однострочные и многострочные комментарии, отличия от JavaScript, минификация.",
+        "keywords": ["CSS комментарии", "/* */", "синтаксис CSS", "комментарии в стилях", "собеседование"],
+        "ogTitle": "Комментарии в CSS: синтаксис и особенности — Gymterview",
+        "ogDescription": "Как писать комментарии в CSS: синтаксис /* */, отличия от JS, использование в продакшене.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как в CSS обозначаются комментарии?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Комментарии в CSS обозначаются конструкцией /* ... */. Всё между /* и */ игнорируется браузером. В CSS нет однострочных комментариев // (в отличие от JavaScript или SCSS). Комментарии можно использовать внутри блока правил и между ними. В продакшене они удаляются при минификации."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Комментарии в CSS", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое селектор?",
+      "questionSlug": "chto-takoe-selektor",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "основы"],
+      "seo": {
+        "title": "Что такое селектор в CSS — Gymterview",
+        "description": "Что такое CSS-селектор: определение, структура CSS-правила (селектор, свойство, значение), группировка селекторов через запятую.",
+        "keywords": ["CSS селектор", "selector", "CSS-правило", "свойство", "значение", "структура CSS", "собеседование"],
+        "ogTitle": "Что такое CSS-селектор — Gymterview",
+        "ogDescription": "Определение CSS-селектора, структура правила, группировка через запятую. Подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое селектор?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Селектор — правило, на основании которого браузер выбирает элементы в HTML-документе для применения стилей. CSS-правило состоит из селектора (к каким элементам), свойства (что стилизуем) и значения (какое значение задаём). Несколько селекторов могут быть объединены через запятую."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Селектор", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Перечислите основные виды селекторов",
+      "questionSlug": "perechislite-osnovnye-vidy-selektorov",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "комбинаторы"],
+      "seo": {
+        "title": "Основные виды селекторов в CSS — Gymterview",
+        "description": "Виды CSS-селекторов: универсальный, элемента, класса, идентификатора, псевдокласса, псевдоэлемента, атрибута, комбинированные. Комбинаторы: потомок, дочерний, соседний, общий.",
+        "keywords": ["виды селекторов CSS", "универсальный селектор", "селектор класса", "селектор id", "комбинаторы CSS", "псевдоэлемент", "собеседование"],
+        "ogTitle": "Виды CSS-селекторов и комбинаторы — Gymterview",
+        "ogDescription": "Полный обзор видов CSS-селекторов: элемента, класса, id, псевдокласса, атрибута. Комбинаторы: потомок, дочерний, соседний.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Перечислите основные виды селекторов",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Основные виды: универсальный (*), элемента (tag), класса (.class), идентификатора (#id), псевдокласса (:pseudo), псевдоэлемента (::pseudo), атрибута ([attr]), комбинированные (A B, A > B, A + B, A ~ B). Комбинаторы: потомок (пробел) — любая глубина, дочерний (>) — прямые потомки, соседний (+) — первый после, общий (~) — все после на том же уровне."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Виды селекторов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое псевдокласс?",
+      "questionSlug": "chto-takoe-psevdoklass",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "псевдоклассы"],
+      "seo": {
+        "title": "Что такое псевдокласс в CSS — Gymterview",
+        "description": "Псевдоклассы CSS: определение, группы (ссылки, действия, структурные, формы), порядок LVHA (LoVe HAte), отличия от псевдоэлементов.",
+        "keywords": ["псевдокласс CSS", "hover", "focus", "nth-child", "first-child", "LVHA", "LoVe HAte", "псевдоэлемент", "собеседование"],
+        "ogTitle": "Псевдоклассы CSS: hover, focus, nth-child и другие — Gymterview",
+        "ogDescription": "Что такое псевдокласс, группы псевдоклассов, порядок LVHA для ссылок, отличие от псевдоэлементов.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое псевдокласс?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Псевдокласс — ключевое слово, добавляемое к селектору через двоеточие, определяющее особое состояние элемента. Группы: состояние ссылок (:link, :visited), действия пользователя (:hover, :active, :focus), структурные (:first-child, :nth-child), типовые (:first-of-type), отрицание (:not), формы (:checked, :disabled). Порядок для ссылок — LVHA (LoVe HAte): :link → :visited → :hover → :active."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Псевдокласс", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют селекторы атрибутов?",
+      "questionSlug": "kakie-sushchestvuyut-selektory-atributov",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "атрибуты"],
+      "seo": {
+        "title": "Селекторы атрибутов в CSS — Gymterview",
+        "description": "Селекторы атрибутов CSS: [attr], [attr=value], [attr^=value], [attr$=value], [attr*=value], [attr~=value], [attr|=value]. Примеры использования.",
+        "keywords": ["селектор атрибутов CSS", "[attr]", "attr=value", "attr^=", "attr$=", "attr*=", "CSS attribute selector", "собеседование"],
+        "ogTitle": "Селекторы атрибутов CSS: полный список — Gymterview",
+        "ogDescription": "Обзор всех селекторов атрибутов: точное совпадение, начало, конец, подстрока. Примеры использования.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют селекторы атрибутов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Селекторы атрибутов: [attr] — наличие атрибута, [attr=value] — точное совпадение, [attr^=value] — начинается с, [attr$=value] — заканчивается на, [attr*=value] — содержит подстроку, [attr~=value] — содержит как отдельное слово, [attr|=value] — равно или начинается с value-. Основные для запоминания: =, ^=, $=, *=."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Селекторы атрибутов", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между #my и .my?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-my-i-my",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "специфичность"],
+      "seo": {
+        "title": "В чем разница между #my и .my в CSS — Gymterview",
+        "description": "Разница между селектором id (#my) и класса (.my): уникальность, специфичность, применение в JS, рекомендации BEM.",
+        "keywords": ["селектор id", "селектор класса", "#id vs .class", "CSS специфичность", "BEM", "собеседование"],
+        "ogTitle": "Разница между #my (id) и .my (class) в CSS — Gymterview",
+        "ogDescription": "Сравнение селекторов id и class: уникальность, специфичность, практические рекомендации и BEM.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между #my и .my?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "#my — селектор идентификатора (id), .my — селектор класса (class). Id должен быть уникальным на странице, class может повторяться. Специфичность id (0,1,0,0) выше class (0,0,1,0). На практике для стилизации предпочтительнее классы: они переиспользуемы, легче переопределять, методология BEM рекомендует только классы."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "#my vs .my", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между margin и padding?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-margin-i-padding",
+      "grade": "junior",
+      "tags": ["css", "box-model", "отступы"],
+      "seo": {
+        "title": "В чем разница между margin и padding — Gymterview",
+        "description": "Разница между margin (внешний отступ) и padding (внутренний отступ): фон, отрицательные значения, схлопывание margin, Box Model.",
+        "keywords": ["margin", "padding", "отступы CSS", "Box Model", "collapsing margins", "схлопывание", "внешний отступ", "внутренний отступ", "собеседование"],
+        "ogTitle": "margin vs padding: разница внешнего и внутреннего отступа в CSS — Gymterview",
+        "ogDescription": "Сравнение margin и padding: фон, отрицательные значения, схлопывание. Визуальная схема Box Model.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между margin и padding?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "margin — внешний отступ (от элемента до соседей), padding — внутренний отступ (от границы до содержимого). Фон распространяется на padding, но не на margin. Margin допускает отрицательные значения, padding — нет. Вертикальные margin схлопываются (collapsing margins): из двух соседних берётся больший, а не сумма. Клик по padding вызывает событие, по margin — нет."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "margin vs padding", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем заключается разница между значениями 0 и auto в свойстве margin?",
+      "questionSlug": "v-chem-zaklyuchaetsya-raznitsa-mezhdu-znacheniyami-0-i-auto-v-svoystve-margin",
+      "grade": "junior",
+      "tags": ["css", "box-model", "отступы", "центрирование"],
+      "seo": {
+        "title": "Разница между margin: 0 и margin: auto — Gymterview",
+        "description": "Разница значений 0 и auto в свойстве margin: центрирование блока, требование width, поведение во Flexbox по вертикали.",
+        "keywords": ["margin auto", "margin 0", "центрирование CSS", "margin auto flexbox", "горизонтальное центрирование", "собеседование"],
+        "ogTitle": "margin: 0 vs margin: auto — центрирование блока в CSS — Gymterview",
+        "ogDescription": "Как работает margin: auto для центрирования, отличие от 0, поведение во Flexbox. Подготовка к собеседованию.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем заключается разница между значениями 0 и auto в свойстве margin?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Значение 0 устанавливает нулевой отступ, auto — браузер рассчитывает отступ автоматически. По горизонтали margin: auto центрирует блок (при заданной width), по вертикали эквивалентен 0. Во Flexbox-контейнере margin: auto работает и по вертикали — это способ центрирования по обеим осям. Для горизонтального центрирования обязательно задать width."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "margin: 0 vs auto", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какое свойство задает цвет фона?",
+      "questionSlug": "kakoe-svoystvo-zadaet-tsvet-fona",
+      "grade": "junior",
+      "tags": ["css", "свойства", "цвет"],
+      "seo": {
+        "title": "Какое свойство задает цвет фона в CSS — Gymterview",
+        "description": "Свойство background-color задаёт цвет фона. Форматы цвета: именованный, HEX, RGB, RGBA, HSL, HSLA. Сокращённое свойство background.",
+        "keywords": ["background-color", "цвет фона CSS", "HEX", "RGB", "RGBA", "HSL", "background", "color CSS", "собеседование"],
+        "ogTitle": "background-color: цвет фона в CSS — Gymterview",
+        "ogDescription": "Свойство background-color и форматы задания цвета: HEX, RGB, RGBA, HSL. Отличие от свойства color.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какое свойство задает цвет фона?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Цвет фона задаёт свойство background-color. Способы задания цвета: именованный (red, navy), HEX (#ff0000), RGB (rgb(255,0,0)), RGBA (с прозрачностью), HSL (hsl(0,100%,50%)), HSLA. Сокращённая запись background объединяет цвет, изображение, позицию, повтор. Важно не путать color (цвет текста) и background-color (цвет фона)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Цвет фона", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как убрать подчеркивание для всех ссылок на странице?",
+      "questionSlug": "kak-ubrat-podcherkivanie-dlya-vsekh-ssylok-na-stranitse",
+      "grade": "junior",
+      "tags": ["css", "свойства", "текст"],
+      "seo": {
+        "title": "Как убрать подчеркивание ссылок в CSS — Gymterview",
+        "description": "Убрать подчёркивание ссылок: text-decoration: none. Значения text-decoration, UX-рекомендации по оформлению ссылок.",
+        "keywords": ["text-decoration none", "убрать подчёркивание", "CSS ссылки", "underline", "line-through", "overline", "собеседование"],
+        "ogTitle": "Убрать подчёркивание ссылок: text-decoration: none — Gymterview",
+        "ogDescription": "Как убрать подчёркивание у ссылок через text-decoration: none. UX-рекомендации и hover-эффекты.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как убрать подчеркивание для всех ссылок на странице?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Для удаления подчёркивания используется a { text-decoration: none; }. Другие значения text-decoration: underline (подчёркивание, по умолчанию у ссылок), overline (линия сверху), line-through (зачёркивание). При удалении подчёркивания важно обеспечить другой визуальный индикатор ссылок (цвет, hover-эффект) для UX."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Подчёркивание ссылок", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего используется свойство clear?",
+      "questionSlug": "dlya-chego-ispolzuetsya-svoystvo-clear",
+      "grade": "junior",
+      "tags": ["css", "свойства", "float", "раскладка"],
+      "seo": {
+        "title": "Для чего используется свойство clear в CSS — Gymterview",
+        "description": "Свойство clear: запрет обтекания float-элементами. Значения none, left, right, both. Clearfix-хак, актуальность float vs Flexbox/Grid.",
+        "keywords": ["clear CSS", "float", "clearfix", "обтекание", "clear both", "Flexbox", "Grid", "собеседование"],
+        "ogTitle": "Свойство clear в CSS: управление обтеканием float — Gymterview",
+        "ogDescription": "Как работает clear: запрет обтекания float-элементами, clearfix-хак, актуальность в эпоху Flexbox и Grid.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего используется свойство clear?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Свойство clear определяет, с какой стороны элемента запрещено обтекание float-элементами. Значения: none (по умолчанию), left, right, both. Типичное применение — clearfix (::after { clear: both }) для предотвращения схлопывания высоты родителя с float-потомками. Сегодня float/clear используются редко — для раскладки применяются Flexbox и Grid."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Свойство clear", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как сделать жирным текст во всех элементах p?",
+      "questionSlug": "kak-sdelat-zhirnym-tekst-vo-vsekh-elementakh-p",
+      "grade": "junior",
+      "tags": ["css", "свойства", "текст", "шрифт"],
+      "seo": {
+        "title": "Как сделать жирным текст во всех элементах p — Gymterview",
+        "description": "Жирный текст в CSS: font-weight: bold. Числовая шкала 100-900, значения normal (400), bold (700), lighter, bolder.",
+        "keywords": ["font-weight", "bold", "жирный текст CSS", "font-weight 700", "normal 400", "числовая шкала", "собеседование"],
+        "ogTitle": "font-weight: bold — жирный текст в CSS — Gymterview",
+        "ogDescription": "Как задать жирный текст: font-weight: bold. Числовая шкала, normal = 400, bold = 700.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как сделать жирным текст во всех элементах p?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Используется свойство font-weight со значением bold: p { font-weight: bold; }. Значения: normal (обычная, 400), bold (жирный, 700), lighter/bolder (относительно родителя), числовая шкала 100-900 (100 = тонкий, 400 = normal, 700 = bold, 900 = очень жирный)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Жирный текст", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как задать красный цвет для всех элементов, имеющих класс red?",
+      "questionSlug": "kak-zadat-krasnyy-tsvet-dlya-vsekh-elementov-imeyushchikh-klass-red",
+      "grade": "junior",
+      "tags": ["css", "селекторы", "цвет"],
+      "seo": {
+        "title": "Как задать красный цвет для класса red в CSS — Gymterview",
+        "description": "Селектор класса .red и свойство color: задание цвета текста для элементов с классом. Отличие color от background-color, # от точки.",
+        "keywords": ["селектор класса", ".red", "color CSS", "цвет текста", "class selector", "background-color", "собеседование"],
+        "ogTitle": "Селектор класса .red и свойство color — Gymterview",
+        "ogDescription": "Как задать цвет текста для класса: .red { color: red; }. Отличие color от background-color.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как задать красный цвет для всех элементов, имеющих класс red?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Используется селектор класса .red и свойство color: .red { color: red; }. Точка перед именем указывает селектор класса. Свойство color задаёт цвет текста (не фона). Для фона используется background-color. Частая ошибка — использовать #red (id) вместо .red (class)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Цвет для класса", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое специфичность (specificity) селекторов?",
+      "questionSlug": "chto-takoe-spetsifichnost-specificity-selektorov",
+      "grade": "middle",
+      "tags": ["css", "специфичность", "селекторы", "каскадность"],
+      "seo": {
+        "title": "Что такое специфичность (specificity) селекторов — Gymterview",
+        "description": "Специфичность CSS-селекторов: расчёт (a,b,c,d), inline > id > class > element. Правила разрешения конфликтов, !important, примеры вычисления.",
+        "keywords": ["специфичность CSS", "specificity", "приоритет CSS", "расчёт специфичности", "!important", "каскадность", "inline стили", "собеседование"],
+        "ogTitle": "Специфичность CSS-селекторов: расчёт и правила — Gymterview",
+        "ogDescription": "Как рассчитать специфичность CSS: inline, id, class, element. Примеры, разрешение конфликтов, !important.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое специфичность (specificity) селекторов?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Специфичность — механизм определения приоритета CSS-правил при конфликте. Записывается как (a,b,c,d): a — inline-стили (1,0,0,0), b — id (0,1,0,0), c — классы/псевдоклассы/атрибуты (0,0,1,0), d — элементы/псевдоэлементы (0,0,0,1). При равной специфичности побеждает последнее правило. !important перебивает любую специфичность, но считается плохой практикой."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Специфичность", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое блочная модель (Box Model)?",
+      "questionSlug": "chto-takoe-blochnaya-model-box-model",
+      "grade": "middle",
+      "tags": ["css", "box-model", "раскладка"],
+      "seo": {
+        "title": "Что такое блочная модель (Box Model) в CSS — Gymterview",
+        "description": "Box Model CSS: content, padding, border, margin. Разница content-box и border-box, глобальный сброс box-sizing, расчёт реальной ширины элемента.",
+        "keywords": ["Box Model", "блочная модель", "content-box", "border-box", "box-sizing", "padding", "margin", "border", "CSS", "собеседование"],
+        "ogTitle": "Box Model: блочная модель CSS — Gymterview",
+        "ogDescription": "Блочная модель CSS: content, padding, border, margin. content-box vs border-box, глобальный сброс box-sizing.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое блочная модель (Box Model)?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Box Model — концепция CSS, где каждый HTML-элемент представлен прямоугольным блоком из четырёх областей: content (содержимое), padding (внутренний отступ), border (граница), margin (внешний отступ). По умолчанию content-box: width задаёт только content. С border-box: width включает content + padding + border. Почти все проекты используют глобальный сброс: *, *::before, *::after { box-sizing: border-box; }."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Box Model", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "В чем разница между display: none и visibility: hidden?",
+      "questionSlug": "v-chem-raznitsa-mezhdu-display-none-i-visibility-hidden",
+      "grade": "junior",
+      "tags": ["css", "свойства", "отображение", "раскладка"],
+      "seo": {
+        "title": "display: none vs visibility: hidden — Gymterview",
+        "description": "Разница display: none и visibility: hidden: поток документа, дочерние элементы, анимация, opacity: 0 как третий вариант скрытия.",
+        "keywords": ["display none", "visibility hidden", "opacity 0", "скрыть элемент CSS", "поток документа", "анимация CSS", "собеседование"],
+        "ogTitle": "display: none vs visibility: hidden vs opacity: 0 — Gymterview",
+        "ogDescription": "Сравнение способов скрытия элемента: display: none, visibility: hidden, opacity: 0. Поток, анимация, события.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "В чем разница между display: none и visibility: hidden?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "display: none — элемент полностью исключён из потока, не занимает места, дочерние элементы нельзя показать отдельно, нельзя анимировать. visibility: hidden — элемент скрыт, но место остаётся, дочерние могут быть показаны через visibility: visible, можно анимировать. Третий вариант — opacity: 0: элемент невидим, занимает место и реагирует на клики."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "display: none vs visibility: hidden", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие значения может принимать свойство position?",
+      "questionSlug": "kakie-znacheniya-mozhet-prinimat-svoystvo-position",
+      "grade": "middle",
+      "tags": ["css", "позиционирование", "раскладка"],
+      "seo": {
+        "title": "Какие значения может принимать свойство position — Gymterview",
+        "description": "Свойство position в CSS: static, relative, absolute, fixed, sticky. Поток документа, точка отсчёта, positioned-предок, практические примеры.",
+        "keywords": ["position CSS", "static", "relative", "absolute", "fixed", "sticky", "positioned-предок", "позиционирование", "собеседование"],
+        "ogTitle": "CSS position: static, relative, absolute, fixed, sticky — Gymterview",
+        "ogDescription": "Все значения position: поток, точка отсчёта, скролл. Примеры: модальное окно, sticky-шапка, бейдж.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие значения может принимать свойство position?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Значения position: static (по умолчанию, обычный поток), relative (сдвиг относительно своей позиции, место сохраняется), absolute (изъят из потока, относительно ближайшего positioned-предка), fixed (изъят из потока, относительно viewport, не скроллится), sticky (relative до порога, затем fixed). Для absolute браузер ищет предка с position != static, если нет — позиционирует относительно <html>."
+            }
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Главная", "url": "/" },
+          { "name": "Основы CSS", "url": "/topics/css" },
+          { "name": "Свойство position", "url": null }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}

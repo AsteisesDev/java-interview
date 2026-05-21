@@ -1,0 +1,908 @@
+{
+  "topic": "Spring Framework",
+  "topicSlug": "spring",
+  "batch": 1,
+  "generatedAt": "2026-05-17T12:00:00Z",
+  "questions": [
+    {
+      "question": "Что такое Spring Framework и зачем он нужен?",
+      "questionSlug": "chto-takoe-spring-framework-i-zachem-on-nuzhen",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Framework и зачем он нужен? — Gymterview",
+        "description": "Spring Framework -- комплексный фреймворк для разработки Java-приложений, который берёт на себя управление инфраструктурой (создание объектов, транзакции, безоп",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Framework и зачем он нужен? — Gymterview",
+        "ogDescription": "Spring Framework -- комплексный фреймворк для разработки Java-приложений, который берёт на себя управление инфраструктур",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Framework и зачем он нужен?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Framework -- комплексный фреймворк для разработки Java-приложений, который берёт на себя управление инфраструктурой (создание объектов, транзакции, безопасность), позволяя разработчикам сосредоточиться на бизнес-логике."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Framework и зачем он нужен?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое IoC и DI? В чём разница между ними?",
+      "questionSlug": "chto-takoe-ioc-i-di-v-chyom-raznitsa-mezhdu-nimi",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое IoC и DI? В чём разница между ними? — Gymterview",
+        "description": "IoC (Inversion of Control) -- принцип проектирования, при котором управление созданием объектов и их жизненным циклом передаётся от самого приложения к фреймвор",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое IoC и DI? В чём разница между ними? — Gymterview",
+        "ogDescription": "IoC (Inversion of Control) -- принцип проектирования, при котором управление созданием объектов и их жизненным циклом пе",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое IoC и DI? В чём разница между ними?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IoC (Inversion of Control) -- принцип проектирования, при котором управление созданием объектов и их жизненным циклом передаётся от самого приложения к фреймворку. DI (Dependency Injection) -- конкретный паттерн реализации IoC, при котором зависимости «внедряются» в объект контейнером извне."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое IoC и DI? В чём разница между ними?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring-контейнер? В чём разница между BeanFactory и ApplicationContext?",
+      "questionSlug": "chto-takoe-spring-kontejner-v-chyom-raznitsa-mezhdu-beanfactory-i-applicationcon",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring-контейнер? В чём разница между BeanFactory  — Gymterview",
+        "description": "Spring-контейнер (IoC-контейнер) -- ядро Spring Framework, отвечающее за создание бинов, их конфигурирование и управление жизненным циклом. Контейнер читает мет",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring-контейнер? В чём разница между BeanFactory  — Gymterview",
+        "ogDescription": "Spring-контейнер (IoC-контейнер) -- ядро Spring Framework, отвечающее за создание бинов, их конфигурирование и управлени",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring-контейнер? В чём разница между BeanFactory и ApplicationContext?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring-контейнер (IoC-контейнер) -- ядро Spring Framework, отвечающее за создание бинов, их конфигурирование и управление жизненным циклом. Контейнер читает метаданные конфигурации (аннотации, XML, Java-конфигурация) и на их основе создаёт и связывает объекты."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring-контейнер? В чём разница между BeanFactory ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Bean?",
+      "questionSlug": "chto-takoe-spring-bean",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Bean? — Gymterview",
+        "description": "Spring Bean -- объект, который создаётся, управляется и конфигурируется IoC-контейнером Spring. По сути, это обычный Java-объект (POJO), жизненный цикл которого",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Bean? — Gymterview",
+        "ogDescription": "Spring Bean -- объект, который создаётся, управляется и конфигурируется IoC-контейнером Spring. По сути, это обычный Jav",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Bean?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Bean -- объект, который создаётся, управляется и конфигурируется IoC-контейнером Spring. По сути, это обычный Java-объект (POJO), жизненный цикл которого контролируется контейнером."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Bean?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Каков жизненный цикл Spring Bean?",
+      "questionSlug": "kakov-zhiznennyj-tsikl-spring-bean",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Каков жизненный цикл Spring Bean? — Gymterview",
+        "description": "Жизненный цикл Spring Bean -- последовательность этапов от создания до уничтожения объекта в контейнере.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Каков жизненный цикл Spring Bean? — Gymterview",
+        "ogDescription": "Жизненный цикл Spring Bean -- последовательность этапов от создания до уничтожения объекта в контейнере.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Каков жизненный цикл Spring Bean?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Жизненный цикл Spring Bean -- последовательность этапов от создания до уничтожения объекта в контейнере."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Каков жизненный цикл Spring Bean?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие существуют scope у Spring Bean?",
+      "questionSlug": "kakie-sushchestvuyut-scope-u-spring-bean",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие существуют scope у Spring Bean? — Gymterview",
+        "description": "Scope определяет, сколько экземпляров бина будет создано и как они будут разделяться.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Какие существуют scope у Spring Bean? — Gymterview",
+        "ogDescription": "Scope определяет, сколько экземпляров бина будет создано и как они будут разделяться.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие существуют scope у Spring Bean?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scope определяет, сколько экземпляров бина будет создано и как они будут разделяться."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие существуют scope у Spring Bean?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны аннотации @Component, @Service, @Repository и @Controller?",
+      "questionSlug": "dlya-chego-nuzhny-annotatsii-component-service-repository-i-controller",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Для чего нужны аннотации @Component, @Service, @Repository и — Gymterview",
+        "description": "Все эти аннотации являются стереотипными (stereotype annotations) и помечают класс как Spring-бин для обнаружения при сканировании компонентов.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны аннотации @Component, @Service, @Repository и — Gymterview",
+        "ogDescription": "Все эти аннотации являются стереотипными (stereotype annotations) и помечают класс как Spring-бин для обнаружения при ск",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны аннотации @Component, @Service, @Repository и @Controller?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Все эти аннотации являются стереотипными (stereotype annotations) и помечают класс как Spring-бин для обнаружения при сканировании компонентов."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Для чего нужны аннотации @Component, @Service, @Repository и",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Чем отличаются @Configuration и @Component? Что делает аннотация @Bean?",
+      "questionSlug": "chem-otlichayutsya-configuration-i-component-chto-delaet-annotatsiya-bean",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Чем отличаются @Configuration и @Component? Что делает аннот — Gymterview",
+        "description": "`@Configuration` -- аннотация, указывающая, что класс содержит определения бинов (методы `@Bean`). `@Bean` -- аннотация, помечающая метод как фабричный: возвращ",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Чем отличаются @Configuration и @Component? Что делает аннот — Gymterview",
+        "ogDescription": "`@Configuration` -- аннотация, указывающая, что класс содержит определения бинов (методы `@Bean`). `@Bean` -- аннотация,",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Чем отличаются @Configuration и @Component? Что делает аннотация @Bean?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Configuration` -- аннотация, указывающая, что класс содержит определения бинов (методы `@Bean`). `@Bean` -- аннотация, помечающая метод как фабричный: возвращаемый объект регистрируется как бин в контейнере."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Чем отличаются @Configuration и @Component? Что делает аннот",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает @Autowired? Какие существуют способы внедрения зависимостей?",
+      "questionSlug": "kak-rabotaet-autowired-kakie-sushchestvuyut-sposoby-vnedreniya-zavisimostej",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает @Autowired? Какие существуют способы внедрения  — Gymterview",
+        "description": "`@Autowired` -- аннотация Spring, которая автоматически внедряет зависимости по типу (by type). Если найден ровно один бин подходящего типа, он будет внедрён.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как работает @Autowired? Какие существуют способы внедрения  — Gymterview",
+        "ogDescription": "`@Autowired` -- аннотация Spring, которая автоматически внедряет зависимости по типу (by type). Если найден ровно один б",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает @Autowired? Какие существуют способы внедрения зависимостей?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Autowired` -- аннотация Spring, которая автоматически внедряет зависимости по типу (by type). Если найден ровно один бин подходящего типа, он будет внедрён."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает @Autowired? Какие существуют способы внедрения ",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Для чего нужны @Qualifier и @Primary?",
+      "questionSlug": "dlya-chego-nuzhny-qualifier-i-primary",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Для чего нужны @Qualifier и @Primary? — Gymterview",
+        "description": "`@Qualifier` и `@Primary` решают проблему неоднозначности, когда в контейнере есть несколько бинов одного типа.",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Для чего нужны @Qualifier и @Primary? — Gymterview",
+        "ogDescription": "`@Qualifier` и `@Primary` решают проблему неоднозначности, когда в контейнере есть несколько бинов одного типа.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Для чего нужны @Qualifier и @Primary?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Qualifier` и `@Primary` решают проблему неоднозначности, когда в контейнере есть несколько бинов одного типа."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Для чего нужны @Qualifier и @Primary?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как использовать @Value и @PropertySource?",
+      "questionSlug": "kak-ispolzovat-value-i-propertysource",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как использовать @Value и @PropertySource? — Gymterview",
+        "description": "`@Value` -- аннотация для внедрения значений из внешних источников (файлы свойств, переменные окружения, SpEL-выражения) в поля или параметры бинов. `@PropertyS",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Как использовать @Value и @PropertySource? — Gymterview",
+        "ogDescription": "`@Value` -- аннотация для внедрения значений из внешних источников (файлы свойств, переменные окружения, SpEL-выражения)",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как использовать @Value и @PropertySource?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Value` -- аннотация для внедрения значений из внешних источников (файлы свойств, переменные окружения, SpEL-выражения) в поля или параметры бинов. `@PropertySource` -- указывает файл свойств для загрузки."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как использовать @Value и @PropertySource?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое профили в Spring? Как работает аннотация @Profile?",
+      "questionSlug": "chto-takoe-profili-v-spring-kak-rabotaet-annotatsiya-profile",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое профили в Spring? Как работает аннотация @Profile? — Gymterview",
+        "description": "Профили (Profiles) -- механизм Spring для условной регистрации бинов в зависимости от активного окружения (dev, test, prod). Позволяет иметь разные конфигурации",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое профили в Spring? Как работает аннотация @Profile? — Gymterview",
+        "ogDescription": "Профили (Profiles) -- механизм Spring для условной регистрации бинов в зависимости от активного окружения (dev, test, pr",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое профили в Spring? Как работает аннотация @Profile?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Профили (Profiles) -- механизм Spring для условной регистрации бинов в зависимости от активного окружения (dev, test, prod). Позволяет иметь разные конфигурации без изменения кода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое профили в Spring? Как работает аннотация @Profile?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring AOP? Какие основные понятия в AOP?",
+      "questionSlug": "chto-takoe-spring-aop-kakie-osnovnye-ponyatiya-v-aop",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring AOP? Какие основные понятия в AOP? — Gymterview",
+        "description": "AOP (Aspect-Oriented Programming) -- парадигма программирования, позволяющая выделять сквозную функциональность (cross-cutting concerns) в отдельные модули. Скв",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Что такое Spring AOP? Какие основные понятия в AOP? — Gymterview",
+        "ogDescription": "AOP (Aspect-Oriented Programming) -- парадигма программирования, позволяющая выделять сквозную функциональность (cross-c",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring AOP? Какие основные понятия в AOP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AOP (Aspect-Oriented Programming) -- парадигма программирования, позволяющая выделять сквозную функциональность (cross-cutting concerns) в отдельные модули. Сквозная функциональность -- это логика, пронизывающая множество модулей: логирование, транзакции, безопасность, кэширование."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring AOP? Какие основные понятия в AOP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие типы Advice существуют в Spring AOP?",
+      "questionSlug": "kakie-tipy-advice-sushchestvuyut-v-spring-aop",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие типы Advice существуют в Spring AOP? — Gymterview",
+        "description": "В Spring AOP существует пять типов advice, определяющих, когда выполняется дополнительная логика относительно целевого метода.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Какие типы Advice существуют в Spring AOP? — Gymterview",
+        "ogDescription": "В Spring AOP существует пять типов advice, определяющих, когда выполняется дополнительная логика относительно целевого м",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие типы Advice существуют в Spring AOP?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "В Spring AOP существует пять типов advice, определяющих, когда выполняется дополнительная логика относительно целевого метода."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие типы Advice существуют в Spring AOP?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает @Transactional в Spring?",
+      "questionSlug": "kak-rabotaet-transactional-v-spring",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает @Transactional в Spring? — Gymterview",
+        "description": "`@Transactional` -- аннотация для декларативного управления транзакциями. Spring оборачивает вызов метода в транзакцию через прокси: начинает перед выполнением,",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как работает @Transactional в Spring? — Gymterview",
+        "ogDescription": "`@Transactional` -- аннотация для декларативного управления транзакциями. Spring оборачивает вызов метода в транзакцию ч",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает @Transactional в Spring?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "`@Transactional` -- аннотация для декларативного управления транзакциями. Spring оборачивает вызов метода в транзакцию через прокси: начинает перед выполнением, коммитит при успехе, откатывает при RuntimeException/Error. При checked exception по умолчанию -- commit."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает @Transactional в Spring?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие уровни propagation существуют?",
+      "questionSlug": "kakie-urovni-propagation-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие уровни propagation существуют? — Gymterview",
+        "description": "Propagation определяет, как метод с `@Transactional` ведёт себя относительно уже существующей транзакции.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Какие уровни propagation существуют? — Gymterview",
+        "ogDescription": "Propagation определяет, как метод с `@Transactional` ведёт себя относительно уже существующей транзакции.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие уровни propagation существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Propagation определяет, как метод с `@Transactional` ведёт себя относительно уже существующей транзакции."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие уровни propagation существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие уровни isolation существуют?",
+      "questionSlug": "kakie-urovni-isolation-sushchestvuyut",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие уровни isolation существуют? — Gymterview",
+        "description": "Isolation определяет, насколько транзакция изолирована от изменений, вносимых другими параллельными транзакциями.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Какие уровни isolation существуют? — Gymterview",
+        "ogDescription": "Isolation определяет, насколько транзакция изолирована от изменений, вносимых другими параллельными транзакциями.",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие уровни isolation существуют?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Isolation определяет, насколько транзакция изолирована от изменений, вносимых другими параллельными транзакциями."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие уровни isolation существуют?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Какие подводные камни есть у @Transactional?",
+      "questionSlug": "kakie-podvodnye-kamni-est-u-transactional",
+      "grade": "senior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Какие подводные камни есть у @Transactional? — Gymterview",
+        "description": "Это один из самых популярных вопросов на собеседованиях. Подводные камни `@Transactional` -- проверка глубины понимания Spring.",
+        "keywords": [
+          "spring",
+          "senior"
+        ],
+        "ogTitle": "Какие подводные камни есть у @Transactional? — Gymterview",
+        "ogDescription": "Это один из самых популярных вопросов на собеседованиях. Подводные камни `@Transactional` -- проверка глубины понимания ",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Какие подводные камни есть у @Transactional?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это один из самых популярных вопросов на собеседованиях. Подводные камни `@Transactional` -- проверка глубины понимания Spring."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Какие подводные камни есть у @Transactional?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Что такое Spring Boot и чем он отличается от Spring Framework?",
+      "questionSlug": "chto-takoe-spring-boot-i-chem-on-otlichaetsya-ot-spring-framework",
+      "grade": "junior",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Что такое Spring Boot и чем он отличается от Spring Framewor — Gymterview",
+        "description": "Spring Boot -- надстройка над Spring Framework для максимального упрощения создания и запуска Spring-приложений. Принцип: Convention over Configuration (соглаше",
+        "keywords": [
+          "spring",
+          "junior"
+        ],
+        "ogTitle": "Что такое Spring Boot и чем он отличается от Spring Framewor — Gymterview",
+        "ogDescription": "Spring Boot -- надстройка над Spring Framework для максимального упрощения создания и запуска Spring-приложений. Принцип",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Что такое Spring Boot и чем он отличается от Spring Framework?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Spring Boot -- надстройка над Spring Framework для максимального упрощения создания и запуска Spring-приложений. Принцип: Convention over Configuration (соглашение важнее конфигурации)."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Что такое Spring Boot и чем он отличается от Spring Framewor",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    },
+    {
+      "question": "Как работает автоконфигурация в Spring Boot?",
+      "questionSlug": "kak-rabotaet-avtokonfiguratsiya-v-spring-boot",
+      "grade": "middle",
+      "tags": [
+        "spring"
+      ],
+      "seo": {
+        "title": "Как работает автоконфигурация в Spring Boot? — Gymterview",
+        "description": "Автоконфигурация (Auto-configuration) -- механизм, при котором Spring Boot автоматически настраивает бины на основании библиотек в classpath и заданных свойств.",
+        "keywords": [
+          "spring",
+          "middle"
+        ],
+        "ogTitle": "Как работает автоконфигурация в Spring Boot? — Gymterview",
+        "ogDescription": "Автоконфигурация (Auto-configuration) -- механизм, при котором Spring Boot автоматически настраивает бины на основании б",
+        "schemaOrg": {
+          "@type": "QAPage",
+          "mainEntity": {
+            "@type": "Question",
+            "name": "Как работает автоконфигурация в Spring Boot?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Автоконфигурация (Auto-configuration) -- механизм, при котором Spring Boot автоматически настраивает бины на основании библиотек в classpath и заданных свойств."
+            }
+          }
+        },
+        "breadcrumbs": [
+          {
+            "name": "Главная",
+            "url": "/"
+          },
+          {
+            "name": "Spring Framework",
+            "url": "/topics/spring"
+          },
+          {
+            "name": "Как работает автоконфигурация в Spring Boot?",
+            "url": null
+          }
+        ],
+        "featuredSnippetReady": true
+      }
+    }
+  ]
+}
